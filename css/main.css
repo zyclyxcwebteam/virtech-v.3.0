@@ -1,265 +1,274 @@
-/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.quick-navigation {
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.quick-navigation ul{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid; */
+  min-width: 110px;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.quick-navigation li{
+  flex: 1;
+  list-style-type: none;
+  text-align: right;
+  margin: 8px 0;   
 }
 
-/*
- * A better looking default horizontal rule
- */
+.quick-navigation li a{
+  padding: 0.6rem 0;
+  /* border-radius: 1rem;    */
+}
 
-hr {
+.quick-navigation .circle{  
+  display: inline-block; 
+  width: 8px;
+  height: 8px;
+  padding: 8px;
+  border-radius: 50%;   
+  box-shadow: 0 0 3px 1px #0090a6;
+}
+/* .quick-navigation a:hover .circle{
+  border-color:#fff;
+  background-color: #fff;
+  display: none;
+} */
+.quick-navigation .quick-nav-text{
+  display: none;
+  color: #0090a6;
+  padding: 0 0.8rem;
+ }
+
+.quick-navigation a:hover .quick-nav-text{
+  display: inline-block;
+  color: #fff;
+}
+
+/* .quick-navigation a:hover{
+  background-color: #0090a6;
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  color: #fff;
+} */
+
+section{
+  height: 100vh;
+}
+ 
+h1{
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+section:nth-child(even){
+  background-color: #eee;
+}
+section:nth-child(odd){
+  background-color: #ffffff;
+}
+
+
+.title-inner{
+  position: relative;
+}
+
+.title-text{
+  opacity: 0;
+}
+
+.title-text-bg{
   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transform-origin: left;
+  transform: scaleX(0);   
+  /* background-color: #fff; */
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+ 
+
+ /* === HOME SECTION  === */
+.home{
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+ /* === END-HOME SECTION  === */
+
+
+ /* CSS from example */
+ img{
+   width: 100%;
+ }
+ 
+
+.logo ion-icon {
+  color: #6adb9d;
+  margin-right: 7px;
+  position: relative;
+  top: 1px;
+  z-index: 1;
 }
 
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+.contact {
+  position: fixed;
+  color: rgb(124, 124, 124);
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: Poppins;
+  right: 100px;
+  line-height: 80px;
+  z-index: 1;
 }
 
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
+.menu{
+  position: fixed;
+  color: #6adb9d;
+  right: 2em;
+  top: 4px;
+  line-height: 80px;
+  z-index: 1;
 }
 
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+.menu ion-icon {
+  font-size: 24px;
 }
 
-.clearfix:after {
-  clear: both;
+.header {
+  position: absolute;
+  top: 46%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.circle-shape{
+  position: absolute;
+  top: 18%;
+  right:10%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 1;
+  border: 1px solid hsl(188, 100%, 53%);
+  box-shadow: 0 0 15px 2px#48c6ef;
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
 
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+.home h1 {   
+  font-weight: bolder !important;
+  font-size: 46px !important;
+  margin-bottom: 0px;
+  text-transform: uppercase !important;
+}
+
+#tagline  {
+  width: 640px;
+}
+
+p {
+  color: rgb(95, 95, 95);
+  font-weight: 200;
+  font-family: "Roboto";
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+button {
+  margin-right: 10px !important;
+  padding: 18px 30px;
+  border: none;
+  color: #fff;
+  font-size: 12px !important;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+#one {      
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+ 
+.page-loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;   
+  z-index: 2;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
+.ring {
+  margin: 0%;
+  padding: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  opacity: 0.7;    
+}
+
+.ringOne img {
+  animation: rotateFirstRing 2s linear infinite;
+}
+
+.ringTwo img {
+  animation: rotateFirstRing 8s linear infinite;
+}
+
+@keyframes rotateFirstRing {
+  from {
+        transform: rotate(0deg);
   }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
+  to {
+        transform: rotate(360deg);
   }
 }
 
+#section-6{
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  height: 60vh;
+}

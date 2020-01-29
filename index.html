@@ -3,39 +3,118 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Virtech</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
+  <link rel="icon" href="./favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <nav class="quick-navigation">
+    <ul>
+      <li><a href="#section-1"><span class="quick-nav-text">Home</span><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-2"><span class="quick-nav-text">Services</span><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-3"><span class="quick-nav-text">Industries</span><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-4"><span class="quick-nav-text">About</span><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-5"><span class="quick-nav-text">Careers</span><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-6"><span class="quick-nav-text">Contact</span><span class="circle ml-2"></span></a></li>
+    </ul>
+  </nav>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <section id="section-1" class="panel home">
+    <div class="page-loading">
+
+    </div>
+    <img src="./img/logo/virtech-ksa-logo.png" alt="logo" class="logo">     
+    
+    <div class="header" data-slide="1">
+
+      <h1 class="ml7" id="title">
+        <span class="text-wrapper">
+          <span class="letters">Lorem ipsum dolor sit amet</span>
+        </span>
+      </h1>
+
+      <p id="tagline" class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim blanditiis voluptatum,
+        magnam odio, tempora asperiores, quod quasi alias expedita esse eveniet impedit nihil quae nulla sint iure
+        accusantium architecto aperiam.</p>
+      <div class="buttons">
+        <button id="one">LEARN MORE</button>
+      </div>
+
+    </div>     
+    
+    <div class="circle-shape">
+
+    </div>
+  </section>
+
+  <section id="section-2" class="panel">
+    <h1 class="title-h1" id="title">
+      <span class="text-wrapper">
+        <span class="letters">Services to meet your needs</span>         
+      </span>
+    </h1>
+  </section>
+
+  <section id="section-3" class="panel">
+    <h1>Our industry specialization</h1>
+    <svg class="loader12" height="57" stroke="#fff" viewBox="0 0 57 57" width="57" xmlns="http://www.w3.org/2000/svg">
+      <g fill-rule="evenodd" fill="none">
+        <g stroke-width="2" transform="translate(1 1)">
+          <circle class="loader12__path-left" cx="5" cy="50" r="5"></circle>
+          <circle class="loader12__path-top" cx="27" cy="5" r="5"></circle>
+          <circle class="loader12__path-right" cx="50" cy="50" r="5"></circle>
+        </g>
+      </g>
+    </svg>
+  </section>
+
+  <section id="section-4" class="panel">
+    <h1>About us</h1>
+  </section>
+
+  <section id="section-5" class="panel">
+    <h1>Careers</h1>
+  </section>
+
+  <section id="section-6" class="panel">
+    <h1>Contact</h1>
+  </section>
+  <!-- GSAP  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/CSSRulePlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js"></script>
+  <!-- END-GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <!-- SCROLL MAGIC -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="./js/vendor/animation.gsap.js"></script>
+  <!-- END-SCROLL MAGIC -->
+
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
 </html>
