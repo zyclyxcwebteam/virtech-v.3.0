@@ -90,3 +90,61 @@ let scene = new ScrollMagic.Scene({ triggerElement: '.title-h1' })
 //         .addTo(controller);
 //     }
 // });
+
+
+/* === BUTTON ANIMATION === */
+// gsap.to('.btn-one', {duration:2, "--bgColor":"red",backgroundColor:'red'});
+
+// let btn = document.getElementById('btnOne');
+// btn.addEventListener('mouseenter',function(){
+//      gsap.to('.btn-one',{duration:1,"--bgWidth":"100%"})
+//      gsap.to('.btn-one',{duration:0.2,backgroundColor:'#0090a6',delay:1})
+// })
+
+// btn.addEventListener('mouseleave',function(){
+//      gsap.to('.btn-one',{duration:1,"--bgWidth":"0%",backgroundColor:'#fff'})      
+// })
+
+
+// let btnTwo = document.getElementById('btnTwo');
+// btnTwo.addEventListener('mouseenter',function(){      
+//      let rule = CSSRulePlugin.getRule(".btn-two::before");
+//      gsap.to(rule, {duration: 0.6, cssRule: {width:"100%"}});
+//      gsap.to(rule,{duration:0.2,delay:0.6,cssRule:{backgroundColor:'#0090a6'}})
+// })
+
+// btnTwo.addEventListener('mouseleave',function(){
+//      let rule = CSSRulePlugin.getRule(".btn-two::before");
+//      gsap.to(rule, {duration: 0.6, cssRule: {width:"22%",backgroundColor:"#0090a680"}});
+// })
+
+ 
+
+// SERVICES CARD 
+$(".services .service .card-body").each(createHover);
+function createHover(i, element) {
+  var tl = gsap.timeline({duration:0.2});
+
+  tl.to($(this).find('.service-icon'), {display:'none'});
+  tl.to($(this).find('.service-text'),{display:'block'});
+
+  $(element).hover(doIt);
+
+  function doIt() {
+     tl.reversed() ? tl.play() : tl.reverse();     
+  }
+  tl.reverse();
+}
+
+// $(".panel-1").hover(function(){
+//      gsap.to('.panel-1',{duration:1,right:"80%",left:"-40%"})
+// })
+// $(".panel-2").hover(function(){
+//      gsap.to('.panel-2',{duration:1,right:"60%"})
+// })
+ 
+let flexPanels = gsap.timeline({repeat:-1,repeatDelay:1,delay:2,duration:4,yoyo:true,ease: "bounce.out"})
+flexPanels.to('.panel-1',{right:"80%",left:"-40%"})
+flexPanels.to('.panel-2',{right:"60%",left:"-20%"},"+=2")
+//flexPanels.to('.panel-1',{right:"60%",left:"-20%"})
+// flexPanels.to('.panel-2',{right:"60%",left:"0%"})

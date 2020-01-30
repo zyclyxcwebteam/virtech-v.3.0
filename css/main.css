@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+:root{
+  --bgColor:#000;  
+}
 body{
   font-family: 'Montserrat', sans-serif;
-}
+} 
+
 .quick-navigation {
   position: fixed;
   z-index: 1;
@@ -15,8 +20,7 @@ body{
 .quick-navigation ul{
   padding: 0;
   display: flex;
-  flex-direction: column;
-  /* border: 2px solid; */
+  flex-direction: column;   
   min-width: 110px;
 }
 
@@ -28,8 +32,7 @@ body{
 }
 
 .quick-navigation li a{
-  padding: 0.6rem 0;
-  /* border-radius: 1rem;    */
+  padding: 0.6rem 0;   
 }
 
 .quick-navigation .circle{  
@@ -40,11 +43,7 @@ body{
   border-radius: 50%;   
   box-shadow: 0 0 3px 1px #0090a6;
 }
-/* .quick-navigation a:hover .circle{
-  border-color:#fff;
-  background-color: #fff;
-  display: none;
-} */
+
 .quick-navigation .quick-nav-text{
   display: none;
   color: #0090a6;
@@ -56,14 +55,7 @@ body{
   color: #fff;
 }
 
-/* .quick-navigation a:hover{
-  background-color: #0090a6;
-  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-  color: #fff;
-} */
-
-section{
+.home{
   height: 100vh;
 }
  
@@ -108,48 +100,13 @@ section:nth-child(odd){
 .home{
   background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
   background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
  /* === END-HOME SECTION  === */
 
 
  /* CSS from example */
- img{
-   width: 100%;
- }
- 
-
-.logo ion-icon {
-  color: #6adb9d;
-  margin-right: 7px;
-  position: relative;
-  top: 1px;
-  z-index: 1;
-}
-
-.contact {
-  position: fixed;
-  color: rgb(124, 124, 124);
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-family: Poppins;
-  right: 100px;
-  line-height: 80px;
-  z-index: 1;
-}
-
-.menu{
-  position: fixed;
-  color: #6adb9d;
-  right: 2em;
-  top: 4px;
-  line-height: 80px;
-  z-index: 1;
-}
-
-.menu ion-icon {
-  font-size: 24px;
-}
-
+  
 .header {
   position: absolute;
   top: 46%;
@@ -237,38 +194,221 @@ button {
   background-color: #fff;
   background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
 }
+ 
+.btn-one{
+  background-color:#ffffff;
+  border: 1px solid rgb(0, 144, 166,0.5);
+  color: #111;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  padding-right: 5rem;
+  z-index: 1;
+  --bgWidth:0;
+}
 
-.ring {
-  margin: 0%;
-  padding: 0%;
+.btn-one::after,.btn-one::before{
+  position: absolute;  
+  color: #fff;
+  font-size: 1.3rem;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.btn-one::after{
+  content:'\25BA';
+  width: 25%;
+  background-color:rgba(0, 144, 166,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.btn-one::before{
+  content: '';   
+  width:var(--bgWidth);
+  background-color:rgba(0, 144, 166,1);
+}
+
+.btn-two{
+  position: relative;
+padding-right: 5rem;
+border: 1px solid rgba(0, 144, 166,0.4);
+background-color: #ffffff;
+color:#000;
+font-weight: 800;
+z-index: 1;
+}
+
+.btn-two .btn-arrow{
+  position: absolute;
+  top: 28%;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.btn-two::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width:22%;
+  right: 0;
+  top: 0;
+  background-color: #0090a680;
+  z-index: -1;
+}
+
+/* === OUR SERVICES === */
+.services .card{
+  border: none;  
+}
+
+.services .card-body{
+   box-shadow: 0 0 1px 1px rgba(0, 144, 166,0.2);
+   border-radius: 0.4rem;
+   position: relative;
+}
+ 
+.services .service-icon{
+  width: 90px;
+}
+.services .service-text{
+  display: none;
+}
+.scroll-icon{
+  height: 40px;
+  width:30px;
+  border: 1px solid #0090a6;
+  border-radius: 14px;
+  position: relative;
+  bottom: 0;
+}
+.scroll-icon::after{
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 5px;
+  background-color: #0090a6;
   top: 50%;
   left: 50%;
+  bottom: 0;
   transform: translate(-50%, -50%);
+}
+/* === END - OUR SERVICES === */
+
+/* === INDUSTRIES === */
+.industry-letter{
+  font-size: 3rem;
+  text-align: right;
+  font-family: 'Monoton', cursive;
+}
+.industry-body{
+  display: flex;
+  flex-direction: column;
+
+}
+/* === INDUSTRIES === */
+.title-2{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.wrapper{
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* === ABOUT US === */
+
+.testimonials{
+  z-index: 20;
+  background-color: #fff;   
+}
+
+.testimonial{
+  margin:1.2rem 0;  
+}
+
+.testimonial h4{
+  color: #555;
+}
+
+.flex-panels{
+   position: relative;
+   /* overflow: hidden;      */
+}
+.panel-1,.panel-2,.panel-3{
   position: absolute;
-  z-index: 2;
-  width: 40%;
-  opacity: 0.7;    
+  top: 0;
+  bottom: 0;      
+  height: 70vh;       
 }
-
-.ringOne img {
-  animation: rotateFirstRing 2s linear infinite;
+.panel-1{
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  left:0;
+  right:40%;
+  z-index: 10;
 }
-
-.ringTwo img {
-  animation: rotateFirstRing 8s linear infinite;
+.panel-2{
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  left:20%;
+  right:20%;
+  z-index: 8;
 }
-
-@keyframes rotateFirstRing {
-  from {
-        transform: rotate(0deg);
+.panel-3{
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  left:40%;
+  right:0;
+  z-index: 6;
+}
+.panel-title{
+  color: #fff;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float:right;
+  margin-top: 2rem;
   }
-  to {
-        transform: rotate(360deg);
-  }
+/* === END - ABOUT US === */
+
+
+/* === CAREERS BANNER === */
+
+.careers-banner{
+padding-top: 4rem;
+padding-bottom: 4rem;
+background-image: url('../img/careers.png');
+background-position: center;
+background-size: cover;
+position: relative;
+color: #fff;
 }
 
-#section-6{
-  background-image: url("../img/map.jpg");
-  background-size: cover;
-  height: 60vh;
+.careers-banner::after{
+position: absolute;
+content: '';
+width: 100%;
+height: 100%;
+top: 0;
+right: 0;
+left:0;
+background-color: rgba(0, 144, 166,0.4); 
 }
+
+.career-text{
+  z-index: 1;
+}
+
+.career-text h3{
+  font-size: 3rem;
+}
+
+.career-text p{
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  color: #fff;   
+}
+
