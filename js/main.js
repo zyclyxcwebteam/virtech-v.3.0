@@ -16,14 +16,14 @@ $(document).ready(function () {
           let targetOffset = $(targetSection).offset().top;
           gsap.to(window, { duration: 2, scrollTo: { y: targetOffset }, ease: Power3.easeOut });
      })
-     $('.quick-navigation ul li a .circle').on('mouseenter', function (e) {
-          e.preventDefault();
-          gsap.to($(this), { duration: 0.1, height: '30px', width: '30px', backgroundImage: 'linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)' })
-     });
-     $('.quick-navigation ul li a .circle').on('mouseleave', function (e) {
-          e.preventDefault();
-          gsap.to($(this), { duration: 0.1, height: '5px', width: '5px', backgroundImage: 'none' })
-     });
+     // $('.quick-navigation ul li a .circle').on('mouseenter', function (e) {
+     //      e.preventDefault();
+     //      gsap.to($(this), { duration: 0.1, height: '30px', width: '30px', backgroundImage: 'linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)' })
+     // });
+     // $('.quick-navigation ul li a .circle').on('mouseleave', function (e) {
+     //      e.preventDefault();
+     //      gsap.to($(this), { duration: 0.1, height: '5px', width: '5px', backgroundImage: 'none' })
+     // });
 
      /* === END - QUICK NAVIGATION  === */
 

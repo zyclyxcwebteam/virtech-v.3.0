@@ -1,37 +1,124 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
   <title>Virtech</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="manifest" href="site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="icon" href="./favicon.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/normalize.css">
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
   <link rel="stylesheet" href="css/main.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  <header class="main-navbar py-0" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light site-navbar py-0" id="navbarMaster">
+      <a class="navbar-brand ml-md-4" href="./index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-master">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+          <!--  home -->
+          <li class="nav-item active mx-2 py-3">
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <!-- services -->
+          <li class="nav-item dropdown mx-2 py-3 service-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu service-dropdown-menu bar-box-shadow" aria-labelledby="navbarDropdownServices">
+              <div class="mx-auto row" style="margin-left: 60px !important;">
+
+                <!-- services col - 1 -->
+                <div class="col-12 col-lg-3 service-items">
+                  <p class="dropdown-title">New Age Technologies</p>
+                  <a class="dropdown-item my-1" href="./AI.html">Artificial Intelligence</a>
+                  <a class="dropdown-item my-1" href="./RPA.html">Robotic Process Automation</a>
+                  <a class="dropdown-item my-1" href="./Blockchain.html">Blockchain</a>
+                  <a class="dropdown-item my-1" href="./IoT.html">Internet Of Things</a>
+                  <!-- <a class="dropdown-item py-1 my-1" href="#">Business Automation</a> -->                  
+                </div>
+
+                <!-- services col - 2 -->
+                <div class="col-12 col-lg-3 service-items">                   
+                  <p class="dropdown-title ">Application Development</p>                   
+                  <a class="dropdown-item my-1" href="./Product-Engineering.html">Product Engineering</a>
+                  <a class="dropdown-item my-1" href="./Web-Development.html">Web Development</a>
+                  <a class="dropdown-item my-1" href="./Digital-Marketing.html">Digital Marketing</a>
+                </div>
+
+                <!-- services col - 3 -->
+                <div class="col-12 col-lg-3 service-items">
+                  <!-- data governace heading-->                  
+                  <p class="dropdown-title">Security Services</p>                   
+                  <a class="dropdown-item my-1" href="./IT-security-services.html">IT Security Services</a>
+                  <a class="dropdown-item my-1" href="./Info-Security.html">Information Security Services</a>
+                  <p class="dropdown-title">BI Solutions</p>
+                  <a class="dropdown-item my-1" href="./Data-Visualisation.html">Data Visualization</a>
+                  <a class="dropdown-item my-1" href="./Predictive-Analysis.html">Predictive Analysis</a>
+
+                </div>
+
+                <!-- services col - 4 -->
+                <div class="col-12 col-lg-3 service-items">
+                  
+                  <p class="dropdown-title">Infrastructure</p>
+                  <a class="dropdown-item my-1" href="./DataCenter-Transformation.html">Data Center Transformation</a>
+                  <a class="dropdown-item my-1" href="./Datacenter-Services.html">Data Center Services</a>
+                  <a class="dropdown-item my-1" href="./Network-operation-center.html">Network Operation Center</a>
+                  <a class="dropdown-item my-1" href="./Security-operation-center.html">Security Operation Center</a>
+                  <a class="dropdown-item my-1" href="./Bigdata.html">Big Data</a>
+                  <a class="dropdown-item my-1" href="./End-User-Computing.html">End User Computing</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <!-- About us -->
+          <!-- careers -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="./careers.html">About us</a>
+          </li>
+
+          <!-- about us -->
+          <!-- <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="./aboutus.html">About us</a>
+          </li> -->
+
+          <!-- careers -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="./careers.html">Careers</a>
+          </li>
+          <!-- contact us -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="./contactus.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <nav class="quick-navigation">
     <ul>
-      <li><a href="#section-1"><span class="quick-nav-text">Home</span><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-2"><span class="quick-nav-text">Services</span><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-3"><span class="quick-nav-text">Industries</span><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-4"><span class="quick-nav-text">About</span><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-5"><span class="quick-nav-text">Careers</span><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-6"><span class="quick-nav-text">Contact</span><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-1"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-2"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-3"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-4"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-5"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-6"><span class="circle ml-2"></span></a></li>
     </ul>
   </nav>
 
   <section id="section-1" class="panel home">
-    <div class="page-loading">
-
-    </div>
+    <div class="page-loading"></div>    
     <img src="./img/logo/virtech-ksa-logo.png" alt="logo" class="logo">
 
     <div class="header" data-slide="1">
@@ -51,20 +138,22 @@
 
     </div>
 
-    <div class="circle-shape">
+    <div class="home-text">
 
     </div>
-    <span class="scroll-icon"></span>
+    <div class="home-graphic">
+
+    </div>
+    <div class="circle-shape"></div>
+    <!-- <span class="scroll-icon"></span> -->
   </section>
+
+
 
   <!-- === SERVICES === -->
   <section id="section-2" class="panel wrapper">
     <!-- section title -->
-    <h1 class="title-h1" id="title">
-      <span class="text-wrapper">
-        <span class="letters">Services to meet your needs</span>
-      </span>
-    </h1>
+    <h1 class="title-h1 text-center" id="title">Services to meet your needs</h1>
 
     <!-- OUR SERVICES CARDS -->    
     <div class="container mt-1">
@@ -254,15 +343,15 @@
         <div class="col-8 p-0 .overflow-hidden">
           <div class="flex-panels">
             <div class="flex-slide panel-1">
-              <h3 class="panel-title">Lorem ipsum dolor sit amet</h3>
+              <h3 class="panel-title">We are Virtech Technologies</h3>
             </div>
             <div class="flex-slide panel-2">
               <!-- panel-2 -->
-              <h3 class="panel-title">Lorem ipsum dolor sit amet</h3>
+              <h3 class="panel-title">Our Core Values</h3>
             </div>
             <div class="flex-slide panel-3">
               <!-- panel-3 -->
-              <h3 class="panel-title">Lorem ipsum dolor sit amet</h3>
+              <h3 class="panel-title">Our Achievements</h3>
             </div>
           </div>          
         </div>
@@ -281,8 +370,8 @@
   </section>
 
   <!-- CONTACT US -->
-  <section id="section-6" class="panel">
-    <h1>Contact</h1>    
+  <section id="section-6" class="panel Wrapper">
+    <h1 class="py-5 text-center">Get In Touch</h1>    
   </section>
 
   <!-- FOOTER -->
@@ -302,8 +391,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="./js/vendor/animation.gsap.js"></script>
   <!-- END-SCROLL MAGIC -->
-
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
@@ -316,5 +404,4 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

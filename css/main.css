@@ -37,9 +37,9 @@ body{
 
 .quick-navigation .circle{  
   display: inline-block; 
-  width: 8px;
-  height: 8px;
-  padding: 8px;
+  width: 6px;
+  height: 6px;
+  padding: 6px;
   border-radius: 50%;   
   box-shadow: 0 0 3px 1px #0090a6;
 }
@@ -55,46 +55,12 @@ body{
   color: #fff;
 }
 
+
+/* === Home page === */
 .home{
   height: 100vh;
 }
- 
-h1{
-  text-align: center;
-  padding: 2rem 0;
-  margin: 0;
-}
-
-section:nth-child(even){
-  background-color: #eee;
-}
-section:nth-child(odd){
-  background-color: #ffffff;
-}
-
-
-.title-inner{
-  position: relative;
-}
-
-.title-text{
-  opacity: 0;
-}
-
-.title-text-bg{
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  transform-origin: left;
-  transform: scaleX(0);   
-  /* background-color: #fff; */
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-}
- 
+  
 
  /* === HOME SECTION  === */
 .home{
@@ -395,7 +361,7 @@ height: 100%;
 top: 0;
 right: 0;
 left:0;
-background-color: rgba(0, 144, 166,0.4); 
+background-color: rgba(0, 144, 166,0.85); 
 }
 
 .career-text{
@@ -412,3 +378,107 @@ background-color: rgba(0, 144, 166,0.4);
   color: #fff;   
 }
 
+
+
+/* Navbar */
+
+.dropdown-menu{
+  margin-top: 0; 
+  padding: 0;
+  /* padding-top: 5px;    */
+  border-radius: 0 !important;   
+  /* background-color: rgb(27, 43, 48,0.98) !important; */
+  background-color: #f3f7fa;   
+}
+.dropdown-menu .dropdown-item{     
+  font-weight: 500;   
+  color:#2a354f;
+  transition:all 0.1s linear;
+}
+.dropdown-menu .dropdown-item:hover{             
+  transition:all 0.1s linear;
+  background-color: transparent !important;
+  transform: translateX(3px);
+}
+
+.dropdown-menu a:hover{
+  /* color: #ffffff; */
+  color:#152a49 ;
+  font-weight: 600;
+  /* text-decoration: underline !important;      */
+}
+ 
+/* show dropdown menu on hover */
+/* .site-navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+} */
+ /*Without this, clicking will make it sticky*/
+/* .site-navbar .dropdown > .dropdown-toggle:active {
+ 
+  pointer-events: none;
+} */
+/* full width mega dropdown menu for services  */
+/* .service-dropdown{
+  position: static;    
+} */
+
+.service-dropdown-menu>div{
+  margin-left: 40px;
+}
+.dropdown:hover .navbar{
+  background: rgb(27, 43, 48,0.95) !important;
+}
+/* service dropdown menu category title */
+ .dropdown-title{   
+  color:rgba(0, 123, 255,0.8);
+  font-weight: 600; 
+  font-size: 15px;
+  margin-bottom: 0;     
+}
+ .dropdown-menu a{
+  font-size: 14px !important;
+  padding: 4px 6px;     
+}
+.dropdown-industry a{
+font-size: 1rem !important;
+margin-left: 1rem !important;
+}
+.dropdown-industry{
+   min-width: 220px;
+}
+/* end - show drop downmenu on hover */
+
+/* drop down menu width */
+@media (min-width: 992px) {
+/* show dropdown menu on hover */
+.site-navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+ /*Without this, clicking will make it sticky*/
+.site-navbar .dropdown > .dropdown-toggle:active {
+ 
+  pointer-events: none;
+}
+/* full width mega dropdown menu for services  */
+.service-dropdown{
+  position: static;    
+}
+
+  .dropdown-menu{         
+      border: transparent;
+  }
+  .service-dropdown-menu,.dropdown-industry{
+    width: 100%;
+    animation: fadeUP .8s cubic-bezier(.34,1.45,.7,1);
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+  @keyframes fadeUP{
+    0%{
+      transform: translateY(20px);        
+    }       
+    100%{
+      transform: translateY(-10px);       
+    }
+  }
+}
