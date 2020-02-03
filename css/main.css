@@ -7,6 +7,9 @@ body{
   font-family: 'Montserrat', sans-serif;
 } 
 
+.site-navbar{
+  background-color: transparent;
+}
 .quick-navigation {
   position: fixed;
   z-index: 1;
@@ -382,7 +385,9 @@ background-color: rgba(0, 144, 166,0.85);
 
 
 /* Navbar */
-
+.nav-link{
+  color: #fff;
+}
 .dropdown-menu{
   margin-top: 0; 
   padding: 0;
@@ -409,20 +414,6 @@ background-color: rgba(0, 144, 166,0.85);
   /* text-decoration: underline !important;      */
 }
  
-/* show dropdown menu on hover */
-/* .site-navbar .dropdown:hover > .dropdown-menu {
-  display: block;
-} */
- /*Without this, clicking will make it sticky*/
-/* .site-navbar .dropdown > .dropdown-toggle:active {
- 
-  pointer-events: none;
-} */
-/* full width mega dropdown menu for services  */
-/* .service-dropdown{
-  position: static;    
-} */
-
 .service-dropdown-menu>div{
   margin-left: 40px;
 }
