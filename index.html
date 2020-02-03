@@ -9,14 +9,30 @@
   <link rel="icon" href="./favicon.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-  <header class="main-navbar py-0" id="mainNavbar">
-    <nav class="navbar navbar-expand-lg  navbar-light bg-light site-navbar py-0" id="navbarMaster">
-      <a class="navbar-brand ml-md-4" href="./index.html">Home</a>
+<body> 
+  <nav class="quick-navigation">
+    <ul>
+      <li><a href="#section-1"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-2"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-3"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-4"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-5"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-6"><span class="circle ml-2"></span></a></li>
+    </ul>
+  </nav>
+ <!-- Page loading   -->
+ <div class="loading-wrapper" id="page-loader"></div>
+
+ <!-- Home page -->
+ <section class="container-fluid home">
+     <!-- Just an image -->
+     <nav class="navbar navbar-expand-lg  navbar-light bg-light site-navbar py-0" id="navbarMaster">
+      <a class="navbar-brand ml-md-4" href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
         aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
         <!-- <span class="navbar-toggler-icon"></span> -->
@@ -51,7 +67,8 @@
                 <!-- services col - 2 -->
                 <div class="col-12 col-lg-3 service-items">                   
                   <p class="dropdown-title ">Application Development</p>                   
-                  <a class="dropdown-item my-1" href="./product-engineering.html">Product Engineering</a>
+                  <a class="dropdown-item my-1" href="./product-engineering.html">Software Development</a>
+                  <a class="dropdown-item my-1" href="./product-engineering.html">Mobile App Development</a>
                   <a class="dropdown-item my-1" href="./web-development.html">Web Development</a>
                   <a class="dropdown-item my-1" href="./digital-marketing.html">Digital Marketing</a>
                 </div>
@@ -60,8 +77,8 @@
                 <div class="col-12 col-lg-3 service-items">
                   <!-- data governace heading-->                  
                   <p class="dropdown-title">Security Services</p>                   
-                  <a class="dropdown-item my-1" href="./it-security.html">IT Security Services</a>
-                  <a class="dropdown-item my-1" href="./information-security.html">Information Security Services</a>
+                  <a class="dropdown-item my-1" href="./it-security.html">Cyber Security</a>
+                  <a class="dropdown-item my-1" href="./information-security.html">Information Security</a>
                   <p class="dropdown-title">BI Solutions</p>
                   <a class="dropdown-item my-1" href="./data-visualization.html">Data Visualization</a>
                   <a class="dropdown-item my-1" href="./predictive-analytics.html">Predictive Analysis</a>
@@ -74,8 +91,7 @@
                   <p class="dropdown-title">Infrastructure</p>
                   <a class="dropdown-item my-1" href="./data-center-transformation.html">Data Center Transformation</a>
                   <a class="dropdown-item my-1" href="./data-center-services.html">Data Center Services</a>
-                  <a class="dropdown-item my-1" href="./network-operation-center.html">Network Operation Center</a>
-                  <a class="dropdown-item my-1" href="./security-operation-center.html">Security Operation Center</a>
+                  <a class="dropdown-item my-1" href="./network-operation-center.html">Network and Security</a>                  
                   <a class="dropdown-item my-1" href="./bigdata.html">Big Data</a>
                   <a class="dropdown-item my-1" href="./end-user-computing.html">End User Computing</a>
                 </div>
@@ -105,49 +121,84 @@
         </ul>
       </div>
     </nav>
-  </header>
-  <nav class="quick-navigation">
-    <ul>
-      <li><a href="#section-1"><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-2"><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-3"><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-4"><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-5"><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-6"><span class="circle ml-2"></span></a></li>
-    </ul>
-  </nav>
+     <div class="row">
+         <!-- captions -->
 
-  <section id="section-1" class="panel home">
-    <div class="page-loading"></div>    
-    <img src="./img/logo/virtech-ksa-logo.png" alt="logo" class="logo">
+         <div class="col-6 home-titles px-5 d-flex justify-content-center align-items-center flex-column">
+             <div class="title title-1">
+                 <h2 class="title-text">Title - 1 Lorem, ipsum dolor sit</h2>
+                 <p class="title-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero
+                     dignissimos eum dolorem, tenetur sint molestias.</p>
+                 <a href="#" class="btn btn-primary">Know More</a>
+             </div>
+             <div class="title title-2">
+                 <h2 class="title-text">Title - 2 Lorem, ipsum dolor sit</h2>
+                 <p class="title-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero
+                     dignissimos eum dolorem, tenetur sint molestias.</p>
+                 <a href="#" class="btn btn-primary">Know More</a>
+             </div>
+             <div class="title title-3">
+                 <h2 class="title-text">Title - 3 Lorem, ipsum dolor sit</h2>
+                 <p class="title-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero
+                     dignissimos eum dolorem, tenetur sint molestias.</p>
+                 <a href="#" class="btn btn-primary">Know More</a>
+             </div>
+             <div class="title title-4">
+                 <h2 class="title-text">Title - 4 Lorem, ipsum dolor sit</h2>
+                 <p class="title-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero
+                     dignissimos eum dolorem, tenetur sint molestias.</p>
+                 <a href="#" class="btn btn-primary">Know More</a>
+             </div>
 
-    <div class="header" data-slide="1">
+             <!-- dots navigation -->
+             <!-- <ul class="slide-dot-nav">
+                 <li><a href="#" id="dot-1"></a></li>
+                 <li><a href="#" id="dot-2"></a></li>
+                 <li><a href="#" id="dot-3"></a></li>
+                 <li><a href="#" id="dot-4"></a></li>                                                                                
+             </ul> -->
 
-      <h1 class="ml7" id="title">
-        <span class="text-wrapper">
-          <span class="letters">Lorem ipsum dolor sit amet</span>
-        </span>
-      </h1>
+             <!-- social links -->
+             <ul class="social-links">
+                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+             </ul>
+         </div>
 
-      <p id="tagline" class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim blanditiis voluptatum,
-        magnam odio, tempora asperiores, quod quasi alias expedita esse eveniet impedit nihil quae nulla sint iure
-        accusantium architecto aperiam.</p>
-      <div class="buttons">
-        <button id="one">LEARN MORE</button>
-      </div>
+         <!-- icon animatin -->
+         <div class="col-6 home-shape d-flex justify-content-center align-items-center">
+             <div class="shape-outer" id="shape-1">
+                 <div class="shape-inner" id="shape-2">
 
-    </div>
+                 </div>
+             </div>
+         </div>
 
-    <div class="home-text">
+         <!-- client logos -->
+         <!-- <div class="col-10 partners">
+             <div class="row">
+                 <div class="col py-4">
+                     <img src="./img/clearbit.png" alt="">
+                 </div>
+                 <div class="col">
+                     <img src="./img/blueprism.png" alt="">
+                 </div>
+                 <div class="col">
+                     <img src="./img/blueprism.png" alt="">
+                 </div>
+                 <div class="col">
+                     <img src="./img/blueprism.png" alt="">
+                 </div>
+                 <div class="col">
+                     <img src="./img/blueprism.png" alt="">
+                 </div>
+             </div>
+         </div> -->
 
-    </div>
-    <div class="home-graphic">
-
-    </div>
-    <div class="circle-shape"></div>
-    <!-- <span class="scroll-icon"></span> -->
-  </section>
-
+     </div>
+ </section>
 
 
   <!-- === SERVICES === -->
@@ -321,12 +372,13 @@
 
   <!-- === ABOUT === -->
   <section id="section-4" class="panel about wrapper">
-    <h2 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+    <h2 class="text-center">About us.</h2>
     
     <div class="container-fluid mt-5">
       <div class="row">
         <div class="col-4 testimonials d-flex justify-content-center align-items-center flex-column px-5 py-2">
-           <div class="testimonial">
+          <h3>Testimonials</h3> 
+          <div class="testimonial">
              <h4>Lorem ipsum dolor sit</h4>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi dolor adipisci quo placeat ipsum soluta similique modi</p>
            </div>
