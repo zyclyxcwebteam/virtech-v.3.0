@@ -99,13 +99,13 @@ var service = gsap.timeline();
 
 for (let i = 1; i < services.length; i++) {
   // service.from('.services',{duration:2,backgroundColor:'#eee',height:'0%'})
-  service.from(services[i],{ yPercent:100, ease: "none",duration:12});
+  service.from(services[i],{ yPercent:100, ease: "none",duration:3});
 }
 
 new ScrollMagic.Scene({
   triggerElement: "#pinMaster",
   triggerHook: "onLeave",
-  duration:"400%"
+  duration:"500%"
 })
   .setPin("#pinMaster")
   .setTween(service)   
