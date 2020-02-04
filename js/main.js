@@ -1,5 +1,8 @@
 
 $(document).ready(function () {
+
+     // circle progress
+     
      
      /* === INITIAL PAGE LOADING  === */
      
