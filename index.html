@@ -11,7 +11,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body> 
@@ -25,7 +25,7 @@
       <li><a href="#section-6"><span class="circle ml-2"></span></a></li>
     </ul>
   </nav>
- <!-- Page loading   -->
+ <!-- Page loading -->
  <div class="loading-wrapper" id="page-loader"></div>
 
  <!-- Home page -->
@@ -52,50 +52,77 @@
               Services
             </a>
             <div class="dropdown-menu service-dropdown-menu bar-box-shadow" aria-labelledby="navbarDropdownServices">
-              <div class="mx-auto row" style="margin-left: 60px !important;">
+              <div class="mx-auto">
 
-                <!-- services col - 1 -->
-                <div class="col-12 col-lg-3 service-items">
-                  <p class="dropdown-title">New Age Technologies</p>
-                  <a class="dropdown-item my-1" href="./artificial-intelligence.html">Artificial Intelligence</a>
-                  <a class="dropdown-item my-1" href="./robotic-process-automation.html">Robotic Process Automation</a>
-                  <a class="dropdown-item my-1" href="./blockchain.html">Blockchain</a>
-                  <a class="dropdown-item my-1" href="./internet-of-things.html">Internet Of Things</a>                                    
-                </div>
+                <!-- services col - 1-->
+                <div class="col-12 col-lg-3 service-items ">
 
-                <!-- services col - 2 -->
-                <div class="col-12 col-lg-3 service-items">                   
-                  <p class="dropdown-title ">Application Development</p>                   
-                  <a class="dropdown-item my-1" href="./software-development.html">Software Development</a>
-                  <a class="dropdown-item my-1" href="./mobile-app-development.html">Mobile App Development</a>
-                  <a class="dropdown-item my-1" href="./web-development.html">Web Development</a>
-                  <a class="dropdown-item my-1" href="./digital-marketing.html">Digital Marketing</a>
-                </div>
-
-                <!-- services col - 3 -->
-                <div class="col-12 col-lg-3 service-items">
-                  <!-- data governace heading-->                  
-                  <p class="dropdown-title">Security Services</p>                   
-                  <a class="dropdown-item my-1" href="./cyber-security.html">Cyber Security</a>
-                  <a class="dropdown-item my-1" href="./information-security.html">Information Security</a>
-                  <p class="dropdown-title">BI Solutions</p>
-                  <a class="dropdown-item my-1" href="./data-visualization.html">Data Visualization</a>
-                  <a class="dropdown-item my-1" href="./predictive-analytics.html">Predictive Analysis</a>
-
-                </div>
-
-                <!-- services col - 4 -->
-                <div class="col-12 col-lg-3 service-items">
+                  <div class="dropdown">
+                    <a class="btn dropdown-item dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      New Age Technologies
+                    </a>
                   
-                  <p class="dropdown-title">Infrastructure</p>
-                  <a class="dropdown-item my-1" href="./data-center-transformation.html">Data Center Transformation</a>
-                  <a class="dropdown-item my-1" href="./data-center-services.html">Data Center Services</a>
-                  <a class="dropdown-item my-1" href="./network-and-security.html">Network and Security</a>                  
-                  <a class="dropdown-item my-1" href="./bigdata.html">Big Data</a>
-                  <a class="dropdown-item my-1" href="./end-user-computing.html">End User Computing</a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu1">
+                        <li class="dropdown-item"><a href="#">Artifical Intelligence</a></li>
+                        <li class="dropdown-item"><a href="#">Robotic Process Automation</a></li>
+                        <li class="dropdown-item"><a href="#">Block Chain</a></li>
+                        <li class="dropdown-item"><a href="#">Internet of Things</a></li>
+                      </ul>
                 </div>
+
+                <div class="dropdown">
+                  <a class="btn dropdown-item dropdown-toggle"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Application Development
+                  </a>
+                
+                  <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu2">
+                      <li class="dropdown-item"><a href="#">Software Development</a></li>
+                      <li class="dropdown-item"><a href="#">Mobile App Development</a></li>
+                      <li class="dropdown-item"><a href="#">Web Development</a></li>
+                      <li class="dropdown-item"><a href="#">Digital Marketing</a></li>
+                    </ul>
               </div>
+              <div class="dropdown">
+                <a class="btn dropdown-item dropdown-toggle"  id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Security Services
+                </a>
+              
+                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu3">
+                    <li class="dropdown-item"><a href="#">Cyber Security Services</a></li>
+                    <li class="dropdown-item"><a href="#">Information Security</a></li>
+                  </ul>
             </div>
+            <div class="dropdown">
+              <a class="btn dropdown-item dropdown-toggle"  id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                BI Solutions
+              </a>
+            
+                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu4">
+                  <li class="dropdown-item"><a href="#">Data Visualisation</a></li>
+                  <li class="dropdown-item"><a href="#">Predictive Analysis</a></li>
+                  <li class="dropdown-item"><a href="#">Some action</a></li>
+                  <li class="dropdown-item"><a href="#">Some other action</a></li>
+                </ul>
+          </div>
+
+          <div class="dropdown">
+            <a class="btn dropdown-item dropdown-toggle"  id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Infrastructure
+            </a>
+          
+              <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu5">
+                <li class="dropdown-item"><a href="#">Data Center Services</a></li>
+                <li class="dropdown-item"><a href="#">Predictive Analysis</a></li>
+                <li class="dropdown-item"><a href="#">Network and Security</a></li>
+                <li class="dropdown-item"><a href="#">Big Data</a></li>
+                <li class="dropdown-item"><a href="#">End User Computing</a></li>
+
+              </ul>
+        </div>
+            </div>
+        </div>
+                </div>               
+           
           </li>
         
           <!-- About us -->
@@ -103,12 +130,10 @@
           <li class="nav-item mx-2 py-3">
             <a class="nav-link" href="./about.html">About us</a>
           </li>
-
           <!-- about us -->
           <!-- <li class="nav-item mx-2 py-3">
             <a class="nav-link" href="./aboutus.html">About us</a>
           </li> -->
-
           <!-- careers -->
           <li class="nav-item mx-2 py-3">
             <a class="nav-link" href="./careers.html">Careers</a>
