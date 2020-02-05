@@ -1,0 +1,40 @@
+.partner img {
+    width: 180px;
+  }
+
+  #slidesContainer{
+      color: #222;
+  }
+.intro-text{
+    font-size: 1.3rem;
+}
+  .container{
+      color: #000;
+  }
+  .slide-title{ 
+     font-size: 2rem;
+    text-align: center;
+    color: #444;
+  }
+
+
+  #capabilities .title-2,#advantages .title-2{
+    font-size: 1.6rem;
+}
+.card{
+    border: none;
+}
+
+  .footer{
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;       
+  }
+  .footer-social li{
+      list-style-type: none;
+  }
+
+  .footer .copyright{
+    margin: 0;
+  }
