@@ -206,11 +206,11 @@ position: relative;
   height: 100%;
   display: block;
 }
-
 .see-btn:hover{
 color:#0689a7;
 }
  /* end services  */
+
 
  /* services */
 /* Horizontal scroll container */
@@ -240,8 +240,7 @@ color:#0689a7;
 .slide {
   height: 100%;
   width: 100%;
-  background-color: transparent;
-  color: #fff;
+  background-color: transparent;   
   position: relative;
 }
 
@@ -258,6 +257,50 @@ color:#0689a7;
   color:#000;
 }
 /* end scroll container */
+
+.services .title-card{
+  height: 400px;
+  width: 400px;
+  border: none;   
+}
+.services .title-card-1{
+  background-color: #8BF8B8;
+}
+.services .title-card-2{
+  background-color: #FC8F3A;
+}
+.services .title-card-3{
+  background-color: #9873BE;
+}
+.services .title-card-4{
+  background-color: #018951;
+}
+
+.services .title-card .card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services .title-card .card-title{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.services .service-cards .service-title{
+font-size: 1.4rem;
+font-weight: 500;
+}
+.service-cards .card{
+  border: none;
+  background-color: transparent;
+}
+
+.service-cards .card-body{
+background-color: #fff;
+margin: 0.8rem;
+padding: 1rem; 
+}
+ 
  /* end services */
 
 /* industries */
