@@ -139,7 +139,7 @@ position: relative;
   opacity: 1;   
 }
 .services .title-card-1{
-  background-color: #8BF8B8;
+  background-color: #2DC3A4;
 }
 .services .title-card-2{
   background-color: #FC8F3A;
@@ -179,6 +179,10 @@ padding: 1rem;
  /* end services */
 
 /* industries */
+#industryContainer{
+  height: 100vh;
+position: relative;
+}
 .industry-letter{
   font-size: 3rem;
   text-align: right;
@@ -231,7 +235,22 @@ padding: 1rem;
 } 
 /* end - industries */
  
+
+
+
  /* company - intro  */
+ /* horizontal scroll */
+ /* Horizontal scroll container */
+#introSlides {
+  width: 300%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+/* end horizontal scroll */
  .company-intro .title-card-1{
    background-color: #0090C8;
  }
@@ -239,7 +258,29 @@ padding: 1rem;
   background-color: #018951;
 }
 
- /* company -intro */
+.testimonials .test-card{
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin:1rem 0.6rem;
+  box-shadow: 5px 5px 20px -8px #f1f1f1;
+}
+.testimonials .test-name{
+  text-align: right;
+  margin: 0;
+}
+.c-val-caption{
+  font-size: 0.8rem;
+}
+.c-val-title{
+  font-size: 1.4rem;
+}
+
+ /* end - company -intro */
+
+
+
+
 
 /* Careers banner */
 .careers-banner{
