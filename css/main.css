@@ -6,9 +6,9 @@
 body{
   font-family: 'Montserrat', sans-serif;
 } 
-.site-navbar{
+/* .site-navbar{
   background-color: transparent;
-}
+} */
 .quick-navigation {
   position: fixed;
   z-index: 1;
@@ -39,6 +39,128 @@ body{
   position: relative;
 }
 
+/* new navbar */
+
+#nav {
+  position:relative;
+  width:620px;
+  margin:0 auto;
+  margin-top:50px;
+  padding:10px;
+}
+
+ul#navigation {
+ 
+  position:relative;
+  float:left;
+
+}
+
+ul#navigation li {
+  display:inline;
+  font-size:12px;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+  float:left;
+  position:relative;
+
+}
+ul{
+  left:500px;
+  margin-top: 18px;
+}
+
+ul#navigation li a {
+  padding:10px 25px;
+  color:#616161;
+  text-decoration:none;
+  display:inline-block;
+  -webkit-transition:color 0.2s linear, background 0.2s linear;
+}
+
+ul#navigation li a:hover {
+  background:#f8f8f8;
+  color:#282828;
+}
+
+ul#navigation li a.first {
+  border-left: 0 none;
+}
+
+ul#navigation li a.last {
+  border-right: 0 none;
+}
+
+ul#navigation li:hover > a {
+  background:#fff;
+}
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+/*these 2 styles are very important,
+being the ones which make the drop-down to appear on hover */
+  visibility:visible;
+  opacity:1;
+}
+
+ul#navigation ul, ul#navigation ul li ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+/*the next 2 styles are very important,
+being the ones which make the drop-down to stay hidden */
+  visibility:hidden;
+  opacity:0;
+  position: absolute;
+  z-index: 99999;
+  width:180px;
+  background:#f8f8f8;
+  box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+  -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+
+}
+
+ul#navigation ul {
+  top: 43px;
+  left: 1px;
+}
+
+ul#navigation ul li ul {
+  top: 0;
+  left: 181px; /* strong related to width:180px; from above */
+}
+
+ul#navigation ul li {
+  clear:both;
+  width:100%;
+  border:0 none;
+  border-bottom:1px solid #c9c9c9;
+}
+
+ul#navigation ul li a {
+  background:none;
+  padding:7px 15px;
+  color:#616161;
+
+  text-decoration:none;
+  display:inline-block;
+  border:0 none;
+  float:left;
+  clear:both;
+  width:150px;
+}
+
+/* New navbar end */
+
+
+
+
+
+
+
+/* 
 .dropdown-submenu>.dropdown-menu {
   top: 0;
   left: 100%;
@@ -81,7 +203,7 @@ body{
   -webkit-border-radius: 6px 0 6px 6px;
   -moz-border-radius: 6px 0 6px 6px;
   border-radius: 6px 0 6px 6px;
-}
+} */
 
 
 
@@ -462,161 +584,6 @@ background-color: rgba(0, 144, 166,0.85);
 }
 
 
-
-/* Navbar */
-.nav-link{
-  color: #fff;
-}
-.dropdown-menu{
-  margin-top: 0; 
-  width: 250px !important;
-  padding: 0;
-  border-radius: 10px;
-  /* padding-top: 5px;    */
-  border-radius: 0 !important;   
-  /* background-color: rgb(27, 43, 48,0.98) !important; */
-  background-color: #f3f7fa;   
-}
-.dropdown-menu .dropdown-item{     
-  font-weight: 500;   
-  color:#2a354f;
-  transition:all 0.1s linear;
-}
-.dropdown-menu .dropdown-item:hover{             
-  transition:all 0.1s linear;
-  background-color: transparent !important;
-  transform: translateX(3px);
-}
-
-.dropdown-menu a:hover{
-  /* color: #ffffff; */
-  color:#152a49 ;
-  font-weight: 600;
-  /* text-decoration: underline !important;      */
-}
- 
-.dropdown-toggle::after {
-  display: inline-block;
-  margin-left: .255em;
-  vertical-align: .255em;
-  content: "";
-   border-top: 0px;
-   border-right: .3em solid transparent;
-  border-bottom: 0;
-  border-left: .3em solid transparent;
-}
-.service-dropdown-menu>div{
-  margin-left: 40px;
-}
-.dropdown:hover .navbar{
-  background: rgb(27, 43, 48,0.95) !important;
-}
-/* service dropdown menu category title */
- .dropdown-title{   
-  color:rgba(0, 123, 255,0.8);
-  font-weight: 600; 
-  font-size: 15px;
-  margin-bottom: 0;     
-}
- .dropdown-menu a{
-  font-size: 14px !important;
-  padding: 4px 6px;     
-}
-.dropdown-industry a{
-font-size: 1rem !important;
-margin-left: 1rem !important;
-}
-.dropdown-industry{
-   min-width: 220px;
-}
-/* end - show drop downmenu on hover */
-
-/* drop down menu width */
-@media (min-width: 992px) {
-/* show dropdown menu on hover */
-.site-navbar .dropdown:hover > .dropdown-menu {
-  display: block;
-}
- /*Without this, clicking will make it sticky*/
-.site-navbar .dropdown > .dropdown-toggle:active {
- 
-  pointer-events: none;
-}
-/* full width mega dropdown menu for services  */
-.service-dropdown{
-  position: relative;    
-  padding: 10px;
-}
-
-  .dropdown-menu{         
-      border: transparent;
-  }
-  .service-dropdown-menu,.dropdown-industry{
-    width: 100%;
-    animation: fadeUP .8s cubic-bezier(.34,1.45,.7,1);
-    animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-  }
-
-  .dropdown-submenu {
-    position: relative !important;
-}
-
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
-
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
-    border-top: none !important;
-}
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
-
-
-
-  @keyframes fadeUP{
-    0%{
-      transform: translateY(20px);        
-    }       
-    100%{
-      transform: translateY(-10px);       
-    }
-  }
-}
 
 
 /* page loading */
