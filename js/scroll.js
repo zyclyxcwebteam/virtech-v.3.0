@@ -1,40 +1,38 @@
- 
-//   horizontal scroll for our services
-  $(function () {
-    // init
-		let controller = new ScrollMagic.Controller();
-		// define movement of panels
-		let wipeAnimation = gsap.timeline()
-			// animate to second panel			 
-			.to("#slideContainer", 1,   {x: "-50%",ease: "power1.out"})	// move in to first panel			 		 			 
-		// create scene to pin and link animation
-		new ScrollMagic.Scene({
-				triggerElement: "#serviceContainer",
-				triggerHook: "onLeave",
-				duration: "800%"
-			})
-			.setPin("#serviceContainer")
-			.setTween(wipeAnimation)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-    });
-    
-    // services page reveal animation on scroll
-    let revealPage = gsap.timeline();
-    revealPage.from('.back-title',{duration:1,opacity:1})
-    revealPage.to('.service-panel',{duration:1,opacity:1})
-    revealPage.from('.card',{duration:1,opacity:0,y:100})
+$(function () {
+  // init Scroll Magic    
+  let controller = new ScrollMagic.Controller();
 
-
-   // let controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-        triggerElement: "#serviceContainer",
-        triggerHook: "onLeave",
-        reverse:false
-        
-    })
-    //.setPin("#serviceContainer")
-    .setTween(revealPage)
-    .addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-  
+  // define movement of panels
+  let slideAnimation = gsap.timeline()
+      .from("#masterContainer .bg-title", { opacity: 1, duration: 2 })       
+      .to("#slidesContainer", 4, { x: "-25%",delay:4 })       
+      .to("#slidesContainer", 4, { x: "-50%" })       
+      .to("#slidesContainer", 4, { x: "-75%" })       
+  // create scene to pin and link animation
+  new ScrollMagic.Scene({
+      triggerElement: "#masterContainer",
+      triggerHook: "onLeave",
+      duration: "800%",                 
+  })
+      .setPin("#masterContainer")
+      .setTween(slideAnimation)
+      .addIndicators() // Indicators - remove on production
+      .addTo(controller);    
+            
+// Company Intro
+let companyIntroAnimation = gsap.timeline()
+.from("#introContainer .bg-title", { opacity: 1, duration: 2 })       
+.to("#introSlides", 4, { x: "-25%",delay:4 })       
+.to("#introSlides", 4, { x: "-50%" })       
+.to("#introSlides", 4, { x: "-75%" })       
+// create scene to pin and link animation
+new ScrollMagic.Scene({
+triggerElement: "#introContainer",
+triggerHook: "onLeave",
+duration: "800%",                 
+})
+.setPin("#introContainer")
+.setTween(companyIntroAnimation)
+.addIndicators() // Indicators - remove on production
+.addTo(controller);    
+});
