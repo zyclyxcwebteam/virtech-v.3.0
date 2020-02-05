@@ -2,28 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <style type="text/css">
-    p{
-        font-family: 'Lato', sans-serif;        
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style type="text/css">
+    p {
+      font-family: 'Lato', sans-serif;
     }
-        body {
-            padding: 0;
-            margin: 0;
-        }
-.intro-text{
-    font-size: 1.2rem;
-    padding-top: 1.5rem;
-}
-        #pinContainer {
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .intro-text {
+      font-size: 1.2rem;
+      padding-top: 1.5rem;
+    }
+
+    /* #pinContainer {
             width: 100%;
-            /* height: 100%; */
+            height: 100%;
             height: 100vh;
             overflow: hidden;
         }
@@ -40,7 +44,7 @@
         }
 
         .panel-2 {
-            background: #E9FAE3;
+            background: #f1f1f1;
         }
 
         .panel-3 {
@@ -49,317 +53,620 @@
 
         .panel-4 {
             background: rgb(13, 64, 97);
-        }
+        } */
 
-        h3 {
-            text-align: center;            
-            font-size: 2.5rem;
-        }
-        .content{
-            font-size: 1.2rem;
-        }
-        .title-2{
-            font-size: 1.6rem;
-        }
-        .partner img{
-            width: 180px;
-        }
-        
-/* Navbar */
-
-.dropdown-menu{
-  margin-top: 0; 
-  padding: 0;
-  /* padding-top: 5px;    */
-  border-radius: 0 !important;   
-  /* background-color: rgb(27, 43, 48,0.98) !important; */
-  background-color: #f3f7fa;   
-}
-.dropdown-menu .dropdown-item{     
-  font-weight: 500;   
-  color:#2a354f;
-  transition:all 0.1s linear;
-}
-.dropdown-menu .dropdown-item:hover{             
-  transition:all 0.1s linear;
-  background-color: transparent !important;
-  transform: translateX(3px);
-}
-
-.dropdown-menu a:hover{
-  /* color: #ffffff; */
-  color:#152a49 ;
-  font-weight: 600;
-  /* text-decoration: underline !important;      */
-}
- 
-/* show dropdown menu on hover */
-/* .site-navbar .dropdown:hover > .dropdown-menu {
-  display: block;
-} */
- /*Without this, clicking will make it sticky*/
-/* .site-navbar .dropdown > .dropdown-toggle:active {
- 
-  pointer-events: none;
-} */
-/* full width mega dropdown menu for services  */
-/* .service-dropdown{
-  position: static;    
-} */
-
-.service-dropdown-menu>div{
-  margin-left: 40px;
-}
-.dropdown:hover .navbar{
-  background: rgb(27, 43, 48,0.95) !important;
-}
-/* service dropdown menu category title */
- .dropdown-title{   
-  color:rgba(0, 123, 255,0.8);
-  font-weight: 600; 
-  font-size: 15px;
-  margin-bottom: 0;     
-}
- .dropdown-menu a{
-  font-size: 14px !important;
-  padding: 4px 6px;     
-}
-.dropdown-industry a{
-font-size: 1rem !important;
-margin-left: 1rem !important;
-}
-.dropdown-industry{
-   min-width: 220px;
-}
-/* end - show drop downmenu on hover */
-
-/* drop down menu width */
-@media (min-width: 992px) {
-/* show dropdown menu on hover */
-.site-navbar .dropdown:hover > .dropdown-menu {
-  display: block;
-}
- /*Without this, clicking will make it sticky*/
-.site-navbar .dropdown > .dropdown-toggle:active {
- 
-  pointer-events: none;
-}
-/* full width mega dropdown menu for services  */
-.service-dropdown{
-  position: static;    
-}
-
-  .dropdown-menu{         
-      border: transparent;
-  }
-  .service-dropdown-menu,.dropdown-industry{
-    width: 100%;
-    animation: fadeUP .8s cubic-bezier(.34,1.45,.7,1);
-    animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-  }
-  @keyframes fadeUP{
-    0%{
-      transform: translateY(20px);        
-    }       
-    100%{
-      transform: translateY(-10px);       
+    h3 {
+      text-align: center;
+      font-size: 2.5rem;
     }
-  }
-}
 
-.quick-navigation {
-  position: fixed;
-  z-index: 1;
-  margin: 0;
-  top: 50%;
-  right: 10px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
+    .content {
+      font-size: 1.2rem;
+    }
 
-.quick-navigation ul{
-  padding: 0;
-  display: flex;
-  flex-direction: column;   
-  min-width: 110px;
-}
+    .title-2 {
+      font-size: 1.6rem;
+    }
 
-.quick-navigation li{
-  flex: 1;
-  list-style-type: none;
-  text-align: right;
-  margin: 8px 0;   
-}
+    .partner img {
+      width: 180px;
+    }
 
-.quick-navigation li a{
-  padding: 0.6rem 0;   
-}
+    /* Navbar */
 
-.quick-navigation .circle{  
-  display: inline-block; 
-  width: 6px;
-  height: 6px;
-  padding: 6px;
-  border-radius: 50%;   
-  box-shadow: 0 0 3px 1px #0090a6;
-}
+    .dropdown-menu {
+      margin-top: 0;
+      padding: 0;
+      /* padding-top: 5px;    */
+      border-radius: 0 !important;
+      /* background-color: rgb(27, 43, 48,0.98) !important; */
+      background-color: #f3f7fa;
+    }
 
-.quick-navigation .quick-nav-text{
-  display: none;
-  color: #0090a6;
-  padding: 0 0.8rem;
- }
+    .dropdown-menu .dropdown-item {
+      font-weight: 500;
+      color: #2a354f;
+      transition: all 0.1s linear;
+    }
 
-.quick-navigation a:hover .quick-nav-text{
-  display: inline-block;
-  color: #fff;
-}
-    </style>
+    .dropdown-menu .dropdown-item:hover {
+      transition: all 0.1s linear;
+      background-color: transparent !important;
+      transform: translateX(3px);
+    }
+
+    .dropdown-menu a:hover {
+      /* color: #ffffff; */
+      color: #152a49;
+      font-weight: 600;
+      /* text-decoration: underline !important;      */
+    }
+
+    /* show dropdown menu on hover */
+    /* .site-navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+} */
+    /*Without this, clicking will make it sticky*/
+    /* .site-navbar .dropdown > .dropdown-toggle:active {
+ 
+  pointer-events: none;
+} */
+    /* full width mega dropdown menu for services  */
+    /* .service-dropdown{
+  position: static;    
+} */
+
+    .service-dropdown-menu>div {
+      margin-left: 40px;
+    }
+
+    .dropdown:hover .navbar {
+      background: rgb(27, 43, 48, 0.95) !important;
+    }
+
+    /* service dropdown menu category title */
+    .dropdown-title {
+      color: rgba(0, 123, 255, 0.8);
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    .dropdown-menu a {
+      font-size: 14px !important;
+      padding: 4px 6px;
+    }
+
+    .dropdown-industry a {
+      font-size: 1rem !important;
+      margin-left: 1rem !important;
+    }
+
+    .dropdown-industry {
+      min-width: 220px;
+    }
+
+    /* end - show drop downmenu on hover */
+
+    /* drop down menu width */
+    @media (min-width: 992px) {
+
+      /* show dropdown menu on hover */
+      .site-navbar .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+
+      /*Without this, clicking will make it sticky*/
+      .site-navbar .dropdown>.dropdown-toggle:active {
+
+        pointer-events: none;
+      }
+
+      /* full width mega dropdown menu for services  */
+      .service-dropdown {
+        position: static;
+      }
+
+      .dropdown-menu {
+        border: transparent;
+      }
+
+      .service-dropdown-menu,
+      .dropdown-industry {
+        width: 100%;
+        animation: fadeUP .8s cubic-bezier(.34, 1.45, .7, 1);
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+      }
+
+      @keyframes fadeUP {
+        0% {
+          transform: translateY(20px);
+        }
+
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+    }
+
+    .quick-navigation {
+      position: fixed;
+      z-index: 1;
+      margin: 0;
+      top: 50%;
+      right: 10px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    .quick-navigation ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-width: 110px;
+    }
+
+    .quick-navigation li {
+      flex: 1;
+      list-style-type: none;
+      text-align: right;
+      margin: 8px 0;
+    }
+
+    .quick-navigation li a {
+      padding: 0.6rem 0;
+    }
+
+    .quick-navigation .circle {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      padding: 6px;
+      border-radius: 50%;
+      box-shadow: 0 0 3px 1px #0090a6;
+    }
+
+    .quick-navigation .quick-nav-text {
+      display: none;
+      color: #0090a6;
+      padding: 0 0.8rem;
+    }
+
+    .quick-navigation a:hover .quick-nav-text {
+      display: inline-block;
+      color: #fff;
+    }
+
+
+    .img-frame {
+      border: 1px solid;
+      width: 500px;
+      height: 280px;
+      border-radius: 4px;
+      background: lightblue;
+      position: relative;
+    }
+
+    .img-frame::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      border-radius: 4px;
+      border: 1px solid rgba(37, 35, 35, 0.602);
+      height: 400px;
+      width: 350px;
+      top: -65px;
+      left: -50px;
+    }
+
+    /* Openings */
+    .card {
+      padding: 20px;
+      width: 320px;
+    }
+
+    .card .pin {
+      color: #8c8c8c;
+    }
+
+    .card a {
+      margin-top: 10px;
+    }
+
+    /* .overlay {
+   position: absolute; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+   transition: .5s ease;
+  background-color: #008CBA;
+} */
+
+    /* .container:hover .overlay {
+  opacity: 1;
+} */
+
+    .card:hover {
+      /* background: blue;
+  color: white; */
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.45);
+    }
+
+    .card:hover hr {
+      background: #f1f1f1c7;
+    }
+
+    .card:hover .pin {
+
+      color: #24aec3;
+
+
+    }
+
+    .card:hover .pin1 {
+
+      color: #007bff;
+
+    }
+
+    /* Openings End */
+  </style>
 </head>
 
 <body>
-    <nav class="quick-navigation">
-        <ul>
-          <li><a href="#section-1"><span class="circle ml-2"></span></a></li>
-          <li><a href="#section-2"><span class="circle ml-2"></span></a></li>
-          <li><a href="#section-3"><span class="circle ml-2"></span></a></li> 
-        </ul>
-      </nav>
-    <header class="main-navbar py-0" id="mainNavbar">
-        <nav class="navbar navbar-expand-lg  navbar-light bg-light site-navbar py-0" id="navbarMaster">
-          <a class="navbar-brand ml-md-4" href="./index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-            aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-master">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
-              <!--  home -->
-              <li class="nav-item active mx-2 py-3">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-    
-              <!-- services -->
-              <li class="nav-item dropdown mx-2 py-3 service-dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Services
-                </a>
-                <div class="dropdown-menu service-dropdown-menu bar-box-shadow" aria-labelledby="navbarDropdownServices">
-                  <div class="mx-auto row" style="margin-left: 60px !important;">
-    
-                    <!-- services col - 1 -->
-                    <div class="col-12 col-lg-3 service-items">
-                      <p class="dropdown-title">New Age Technologies</p>
-                      <a class="dropdown-item my-1" href="./artificial-intelligence.html">Artificial Intelligence</a>
-                      <a class="dropdown-item my-1" href="./robotic-process-automation.html">Robotic Process Automation</a>
-                      <a class="dropdown-item my-1" href="./blockchain.html">Blockchain</a>
-                      <a class="dropdown-item my-1" href="./internet-of-things.html">Internet Of Things</a>
-                      <!-- <a class="dropdown-item py-1 my-1" href="#">Business Automation</a> -->                  
-                    </div>
-    
-                    <!-- services col - 2 -->
-                    <div class="col-12 col-lg-3 service-items">                   
-                      <p class="dropdown-title ">Application Development</p>                   
-                      <a class="dropdown-item my-1" href="./product-engineering.html">Product Engineering</a>
-                      <a class="dropdown-item my-1" href="./web-development.html">Web Development</a>
-                      <a class="dropdown-item my-1" href="./digital-marketing.html">Digital Marketing</a>
-                    </div>
-    
-                    <!-- services col - 3 -->
-                    <div class="col-12 col-lg-3 service-items">
-                      <!-- data governace heading-->                  
-                      <p class="dropdown-title">Security Services</p>                   
-                      <a class="dropdown-item my-1" href="./it-security.html">IT Security Services</a>
-                      <a class="dropdown-item my-1" href="./information-security.html">Information Security Services</a>
-                      <p class="dropdown-title">BI Solutions</p>
-                      <a class="dropdown-item my-1" href="./data-visualization.html">Data Visualization</a>
-                      <a class="dropdown-item my-1" href="./predictive-analytics.html">Predictive Analysis</a>
-    
-                    </div>
-    
-                    <!-- services col - 4 -->
-                    <div class="col-12 col-lg-3 service-items">
-                      
-                      <p class="dropdown-title">Infrastructure</p>
-                      <a class="dropdown-item my-1" href="./data-center-services.html">Data Center Transformation</a>
-                      <a class="dropdown-item my-1" href="./data-center-transformation.html">Data Center Services</a>
-                      <a class="dropdown-item my-1" href="./network-operation-center.html">Network Operation Center</a>
-                      <a class="dropdown-item my-1" href="./security-operation-center.html">Security Operation Center</a>
-                      <a class="dropdown-item my-1" href="./bigdata.html">Big Data</a>
-                      <a class="dropdown-item my-1" href="./end-user-computing.html">End User Computing</a>
-                    </div>
-                  </div>
+  <nav class="quick-navigation">
+    <ul>
+      <li><a href="#section-1"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-2"><span class="circle ml-2"></span></a></li>
+      <li><a href="#section-3"><span class="circle ml-2"></span></a></li>
+    </ul>
+  </nav>
+  <header class="main-navbar py-0" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light site-navbar py-0" id="navbarMaster">
+      <a class="navbar-brand ml-md-4" href="./index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-master">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+          <!--  home -->
+          <li class="nav-item active mx-2 py-3">
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <!-- services -->
+          <li class="nav-item dropdown mx-2 py-3 service-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu service-dropdown-menu bar-box-shadow" aria-labelledby="navbarDropdownServices">
+              <div class="mx-auto row" style="margin-left: 60px !important;">
+
+                <!-- services col - 1 -->
+                <div class="col-12 col-lg-3 service-items">
+                  <p class="dropdown-title">New Age Technologies</p>
+                  <a class="dropdown-item my-1" href="./artificial-intelligence.html">Artificial Intelligence</a>
+                  <a class="dropdown-item my-1" href="./robotic-process-automation.html">Robotic Process Automation</a>
+                  <a class="dropdown-item my-1" href="./blockchain.html">Blockchain</a>
+                  <a class="dropdown-item my-1" href="./internet-of-things.html">Internet Of Things</a>
+                  <!-- <a class="dropdown-item py-1 my-1" href="#">Business Automation</a> -->
                 </div>
-              </li>
-            
-              <!-- About us -->
-              <!-- careers -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="./about.html">About us</a>
-              </li>
-    
-              <!-- about us -->
-              <!-- <li class="nav-item mx-2 py-3">
+
+                <!-- services col - 2 -->
+                <div class="col-12 col-lg-3 service-items">
+                  <p class="dropdown-title ">Application Development</p>
+                  <a class="dropdown-item my-1" href="./product-engineering.html">Product Engineering</a>
+                  <a class="dropdown-item my-1" href="./web-development.html">Web Development</a>
+                  <a class="dropdown-item my-1" href="./digital-marketing.html">Digital Marketing</a>
+                </div>
+
+                <!-- services col - 3 -->
+                <div class="col-12 col-lg-3 service-items">
+                  <!-- data governace heading-->
+                  <p class="dropdown-title">Security Services</p>
+                  <a class="dropdown-item my-1" href="./it-security.html">IT Security Services</a>
+                  <a class="dropdown-item my-1" href="./information-security.html">Information Security Services</a>
+                  <p class="dropdown-title">BI Solutions</p>
+                  <a class="dropdown-item my-1" href="./data-visualization.html">Data Visualization</a>
+                  <a class="dropdown-item my-1" href="./predictive-analytics.html">Predictive Analysis</a>
+
+                </div>
+
+                <!-- services col - 4 -->
+                <div class="col-12 col-lg-3 service-items">
+
+                  <p class="dropdown-title">Infrastructure</p>
+                  <a class="dropdown-item my-1" href="./data-center-services.html">Data Center Transformation</a>
+                  <a class="dropdown-item my-1" href="./data-center-transformation.html">Data Center Services</a>
+                  <a class="dropdown-item my-1" href="./network-operation-center.html">Network Operation Center</a>
+                  <a class="dropdown-item my-1" href="./security-operation-center.html">Security Operation Center</a>
+                  <a class="dropdown-item my-1" href="./bigdata.html">Big Data</a>
+                  <a class="dropdown-item my-1" href="./end-user-computing.html">End User Computing</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- About us -->
+          <!-- careers -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="./about.html">About us</a>
+          </li>
+
+          <!-- about us -->
+          <!-- <li class="nav-item mx-2 py-3">
                 <a class="nav-link" href="./aboutus.html">About us</a>
               </li> -->
-    
-              <!-- careers -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="./careers.html">Careers</a>
-              </li>
-              <!-- contact us -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    <div id="pinContainer">
-        <section class="panel panel-1 blue d-flex justify-contet-center align-items-center flex-column" id="section-1">
-            <h3 class="py-5">Careers</h3>            
-             
-            
-        </section>
-        <section class="panel panel-2 turqoise" id="section-2">
-            <h3 class="py-5">Open Positions</h3>                          
-        </section>        
-        <section class="panel panel-4 bordeaux">
-            <h3 class="py-5 text-white">Get In Touch</h3>
-        </section>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="./js/vendor/animation.gsap.js"></script>
-    <script>
-        $(function () { // wait for document ready
-            // init
-            var controller = new ScrollMagic.Controller();
 
-            // define movement of panels
-            // var wipeAnimation = new TimelineMax()
-            var wipeAnimation = gsap.timeline()
-                .fromTo("section.panel.turqoise", 1, { x: "-100%" }, { x: "0%", ease: "power4.out" })  // in from left
-                //.fromTo("section.panel.green", 1, { x: "-100%" }, { x: "0%", ease: "power4.out" })  // in from right
-                .fromTo("section.panel.bordeaux", 1, { y: "100%" }, { y: "50%", ease: "back.out(1.7)" }); // in from top 
-            // create scene to pin and link animation
-            new ScrollMagic.Scene({
-                triggerElement: "#pinContainer",
-                triggerHook: "onLeave",
-                duration: "700%"
-            })
-                .setPin("#pinContainer")
-                .setTween(wipeAnimation)
-                // .addIndicators() // add indicators (requires plugin)
-                .addTo(controller);
-        });
-    </script>
+          <!-- careers -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="./careers.html">Careers</a>
+          </li>
+          <!-- contact us -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="pinContainer">
+    <section id="section-1">
+      <h3 class="py-5"></h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img-frame"></div>
+          </div>
+          <div class="col-md-6 text-center">
+            <h1>Careers</h1>
+            <br>
+            <h5>Virtech is a technology-driven and customer-focused consulting firm which was established in the year
+              2018.</h5>
+            <br>
+            <p>We are here to give you inclusive portfolio services with a strong determination to corporate citizenship
+              and sustainability. Our targeted audiences are mainly in the Gulf Regions and the Middle East. We ensure
+              to give you compact solutions by going above and beyond the boundary.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="section-2">
+      <h3 class="py-5">Open Positions</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-3">
+            <div class="d-flex">
+              <div class="card">
+                <h5 class="pin1">Web Developer</h5>
+                <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
+                <hr>
+                <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
+                  maiores ducimus fugit.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
+                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+                </div>
+              </div>
+              <!-- <div class="overlay">
+                <div class="text"></div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="d-flex">
+              <div class="card">
+                <h5 class="pin1">Web Developer</h5>
+                <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
+                <hr>
+                <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
+                  maiores ducimus fugit.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
+                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-3">
+            <div class="d-flex">
+              <div class="card">
+                <h5 class="pin1">Web Developer</h5>
+                <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
+                <hr>
+                <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
+                  maiores ducimus fugit.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
+                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="d-flex">
+              <div class="card">
+                <h5 class="pin1">Web Developer</h5>
+                <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
+                <hr>
+                <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
+                  maiores ducimus fugit.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
+                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </section>
+    <section class="mb-5">
+      <h4 class="py-5 text-center">Apply for this Job</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+
+          <div class="col-8">
+
+
+            <form class="form" id="contactForm">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label> First Name:</label>
+                    <input type="text" class="form-control" name="firstname" id="firstname">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="pwd"> Last Name:</label>
+                    <input type="text" class="form-control" name="lasttname" id="lasttname">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label> Email:</label>
+                    <input type="text" class="form-control" name="email" id="email">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label> Phone Number:</label>
+                    <input type="text" class="form-control" name="phone" id="phone">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="message"  name="message"></textarea>
+              </div>
+              <div class="d-flex justify-content-center mt-5">
+                <button type="submit" class="btn btn-success  mx-auto">Submit Application</button>
+
+              </div>
+          </div>
+
+
+          </form>
+        </div>
+      </div>
+  </div>
+
+
+  </section>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="./js/vendor/animation.gsap.js"></script>
+  <script>
+    /*  $(function () { // wait for document ready
+          // init
+          var controller = new ScrollMagic.Controller();
+
+          // define movement of panels
+          // var wipeAnimation = new TimelineMax()
+          var wipeAnimation = gsap.timeline()
+              .fromTo("section.panel.turqoise", 0, { x: "-100%" }, { x: "0%", ease: "power4.out" })  // in from left
+              //.fromTo("section.panel.green", 1, { x: "-100%" }, { x: "0%", ease: "power4.out" })  // in from right
+              .fromTo("section.panel.bordeaux", 1, { x: "-100%" }, { x: "0%", ease: "back.out(1.7)" }); // in from top
+          // create scene to pin and link animation
+          new ScrollMagic.Scene({
+              triggerElement: "#pinContainer",
+              triggerHook: "onLeave",
+              duration: "700%"
+          })
+              .setPin("#pinContainer")
+              .setTween(wipeAnimation)
+              // .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+      });*/
+  </script>
+  <script>
+    // document.getElementById('contactForm').addEventListener("submit", function (event) {
+    //   event.preventDefault();
+
+    //   var firstname=document.getElementById('firstname').value
+    //   var lasttname=document.getElementById('lasttname').value
+    //   var email=document.getElementById('email').value
+    //   var phone=document.getElementById('phone').value
+    //   var message=document.getElementById('message').value
+    //   console.log(firstname,lasttname,email,phone,message+"data")
+    
+
+    //   var formdata = new FormData();
+    // formdata.append("firstname", firstname);
+    // formdata.append("lasttname", lasttname);
+    // formdata.append("email", email);
+    // formdata.append("phone", phone);
+    // formdata.append("message", message);
+
+    // console.log(formdata +"formdata")
+    //   fetch('http://localhost:3003/contact',{ mode: 'no-cors' }, {
+    //     method: 'POST', // or 'PUT'
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: formdata,
+    //   })
+    //   .then(function(response){
+    //     return response.text();
+    //   }).then((function(text){
+    //         console.log(text)
+    //      }).catch(function (error) {
+    //       console.log('Error:', error);
+       
+    // })
+    // })
+ 
+
+  var myForm=document.getElementById('contactForm');
+   myForm.addEventListener('submit',function(e){
+      e.preventDefault();
+
+      const formdata=new FormData(this);
+
+      fetch('http://localhost:3003/contact',{
+        method:'post',
+        body:formdata
+      }).then(function(response){
+         
+         return response.text();
+      }).then(function(text){
+        console.log(text);
+      }).catch(function (error){
+        console.log(error);
+      })
+   })
+    
+   
+
+  </script>
 </body>
 
 </html>
