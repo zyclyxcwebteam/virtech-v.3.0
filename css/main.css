@@ -132,10 +132,11 @@ position: relative;
 }
 /* end scroll container */
 
-.services .title-card{
+.services .title-card,.company-intro .title-card{
   height: 400px;
   width: 400px;
-  border: none;   
+  border: none;
+  opacity: 1;   
 }
 .services .title-card-1{
   background-color: #8BF8B8;
@@ -150,7 +151,7 @@ position: relative;
   background-color: #018951;
 }
 
-.services .title-card .card-body{
+.services .title-card .card-body,.company-intro .card-body{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,6 +232,12 @@ padding: 1rem;
 /* end - industries */
  
  /* company - intro  */
+ .company-intro .title-card-1{
+   background-color: #0090C8;
+ }
+ .company-intro .title-card-2{
+  background-color: #018951;
+}
 
  /* company -intro */
 
