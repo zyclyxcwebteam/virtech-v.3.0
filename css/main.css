@@ -202,12 +202,17 @@ position: relative;
   height: 100%;
   display: block;
 }
-.see-btn:hover{
-color:#0689a7;
+a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light{
+  color:#047e91;
 }
+
+a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
+  background-color: #dae0e500!important;
+  border: 1px solid;
+  color: aliceblue;
+}
+
  /* end services  */
-
-
  /* services */
 /* Horizontal scroll container */
 #masterContainer,#introContainer{
@@ -366,8 +371,9 @@ padding: 1rem;
 /* Careers banner */
 .careers-banner{
 height: 80vh;
-background-image: url('../img/careers.png');
+background-image: url('../img/team.jpeg');
 background-position: center;
+background-attachment: fixed;
 background-size: cover;
 position: relative;
 color: #fff;
