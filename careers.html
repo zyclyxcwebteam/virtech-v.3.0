@@ -9,6 +9,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <title>Document</title>
   <style type="text/css">
     p {
@@ -24,7 +25,9 @@
       font-size: 1.2rem;
       padding-top: 1.5rem;
     }
+    .hr{
 
+    }
     /* #pinContainer {
             width: 100%;
             height: 100%;
@@ -259,9 +262,15 @@
       top: -65px;
       left: -50px;
     }
+    .social-links i{
+      /* position: absolute; */
+      text-align: left !important;
+      left: 25px; 
+      color: red;
+    }
 
     /* Openings */
-    .card {
+    .card1 {
       padding: 20px;
       width: 320px;
     }
@@ -313,6 +322,23 @@
       color: #007bff;
 
     }
+    .fa-facebook{
+      color: #2727b5;
+    }
+    .fa-twitter{
+      color: #1b7fce;
+    }
+    .fa-linkedin{
+      color: #03A9F4;
+    }
+    /* .card{
+      padding: 0px; 
+   width: 0px; 
+
+    } */
+    /* .border{
+      border: 1px solid;
+    } */
 
     /* Openings End */
   </style>
@@ -447,7 +473,7 @@
 
           <div class="col-3">
             <div class="d-flex">
-              <div class="card">
+              <div class="card card1">
                 <h5 class="pin1">Web Developer</h5>
                 <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
                 <hr>
@@ -466,7 +492,7 @@
 
           <div class="col-3">
             <div class="d-flex">
-              <div class="card">
+              <div class="card card1">
                 <h5 class="pin1">Web Developer</h5>
                 <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
                 <hr>
@@ -483,7 +509,7 @@
 
           <div class="col-3">
             <div class="d-flex">
-              <div class="card">
+              <div class="card card1">
                 <h5 class="pin1">Web Developer</h5>
                 <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
                 <hr>
@@ -499,7 +525,7 @@
 
           <div class="col-3">
             <div class="d-flex">
-              <div class="card">
+              <div class="card card1">
                 <h5 class="pin1">Web Developer</h5>
                 <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
                 <hr>
@@ -527,7 +553,6 @@
 
           <div class="col-8">
 
-
             <form class="form" id="contactForm">
               <div class="row">
                 <div class="col">
@@ -539,7 +564,7 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="pwd"> Last Name:</label>
-                    <input type="text" class="form-control" name="lasttname" id="lasttname">
+                    <input type="text" class="form-control" name="lastname" id="lastname">
                   </div>
                 </div>
               </div>
@@ -559,20 +584,123 @@
               </div>
 
               <div class="form-group">
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Upload Resume</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="resume">
+                          </div>
+                    </div>
+
+                <div class="col-6">
                 <label for="exampleFormControlTextarea1">Example textarea</label>
                 <textarea class="form-control" id="message"  name="message"></textarea>
               </div>
-              <div class="d-flex justify-content-center mt-5">
-                <button type="submit" class="btn btn-success  mx-auto">Submit Application</button>
-
               </div>
+
+        </div>
+          <div class="d-flex justify-content-center mt-5">
+              <button type="submit" class="btn btn-success  mx-auto">Submit Application</button>
+
+            </div>
           </div>
-
-
           </form>
         </div>
       </div>
   </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3>Business Development Manager</h3>
+      <div class="row">
+        <div class="col-8">
+          <h4 class="py-2">Description</h4>
+          <p>Business Development Manager</p>
+
+          <h2>Roles</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae veniam architecto eaque corrupti explicabo consectetur neque, sequi quis impedit at non doloribus. Sapiente, molestias cupiditate minus consequatur qui libero!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores rerum reprehenderit quam necessitatibus, iure ipsam deserunt ipsum dignissimos, nihil esse beatae adipisci, eos illum temporibus aspernatur sunt illo. Modi, eos!</p>
+        <h2>Duties And Responsibilities</h2>
+        <ul>
+          <li>
+            <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business and Marketing is preferred</p>
+            
+          </li>
+          <li>
+              <p>Must be a post graduate in Management from a Tier-1 organisation.</p>
+              
+            </li>
+            <li>
+                <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business and Marketing is preferred</p>
+                
+              </li>
+              <li>
+                  <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business and Marketing is preferred</p>
+                  
+                </li>
+                <li>
+                    <p>Must be a post graduate in Management from a Tier-1 organisation.</p>
+                    
+                  </li>
+        </ul>
+        </div>
+        <div class="col-4 ">
+            <a href="#applicationForm" class="btn btn-primary py-2 mt-5 btn-block btn-shadow-primary">Apply Now</a>
+            <a href="#applicationForm" class="btn mt-2 border text-left btn-block">
+              
+              <i class="fab fa-facebook  mx-4" ></i>
+              
+              <span>Share on facebook</span>
+            
+            </a>
+            <a href="#applicationForm" class="btn mt-2 border btn-block text-left "><i class="fab fa-twitter fa-1x mx-4 mb-2"  ></i><span>Share on Twitter</span></a>
+            <a href="#applicationForm" class="btn mt-2 border btn-block text-left "><i class="fab fa-linkedin mx-4"></i>Share on Linkedin</a>
+
+
+            <div class=" mt-3 border p-4 rounded">
+              <div class="">
+                  <h5 class="">Job details</h5>    
+<hr>
+                  <div class="row hr">                  
+                    <div class="col-5">
+                  <h6>Location</h6>
+                </div>
+                <div class="col-7">
+                    <h6>Riyadh, Saudi Arabia</h6>
+                  </div>
+                </div>
+                <hr>
+                  <div class="row hr">                  
+                    <div class="col-5">
+                  <h6>Experience
+                    </h6>
+                </div>
+                <div class="col-7">
+                    <h6>-</h6>
+                  </div>
+                </div>
+                <hr>
+                  <div class="row hr">                  
+                    <div class="col-5">
+                  <h6>Salary
+                    </h6>
+                </div>
+                <div class="col-7">
+                    <h6>-</h6>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+           
+              </div>
+
+        </div>
+      </div>
+    </div>
 
 
   </section>
@@ -608,48 +736,16 @@
       });*/
   </script>
   <script>
-    // document.getElementById('contactForm').addEventListener("submit", function (event) {
-    //   event.preventDefault();
-
-    //   var firstname=document.getElementById('firstname').value
-    //   var lasttname=document.getElementById('lasttname').value
-    //   var email=document.getElementById('email').value
-    //   var phone=document.getElementById('phone').value
-    //   var message=document.getElementById('message').value
-    //   console.log(firstname,lasttname,email,phone,message+"data")
-    
-
-    //   var formdata = new FormData();
-    // formdata.append("firstname", firstname);
-    // formdata.append("lasttname", lasttname);
-    // formdata.append("email", email);
-    // formdata.append("phone", phone);
-    // formdata.append("message", message);
-
-    // console.log(formdata +"formdata")
-    //   fetch('http://localhost:3003/contact',{ mode: 'no-cors' }, {
-    //     method: 'POST', // or 'PUT'
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: formdata,
-    //   })
-    //   .then(function(response){
-    //     return response.text();
-    //   }).then((function(text){
-    //         console.log(text)
-    //      }).catch(function (error) {
-    //       console.log('Error:', error);
-       
-    // })
-    // })
+   
  
 
   var myForm=document.getElementById('contactForm');
    myForm.addEventListener('submit',function(e){
       e.preventDefault();
+      // swal("Good job!", "You clicked the button!", "success");
 
       const formdata=new FormData(this);
+      console.log(formdata)
 
       fetch('http://localhost:3003/contact',{
         method:'post',
@@ -657,8 +753,11 @@
       }).then(function(response){
          
          return response.text();
+         console.log(response.text()+"responce is")
+
+
       }).then(function(text){
-        console.log(text);
+        console.log(text+"text is");
       }).catch(function (error){
         console.log(error);
       })
