@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 :root{
   --bgColor:#000;  
 }
@@ -139,6 +140,9 @@ body{
 .services .service-text{
   display: none;
 }
+.services .more-info{
+  display: none;
+} 
 .scroll-icon{
   height: 40px;
   width:30px;
@@ -234,36 +238,45 @@ body{
    position: relative;
    /* overflow: hidden;      */
 }
-.panel-1,.panel-2,.panel-3{
+.about .panel-1,.panel-2,.panel-3{
   position: absolute;
   top: 0;
   bottom: 0;      
   height: 70vh;       
 }
-.panel-1{
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.about .panel-1{
+ background-color: #E6F4F1;
   left:0;
   right:40%;
   z-index: 10;
+  color: #324B50;
 }
 .panel-2{
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-  left:20%;
+ background-color: #8BF8B8;
+  left:10%;
   right:20%;
   z-index: 8;
 }
 .panel-3{
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  left:40%;
+  background-color: #FFE9D0;
+  left:20%;
   right:0;
   z-index: 6;
 }
 .panel-title{
-  color: #fff;
+  color: #324B50;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   float:right;
   margin-top: 2rem;
+  text-align: center;
+  }
+  .about .panel-1 .panel-title{
+    color: #324B50;
+  }
+
+  .about .panel-2 .panel-title{
+    color: #324B50;
   }
 
   /* new about us */
@@ -627,3 +640,7 @@ width: 200px;
 /* filter: grayscale(100%); */
 }
 /* end - partner logos */
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto Slab', serif;
+}

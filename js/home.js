@@ -136,3 +136,6 @@ new ScrollMagic.Scene({
 //       indent: 40
 //     });
 // });
+let flexPanels = gsap.timeline({repeat:-1,repeatDelay:1,delay:2,duration:4,yoyo:true,ease: "bounce.out"})
+flexPanels.to('.panel-1',{right:"80%",left:"-40%"})
+flexPanels.to('.panel-2',{right:"60%",left:"-10%"},"+=2")
