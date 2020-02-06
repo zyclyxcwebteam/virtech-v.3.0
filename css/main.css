@@ -441,7 +441,9 @@ overflow: hidden;
   z-index: 10;
   width: 58.8%;
   height: 100%;
-  background-color: rgba(0, 144, 166,0.75);
+  /* background-color: rgba(0, 144, 166,0.75); */
+  background-color: hsla(189, 16%, 24%, 0.749);
+
   transform: skew(200.25deg);
   left: -125px;
 }
@@ -452,7 +454,8 @@ overflow: hidden;
   z-index: 10;
   width: 58.8%;
   height: 100%;
-  background-color: rgba(1, 137, 81,0.75);
+  /* background-color: rgba(1, 137, 81,0.75); */
+  background-color: rgba(45, 107, 81, 0.75);
   transform: skew(200.25deg);
   
 }
@@ -481,6 +484,50 @@ background-color: rgba(0, 144, 166,0.85);
   margin: 1rem auto;
   color: #fff;   
 }
+/* .trns-text{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+  font-size:10em;
+  color: #fff;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  text-shadow: 0 5px 10px rgba(0,0,0,1);
+  mix-blend-mode: overlay;
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+  background:rgba(0,0,0,2);
+  } */
+
+.tec{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/team.jpg');
+    background-position: center;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    padding-top: 400px;
+    -webkit-background-clip: text;
+    color: transparent;
+    left:200px;
+    font-weight: 900;
+    
+}
+.tec1{
+  height: 100vh;
+  width: 100%;
+  background-image: url('../img/team.jpg');
+  background-position: center;
+  position: relative;
+  transform: translate(50%, 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+  right: 200px;
+  font-weight: 900;  
+}
+
 
 /* contact banner */
 
