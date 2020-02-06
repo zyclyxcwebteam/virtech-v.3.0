@@ -30,7 +30,7 @@ $(function () {
   new ScrollMagic.Scene({
       triggerElement: "#masterContainer",
       triggerHook: "onLeave",
-      duration: "200%",                 
+      duration: "400%",                 
   })
       .setPin("#masterContainer")
       .setTween(slideAnimation)
@@ -48,7 +48,7 @@ let industryAnimation = gsap.timeline()
 new ScrollMagic.Scene({
   triggerElement: "#industryContainer",
   triggerHook: "onLeave",
-  duration: "100%",                 
+  duration: "400%",                 
   })
   .setPin("#industryContainer")
   .setTween(industryAnimation)
@@ -78,15 +78,13 @@ duration: "600%",
 
 $(".services .service-cards .card").each(createHover);
 function createHover(i, element) {
-
   var border = gsap.timeline({duration:0.2});      
   border.to($(this).find('.top-line'),{width:'100%',duration:0.2})
   border.to($(this).find('.right-line'),{height:'100%',duration:0.2})
   border.to($(this).find('.bottom-line'),{width:'100%',duration:0.2})
   border.to($(this).find('.left-line'),{height:'100%',duration:0.2})
   console.log(element)
-  $(element).hover(doIt);
- console.log(element)
+  $(element).hover(doIt);  
   function doIt() {
      border.reversed() ? border.play() : border.reverse();     
   }
