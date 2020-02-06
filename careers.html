@@ -333,6 +333,88 @@
     .fa-linkedin{
       color: #03A9F4;
     }
+    /* File */
+    .custom-file-label{
+      background-color: lightblue;
+      border: 1.5px dashed rgb(62, 167, 202);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .custom-file-label::after{
+    display: none;
+    }
+
+
+
+
+
+/* 3d-flip */
+.box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+.box .face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition:  ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+
+}
+.front-text h5{
+  color: #007bff;
+}
+.front-text .pin{
+  color: #0090a6;
+}
+.box .face.front{
+  background: #fff;
+  /* border: 1px solid #ccc; */
+}
+.box:hover .face.front{
+  transform: perspective(500px) rotateY(180deg);
+}
+.box .face.Back{
+  background: rgb(247, 247, 247);
+  color: #ff0;
+  transform: perspective(500px) rotateY(180deg);
+}
+.box:hover .face.Back{
+  transform: perspective(500px) rotateY(360deg);
+}
+.box .face .front-text{
+  font-size: 12px;
+  width: 200px;
+  transform: perspective(500px) translateZ(40px );
+}
+
+.box .face .Back-text{
+  width: 200px;
+  transform: perspective(500px) translateZ(40px );
+}
+
+
+
+
+
+
+
+
+
+
+
     /* .card{
       padding: 0px; 
    width: 0px; 
@@ -583,75 +665,80 @@ return false;
       </div>
 
     </section>
-    <section id="section-2">
+    <section id="section-2" style="background-color: #f1f1f1; padding-bottom: 40px;">
       <h3 class="py-5">Open Positions</h3>
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-around">
 
-          <div class="col-3">
-            <div class="d-flex">
-              <div class="card card1">
+          <div class="box">
+            <div class="face front">
+              <div class="front-text">
                 <h5 class="pin1">Web Developer</h5>
                 <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
                 <hr>
                 <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
                   maiores ducimus fugit.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
-                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
                 </div>
-              </div>
-              <!-- <div class="overlay">
-                <div class="text"></div>
-              </div> -->
             </div>
-          </div>
-
-          <div class="col-3">
-            <div class="d-flex">
-              <div class="card card1">
-                <h5 class="pin1">Web Developer</h5>
-                <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
-                <hr>
-                <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
-                  maiores ducimus fugit.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
+            <div class="face Back">
+              <div class="Back-text">
+                <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
                   <a href="#" class="btn btn-sm  btn-info">Read More</a>
-                </div>
               </div>
             </div>
           </div>
 
-
-          <div class="col-3">
-            <div class="d-flex">
-              <div class="card card1">
+          <div class="box">
+            <div class="face front">
+              <div class="front-text">
                 <h5 class="pin1">Web Developer</h5>
                 <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
                 <hr>
                 <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
                   maiores ducimus fugit.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
-                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
                 </div>
+            </div>
+            <div class="face Back">
+              <div class="Back-text">
+                <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
+                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
               </div>
             </div>
           </div>
 
-          <div class="col-3">
-            <div class="d-flex">
-              <div class="card card1">
+
+          <div class="box">
+            <div class="face front">
+              <div class="front-text">
                 <h5 class="pin1">Web Developer</h5>
                 <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
                 <hr>
                 <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
                   maiores ducimus fugit.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
-                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
                 </div>
+            </div>
+            <div class="face Back">
+              <div class="Back-text">
+                <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
+                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="face front">
+              <div class="front-text">
+                <h5 class="pin1">Web Developer</h5>
+                <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad</p>
+                <hr>
+                <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto ullam
+                  maiores ducimus fugit.</p>
+                </div>
+            </div>
+            <div class="face Back">
+              <div class="Back-text">
+                <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
+                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
               </div>
             </div>
           </div>
@@ -702,23 +789,27 @@ return false;
                 </div>
               </div>
 
-              <div class="form-group">
-
                 <div class="row">
+
                     <div class="col-6">
-                        <div class="form-group">
-                            <label for="exampleFormControlFile1">Upload Resume</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="resume">
-                          </div>
+                      <label>Upload Resume</label>
+                      <div class="input-group mb-3">
+                        <div class="custom-file">
+                          
+                          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                      </div>
                     </div>
 
                 <div class="col-6">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <text area class="form-control" id="message"  name="message" autocomplete="off"></text area>
-              </div>
+                <label for="message">Subject</label>
+                <textarea class="form-control" id="message"  name="message"></textarea>
               </div>
 
-        </div>
+              </div>
+
+      
           <div class="d-flex justify-content-center mt-5">
               <button type="submit" class="btn btn-success  mx-auto">Submit Application</button>
 
