@@ -7,529 +7,354 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <title>Document</title>
-  <style type="text/css">
-    .logo {
-      max-width: 160px;
-    }
 
-    p {
-      font-family: 'Lato', sans-serif;
-    }
+  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/template.css">
+  <link rel="stylesheet" href="./css/services.css">
 
-    body {
-      padding: 0;
-      margin: 0;
-    }
-
-    .intro-text {
-      font-size: 1.2rem;
-      padding-top: 1rem;
-    }
-
-    #pinContainer {
-      width: 100%;
-      height: 100%;
-      height: 100vh;
-      overflow:scroll;
-    }
-
-    .panel {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-
-    }
-
-    .panel-1 {
-      background: #ffffff;
-    }
-
-    .panel-2 {
-      background: #E9FAE3;
-    }
-
-    .panel-3 {
-      background: #fafafa;
-    }
-
-    .panel-4 {
-      background: rgb(13, 64, 97);
-    }
-
-    h3 {
-      text-align: center;
-      font-size: 2.5rem;
-    }
-
-    .content {
-      font-size: 1.2rem;
-    }
-
-    .title-2 {
-      font-size: 1.6rem;
-    }
-
-    .partner img {
-      width: 180px;
-    }
-
-    /* Navbar */
-
-    .dropdown-menu {
-      margin-top: 0;
-      padding: 0;
-      /* padding-top: 5px;    */
-      border-radius: 0 !important;
-      /* background-color: rgb(27, 43, 48,0.98) !important; */
-      background-color: #f3f7fa;
-    }
-
-    .dropdown-menu .dropdown-item {
-      font-weight: 500;
-      color: #2a354f;
-      transition: all 0.1s linear;
-    }
-
-    .dropdown-menu .dropdown-item:hover {
-      transition: all 0.1s linear;
-      background-color: transparent !important;
-      transform: translateX(3px);
-    }
-
-    .dropdown-menu a:hover {
-      /* color: #ffffff; */
-      color: #152a49;
-      font-weight: 600;
-      /* text-decoration: underline !important;      */
-    }
- 
-    .service-dropdown-menu>div {
-      margin-left: 40px;
-    }
-
-    .dropdown:hover .navbar {
-      background: rgb(27, 43, 48, 0.95) !important;
-    }
-
-    /* service dropdown menu category title */
-    .dropdown-title {
-      color: rgba(0, 123, 255, 0.8);
-      font-weight: 600;
-      font-size: 15px;
-      margin-bottom: 0;
-    }
-
-    .dropdown-menu a {
-      font-size: 14px !important;
-      padding: 4px 6px;
-    }
-
-    .dropdown-industry a {
-      font-size: 1rem !important;
-      margin-left: 1rem !important;
-    }
-
-    .dropdown-industry {
-      min-width: 220px;
-    }
-
-    /* end - show drop downmenu on hover */
-
-    /* drop down menu width */
-    @media (min-width: 992px) {
-
-      /* show dropdown menu on hover */
-      .site-navbar .dropdown:hover>.dropdown-menu {
-        display: block;
-      }
-
-      /*Without this, clicking will make it sticky*/
-      .site-navbar .dropdown>.dropdown-toggle:active {
-
-        pointer-events: none;
-      }
-
-      /* full width mega dropdown menu for services  */
-      .service-dropdown {
-        position: static;
-      }
-
-      .dropdown-menu {
-        border: transparent;
-      }
-
-      .service-dropdown-menu,
-      .dropdown-industry {
-        width: 100%;
-        animation: fadeUP .8s cubic-bezier(.34, 1.45, .7, 1);
-        animation-fill-mode: both;
-        -webkit-animation-fill-mode: both;
-      }
-
-      @keyframes fadeUP {
-        0% {
-          transform: translateY(20px);
-        }
-
-        100% {
-          transform: translateY(-10px);
-        }
-      }
-    }
-
-    .quick-navigation {
-      position: fixed;
-      z-index: 1;
-      margin: 0;
-      top: 50%;
-      right: 10px;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-
-    .quick-navigation ul {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-width: 110px;
-    }
-
-    .quick-navigation li {
-      flex: 1;
-      list-style-type: none;
-      text-align: right;
-      margin: 8px 0;
-    }
-
-    .quick-navigation li a {
-      padding: 0.6rem 0;
-    }
-
-    .quick-navigation .circle {
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      padding: 6px;
-      border-radius: 50%;
-      box-shadow: 0 0 3px 1px #0090a6;
-    }
-
-    .quick-navigation .quick-nav-text {
-      display: none;
-      color: #0090a6;
-      padding: 0 0.8rem;
-    }
-
-    .quick-navigation a:hover .quick-nav-text {
-      display: inline-block;
-      color: #fff;
-    }
-  </style>
 </head>
 
 <body>
-  <nav class="quick-navigation">
-    <ul>
-      <li><a href="#section-1"><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-2"><span class="circle ml-2"></span></a></li>
-      <li><a href="#section-3"><span class="circle ml-2"></span></a></li>
-    </ul>
-  </nav>
+  <section>
+    <nav class="navbar navbar-expand-lg site-navbar p-0 nav-end" id="navbarMaster">
+      <a class="navbar-brand ml-md-4" href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars"></i>
+      </button>
 
-  <nav class="navbar navbar-expand-lg  navbar-light bg-light site-navbar py-0" id="navbarMaster">
-    <a class="navbar-brand ml-md-4" href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-      aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="navbar-toggler-icon"></span> -->
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-master">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
-        <!--  home -->
-        <li class="nav-item active mx-2 py-3">
-          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+      <ul id="navigation">
+        <li><a href="./index.html" class="first">Home</a></li>
+        <li><a href="#">Services &raquo;</a>
+          <ul>
+
+            <li><a href="#"> New Age Technologies&raquo;</a>
+              <ul>
+                <li class=""><a href="./artificial-intelligence.html">Artifical Intelligence</a></li>
+                <li class=""><a href="./robotic-process-automation.html">RPA</a></li>
+                <li class=""><a href="./blockchain.html">Block Chain</a></li>
+                <li class=""><a href="./internet-of-things.html">Internet of Things</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#"> Application Development &raquo;</a>
+              <ul>
+                <li class=""><a href="./software-development.html">Software Development</a></li>
+                <li class=""><a href="./mobile-app-development.html">Mobile App Development</a></li>
+                <li class=""><a href="./web-development.html">Web Development</a></li>
+                <li class=""><a href="./digital-marketing.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#"> Security Services &raquo;</a>
+              <ul>
+                <li class=""><a href="./cyber-security.html">Cyber Security Services</a></li>
+                <li class=""><a href="./information-security.html">Information Security</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#"> BI Solutions &raquo;</a>
+              <ul>
+                <li class=""><a href="#">Data Visualisation</a></li>
+                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
+
+              </ul>
+            </li>
+
+            <li><a href="#"> Infrastructure &raquo;</a>
+              <ul>
+                <li class=""><a href="./data-center-services.html">Data Center Services</a></li>
+                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
+                <li class=""><a href="./network-and-security.html">Network and Security</a></li>
+                <li class=""><a href="./bigdata.html">Big Data</a></li>
+                <li class=""><a href="./end-user-computing.html">End User Computing</a></li>
+              </ul>
+            </li>
+
+          </ul>
         </li>
 
-        <!-- services -->
-        <li class="nav-item dropdown mx-2 py-3 service-dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Services
-          </a>
-          <div class="dropdown-menu service-dropdown-menu bar-box-shadow" aria-labelledby="navbarDropdownServices">
-            <div class="mx-auto row" style="margin-left: 60px !important;">
-
-              <!-- services col - 1 -->
-              <div class="col-12 col-lg-3 service-items">
-                <p class="dropdown-title">New Age Technologies</p>
-                <a class="dropdown-item my-1" href="./artificial-intelligence.html">Cyber Security</a>
-                <a class="dropdown-item my-1" href="./robotic-process-automation.html">Robotic Process Automation</a>
-                <a class="dropdown-item my-1" href="./blockchain.html">Blockchain</a>
-                <a class="dropdown-item my-1" href="./internet-of-things.html">Internet Of Things</a>
-              </div>
-
-              <!-- services col - 2 -->
-              <div class="col-12 col-lg-3 service-items">
-                <p class="dropdown-title ">Application Development</p>
-                <a class="dropdown-item my-1" href="./software-development.html">Software Development</a>
-                <a class="dropdown-item my-1" href="./mobile-app-development.html">Mobile App Development</a>
-                <a class="dropdown-item my-1" href="./web-development.html">Web Development</a>
-                <a class="dropdown-item my-1" href="./digital-marketing.html">Digital Marketing</a>
-              </div>
-
-              <!-- services col - 3 -->
-              <div class="col-12 col-lg-3 service-items">
-                <!-- data governace heading-->
-                <p class="dropdown-title">Security Services</p>
-                <a class="dropdown-item my-1" href="./cyber-security.html">Cyber Security</a>
-                <a class="dropdown-item my-1" href="./information-security.html">Information Security</a>
-                <p class="dropdown-title">BI Solutions</p>
-                <a class="dropdown-item my-1" href="./data-visualization.html">Data Visualization</a>
-                <a class="dropdown-item my-1" href="./predictive-analytics.html">Predictive Analysis</a>
-
-              </div>
-
-              <!-- services col - 4 -->
-              <div class="col-12 col-lg-3 service-items">
-
-                <p class="dropdown-title">Infrastructure</p>
-                <a class="dropdown-item my-1" href="./data-center-transformation.html">Data Center Transformation</a>
-                <a class="dropdown-item my-1" href="./data-center-services.html">Data Center Services</a>
-                <a class="dropdown-item my-1" href="./network-and-security.html">Network and Security</a>
-                <a class="dropdown-item my-1" href="./bigdata.html">Big Data</a>
-                <a class="dropdown-item my-1" href="./end-user-computing.html">End User Computing</a>
-              </div>
-            </div>
-          </div>
+        <li><a href="./about.html">About us</a>
+          <!-- <ul>
+            <li><a href="#">Why-Virtech </a>
+            <li><a href="./about.html"> About Us</a>
+          </ul> -->
         </li>
-
-        <!-- About us -->
-        <!-- careers -->
-        <li class="nav-item mx-2 py-3">
-          <a class="nav-link" href="./about.html">About us</a>
-        </li>
-
-        <!-- about us -->
-        <!-- <li class="nav-item mx-2 py-3">
-              <a class="nav-link" href="./aboutus.html">About us</a>
-            </li> -->
-
-        <!-- careers -->
-        <li class="nav-item mx-2 py-3">
-          <a class="nav-link" href="./careers.html">Careers</a>
-        </li>
-        <!-- contact us -->
-        <li class="nav-item mx-2 py-3">
-          <a class="nav-link" href="./contactus.html">Contact</a>
-        </li>
+        <li><a href="./careers.html">Careers</a></li>
+        <li><a href="#" class="last">Contact</a></li>
       </ul>
-    </div>
-  </nav>
- 
-  <div id="pinContainer">
+    </nav>
+  </section>
+  <div id="masterContainer">
+    <h4 class="bg-title">Cyber Security</h4>
+    <div id="slidesContainer">
+      <!-- Slide -1 -->
+      <section class="slide slide-1">
+        <div class="container d-flex justify-content-center align-items-center h-100">
+          <div class="content row mx-auto">
+             <div class="col-5">
+              <div class="card title-card title-card-1">
+                <div class="card-body">
+                  <h2 class="card-title">Cyber Security</h2>
+                </div>
+              </div>
+             </div>
+            <div class="col-7 mx-auto px-5 intro-text d-flex justify-content-center align-items-center flex-column">
+              <p>Digital solutions today are engineered with many systems coming together and are expected to serve a
+                large number of users accessing the solution over a variety of devices. The solution can not be
+                delivered to the users without architecting and managing the systems behind the solution.</p>
+
+              <p>In addition, users expect a constant delivery of new features and functionality which requires a
+                design methodology and automation to take the code from the hands of a developer to a solution in
+                the hands of a user.</p>
+            </div>             
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide -2 -->
+      <section class="slide slide-2">         
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
+          <div class="content-wrapper" id="advantages">
+            <div class="row">
+            <div class="col-3">
+              <div class="card title-card title-card-1">
+                <div class="card-body">
+                  <h2 class="card-title">Capabilities</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 content-inner">
+              <div class="row">
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>            
+          </div>         
+        </div>
+      </section>
+
+      <!-- Slide -3 -->
+      <section class="slide slide-3 d-flex  align-items-center flex-column">
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
+          <div class="content-wrapper" id="advantages">
+            <div class="row">
+            <div class="col-3">
+              <div class="card title-card title-card-1">
+                <div class="card-body">
+                  <h2 class="card-title">Services</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 content-inner">
+              <div class="row">
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>            
+          </div>         
+        </div>
+
+      </section>
+      
+      <!-- Slide -4 -->
+      <section class="slide slide-4 d-flex align-items-center flex-column">
+      <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
+          <div class="content-wrapper" id="advantages">
+            <div class="row">
+            <div class="col-3">
+              <div class="card title-card title-card-1">
+                <div class="card-body">
+                  <h2 class="card-title">Our Partners</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 content-inner partners">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="partner-logo">
+                        <img src="./img/uipath.png" alt="">
+                      </p>
+                      <h4>Lorem ipsum dolor</h4>                       
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="partner-logo">
+                        <img src="./img/uipath.png" alt="">
+                      </p>
+                      <h4>Lorem ipsum dolor</h4>                       
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="partner-logo">
+                        <img src="./img/uipath.png" alt="">
+                      </p>
+                      <h4>Lorem ipsum dolor</h4>                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>            
+          </div>         
+        </div>
   
-    <section class="panel panel-1 blue d-flex justify-contet-center align-items-center flex-column" id="section-1">
-      <h3 class="py-5">Cyber Security</h3>
-      <div class="content row mx-auto">
-        <h4 class="text-left col-7 mx-auto py-2">Overview</h4>
-        <div class="col-7 mx-auto intro-text">
-          <p>Digital solutions today are engineered with many systems coming together and are expected to serve a
-            large number of users accessing the solution over a variety of devices. The solution can not be
-            delivered to the users without architecting and managing the systems behind the solution.</p>
-
-          <p>In addition, users expect a constant delivery of new features and functionality which requires a
-            design methodology and automation to take the code from the hands of a developer to a solution in
-            the hands of a user.</p>
-        </div>
-
-        <h4 class="text-left col-7 mx-auto py-2 my-3">Our Partners</h4>
-        <div class="row partner col-7 mx-auto">
-          <div class="col-4">
-            <img src="./img/uipath.png" alt="">
-          </div>
-          <div class="col-4">
-            <img src="./img/uipath.png" alt="">
-          </div>
-          <div class="col-4">
-            <img src="./img/uipath.png" alt="">
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-
-    <section class="panel panel-2 turqoise" id="section-2">
-      <h3 class="py-3">Cyber Security</h3>
-      <h4 class="text-center">Capabilities/Advantages</h4>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 mt-4 py-3">
-                <p class="service-icon">
-                  <img src="./img/ai.svg" alt="">
-                </p>
-                <h2 class="title-2 mt-5">Lorem ipsum dolor sit</h2>
-                <div class="service-text">
-                  <p class="my-3">Cyber Security is an innovative technology that allows SMEs to configure
-                    built-in robots or computer software, to mimic and integrate the actions of your employees
-                    interacting within digital systems to execute a business process. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 mt-4 py-3">
-                <p class="service-icon">
-                  <img src="./img/ai.svg" alt="">
-                </p>
-                <h2 class="title-2 mt-5">Lorem ipsum dolor sit</h2>
-                <div class="service-text">
-                  <p class="my-3">Cyber Security is an innovative technology that allows SMEs to configure
-                    built-in robots or computer software, to mimic and integrate the actions of your employees
-                    interacting within digital systems to execute a business process. </p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 mt-4 py-3">
-                <p class="service-icon">
-                  <img src="./img/ai.svg" alt="">
-                </p>
-                <h2 class="title-2 mt-5">Lorem ipsum dolor sit</h2>
-                <div class="service-text">
-                  <p class="my-3">Cyber Security is an innovative technology that allows SMEs to configure
-                    built-in robots or computer software, to mimic and integrate the actions of your employees
-                    interacting within digital systems to execute a business process. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel panel-3 green" id="section-3">
-      <h3 class="py-3">Cyber Security</h3>
-      <h4 class="text-center">Solutions/Services</h4>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 py-2">
-                <p class="service-icon">
-                  <img src="./img/sol.svg" alt="">
-                </p>
-                <h2 class="title-2 mt-3">Lorem ipsum dolor sit</h2>
-                <div class="service-text">
-                  <p class="my-2">Cyber Security is an innovative technology that allows SMEs to configure
-                    built-in robots or computer software, to mimic and integrate the actions of your employees
-                    interacting within digital systems to execute a business process. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 py-2">
-                <p class="service-icon">
-                  <img src="./img/sol.svg" alt="">
-                </p>
-                <h2 class="title-2 mt-3">Lorem ipsum dolor sit</h2>
-                <div class="service-text">
-                  <p class="my-2">Cyber Security is an innovative technology that allows SMEs to configure
-                    built-in robots or computer software, to mimic and integrate the actions of your employees
-                    interacting within digital systems to execute a business process. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 py-2">
-                <p class="service-icon">
-                  <img src="./img/sol.svg" alt="">
-                </p>
-                <h2 class="title-2 mt-3">Lorem ipsum dolor sit</h2>
-                <div class="service-text">
-                  <p class="my-2">Cyber Security is an innovative technology that allows SMEs to configure
-                    built-in robots or computer software, to mimic and integrate the actions of your employees
-                    interacting within digital systems to execute a business process. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h4 class="text-center">Achievements</h4>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 py-2">
-                <h2 class="title-2 mt-3">Lorem ipsum dolor sit</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 py-2">
-                <h2 class="title-2 mt-3">Lorem ipsum dolor sit</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body m-2 py-2">
-                <h2 class="title-2 mt-3">Lorem ipsum dolor sit</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel panel-4 bordeaux">
-      <h3 class="py-5 text-white">Get In Touch</h3>
-    </section>
+      </section>
+    </div>
 
   </div>
+
+<!-- FOOTER -->
+<footer class="footer pt-4">
+  <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+    <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+      <p class="f-link mt-3"><a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>+966 552 357 583</a></p>
+    </div>
+    <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+      <p class="f-link mt-3"><a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i>
+        info@virtech-ksa.com</a>
+      </p>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+      <p class="f-link mt-3"><i class="fas fa-map-marker-alt"></i><a
+          href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+          Location</a></p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+      <div>
+        <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+          <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                class="fab fa-twitter"></i></a></li>
+          <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin"
+              title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+  <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
+</footer>
+
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js"></script> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="./js/vendor/animation.gsap.js"></script>
-  <script>
-    $(function () { // wait for document ready
-      // init
-      var controller = new ScrollMagic.Controller();
-
-      // define movement of panels
-      // var wipeAnimation = new TimelineMax()
-      var wipeAnimation = gsap.timeline()
-        .fromTo("section.panel.turqoise", 1, { x: "-100%" }, { x: "0%", ease: "power4.out" })  // in from left
-        .fromTo("section.panel.green", 1, { x: "-100%" }, { x: "0%", ease: "power4.out" })  // in from right
-        .fromTo("section.panel.bordeaux", 1, { x: "-100%" }, { x: "0%", ease: "power4.out" }); // in from top 
-      // create scene to pin and link animation
-      new ScrollMagic.Scene({
-        triggerElement: "#pinContainer",
-        triggerHook: "onLeave",
-        duration: "700%"
-      })
-        .setPin("#pinContainer")
-        .setTween(wipeAnimation)
-        // .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-    });
-  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="./js/template.js"></script>
 </body>
-
 </html>
