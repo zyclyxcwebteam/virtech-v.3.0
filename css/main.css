@@ -7,8 +7,6 @@
 body{
   font-family: 'Montserrat', sans-serif;
 } 
-
-
 .wrapper{
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -22,7 +20,7 @@ body{
 
 #nav {
   position:relative;
-  width:620px;
+  /* width:620px; */
   margin:0 auto;
   padding:10px;
 }
@@ -38,7 +36,6 @@ ul#navigation li {
 
 }
 ul{
-
 margin: 0 auto;
 }
 
@@ -46,8 +43,7 @@ ul#navigation li a {
   padding:10px 25px;
   color:#616161;
   text-decoration:none;
-  display:inline-block;
-  -webkit-transition:color 0.2s linear, background 0.2s linear;
+  display:inline-block;   
 }
 
 ul#navigation li a:hover {
@@ -84,13 +80,11 @@ being the ones which make the drop-down to stay hidden */
   width:180px;
   background:#f8f8f8;
   box-shadow:1px 1px 3px #ccc;
-/* css3 transitions for smooth hover effect */
-  -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
-
+/* css3 transitions for smooth hover effect */   
 }
 
 ul#navigation ul {
-  top: 43px;
+  top: 38px;
   left: 1px;
 }
 
@@ -115,12 +109,11 @@ ul#navigation ul li a {
   border:0 none;
   float:left;
   clear:both;
-  width:150px;
+  width:200px;
 }
-.navbar{
-  background: transparent;
-}
-
+.navbar,#navigation{
+  background: transparent !important;   
+} 
 
 /* New navbar end */
 
@@ -131,20 +124,22 @@ ul#navigation ul li a {
 .home{
   height: 100vh; 
   position: relative;
-  background-image:linear-gradient(to left top, rgb(0, 180, 219), rgb(0, 131, 176),#fff 94%)    
+/* background-image:linear-gradient(to left top,#000 0%,#fff 94%)     */
+background-color: #000;
 }
 
 
 .home-titles{
 height: 80vh; 
 position: relative; 
-
+z-index: 99;
 }
 
 .home .title{
   display: none;
   opacity: 0;
   margin: auto 4rem;
+  color: #f4f4f4;
 }
 
 .home .title-text{
@@ -183,18 +178,14 @@ position: relative;
 /* end - social links */
 
 .home-shape{
-  height: 80vh;      
+  height: 80vh;
+  position: relative;      
 }
 
 .shape-outer{
   height: 400px;
-  width: 400px;     
-  border-radius: 50%; 
-  box-shadow:
-      0 0 50px #02A9EA,
-      -10px 0 80px #f0f,
-      10px 0 80px #0ff;
-  position: relative;
+  width: 400px;        
+   position: absolute;;
   overflow: hidden;
   background-color: transparent;
 }
@@ -202,17 +193,9 @@ position: relative;
   height: 100%;
   display: block;
 }
-a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light{
-  color:#047e91;
-}
+ /* end home  */
 
-a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
-  background-color: #dae0e500!important;
-  border: 1px solid;
-  color: aliceblue;
-}
 
- /* end services  */
  /* services */
 /* Horizontal scroll container */
 #masterContainer,#introContainer{
@@ -265,17 +248,17 @@ a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover
   border: none;
   opacity: 1;   
 }
-.services .title-card-1{
-  background-color: #2DC3A4;
+.services .title-card-1{   
+  background-color: #009efa; 
 }
-.services .title-card-2{
-  background-color: #FC8F3A;
+.services .title-card-2{   
+  background-color: #00C9A7;
 }
 .services .title-card-3{
-  background-color: #9873BE;
+  background-color: #618AE5;
 }
 .services .title-card-4{
-  background-color: #018951;
+  background-color: #009EFA;
 }
 
 .services .title-card .card-body,.company-intro .card-body{
@@ -283,14 +266,19 @@ a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0,0.8);
 }
 .services .title-card .card-title{
-  font-size: 1.7rem;
+  font-size: 45px;
   font-weight: 700;
+  color:floralwhite;
+  text-align: center;
 }
 .services .service-cards .service-title{
 font-size: 1.4rem;
-font-weight: 500;
+font-weight: 600;
+color:#444;
+text-align: center;
 }
 .service-cards .card{
   border: none;
@@ -298,9 +286,11 @@ font-weight: 500;
 }
 
 .service-cards .card-body{
-background-color: #fff;
+background-color: #fafafa;
 margin: 0.8rem;
-padding: 1rem; 
+padding: 1rem;
+box-shadow: 8px 8px 20px -18px #00C9A7,0 0 10px 0.1px #bbb;
+border-radius: 0.4rem;
 }
  
  /* end services */
@@ -320,15 +310,19 @@ position: relative;
   flex-direction: column;
 }
 .industry:hover .industry-letter,.industry.active .industry-letter{
-  color: #02A9EA;   
+  color: #fff;   
 }
 
 .industry:hover .industry-title,.industry.active .industry-title{
-  color: #02A9EA;   
+  color: #fff;   
 }
 .industry.active{
   box-shadow: 14px 14px 35px -8px rgba(0, 0, 0,0.1);
+  border: 1px solid #02A9EA;
+  background-color: #02A9EA;
+  color: #fff;
 }
+
 /* industry card border */
 .line,.line-2 {
   position: absolute;
@@ -341,12 +335,12 @@ position: relative;
 }
 .right-line{ 
   right: 0;                         
-  width: 1.5px;   
+  width: 2px;   
 }
 .bottom-line{
   bottom: 0;
   right: 0;
-  height: 1.5px;   
+  height: 2px;   
 }
 .left-line{
   left: 0;
@@ -356,6 +350,15 @@ position: relative;
 .ind-content{
   display: none;
   padding:4rem;
+}
+.ind-content h2{
+  font-size: 2.2rem;
+  color: #02A9EA;
+  font-weight: 600;
+}
+.ind-content p{
+  font-size: 1.3rem;
+  color: #222;
 }
 .ind-content.active{
   display: block;
@@ -396,6 +399,19 @@ position: relative;
   text-align: right;
   margin: 0;
 }
+#introContainer .card-title{
+  font-size: 45px;
+  font-weight: 700;
+  color:floralwhite;
+  text-align: center;
+}
+.company-intro h4{
+font-size: 2.2rem;
+font-weight: 600;
+}
+.intro-content p{
+  font-size: 1.4rem;
+}
 .c-val-caption{
   font-size: 0.8rem;
 }
@@ -411,8 +427,8 @@ position: relative;
 
 /* Careers banner */
 .careers-banner{
-height: 80vh;
-background-image: url('../img/team.jpeg');
+height: 100vh;
+background-image: url('../img/team.jpg');
 background-position: center;
 background-attachment: fixed;
 background-size: cover;
@@ -425,20 +441,20 @@ overflow: hidden;
   position: absolute;
   top: 0;
   z-index: 10;
-  width: 50%;
+  width: 58.8%;
   height: 100%;
-  background-color: rgba(0, 144, 166,0.5);
+  background-color: rgba(0, 144, 166,0.75);
   transform: skew(200.25deg);
-  left: -100px;
+  left: -125px;
 }
 .overlay-2{
   position: absolute;
   top: 0;
-  right: -100px;
+  right: -125px;
   z-index: 10;
-  width: 64%;
+  width: 58.8%;
   height: 100%;
-  background-color: rgba(1, 137, 81,0.5);
+  background-color: rgba(1, 137, 81,0.75);
   transform: skew(200.25deg);
   
 }
@@ -459,6 +475,7 @@ background-color: rgba(0, 144, 166,0.85);
 
 .career-text h3{
   font-size: 3rem;
+  font-weight: 600;
 }
 
 .career-text p{
@@ -470,72 +487,7 @@ background-color: rgba(0, 144, 166,0.85);
 /* contact banner */
 
 /* footer  */
-.footer{
-  background-color: #fff;   
-  position: relative;
-  height: 20vh;
-}
-
-.footer-social{
- margin: 0;
- padding: 0;
-display: flex;
-
-}
-.footer a{
-  color: #fff;
-}
-.footer .copyright{
-  position: absolute;
-  bottom: 1px;
-  left: 40%;
-  color: #555;
-  font-size: 0.8rem;
-}
-
-
-/* social links */
-.social-links{
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  left: 10px;
-  bottom: 0;
-  margin-left: 10px;      
-}      
-
-.social-links li{
-  list-style-type: none;
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;    
-}
-.social-links li .fab{
-  color: #fff;
-}
-/* end - social links */
-
-.footer svg{
-  fill: #E9EFFF;  
-}
-.f-inquiries svg{
-  fill: none;
-  stroke:#e9efff;
-} 
-
-
-.footer{   
-  text-align: left;   
-  background:#fff;   
-}
  
-.footer .f-title{     
-  color: #8d9096;
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 5px;   
-}
-
 .footer a,.footer p{  
  font-size: 1.05rem;   
   color:#333; 
@@ -569,8 +521,7 @@ font-weight: 600;
    height:35px;
    width:35px;
    margin:0 5px;
-   text-align:center;
-   border: 2px solid #72757c;
+   text-align:center;    
    border-radius: 50%;
    display:flex;
    justify-content: center;
@@ -601,21 +552,10 @@ font-weight: 600;
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-.footer .social-network a:hover svg{
-  fill:#111;
-}
-
-  .footer .social-network a:hover{
-    text-decoration: none;
-  }
- .footer-copy{
-   border-top: 1px solid  hsl(206, 41%, 21%);
- } 
- 
-.footer-copy .copy-right{
-  font-weight: 500;
-  font-size: 0.3rem;
-  border-bottom: none !important;
-  color:#222;
+.footer .copyright{
+  margin: 0;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
 }
 /* end - footer */

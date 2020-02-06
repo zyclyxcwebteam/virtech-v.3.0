@@ -16,19 +16,20 @@ var circle = new ProgressBar.Circle('#progress', {
 circle.animate(1);
 
 let homeTitles = gsap.timeline({repeat:-1});
+homeTitles.to('.home-shape',{duration:2,x:-60})
 
-homeTitles.fromTo('.title-1',{display:'none',opacity:0,y:100},{y:0,opacity:1,display:'block',duration:2})
+homeTitles.fromTo('.title-1',{display:'none',opacity:0,y:100,x:180},{y:0,x:180,opacity:1,display:'block',duration:2})
 homeTitles.to('.title-1',{y:-1000,display:'none',opacity:0,duration:0.8,delay:2.5})
 
-homeTitles.fromTo('.title-2',{display:'none',opacity:0,y:100},{y:0,opacity:1,display:'block',duration:2})
+homeTitles.fromTo('.title-2',{display:'none',opacity:0,y:100,x:180},{y:0,x:180,opacity:1,display:'block',duration:2})
 homeTitles.to('.title-2',{y:-1000,display:'none',opacity:0,duration:0.8,delay:2.5})
 
 
-homeTitles.fromTo('.title-3',{display:'none',opacity:0,y:100},{y:0,opacity:1,display:'block',duration:2})
+homeTitles.fromTo('.title-3',{display:'none',opacity:0,y:100,x:180},{y:0,x:180,opacity:1,display:'block',duration:2})
 homeTitles.to('.title-3',{y:-1000,display:'none',opacity:0,duration:0.8,delay:2.5})
 
 
-homeTitles.fromTo('.title-4',{display:'none',opacity:0,y:100},{y:0,opacity:1,display:'block',duration:2})
+homeTitles.fromTo('.title-4',{display:'none',opacity:0,y:100,x:180},{y:0,x:180,opacity:1,display:'block',duration:2})
 homeTitles.to('.title-4',{y:-1000,display:'none',opacity:0,duration:0.8,delay:2.5})
     
 // gsap.fromTo('.char',{opacity: 0, scale: 0.5, y:-50,display:'inline-block'},{stagger:0.08,duration:0.8,scale:1,y:0,opacity:1, ease: "bounce.out" })
