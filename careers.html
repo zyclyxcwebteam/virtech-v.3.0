@@ -742,12 +742,13 @@
   var myForm=document.getElementById('contactForm');
    myForm.addEventListener('submit',function(e){
       e.preventDefault();
+       var status="Applied Successfull";
       // swal("Good job!", "You clicked the button!", "success");
 
       const formdata=new FormData(this);
       console.log(formdata)
 
-      fetch('http://localhost:3003/contact',{
+      fetch('http://localhost:3003/jobapplicationform',{
         method:'post',
         body:formdata
       }).then(function(response){
@@ -758,6 +759,14 @@
 
       }).then(function(text){
         console.log(text+"text is");
+        if(status==text){
+          swal("Applied Successfull", "You clicked the button!", "success");
+        }
+        else{
+          swal("file is not supported", "You clicked the button!", "error");
+        }
+
+
       }).catch(function (error){
         console.log(error);
       })
