@@ -18,20 +18,92 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <a class="navbar-brand" href="#">
-      <img src="./img/logo.png" class="d-inline-block align-top logo" alt="">
-    </a>
-  </nav>
+  <section>
+    <nav class="navbar navbar-expand-lg site-navbar p-0 nav-end" id="navbarMaster">
+      <a class="navbar-brand ml-md-4" href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul id="navigation">
+        <li><a href="./index.html" class="first">Home</a></li>
+        <li><a href="#">Services &raquo;</a>
+          <ul>
+
+            <li><a href="#"> New Age Technologies&raquo;</a>
+              <ul>
+                <li class=""><a href="./artificial-intelligence.html">Artifical Intelligence</a></li>
+                <li class=""><a href="./robotic-process-automation.html">RPA</a></li>
+                <li class=""><a href="./blockchain.html">Block Chain</a></li>
+                <li class=""><a href="./internet-of-things.html">Internet of Things</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#"> Application Development &raquo;</a>
+              <ul>
+                <li class=""><a href="./software-development.html">Software Development</a></li>
+                <li class=""><a href="./mobile-app-development.html">Mobile App Development</a></li>
+                <li class=""><a href="./web-development.html">Web Development</a></li>
+                <li class=""><a href="./digital-marketing.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#"> Security Services &raquo;</a>
+              <ul>
+                <li class=""><a href="./cyber-security.html">Cyber Security Services</a></li>
+                <li class=""><a href="./information-security.html">Information Security</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#"> BI Solutions &raquo;</a>
+              <ul>
+                <li class=""><a href="#">Data Visualisation</a></li>
+                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
+
+              </ul>
+            </li>
+
+            <li><a href="#"> Infrastructure &raquo;</a>
+              <ul>
+                <li class=""><a href="./data-center-services.html">Data Center Services</a></li>
+                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
+                <li class=""><a href="./network-and-security.html">Network and Security</a></li>
+                <li class=""><a href="./bigdata.html">Big Data</a></li>
+                <li class=""><a href="./end-user-computing.html">End User Computing</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li><a href="./about.html">About us</a>
+          <!-- <ul>
+            <li><a href="#">Why-Virtech </a>
+            <li><a href="./about.html"> About Us</a>
+          </ul> -->
+        </li>
+        <li><a href="./careers.html">Careers</a></li>
+        <li><a href="#" class="last">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
   <div id="masterContainer">
-    <h4 class="bg-title">Artificial Intelligence</h4>
+    <h4 class="bg-title">Internet of Things</h4>
     <div id="slidesContainer">
       <!-- Slide -1 -->
       <section class="slide slide-1">
         <div class="container d-flex justify-content-center align-items-center h-100">
           <div class="content row mx-auto">
-            <h4 class="text-left col-7 mx-auto py-2">Overview</h4>
-            <div class="col-7 mx-auto intro-text">
+             <div class="col-5">
+              <div class="card title-card title-card-1">
+                <div class="card-body">
+                  <h2 class="card-title">Internet of Things</h2>
+                </div>
+              </div>
+             </div>
+            <div class="col-7 mx-auto px-5 intro-text d-flex justify-content-center align-items-center flex-column">
               <p>Digital solutions today are engineered with many systems coming together and are expected to serve a
                 large number of users accessing the solution over a variety of devices. The solution can not be
                 delivered to the users without architecting and managing the systems behind the solution.</p>
@@ -45,149 +117,230 @@
       </section>
 
       <!-- Slide -2 -->
-      <section class="slide slide-2">
-        <h4 class="text-center slide-title mt-4 pt-4">AI Advantages</h4>
-        <div class="container d-flex justify-content-center align-items-center h-100 flex-column">          
-          <div class="container" id="advantages">
+      <section class="slide slide-2">         
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
+          <div class="content-wrapper" id="advantages">
             <div class="row">
-              <div class="col-4">
-                <div class="card p-3">
-                  <div class="card-body">
-                    <p class="service-icon">
-                      <img src="./img/ai.svg" alt="">
-                    </p>
-                    <h2 class="title-2">Lorem ipsum dolor</h2>
-                    <div class="service-text">
-                      <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                        built-in robots or computer software, to mimic and integrate the actions of your employees
-                        interacting within digital systems to execute a business process. </p>
+            <div class="col-3">
+              <div class="card title-card title-card-1">
+                <div class="card-body">
+                  <h2 class="card-title">Capabilities</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 content-inner">
+              <div class="row">
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card p-3">
-                  <div class="card-body">
-                    <p class="service-icon">
-                      <img src="./img/ai.svg" alt="">
-                    </p>
-                    <h2 class="title-2">Lorem ipsum dolor</h2>
-                    <div class="service-text">
-                      <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                        built-in robots or computer software, to mimic and integrate the actions of your employees
-                        interacting within digital systems to execute a business process. </p>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card p-3">
-                  <div class="card-body">
-                    <p class="service-icon">
-                      <img src="./img/ai.svg" alt="">
-                    </p>
-                    <h2 class="title-2">Lorem ipsum dolor</h2>
-                    <div class="service-text">
-                      <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                        built-in robots or computer software, to mimic and integrate the actions of your employees
-                        interacting within digital systems to execute a business process. </p>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>            
           </div>         
         </div>
       </section>
 
       <!-- Slide -3 -->
-      <section class="slide slide-3 d-flex  align-items-center h-100 flex-column">
-        <h4 class="text-center slide-title mt-4 py-5">AI Capabilities</h4>
-        <div class="container py-2">                     
-          <div class="container" id="capabilities">
+      <section class="slide slide-3 d-flex  align-items-center flex-column">
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
+          <div class="content-wrapper" id="advantages">
             <div class="row">
-              <div class="col-4">
-                <div class="card p-3">
-                  <div class="card-body">
-                    <p class="service-icon">
-                      <img src="./img/ai.svg" alt="">
-                    </p>
-                    <h2 class="title-2">Lorem ipsum dolor</h2>
-                    <div class="service-text">
-                      <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                        built-in robots or computer software, to mimic and integrate the actions of your employees
-                        interacting within digital systems to execute a business process. </p>
+            <div class="col-3">
+              <div class="card title-card title-card-1">
+                <div class="card-body">
+                  <h2 class="card-title">Services</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 content-inner">
+              <div class="row">
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card p-3">
-                  <div class="card-body">
-                    <p class="service-icon">
-                      <img src="./img/ai.svg" alt="">
-                    </p>
-                    <h2 class="title-2">Lorem ipsum dolor</h2>
-                    <div class="service-text">
-                      <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                        built-in robots or computer software, to mimic and integrate the actions of your employees
-                        interacting within digital systems to execute a business process. </p>
-
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card p-3">
-                  <div class="card-body">
-                    <p class="service-icon">
-                      <img src="./img/ai.svg" alt="">
-                    </p>
-                    <h2 class="title-2">Lorem ipsum dolor</h2>
-                    <div class="service-text">
-                      <p class="">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                        built-in robots or computer software, to mimic and integrate the actions of your employees
-                        interacting within digital systems to execute a business process. </p>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="service-icon">
+                        <img src="./img/ai.svg" alt="">
+                      </p>
+                      <h2 class="title-2">Lorem ipsum dolor</h2>
+                      <div class="service-text">
+                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
+                          built-in robots or computer software, to mimic and integrate the actions of your employees
+                          interacting within digital systems to execute a business process. </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div>            
+          </div>         
         </div>
 
       </section>
       
       <!-- Slide -4 -->
-      <section class="slide slide-4 py-5 align-items-center d-flex flex-column">
-        <h4 class="text-center slide-title mt-5">Our Partners</h4>
-        <div class="container mt-5">           
-          <div class="row partner" id="partners">
-            <div class="col-4">
-              <img src="./img/uipath.png" alt="">
+      <section class="slide slide-4 d-flex align-items-center flex-column">
+      <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
+          <div class="content-wrapper" id="advantages">
+            <div class="row">
+            <div class="col-3">
+              <div class="card title-card title-card-1">
+                <div class="card-body">
+                  <h2 class="card-title">Our Partners</h2>
+                </div>
+              </div>
             </div>
-            <div class="col-4">
-              <img src="./img/uipath.png" alt="">
+            <div class="col-9 content-inner partners">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="partner-logo">
+                        <img src="./img/uipath.png" alt="">
+                      </p>
+                      <h4>Lorem ipsum dolor</h4>                       
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="partner-logo">
+                        <img src="./img/uipath.png" alt="">
+                      </p>
+                      <h4>Lorem ipsum dolor</h4>                       
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card p-3">
+                    <div class="card-body">
+                      <p class="partner-logo">
+                        <img src="./img/uipath.png" alt="">
+                      </p>
+                      <h4>Lorem ipsum dolor</h4>                       
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-4">
-              <img src="./img/uipath.png" alt="">
-
-            </div>
-          </div>  
+          </div>            
+          </div>         
         </div>
+  
       </section>
     </div>
 
   </div>
 
   <!-- footer -->
-  <footer class="footer d-flex flex-column">
-    <h2 class="contact-title pt-5">Let’s Make Something Together</h2>
-    <h4 class="my-4"><a href="#">Start by saying hi</a></h4> 
-  
-    <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p> 
-  </footer>
+  <footer class="footer pt-4">
+    <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+      <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+        <p class="f-link mt-3"><a href="tel:+914023549363"><i class="fas fa-phone-square-alt"></i> (+91) 96 655 2357
+            583</a></p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+        <p class="f-link mt-3"><a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i>
+            info@virtech-ksa.com</a>
+        </p>
 
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+        <p class="f-link mt-3"><i class="fas fa-map-marker-alt"></i><a
+            href="https://www.google.com/maps/place/ZYCLYX+CONSULTING+SERVICES+PVT.LTD/@17.424933,78.438608,18z/data=!4m5!3m4!1s0x0:0xa07cad29e31d4876!8m2!3d17.4249331!4d78.4386078?hl=en">
+            Location</a></p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+        <div>
+          <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://in.linkedin.com/company/zyclyx-consulting-pvt-ltd" class="icoLinkedin"
+                title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+    <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -204,5 +357,4 @@
     crossorigin="anonymous"></script>
   <script src="./js/template.js"></script>
 </body>
-
 </html>
