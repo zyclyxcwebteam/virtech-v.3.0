@@ -421,10 +421,6 @@ font-weight: 600;
 
  /* end - company -intro */
 
-
-
-
-
 /* Careers banner */
 .careers-banner{
 height: 100vh;
@@ -435,6 +431,8 @@ background-size: cover;
 position: relative;
 color: #fff; 
 overflow: hidden;
+
+
 }
 
 .overlay {
@@ -559,3 +557,21 @@ font-weight: 600;
   font-size: 0.8rem;
 }
 /* end - footer */
+
+
+/* Transperent */
+/* .trns-text {
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+margin: 0;
+padding: 0;
+text-align: center;
+color: aliceblue;
+text-shadow: 0 5px 10px rgba(0, 0, 0,1);
+mix-blend-mode: overlay;
+box-shadow: 0 5px 10px rgba(0, 0, 0,1);
+} */
+
+
+/* Transperent End */
