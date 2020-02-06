@@ -61,7 +61,7 @@ let companyIntroAnimation = gsap.timeline()
 .from("#introContainer .intro-bg-title", { opacity: 1, duration: 2 })
 .from("#introSlides .slide-1",{opacity:0,duration:2,ease: "power1.out"})
 .from(".testimonials .test-card",{stagger:0.1,y:400,duration:2,opacity:0.98,ease: "power1.out",skewX:8,skewY:8})       
-.from(".intro-content",{opacity:0.98,y:400,duration:1.3,ease: "power1.out"})
+.from(".intro-content",{opacity:0.98,y:400,duration:1.3,ease: "power1.out"},"-=2")
 .to("#introSlides", 4, { x: "-33.333%",delay:4 })       
 .to("#introSlides", 4, { x: "-66.666%" })               
 // create scene to pin and link animation
