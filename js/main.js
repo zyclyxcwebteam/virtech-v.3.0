@@ -124,8 +124,9 @@ let scene = new ScrollMagic.Scene({ triggerElement: '.title-h1' })
  
 
 // SERVICES CARD 
-$(".services .service .card-body").each(createHover);
-function createHover(i, element) {
+$(".services .service-cards .card").each(borderHover);
+
+function borderHover(i, element) {
   var tl = gsap.timeline({duration:0.2});
 
   tl.to($(this).find('.service-icon'), {display:'none'});
