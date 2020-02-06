@@ -167,7 +167,12 @@
   .title-card-1{   
     background-color: #009efa; 
   }
-
+.title-card-2{
+  background-color: #018951;
+}
+.title-card-4{
+  background-color: #005953;
+}
   .about-text{
       font-size: 1.2rem;
   }
