@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 :root{
-  --bgColor:#000;  
+  --bgColor:#121619;  
 }
 body{
   font-family: 'Montserrat', sans-serif;
@@ -48,7 +48,7 @@ ul#navigation li a {
 
 ul#navigation li a:hover {
 
-  color:#282828;
+  color:#121619;
 }
 
 ul#navigation li a.first {
@@ -123,11 +123,9 @@ ul#navigation ul li a {
 /* === Home page === */
 .home{
   height: 100vh; 
-  position: relative;
-/* background-image:linear-gradient(to left top,#000 0%,#fff 94%)     */
-background-color: #000;
+  position: relative; 
+  background-color: #000;
 }
-
 
 .home-titles{
 height: 80vh; 
@@ -206,9 +204,8 @@ z-index: 99;
   -webkit-perspective: 1000;
   perspective: 1000;
   height: 100vh;     
-  background-color: hsl(167, 39%, 97%);
+  background-color: #000 !important;
   position: relative;
-
 }
 
 #slidesContainer,#introSlides {
@@ -235,30 +232,47 @@ z-index: 99;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Monoton', cursive;
-  opacity: 0.05;
+  opacity: 0.1;
   width: 100%;
   text-align: center;
   color:#000;
 }
+.service-bg-title,.intro-bg-title{
+  color: #fff;
+  opacity: 0.1;
+}
 /* end scroll container */
 
 .services .title-card,.company-intro .title-card{
-  height: 400px;
-  width: 400px;
+  height:100%;
+  width: 100%;
   border: none;
-  opacity: 1;   
+  opacity: 1;  
+}
+.services .title-card .card-body{
+  position: relative;
+}
+.services .title-card .card-body img{
+position: absolute;
+left: 40%;
+bottom:10px;
+width: 60px;
 }
 .services .title-card-1{   
-  background-color: #009efa; 
+  background-color: #009efa;
+  background-image: url('../img/wave-2.svg');
 }
 .services .title-card-2{   
   background-color: #00C9A7;
+  background-image: url('../img/wave-6.svg');
 }
 .services .title-card-3{
-  background-color: #618AE5;
+  background-color: #09814A;
+  background-image: url('../img/wave-13.svg');
 }
 .services .title-card-4{
-  background-color: #009EFA;
+  background-color: #00C9A7;
+  background-image: url('../img/wave-6.svg');
 }
 
 .services .title-card .card-body,.company-intro .card-body{
@@ -266,10 +280,10 @@ z-index: 99;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0,0.8);
+  box-shadow: 10px 10px 20px -10px rgba(255,255,255,0.2);
 }
 .services .title-card .card-title{
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: 700;
   color:floralwhite;
   text-align: center;
@@ -277,7 +291,7 @@ z-index: 99;
 .services .service-cards .service-title{
 font-size: 1.4rem;
 font-weight: 600;
-color:#444;
+color:#222;
 text-align: center;
 }
 .service-cards .card{
@@ -358,7 +372,7 @@ position: relative;
 }
 .ind-content p{
   font-size: 1.3rem;
-  color: #222;
+  color: #111;
 }
 .ind-content.active{
   display: block;
@@ -383,9 +397,11 @@ position: relative;
 /* end horizontal scroll */
  .company-intro .title-card-1{
    background-color: #0090C8;
+   background-image: url('../img/wave-2.svg');
  }
  .company-intro .title-card-2{
   background-color: #018951;
+  background-image: url('../img/wave-13.svg');
 }
 
 .testimonials .test-card{
@@ -402,21 +418,24 @@ position: relative;
 #introContainer .card-title{
   font-size: 45px;
   font-weight: 700;
-  color:floralwhite;
+  color:#fffaf0;
   text-align: center;
 }
 .company-intro h4{
 font-size: 2.2rem;
 font-weight: 600;
+color: #fffaf0;
 }
 .intro-content p{
   font-size: 1.4rem;
+  color: #ddd;
 }
 .c-val-caption{
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .c-val-title{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  color: #000;
 }
 
  /* end - company -intro */
@@ -559,3 +578,5 @@ font-weight: 600;
   font-size: 0.8rem;
 }
 /* end - footer */
+
+ 

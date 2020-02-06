@@ -1,0 +1,27 @@
+.services .card-title{
+
+}
+
+.title-card-1{
+    background: linear-gradient(31deg, #009efa, #f66f3f);
+    background-size: 400% 400%;
+    
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:27% 0%}
+    50%{background-position:74% 100%}
+    100%{background-position:27% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:27% 0%}
+    50%{background-position:74% 100%}
+    100%{background-position:27% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:27% 0%}
+    50%{background-position:74% 100%}
+    100%{background-position:27% 0%}
+}
