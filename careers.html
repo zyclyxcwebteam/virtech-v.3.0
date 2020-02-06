@@ -336,11 +336,24 @@
     /* File */
     .custom-file-label{
       background-color: lightblue;
+      color: #3ea7ca;
       border: 1.5px dashed rgb(62, 167, 202);
       height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+    }
+    .form-control{
+      position: relative;
+    }
+    .form-control::after{
+      content:'';
+      position: absolute;
+      border-bottom: 1px solid #000;
+    }
+    .form-control:focus{
+      box-shadow: 0 0 4px 1px rgba(0,123,255,.25);
     }
     .custom-file-label::after{
     display: none;
@@ -353,7 +366,7 @@
 /* 3d-flip */
 .box{
   position: relative;
-  width: 300px;
+  width: 250px;
   height: 300px;
   transform-style: preserve-3d;
 }
@@ -369,7 +382,7 @@
   justify-content: center;
   align-items: center;
   backface-visibility: hidden;
-  transition:  ease-in-out;
+  transition: 0.5s ease-in-out;
   transform: perspective(500px) rotateY(0deg);
 
 }
@@ -396,20 +409,74 @@
 }
 .box .face .front-text{
   font-size: 12px;
-  width: 200px;
+  width: 180px;
   transform: perspective(500px) translateZ(40px );
 }
 
 .box .face .Back-text{
-  width: 200px;
+  width: 180px;
   transform: perspective(500px) translateZ(40px );
 }
 
 
+/* form */
+/* 
+.input-field{
+  display: flex;
+  flex-direction: column;
+}
+.input-field{
+  width: 50%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+.input-field input{
+  width: 100%;
+  height: 100%;
+  color: red;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+.input-field label{
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #000;
+}
+.input-field label::after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #ff0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.input-field input:focus + .label-name .content-name,
+.input-field input:valid + .label-name .content-name{
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: blue;
+}
+.input-field input:focus + .label-name::after,
+.input-field input:valid + .label-name::after{
+  transform: translateX(0%);
+}
 
-
-
-
+ */
 
 
 
@@ -667,7 +734,7 @@ return false;
     </section>
     <section id="section-2" style="background-color: #f1f1f1; padding-bottom: 40px;">
       <h3 class="py-5">Open Positions</h3>
-      <div class="container-fluid">
+      <div class="container">
         <div class="d-flex justify-content-around">
 
           <div class="box">
@@ -682,8 +749,8 @@ return false;
             </div>
             <div class="face Back">
               <div class="Back-text">
-                <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
-                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+                <a href="#" class="btn btn-block  btn-info">Read More</a>
+                <a href="#" class="btn btn-block btn-primary mr-2">Apply Now</a>
               </div>
             </div>
           </div>
@@ -700,8 +767,8 @@ return false;
             </div>
             <div class="face Back">
               <div class="Back-text">
-                <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
-                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+                  <a href="#" class="btn btn-block  btn-info">Read More</a>
+                  <a href="#" class="btn btn-block btn-primary mr-2">Apply Now</a>
               </div>
             </div>
           </div>
@@ -719,8 +786,8 @@ return false;
             </div>
             <div class="face Back">
               <div class="Back-text">
-                <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
-                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+                  <a href="#" class="btn btn-block  btn-info">Read More</a>
+                  <a href="#" class="btn btn-block btn-primary mr-2">Apply Now</a>
               </div>
             </div>
           </div>
@@ -737,8 +804,8 @@ return false;
             </div>
             <div class="face Back">
               <div class="Back-text">
-                <a href="#" class="btn btn-sm btn-primary mr-2">Apply Now</a>
-                  <a href="#" class="btn btn-sm  btn-info">Read More</a>
+                  <a href="#" class="btn btn-block  btn-info">Read More</a>
+                  <a href="#" class="btn btn-block btn-primary mr-2">Apply Now</a>
               </div>
             </div>
           </div>
@@ -754,11 +821,7 @@ return false;
       <div class="container">
         <div class="row">
           <div class="col-2"></div>
-
           <div class="col-8">
-
- 
-
             <form  id="contactForm"  class="contactForm" onsubmit="return checkContactForm(this);"> 
               <div class="row">
                 <div class="col">
@@ -767,7 +830,11 @@ return false;
                     <input type="text" class="form-control" name="firstname" id="firstname"autocomplete="off">
                   </div>
                 </div>
-                <div class="col">
+                <div class="col input-field">
+                  <!-- <input type="text" name="name" autocomplete="off" required>
+                  <label for="name" class="lable-name">
+                    <span class="content-name">Last Name</span>
+                  </label> -->
                   <div class="form-group">
                     <label for="pwd"> Last Name:</label> 
                     <input type="text" class="form-control" name="lasttname" id="lasttname"autocomplete="off"> 
@@ -778,7 +845,7 @@ return false;
                 <div class="col">
                   <div class="form-group">
                     <label> Email:</label>
-                    <input type="text" class="form-control" name="email" id="email"autocomplete="off">
+                    <input type="text" class="form-control" name="email" id="email">
                   </div>
                 </div>
                 <div class="col">
@@ -796,8 +863,8 @@ return false;
                       <div class="input-group mb-3">
                         <div class="custom-file">
                           
-                          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                          <input type="file" class="custom-file-input" id="inputGroupFile01"  name="resume" aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label" for="inputGroupFile01" placehoder="Choose you file">Choose file</label>
                         </div>
                       </div>
                     </div>
