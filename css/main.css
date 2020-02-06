@@ -445,7 +445,7 @@ overflow: hidden;
   height: 100%;
   background-color: rgba(0, 144, 166,0.75);
   transform: skew(200.25deg);
-  left: -125px;
+  left: -128px;
 }
 .overlay-2{
   position: absolute;
