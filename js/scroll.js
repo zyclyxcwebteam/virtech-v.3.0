@@ -8,7 +8,8 @@ $(function () {
 
   // services slide animation
   let slideAnimation = gsap.timeline()       
-      .from("#masterContainer .service-bg-title", {y:20,duration: 2,opacity:1})
+      .from("#masterContainer .service-bg-title", {duration: 2,opacity:1})
+      .to("#masterContainer .service-bg-title", {duration: 1,left:'50%',top:'10%'})
       .from("#slidesContainer .slide-1",{opacity:0,duration:2,ease: "power1.out"})
       
       .from("#slidesContainer .title-card-1",{y:150,duration:1,ease: "power1.out"})
@@ -42,9 +43,10 @@ $(function () {
  
 let industryAnimation = gsap.timeline()
 .from("#industryContainer .bg-title", { opacity: 1, duration: 2 })
+.to("#industryContainer .bg-title", {duration: 1,left:'50%',top:'10%'})
 .from("#industryOuter",{opacity:0,duration:2,ease: "power1.out"})
-.from("#industryOuter .industry",{y:100,duration:2,opacity:0.98,ease: "power1.out",scaleX:0.8,scaleY:.8})
-.fromTo("#industryOuter .ind-content-wrapper",{y:100,opacity:98},{y:0,ease: "power1.out"})
+.from("#industryOuter .industry",{y:50,duration:2,opacity:0.98,ease: "power1.out",scaleX:0.8,scaleY:.8})
+.fromTo("#industryOuter .ind-content-wrapper",{y:50,opacity:98},{y:0,ease: "power1.out"})
 new ScrollMagic.Scene({
   triggerElement: "#industryContainer",
   triggerHook: "onLeave",
@@ -59,6 +61,7 @@ new ScrollMagic.Scene({
 let companyIntroAnimation = gsap.timeline()
  
 .from("#introContainer .intro-bg-title", { opacity: 1, duration: 2 })
+.to("#introContainer .intro-bg-title", {duration: 1,left:'50%',top:'10%'})
 .from("#introSlides .slide-1",{opacity:0,duration:2,ease: "power1.out"})
 .from(".testimonials .test-card",{stagger:0.1,y:400,duration:2,opacity:0.98,ease: "power1.out",skewX:8,skewY:8})       
 .from(".intro-content",{opacity:0.98,y:400,duration:1.3,ease: "power1.out"},"-=2")
@@ -75,6 +78,8 @@ duration: "600%",
 .addIndicators() // Indicators - remove on production
 .addTo(controller);    
  
+
+// service cards border animation
 
 $(".services .service-cards .card").each(createHover);
 function createHover(i, element) {

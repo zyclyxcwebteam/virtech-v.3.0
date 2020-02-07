@@ -236,6 +236,8 @@ z-index: 99;
   width: 100%;
   text-align: center;
   color:#000;
+  /* left: 50%;
+  top: 10%; */
 }
 .service-bg-title,.intro-bg-title{
   color: #fff;
