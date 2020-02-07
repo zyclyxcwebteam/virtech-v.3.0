@@ -343,7 +343,9 @@ position: relative;
 .industry:hover .industry-letter,.industry.active .industry-letter{
   color: #fff;   
 }
-
+.industry{
+  padding:0;
+}
 .industry:hover .industry-title,.industry.active .industry-title{
   color: #fff;   
 }
@@ -353,7 +355,9 @@ position: relative;
   background-color: #02A9EA;
   color: #fff;
 }
-
+.industry-col-2{
+  align-self: center;
+}
 /* industry card border */
 .line,.line-2 {
   position: absolute;
@@ -380,7 +384,7 @@ position: relative;
 }
 .ind-content{
   display: none;
-  padding:4rem;
+  padding-left:3rem;
 }
 .ind-content h2{
   font-size: 2.2rem;
@@ -394,6 +398,10 @@ position: relative;
 .ind-content.active{
   display: block;
 } 
+#industryOuter .col-12{
+  padding: 5px;
+   
+}
 /* end - industries */
  
 

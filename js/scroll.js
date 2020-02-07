@@ -1,8 +1,10 @@
-$(function () {
 
+//  Our services background particle effect
+$(function () {
   particlesJS.load('masterContainer', 'particles-tri.json', function() {
     console.log('callback - particles.js config loaded');
   });
+
 
   // init Scroll Magic    
   let controller = new ScrollMagic.Controller();
@@ -10,7 +12,7 @@ $(function () {
   // services slide animation
   let slideAnimation = gsap.timeline()       
       .from("#masterContainer .service-bg-title", {duration: 2,opacity:1})
-      .to("#masterContainer .service-bg-title", {duration: 1,left:'50%',top:'10%',opacity:0.3})
+      .to("#masterContainer .service-bg-title", {duration: 1,top:'10%',opacity:0.3})
       .from("#slidesContainer .slide-1",{opacity:0,duration:2,ease: "power1.out"})
       
       .from("#slidesContainer .title-card-1",{y:150,duration:1,ease: "power1.out"})
@@ -36,7 +38,7 @@ $(function () {
   })
       .setPin("#masterContainer")
       .setTween(slideAnimation)
-      .addIndicators() // Indicators - remove on production
+     // .addIndicators() // Indicators - remove on production
       .addTo(controller);    
 
 
@@ -44,10 +46,10 @@ $(function () {
  
 let industryAnimation = gsap.timeline()
 .from("#industryContainer .bg-title", { opacity: 1, duration: 2 })
-.to("#industryContainer .bg-title", {duration: 1,left:'50%',top:'10%',opacity:0.5})
+.to("#industryContainer .bg-title", {duration: 1,top:'10%',opacity:0.5})
 .from("#industryOuter",{opacity:0,duration:2,ease: "power1.out"})
-.from("#industryOuter .industry",{y:50,duration:2,opacity:0.98,ease: "power1.out",scaleX:0.8,scaleY:.8})
-.fromTo("#industryOuter .ind-content-wrapper",{y:50,opacity:98},{y:0,ease: "power1.out"})
+.from("#industryOuter .industry",{duration:2,opacity:0.98,ease: "power1.out",scaleX:0.9,scaleY:.9})
+.fromTo("#industryOuter .ind-content-wrapper",{opacity:98},{y:0,ease: "power1.out"})
 new ScrollMagic.Scene({
   triggerElement: "#industryContainer",
   triggerHook: "onLeave",
@@ -62,10 +64,10 @@ new ScrollMagic.Scene({
 let companyIntroAnimation = gsap.timeline()
  
 .from("#introContainer .intro-bg-title", { opacity: 1, duration: 2 })
-.to("#introContainer .intro-bg-title", {duration: 1,left:'50%',top:'10%'})
+.to("#introContainer .intro-bg-title", {duration: 1,top:'10%'})
 .from("#introSlides .slide-1",{opacity:0,duration:2,ease: "power1.out"})
-.from(".testimonials .test-card",{stagger:0.1,y:400,duration:2,opacity:0.98,ease: "power1.out",skewX:8,skewY:8})       
-.from(".intro-content",{opacity:0.98,y:400,duration:1.3,ease: "power1.out"},"-=2")
+.from(".testimonials .test-card",{stagger:0.1,y:20,duration:2,opacity:0.98,ease: "power1.out",skewX:8,skewY:8})       
+.from(".intro-content",{opacity:0.98,y:20,duration:1.3,ease: "power1.out"},"-=2")
 .to("#introSlides", 4, { x: "-33.333%",delay:4 })       
 .to("#introSlides", 4, { x: "-66.666%" })               
 // create scene to pin and link animation
