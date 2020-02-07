@@ -50,7 +50,12 @@ $('.industry').on('mouseenter',function(){
   $(this).toggleClass('active')
     let indID = $(this).attr('id');
     let index = $(this).attr('data-index');
-  $(`#ind-content-${index}`).addClass('active');  
+  $(`#ind-content-${index}`).addClass('active');
+  //gsap.from(`#ind-content-${index}`,{duration:1,opacity:0.5,y:100})     
+  // border.to(`#${indID} .top-line`,{width:'100%',duration:0.2})
+  // border.to(`#${indID} .right-line`,{height:'100%',duration:0.2})
+  // border.to(`#${indID} .bottom-line`,{width:'100%',duration:0.2})
+  // border.to(`#${indID} .left-line`,{height:'100%',duration:0.2}) 
   gsap.from(`#ind-content-${index}`,{duration:1,opacity:0.5,y:100}) 
 })
 $('.industry').on('mouseleave',function(){

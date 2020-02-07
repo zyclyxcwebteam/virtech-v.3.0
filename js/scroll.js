@@ -1,5 +1,6 @@
 $(function () {
-  particlesJS.load('particles', 'http://127.0.0.1:5500/js/p.json', function() {
+
+  particlesJS.load('masterContainer', 'particles-tri.json', function() {
     console.log('callback - particles.js config loaded');
   });
 
@@ -9,7 +10,7 @@ $(function () {
   // services slide animation
   let slideAnimation = gsap.timeline()       
       .from("#masterContainer .service-bg-title", {duration: 2,opacity:1})
-      .to("#masterContainer .service-bg-title", {duration: 1,left:'50%',top:'10%'})
+      .to("#masterContainer .service-bg-title", {duration: 1,left:'50%',top:'10%',opacity:0.3})
       .from("#slidesContainer .slide-1",{opacity:0,duration:2,ease: "power1.out"})
       
       .from("#slidesContainer .title-card-1",{y:150,duration:1,ease: "power1.out"})
@@ -43,7 +44,7 @@ $(function () {
  
 let industryAnimation = gsap.timeline()
 .from("#industryContainer .bg-title", { opacity: 1, duration: 2 })
-.to("#industryContainer .bg-title", {duration: 1,left:'50%',top:'10%'})
+.to("#industryContainer .bg-title", {duration: 1,left:'50%',top:'10%',opacity:0.5})
 .from("#industryOuter",{opacity:0,duration:2,ease: "power1.out"})
 .from("#industryOuter .industry",{y:50,duration:2,opacity:0.98,ease: "power1.out",scaleX:0.8,scaleY:.8})
 .fromTo("#industryOuter .ind-content-wrapper",{y:50,opacity:98},{y:0,ease: "power1.out"})
@@ -87,8 +88,7 @@ function createHover(i, element) {
   border.to($(this).find('.top-line'),{width:'100%',duration:0.2})
   border.to($(this).find('.right-line'),{height:'100%',duration:0.2})
   border.to($(this).find('.bottom-line'),{width:'100%',duration:0.2})
-  border.to($(this).find('.left-line'),{height:'100%',duration:0.2})
-  console.log(element)
+  border.to($(this).find('.left-line'),{height:'100%',duration:0.2})   
   $(element).hover(doIt);  
   function doIt() {
      border.reversed() ? border.play() : border.reverse();     
