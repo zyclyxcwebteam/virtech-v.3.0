@@ -74,10 +74,10 @@ $('.industry').on('mouseleave',function(){
 $("#industryOuter .card").each(createIndHover);
 function createIndHover(i, element) {
   let border = gsap.timeline({duration:0.2});      
-  border.to($(this).find('.top-line'),{width:'97%',duration:0.2})
-  border.to($(this).find('.right-line'),{height:'97%',duration:0.2})
-  border.to($(this).find('.bottom-line'),{width:'97%',duration:0.2})
-  border.to($(this).find('.left-line'),{height:'97%',duration:0.2})   
+  border.to($(this).find('.top-line'),{width:'100%',right:0,duration:0.2})
+  border.to($(this).find('.right-line'),{height:'98.2%',duration:0.2})
+  border.to($(this).find('.bottom-line'),{width:'98.2%',duration:0.2})
+  border.to($(this).find('.left-line'),{height:'98.2%',duration:0.2})   
   $(element).hover(doIt);  
   function doIt() {
      border.reversed() ? border.play() : border.reverse();     

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap'); */
 :root{
   --bgColor:#121619;  
 }
@@ -292,37 +292,57 @@ width: 60px;
 .services .service-cards .service-title{
 /* font-size: 1.4rem; */
 font-weight: 600;
-color:#222;
-text-align: center;
+color:#ddd;
+text-align: left;
+font-size: 1.5rem;
 }
 .service-cards .card{
-  border: none;
-  background-color: transparent;
+  border: none;   
   transition: all .2s ease-in;
-  min-height: 175px;
+  background-color: rgba(245, 245, 245,0.1);
 }
 
-.service-cards .card-body{
-background-color: #fafafa;
-margin: 0.8rem;
-padding: 1rem;
-box-shadow: 8px 8px 20px -18px #00C9A7,0 0 10px 0.1px #bbb;
+.service-cards .card-body{ 
+margin: 0.4rem;
+padding: 1rem; 
 border-radius: 0.4rem;
+text-decoration: none;
 }
 .service-card-content{
-  display: none;  
+  /* opacity: 0;   */
   transition: all .2s ease-in;
+  color: #ccc;
 }
 .service-cards .card:hover .service-card-content{
-  display: block;
+  opacity: 1;
   /* margin-left: 1rem; */
   transition: all .2s ease-in;
 }
 .service-cards .card-body{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;   
   flex-direction: column;
+}
+.service-arrow{
+  right: 8px;
+  bottom: 4px;
+  color: #f6f6f6;
+  font-size: 1.5rem;
+  opacity: 0;
+  position: relative;
+}
+.service-cards .card:hover .service-arrow{
+  opacity: 1;   
+  transition: all .2s ease-in;
+  animation: moveArrow 1s linear 1s infinite both;   
+}
+@keyframes moveArrow{
+  0%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(3px);
+  }
 }
  /* end services */
 
@@ -377,7 +397,7 @@ position: relative;
   display: inline-block;
 }
  .top-line{
-  height: 2px;
+  height: 2.5px;
   top: 3px;
   left: 3px;  
 }
@@ -394,7 +414,7 @@ position: relative;
 .left-line{
   left: 3px;
   bottom: 3px;
-  width: 2px;
+  width: 2.5px;
 }
 .ind-content{
   display: none;
