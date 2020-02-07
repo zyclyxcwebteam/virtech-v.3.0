@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap'); */
 :root{
   --bgColor:#121619;  
 }
 body{
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
 } 
 .wrapper{
   padding-top: 2rem;
@@ -278,7 +282,7 @@ width: 60px;
   background-image: url('../img/wave-6.svg');
 }
 
-.services .title-card .card-body,.company-intro .card-body{
+.services .title-card .card-body{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,10 +363,12 @@ position: relative;
   font-size: 3rem;
   text-align: right;
   font-family: 'Monoton', cursive;
+  margin-right: 10px;
 }
 .industry-body{
   display: flex;
   flex-direction: column;
+  padding: 0.3rem;
 }
 .industry:hover .industry-letter,.industry.active .industry-letter{
   color: #fff;   
@@ -372,6 +378,7 @@ position: relative;
 }
 .industry .industry-title{
   color: #111;
+  margin-left: 10px;
 }
 .industry:hover .industry-title,.industry.active .industry-title{
   color: #fff;   
@@ -459,20 +466,27 @@ position: relative;
 }
 /* end horizontal scroll */
  .company-intro .title-card-1{
-   background-color: #0090C8;
-   background-image: url('../img/wave-2.svg');
+   background-color: #581b98;
+   background-image: url('../img/wave-6.svg');
  }
  .company-intro .title-card-2{
-  background-color: #018951;
-  background-image: url('../img/wave-13.svg');
+  background-color: #009efa;
+  background-image: url('../img/wave-2.svg');
+}
+.company-intro .card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;   
 }
 
 .testimonials .test-card{
-  background-color: #fff;
+  background-color: rgba(255, 255, 255,0.1);
   padding: 1rem;
   border-radius: 0.5rem;
   margin:1rem 0.6rem;
-  box-shadow: 5px 5px 20px -8px #f1f1f1;
+  color: #fff;
+  /* box-shadow: 5px 5px 20px -8px #f1f1f1; */
 }
 .testimonials .test-name{
   text-align: right;
@@ -494,18 +508,33 @@ color: #fffaf0;
   color: #ddd;
 }
 .c-val-caption{
-  font-size: 0.7rem;
+  font-size: 0.85rem;
+  color: #f3f7fa;
 }
 .c-val-title{
-  font-size: 1.2rem;
-  color: #000;
+  font-size: 1.4rem;
+  color: #fff;
 }
-
+.core-values .card{
+background-color: rgba(0, 0, 0,0.8);
+margin: 8px;
+border: 1px solid #fff;
+}
+.core-values .card-body{
+padding: 0;
+}
+.achievements .card{
+  background-color: rgba(0, 0, 0,0.1);
+  box-shadow: none;
+}
+.achievements .card-body{
+   color: #ffffff;
+}
  /* end - company -intro */
 
 /* Careers banner */
 .careers-banner{
-height: 100vh;
+height: 60vh;
 background-image: url('../img/team.jpg');
 background-position: center;
 background-attachment: fixed;

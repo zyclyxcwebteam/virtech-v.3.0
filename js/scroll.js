@@ -47,9 +47,9 @@ $(function () {
 let industryAnimation = gsap.timeline()
 .from("#industryContainer .bg-title", { opacity: 1, duration: 2 })
 .to("#industryContainer .bg-title", {duration: 1,top:'10%',opacity:0.5})
-.from("#industryOuter",{opacity:0,duration:2,ease: "power1.out"})
-.from("#industryOuter .industry",{duration:2,opacity:0.98,ease: "power1.out",scaleX:0.96,scaleY:.96})
-.fromTo("#industryOuter .ind-content-wrapper",{opacity:98},{y:0,ease: "power1.out"})
+.from("#industryOuter",{opacity:0,duration:1,ease: "power1.out"})
+//.from("#industryOuter .industry",{duration:1,opacity:0.98,ease: "power1.out",scaleX:0.98,scaleY:.98})
+//.fromTo("#industryOuter .ind-content-wrapper",{opacity:98},{y:0,ease: "power1.out"})
 new ScrollMagic.Scene({
   triggerElement: "#industryContainer",
   triggerHook: "onLeave",
@@ -74,7 +74,7 @@ let companyIntroAnimation = gsap.timeline()
 new ScrollMagic.Scene({
 triggerElement: "#introContainer",
 triggerHook: "onLeave",
-duration: "600%",                 
+duration: "400%",                 
 })
 .setPin("#introContainer")
 .setTween(companyIntroAnimation)
@@ -98,5 +98,17 @@ function createHover(i, element) {
   border.reverse();
 }
 
+// let bannerAnimation = gsap.timeline();
+// bannerAnimation.from('.overlay',{width:0,duration:2,ease: "bounce.out"})
+// bannerAnimation.from('.overlay-2',{width:0,duration:2,ease: "bounce.out"},"-=1")
+// new ScrollMagic.Scene({
+//   triggerElement: "#contactBanner",
+//   triggerHook: "onLeave",
+//   duration:"10%"   
+//   })
+//   .setPin("#contactBanner")
+//   .setTween(bannerAnimation)
+//   .addIndicators() // Indicators - remove on production
+//   .addTo(controller); 
 });
 
