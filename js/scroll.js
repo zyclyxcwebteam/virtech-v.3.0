@@ -48,7 +48,7 @@ let industryAnimation = gsap.timeline()
 .from("#industryContainer .bg-title", { opacity: 1, duration: 2 })
 .to("#industryContainer .bg-title", {duration: 1,top:'10%',opacity:0.5})
 .from("#industryOuter",{opacity:0,duration:2,ease: "power1.out"})
-.from("#industryOuter .industry",{duration:2,opacity:0.98,ease: "power1.out",scaleX:0.9,scaleY:.9})
+.from("#industryOuter .industry",{duration:2,opacity:0.98,ease: "power1.out",scaleX:0.96,scaleY:.96})
 .fromTo("#industryOuter .ind-content-wrapper",{opacity:98},{y:0,ease: "power1.out"})
 new ScrollMagic.Scene({
   triggerElement: "#industryContainer",
