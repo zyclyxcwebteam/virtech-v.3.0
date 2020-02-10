@@ -139,4 +139,7 @@
   margin-top: 1rem;
   color: #b8bdc4;
 }
- 
+ /* TODO - check it  */
+ .contact-banner{
+display: none;
+ }
