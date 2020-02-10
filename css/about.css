@@ -1,3 +1,8 @@
+ #about .nav-item .active{
+  font-weight: 600;
+  color:#00bdd5;
+}
+
 .about-home{
   height: 100vh;
   background-color: #05070c;
@@ -93,21 +98,45 @@
   .about-text{
       font-size: 1.2rem;
   }
-
-  /* how we do it */
-  .do-card{
+  /* How we Do */
+.how-wedo-outer{
+  background-color:#05070c;
+  height: 100vh;  
+}
+.do-content{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px dotted rgba(0, 255, 255,0.2);
+  position: relative;
+  --border-width:0%;  
+}
+.do-content:after{  
+  position: absolute;
+  content: '';
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  width: var(--border-width);
+  height: 3px;
+  background-color: #00ffff;
+}
+.do-content .do-icon{
+  margin: 0 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  }
-  .do-card .do-icon{
-      margin: 1rem;
-  }
- 
-  .do-text p{
-      font-size: 1.4rem;
-      font-weight: 600;
-  }
+  opacity: 0;
+}
+.do-content .do-icon img{
+  height: 100px;
+  width: 100px;
+}
 
-  
+.do-content .do-title{
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #b8bdc4;
+}
+ 
