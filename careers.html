@@ -12,588 +12,11 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!--load country code style sheet-->
   <link rel="stylesheet" href="css/intlTelInput.css">
-  <title>Document</title>
-  <style type="text/css">
-    p {
-      font-family: 'Lato', sans-serif;
-    }
-
-    body {
-      padding: 0;
-      margin: 0;
-    }
-
-    .intro-text {
-      font-size: 1.2rem;
-      padding-top: 1.5rem;
-    }
-
+  <link rel="stylesheet" href="./css/careers/careers.css">
+  <link rel="stylesheet" href="./css/shared/header.css">
+  <link rel="stylesheet" href="./css/shared/footer.css">
+  <title>Careers</title>
  
-
-    /* #pinContainer {
-            width: 100%;
-            height: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .panel {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-       
-        }
-
-        .panel-1 {
-            background: #ffffff;
-        }
-
-        .panel-2 {
-            background: #f1f1f1;
-        }
-
-        .panel-3 {
-            background: #fafafa;
-        }
-
-        .panel-4 {
-            background: rgb(13, 64, 97);
-        } */
-
-    h3 {
-      text-align: center;
-      font-size: 2.5rem;
-    }
-
-    .content {
-      font-size: 1.2rem;
-    }
-
-    .title-2 {
-      font-size: 1.6rem;
-    }
-
-    .partner img {
-      width: 180px;
-    }
-
-    .quick-navigation {
-      position: fixed;
-      z-index: 1;
-      margin: 0;
-      top: 50%;
-      right: 10px;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-
-    .quick-navigation ul {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-width: 110px;
-    }
-
-    .quick-navigation li {
-      flex: 1;
-      list-style-type: none;
-      text-align: right;
-      margin: 8px 0;
-    }
-
-    .quick-navigation li a {
-      padding: 0.6rem 0;
-    }
-
-    .quick-navigation .circle {
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      padding: 6px;
-      border-radius: 50%;
-      box-shadow: 0 0 3px 1px #0090a6;
-    }
-
-    .quick-navigation .quick-nav-text {
-      display: none;
-      color: #0090a6;
-      padding: 0 0.8rem;
-    }
-
-    .quick-navigation a:hover .quick-nav-text {
-      display: inline-block;
-      color: #fff;
-    }
-
-
-    .img-frame {
-      border: 1px solid;
-      width: 500px;
-      height: 280px;
-      border-radius: 4px;
-      background: lightblue;
-      position: relative;
-    }
-
-    .img-frame::after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      border-radius: 4px;
-      border: 1px solid rgba(37, 35, 35, 0.602);
-      height: 400px;
-      width: 350px;
-      top: -65px;
-      left: -50px;
-    }
-
-    .social-links i {
-      /* position: absolute; */
-      text-align: left !important;
-      left: 25px;
-      color: red;
-    }
-
-    /* Openings */
-    .card1 {
-      padding: 20px;
-      width: 320px;
-    }
-
-    .card .pin {
-      color: #8c8c8c;
-    }
-
-    .card a {
-      margin-top: 10px;
-    }
-
-    /* .overlay {
-   position: absolute; 
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-   transition: .5s ease;
-  background-color: #008CBA;
-} */
-
-    /* .container:hover .overlay {
-  opacity: 1;
-} */
-
-    .card:hover {
-      /* background: blue;
-  color: white; */
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.45);
-    }
-
-    .card:hover hr {
-      background: #f1f1f1c7;
-    }
-
-    .card:hover .pin {
-
-      color: #24aec3;
-
-
-    }
-
-    .card:hover .pin1 {
-
-      color: #007bff;
-
-    }
-
-    .fa-facebook {
-      color: #2727b5;
-    }
-
-    .fa-twitter {
-      color: #1b7fce;
-    }
-
-    .fa-linkedin {
-      color: #03A9F4;
-    }
-
-    /* File */
-    .custom-file-label {
-      background-color: lightblue;
-      color: #3ea7ca;
-      border: 1.5px dashed rgb(62, 167, 202);
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-
-    .form-control {
-      position: relative;
-    }
-
-    .form-control::after {
-      content: '';
-      position: absolute;
-      border-bottom: 1px solid #000;
-    }
-
-    .form-control:focus {
-      box-shadow: 0 0 4px 1px rgba(0, 123, 255, .25);
-    }
-
-    .custom-file-label::after {
-      display: none;
-    }
-
-
-
-
-
-    /* 3d-flip */
-    .box {
-      position: relative;
-      width: 250px;
-      height: 300px;
-      transform-style: preserve-3d;
-    }
-
-    .box .face {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      transform-style: preserve-3d;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      backface-visibility: hidden;
-      transition: 0.5s ease-in-out;
-      transform: perspective(500px) rotateY(0deg);
-
-    }
-
-    .front-text h5 {
-      color: #007bff;
-    }
-
-    .front-text .pin {
-      color: #0090a6;
-    }
-
-    .box .face.front {
-      background: #fff;
-      /* border: 1px solid #ccc; */
-    }
-
-    .box:hover .face.front {
-      transform: perspective(500px) rotateY(180deg);
-    }
-
-    .box .face.Back {
-      background: rgb(247, 247, 247);
-      color: #ff0;
-      transform: perspective(500px) rotateY(180deg);
-    }
-
-    .box:hover .face.Back {
-      transform: perspective(500px) rotateY(360deg);
-    }
-
-    .box .face .front-text {
-      font-size: 12px;
-      width: 180px;
-      transform: perspective(500px) translateZ(40px);
-    }
-
-    .box .face .Back-text {
-      width: 180px;
-      transform: perspective(500px) translateZ(40px);
-    }
-
-
-    /* form */
-    /* 
-.input-field{
-  display: flex;
-  flex-direction: column;
-}
-.input-field{
-  width: 50%;
-  position: relative;
-  height: 50px;
-  overflow: hidden;
-}
-.input-field input{
-  width: 100%;
-  height: 100%;
-  color: red;
-  padding-top: 20px;
-  border: none;
-  outline: none;
-}
-.input-field label{
-  position: absolute;
-  bottom: 0;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  border-bottom: 1px solid #000;
-}
-.input-field label::after{
-  content: '';
-  position: absolute;
-  left: 0px;
-  bottom: -1px;
-  height: 100%;
-  width: 100%;
-  border-bottom: 3px solid #ff0;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-}
-.content-name{
-  position: absolute;
-  bottom: 5px;
-  left: 0px;
-  transition: all 0.3s ease;
-}
-.input-field input:focus + .label-name .content-name,
-.input-field input:valid + .label-name .content-name{
-  transform: translateY(-150%);
-  font-size: 14px;
-  color: blue;
-}
-.input-field input:focus + .label-name::after,
-.input-field input:valid + .label-name::after{
-  transform: translateX(0%);
-}
-
- */
-
-
-    /* Nav Bar */
-    /* new navbar */
-    .logo {
-      max-width: 180px;
-    }
-
-    #nav {
-      position: relative;
-      /* width:620px; */
-      margin: 0 auto;
-      padding: 10px;
-    }
-
-    ul#navigation li {
-      display: inline;
-      font-size: 12px;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-      float: left;
-      position: relative;
-
-    }
-
-    ul {
-      margin: 0 auto;
-    }
-
-    ul#navigation li a {
-      padding: 10px 25px;
-      color: #616161;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    ul#navigation li a:hover {
-
-      color: #121619;
-    }
-
-    ul#navigation li a.first {
-      border-left: 0 none;
-    }
-
-    ul#navigation li a.last {
-      border-right: 0 none;
-    }
-
-    /* Drop-Down Navigation */
-    ul#navigation li:hover>ul {
-      /*these 2 styles are very important,
-being the ones which make the drop-down to appear on hover */
-      visibility: visible;
-      opacity: 1;
-    }
-
-    ul#navigation ul,
-    ul#navigation ul li ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      /*the next 2 styles are very important,
-being the ones which make the drop-down to stay hidden */
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      z-index: 99999;
-      width: 180px;
-      background: #f8f8f8;
-      box-shadow: 1px 1px 3px #ccc;
-      /* css3 transitions for smooth hover effect */
-    }
-
-    ul#navigation ul {
-      top: 38px;
-      left: 1px;
-    }
-
-    ul#navigation ul li ul {
-      top: 0;
-      left: 181px;
-      /* strong related to width:180px; from above */
-    }
-
-    ul#navigation ul li {
-      clear: both;
-      width: 100%;
-      border: 0 none;
-      border-bottom: 1px solid #c9c9c9;
-    }
-
-    ul#navigation ul li a {
-      background: none;
-      padding: 7px 15px;
-      color: #616161;
-      text-decoration: none;
-      display: inline-block;
-      border: 0 none;
-      float: left;
-      clear: both;
-      width: 200px;
-    }
-
-    .navbar,
-    #navigation {
-      background: transparent !important;
-    }
-
-    /* New navbar end */
-    #section-1,
-    #section-2,
-    #section-3,
-    #section-4 {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #section-2,#section-3 {
-      flex-direction: column;
-    }
-
-    .career-text {
-      font-size: 1.3rem;
-    }
-
-
-/* footer  */
- 
-.footer{
-  height: 20vh;
-}
- 
-.footer a,.footer p{  
- font-size: 1.05rem;   
-  color:#333; 
-  font-weight: 500;  
-  text-decoration: none;
-}
-.f-link a:hover{
-color: #111; 
-font-weight: 600;
-}
-.f-link a:hover svg{
-  fill:#111;
-  height: 20px;
-  width:20px;
-  transition:all 0.2s ease-in;
-  -webkit-transition:all 0.2s ease-in;
-  -moz-transition:all 0.2s ease-in;
-  -ms-transition:all 0.2s ease-in;
-  -o-transition:all 0.2s ease-in;
-}
-.f-link a:hover::after {
-  width: 120px;  
-}
-/* Footer Follow Us */
-.footer .social-network li{
-  list-style-type: none;
-  }
-
- .footer .social-network a{
-   font-weight:400;
-   height:35px;
-   width:35px;
-   margin:0 5px;
-   text-align:center;    
-   border-radius: 50%;
-   display:flex;
-   justify-content: center;
-   align-items: center;
-   line-height: 2;
-   transition: all 0.2s ease-in;
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   -ms-transition: all 0.2s ease-in;
-   -o-transition: all 0.2s ease-in;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-}
-
-.footer .social-network a:hover{
-  background-color: #f3f7fa;
-  border: 2px solid #f4f4f4;
-  transform: scale(1.1);
-  transition: 0.2s all ease-in;
-  -webkit-transition: 0.2s all ease-in;
-  -moz-transition: 0.2s all ease-in;
-  -ms-transition: 0.2s all ease-in;
-  -o-transition: 0.2s all ease-in;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.footer .copyright{
-  margin: 0;
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 0.8rem;
-}
-/* end - footer */
-    /* .card{
-      padding: 0px; 
-   width: 0px; 
-
-    } */
-    /* .border{
-      border: 1px solid;
-    } */
-
-    /* Openings End */
-  </style>
   <!-- Validation code -->
   <script type="text/javascript">
     function checkContactForm(contactForm) {
@@ -701,98 +124,147 @@ font-weight: 600;
 </head>
 
 <body>
-  <section>
-    <nav class="navbar navbar-expand-lg site-navbar p-0 nav-end" id="navbarMaster">
-      <a class="navbar-brand ml-md-4" href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <i class="fas fa-bars"></i>
-      </button>
+    <!-- ! header navbar-->
+    <!-- TODO: hide header on scroll down, show on scroll up -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
+      <div class="container-fluid">
+        <a href="./" class="navbar-brand"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
 
-      <ul id="navigation">
-        <li><a href="./index.html" class="first">Home</a></li>
-        <li><a href="#">Services &raquo;</a>
-          <ul>
+        <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
+          aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <li><a href="#"> New Age Technologies&raquo;</a>
-              <ul>
-                <li class=""><a href="./artificial-intelligence.html">Artifical Intelligence</a></li>
-                <li class=""><a href="./robotic-process-automation.html">RPA</a></li>
-                <li class=""><a href="./blockchain.html">Block Chain</a></li>
-                <li class=""><a href="./internet-of-things.html">Internet of Things</a></li>
-              </ul>
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <!--  Home -->
+
+            <li class="nav-item active">
+              <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
             </li>
 
-            <li><a href="#"> Application Development &raquo;</a>
-              <ul>
-                <li class=""><a href="./software-development.html">Software Development</a></li>
-                <li class=""><a href="./mobile-app-development.html">Mobile App Development</a></li>
-                <li class=""><a href="./web-development.html">Web Development</a></li>
-                <li class=""><a href="./digital-marketing.html">Digital Marketing</a></li>
+            <!-- Services -->
+            <li class="nav-item dropdown">
+              <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                class="nav-link dropdown-toggle">Services</a>
+
+              <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0 dropdown-menu-right">
+                <!-- ! New Age Technologies -->
+                <li class="dropdown-submenu dropright">
+                  <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" class="dropdown-item dropdown-toggle">New
+                    Age Technologies</a>
+                  <ul aria-labelledby="newAgeDropDown" class="dropdown-menu border-0">
+                    <li>
+                      <a tabindex="-1" href="./robotic-process-automation.html" class="dropdown-item">RPA</a>
+                    </li>
+                    <li>
+                      <a href="./artificial-intelligence.html" class="dropdown-item">Artificial Intelligence</a>
+                    </li>
+                    <li><a href="./blockchain.html" class="dropdown-item">Blockchain</a></li>
+                    <li>
+                      <a href="./internet-of-things.html" class="dropdown-item">Internet of Things</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ! Application Devlopment -->
+                <li class="dropdown-submenu dropright">
+                  <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" class="dropdown-item dropdown-toggle">Application
+                    Development</a>
+                  <ul aria-labelledby="appDropDown" class="dropdown-menu border-0">
+                    <li>
+                      <a tabindex="-1" href="./software-development.html" class="dropdown-item">Software Development</a>
+                    </li>
+                    <li>
+                      <a href="./mobile-app-development.html" class="dropdown-item">Mobile App Development</a>
+                    </li>
+                    <li>
+                      <a href="./web-development.html" class="dropdown-item">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="./digital-marketing.html" class="dropdown-item">Digital Marketing</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ! Security Services -->
+                <li class="dropdown-submenu dropright">
+                  <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
+                  <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
+                    <li>
+                      <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
+                    </li>
+                    <li>
+                      <a href="./information-security.html" class="dropdown-item">Information Security</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ! BI Solutions -->
+                <li class="dropdown-submenu dropright">
+                  <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" class="dropdown-item dropdown-toggle">BI Solutions</a>
+                  <ul aria-labelledby="biDropDown" class="dropdown-menu border-0">
+                    <li>
+                      <a tabindex="-1" href="./data-visualization.html" class="dropdown-item">Data Visualization</a>
+                    </li>
+                    <li>
+                      <a href="./predictive-analytics.html" class="dropdown-item">Predictive Analysis</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ! Infrastructure Services -->
+                <li class="dropdown-submenu dropright">
+                  <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructue
+                    Services</a>
+                  <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
+                    <li>
+                      <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data Cetner Services</a>
+                    </li>
+                    <li>
+                      <a href="./network-and-security.html" class="dropdown-item">Network and Security</a>
+                    </li>
+                    <li><a href="./bigdata.html" class="dropdown-item">Big Data</a></li>
+                    <li>
+                      <a href="./end-user-computing.html" class="dropdown-item">End User Computing</a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </li>
+            <!-- End Level one -->
 
-            <li><a href="#"> Security Services &raquo;</a>
-              <ul>
-                <li class=""><a href="./cyber-security.html">Cyber Security Services</a></li>
-                <li class=""><a href="./information-security.html">Information Security</a></li>
-              </ul>
-            </li>
-
-            <li><a href="#"> BI Solutions &raquo;</a>
-              <ul>
-                <li class=""><a href="#">Data Visualisation</a></li>
-                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
-
-              </ul>
-            </li>
-
-            <li><a href="#"> Infrastructure &raquo;</a>
-              <ul>
-                <li class=""><a href="./data-center-services.html">Data Center Services</a></li>
-                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
-                <li class=""><a href="./network-and-security.html">Network and Security</a></li>
-                <li class=""><a href="./bigdata.html">Big Data</a></li>
-                <li class=""><a href="./end-user-computing.html">End User Computing</a></li>
-              </ul>
-            </li>
-
+            <li class="nav-item"><a href="./about.html" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="./careers.html" class="nav-link">Careers</a></li>
+            <li class="nav-item"><a href="./contactus.html" class="nav-link" id="contactLink">Contact</a></li>
           </ul>
-        </li>
-
-        <li><a href="./about.html">About us</a>
-          <!-- <ul>
-            <li><a href="#">Why-Virtech </a>
-            <li><a href="./about.html"> About Us</a>
-          </ul> -->
-        </li>
-        <li><a href="./careers.html">Careers</a></li>
-        <li><a href="#" class="last">Contact</a></li>
-      </ul>
+        </div>
+      </div>
     </nav>
-  </section>
 
-    <section id="section-1">
-      <h3 class="py-5"></h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="img-frame"></div>
-          </div>
-          <div class="col-md-6 text-center">
-            <h1>Lorem ipsum, dolor sit amet</h1>
-            <p class="text-left mt-5 career-text">We are here to give you inclusive portfolio services with a strong
-              determination to corporate citizenship
-              and sustainability. Our targeted audiences are mainly in the Gulf Regions and the Middle East. We ensure
-              to give you compact solutions by going above and beyond the boundary.</p>
-          </div>
+    <section id="section-1" class="container-fluid career-home">       
+      <div class="row container h-100 mx-auto">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <h1 class="hero-title text-center">
+            <span>WORK WHERE</span> <br />
+            <span>YOU LOVE</span>
+          </h1>
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <p class="hero-text">Digital solutions today are engineered with many systems coming together and are expected to serve a
+            large number of users accessing the solution over a variety of devices. The solution can not be
+            delivered to the users without architecting and managing the systems behind the solution.</p>
         </div>
       </div>
 
     </section>
     <section id="section-2" style="background-color: #f1f1f1; padding-bottom: 40px;">
-      <h3 class="py-5">Open Positions</h3>
+      <h3 class="py-5 text-center">Open Positions</h3>
       <div class="container">
         <div class="d-flex justify-content-around">
 
@@ -875,209 +347,50 @@ font-weight: 600;
       </div>
 
     </section>
-    <section class="mb-5" id="section-3">
-      <h4 class="py-5 text-center">Apply for this Job</h4>
-      <div class="container">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-8">
-            <form id="contactForm" class="contactForm" onsubmit="return checkContactForm(this);">
-              <div class="row">
-                <div class="col">
-                  <div class="form-group">
-                    <label> First Name:</label>
-                    <input type="text" class="form-control" name="firstname" id="firstname" autocomplete="off">
-                  </div>
-                </div>
-                <div class="col input-field">
-                  <!-- <input type="text" name="name" autocomplete="off" required>
-                  <label for="name" class="lable-name">
-                    <span class="content-name">Last Name</span>
-                  </label> -->
-                  <div class="form-group">
-                    <label for="pwd"> Last Name:</label>
-                    <input type="text" class="form-control" name="lasttname" id="lasttname" autocomplete="off">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="form-group">
-                    <label> Email:</label>
-                    <input type="text" class="form-control" name="email" id="email">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <label> Phone Number:</label>
-                    <input type="text" class="form-control" name="phone" id="phone" autocomplete="off">
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-
-                <div class="col-6">
-                  <label>Upload Resume</label>
-                  <div class="input-group mb-3">
-                    <div class="custom-file">
-
-                      <input type="file" class="custom-file-input" id="inputGroupFile01" name="resume"
-                        aria-describedby="inputGroupFileAddon01">
-                      <label class="custom-file-label" for="inputGroupFile01" placehoder="Choose you file">Choose
-                        file</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <label for="message">Subject</label>
-                  <textarea class="form-control" id="message" name="message"></textarea>
-                </div>
-
-              </div>
-
-
-              <div class="d-flex justify-content-center mt-5">
-                <button type="submit" class="btn btn-success  mx-auto">Submit Application</button>
-
-              </div>
-          </div>
-          </form>
+    <footer class="footer pt-3">
+      <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+        <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+          <p class="f-link mt-3">
+            <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>+966 552 357 583</a>
+          </p>
         </div>
-      </div>
-    </section>
-    <section id="section-4">
-      <div class="container">
-        <h3 class="py-3">Business Development Manager</h3>
-        <div class="row">
-          <div class="col-8">
-            <h4 class="py-3">Description</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis nisi eius at doloremque soluta quos iste quia, facere dolor saepe quasi unde inventore magnam deserunt placeat veritatis. Architecto, cum blanditiis.</p>
+        <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+          <p class="f-link mt-3">
+            <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
+          </p>
+        </div>
 
-            <h2 class="mt-3">Roles</h2>
-            <ul class="mt-4">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</li>           
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</li>           
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</li>           
-            </ul>        
-            <h2 class="mt-3">Duties And Responsibilities</h2>
-            <ul class="mt-4">
+        <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+          <p class="f-link mt-3">
+            <a
+              href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+              <i class="fas fa-map-marker-alt"></i> Location</a>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+          <div>
+            <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
               <li>
-                <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business
-                  and Marketing is preferred</p>
-
+                <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <p>Must be a post graduate in Management from a Tier-1 organisation.</p>
-
+                <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                    class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business
-                  and Marketing is preferred</p>
-
+                <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
               </li>
               <li>
-                <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business
-                  and Marketing is preferred</p>
-
-              </li>
-              <li>
-                <p>Must be a post graduate in Management from a Tier-1 organisation.</p>
-
+                <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                    class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
-          <div class="col-4 ">
-            <a href="#applicationForm" class="btn btn-primary py-2 mt-5 btn-block btn-shadow-primary">Apply Now</a>
-            <a href="#applicationForm" class="btn mt-2 border text-left btn-block">
-
-              <i class="fab fa-facebook  mx-4"></i>
-
-              <span>Share on facebook</span>
-
-            </a>
-            <a href="#applicationForm" class="btn mt-2 border btn-block text-left "><i
-                class="fab fa-twitter fa-1x mx-4 mb-2"></i><span>Share on Twitter</span></a>
-            <a href="#applicationForm" class="btn mt-2 border btn-block text-left "><i
-                class="fab fa-linkedin mx-4"></i>Share on Linkedin</a>
-
-
-            <div class=" mt-3 border p-4 rounded">
-              <div class="">
-                <h5 class="">Job details</h5>
-                <hr>
-                <div class="row hr">
-                  <div class="col-5">
-                    <h6>Location</h6>
-                  </div>
-                  <div class="col-7">
-                    <h6>Riyadh, Saudi Arabia</h6>
-                  </div>
-                </div>
-                <hr>
-                <div class="row hr">
-                  <div class="col-5">
-                    <h6>Experience
-                    </h6>
-                  </div>
-                  <div class="col-7">
-                    <h6>-</h6>
-                  </div>
-                </div>
-                <hr>
-                <div class="row hr">
-                  <div class="col-5">
-                    <h6>Salary
-                    </h6>
-                  </div>
-                  <div class="col-7">
-                    <h6>-</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-
-    </section>
- 
-  
-  <footer class="footer pt-4 mt-5">
-    <div class="container row mx-auto d-flex justify-content-center justify-content-md-start mt-5">
-      <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
-        <p class="f-link mt-3"><a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>+966 552 357 583</a></p>
-      </div>
-      <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
-        <p class="f-link mt-3"><a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i>
-          info@virtech-ksa.com</a>
-        </p>
-
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
-        <p class="f-link mt-3"><i class="fas fa-map-marker-alt"></i><a
-            href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-            Location</a></p>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
-        <div>
-          <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
-            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                  class="fab fa-twitter"></i></a></li>
-            <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-            <li><a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin"
-                title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
-  </footer>
+      <p class="copyright mb-0">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
+    </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
