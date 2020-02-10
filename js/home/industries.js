@@ -11,11 +11,12 @@ $(function(){
 
     new ScrollMagic.Scene({
         triggerElement: "#industryMaster",
-        triggerHook:0.5,
-        reverse:false,
+        triggerHook:'onLeave',
+        duration:'200%',
+        // reverse:false,
                                   
     })
-      //   .setPin("#industryInner")
+       .setPin("#industryMaster")
         .setTween(industriesAnimation)        
         .addTo(controller);
 // ! Industry Card hover 
