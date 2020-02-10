@@ -85,6 +85,9 @@
   font-weight: 600;
   color: #fffaf0;
   }
+  .intro-wrapper{
+    background-color: #05070c;
+  }
   .intro-content p{
     font-size: 1.4rem;
     color: #ddd;
