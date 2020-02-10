@@ -1,829 +1,956 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Virtech Technologies</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="icon" href="./favicon.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Virtech Technologies</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+
+    <!-- TODO: concat css with gulp -->
+    <link rel="stylesheet" href="./css/shared/layout.css" />
+    <link rel="stylesheet" href="./css/shared/header.css" />
+    <link rel="stylesheet" href="./css/home/home.css" />
+    <link rel="stylesheet" href="./css/home/services.css" />
+    <link rel="stylesheet" href="./css/home/industries.css" />
+    <link rel="stylesheet" href="./css/home/company_intro.css" />
+    <link rel="stylesheet" href="./css/home/contact_banner.css" />
+    <link rel="stylesheet" href="./css/shared/footer.css" />
 </head>
 
 <body>
-  <!-- Page loading -->
-  <div class="loading-wrapper" id="page-loader"></div>
+    <!-- ! Page loading -->
+    <div class="loading-wrapper" id="page-loader"></div>
 
-  <!-- Nav Bar -->
-  <section>
-    <nav class="navbar navbar-expand-lg site-navbar p-0 nav-end py-2" id="navbarMaster">
-      <a class="navbar-brand ml-md-4" href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <i class="fas fa-bars"></i>
-      </button>
+    <!-- ! header navbar-->
+    <!-- TODO: hide header on scroll down, show on scroll up -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="../../images/shared/logo.png" alt="Virtech"
+                    id="masterLogo" /></a>
 
-      <ul id="navigation">
-        <li><a href="./index.html" class="first">Home</a></li>
-        <li><a href="#">Services &raquo;</a>
-          <ul>
+            <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
+                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <li><a href="#"> New Age Technologies&raquo;</a>
-              <ul>
-                <li class=""><a href="./artificial-intelligence.html">Artifical Intelligence</a></li>
-                <li class=""><a href="./robotic-process-automation.html">RPA</a></li>
-                <li class=""><a href="./blockchain.html">Block Chain</a></li>
-                <li class=""><a href="./internet-of-things.html">Internet of Things</a></li>
-              </ul>
-            </li>
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <!--  Home -->
 
-            <li><a href="#"> Application Development &raquo;</a>
-              <ul>
-                <li class=""><a href="./software-development.html">Software Development</a></li>
-                <li class=""><a href="./mobile-app-development.html">Mobile App Development</a></li>
-                <li class=""><a href="./web-development.html">Web Development</a></li>
-                <li class=""><a href="./digital-marketing.html">Digital Marketing</a></li>
-              </ul>
-            </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
 
-            <li><a href="#"> Security Services &raquo;</a>
-              <ul>
-                <li class=""><a href="./cyber-security.html">Cyber Security Services</a></li>
-                <li class=""><a href="./information-security.html">Information Security</a></li>
-              </ul>
-            </li>
+                    <!-- Services -->
+                    <li class="nav-item dropdown">
+                        <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" class="nav-link dropdown-toggle">Services</a>
 
-            <li><a href="#"> BI Solutions &raquo;</a>
-              <ul>
-                <li class=""><a href="#">Data Visualisation</a></li>
-                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
+                        <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0 dropdown-menu-right">
+                            <!-- ! New Age Technologies -->
+                            <li class="dropdown-submenu dropright">
+                                <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">New
+                                    Age Technologies</a>
+                                <ul aria-labelledby="newAgeDropDown" class="dropdown-menu border-0">
+                                    <li>
+                                        <a tabindex="-1" href="#" class="dropdown-item">RPA</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Artificial Intelligence</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Blockchain</a></li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Internet of Things</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-              </ul>
-            </li>
+                            <!-- ! Application Devlopment -->
+                            <li class="dropdown-submenu dropright">
+                                <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Application
+                                    Development</a>
+                                <ul aria-labelledby="appDropDown" class="dropdown-menu border-0">
+                                    <li>
+                                        <a tabindex="-1" href="#" class="dropdown-item">Software Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Mobile App Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Web Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Digital Marketing</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-            <li><a href="#"> Infrastructure &raquo;</a>
-              <ul>
-                <li class=""><a href="./data-center-services.html">Data Center Services</a></li>                 
-                <li class=""><a href="./network-and-security.html">Network and Security</a></li>
-                <li class=""><a href="./bigdata.html">Big Data</a></li>
-                <li class=""><a href="./end-user-computing.html">End User Computing</a></li>
-              </ul>
-            </li>
+                            <!-- ! Security Services -->
+                            <li class="dropdown-submenu dropright">
+                                <a id="securityDropDown" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"
+                                    class="dropdown-item dropdown-toggle">Security Services</a>
+                                <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
+                                    <li>
+                                        <a tabindex="-1" href="#" class="dropdown-item">Cyber Security</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Information Security</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-          </ul>
-        </li>
+                            <!-- ! BI Solutions -->
+                            <li class="dropdown-submenu dropright">
+                                <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" class="dropdown-item dropdown-toggle">BI Solutions</a>
+                                <ul aria-labelledby="biDropDown" class="dropdown-menu border-0">
+                                    <li>
+                                        <a tabindex="-1" href="#" class="dropdown-item">Data Visualization</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Predictive Analysis</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-        <li><a href="./about.html">About us</a>
-          <!-- <ul>
-            <li><a href="#">Why-Virtech </a>
-            <li><a href="./about.html"> About Us</a>
-          </ul> -->
-        </li>
-        <li><a href="./careers.html">Careers</a></li>
-        <li><a href="#" class="last">Contact</a></li>
-      </ul>
+                            <!-- ! Infrastructure Services -->
+                            <li class="dropdown-submenu dropright">
+                                <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructue
+                                    Services</a>
+                                <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
+                                    <li>
+                                        <a tabindex="-1" href="#" class="dropdown-item">Data Cetner Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Network and Security</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Big Data</a></li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">End User Computing</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End Level one -->
+
+                    <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="contactLink">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </section>
-  <!-- Nav Bar End -->
-  <!-- Home page -->
-  <section class="container-fluid home">
-    <div class="row">
-      <!-- captions -->
-      <div class="col-6 home-titles px-2 d-flex justify-content-center align-items-center flex-column">
-        <div class="title title-1">
-          <h2 class="title-text">Title - 1 Lorem, ipsum dolor</h2>
-          <p class="title-info mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero
-            dignissimos eum dolorem, tenetur sint molestias.</p>
-        </div>
-        <div class="title title-2">
-          <h2 class="title-text">Title - 2 Lorem, ipsum dolor</h2>
-          <p class="title-info mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero
-            dignissimos eum dolorem, tenetur sint molestias.</p>
-        </div>
-        <div class="title title-3">
-          <h2 class="title-text">Title - 3 Lorem, ipsum dolor</h2>
-          <p class="title-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero
-            dignissimos eum dolorem, tenetur sint molestias.</p>
-        </div>
-        <div class="title title-4">
-          <h2 class="title-text">Title - 4 Lorem, ipsum dolor</h2>
-          <p class="title-info mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero
-            dignissimos eum dolorem, tenetur sint molestias.</p>
-        </div>
-        <!-- social links -->
-        <ul class="social-links">
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-      </div>
 
+    <!-- ! Home page lander -->
+    <section class="container-fluid home-outer">
+        <div class="row home-inner h-100">
+            <!-- ? titles -->
+            <div class="col-md-6 col-12 home-titles d-flex justify-content-center align-items-center">
+                <div class="hero-carousel">
+                    <div class="title-container" id="title-1">
+                        <h1 class="hero-title text-center">
+                            <span> GET CLOSER TO REAL AI WITH</span> <br />
+                            <span>DEEP LEARNING EXPERTS</span>
+                        </h1>
+                        <p class="px-4 text-center hero-text mt-4">
+                            Artificial intelligence (AI) makes it possible for machines to
+                            learn from experience, adjust to new inputs, and perform
+                            human-like tasks.
+                        </p>
+                    </div>
 
-      <!-- icon animatin -->
-      <div class="col-6 home-shape d-flex justify-content-center align-items-center">
-        <video autoplay muted loop width="500px" height="500px">
-          <source src="./img/animation_simple_by_gleb.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="shape-outer progress" id="progress">
-          
+                    <div class="title-container" id="title-2">
+                        <h1 class="hero-title text-center">
+                            <span>SAVE TIME AND MONEY WITH</span> <br />
+                            <span>BUSINESS AUTOMATION</span>
+                        </h1>
+                        <p class="px-4 text-center hero-text mt-4">
+                            Artificial intelligence (AI) makes it possible for machines to
+                            learn from experience, adjust to new inputs, and perform
+                            human-like tasks.
+                        </p>
+                    </div>
+
+                    <div class="title-container" id="title-3">
+                        <h1 class="hero-title text-center">
+                            <span>WORLD CLASS FS DOMAIN</span> <br />
+                            <span>EXPERTISE IN RPA ENGAGEMENT</span>
+                        </h1>
+                        <p class="px-4 text-center hero-text mt-4">
+                            Artificial intelligence (AI) makes it possible for machines to
+                            learn from experience, adjust to new inputs, and perform
+                            human-like tasks.
+                        </p>
+                    </div>
+
+                    <div class="title-container" id="title-4">
+                        <h1 class="hero-title text-center">
+                            <span>REAL WORLD SOLUTIONS FOR</span> <br />
+                            <span>SUSTAINABLE PERFORMANCE</span>
+                        </h1>
+                        <p class="px-4 text-center hero-text mt-4">
+                            Artificial intelligence (AI) makes it possible for machines to
+                            learn from experience, adjust to new inputs, and perform
+                            human-like tasks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ? social media links -->
+                <div class="social-media-links">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ? video -->
+            <div class="col-md-6 col-12 home-video d-flex justify-content-center align-items-center">
+                <video autoplay muted loop class="bg-video">
+                    <source src="./images/home/bg_video.mp4" type="video/mp4" />
+                </video>
+                <div class="home-circle"></div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- services -->
-  <div id="masterContainer">
+    <!-- ! Our Services -->
+    <div id="masterContainer">
 
-    <h4 class="bg-title service-bg-title">Services</h4>
+        <h4 class="bg-title service-bg-title">Services</h4>
+        
+        <div id="slidesContainer" class="services" >
+        
+          <section class="slide slide-1">
     
-    <div id="slidesContainer" class="services" >
+            <div class="container d-flex justify-content-center align-items-center h-100">
     
-      <section class="slide slide-1">
-
-        <div class="container d-flex justify-content-center align-items-center h-100">
-
-          <div class="row">
-            <!-- title card -->
-
-            <div class="col-4 d-flex align-items-stretch my-2">
-              <div class="card title-card title-card-1">
-                <div class="card-body">                    
-                  <h2 class="card-title">New Age Technologies</h2> 
-                </div>
-              </div>
-            </div>
-
-            <!-- service cards -->
-            <div class="col-8 service-cards" id="aiCards">
-
               <div class="row">
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./artificial-intelligence.html" class="card-body d-flex justify-content-center">
-                      <h3 class="service-title">Artificial Intelligence</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
-                    </a>
-
+                <!-- title card -->
+    
+                <div class="col-4 d-flex align-items-stretch my-2">
+                  <div class="card title-card title-card-1">
+                    <div class="card-body">                    
+                      <h2 class="card-title">New Age Technologies</h2> 
+                    </div>
                   </div>
                 </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./robotic-process-automation.html" class="card-body">
-                      <h3 class="service-title">RPA</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
+    
+                <!-- service cards -->
+                <div class="col-8 service-cards" id="aiCards">
+    
+                  <div class="row">
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./artificial-intelligence.html" class="card-body d-flex justify-content-center">
+                          <h3 class="service-title">Artificial Intelligence</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./robotic-process-automation.html" class="card-body">
+                          <h3 class="service-title">RPA</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./blockchain.html" class="card-body">
+                          <h3 class="service-title">Blockchain</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./internet-of-things.html" class="card-body">
+                          <h3 class="service-title">Internet of Things</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                  
                   </div>
                 </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./blockchain.html" class="card-body">
-                      <h3 class="service-title">Blockchain</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
-                  </div>
-                </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./internet-of-things.html" class="card-body">
-                      <h3 class="service-title">Internet of Things</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
-                  </div>
-                </div>
-              
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- slide - 2 -->
-      <section class="slide slide-2">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="row">
-            <!-- title card -->
-
-            <div class="col-4 d-flex align-items-stretch my-2">
-              <div class="card title-card title-card-2">
-                <div class="card-body">                    
-                  <h2 class="card-title">Application Development</h2> 
-                </div>
-              </div>
-            </div>
-
-            <!-- service cards -->
-            <div class="col-8 service-cards" id="aiCards">
-
+          </section>
+    
+          <!-- slide - 2 -->
+          <section class="slide slide-2">
+            <div class="container d-flex justify-content-center align-items-center h-100">
               <div class="row">
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./software-development.html" class="card-body d-flex justify-content-center">
-                      <h3 class="service-title">Software Development</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
-                    </a>
+                <!-- title card -->
+    
+                <div class="col-4 d-flex align-items-stretch my-2">
+                  <div class="card title-card title-card-2">
+                    <div class="card-body">                    
+                      <h2 class="card-title">Application Development</h2> 
+                    </div>
                   </div>
                 </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./mobile-app-development.html" class="card-body">
-                      <h3 class="service-title">Mobile App Development</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
+    
+                <!-- service cards -->
+                <div class="col-8 service-cards" id="aiCards">
+    
+                  <div class="row">
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./software-development.html" class="card-body d-flex justify-content-center">
+                          <h3 class="service-title">Software Development</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./mobile-app-development.html" class="card-body">
+                          <h3 class="service-title">Mobile App Development</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./web-development.html" class="card-body">
+                          <h3 class="service-title">Web Development</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./digital-marketing.html" class="card-body">
+                          <h3 class="service-title">Digital Marketing</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                  
                   </div>
                 </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./web-development.html" class="card-body">
-                      <h3 class="service-title">Web Development</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
-                  </div>
-                </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./digital-marketing.html" class="card-body">
-                      <h3 class="service-title">Digital Marketing</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
-                  </div>
-                </div>
-              
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="slide slide-3">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="row">
-            <!-- title card -->
-
-            <div class="col-4 d-flex align-items-stretch my-2">
-              <div class="card title-card title-card-3">
-                <div class="card-body">                    
-                  <h2 class="card-title">Infrastructure Services</h2> 
-                </div>
-              </div>
-            </div>
-
-            <!-- service cards -->
-            <div class="col-8 service-cards" id="aiCards">
-
+          </section>
+    
+    
+          <section class="slide slide-3">
+            <div class="container d-flex justify-content-center align-items-center h-100">
               <div class="row">
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./bigdata.html" class="card-body d-flex justify-content-center">
-                      <h3 class="service-title">Big Data</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
-                    </a>
-
+                <!-- title card -->
+    
+                <div class="col-4 d-flex align-items-stretch my-2">
+                  <div class="card title-card title-card-3">
+                    <div class="card-body">                    
+                      <h2 class="card-title">Infrastructure Services</h2> 
+                    </div>
                   </div>
                 </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./data-center-services.html" class="card-body">
-                      <h3 class="service-title">Data Center Serivces</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
+    
+                <!-- service cards -->
+                <div class="col-8 service-cards" id="aiCards">
+    
+                  <div class="row">
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./bigdata.html" class="card-body d-flex justify-content-center">
+                          <h3 class="service-title">Big Data</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./data-center-services.html" class="card-body">
+                          <h3 class="service-title">Data Center Serivces</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./network-and-security.html" class="card-body">
+                          <h3 class="service-title">Network & Security</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./end-user-computing.html" class="card-body">
+                          <h3 class="service-title">End User Computing</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                  
                   </div>
                 </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./network-and-security.html" class="card-body">
-                      <h3 class="service-title">Network & Security</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
-                  </div>
-                </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./end-user-computing.html" class="card-body">
-                      <h3 class="service-title">End User Computing</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
-                  </div>
-                </div>
-              
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="slide slide-4">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="row">
-            <!-- title card -->
-
-            <div class="col-4 d-flex align-items-stretch my-2">
-              <div class="card title-card title-card-4">
-                <div class="card-body">                    
-                  <h2 class="card-title">Business Intelligence</h2> <br /> 
-                  <h2 class="card-title">Security Services</h2> 
-                </div>
-              </div>
-            </div>
-
-            <!-- service cards -->
-            <div class="col-8 service-cards" id="aiCards">
-
+          </section>
+    
+          <section class="slide slide-4">
+            <div class="container d-flex justify-content-center align-items-center h-100">
               <div class="row">
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./data-visualization.html" class="card-body d-flex justify-content-center">
-                      <h3 class="service-title">Data Visualization</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
-                    </a>
-
+                <!-- title card -->
+    
+                <div class="col-4 d-flex align-items-stretch my-2">
+                  <div class="card title-card title-card-4">
+                    <div class="card-body">                    
+                      <h2 class="card-title">Business Intelligence</h2> <br /> 
+                      <h2 class="card-title">Security Services</h2> 
+                    </div>
                   </div>
                 </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./predictive-analytics.html" class="card-body">
-                      <h3 class="service-title">Predictive Analysis</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
+    
+                <!-- service cards -->
+                <div class="col-8 service-cards" id="aiCards">
+    
+                  <div class="row">
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./data-visualization.html" class="card-body d-flex justify-content-center">
+                          <h3 class="service-title">Data Visualization</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./predictive-analytics.html" class="card-body">
+                          <h3 class="service-title">Predictive Analysis</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./cyber-security.html" class="card-body">
+                          <h3 class="service-title">Cyber Security</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-stretch p-2">
+                      <div class="card">
+                        <span class="line top-line"></span>
+                        <span class="line right-line"></span>
+                        <span class="line bottom-line"></span>
+                        <span class="line left-line"></span>
+    
+                        <a href="./information-security.html" class="card-body">
+                          <h3 class="service-title">Information Security</h3>
+                          <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+    
+                      </div>
+                    </div>
+                  
                   </div>
                 </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./cyber-security.html" class="card-body">
-                      <h3 class="service-title">Cyber Security</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
-                  </div>
-                </div>
-                <div class="col-6 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./information-security.html" class="card-body">
-                      <h3 class="service-title">Information Security</h3>
-                      <p class="mt-2 service-card-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </a>
-
-                  </div>
-                </div>
-              
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-  <!-- end services -->
-
-  <!-- industries -->
-  <section id="industryContainer" class="py-5 d-flex justify-content-center align-items-center flex-column wrapper">
-    <h4 class="bg-title">Industries</h4>
-    <div class="container" id="industryOuter">
-      <div class="row">
-        <!-- 3 cards column -->
-        <div class="col-3">
-          <div class="row">
-            <div class="col-12">
-              <div class="card industry active" id="industry-1" data-index=1>
-                <span class="line top-line"></span>
-                <span class="line right-line"></span>
-                <span class="line bottom-line"></span>
-                <span class="line left-line"></span>
-                <div class="card-body industry-body">
-                  <span class="industry-letter mb-2">B</span>
-                  <h2 class="industry-title mt-2">Banking</h2>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="card industry" id="industry-2" data-index=2>
-                <span class="line top-line"></span>
-                <span class="line right-line"></span>
-                <span class="line bottom-line"></span>
-                <span class="line left-line"></span>
-                <div class="card-body industry-body">
-                  <span class="industry-letter mb-2">T</span>
-                  <h2 class="industry-title mt-2">Telecom</h2>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="card industry" id="industry-3" data-index=3>
-                <span class="line top-line"></span>
-                <span class="line right-line"></span>
-                <span class="line bottom-line"></span>
-                <span class="line left-line"></span>
-                <div class="card-body industry-body">
-                  <span class="industry-letter mb-2">H</span>
-                  <h2 class="industry-title mt-2">Health Care</h2>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- 2 cards column -->
-        <div class="col-3 industry-col-2">
-
-          <div class="row">
-
-            <div class="col-12">
-              <div class="card industry" id="industry-4" data-index=4>
-                <span class="line top-line"></span>
-                <span class="line right-line"></span>
-                <span class="line bottom-line"></span>
-                <span class="line left-line"></span>
-                <div class="card-body industry-body">
-                  <span class="industry-letter mb-2">R</span>
-                  <h2 class="industry-title mt-2">Retail</h2>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="card industry" id="industry-5" data-index=5>
-                <span class="line top-line"></span>
-                <span class="line right-line"></span>
-                <span class="line bottom-line"></span>
-                <span class="line left-line"></span>
-                <div class="card-body industry-body">
-                  <span class="industry-letter mb-2">L</span>
-                  <h2 class="industry-title mt-2">Logistics</h2>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-6 d-flex justify-content-center align-items-center flex-column ind-content-wrapper">
-          <!-- content - 1  -->
-          <div class="ind-content active" id="ind-content-1">
-            <h2>Banking Industry</h2>
-            <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos quia suscipit nemo
-              blanditiis tempora earum eligendi. Voluptate quaerat autem, eius inventore asperiores, enim delectus nobis
-              ut, quia provident deserunt.</p>
-          </div>
-
-          <!-- content - 2  -->
-          <div class="ind-content" id="ind-content-2">
-            <h2>Telecom Industry</h2>
-            <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos quia suscipit nemo
-              blanditiis tempora earum eligendi. Voluptate quaerat autem, eius inventore asperiores, enim delectus nobis
-              ut, quia provident deserunt.</p>
-          </div>
-
-          <!-- content - 3  -->
-          <div class="ind-content" id="ind-content-3">
-            <h2>Health Care Industry</h2>
-            <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos quia suscipit nemo
-              blanditiis tempora earum eligendi. Voluptate quaerat autem, eius inventore asperiores, enim delectus nobis
-              ut, quia provident deserunt.</p>
-          </div>
-
-          <!-- content - 4  -->
-          <div class="ind-content" id="ind-content-4">
-            <h2>Retail Industry</h2>
-            <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos quia suscipit nemo
-              blanditiis tempora earum eligendi. Voluptate quaerat autem, eius inventore asperiores, enim delectus nobis
-              ut, quia provident deserunt.</p>
-          </div>
-
-          <!-- content - 5  -->
-          <div class="ind-content" id="ind-content-5">
-            <h2>Logistics Industry</h2>
-            <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos quia suscipit nemo
-              blanditiis tempora earum eligendi. Voluptate quaerat autem, eius inventore asperiores, enim delectus nobis
-              ut, quia provident deserunt.</p>
-          </div>
+          </section>
         </div>
       </div>
+
+    <!-- ! Our Industries -->
+    <section class="industry-wrapper" id="industryMaster">
+        <h3 class="bg-title-dark">INDUSTRIES</h3>
+        <div class="container" id="industryInner">
+            <div class="row">
+                <!-- 3 cards column -->
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card industry active" id="industry-1" data-index="1">
+                                <span class="line top-line"></span>
+                                <span class="line right-line"></span>
+                                <span class="line bottom-line"></span>
+                                <span class="line left-line"></span>
+                                <div class="card-body industry-body">
+                                    <span class="industry-letter mb-2">B</span>
+                                    <h2 class="industry-title mt-2">Banking</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="card industry" id="industry-2" data-index="2">
+                                <span class="line top-line"></span>
+                                <span class="line right-line"></span>
+                                <span class="line bottom-line"></span>
+                                <span class="line left-line"></span>
+                                <div class="card-body industry-body">
+                                    <span class="industry-letter mb-2">T</span>
+                                    <h2 class="industry-title mt-2">Telecom</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="card industry" id="industry-3" data-index="3">
+                                <span class="line top-line"></span>
+                                <span class="line right-line"></span>
+                                <span class="line bottom-line"></span>
+                                <span class="line left-line"></span>
+                                <div class="card-body industry-body">
+                                    <span class="industry-letter mb-2">H</span>
+                                    <h2 class="industry-title mt-2">Health Care</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 cards column -->
+                <div class="col-3 industry-col-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card industry" id="industry-4" data-index="4">
+                                <span class="line top-line"></span>
+                                <span class="line right-line"></span>
+                                <span class="line bottom-line"></span>
+                                <span class="line left-line"></span>
+                                <div class="card-body industry-body">
+                                    <span class="industry-letter mb-2">R</span>
+                                    <h2 class="industry-title mt-2">Retail</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="card industry" id="industry-5" data-index="5">
+                                <span class="line top-line"></span>
+                                <span class="line right-line"></span>
+                                <span class="line bottom-line"></span>
+                                <span class="line left-line"></span>
+                                <div class="card-body industry-body">
+                                    <span class="industry-letter mb-2">L</span>
+                                    <h2 class="industry-title mt-2">Logistics</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center align-items-center flex-column ind-content-wrapper">
+                    <!-- content - 1  -->
+                    <div class="ind-content active" id="ind-content-1">
+                        <h2>Banking Industry</h2>
+                        <p class="py-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                            quos quia suscipit nemo blanditiis tempora earum eligendi.
+                            Voluptate quaerat autem, eius inventore asperiores, enim
+                            delectus nobis ut, quia provident deserunt.
+                        </p>
+                    </div>
+
+                    <!-- content - 2  -->
+                    <div class="ind-content" id="ind-content-2">
+                        <h2>Telecom Industry</h2>
+                        <p class="py-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                            quos quia suscipit nemo blanditiis tempora earum eligendi.
+                            Voluptate quaerat autem, eius inventore asperiores, enim
+                            delectus nobis ut, quia provident deserunt.
+                        </p>
+                    </div>
+
+                    <!-- content - 3  -->
+                    <div class="ind-content" id="ind-content-3">
+                        <h2>Health Care Industry</h2>
+                        <p class="py-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                            quos quia suscipit nemo blanditiis tempora earum eligendi.
+                            Voluptate quaerat autem, eius inventore asperiores, enim
+                            delectus nobis ut, quia provident deserunt.
+                        </p>
+                    </div>
+
+                    <!-- content - 4  -->
+                    <div class="ind-content" id="ind-content-4">
+                        <h2>Retail Industry</h2>
+                        <p class="py-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                            quos quia suscipit nemo blanditiis tempora earum eligendi.
+                            Voluptate quaerat autem, eius inventore asperiores, enim
+                            delectus nobis ut, quia provident deserunt.
+                        </p>
+                    </div>
+
+                    <!-- content - 5  -->
+                    <div class="ind-content" id="ind-content-5">
+                        <h2>Logistics Industry</h2>
+                        <p class="py-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                            quos quia suscipit nemo blanditiis tempora earum eligendi.
+                            Voluptate quaerat autem, eius inventore asperiores, enim
+                            delectus nobis ut, quia provident deserunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ! Company Intro -->
+    <div id="introContainer">
+        <h4 class="bg-title intro-bg-title">Virtech</h4>
+        <div id="introSlides" class="company-intro">
+            <section class="slide slide-1">
+                <div class="container d-flex justify-content-center align-items-center flex-column h-100 ">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="testimonials py-5">
+                                <!-- <h4 class="my-3">Testimonials</h4> -->
+                                <div class="p-5">
+                                    <div class="test-card">
+                                        <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
+                                            Lorem ipsum dolor
+                                            sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
+                                        <p class="test-name">Lorem ipsum</p>
+                                    </div>
+                                    <div class="test-card">
+                                        <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
+                                            Lorem ipsum dolor
+                                            sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
+                                        <p class="test-name">Lorem ipsum</p>
+                                    </div>
+                                    <div class="test-card">
+                                        <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
+                                            Lorem ipsum dolor
+                                            sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
+                                        <p class="test-name">Lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 h-100 d-flex justify-content-center align-items-center">
+                            <div class="intro-content">
+                                <h4 class="py-4">We are Virtech Technologies</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero.
+                                    Eligendi impedit
+                                    fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui
+                                    sapiente, nulla
+                                    odio iste ab.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero.
+                                    Eligendi impedit
+                                    fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui
+                                    sapiente, nulla
+                                    odio iste ab.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-2">
+                <div class="container d-flex justify-content-center align-items-center h-100">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card title-card title-card-1">
+                                <div class="card-body">
+                                    <h2 class="card-title">Core Values</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 core-values">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <h3 class="c-val-title">Deliver</h3>
+                                            <p class="mt-4 c-val-caption">Amazing Service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <h3 class="c-val-title">Take Ownership</h3>
+                                            <p class="mt-4 c-val-caption">In Everything</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <h3 class="c-val-title">Commit</h3>
+                                            <p class="mt-4 c-val-caption">To Continuos Development.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <h3 class="c-val-title">Embrace</h3>
+                                            <p class="mt-4 c-val-caption">Creativity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <h3 class="c-val-title">Build</h3>
+                                            <p class="mt-4 c-val-caption">Positive Team Environment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <h3 class="c-val-title">Make It</h3>
+                                            <p class="mt-4 c-val-caption">count.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-3">
+                <div class="container d-flex justify-content-center align-items-center h-100">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card title-card title-card-2">
+                                <div class="card-body">
+                                    <h2 class="card-title">Achievements</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 achievements h-100">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-body py-4">
+                                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-  </section>
-  <!-- end industries -->
 
-  <!-- company intro -->
-  <div id="introContainer">
-    <h4 class="bg-title intro-bg-title">Virtech</h4>
-    <div id="introSlides" class="company-intro">
-      <section class="slide slide-1">
-        <div class="container d-flex justify-content-center align-items-center flex-column h-100 ">
-          <div class="row">
-            <div class="col-5">
-              <div class="testimonials py-5">
-                <!-- <h4 class="my-3">Testimonials</h4> -->
-                <div class="p-5">
-                  <div class="test-card">
-                    <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span> Lorem ipsum dolor
-                      sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                    <p class="test-name">Lorem ipsum</p>
-                  </div>
-                  <div class="test-card">
-                    <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span> Lorem ipsum dolor
-                      sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                    <p class="test-name">Lorem ipsum</p>
-                  </div>
-                  <div class="test-card">
-                    <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span> Lorem ipsum dolor
-                      sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                    <p class="test-name">Lorem ipsum</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 h-100 d-flex justify-content-center align-items-center">
-              <div class="intro-content">
-                <h4 class="py-4">We are Virtech Technologies</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero. Eligendi impedit
-                  fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui sapiente, nulla
-                  odio iste ab.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero. Eligendi impedit
-                  fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui sapiente, nulla
-                  odio iste ab.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide slide-2">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="row">
-            <div class="col-4">
-              <div class="card title-card title-card-1">
-                <div class="card-body">
-                  <h2 class="card-title">Core Values</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-8 core-values">
-              <div class="row">
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <h3 class="c-val-title">Deliver</h3>
-                      <p class="mt-4 c-val-caption">Amazing Service.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <h3 class="c-val-title">Take Ownership</h3>
-                      <p class="mt-4 c-val-caption">In Everything</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <h3 class="c-val-title">Commit</h3>
-                      <p class="mt-4 c-val-caption">To Continuos Development.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <h3 class="c-val-title">Embrace</h3>
-                      <p class="mt-4 c-val-caption">Creativity.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <h3 class="c-val-title">Build</h3>
-                      <p class="mt-4 c-val-caption">Positive Team Environment.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <h3 class="c-val-title">Make It</h3>
-                      <p class="mt-4 c-val-caption">count.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide slide-3">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="row">
-            <div class="col-4">
-              <div class="card title-card title-card-2">
-                <div class="card-body">
-                  <h2 class="card-title">Achievements</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-8 achievements h-100">
-              <div class="row">
+    <!-- ! Contact us banner -->
+    <section id="contactBanner" class="careers-banner d-flex justify-content-center align-items-center flex-column">
+        <div class="overlay"></div>
+        <div class="overlay-2"></div>
+
+        <div class="container career-text">
+            <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-6">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="text-center">
+                        <h3 class="text-center py-4">Contact Us</h3>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur <br />
+                            adipisicing elit.
+                        </p>
+                        <p class="text-center py-3">
+                            <button type="button" id="contactButton" class="btn bg-light text-center py-2 font-weight-bolder see-btn">
+                                Get In Touch
+                            </button>
+                        </p>
                     </div>
-                  </div>
                 </div>
-                <div class="col-6">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="card">
-                    <div class="card-body py-4">
-                      <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
-    </div>
-  </div>
-  <!-- end - company intro -->
+    </section>
 
-  <!-- CAREERS BANNER -->
-  <section id="contactBanner" class="careers-banner d-flex justify-content-center align-items-center flex-column">
-    <div class="overlay"></div>
-    <div class="overlay-2"></div>
+    <!-- ! Footer -->
+    <footer class="footer pt-3">
+        <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+                <p class="f-link mt-3">
+                    <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>+966 552 357 583</a>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+                <p class="f-link mt-3">
+                    <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
+                </p>
+            </div>
 
-    <div class="container career-text">
-      <div class="row d-flex justify-content-center align-items-center">
-        <!-- <div class="col-6">
-         <div class="text-center"> <h3 class=" py-4">Join Us</h3>
-          <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
-          <p class="text-center py-3"><button type="button"
-              class="btn bg-light text-center py-2 font-weight-bolder see-btn">See Open Positions</button></p>
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+                <p class="f-link mt-3">
+                    <a
+                        href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+                        <i class="fas fa-map-marker-alt"></i> Location</a>
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+                <div>
+                    <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                        <li>
+                            <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin"
+                                title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        </div>  -->
-        <div class="col-6">
-    <div class="text-center">
-       <h3 class="text-center py-4">Contact Us</h3>
-          <p class="text-center">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
-          <p class="text-center py-3"><button type="button"
-              class="btn bg-light text-center py-2 font-weight-bolder see-btn">Get In Touch</button></p>
-    </div>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-    <footer class="footer pt-4">
-      <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
-        <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
-          <p class="f-link mt-3"><a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>+966 552 357 583</a></p>
-        </div>
-        <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
-          <p class="f-link mt-3"><a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i>
-            info@virtech-ksa.com</a>
-          </p>
-
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
-          <p class="f-link mt-3"><i class="fas fa-map-marker-alt"></i><a
-              href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-              Location</a></p>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
-          <div>
-            <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
-              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                    class="fab fa-twitter"></i></a></li>
-              <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-              <li><a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin"
-                  title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-          </div>
-        </div>
-
-
-      </div>
-      <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
+        <p class="copyright mb-0">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
     </footer>
-
+    <!-- ! Contact fomr modal -->
+    <section class="contact-wrapper" id="contactModal">
+        <div class="contact-inner">
+            <h2 class="mt-3 text-center">Get in touch</h2>
+            <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
+        </div>
+        
+    </section>
     <!-- GSAP  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/CSSRulePlugin.min.js"></script>
@@ -841,18 +968,20 @@
     <!-- END-SCROLL MAGIC -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-
-    <script src="./js/vendor/progress.js"></script>
-    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
-    <script src="./js/vendor/particles.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/scroll.js"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- TODO - CONCAT & MINIFY SCRIPTS -->
+    <script src="./js/shared/header.js"></script>
+    <script src="./js/home/home.js"></script>
+    <script src="./js/home/services.js"></script>
+    <script src="./js/home/industries.js"></script>
+    <script src="./js/home/company-intro.js"></script>
+    <script src="./js/home/contact.js"></script>
 </body>
 
 </html>

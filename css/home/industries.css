@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap'); 
+.industry-wrapper{
+    height: 100vh;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.industry-wrapper .bg-title-dark{
+    font-size: 5rem;    
+}
+.industry-letter{
+    font-size: 3rem;
+    text-align: right;
+    font-family: 'Monoton', cursive;
+    margin-right: 10px;
+  }
+  .industry-body{
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+  }
+  .industry:hover .industry-letter,.industry.active .industry-letter{
+    color: #fff;   
+  }
+  .industry{
+    padding:0;
+  }
+  .industry .industry-title{
+    color: #3c3c42;
+    margin-left: 10px;
+  }
+  .industry:hover .industry-title,.industry.active .industry-title{
+    color: #fff;   
+  }
+  .industry.active{
+    box-shadow: 14px 14px 35px -8px rgba(0, 0, 0,0.1);
+    border: 1px solid #02A9EA;
+    background-color: #02A9EA;
+    color: #fff;
+  }
+  .industry-col-2{
+    align-self: center;
+  }
+  /* industry card border */
+  .line,.line-2 {
+    position: absolute;
+    box-sizing: border-box;             
+    background-color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .industry .line, .industry .line-2 {
+    position: absolute;
+    box-sizing: border-box;             
+    background-color: #fff;
+    display: inline-block;
+  }
+   .top-line{
+    height: 2.5px;
+    top: 3px;
+    left: 3px;  
+  }
+  .right-line{ 
+    right: 3px;
+    top: 3px;                         
+    width: 2.5px;   
+  }
+  .bottom-line{
+    bottom: 3px;
+    right: 3px;
+    height: 2.5px;   
+  }
+  .left-line{
+    left: 3px;
+    bottom: 3px;
+    width: 2.5px;
+  }
+  .ind-content{
+    display: none;
+    padding-left:3rem;
+  }
+  .ind-content h2{
+    font-size: 2.2rem;
+    color: #02A9EA;
+    font-weight: 600;
+  }
+  .ind-content p{
+    font-size: 1.2rem;
+    color: #3c3c42;
+  }
+  .ind-content.active{
+    display: block;
+  } 
+  #industryInner .col-12{
+    padding: 5px;     
+  }
+  

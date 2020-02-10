@@ -1,0 +1,44 @@
+/* ! COLOR CODES  */
+:root{
+    --color-1:#0b0c13;
+    --color-2:#575866;
+    --color-3:#71788a;
+    --color-4:#eeeef0;
+    --color-5:#c0bcc3;
+
+    /*  */
+    --color-2-1:#05070c;
+    --color-2-2:#3c3c42;
+    --color-2-3:#96969c;
+    --color-2-4:#5d5c63;
+    --color-2-5:#b8bdc4;
+    --color-2-6:#eef0f1;
+    /*  */
+    --color-3-1:#04ffd4;
+    --color-3-2:#045e52;
+    --color-3-3:#00C9A7;
+}
+@font-face {
+    font-family: 'Replica';
+    src: url('../../fonts/Replica-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Replica-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/Replica-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */          
+  }
+.loading-wrapper{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:#0b0c13;
+    z-index:999;
+}
+body{
+    position: relative;
+    font-family:'Replica', sans-serif;
+}
+.bg-tilte-dark{
+    font-size: 5rem;
+}

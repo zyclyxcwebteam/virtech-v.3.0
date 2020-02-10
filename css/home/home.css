@@ -1,0 +1,54 @@
+.home-outer{
+    background-color: #05070c;
+    height: 100vh;
+}
+.home-inner{
+    position: relative;
+}
+/* ? Home titles */
+
+.home-titles{
+position: relative;
+}
+.title-container{
+    display: none;
+}
+.title-container.active{
+    display: block;
+}
+.hero-title{
+    color: #05070c;
+}
+ 
+.hero-title span{
+    background-color: #f4f4f4;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 2.5rem;
+}
+.hero-text{
+    font-size: 1.2rem;
+    color: #b8bdc4;
+}
+
+.social-media-links{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.social-media-links ul{
+    margin: 0;
+    padding: 0;
+}
+.social-media-links li{
+    list-style-type: none;
+    margin: 1rem;
+}
+.home-video{
+    position: relative;
+} 
+.bg-video{
+    width: 85%;
+    mix-blend-mode: screen;   
+}
