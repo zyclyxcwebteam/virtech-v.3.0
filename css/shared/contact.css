@@ -22,6 +22,14 @@
     .contact-wrapper .contact-info a{
         color: #f4f4f4;
     }
+
+    .contact-wrapper .social-network li{
+        list-style-type: none;
+        margin: 5px 12px;
+    }
+    /* .contact-btn{
+        ba
+    } */
      .form-control{
       color: none;
       background: none !important;
