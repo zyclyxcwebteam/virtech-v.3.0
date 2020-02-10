@@ -1,3 +1,7 @@
+.master-wrapper{
+    position: relative;
+}
+
 .home-outer{
     background-color: #05070c;
     height: 100vh;
