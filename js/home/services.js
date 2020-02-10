@@ -1,4 +1,4 @@
-$(function(){
+$(function(){    
     let controller = new ScrollMagic.Controller();
 
   // services slide animation

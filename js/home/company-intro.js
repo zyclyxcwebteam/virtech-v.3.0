@@ -1,4 +1,8 @@
 $(function(){
+    particlesJS.load('introContainer', './particlesjs.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+
 // ! scroll magic controller
 let controller = new ScrollMagic.Controller();
 let companyIntroAnimation = gsap.timeline()

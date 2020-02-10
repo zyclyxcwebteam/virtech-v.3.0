@@ -254,3 +254,8 @@ color: white; */
     width: 180px;
     transform: perspective(500px) translateZ(40px);
   }
+
+   /* TODO - check it  */
+ .contact-banner{
+  display: none;
+   }
