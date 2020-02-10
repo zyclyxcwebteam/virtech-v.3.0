@@ -4,8 +4,8 @@ $(function(){
     let controller = new ScrollMagic.Controller();
     
     let industriesAnimation = gsap.timeline()
-    .to('#industryMaster #industryInner',{display:'none',duration:0.01})    
-    .fromTo("#industryMaster .bg-title-dark", { fontSize:'5rem'},{fontSize:'2.5rem',duration: 1 })
+    .to('#industryMaster #industryInner',{display:'none',duration:0.01})         
+    .to("#industryMaster .bg-title-dark", {duration: 1,top:'15%',opacity:0.7,fontSize:'2.5rem'})
     .fromTo('#industryMaster #industryInner',{opacity:0.8,y:50,display:'none'},{opacity:1,y:0,display:'block',duration:1})     
 
 

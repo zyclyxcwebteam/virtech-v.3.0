@@ -19,7 +19,20 @@
     bottom: 0;
     display: flex;
   }
-  
+ 
+  .bg-title {
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* font-family: 'Monoton', cursive; */
+    opacity: 0.2;
+    width: 100%;
+    text-align: center;
+    color:#eeeef0;   
+  } 
+
 .slide {
     height: 100%;
     width: 100%;

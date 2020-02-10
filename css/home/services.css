@@ -119,6 +119,9 @@
     color: #f4f4f4;
     font-size: 1rem;
   }
+  .service-cards .card:hover{
+    background-color:hsl(222, 38%, 15%);
+  }
   .service-cards .card:hover .service-card-content{
     opacity: 1;
     /* margin-left: 1rem; */

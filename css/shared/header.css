@@ -2,14 +2,16 @@
 /* ! Navbar */
 #masterNavbar{
   z-index: 1001;
+  background-color: #05070c;
 }
 .navbar-brand img{
     max-width: 160px;
 }
 
 #masterNavbar .nav-link{
-    margin-left: 1rem;
-    color: #96969c;
+    margin-left: 1.2rem;
+    color: #b8bdc4;
+    font-size: 1.2rem;
 }
 
 #masterNavbar .active .nav-link {
