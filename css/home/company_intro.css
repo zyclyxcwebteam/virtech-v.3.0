@@ -37,6 +37,8 @@
    .company-intro .title-card-1{
      background-color: #581b98;
      background-image: url('../../images/home/wave-6.svg');
+     border-radius: 50%;
+     shape-outside: circle(50%);
    }
    .company-intro .title-card-2{
     background-color: #009efa;
