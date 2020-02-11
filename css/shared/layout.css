@@ -51,17 +51,37 @@
     z-index:999;
 }
 body{
-    padding-top: 80px;
+    padding-top:97px;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     position: relative;         
 }
-h1,h2,h3,h4,h5,h6{
+/* h1,h2,h3,h4,h5,h6{
     font-family:'Replica', sans-serif;
-}
+} */
 /*  
 font-family: 'Sniglet', cursive;
 font-family: 'Jacques Francois Shadow', cursive;
 font-family: 'Ribeye Marrow', cursive;
 font-family: 'Londrina Outline', cursive;
 font-family: 'Diplomata SC', cursive;
-font-family: 'Bungee Outline', cursive; */
+font-family: 'Bungee Outline', cursive; 
+*/
+.bg-title{
+    font-size: 7rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);         
+    width: 100%;
+    text-align: center;
+    font-family: 'Bungee Outline', cursive; 
+    
+}
+.bg-title-light{
+color:#f9f9f9;
+opacity: 0.7;
+}
+.bg-title-dark{
+color:#000000;
+opacity: 1;
+}

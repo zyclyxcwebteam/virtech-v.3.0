@@ -3,8 +3,8 @@ $(function(){
 
   // services slide animation
   let slideAnimation = gsap.timeline()       
-      .from("#masterContainer .service-bg-title", {duration: 1,opacity:1})
-      .to("#masterContainer .service-bg-title", {duration: 1,top:'15%',opacity:0.5,fontSize:'2.5rem'})
+      //.from("#masterContainer .service-bg-title", {duration: 1,opacity:1})
+      .to("#masterContainer .bg-title", {duration: 0.8,opacity:0.7,transform:'translate(0,0)',top:'90px',left:0,fontSize:'3.5rem'})
       .from("#slidesContainer .slide-1",{opacity:0,duration:1,ease: "power1.out"})
       
       //.from("#slidesContainer .title-card-1",{y:150,duration:1,ease: "power1.out"})

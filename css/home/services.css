@@ -9,8 +9,7 @@
     perspective: 1000;
     height: 100vh;     
     background-color: #05070c !important;
-    position: relative;
-    /* margin-top: 90px; */
+    position: relative;     
   }
   
   #slidesContainer,#introSlides {
@@ -20,32 +19,16 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    display: flex;
+    display: flex;     
   }
   
   .slide {
     height: 100%;
     width: 100%;
     background-color: transparent;   
-    position: relative;
+    position: relative;   
   }
   
-  .bg-title {
-    font-size: 5rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* font-family: 'Monoton', cursive; */
-    opacity: 0.2;
-    width: 100%;
-    text-align: center;
-    color:#05070c;   
-  }
-  .service-bg-title,.intro-bg-title{
-    color: #fff;
-    opacity: 0.1;
-  }
   /* end scroll container */
   
   .services .title-card,.company-intro .title-card{

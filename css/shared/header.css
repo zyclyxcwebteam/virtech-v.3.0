@@ -8,14 +8,14 @@
 /* ! Navbar */
 #masterNavbar{
   z-index: 1001;
-  background-color: #05070c;
-  opacity: 0;
+  background-color: #05070c; ;
+  opacity: 0;      
 }
 .no-js #masterNavbar{
   opacity: 1;
 }
 .navbar-brand img{
-    max-width: 160px;
+    max-width: 180px;
     opacity: 0;     
 }
 .no-js .navbar-brand img{
@@ -23,7 +23,7 @@
 }
 
 #masterNavbar .nav-link{
-    margin-left: 1.2rem;
+    margin-left: 1.4rem;
     color: #b8bdc4;
     font-size: 1.2rem;
 }
