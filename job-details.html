@@ -160,7 +160,7 @@
   <section id="section-4 py-5">
     <div class="container">
 
-      <h1 class="py-3 border-bottom text-center text-primary">Business Development Manager</h1>
+      <h1 class="py-5 border-bottom text-center text-primary">Business Development Manager</h1>
 
       <div class="d-flex job-info justify-content-around">
         <div class="info">
@@ -299,19 +299,19 @@
 
   <!-- Pop Up form -->
 
-  <section class="mb-5" class="appWrapper" id="appForm">
+  <section class="" class="appWrapper" id="appForm">
     <button type="button" id="formClose"><i class="fas fa-times"></i></button>
     <h4 class="py-5 text-center">Apply for this Job</h4>
     <div class="container">
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
+      
+        <div class="">
           <form id="contactForm" class="contactForm" onsubmit="return checkContactForm(this);">
+
             <div class="row">
               <div class="col">
                 <div class="form-group">
                   <label> First Name  <span>*</span></label>
-                  <input type="text" class="form-control" name="firstname" id="firstname" autocomplete="off">
+                  <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter your name" autocomplete="off">
                 </div>
               </div>
               <div class="col input-field">
@@ -321,56 +321,58 @@
                 </label> -->
                 <div class="form-group">
                   <label for="pwd"> Last Name <span>*</span></label>
-                  <input type="text" class="form-control" name="lasttname" id="lasttname" autocomplete="off">
+                  <input type="text" class="form-control" name="lasttname" id="lasttname" placeholder="Enter your last name" autocomplete="off">
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col">
                 <div class="form-group">
                   <label> Email-ID <span>*</span></label>
-                  <input type="text" class="form-control" name="email" id="email">
+                  <input type="text" class="form-control" name="email" placeholder="Enter your email-ID" id="email">
                 </div>
               </div>
               <div class="col">
                 <div class="form-group">
                   <label> Contact Number <span>*</span></label>
-                  <input type="text" class="form-control" name="phone" id="phone" autocomplete="off">
+                  <input type="text" class="form-control" name="phone" id="phone"  placeholder="Enter your contact number" autocomplete="off">
                 </div>
               </div>
             </div>
 
-            <div class="row">
+            
 
-              <div class="col-6 form-group">
+              <div class="form-group">
                 <label>Upload Resume <span>*</span></label>
-                <div class="input-group mb-3">
+                <div class="input-group mb-3">                  
                   <div class="custom-file">
-
-                    <input type="file" class="custom-file-input form-control" id="inputGroupFile01" name="resume"
-                      aria-describedby="inputGroupFileAddon01">
-                    <label class="custom-file-label" for="inputGroupFile01" placehoder="Choose you file">Choose
-                      file</label>
+                    <input type="file" class="custom-file-input" id="inputFile" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputFile">Choose file</label>
                   </div>
                 </div>
               </div>
 
-              <div class="col-6 form-group">
+              <div class="form-group">
                 <label for="message">Subject <span>*</span></label>
-                <textarea class="form-control" id="message" name="message"></textarea>
+                <textarea class="form-control" id="message" placeholder="Your message here.." name="messages"></textarea>
               </div>
 
+           
+
+
+            <div class="row mt-5">
+              <div class="col-md-6">
+              <button type="submit" class="btn btn-block " id=" btn-submit">Submit Application</button>
+            </div> 
+            <div class="col-md-6">             
+              <button type="button" class="btn btn-block " id="btnCancel">Cancel</button>
             </div>
-
-
-            <div class="d-flex justify-content-center mt-5">
-              <button type="submit" class="btn btn-success  mx-auto">Submit Application</button>
-
             </div>
         </div>
         </form>
-      </div>
-    </div>
+      
+   
   </section>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -389,11 +391,26 @@
   <script src="./js/about-scroll.js"></script>
   <script src="./js/shared/header.js"></script>
 
+
+  <script>
+    $('#inputFile').on('change',function(){
+        //get the file name
+        var fileName = $(this).val();
+        //replace the "Choose a file" label
+        var cleanFileName = fileName.replace('C:\\fakepath\\', " ");
+        $(this).next('.custom-file-label').html(cleanFileName);
+    })
+</script>
   <script>
     
 let contactButton = document.getElementById('submitBtn');
-//let contactLink = document.getElementById('contactLink');
+let btnCancel = document.getElementById('btnCancel');
 let contactClose = document.getElementById('formClose');
+
+// close application form
+function closePopUp(){
+  gsap.to('#appForm',{display:'none',height:'0px',duration:0.5})
+}
  
 // contactLink.addEventListener('click',function(event){
 //   event.preventDefault();
@@ -405,9 +422,17 @@ event.preventDefault();
 gsap.to('#appForm',{display:'block',height:'100vh',duration:0.5})    
 })
 
+btnCancel.addEventListener('click',function(event){
+  event.preventDefault();
+  closePopUp();
+})
+
 contactClose.addEventListener('click',function(event){
 event.preventDefault();
-gsap.to('#appForm',{display:'none',height:'0px',duration:0.5})
+//gsap.to('#appForm',{display:'none',height:'0px',duration:0.5})
+closePopUp();
 })
+
+
   </script>
 </body>
