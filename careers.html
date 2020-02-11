@@ -15,120 +15,20 @@
   <link rel="stylesheet" href="./css/careers/careers.css">
   <link rel="stylesheet" href="./css/shared/header.css">
   <link rel="stylesheet" href="./css/shared/footer.css">
+  <link rel="stylesheet" href="./css/shared/contact.css">
   <title>Careers</title>
  
   <!-- Validation code -->
   <script type="text/javascript">
-    function checkContactForm(contactForm) {
-
-      if (contactForm.firstname.value == "") {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Please Enter First Name!'
-
-        })
-
-        contactForm.firstname.focus();
-        return false;
-      }
-      re = /[0-9]/;
-      if (re.test(contactForm.firstname.value)) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'First Name cannot be in numbers!'
-
-        })
-        contactForm.firstname.focus();
-        return false;
-
-      }
-      if (contactForm.lasttname.value == "") {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Please Enter Last Name!'
-
-        })
-        contactForm.lasttname.focus();
-        return false;
-      }
-      re = /[0-9]/;
-      if (re.test(contactForm.lasttname.value)) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Last Name cannot be in numbers!'
-
-        })
-        contactForm.lasttname.focus();
-        return false;
-      }
-      if (contactForm.email.value == "") {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Please Enter Email id!'
-
-        })
-        contactForm.email.focus();
-        return false;
-      }
-
-      re = /^([A-Za-z0-9_\-\.])+([A-Za-z0-9_\-\.])+([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-      if (!re.test(contactForm.email.value)) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Please Enter Valid Email Id!'
-        })
-        contactForm.email.focus();
-        return false;
-      }
-      if (contactForm.phone.value == "") {
-        Swal.fire(
-          {
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Please Enter Phone Number!'
-          }
-        )
-        contactForm.phone.focus();
-        return false;
-      }
-      re = /[0-9]/;
-      if (!re.test(contactForm.phone.value)) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Please Enter Valid Phone Number !'
-
-        })
-        contactForm.phone.focus();
-        return false;
-      }
-      if (contactForm.message.value == "") {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Please Enter Message!'
-        })
-        contactForm.message.focus();
-        return false;
-      }
-      return true;
-    }
-
   </script>
 </head>
 
 <body>
-    <!-- ! header navbar-->
+      <!-- ! header navbar-->
     <!-- TODO: hide header on scroll down, show on scroll up -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
       <div class="container-fluid">
-        <a href="./" class="navbar-brand"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
+        <a href="./" class="navbar-brand ml-5"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
 
         <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
           aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
@@ -136,7 +36,7 @@
         </button>
 
         <div id="navbarContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto mr-5">
             <!--  Home -->
 
             <li class="nav-item active">
@@ -148,7 +48,7 @@
               <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 class="nav-link dropdown-toggle">Services</a>
 
-              <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0 dropdown-menu-right">
+              <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0">
                 <!-- ! New Age Technologies -->
                 <li class="dropdown-submenu dropright">
                   <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -241,7 +141,7 @@
 
             <li class="nav-item"><a href="./about.html" class="nav-link">About us</a></li>
             <li class="nav-item"><a href="./careers.html" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="./contactus.html" class="nav-link" id="contactLink">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="contactLink">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -347,6 +247,15 @@
       </div>
 
     </section>
+    <section class="contact-banner mt-5">
+      <h3 class="text-center">Let's Get In Touch</h3>
+      <p class="text-center py-3">
+        <button type="button" id="contactButton"
+          class="btn bg-dark text-white text-center py-2 font-weight-bolder see-btn">
+          Contact us
+        </button>
+      </p>
+    </section>
     <footer class="footer pt-3">
       <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
         <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
@@ -391,18 +300,129 @@
       </div>
       <p class="copyright mb-0">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
     </footer>
+
+    <!-- ! contact modal -->
+    
+  <!-- ! Contact fomr modal -->
+  <section class="contact-wrapper" id="contactModal">
+    <div class="contact-inner">
+      <h2 class="mt-3 text-center">Get in touch</h2>
+      <p class="text-center">Contact us for a quote, help, or to join the team</p>
+      <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
+      <div>
+        <!-- ! contact form -->
+        <div class="container mx-auto shadow">
+          <div class="row p-3">
+
+            <div class="col-4 contact-info">              
+              <div class="row mt-5 d-flex flex-column">
+                <div class="py-3"> 
+                  <i class="fas fa-map-marker-alt text-success mr-2"></i>
+                  <a href="#">Riyadh, Kingdom of Saudi Arabia - 11611.</a>
+                </div>
+
+                <div class="py-3">
+                  <i class="fas fa-phone-alt text-success mr-2"></i>
+                  <a href="#">(+966) 552 357 583</a>
+                </div>
+
+                <div class="py-3">
+                  <i class="fas fa-envelope text-success mr-2"></i>
+                  <a href="#">info@virtech-ksa.com</a>
+                </div>
+
+                <div class="py-3">
+                  <div class="social-links">                     
+                    <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                      <li>
+                        <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                            class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+
+              </div>
+              </div>
+            </div>
+
+            <div class="col-8 col2 text-center p-5 mt-4">            
+              <form id="contactForm" class="needs-validation mb-3" novalidate="">
+                <span id="errorAlert"></span>
+                <div class="row ">
+                  <div class="col-sm-6">
+                    <!-- Name -->
+                    <div class="form-group">
+
+                      <input class="form-control" type="text" name="Name" id="username" placeholder="Your name"
+                        required>
+                      <!-- <span id="error1" class="error"></span> -->
+                      <div class="invalid-feedback">Please fill in your name!</div>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Email -->
+                    <div class="form-group">
+                      <input class="form-control" type="email" name="Email" id="email" placeholder="Email address"
+                        required="">
+                      <div class="invalid-feedback">Please fill in your Email!</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Phone -->
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="Phone" id="phone-no" placeholder="Your phone"
+                        required>
+                      <div class="invalid-feedback">Please fill in your Phone No!</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Subject -->
+                    <div class="form-group">
+                      <input class="form-control" name="Subject" type="text" id="subject" placeholder="Subject">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <!-- Message -->
+                  <textarea class="form-control" name="Message" id="message" rows="4"
+                    placeholder="Please describe in detail your request" required=""></textarea>
+                  <div class="invalid-feedback">Please write a message!</div>
+                </div>
+
+                <button type="submit" class="btn btn-outline-primary contact-btn mt-3 px-3 py-2" id="contactBtn">
+                  <span id="btnText"> Send message <i class="ml-2 far fa-paper-plane"></i></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="./js/vendor/animation.gsap.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
   <!--Load Country code javascript Library-->
   <script src="js/intlTelInput.js"></script>
   <!--Load Jquery library-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+ <script src="./js/home/contact.js"></script>
   <script>
     /*  $(function () { // wait for document ready
           // init
@@ -430,47 +450,15 @@
 
 
 
-    var myForm = document.getElementById('contactForm');
-    myForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var status = "Applied Successfull";
-      // swal("Good job!", "You clicked the button!", "success");
-
-      const formdata = new FormData(this);
-      console.log(formdata)
-
-      fetch('http://localhost:3003/jobapplicationform', {
-        method: 'post',
-        body: formdata
-      }).then(function (response) {
-
-        return response.text();
-        console.log(response.text() + "responce is")
-
-
-      }).then(function (text) {
-        console.log(text + "text is");
-        if (status == text) {
-          swal("Applied Successfull", "You clicked the button!", "success");
-        }
-        else {
-          swal("file is not supported", "You clicked the button!", "error");
-        }
-
-
-      }).catch(function (error) {
-        console.log(error);
-      })
-    })
 
 
 
   </script>
   <script>
-    var input = document.querySelector("#phone");
-    intlTelInput(input, {
-      utilsScript: "js/utils.js"
-    });
+    // var input = document.querySelector("#phone");
+    // intlTelInput(input, {
+    //   utilsScript: "js/utils.js"
+    // });
 
   </script>
 </body>

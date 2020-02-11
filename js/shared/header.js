@@ -1,5 +1,6 @@
 $(function() { 
-    
+  // $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+  // console.log($('#masterNavbar').find('a[href="' + location.pathname + '"]'));
     // ! Navbar dropdown menu toggle
     $("ul.dropdown-menu [data-toggle='dropdown']").on("mouseenter", function(event) {
       event.preventDefault();
@@ -18,5 +19,6 @@ $(function() {
       });
     });
   
+    //$('.your-nav-container').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
     
 });

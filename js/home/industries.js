@@ -3,9 +3,10 @@ $(function(){
     // ! scroll magic controller
     let controller = new ScrollMagic.Controller();
     
-    let industriesAnimation = gsap.timeline()
-    .to('#industryMaster #industryInner',{display:'none',duration:0.01})    
-    .fromTo("#industryMaster .bg-title-dark", { fontSize:'5rem'},{fontSize:'2.5rem',duration: 1 })
+    let industriesAnimation = gsap.timeline()     
+    .to('#industryMaster #industryInner',{opacity:1,duration:1})
+    .to("#industryMaster .bg-title", {duration: 1,opacity:1,transform:'translate(0,0)',top:'90px',left:0,fontSize:'3.5rem'})         
+    //.to("#industryMaster .bg-title-dark", {duration: 1,top:'15%',opacity:0.5,fontSize:'2.5rem'})
     .fromTo('#industryMaster #industryInner',{opacity:0.8,y:50,display:'none'},{opacity:1,y:0,display:'block',duration:1})     
 
 

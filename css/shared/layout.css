@@ -1,4 +1,6 @@
 /* ! COLOR CODES  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Outline|Diplomata+SC|Jacques+Francois+Shadow|Londrina+Outline|Ribeye+Marrow|Sniglet&display=swap');
 :root{
     --color-1:#0b0c13;
     --color-2:#575866;
@@ -17,6 +19,19 @@
     --color-3-1:#04ffd4;
     --color-3-2:#045e52;
     --color-3-3:#00C9A7;
+    --color-3-4:#3fe1c9;
+    --color-3-5:#17bb51;
+    /*  */
+
+    --color-4-1:#f9f9f9;
+    --color-4-2:#0b0b0b;
+    --color-4-3:#bebec0;
+    --color-4-4:#3f3f40;
+    --color-4-5:#7f7f80;
+    --color-4-6:#272b48;
+    --color-4-7:#9399ab;
+    --color-4-8:#656c8f;
+    --color-4-9:#e8e9f0;
 }
 @font-face {
     font-family: 'Replica';
@@ -32,13 +47,41 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color:#0b0c13;
+    background-color:#05070c;
     z-index:999;
 }
 body{
-    position: relative;
-    font-family:'Replica', sans-serif;     
+    padding-top:97px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    position: relative;         
 }
-.bg-tilte-dark{
-    font-size: 5rem;
+/* h1,h2,h3,h4,h5,h6{
+    font-family:'Replica', sans-serif;
+} */
+/*  
+font-family: 'Sniglet', cursive;
+font-family: 'Jacques Francois Shadow', cursive;
+font-family: 'Ribeye Marrow', cursive;
+font-family: 'Londrina Outline', cursive;
+font-family: 'Diplomata SC', cursive;
+font-family: 'Bungee Outline', cursive; 
+*/
+.bg-title{
+    font-size: 7rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);         
+    width: 100%;
+    text-align: center;
+    font-family: 'Bungee Outline', cursive; 
+    
+}
+.bg-title-light{
+color:#f9f9f9;
+opacity: 0.7;
+}
+.bg-title-dark{
+color:#000000;
+opacity: 1;
 }

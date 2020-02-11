@@ -23,16 +23,18 @@
   <link rel="stylesheet" href="./css/shared/contact.css">
 </head>
 
-<body>
+<body id="home">
   <!-- ! Page loading -->
-  <div class="loading-wrapper" id="page-loader"></div>
+  <div class="loading-wrapper" id="page-loader">
+    <img src="./img/logo.png" alt="">
+  </div>
 
   <div class="master-wrapper">
     <!-- ! header navbar-->
     <!-- TODO: hide header on scroll down, show on scroll up -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
       <div class="container-fluid">
-        <a href="./" class="navbar-brand"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
+        <a href="./" class="navbar-brand ml-5"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
 
         <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
           aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
@@ -40,7 +42,7 @@
         </button>
 
         <div id="navbarContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto mr-5">
             <!--  Home -->
 
             <li class="nav-item active">
@@ -52,7 +54,7 @@
               <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 class="nav-link dropdown-toggle">Services</a>
 
-              <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0 dropdown-menu-right">
+              <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0">
                 <!-- ! New Age Technologies -->
                 <li class="dropdown-submenu dropright">
                   <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -145,7 +147,7 @@
 
             <li class="nav-item"><a href="./about.html" class="nav-link">About us</a></li>
             <li class="nav-item"><a href="./careers.html" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="./contactus.html" class="nav-link" id="contactLink">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="contactLink">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -228,7 +230,7 @@
         <!-- ? video -->
         <div class="col-md-6 col-12 home-video d-flex justify-content-center align-items-center">
           <video autoplay muted loop class="bg-video">
-            <source src="./images/home/bg_video.mp4" type="video/mp4" />
+            <source src="./img/animation_simple_by_gleb.mp4" type="video/mp4" />
           </video>
           <div class="home-circle"></div>
         </div>
@@ -237,9 +239,7 @@
 
     <!-- ! Our Services -->
     <div id="masterContainer">
-
-      <h4 class="bg-title service-bg-title">Services</h4>
-
+      <h4 class="bg-title-light bg-title mt-3">Services</h4>
       <div id="slidesContainer" class="services">
 
         <section class="slide slide-1">
@@ -586,11 +586,12 @@
           </div>
         </section>
       </div>
+
     </div>
 
     <!-- ! Our Industries -->
     <section class="industry-wrapper" id="industryMaster">
-      <h3 class="bg-title-dark">INDUSTRIES</h3>
+      <h3 class="bg-title-dark bg-title mt-3">INDUSTRIES</h3>
       <div class="container" id="industryInner">
         <div class="row">
           <!-- 3 cards column -->
@@ -728,11 +729,11 @@
 
     <!-- ! Company Intro -->
     <div id="introContainer">
-      <h4 class="bg-title intro-bg-title">Virtech</h4>
-      <div id="introSlides" class="company-intro">
+      <h4 class="bg-title bg-title-light my-3">Virtech</h4>
+      <div id="introSlides" class="company-intro mt-5">
         <section class="slide slide-1">
           <div class="container d-flex justify-content-center align-items-center flex-column h-100 ">
-            <div class="row">
+            <div class="row d-flex justify-content-between">
               <div class="col-5">
                 <div class="testimonials py-5">
                   <!-- <h4 class="my-3">Testimonials</h4> -->
@@ -779,13 +780,13 @@
         <section class="slide slide-2">
           <div class="container d-flex justify-content-center align-items-center h-100">
             <div class="row">
-              <div class="col-4">
+              <!-- <div class="col-4">
                 <div class="card title-card title-card-1">
                   <div class="card-body">
                     <h2 class="card-title">Core Values</h2>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="col-8 core-values">
                 <div class="row">
                   <div class="col-4">
@@ -958,7 +959,7 @@
           </div>
         </div>
       </div>
-      <p class="copyright mb-0">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
+      <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
     </footer>
   </div>
 
@@ -991,11 +992,7 @@
                 </div>
 
                 <div class="py-3">
-                  <div class="social-links d-flex justify-content-center">
-                    <!-- <i class="fab fa-facebook-f mr-4"></i>
-                    <i class="fab fa-twitter mr-4"></i>
-                    <i class="fab fa-instagram mr-4"></i>
-                    <i class="fab fa-linkedin mr-4"></i> -->
+                  <div class="social-links">                     
                     <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
                       <li>
                         <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1098,6 +1095,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="./js/vendor/particles.min.js"></script>
   <!-- TODO - CONCAT & MINIFY SCRIPTS -->
   <script src="./js/shared/header.js"></script>
   <script src="./js/home/home.js"></script>
@@ -1106,5 +1104,4 @@
   <script src="./js/home/company-intro.js"></script>
   <script src="./js/home/contact.js"></script>
 </body>
-
 </html>

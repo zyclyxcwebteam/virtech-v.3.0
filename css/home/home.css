@@ -4,11 +4,13 @@
 
 .home-outer{
     background-color: #05070c;
-    height: 100vh;
+    height: 85vh;     
 }
+
 .home-inner{
     position: relative;
 }
+
 /* ? Home titles */
 
 .home-titles{

@@ -1,15 +1,15 @@
-$(function(){
+$(function(){    
     let controller = new ScrollMagic.Controller();
 
   // services slide animation
   let slideAnimation = gsap.timeline()       
-      .from("#masterContainer .service-bg-title", {duration: 2,opacity:1})
-      .to("#masterContainer .service-bg-title", {duration: 1,top:'15%',opacity:0.5,fontSize:'2.5rem'})
-      .from("#slidesContainer .slide-1",{opacity:0,duration:2,ease: "power1.out"})
+      //.from("#masterContainer .service-bg-title", {duration: 1,opacity:1})
+      .to("#masterContainer .bg-title", {duration: 0.8,opacity:0.7,transform:'translate(0,0)',top:'90px',left:0,fontSize:'3.5rem'})
+      .from("#slidesContainer .slide-1",{opacity:0,duration:1,ease: "power1.out"})
       
       //.from("#slidesContainer .title-card-1",{y:150,duration:1,ease: "power1.out"})
       //.from("#aiCards .card",{y:150,duration:1,opacity:0.98,ease: "power1.out"},"-=1")             
-      .to("#slidesContainer", 4, {x: "-25%",delay:4 })
+      .to("#slidesContainer", 4, {x: "-25%" })
 
       //.from("#slidesContainer .title-card-2",{x:100,duration:1,opacity:0.95,ease: "power1.out"})
       //.from("#appCards .card",{x:100,duration:1,opacity:0.98,ease: "power1.out"})
