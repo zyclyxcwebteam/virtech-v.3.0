@@ -1,9 +1,11 @@
 $(document).ready(function () { 
 // ! Home loading animation
 let homePageLoad = gsap.timeline({onComplete:startTitleCarousel})
-homePageLoad.to('.home-inner',{opacity:0,duration:0.1}) 
-homePageLoad.from('#masterLogo',{x:430,y:350,maxWidth:'500px',duration:4,delay:1,ease:Expo.easeInOut})
-homePageLoad.fromTo('#masterNavbar',{y:-110 },{y:0,duration:2.3,ease:Expo.easeInOut},"-=3")
+homePageLoad.to('.home-inner',{opacity:0,duration:0.01})
+homePageLoad.fromTo('#masterNavbar',{opacity:1 },{opacity:0,duration:0.01,ease:Expo.easeInOut})
+homePageLoad.fromTo('#page-loader img',{maxWidth:'50%'},{maxWidth:'150px',left:'6.5%',top:'6%',duration:4,delay:1})  
+homePageLoad.fromTo('#masterNavbar',{opacity:0 },{y:0,opacity:1,duration:0.01,ease:Expo.easeInOut})
+homePageLoad.to('#masterLogo',{opacity:1,duration:0.001}) 
 homePageLoad.to('.home-inner',{opacity:1,duration:0.1})
 homePageLoad.to("#page-loader", { duration: 1, top: "-110%", ease: Expo.easeInOut })
 

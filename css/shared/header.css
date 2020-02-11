@@ -1,11 +1,28 @@
-
+.loading-wrapper {     
+  border: 2px solid red;
+}
+.loading-wrapper img{
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+} 
 /* ! Navbar */
 #masterNavbar{
   z-index: 1001;
   background-color: #05070c;
+  opacity: 0;
+}
+.no-js #masterNavbar{
+  opacity: 1;
 }
 .navbar-brand img{
     max-width: 160px;
+    opacity: 0;     
+}
+.no-js .navbar-brand img{
+  opacity: 1;
 }
 
 #masterNavbar .nav-link{
