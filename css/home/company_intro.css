@@ -53,7 +53,7 @@
   }
   
   .testimonials .test-card{
-    background-color:hsl(223, 41%, 7%);
+    background-color:#05070c;
     padding: 1rem;
     border-radius: 0.5rem;
     margin:1rem 0.6rem;
@@ -82,21 +82,46 @@
     font-size: 1.4rem;
     color: #ddd;
   }
+
   .c-val-caption{
     font-size: 0.85rem;
     color: #f3f7fa;
   }
   .c-val-title{
-    font-size: 1.4rem;
-    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+    color: #fff;    
+    text-align: center;
   }
-  .core-values .card{
-  background-color: rgba(0, 0, 0,0.8);
-  margin: 8px;
-  border: 1px solid #fff;
+
+ .core-values .card{
+  background-color: transparent;      
+  border: none;
   }
   .core-values .card-body{
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .core-values .core-text{
+    color: #e8e9f0;
+  }
+  .core-values .core-icon-outer{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color:hsl(223, 41%, 8%); 
+  }
+  .core-values .core-icon-inner{
+    background-color: #05070c;
+    padding: 1.5rem;
+    border-radius: 50%;
+  }
+  .core-values p{
+     color: wheat;
+  }
+  .core-values .card-body{
+    padding: 0;
   }
   .achievements .card{
     background-color: rgba(0, 0, 0,0.1);
