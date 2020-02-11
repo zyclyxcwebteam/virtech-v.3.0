@@ -22,6 +22,9 @@
   text-align: center;
   color:#05070c;   
 }
+#industryInner{
+  margin-top:90px ;
+}
 .industry-letter{
     font-size: 3rem;
     text-align: right;
