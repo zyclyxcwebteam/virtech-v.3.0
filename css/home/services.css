@@ -12,14 +12,15 @@
     position: relative;     
   }
   
-  #slidesContainer,#introSlides {
+  #slidesContainer {
     width: 400%;
     height: 100%;
     background-color: transparent;
     position: absolute;
     top: 0;
     bottom: 0;
-    display: flex;     
+    display: flex;
+    margin-top:40px;     
   }
   
   .slide {

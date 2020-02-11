@@ -10,20 +10,9 @@
 /* .industry-wrapper .bg-title-dark{
     font-size: 5rem;    
 } */
-.industry-wrapper .bg-title-dark {
-  font-size: 5rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* font-family: 'Monoton', cursive; */
-  /* opacity: 0.2; */
-  width: 100%;
-  text-align: center;
-  color:#05070c;   
-}
+ 
 #industryInner{
-  margin-top:90px ;
+  margin-top:90px;
 }
 .industry-letter{
     font-size: 3rem;
