@@ -1,0 +1,50 @@
+body {
+  padding-top: 78px;
+  background-color: #f9f9f9;
+}
+#masterNavbar {
+  /* background-color:#272b48; */
+  /* background-color:transparent !important; */
+  background-color: #f9f9f9;
+}
+
+#masterNavbar .nav-link {
+  color: #3c3c42;
+  font-weight: 600;
+}
+
+.service-banner {   
+  height: 90vh;
+  position: relative;
+  background-image: url("../../img/blockchain.jpg");
+  background-size: cover;
+  position: relative;    
+  z-index: 1;
+}
+.service-banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to top right, #6a11cb 0%, rgba(37, 117, 252,0.4) 100%);
+    z-index: -1;
+}
+
+.service-name,.service-tagline{
+    z-index: 99;
+}
+.service-name{
+    font-size: 3rem;
+    color: #f9f9f9;
+}
+.service-tagline{
+font-size: 3.6rem;
+color: #f9f9f9;
+}
+.service-des p{
+     font-size: 1.4rem;
+    /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 10%); */
+}
+ 
