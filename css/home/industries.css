@@ -7,15 +7,15 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    overflow: hidden;     
+    overflow: hidden;
+    background-color: #f9f9f9;     
 }
 /* .industry-wrapper .bg-title-dark{
     font-size: 5rem;    
 } */
 
 #industryInner{
-  margin-top:90px;
-  border: 2px solie purple;
+  margin-top:90px;   
 }
 .industry-letter{
     font-size: 3rem;

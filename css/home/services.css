@@ -7,10 +7,9 @@
     overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 87vh;     
+    height: 88vh;     
     background-color: #05070c !important;
-    position: relative;
-    border: 2px solid yellow;     
+    position: relative;          
   }
   
   #slidesContainer {
@@ -20,8 +19,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    display: flex;
-    border: 2px solid orangered;    
+    display: flex;     
   }
   
   .slide {

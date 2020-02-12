@@ -4,8 +4,7 @@
     overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 87vh;
-    border: 2px solid seagreen;     
+    height: 87vh;     
     background-color: #000 !important;
     position: relative;
   }
@@ -17,8 +16,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    display: flex;
-    border: 2px solid red;     
+    display: flex;     
   }
  
 .slide {
@@ -94,12 +92,12 @@
     color: #fff;    
     text-align: center;
   }
-.core-values{  
+.core-values{   
   background-image: url('../../img/Shape.svg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 350px;
+  background-position: bottom;
+  background-size:100% 350px;
+  height:500px;
   position: relative;
 }
  .core-values .card{
@@ -130,6 +128,39 @@
   .core-values .card-body{
     padding: 0;
   }
+ .c-val-1{
+   position: absolute;
+   bottom:10%;
+   left: 3%;
+ }
+ 
+ .c-val-2{
+position: absolute;
+bottom:50%; 
+left: 14%;
+ }
+ .c-val-3{
+position: absolute;
+left:33%;
+top: -1%; 
+ }
+ .c-val-4{
+position: absolute;
+right: 29%;
+top:0%;
+}
+
+.c-val-5{
+position: absolute;
+bottom: 47%;
+right: 12%;
+}
+
+.c-val-6{
+  position: absolute;
+right:3%;
+bottom:10%; 
+}
   .achievements .card{
     background-color: rgba(0, 0, 0,0.1);
     box-shadow: none;

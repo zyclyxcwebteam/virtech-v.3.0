@@ -8,9 +8,7 @@
 /* ! Navbar */
 #masterNavbar{
   z-index: 1001;
-  background-color: #05070c;
-  border: 2px solid red;
-  background-color: transparent;
+  background-color: #05070c;      
 }
 #home #masterNavbar{
   opacity: 0; 
