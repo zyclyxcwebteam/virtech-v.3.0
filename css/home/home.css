@@ -4,7 +4,8 @@
 
 .home-outer{
     background-color: #05070c;
-    height: 85vh;     
+    height: 87vh;
+    border: 2px solid green;     
 }
 
 .home-inner{

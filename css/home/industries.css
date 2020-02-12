@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap'); 
 .industry-wrapper{
-    height: 100vh;     
+    height: 87vh;
+    width: 100%;     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+    overflow: hidden;     
 }
 /* .industry-wrapper .bg-title-dark{
     font-size: 5rem;    
 } */
- 
+
 #industryInner{
   margin-top:90px;
+  border: 2px solie purple;
 }
 .industry-letter{
     font-size: 3rem;

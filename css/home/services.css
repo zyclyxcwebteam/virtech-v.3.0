@@ -3,13 +3,14 @@
 /* Horizontal scroll container */
 #masterContainer{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 100vh;     
+    height: 87vh;     
     background-color: #05070c !important;
-    position: relative;     
+    position: relative;
+    border: 2px solid yellow;     
   }
   
   #slidesContainer {
@@ -20,7 +21,7 @@
     top: 0;
     bottom: 0;
     display: flex;
-    margin-top:40px;     
+    border: 2px solid orangered;    
   }
   
   .slide {

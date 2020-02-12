@@ -1,11 +1,11 @@
 #introContainer{
     width: 100%;
     height: 100%;
-    overflow: hidden;
-  
+    overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 100vh;     
+    height: 87vh;
+    border: 2px solid seagreen;     
     background-color: #000 !important;
     position: relative;
   }
@@ -18,7 +18,7 @@
     top: 0;
     bottom: 0;
     display: flex;
-    margin-top: 90px;
+    border: 2px solid red;     
   }
  
 .slide {
@@ -94,7 +94,14 @@
     color: #fff;    
     text-align: center;
   }
-
+.core-values{  
+  background-image: url('../../img/Shape.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 350px;
+  position: relative;
+}
  .core-values .card{
   background-color: transparent;      
   border: none;

@@ -8,7 +8,9 @@
 /* ! Navbar */
 #masterNavbar{
   z-index: 1001;
-  background-color: #05070c; ;       
+  background-color: #05070c;
+  border: 2px solid red;
+  background-color: transparent;
 }
 #home #masterNavbar{
   opacity: 0; 
@@ -17,7 +19,7 @@
   opacity: 1;
 }
 .navbar-brand img{
-    max-width: 180px;        
+    max-width: 170px;        
 }
 #home .navbar-brand img{
   opacity: 0; 
