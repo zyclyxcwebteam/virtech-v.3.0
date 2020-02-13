@@ -28,7 +28,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient(to top right, #000036 0%, rgba(0, 0, 54,0.1) 100%);
+    background-image: linear-gradient(to top right, #000036 0%, rgba(0, 0, 54,0.1) 100%),linear-gradient(-10deg, #000036 10%, transparent 50%);;
     z-index: -1;
 }
 
