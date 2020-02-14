@@ -1,21 +1,92 @@
 .job-details-home{
     height: 100vh;
     background-color: #05070c;
-  } 
+    position: relative;
+    /* padding-top: 90px; */
+  }
+  .option .optIcon .fa-bg{
+    font-size: 125px;
+    margin-right: 10px;
+    position: absolute;
+    opacity: 0.05;
+    top: -20px;
+    right: -20px;
+  }
+  .options{
+    color: rgb(78, 78, 78);
+    position: absolute;
+    right: 0;
+    top: 100px;
+  }
+  .options .optIcon{
+    font-size: 35px;
+  }
+  .options p{
+    margin-bottom: 0;
+  }
+  .options .option{
+    /* text-align: center; */
+    width: 320px;
+    height: 138px;
+    /* line-height: 125px; */
+    /* font-size: 40px; */
+    display: flex;
+    align-items: center;
+    padding:0px 40px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid rgb(26, 26, 26);
+  }
+  /* .options .option:hover{
+    color: rgb(19, 144, 247);
+    background-color: white;
+  } */
+  .options .option:hover{
+    color:white;
+    transition: all 0.5s ease-in-out;
+  }
+  .options .btn{
+    font-size: 20px;
+    /* padding:510px 0px; */
+    height: 138px;
+  }
+  .title{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    /* border: 1px solid white; */
+    width: 950px;
+  }
+  .title a{
+    color: #0a7492;
+    font-size: 16px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 10px;
+  }
+  .title a:hover{
+    background: #0a759211;
+    border-radius: 10px;
+  }
   .hero-title{
+    /* padding-top: 90px; */
     color: #05070c;
   }
+  .description{
+    color: #0a7492!important;
+  }
   .hero-text{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #b8bdc4;
   }
   
   .hero-title span{
     background-color: #f4f4f4;
     display: inline-block;
-    margin: 0.5rem;
-    padding: 0.3rem 0.5rem;
-    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+    font-size: 4.5rem;
   }
 
   /* Form */

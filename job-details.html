@@ -9,7 +9,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>job-details - Virtech-ksa</title>
   <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/shared/header.css">
   <link rel="stylesheet" href="./css/careers/job-details.css">
@@ -19,7 +19,7 @@
 <body>
   <!-- ! header navbar-->
   <!-- TODO: hide header on scroll down, show on scroll up -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 " id="masterNavbar">
     <div class="container-fluid">
       <a href="./" class="navbar-brand"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
 
@@ -139,20 +139,81 @@
       </div>
     </div>
   </nav>
-  <section class="container-fluid job-details-home">
-    <div class="container row h-100 mx-auto">
-      <div class="col-6 d-flex justify-content-center align-items-center">
-        <h1 class="hero-title text-center">
-          <span>Machine Learning</span> <br />
-          <span>Developer</span>
+  <section class="container-fluid job-details-home overflow-hidden">
+    
+    <div class="options info overflow-hidden">
+
+      <div class="option">
+
+        <div class="optIcon mr-4">
+        <!-- <i class="fas fa-briefcase fa-bg"></i> -->
+        <i class="fas fa-briefcase"></i>
+      </div>
+
+      <div>
+          <p> Experience</p>
+          <h2>2-3 Years</h2>
+        </div>
+      </div>
+      
+      
+      <div class="option">
+
+        <div class="optIcon mr-4">
+          <!-- <i class="fas fa-user-tie fa-bg"></i> -->
+          <i class="fas fa-user-tie"></i>
+      </div>
+
+      <div>
+          <p> Job Type</p>
+          <h2>Full-Time</h2>
+        </div>
+
+      </div>
+      
+      <div class="option">
+
+        <div class="optIcon mr-4">
+          <!-- <i class="fas fa-rupee-sign fa-bg"></i> -->
+          <i class="fas fa-rupee-sign"></i>
+      </div>
+
+      <div>
+        <p>Salary</p>
+        <h4>Best in the industry</h4>
+        </div>
+      </div>
+      
+      <div class="option">
+
+        <div class="optIcon mr-4">
+          <!-- <i class="fas fa-map-marker-alt fa-bg"></i> -->
+          <i class="fas fa-map-marker-alt"></i>
+      </div>
+
+      <div>
+        <p>location</p>
+        <h2>On-sight</h2>
+        </div>
+      </div>
+      <button type="submit" href="" class="btn btn-primary btn-block py-3 rounded-0" id="applyPopUp">Apply Now</button>
+    </div>
+    <div class="title">
+      <div class="d-flex align-items-center">
+        <h1 class="hero-title">
+          <span id="job-title">Machine Learning</span>
+          <!-- <span>Developer</span> -->
         </h1>
       </div>
-      <div class="col-6 d-flex justify-content-center align-items-center">
+      <div class=" mb-5">
+        <h5 class="description mb-4 display-4">Description</h5>
         <p class="hero-text">Digital solutions today are engineered with many systems coming together and are expected
           to serve a
           large number of users accessing the solution over a variety of devices. The solution can not be
           delivered to the users without architecting and managing the systems behind the solution.</p>
       </div>
+      <a href="#roles">Roles & Responsibilities</a>
+      <!-- <a href="#responsibilities">Responsibilities</a> -->
     </div>
   </section>
 
@@ -160,9 +221,9 @@
   <section id="section-4 py-5">
     <div class="container">
 
-      <h1 class="py-5 border-bottom text-center text-primary">Business Development Manager</h1>
+      <!-- <h1 class="py-5 border-bottom text-center text-primary">Business Development Manager</h1> -->
 
-      <div class="d-flex job-info justify-content-around">
+      <!-- <div class="d-flex job-info justify-content-around">
         <div class="info">
           <span class="info-border-left"></span>
           <i class="fas fa-briefcase fa-bg"></i>
@@ -199,15 +260,16 @@
             <p>On-sight</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="">
-        <h4 class="py-3 info-details">Description</h4>
+        <!-- <h4 class="py-3 info-details">Description</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis nisi eius at doloremque soluta quos iste
           quia, facere dolor saepe quasi unde inventore magnam deserunt placeat veritatis. Architecto, cum blanditiis.
         </p>
-
-        <h2 class="mt-5  info-details">Roles</h2>
+        <button type="button" class="btn btn-success my-4" id="submitBtn">Apply</button> -->
+        <div id="roles">
+        <h2 class="mt-5  info-details" id="roles">Roles</h2>
         <ul class="mt-4">
           <li>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
@@ -222,6 +284,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
           </li>
         </ul>
+      </div>
+        <div id="responsibilities">
         <h2 class="mt-5 info-details">Duties And Responsibilities</h2>
         <ul class="mt-4">
           <li>
@@ -248,8 +312,9 @@
 
           </li>
         </ul>
+        </div>
       </div>
-   <button type="button" id="submitBtn">Apply</button>
+   <button type="button" class="btn btn-success my-4" id="submitBtn">Apply</button>
 
     </div>
   </section>
@@ -387,6 +452,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+    <script src="./js/careers/job-details.js"></script>
   <!-- <script src="js/plugins.js"></script> -->
   <script src="./js/about-scroll.js"></script>
   <script src="./js/shared/header.js"></script>
@@ -406,10 +472,15 @@
 let contactButton = document.getElementById('submitBtn');
 let btnCancel = document.getElementById('btnCancel');
 let contactClose = document.getElementById('formClose');
+let popUpForm = document.getElementById('applyPopUp');
 
 // close application form
 function closePopUp(){
   gsap.to('#appForm',{display:'none',height:'0px',duration:0.5})
+}
+
+function applyPopUp(){
+  gsap.to('#appForm',{display:'block',height:'100vh',duration:0.5})    
 }
  
 // contactLink.addEventListener('click',function(event){
@@ -419,7 +490,14 @@ function closePopUp(){
 
 contactButton.addEventListener('click',function(event){
 event.preventDefault();
-gsap.to('#appForm',{display:'block',height:'100vh',duration:0.5})    
+// gsap.to('#appForm',{display:'block',height:'100vh',duration:0.5}) 
+  event.preventDefault();
+  applyPopUp();   
+})
+
+popUpForm.addEventListener('click', function(event){
+  event.preventDefault();
+  applyPopUp();
 })
 
 btnCancel.addEventListener('click',function(event){
