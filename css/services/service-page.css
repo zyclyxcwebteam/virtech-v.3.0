@@ -146,15 +146,12 @@ margin-top: 1rem;
 
 .contact-banner{
   height: 40vh;
-  background-color: #f9f9f9;   
-}
-.contact-title{
-  font-size: 1.5rem;
-  color: #f9f9f9;
-}
-.contact-inner{
+  /* background-color: #f9f9f9; */
   background-color: #000036;
 }
-#contactButton{
-  text-decoration: underline;
-}
+.contact-title{
+  font-size: 1.75rem;
+  color: #f9f9f9;
+  
+} 
+ 
