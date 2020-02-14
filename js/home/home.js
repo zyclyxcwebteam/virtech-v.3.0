@@ -3,7 +3,7 @@ $(document).ready(function () {
 let homePageLoad = gsap.timeline({onComplete:startTitleCarousel})
 homePageLoad.to('.home-inner',{opacity:0,duration:0.01})
 homePageLoad.fromTo('#masterNavbar',{opacity:1 },{opacity:0,duration:0.01,ease:Expo.easeInOut})
-homePageLoad.fromTo('#page-loader img',{maxWidth:'50%'},{maxWidth:'180px',left:'10%',top:'6%',duration:2,delay:1})  
+homePageLoad.fromTo('#page-loader img',{maxWidth:'50%'},{maxWidth:'170px',left:'10%',top:'6%',duration:2,delay:1})  
 homePageLoad.fromTo('#masterNavbar',{opacity:0 },{y:0,opacity:1,duration:0.01,ease:Expo.easeInOut})
 homePageLoad.to('#masterLogo',{opacity:1,duration:0.001}) 
 homePageLoad.to('.home-inner',{opacity:1,duration:0.1})

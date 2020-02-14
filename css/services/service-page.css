@@ -1,0 +1,129 @@
+body {
+  padding-top: 70px;
+  background-color: #e8e9f0;
+}
+#masterNavbar,.footer {
+  /* background-color:#272b48; */
+  /* background-color:transparent !important; */
+  background-color: #f9f9f9;
+}
+
+#masterNavbar .nav-link {
+  color: #3c3c42;
+  font-weight: 600;
+}
+
+.service-banner {   
+  height: 90vh;
+  position: relative;
+  background-image: url("../../img/blockchain.jpg");
+  background-size: cover;
+  position: relative;    
+  z-index: 1;
+}
+.service-banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to top right, #000036 0%, rgba(0, 0, 54,0.1) 100%),linear-gradient(-10deg, #000036 10%, transparent 50%);;
+    z-index: -1;
+}
+
+.service-name,.service-tagline{
+    z-index: 99;
+}
+.service-name{
+    font-size: 3.5rem;
+    color: #f9f9f9;
+    border-bottom: 3px solid #f9f9f9;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+.service-tagline{
+font-size: 3rem;
+color: #f9f9f9;
+font-weight: 300;
+
+}
+.service-overview{
+     font-size: 1.2rem;
+     background-color:#000036;
+     color: #f9f9f9;
+     width: 100%;      
+}
+
+.service-content{  
+  background-color: #e8e9f0;
+}
+.service-content-title{
+  font-size: 2rem;
+  color:#3f3f40;
+}
+
+.service-card-icon{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;  
+  border: 2px solid #bebec0;
+}
+.active-card .service-card-icon{
+  border-color:#1abc9c ;
+}
+.service-card-icon svg{
+fill: #bebec0;
+height: 45px;
+width: 45px;
+} 
+.active-card .service-card-icon svg{
+  fill:#1abc9c;
+}
+.service-left-title{
+  color:#3f3f40 ;
+}
+.service-card-title{
+  color: #bebec0;
+}
+.active-card .service-card-title{
+color: #1abc9c;
+}
+ 
+.service-content-details .content-wrapper{
+display: none;
+}
+.service-content-details .content-wrapper.active-content{
+  display:flex;
+  }
+.service-content-left{
+  font-size: 1.25rem;
+  color: #353535;
+}
+
+.service-tech{  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #e8e9f0;
+}
+.service-tech img{
+  max-width: 220px;
+  height: auto;
+}
+ 
+.tech-card .card{
+  border: none;
+  background-color: transparent;
+}
+
+.contact-banner{
+  height: 30vh;   
+}
+.contact-title{
+  font-size: 1.5rem;
+  color: #3f3f40;
+}
+#contactButton{
+  text-decoration: underline;
+}

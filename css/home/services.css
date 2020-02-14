@@ -3,16 +3,16 @@
 /* Horizontal scroll container */
 #masterContainer{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 100vh;     
+    height: 88vh;     
     background-color: #05070c !important;
-    position: relative;     
+    position: relative;          
   }
   
-  #slidesContainer,#introSlides {
+  #slidesContainer {
     width: 400%;
     height: 100%;
     background-color: transparent;

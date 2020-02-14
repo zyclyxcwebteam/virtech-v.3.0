@@ -5,17 +5,16 @@ $(function(){
     
     let industriesAnimation = gsap.timeline()     
     .to('#industryMaster #industryInner',{opacity:1,duration:1})
-    .to("#industryMaster .bg-title", {duration: 1,opacity:1,transform:'translate(0,0)',top:'90px',left:0,fontSize:'3.5rem'})         
+    .to("#industryMaster .bg-title", {duration: 1,opacity:1,transform:'translate(0,0)',top:0,left:0,fontSize:'3.5rem'})         
     //.to("#industryMaster .bg-title-dark", {duration: 1,top:'15%',opacity:0.5,fontSize:'2.5rem'})
     .fromTo('#industryMaster #industryInner',{opacity:0.8,y:50,display:'none'},{opacity:1,y:0,display:'block',duration:1})     
 
 
     new ScrollMagic.Scene({
         triggerElement: "#industryMaster",
-        triggerHook:'onLeave',
-        duration:'200%',
-        // reverse:false,
-                                  
+        triggerHook:0.13,
+        duration:'300%',
+        // reverse:false,                                  
     })
        .setPin("#industryMaster")
         .setTween(industriesAnimation)        
