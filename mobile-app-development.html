@@ -9,338 +9,416 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <title>Document</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/template.css">
-  <link rel="stylesheet" href="./css/services.css">
-
+  <title>Mobile App Development</title>
+  <link rel="stylesheet" href="./css/shared/layout.css">
+  <link rel="stylesheet" href="./css/shared/header.css">
+  <link rel="stylesheet" href="./css/shared/footer.css">
+  <link rel="stylesheet" href="./css/services/service-page.css">
+  <link rel="stylesheet" href="./css/shared/contact.css">
 </head>
 
 <body>
-  <section>
-    <nav class="navbar navbar-expand-lg site-navbar p-0 nav-end" id="navbarMaster">
-      <a class="navbar-brand ml-md-4" href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <i class="fas fa-bars"></i>
+  <!-- ! header navbar-->
+  <!-- TODO: hide header on scroll down, show on scroll up -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="masterNavbar">
+    <div class="container-fluid">
+      <a href="./" class="navbar-brand ml-5"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
+
+      <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
+        aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
       </button>
 
-      <ul id="navigation">
-        <li><a href="./index.html" class="first">Home</a></li>
-        <li><a href="#">Services &raquo;</a>
-          <ul>
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto mr-5">
+          <!--  Home -->
 
-            <li><a href="#"> New Age Technologies&raquo;</a>
-              <ul>
-                <li class=""><a href="./artificial-intelligence.html">Artifical Intelligence</a></li>
-                <li class=""><a href="./robotic-process-automation.html">RPA</a></li>
-                <li class=""><a href="./blockchain.html">Block Chain</a></li>
-                <li class=""><a href="./internet-of-things.html">Internet of Things</a></li>
-              </ul>
-            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+          </li>
 
-            <li><a href="#"> Application Development &raquo;</a>
-              <ul>
-                <li class=""><a href="./software-development.html">Software Development</a></li>
-                <li class=""><a href="./mobile-app-development.html">Mobile App Development</a></li>
-                <li class=""><a href="./web-development.html">Web Development</a></li>
-                <li class=""><a href="./digital-marketing.html">Digital Marketing</a></li>
-              </ul>
-            </li>
+          <!-- Services -->
+          <li class="nav-item dropdown">
+            <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              class="nav-link dropdown-toggle">Services</a>
 
-            <li><a href="#"> Security Services &raquo;</a>
-              <ul>
-                <li class=""><a href="./cyber-security.html">Cyber Security Services</a></li>
-                <li class=""><a href="./information-security.html">Information Security</a></li>
-              </ul>
-            </li>
+            <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0">
+              <!-- ! New Age Technologies -->
+              <li class="dropdown-submenu dropright">
+                <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">New
+                  Age Technologies</a>
+                <ul aria-labelledby="newAgeDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./robotic-process-automation.html" class="dropdown-item">RPA</a>
+                  </li>
+                  <li>
+                    <a href="./artificial-intelligence.html" class="dropdown-item">Artificial Intelligence</a>
+                  </li>
+                  <li><a href="./blockchain.html" class="dropdown-item">Blockchain</a></li>
+                  <li>
+                    <a href="./internet-of-things.html" class="dropdown-item">Internet of Things</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li><a href="#"> BI Solutions &raquo;</a>
-              <ul>
-                <li class=""><a href="#">Data Visualisation</a></li>
-                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
+              <!-- ! Application Devlopment -->
+              <li class="dropdown-submenu dropright">
+                <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">Application
+                  Development</a>
+                <ul aria-labelledby="appDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./software-development.html" class="dropdown-item">Software Development</a>
+                  </li>
+                  <li>
+                    <a href="./mobile-app-development.html" class="dropdown-item">Mobile App Development</a>
+                  </li>
+                  <li>
+                    <a href="./web-development.html" class="dropdown-item">Web Development</a>
+                  </li>
+                  <li>
+                    <a href="./digital-marketing.html" class="dropdown-item">Digital Marketing</a>
+                  </li>
+                </ul>
+              </li>
 
-              </ul>
-            </li>
+              <!-- ! Security Services -->
+              <li class="dropdown-submenu dropright">
+                <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
+                <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
+                  </li>
+                  <li>
+                    <a href="./information-security.html" class="dropdown-item">Information Security</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li><a href="#"> Infrastructure &raquo;</a>
-              <ul>
-                <li class=""><a href="./data-center-services.html">Data Center Services</a></li>
-                <li class=""><a href="./predictive-analytics.html">Predictive Analysis</a></li>
-                <li class=""><a href="./network-and-security.html">Network and Security</a></li>
-                <li class=""><a href="./bigdata.html">Big Data</a></li>
-                <li class=""><a href="./end-user-computing.html">End User Computing</a></li>
-              </ul>
-            </li>
+              <!-- ! BI Solutions -->
+              <li class="dropdown-submenu dropright">
+                <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">BI Solutions</a>
+                <ul aria-labelledby="biDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./data-visualization.html" class="dropdown-item">Data Visualization</a>
+                  </li>
+                  <li>
+                    <a href="./predictive-analytics.html" class="dropdown-item">Predictive Analysis</a>
+                  </li>
+                </ul>
+              </li>
 
-          </ul>
-        </li>
+              <!-- ! Infrastructure Services -->
+              <li class="dropdown-submenu dropright">
+                <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructue
+                  Services</a>
+                <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data Cetner Services</a>
+                  </li>
+                  <li>
+                    <a href="./network-and-security.html" class="dropdown-item">Network and Security</a>
+                  </li>
+                  <li><a href="./bigdata.html" class="dropdown-item">Big Data</a></li>
+                  <li>
+                    <a href="./end-user-computing.html" class="dropdown-item">End User Computing</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- End Level one -->
 
-        <li><a href="./about.html">About us</a>
-          <!-- <ul>
-            <li><a href="#">Why-Virtech </a>
-            <li><a href="./about.html"> About Us</a>
-          </ul> -->
-        </li>
-        <li><a href="./careers.html">Careers</a></li>
-        <li><a href="#" class="last">Contact</a></li>
-      </ul>
-    </nav>
-  </section>
-  <div id="masterContainer">
-    <h4 class="bg-title">Mobile App Development</h4>
-    <div id="slidesContainer">
-      <!-- Slide -1 -->
-      <section class="slide slide-1">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="content row mx-auto">
-             <div class="col-5">
-              <div class="card title-card title-card-1">
-                <div class="card-body">
-                  <h2 class="card-title">Mobile App Development</h2>
-                </div>
-              </div>
-             </div>
-            <div class="col-7 mx-auto px-5 intro-text d-flex justify-content-center align-items-center flex-column">
-              <p>Digital solutions today are engineered with many systems coming together and are expected to serve a
-                large number of users accessing the solution over a variety of devices. The solution can not be
-                delivered to the users without architecting and managing the systems behind the solution.</p>
-
-              <p>In addition, users expect a constant delivery of new features and functionality which requires a
-                design methodology and automation to take the code from the hands of a developer to a solution in
-                the hands of a user.</p>
-            </div>             
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide -2 -->
-      <section class="slide slide-2">         
-        <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
-          <div class="content-wrapper" id="advantages">
-            <div class="row">
-            <div class="col-3">
-              <div class="card title-card title-card-1">
-                <div class="card-body">
-                  <h2 class="card-title">Capabilities</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-9 content-inner">
-              <div class="row">
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="service-icon">
-                        <img src="./img/ai.svg" alt="">
-                      </p>
-                      <h2 class="title-2">Lorem ipsum dolor</h2>
-                      <div class="service-text">
-                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                          built-in robots or computer software, to mimic and integrate the actions of your employees
-                          interacting within digital systems to execute a business process. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="service-icon">
-                        <img src="./img/ai.svg" alt="">
-                      </p>
-                      <h2 class="title-2">Lorem ipsum dolor</h2>
-                      <div class="service-text">
-                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                          built-in robots or computer software, to mimic and integrate the actions of your employees
-                          interacting within digital systems to execute a business process. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="service-icon">
-                        <img src="./img/ai.svg" alt="">
-                      </p>
-                      <h2 class="title-2">Lorem ipsum dolor</h2>
-                      <div class="service-text">
-                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                          built-in robots or computer software, to mimic and integrate the actions of your employees
-                          interacting within digital systems to execute a business process. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>            
-          </div>         
-        </div>
-      </section>
-
-      <!-- Slide -3 -->
-      <section class="slide slide-3 d-flex  align-items-center flex-column">
-        <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
-          <div class="content-wrapper" id="advantages">
-            <div class="row">
-            <div class="col-3">
-              <div class="card title-card title-card-1">
-                <div class="card-body">
-                  <h2 class="card-title">Services</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-9 content-inner">
-              <div class="row">
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="service-icon">
-                        <img src="./img/ai.svg" alt="">
-                      </p>
-                      <h2 class="title-2">Lorem ipsum dolor</h2>
-                      <div class="service-text">
-                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                          built-in robots or computer software, to mimic and integrate the actions of your employees
-                          interacting within digital systems to execute a business process. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="service-icon">
-                        <img src="./img/ai.svg" alt="">
-                      </p>
-                      <h2 class="title-2">Lorem ipsum dolor</h2>
-                      <div class="service-text">
-                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                          built-in robots or computer software, to mimic and integrate the actions of your employees
-                          interacting within digital systems to execute a business process. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="service-icon">
-                        <img src="./img/ai.svg" alt="">
-                      </p>
-                      <h2 class="title-2">Lorem ipsum dolor</h2>
-                      <div class="service-text">
-                        <p class="my-3">Artificial Intelligence is an innovative technology that allows SMEs to configure
-                          built-in robots or computer software, to mimic and integrate the actions of your employees
-                          interacting within digital systems to execute a business process. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>            
-          </div>         
-        </div>
-
-      </section>
-      
-      <!-- Slide -4 -->
-      <section class="slide slide-4 d-flex align-items-center flex-column">
-      <div class="container-fluid d-flex justify-content-center align-items-center h-100">          
-          <div class="content-wrapper" id="advantages">
-            <div class="row">
-            <div class="col-3">
-              <div class="card title-card title-card-1">
-                <div class="card-body">
-                  <h2 class="card-title">Our Partners</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-9 content-inner partners">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="partner-logo">
-                        <img src="./img/uipath.png" alt="">
-                      </p>
-                      <h4>Lorem ipsum dolor</h4>                       
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="partner-logo">
-                        <img src="./img/uipath.png" alt="">
-                      </p>
-                      <h4>Lorem ipsum dolor</h4>                       
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card p-3">
-                    <div class="card-body">
-                      <p class="partner-logo">
-                        <img src="./img/uipath.png" alt="">
-                      </p>
-                      <h4>Lorem ipsum dolor</h4>                       
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>            
-          </div>         
-        </div>
-  
-      </section>
-    </div>
-
-  </div>
-
-<!-- FOOTER -->
-<footer class="footer pt-4">
-  <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
-    <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
-      <p class="f-link mt-3"><a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>+966 552 357 583</a></p>
-    </div>
-    <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
-      <p class="f-link mt-3"><a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i>
-        info@virtech-ksa.com</a>
-      </p>
-
-    </div>
-
-    <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
-      <p class="f-link mt-3"><i class="fas fa-map-marker-alt"></i><a
-          href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-          Location</a></p>
-    </div>
-
-    <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
-      <div>
-        <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
-          <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                class="fab fa-twitter"></i></a></li>
-          <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-          <li><a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin"
-              title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link">About us</a></li>
+          <li class="nav-item"><a href="./careers.html" class="nav-link">Careers</a></li>
+          <li class="nav-item"><a href="./contactus.html" class="nav-link" id="contactLink">Contact</a></li>
         </ul>
       </div>
     </div>
+  </nav>
 
+  <section class="container-fluid service-banner">
+    <div class="row banner-title d-flex ml-5 justify-content-center flex-column h-100 mx-auto">
 
-  </div>
-  <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
-</footer>
+      <div class="col-md-8 col-12 ml-5">
+        <h2 class="service-name">Moble App Development</h2>
+        <h3 class="service-tagline mt-5">Real World Solutions For Sustainable Performance</h3>
+      </div>
+    </div>
+  </section>
 
+  <section class="container-fluid service-overview" id="serviceOverview">
+    <div class="row d-flex justify-content-center py-3">
+      <div class="col-md-8 col-12 py-3">
+        <p>
+          The technology acts as a digital ledger that is built on a P2P system allowing different users to have an
+          unchangeable record of transactions, each of which is time-stamped and connected to the previous block. With
+          the addition of each set of transactions added, the data becomes another block in the chain. It is preferred
+          as it is a write-once technology, making it a verifiable and auditable record of every transaction. We suggest
+          the creation of this for Financial services, Smart Property, Retail sector etc.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid service-content py-4" id="serviceContent">
+    <h2 class="text-center py-2 service-content-title">Real World Solutions For Sustainable Performance</h3>
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row service-content-cards d-flex justify-content-start">
+
+            <!-- col - 1 -->
+            <div class="col-8 my-4">
+              <div class="row">
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                  <img src="./img/icons/blockchain-1.svg" alt="">
+                </div>
+                <div class="col-9">
+                  <h4>Traceability and Tracking</h4>
+                  <p>Keeping track of any service or product is a difficult task. We create blockchain platforms to
+                    assist you in real-time monitoring</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- col - 2 -->
+            <div class="col-8 ml-auto my-4">
+              <div class="row d-flex justify-content-end">
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                  <img src="./img/icons/blockchain-2.svg" alt="">
+                </div>
+                <div class="col-9">
+                  <h4>Backend Services</h4>
+                  <p>We know that each organization has unique needs for Backend services. This is the reason why we
+                    work on providing mainstream technologies and integrate them with popular services.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- col - 3 -->
+            <div class="col-8 my-4">
+              <div class="row">
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                  <img src="./img/icons/blockchain-3.svg" alt="">
+                </div>
+                <div class="col-9">
+                  <h4>Smart Contract</h4>
+                  <p>While integrating business logic into the blockchain solutions, smart contracts are essential.
+                    Hence our team ensures that it’s integration is done before deployment. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- col - 4 -->
+            <div class="col-8 ml-auto my-4">
+              <div class="row d-flex justify-content-end">
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                  <img src="./img/icons/blockchain-4.svg" alt="">
+                </div>
+                <div class="col-9">
+                  <h4>Rapid Provisioning</h4>
+                  <p>We take up complete responsibility to install, deploy and manage the environment of a blockchain
+                    network to avoid any issues.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="container-fluid service-partners py-4">
+    <div class="container d-flex justify-content-center align-items-center flex-column pb-2">
+      <h3 class="py-4 service-partner-title">Technology Partners</h3>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-4 tech-card">
+          <div class="card">
+            <div class="card-body">
+              <img src="./img/uipath.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-4 tech-card">
+          <div class="card">
+            <div class="card-body">
+              <img src="./img/blue.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-4 tech-card tech-automation">
+          <div class="card">
+            <div class="card-body">
+              <img src="./img/automation-1.jpg" height="100px" width="220px" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center flex-column">
+     
+      <h3 class="text-center contact-title">Find answers to your business needs <a href="#" id="contactButton">Let's Get Started</a> </h3>           
+  </section>
+
+  <!-- ! Footer -->
+  <footer class="footer pt-3">
+    <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+      <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+        <p class="f-link mt-3">
+          <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+        <p class="f-link mt-3">
+          <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+        <p class="f-link mt-3">
+          <a
+            href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+            <i class="fas fa-map-marker-alt"></i> Location</a>
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+        <div>
+          <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+            <li>
+              <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
+  </footer>
+
+  <!-- ! Contact form modal -->
+  <section class="contact-wrapper" id="contactModal">
+    <div class="contact-inner">
+      <h2 class="mt-3 text-center">Get in touch</h2>
+      <p class="text-center">Contact us for a quote, help, or to join the team</p>
+      <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
+      <div>
+        <!-- ! contact form -->
+        <div class="container mx-auto shadow">
+          <div class="row p-3">
+
+            <div class="col-4 contact-info">
+              <div class="row mt-5 d-flex flex-column">
+                <div class="py-3">
+                  <i class="fas fa-map-marker-alt text-success mr-2"></i>
+                  <a href="#">Riyadh, Kingdom of Saudi Arabia - 11611.</a>
+                </div>
+
+                <div class="py-3">
+                  <i class="fas fa-phone-alt text-success mr-2"></i>
+                  <a href="#">(+966) 552 357 583</a>
+                </div>
+
+                <div class="py-3">
+                  <i class="fas fa-envelope text-success mr-2"></i>
+                  <a href="#">info@virtech-ksa.com</a>
+                </div>
+
+                <div class="py-3">
+                  <div class="social-links">
+                    <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                      <li>
+                        <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                            class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-8 col2 text-center p-5 mt-4">
+              <form id="contactForm" class="needs-validation mb-3" novalidate="">
+                <span id="errorAlert"></span>
+                <div class="row ">
+                  <div class="col-sm-6">
+                    <!-- Name -->
+                    <div class="form-group">
+
+                      <input class="form-control" type="text" name="Name" id="username" placeholder="Your name"
+                        required>
+                      <!-- <span id="error1" class="error"></span> -->
+                      <div class="invalid-feedback">Please fill in your name!</div>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Email -->
+                    <div class="form-group">
+                      <input class="form-control" type="email" name="Email" id="email" placeholder="Email address"
+                        required="">
+                      <div class="invalid-feedback">Please fill in your Email!</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Phone -->
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="Phone" id="phone-no" placeholder="Your phone"
+                        required>
+                      <div class="invalid-feedback">Please fill in your Phone No!</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Subject -->
+                    <div class="form-group">
+                      <input class="form-control" name="Subject" type="text" id="subject" placeholder="Subject">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <!-- Message -->
+                  <textarea class="form-control" name="Message" id="message" rows="4"
+                    placeholder="Please describe in detail your request" required=""></textarea>
+                  <div class="invalid-feedback">Please write a message!</div>
+                </div>
+
+                <button type="submit" class="btn btn-outline-primary contact-btn mt-3 px-3 py-2" id="contactBtn">
+                  <span id="btnText"> Send message <i class="ml-2 far fa-paper-plane"></i></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -355,6 +433,49 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-  <script src="./js/template.js"></script>
+  <script src="./js/shared/header.js"></script>
+  <script src="./js/contact/contact.js"></script>
+
+  <script>
+// serviceContent
+let cardAnimation = gsap.timeline();
+cardAnimation.fromTo('.service-content-cards .col-8',{y:60,autoAlpha:0},{stagger:0.7,y:0,autoAlpha:1,duration:2})
+
+let controller = new ScrollMagic.Controller();
+new ScrollMagic.Scene({
+        triggerElement: "#serviceOverview",
+        triggerHook:0.13,         
+        reverse:false,                                           
+    })
+        .setTween(cardAnimation)        
+        .addTo(controller);
+
+    $('.service-content .service-card').on('mouseenter', function () {
+      $('.service-card').each(function () {
+        $(this).removeClass('active-card');
+      })
+      $('.content-wrapper').each(function () {
+        $(this).removeClass('active-content');
+      })
+
+      $(this).toggleClass('active-card')
+      let contentID = $(this).attr('id');
+      let index = $(this).attr('data-index');
+      $(`#content-${index}`).addClass('active-content');
+      gsap.from(`#content-${index}`, { duration: 1, opacity: 0.5, y: 100 })
+    })
+
+// // Loop through cards 
+// function setActiveClass(param){
+// console.log(param.index);
+// let index = param.index
+// $(`#card-${index}`).toggleClass('active-card')
+// $(`#content-${index}`).addClass('active-content');
+// }
+// let showContent = gsap.timeline();
+//     showContent.to('#content-1',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{prev:0,index:1}]})
+//     showContent.to('#content-2',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{index:2}],delay:6})
+  </script>
 </body>
+
 </html>
