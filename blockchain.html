@@ -151,7 +151,7 @@
     </div>
   </section>
 
-  <section class="container-fluid service-overview">
+  <section class="container-fluid service-overview" id="serviceOverview">
     <div class="row d-flex justify-content-center py-3">
       <div class="col-md-8 col-12 py-3">
         <p>
@@ -166,7 +166,7 @@
   </section>
 
   <section class="container-fluid service-content py-4" id="serviceContent">
-    <h2 class="text-center py-5">Real World Solutions For Sustainable Performance</h3>
+    <h2 class="text-center py-5 service-content-title">Real World Solutions For Sustainable Performance</h3>
       <div class="row">
         <div class="col-md-10 col-12 mx-auto">
           <div class="row service-content-cards d-flex justify-content-start">
@@ -439,13 +439,13 @@
   <script>
 // serviceContent
 let cardAnimation = gsap.timeline();
-cardAnimation.fromTo('.service-content-cards .col-8',{y:80,autoAlpha:0},{stagger:1,y:0,autoAlpha:1,duration:2})
+cardAnimation.fromTo('.service-content-cards .col-8',{y:60,autoAlpha:0},{stagger:0.7,y:0,autoAlpha:1,duration:2})
 
 let controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
-        triggerElement: "#serviceContent",
-        triggerHook:0.13,         
-        // reverse:false,                                  
+        triggerElement: "#serviceOverview",
+        triggerHook:0.1,         
+        reverse:false,                                           
     })
         .setTween(cardAnimation)        
         .addTo(controller);

@@ -14,7 +14,7 @@ body {
 
 #masterNavbar .nav-link {
   color: #3c3c42;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .service-banner {   
@@ -65,49 +65,9 @@ font-weight: 500;
 }
 .service-content-title{
   font-size: 2rem;
-  color:#3f3f40;
-}
-
-.service-card-icon{
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;  
-  border: 2px solid #bebec0;
-}
-.active-card .service-card-icon{
-  border-color:#1abc9c ;
-}
-.service-card-icon svg{
-fill: #bebec0;
-height: 45px;
-width: 45px;
-} 
-.active-card .service-card-icon svg{
-  fill:#1abc9c;
-}
-.service-left-title{
-  color:#3f3f40 ;
-}
-.service-card-title{
-  color: #bebec0;
-}
-.active-card .service-card-title{
-color: #1abc9c;
+  color:#05070c;
 }
  
-.service-content-details .content-wrapper{
-display: none;
-}
-
-.service-content-details .content-wrapper.active-content{
-  display:flex;
-  }
-
-.service-content-left{
-  font-size: 1.25rem;
-  color: #353535;
-}
-
 .service-partners{  
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -125,7 +85,7 @@ display: none;
 }
 
 .service-content-cards h4{
-  color:#024afa;
+  color:#032f9c;
   margin-bottom: 0.6rem;
 }
 
@@ -133,6 +93,7 @@ display: none;
   font-size: 1.2rem;
   text-align: justify;
   margin-bottom: 0;
+  color: #575866;
 }
 
 .service-content-cards col-8{
@@ -143,7 +104,9 @@ margin-top: 1rem;
   width: 70px;
   height: 70px;
 }
-
+.service-partner-title{
+  color: #05070c;
+}
 .contact-banner{   
   /* background-color: #f9f9f9; */
   background-color: #000036;
