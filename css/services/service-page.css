@@ -144,14 +144,16 @@ margin-top: 1rem;
   height: 70px;
 }
 
-.contact-banner{
-  height: 40vh;
+.contact-banner{   
   /* background-color: #f9f9f9; */
   background-color: #000036;
+  height: 82px;
 }
 .contact-title{
   font-size: 1.75rem;
-  color: #f9f9f9;
-  
+  color: #f9f9f9;  
 } 
+#contactButton{
+  text-decoration: underline;   
+}
  
