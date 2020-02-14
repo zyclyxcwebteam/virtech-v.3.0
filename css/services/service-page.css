@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+
 body {
   padding-top: 70px;
   background-color: #e8e9f0;
+  font-family: 'Roboto', sans-serif;
 }
+ 
 #masterNavbar,.footer {
   /* background-color:#272b48; */
   /* background-color:transparent !important; */
@@ -45,8 +49,8 @@ body {
 }
 .service-tagline{
 font-size: 3rem;
-color: #f9f9f9;
-font-weight: 300;
+color: #bebec0; 
+font-weight: 500;
 
 }
 .service-overview{
@@ -94,21 +98,24 @@ color: #1abc9c;
 .service-content-details .content-wrapper{
 display: none;
 }
+
 .service-content-details .content-wrapper.active-content{
   display:flex;
   }
+
 .service-content-left{
   font-size: 1.25rem;
   color: #353535;
 }
 
-.service-tech{  
+.service-partners{  
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #e8e9f0;
+  /* background-color: #e8e9f0; */
+  background-color: #f9f9f9;
 }
-.service-tech img{
-  max-width: 220px;
+.service-partners img{
+  max-width: 180px;
   height: auto;
 }
  
@@ -117,12 +124,36 @@ display: none;
   background-color: transparent;
 }
 
+.service-content-cards h4{
+  color:#000036;
+  margin-bottom: 0.6rem;
+}
+
+.service-content-cards p{
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.service-content-cards col-8{
+margin-top: 1rem;
+}
+
+.service-content-cards img{
+  width: 70px;
+  height: 70px;
+}
+
 .contact-banner{
-  height: 30vh;   
+  height: 40vh;
+  background-color: #f9f9f9;   
 }
 .contact-title{
   font-size: 1.5rem;
-  color: #3f3f40;
+  color: #f9f9f9;
+}
+.contact-inner{
+  background-color: #000036;
 }
 #contactButton{
   text-decoration: underline;

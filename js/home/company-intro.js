@@ -23,3 +23,8 @@ duration: "400%",
 .addIndicators() // Indicators - remove on production
 .addTo(controller);     
 })
+
+
+let coreValues = gsap.timeline();
+gsap.fromTo('#introContainer .core-values .card',{autoAlpha:0,y:50},{stagger:2,y:0,autoAlpha:1,duration:6})
+gsap.to('#introContainer .core-values .core-icon-outer',{stagger:2,backgroundColor:'#00C9A7',duration:6,delay:1})
