@@ -2,22 +2,47 @@
         background-color: #05070c;
         height: 100vh;
 }
+.career-home .hero-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
 .hero-title{
     color: #05070c;
 }
  
 .hero-title span{
-    background-color: #f4f4f4;
-    display: inline-block;
-    margin: 0.5rem;
-    padding: 0.3rem 0.5rem;
-    font-size: 2.5rem;
+  background-color: #f4f4f4;
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 10px;
+  font-size: 4rem;
 }
 .hero-text{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #b8bdc4;
+    text-align: center;
+    margin-bottom: 50px;
 }
-
+#submitBtn{
+  color: #0a7492;
+  background-color: none !important;
+  border: 1px solid;
+  font-size: 20px;
+  padding: 10px 80px;
+  border-radius: 0;
+}
+#submitBtn:focus{
+  box-shadow: none;
+}
+#submitBtn:hover{
+  color: white;
+  background-color: #0a7492;
+  border: 1px solid #0a7492;
+}
  .content {
     font-size: 1.2rem;
   }
