@@ -46,7 +46,9 @@
     transition: all 0.5s ease-in-out;
   }
   .options .btn{
-    font-size: 20px;
+    font-size: 30px;
+    color: white;
+    background: #0a7492!important;
     /* padding:510px 0px; */
     height: 138px;
   }
@@ -87,6 +89,15 @@
     margin-bottom: 2rem;
     padding: 10px;
     font-size: 4.5rem;
+  }
+  .details #roles{
+    padding-top: 55px;
+  }
+  .details .list {
+    padding-left: 10px;
+  }
+  .details .list li{
+    list-style-type: none;
   }
 
   /* Form */
@@ -187,6 +198,39 @@
   font-weight: 400;
 }
 
+/* description - icon */
+#roles i{
+  color: teal;
+  background: rgba(0, 128, 128, 0.205);
+  padding: 10px;
+  border-radius: 50%;
+}
+#responsibilities ul{
+  padding: 0px !important;
+  padding-left: 10px !important; 
+}
+#responsibilities ul li{
+  list-style: none; 
+}
+#responsibilities i{
+  color: teal;
+  background: rgba(0, 128, 128, 0.205);
+  border-radius: 50px;
+  padding: 10px;  
+}
+
+/* submit button */
+#submitBtn{
+  color: #0a7492;
+  border: 1px solid;
+  font-size: 20px;
+  padding: 10px 80px;
+  border-radius: 0;
+}
+#submitBtn:hover{
+  color: white;
+  background-color: #0a7492;
+}
 /* ? application form popup */
 
 /* ! Contact Modal */
@@ -203,7 +247,7 @@
   z-index: 999;
 }
 #appForm h4{
-  color: #01626e;
+  color: rgb(180, 180, 180);
 }
 #appForm .applyForm{
   /* border: 1px solid; */
@@ -220,7 +264,7 @@
   /* margin: 100px auto 0px; */
 }
 .input-group .custom-file{
-  margin: 0px 10px;
+  margin-bottom: 10px;
   /* color: #000; */
 }
 .input-group .custom-file-label::after{
@@ -228,8 +272,9 @@
   content: "\f0c6" !important;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-size: 24px;
   padding: 40px;
-    background: #0b101b;
+  background: #0b101b;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -257,10 +302,25 @@
 background-color: #05070c;
 }
 
+#appForm .form-control:focus,
 #appForm .form-control:valid{
+/* #appForm .form-control:invalid{ */
   background: #0a0e186c;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.404);
 }
+.form-control.is-invalid:focus,
+.was-validated .form-control:valid:focus{
+  background: hsla(143, 100%, 28%, 0.039) !important;
+  border-bottom: 1px solid #008d36 !important;
+  box-shadow: none;
+}
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus{
+  background: hsla(354, 70%, 54%, 0.039) !important;
+  border-bottom: 1px solid #dc3545 !important;
+  box-shadow: none;
+}
+
 #appForm label{
   color: #01626e;
   font-size: 15px;
@@ -298,14 +358,15 @@ background-color: #05070c;
   font-size: 24px;
   transition: all 0.2s ease-in-out;
 }
+
 /* Todo - check it later */
 #formClose{
   position: absolute;
   right: -80px;
   top: 0;
   border: none;
-  color: #01626e;
-  background: #01616e33;
+  color: #fff;
+  background: #ffffff33;
   display: flex;
   align-items: center;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
