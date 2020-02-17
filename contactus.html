@@ -9,28 +9,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/shared/contact.css">
+  <link rel="stylesheet" href="./css/shared/contact-us.css">
 </head>
 
 <body class="">
-
+ 
+  <a href="#" id="contactLink">Contact Us</a>
 
   <!-- ! Contact fomr modal -->
-  <a href="#" class="btn btn-primary" id="submitBtn">Pop-Up</a>
+  <a href="#" class="btn btn-primary" id="contactButton">Pop-Up</a>
   <!-- ! contact form -->
-  <section class=" contact-wrapper " id="appForm">
-    <div class="container c-banner shadow rounded py-2">
+  <section class=" contact-wrapper d-block" id="appForm">
+    <button type="button" id="contactClose"><i class="fas fa-times"></i>Close</button>
+    <div class="container c-banner py-2">
       <div id="contactModal">
         <div class="contact-inner">
-          <h2 class="mt-3 text-center">Get in touch</h2>
+          <h2 class="mt-3 text-center display-4">Get in touch</h2>
           <p class="text-center">Contact us for a quote, help, or to join the team</p>
-          <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
+          <!-- <button type="button" id="contactClose"><i class="fas fa-times"></i></button> -->
           <div>
             <hr>
 
             <div class="row mx-auto">
 
-              <div class="col-4 contact-info">
+              <div class="col-3 contact-info">
                 <div class="row mx-auto">
                   <a href="#" class="info">
                     <i class="fas fa-map-marker-alt"></i>
@@ -40,73 +42,76 @@
 
                   <a href="#" class="info">
                     <i class="fas fa-phone-alt"></i>
-                    <p>(+966) 552 357 583</p>
+                    <p class="phonenum">+966 552 357 583</p>
                     <blockquote>9.30 AM - 6.30 PM ( SUN - FRI )</blockquote>
 
                   </a>
 
                   <a href="#" class="info">
                     <i class="fas fa-envelope"></i>
-                    <p>info@virtech-ksa.com</p>
+                    <p class="mail">info@virtech-ksa.com</p>
                   </a>
 
 
                 </div>
               </div>
 
-              <div class="col-8 mt-3">
-                <form id="contactForm" class="needs-validation mb-3" novalidate="">
-                  <span id="errorAlert"></span>
-                  <div class="row ">
-                    <div class="col-sm-6">
-                      <!-- Name -->
-                      <div class="form-group">
-                        <label for="Name">Name</label>
-                        <input class="form-control" type="text" name="Name" id="username" placeholder="Your name"
-                          required>
-                        <!-- <span id="error1" class="error"></span> -->
-                        <div class="invalid-feedback">Please fill in your name!</div>
+              <div class="col-9 mt-3">
+                <div class="appWrapper" id="contactForm">
 
+                 
+                  <!-- <h4 class="pt-2 pb-5 text-center display-4">Apply for this Job</h4> -->
+                  <div class="container applyForm">   
+                      <div class="">
+                        <form id="cForm"  class="contactForm needs-validation" novalidate>
+              
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group">
+                                <label for="validationCustom01"> Name  <span>*</span></label>
+                                <input type="text" class="form-control" name="firstname" id="validationCustom01"  pattern="[a-zA-Z\s]+"  placeholder="Enter your name" autocomplete="off" required>
+                                <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Please enter the valid Last Name</div>
+                              </div>
+                            </div>
+                         
+                          </div>
+              
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group">
+                                <label class=""> Email-ID <span>*</span></label>
+                                <input type="email" class="form-control" name="email" autocomplete="none" placeholder="Enter your email-ID" id="email" required>
+                                <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Sorry, you missed this one.</div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-group">
+                                <label> Contact Number <span>*</span></label>
+                                <input type="text" class="form-control" name="phone" id="phone"  placeholder="Enter your contact number" pattern="[0-9]{7,20}" autocomplete="off" required>
+                                <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Sorry, you missed this one.</div>
+                              </div>
+                            </div>
+                          </div>
+                            
+                            <div class="form-group">
+                              <label for="message">Subject <span>*</span></label>
+                              <textarea class="form-control" name="message" id="message" placeholder="Your message here.." name="messages" required></textarea>
+                              <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Sorry, you missed this one.</div>
+                            </div>
                       </div>
+                      <button type="submit"  class="btn btn-block" id="contactSubmit">Submit</button>
+                      </form>
+                    
+                 
                     </div>
-                    <div class="col-sm-6">
-                      <!-- Email -->
-                      <div class="form-group">
-                        <label for="Email">Email</label>
-                        <input class="form-control" type="email" name="Email" id="email" placeholder="Email address"
-                          required="">
-                        <div class="invalid-feedback">Please fill in your Email!</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <!-- Phone -->
-                      <div class="form-group">
-                        <label for="Phone">Phone</label>
-                        <input class="form-control" type="text" name="Phone" id="phone-no" placeholder="Your phone"
-                          required>
-                        <div class="invalid-feedback">Please fill in your Phone No!</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <!-- Subject -->
-                      <div class="form-group">
-                        <label for="Subject">Subject</label>
-                        <input class="form-control" name="Subject" type="text" id="subject" placeholder="Subject">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <!-- Message -->
-                    <label for="Message">Message</label>
-                    <textarea class="form-control" name="Message" id="message" rows="4"
-                      placeholder="Please describe in detail your request" required=""></textarea>
-                    <div class="invalid-feedback">Please write a message!</div>
-                  </div>
 
-                  <button type="submit" class="btn btn-block btn-lg contact-btn mt-4 px-3 py-2" id="contactBtn">
-                    <span id="btnText"> Send message <i class="ml-2 far fa-paper-plane"></i></span>
-                  </button>
-                </form>
+
+
+                
                 <hr class="my-4">
                 <div class="info">
                   <div class="social-links d-flex justify-content-center">
@@ -164,9 +169,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <script src="./js/contact/contact.js"></script>
 
-
-  <script>
+  <!-- <script>
 
     let contactButton = document.getElementById('submitBtn');
     //let contactLink = document.getElementById('contactLink');
@@ -177,16 +182,16 @@
     //   gsap.to('.appWrapper',{display:'block',height:'100vh',duration:0.5})    
     // })
 
-    contactButton.addEventListener('click', function (event) {
-      event.preventDefault();
-      gsap.to('#appForm', { display: 'block', height: '100%', duration: 0.5 })
-    })
+    // contactButton.addEventListener('click', function (event) {
+    //   event.preventDefault();
+    //   gsap.to('#appForm', { display: 'block', height: '100%', duration: 0.5 })
+    // })
 
-    contactClose.addEventListener('click', function (event) {
-      event.preventDefault();
-      gsap.to('#appForm', { display: 'none', height: '0%', duration: 0.5 })
-    })
-  </script>
+    // contactClose.addEventListener('click', function (event) {
+    //   event.preventDefault();
+    //   gsap.to('#appForm', { display: 'block', height: '1000%', duration: 0.5 })
+    // })
+  </script> -->
 </body>
 
 </html>

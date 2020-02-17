@@ -1,5 +1,5 @@
 /* ! Contact Modal */
-.contact-wrapper{       
+/* .contact-wrapper{       
         background-color: #05070c;
         color: #f4f4f4;
         padding-top:75px;
@@ -7,7 +7,7 @@
         bottom: 0;
         width: 100%;
         height: 0;
-        display: none;
+        display: block;
         z-index: 999;
       }
       #contactClose{
@@ -21,17 +21,74 @@
     .contact-wrapper .contact-info a{
         color: #f4f4f4;
     }
-
-    .contact-wrapper .social-network li{
-        list-style-type: none;
-        margin: 5px 12px;
-    }
-    /* .contact-btn{
-        ba
-    } */
-     .form-control{
-      color: none;
+*/
+    
+     /* .form-control{
+      color: #0a7492 !important;
       background: none !important;
       outline: 0 !important;
       box-shadow: none !important;
-        }          
+        }              */
+
+
+  /* new contact */
+  /* ! Contact Modal */
+  .contact-wrapper .social-network li{
+    list-style-type: none;
+    margin: 5px 12px;
+}
+
+.contact-wrapper{
+  height: 100vh;
+    background-color: #05070c;
+    position: relative;
+}
+#appForm {
+  display: block;
+  overflow: hidden;
+  background-color: #05070c;
+}
+#appForm .c-banner{
+  color: #fff;
+  /* background-color: #090c14; */
+  margin: 100px auto 0px;
+}
+#appForm .c-banner a{
+  color: #fff;
+}
+#appForm .form-group label{
+  color: #0a7492;
+}
+#appForm .form-group {
+margin-bottom: 1rem;
+margin-bottom: 1.5rem;
+border: 1px solid #9e9e9e30;
+border-left: 2px solid black;
+/* padding: 15px 4px; */
+/* background-color: #f9f9f9; */
+  border: none;
+  /* color: black; */
+  height: 50px;
+  font-size: 20px;
+  font-size: 19px;
+  font-weight: 400;
+}
+#appForm .form-control{
+background-color: transparent;
+  /* font-size: 22px !important; */
+  /* border: none; */
+  transition: all .2s ease-in-out;
+}
+/* .contact-wrapper{       
+  margin-top: 60px;
+} */
+.c-banner{
+  position: relative;
+}
+
+.c-banner #contactClose{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
