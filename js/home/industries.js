@@ -12,7 +12,7 @@ $(function(){
 
     new ScrollMagic.Scene({
         triggerElement: "#industryMaster",
-        triggerHook:0.13,
+        triggerHook:0.12,
         duration:'300%',
         // reverse:false,                                  
     })

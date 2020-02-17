@@ -1,6 +1,7 @@
 /* ! COLOR CODES  */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Outline|Diplomata+SC|Jacques+Francois+Shadow|Londrina+Outline|Ribeye+Marrow|Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
 :root{
     --color-1:#0b0c13;
     --color-2:#575866;
@@ -32,6 +33,12 @@
     --color-4-7:#9399ab;
     --color-4-8:#656c8f;
     --color-4-9:#e8e9f0;
+
+    /*  */
+
+    --color-5-1:#e5e5e5;
+    --color-5-2:#242a2a;
+    --color-5-3:#3261d1;
 }
 @font-face {
     font-family: 'Replica';
@@ -47,14 +54,15 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color:#05070c;
+    background-color:#05070c;     
     z-index:999;
 }
 body{
-    padding-top:92px;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    position: relative; 
-    background-color: #05070c;        
+    padding-top:94px;
+    font-family: 'Roboto',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;     
+    /* position: relative;  */
+    background-color: #f9f9f9;  
+    /* background-color:#05070c;       */
 }
 /* h1,h2,h3,h4,h5,h6{
     font-family:'Replica', sans-serif;

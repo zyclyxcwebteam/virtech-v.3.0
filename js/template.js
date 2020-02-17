@@ -6,17 +6,17 @@ $(function () {
             let slideAnimation = gsap.timeline()
                 .from(".bg-title", { opacity: 1, duration: 2 })
                 .from(".slide-1",{opacity:0,duration:2,delay:1,ease: "power1.out"})
-                .to("#slidesContainer", 4, { x: "-25%",delay:4 })
+                .to("#slidesContainer", { x: "-25%" })
                 .from("#advantages .card",{stagger:2,duration:2,opacity:0.8,ease: "power1.out",delay:4})                 
-                .to("#slidesContainer", 4, { x: "-50%" })
+                .to("#slidesContainer", { x: "-50%" })
                 .from("#capabilities .card",{stagger:2,duration:2,opacity:0.8,ease: "power1.out",delay:4})
-                .to("#slidesContainer", 4, { x: "-75%" })
+                .to("#slidesContainer", { x: "-75%" })
                 .from("#partners img",{stagger:2,duration:2,opacity:0.8,ease: "power1.out",delay:4})
             // create scene to pin and link animation
             new ScrollMagic.Scene({
                 triggerElement: "#masterContainer",
                 triggerHook: "onLeave",
-                duration: "800%",
+                 duration:'500%'
                 // reverse:false          
             })
                 .setPin("#masterContainer")

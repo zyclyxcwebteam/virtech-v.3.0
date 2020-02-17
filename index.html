@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
 
   <!-- TODO: concat css with gulp -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/shared/layout.css" />
   <link rel="stylesheet" href="./css/shared/header.css" />
   <link rel="stylesheet" href="./css/home/home.css" />
@@ -28,8 +29,16 @@
   <div class="loading-wrapper" id="page-loader">
     <img src="./img/logo.png" alt="">
   </div>
-
-  <div class="master-wrapper">
+<!-- ! side navigation -->
+<ul class="side-nav">
+  <li><a href="#main"><span></span></a></li>
+  <li><a href="#masterContainer"><span></span></a></li>
+  <li><a href="#industryMaster"><span></span></a></li>
+  <li><a href="#introContainer"><span></span></a></li>
+  <li><a href="#contactBanner"><span></span></a></li>
+</ul>
+  <!-- ! main content -->
+  <div class="master-wrapper" id="main">
     <!-- ! header navbar-->
     <!-- TODO: hide header on scroll down, show on scroll up -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
@@ -589,6 +598,11 @@
 
     </div>
 
+    <!-- ! Proof of concept -->
+    <section class="poc-wrapper">
+      <h3 class="text-center mt-4 py-4">Fostering your trust in us with Free Proof Of Concept.</h3>
+    </section>
+
     <!-- ! Our Industries -->
     <section class="industry-wrapper" id="industryMaster">
       <h3 class="bg-title-dark bg-title">INDUSTRIES</h3>
@@ -727,57 +741,26 @@
       </div>
     </section>
 
+    <!-- ! Our clients -->
+    <section id="clients" class="container-fluid our-clients wrapper"> 
+      <div class="container mt-sm-3 mt-md-5">
+        <div class="owl-carousel clients-carousel">
+          <div class="client"><img src="./img/clients/client-1.png" alt="elm"></div>
+          <div class="client"><img src="./img/clients/client-2.png" alt="alinma bank"></div>
+          <div class="client"><img src="./img/clients/client-3.png" alt="bank albilad"></div>
+          <div class="client"><img src="./img/clients/client-4.png" alt="arics cooper"></div>
+          <div class="client"><img src="./img/clients/client-5.png" alt="inforspoke"></div>
+          <div class="client"><img src="./img/clients/client-6.png" alt="blueprism"></div>
+          <div class="client"><img src="./img/clients/client-7.png" alt="stcs"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ! Company Intro -->
     <div id="introContainer">
       <h4 class="bg-title bg-title-light">Virtech</h4>
       <div id="introSlides" class="company-intro">
-        <section class="slide slide-1">
-          <div class="container d-flex justify-content-center align-items-center flex-column h-100 ">
-            <div class="row d-flex justify-content-between">
-              <div class="col-5">
-                <div class="testimonials py-5">
-                  <!-- <h4 class="my-3">Testimonials</h4> -->
-                  <div class="p-5">
-                    <div class="test-card">
-                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
-                        Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                      <p class="test-name">Lorem ipsum</p>
-                    </div>
-                    <div class="test-card">
-                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
-                        Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                      <p class="test-name">Lorem ipsum</p>
-                    </div>
-                    <div class="test-card">
-                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
-                        Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                      <p class="test-name">Lorem ipsum</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 h-100 d-flex justify-content-center align-items-center">
-                <div class="intro-content">
-                  <h4 class="py-4">We are Virtech Technologies</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero.
-                    Eligendi impedit
-                    fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui
-                    sapiente, nulla
-                    odio iste ab.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero.
-                    Eligendi impedit
-                    fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui
-                    sapiente, nulla
-                    odio iste ab.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="slide slide-2 mt-3">
+        <section class="slide slide-1 mt-3">
           <div class="container d-flex justify-content-center align-items-end h-100">
                 <div class="row core-values w-100">                  
                   <!-- val - 1 -->
@@ -894,6 +877,53 @@
                 </div>              
           </div>
         </section>
+        <section class="slide slide-2">
+          <div class="container d-flex justify-content-center align-items-center flex-column h-100 ">
+            <div class="row d-flex justify-content-between">
+              <div class="col-5">
+                <div class="testimonials py-5">
+                  <!-- <h4 class="my-3">Testimonials</h4> -->
+                  <div class="p-5">
+                    <div class="test-card">
+                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
+                        Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
+                      <p class="test-name">Lorem ipsum</p>
+                    </div>
+                    <div class="test-card">
+                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
+                        Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
+                      <p class="test-name">Lorem ipsum</p>
+                    </div>
+                    <div class="test-card">
+                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
+                        Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
+                      <p class="test-name">Lorem ipsum</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 h-100 d-flex justify-content-center align-items-center">
+                <div class="intro-content">
+                  <h4 class="py-4">We are Virtech Technologies</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero.
+                    Eligendi impedit
+                    fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui
+                    sapiente, nulla
+                    odio iste ab.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero.
+                    Eligendi impedit
+                    fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui
+                    sapiente, nulla
+                    odio iste ab.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="slide slide-3 mt-3">
           <div class="container d-flex justify-content-center align-items-center h-100">
             <div class="row">
@@ -1148,6 +1178,7 @@
     crossorigin="anonymous"></script>
     <script src="./js/vendor/particles.min.js"></script>
   <!-- TODO - CONCAT & MINIFY SCRIPTS -->
+  <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="./js/shared/header.js"></script>
   <script src="./js/home/home.js"></script>
   <script src="./js/home/services.js"></script>

@@ -97,7 +97,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size:100% 350px;
-  height:500px;
+  height:100%;
   position: relative;
 }
  .core-values .card{
@@ -113,7 +113,7 @@
     color: #e8e9f0;
   }
   .core-values .core-icon-outer{
-    padding: 1rem;
+    padding: 0.3rem;
     border-radius: 50%;
     background-color:hsl(223, 41%, 8%); 
   }
@@ -136,23 +136,23 @@
  
  .c-val-2{
 position: absolute;
-bottom:50%; 
+bottom:40%; 
 left: 14%;
  }
  .c-val-3{
 position: absolute;
 left:33%;
-top: -1%; 
+top: 25%; 
  }
  .c-val-4{
 position: absolute;
-right: 29%;
-top:0%;
+right: 28%;
+top:28%;
 }
 
 .c-val-5{
 position: absolute;
-bottom: 47%;
+bottom: 36%;
 right: 12%;
 }
 

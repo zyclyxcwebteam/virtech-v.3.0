@@ -2,9 +2,11 @@
 .navbar{
     background-color: hsl(167, 39%, 97%);
 }
+
 .logo{
     max-width: 160px;
 }
+
 /* Horizontal scroll container */
 #masterContainer{
     width: 100%;
@@ -24,7 +26,9 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    display: flex;
+    display: flex; 
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;         
 }
 
 .slide {
@@ -33,6 +37,15 @@
     background-color: transparent;
     color: #fff;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    scroll-snap-align: start;     
+}
+.slide h3{
+    color: #000;
+    font-size: 4rem;        
 }
 
 .bg-title {
@@ -47,3 +60,7 @@
     text-align: center;
     color:#000;
 }
+
+ /* {
+
+} */

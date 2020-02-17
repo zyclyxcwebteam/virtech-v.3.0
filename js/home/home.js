@@ -1,5 +1,18 @@
 $(document).ready(function () { 
-// ! Home loading animation
+
+// our clients/partners
+$(".clients-carousel").owlCarousel({
+    autoplay: true,     
+    loop: true,
+    center: true,
+    autoplaySpeed: 2000,
+    dots:false,
+    responsive: {
+      0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
+    }
+  });
+
+  // ! Home loading animation
 let homePageLoad = gsap.timeline({onComplete:startTitleCarousel})
 homePageLoad.to('.home-inner',{opacity:0,duration:0.01})
 homePageLoad.fromTo('#masterNavbar',{opacity:1 },{opacity:0,duration:0.01,ease:Expo.easeInOut})
@@ -25,4 +38,27 @@ function startTitleCarousel(){
     homeTitleCarousel.to('#title-4',{y:-700,display:'none',opacity:0,duration:1,delay:5}) 
     
 } 
+
+//  side navigation links
+let controller = new ScrollMagic.Controller();
+controller.scrollTo(function (newpos) {
+    TweenMax.to(window, 1, {scrollTo: {y: newpos}, ease:Power4.easeInOut});
+});
+
+
+$(document).on("click", ".side-nav a[href^='#']", function (e) {
+    var id = $(this).attr("href");
+    if ($(id).length > 0) {
+        e.preventDefault();
+ 
+        // trigger scroll
+        controller.scrollTo(id);
+ 
+        // if supported by the browser we can even update the URL.
+        if (window.history && window.history.pushState) {
+            history.pushState("", document.title, id);
+        }
+    }
+});
+
 })

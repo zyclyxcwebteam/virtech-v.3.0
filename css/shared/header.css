@@ -5,26 +5,33 @@
   transform: translate(-50%,-50%);
   width: 50%;
 } 
+
 /* ! Navbar */
 #masterNavbar{
   z-index: 1001;
   background-color: #05070c;      
 }
+/* ! hide navbar on initial loading */
 #home #masterNavbar{
   opacity: 0; 
 }
+
 .no-js #masterNavbar{
   opacity: 1;
-}
-.navbar-brand img{
-    max-width: 170px;        
 }
 #home .navbar-brand img{
   opacity: 0; 
 }
+
 .no-js .navbar-brand img{
   opacity: 1;
 }
+
+.navbar-brand img{
+    max-width: 170px;        
+}
+
+
 
 #masterNavbar .nav-link{
     margin-left: 1.4rem;
@@ -73,9 +80,9 @@ color:#00bdd5;
   .dropdown-submenu>a{
       position: relative;
   }
-  .dropdown-submenu>a{
+  /* .dropdown-submenu>a{
       margin-left: 1rem;
-  }
+  } */
   /* .dropdown-submenu>a.active:after {
     content: "\f0da";
  
