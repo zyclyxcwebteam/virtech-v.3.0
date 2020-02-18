@@ -7,7 +7,7 @@
     overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 88vh;     
+    height: 89vh;     
     background-color: #05070c !important;
     position: relative;          
   }
@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 10px 10px 20px -10px rgba(255,255,255,0.2);
+    /* box-shadow: 10px 10px 20px -10px rgba(255,255,255,0.2); */
   }
   .services .title-card .card-title{
     font-size: 2rem;

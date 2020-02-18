@@ -14,7 +14,5 @@ new ScrollMagic.Scene({
     })     
     .setTween(howWeDo)
     .addIndicators()
-    .addTo(controller);     
-
-    
+    .addTo(controller);         
 })

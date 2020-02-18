@@ -31,7 +31,7 @@ position: relative;
     display: inline-block;
     margin: 0.5rem;
     padding: 0.3rem 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 .hero-text{
     font-size: 1.2rem;
@@ -76,20 +76,102 @@ position: relative;
     border: 2px solid #b8bdc4;
 }
 
-.poc-wrapper{
-    height: 20vh; 
-    background-color: #f9f9f9;
+.poc-wrapper{     
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+.poc-wrapper .card{
+    background-color: transparent;
+}
+.poc-list{
+    margin: 0;
+    padding: 0;
+}
+.poc-list li{
+    list-style-type: none;
+    margin: 1rem;
+}
+.poc-list li p{
+    font-size: 1.2rem;     
+}
+.poc-list li p span{
+    font-size: 1.4rem;
+    font-weight: 600;
+ }
+.poc-list .fas{
+    color:#ffffff;
+}
+.poc-list span{
+    font-size: 1.2rem;
+}
+.poc-btn{     
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    z-index: 99;
+    bottom: -21px;
+    color: #3261d1;    
+ }
+.poc-btn:hover{
+    text-decoration: none;
+}
+.poc-btn .fas{
+    animation: arrow 1s linear infinite alternate;
+}
+@keyframes arrow{
+    0%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translateY(6px);
+    }
 }
 .our-clients{
-    background-color: #ffffff;
+    background-color: #ffffff;     
 }
-.clients-carousel img{
+.client-title,.poc-title{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.poc-btn[aria-expanded="true"] .fa-arrow-down:before{
+    content: "\f062";
+}
+/* .fa-sort-down:before {
+    
+} */
+
+/* .clients-carousel img{
 max-width: 180px;
+border: 1px solid red;
 }
 .clients-carousel .client{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;     
-    margin: 1rem;     
-}
+    margin: 1rem;
+    height: 100%;     
+} */
+
+.client{
+    padding:2rem 3rem;
+    border-radius: 0.3rem;
+    margin: 1rem !important;
+    max-width: 300px;
+    height: 120px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; 
+  }
+  .our-clients img{     
+    width: 100%;   
+  } 
+  

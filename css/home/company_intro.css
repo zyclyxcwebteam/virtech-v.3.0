@@ -4,7 +4,7 @@
     overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 87vh;     
+    height: 88vh;     
     background-color: #000 !important;
     position: relative;
   }
@@ -49,46 +49,29 @@
     align-items: center;
     flex-direction: column;   
   }
-  
-  .testimonials .test-card{
-    background-color:#05070c;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    margin:1rem 0.6rem;
-    color: #fff;
-    /* box-shadow: 5px 5px 20px -8px #f1f1f1; */
-  }
-  .testimonials .test-name{
-    text-align: right;
-    margin: 0;
-  }
-  #introContainer .card-title{
-    font-size: 45px;
-    font-weight: 700;
-    color:#fffaf0;
-    text-align: center;
-  }
-  .company-intro h4{
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #fffaf0;
-  }
-  .intro-wrapper{
-    background-color: #05070c;
-  }
-  .intro-content p{
-    font-size: 1.4rem;
-    color: #ddd;
-  }
+   /* ! testimonials */
+   .testimonial-wrapper{
 
+   }
+   .testimonial-title{
+     font-size: 2.5rem;
+     color:#f5f5f5;
+   }
+   .testimonial{
+
+   }
+  .testimonial-text{
+    color: #e5e5e5;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+   /* ! END - Testimonials */
   .c-val-caption{
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #f3f7fa;
   }
   .c-val-title{
-    font-size: 1.1rem;
-    margin-bottom: 1.6rem;
-    margin-top: 1.6rem;
+    font-size: 1.5rem;     
     color: #fff;    
     text-align: center;
   }
@@ -99,6 +82,7 @@
   background-size:100% 350px;
   height:100%;
   position: relative;
+  mix-blend-mode: multiply;
 }
  .core-values .card{
   background-color: transparent;      
@@ -108,9 +92,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
+  /* .c-val-4 .card-body, .c-val-3 .card-body{
+    flex-direction: column;
+  } */
   .core-values .core-text{
     color: #e8e9f0;
+    text-align: center;
   }
   .core-values .core-icon-outer{
     padding: 0.3rem;
@@ -122,45 +111,63 @@
     padding: 1.5rem;
     border-radius: 50%;
   }
-  .core-values p{
-     color: wheat;
+  .core-icon-inner img{
+    opacity: 0.7;
+  }
+  .core-icon-outer:hover{
+    background-color: #f3f7fa;
+  }
+  .core-icon-outer:hover .core-icon-inner img{
+    opacity: 1;
   }
   .core-values .card-body{
     padding: 0;
   }
+
+.c-section-title{
+position: absolute;
+left: 45%;
+bottom: 20px;
+font-size: 3rem;
+color: #f5f5f5;
+text-align: center;
+}
+
  .c-val-1{
    position: absolute;
    bottom:10%;
-   left: 3%;
+   left: 9%;
  }
  
  .c-val-2{
 position: absolute;
-bottom:40%; 
-left: 14%;
+bottom:35%; 
+left: 15%;
  }
  .c-val-3{
 position: absolute;
-left:33%;
-top: 25%; 
+left:34%;
+top: 29%; 
  }
  .c-val-4{
 position: absolute;
-right: 28%;
-top:28%;
+right: 26%;
+top:29%;
 }
 
 .c-val-5{
 position: absolute;
-bottom: 36%;
-right: 12%;
+bottom: 35%;
+right: 13.5%;
 }
 
 .c-val-6{
-  position: absolute;
-right:3%;
-bottom:10%; 
+position: absolute;
+right:14.5%;
+bottom:10%;
 }
+
+
   .achievements .card{
     background-color: rgba(0, 0, 0,0.1);
     box-shadow: none;

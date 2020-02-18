@@ -41,7 +41,7 @@
   <div class="master-wrapper" id="main">
     <!-- ! header navbar-->
     <!-- TODO: hide header on scroll down, show on scroll up -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="masterNavbar">
       <div class="container-fluid">
         <a href="./" class="navbar-brand ml-5"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
 
@@ -598,11 +598,38 @@
 
     </div>
 
-    <!-- ! Proof of concept -->
-    <section class="poc-wrapper">
-      <h3 class="text-center mt-4 py-4">Fostering your trust in us with Free Proof Of Concept.</h3>
-    </section>
-
+    <!-- ! Proof of concept --> 
+    <div class="poc-wrapper" id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h3 class="poc-title text-center py-4">Fostering your trust in us with Free Proof Of Concept.</h3>
+          <h5 class="mb-0">
+            <button class="btn poc-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="container">
+          <div class="card-body row d-flex justify-content-center align-items-center">
+            <div class="col-9">
+              <p class="text-center">With Proof Of Concept, we provide advanced services to create prototypes which helps in demonstrating the potential and feasibility in relation to your business value, hence optimizing the processes.</p>
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-10">
+                  <ul class="poc-list">
+                    <li><p><i class="fas fa-check-square mr-2"></i> <span>Forecast </span> Act as a tool to forecast the feasibility of the projects.</p></li>
+                    <li><p><i class="fas fa-check-square mr-2"></i> <span>Report </span> Provides a complete report on project evaluation.</p></li>
+                    <li><p><i class="fas fa-check-square mr-2"></i><span>Cost Effective </span>Saves the businesses time and money</p></li>
+                  </ul>
+                </div>
+              </div>              
+            </div>             
+          </div>
+        </div>
+        </div>
+      </div>      
+    </div>
     <!-- ! Our Industries -->
     <section class="industry-wrapper" id="industryMaster">
       <h3 class="bg-title-dark bg-title">INDUSTRIES</h3>
@@ -742,9 +769,10 @@
     </section>
 
     <!-- ! Our clients -->
-    <section id="clients" class="container-fluid our-clients wrapper"> 
+    <section id="clients" class="container-fluid our-clients wrapper">
+      <h2 class="client-title text-center py-4">Our Clients</h3>
       <div class="container mt-sm-3 mt-md-5">
-        <div class="owl-carousel clients-carousel">
+        <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center">
           <div class="client"><img src="./img/clients/client-1.png" alt="elm"></div>
           <div class="client"><img src="./img/clients/client-2.png" alt="alinma bank"></div>
           <div class="client"><img src="./img/clients/client-3.png" alt="bank albilad"></div>
@@ -760,16 +788,18 @@
     <div id="introContainer">
       <h4 class="bg-title bg-title-light">Virtech</h4>
       <div id="introSlides" class="company-intro">
-        <section class="slide slide-1 mt-3">
-          <div class="container d-flex justify-content-center align-items-end h-100">
-                <div class="row core-values w-100">                  
+        <section class="slide slide-1 mt-3" id="coreValues">
+          <div class="container-fluid d-flex justify-content-center align-items-end h-100">
+                <div class="row core-values w-100">
+                  <h3 class="c-section-title">Core <br>Values</h3>                  
                   <!-- val - 1 -->
-                  <div class="col-2 c-val-1">
+                  <div class="c-val-1">
                     <div class="card">
-                      <div class="card-body">
-                        <!-- <div class="core-text">
-                          <h3 class="c-val-title">Deliver Amazing Service</h3>                           
-                        </div> -->
+                      <div class="card-body d-flex justify-content-center">
+                        <div class="core-text mr-2">
+                          <h3 class="c-val-title">Deliver</h3>
+                          <p class="c-val-caption">Amazing Services For <br> The Best Results</p>                           
+                        </div>
                         <div class="core-icon-wrapper">
                           <div class="core-icon-outer">
                             <div class="core-icon-inner">
@@ -781,15 +811,15 @@
                       </div>
                     </div>
                   </div>
-
-
+                  
                   <!-- val - 2 -->
-                  <div class="col-2 c-val-2">
+                  <div class="c-val-2">
                     <div class="card">
                       <div class="card-body">
-                        <!-- <div class="core-text">
-                          <h3 class="c-val-title">Take Ownership In Everything</h3>                           
-                        </div>                         -->
+                        <div class="core-text mr-2">
+                          <h3 class="c-val-title">Take Ownership</h3>
+                          <p class="c-val-caption">And Drive Change</p>                          
+                        </div>                        
                         <div class="core-icon-wrapper">
                           <div class="core-icon-outer">
                             <div class="core-icon-inner">
@@ -800,14 +830,15 @@
                       </div>
                     </div>
                   </div>
-
+                  
                   <!-- val-3 -->
-                  <div class="col-2 c-val-3">
+                  <div class="c-val-3">
                     <div class="card">
                       <div class="card-body">
-                        <!-- <div class="core-text">
-                            <h3 class="c-val-title">Commit Continuous Improvement</h3>                             
-                          </div> -->
+                        <div class="core-text mr-2">
+                            <h3 class="c-val-title">Commit</h3>
+                            <p class="c-val-caption">To Evolve</p>                             
+                          </div>
                           <div class="core-icon-wrapper">
                             <div class="core-icon-outer">
                               <div class="core-icon-inner">
@@ -819,11 +850,11 @@
                         </div> 
                     </div>
                   </div>
-
+                  
                   <!-- val-4 -->
-                  <div class="col-2 c-val-4">
+                  <div class="c-val-4">
                     <div class="card">
-                      <div class="card-body">
+                      <div class="card-body">                        
                         <div class="core-icon-wrapper">
                           <div class="core-icon-outer">
                             <div class="core-icon-inner">
@@ -832,19 +863,19 @@
                           </div>
                           
                         </div>
-                        <!-- <div class="core-text">
-                          <h3 class="c-val-title">Embrace Creativity</h3>                           
-                        </div> -->
+                        <div class="core-text ml-2">
+                          <h3 class="c-val-title">Embrace Creativity</h3>
+                          <p class="c-val-caption">And innovation</p>
+                        </div>                     
                       </div>
                     </div>
                   </div>
+                  
                   <!-- val-5 -->
-                  <div class="col-2 c-val-5">
+                  <div class="c-val-5">
                     <div class="card">
                       <div class="card-body">
-                        <!-- <div class="core-text">
-                          <h3 class="c-val-title">Build Positive Team Environment</h3>                           
-                        </div> -->
+                        
                         <div class="core-icon-wrapper">
                           <div class="core-icon-outer">
                             <div class="core-icon-inner">
@@ -853,13 +884,19 @@
                           </div>
                           
                         </div>
+                        <div class="core-text ml-2">
+                          <h3 class="c-val-title">Build</h3>
+                          <p class="c-val-caption">Positive Team Environment</p>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  
                   <!-- val-6 -->
-                  <div class="col-2 c-val-6">
+                  <div class="c-val-6">
                     <div class="card">
                       <div class="card-body">                       
+
                         <div class="core-icon-wrapper">
                           <div class="core-icon-outer">
                             <div class="core-icon-inner">
@@ -868,56 +905,59 @@
                           </div>
                           
                         </div>
-                      </div>
-                      <!-- <div class="core-text">
-                        <h3 class="c-val-title">Make It Count</h3>                         
-                      </div> -->
+                        <div class="core-text ml-2">
+                          <h3 class="c-val-title">Make It</h3>
+                          <p class="c-val-caption">Count</p>
+                        </div>
+                      </div>                      
                     </div>
                   </div>
                 </div>              
           </div>
         </section>
         <section class="slide slide-2">
-          <div class="container d-flex justify-content-center align-items-center flex-column h-100 ">
-            <div class="row d-flex justify-content-between">
-              <div class="col-5">
-                <div class="testimonials py-5">
-                  <!-- <h4 class="my-3">Testimonials</h4> -->
-                  <div class="p-5">
-                    <div class="test-card">
-                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
-                        Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                      <p class="test-name">Lorem ipsum</p>
-                    </div>
-                    <div class="test-card">
-                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
-                        Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                      <p class="test-name">Lorem ipsum</p>
-                    </div>
-                    <div class="test-card">
-                      <p class="test-msg"><span class="mr-2"><i class="fas fa-quote-left"></i></span>
-                        Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem tempora ea vero</p>
-                      <p class="test-name">Lorem ipsum</p>
+          <div class="container-fluid testimonial-wrapper">
+            <h4 class="text-center mt-4 mb-2 testimonial-title">What People Say About Us</h4>
+            <div class="row">
+              <div class="col-md-8 col-12 mx-auto">
+                <div class="row testimonial-inner d-flex justify-content-start">
+  
+                  <!-- col - 1 -->
+                  <div class="col-7 my-4">
+                    <div class="testimonial">
+                       <p class="px-4 testimonial-text"><i class="fas fa-quote-left mr-2"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at tempora veniam! Atque sed neque, excepturi expedita quia in ut ipsa mollitia dolor eligendi! Velit ipsum maiores perspiciatis dolores deleniti.</p>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-6 h-100 d-flex justify-content-center align-items-center">
-                <div class="intro-content">
-                  <h4 class="py-4">We are Virtech Technologies</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero.
-                    Eligendi impedit
-                    fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui
-                    sapiente, nulla
-                    odio iste ab.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora ea vero.
-                    Eligendi impedit
-                    fugit, expedita delectus exercitationem earum sequi quasi dolor adipisci? Natus qui
-                    sapiente, nulla
-                    odio iste ab.</p>
+      
+                  <!-- col - 2 -->
+                  <div class="col-7 ml-auto my-4">
+                    <div class="testimonial">
+                    <p class="px-4 testimonial-text"><i class="fas fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at tempora veniam! Atque sed neque, excepturi expedita quia in ut ipsa mollitia dolor eligendi! Velit ipsum maiores perspiciatis dolores deleniti.</p>
+                  </div>
+                  </div>
+      
+                  <!-- col - 3 -->
+                  <div class="col-7 my-4">
+                    <div class="testimonial">
+                    <p class="px-4 testimonial-text"><i class="fas fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at tempora veniam! Atque sed neque, excepturi expedita quia in ut ipsa mollitia dolor eligendi! Velit ipsum maiores perspiciatis dolores deleniti.</p>
+                  </div>
+                  </div>
+      
+                  <!-- col - 4 -->
+                  <!-- <div class="col-8 ml-auto my-4">
+                    <div class="row d-flex justify-content-end">
+                      <div class="col-2 d-flex justify-content-center align-items-center">
+                        <img src="./img/icons/blockchain-4.svg" alt="">
+                      </div>
+                      <div class="col-9">
+                        <h4>Rapid Provisioning</h4>
+                        <p>We take up complete responsibility to install, deploy and manage the environment of a blockchain
+                          network to avoid any issues.</p>
+                      </div>
+      
+                    </div>
+                  </div> -->
+      
                 </div>
               </div>
             </div>
@@ -1152,6 +1192,7 @@
     </div>
   </div>
 </section>
+
   <!-- GSAP  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/CSSRulePlugin.min.js"></script>

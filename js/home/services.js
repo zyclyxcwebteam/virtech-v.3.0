@@ -25,7 +25,7 @@ $(function(){
   // create scene to pin and link animation
   new ScrollMagic.Scene({
       triggerElement: "#masterContainer",
-      triggerHook:0.13,
+      triggerHook:0.12,
       duration: "400%",                 
   })
       .setPin("#masterContainer")
