@@ -23,18 +23,18 @@ let contactClose = document.getElementById('contactClose');
  
 contactLink.addEventListener('click',function(event){
   event.preventDefault();
-  gsap.to('.contact-wrapper',{display:'block',height:'100vh',duration:0.5})    
+  gsap.to('.contact-wrapper',{display:'block',minHeight:'100vh',duration:0.5})    
 })
 
 contactButton.addEventListener('click',function(event){
 event.preventDefault();
-gsap.to('.contact-wrapper',{display:'block',height:'100vh',duration:0.5})    
+gsap.to('.contact-wrapper',{display:'block',minHeight:'100vh',duration:0.5})    
 })
 
 
 contactClose.addEventListener('click',function(event){
   event.preventDefault();
-  gsap.to('.contact-wrapper',{display:'none',height:'0px',duration:0.5})
+  gsap.to('.contact-wrapper',{display:'none',minHeight:'0px',duration:0.5})
   })
 
 })();

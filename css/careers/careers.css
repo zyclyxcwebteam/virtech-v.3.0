@@ -10,6 +10,10 @@
   height: 100vh;
 
 }
+.hero-banner h4{
+  color: #0090a6;
+  margin-bottom: 20px;
+}
 .hero-title{
     color: #05070c;
 }

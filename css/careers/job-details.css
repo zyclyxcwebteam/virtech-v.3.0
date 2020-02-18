@@ -1,22 +1,23 @@
 .job-details-home{
     height: 100vh;
     background-color: #05070c;
-    position: relative;
+    /* position: relative; */
     /* padding-top: 90px; */
   }
   .option .optIcon .fa-bg{
     font-size: 125px;
     margin-right: 10px;
-    position: absolute;
-    opacity: 0.05;
+    /* position: absolute; */
+    /* opacity: 0.05;
     top: -20px;
-    right: -20px;
+    right: -20px; */
   }
   .options{
-    color: rgb(78, 78, 78);
+    /* color: rgb(78, 78, 78);
     position: absolute;
     right: 0;
     top: 100px;
+    height: 100vh; */
   }
   .options .optIcon{
     font-size: 35px;
@@ -50,7 +51,7 @@
     color: white;
     background: #0a7492!important;
     /* padding:510px 0px; */
-    height: 138px;
+    /* height: 138px; */
   }
   .title{
     position: absolute;

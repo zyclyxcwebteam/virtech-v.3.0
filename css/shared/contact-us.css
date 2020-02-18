@@ -1,11 +1,11 @@
 /* ! Contact Modal */
 .contact-wrapper {
-    height: 100vh;
+    /* height: 100vh; */
     /* background: #05070c; */
     color: rgb(255, 255, 255);
-    overflow: hidden;
+    /* overflow: auto; */
     background-color: #05070c;
-    color: #f4f4f4;
+    /* color: #f4f4f4; */
     /* padding-top:75px; */
     position: fixed;
     bottom: 0;
@@ -29,9 +29,9 @@
 #appForm .form-control{
     border-radius: 0;
 }
-#appForm{       
-    /* background-color: #05070c; */
-    /* color: #333;
+/* #appForm{       
+    background-color: #05070c;
+    color: #333;
      
     position: fixed;
     bottom: 0;
@@ -39,9 +39,9 @@
     height: 0;
     display: block;
      
-    z-index: 999; */
+    z-index: 999;
 }
-
+ */
 .contact-info{
     /* border: 1px solid #fff; */
     text-align: center;
@@ -172,3 +172,27 @@
     font-size: 1.5rem;
     margin-right: 20px;
   }
+
+
+  /* =========== MEDIA QUERIES ============ */
+  
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .contact-wrapper{
+    overflow: auto;
+  }
+  .contact-inner .display-4{
+  padding-top: 2rem;
+  font-size: 40px;
+  }
+  /* .contact-inner p:first-child{
+    color: red !important;
+    margin-bottom: 50px;
+  } */
+  .contact-inner label{
+    font-size: 16px !important;
+  }
+  .contact-inner .form-control{
+    font-size: 21px !important;
+  }
+ }
