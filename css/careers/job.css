@@ -1,6 +1,7 @@
 /* TODO - remove body padding later */
 body{
     padding-top: 70px;
+    scroll-behavior: smooth;
 }
 
 .job-banner{
@@ -8,7 +9,7 @@ body{
     background-color: #05070c;
     /* margin-top: 100px; */
     display: flex;
-    color: white;
+    /* color: white; */
     /* align-items: center; */
 }
 #description{
@@ -16,15 +17,19 @@ body{
 }
 .job-title{
     color: #0a7492 !important;
+    font-size: 75px;
 }
 .options{
     display: flex;
     align-items: stretch;
 }
-.option .optIcon .fa-bg{
+.option{
+  background: #05070c;
+}
+/* .option .optIcon .fa-bg{
     font-size: 125px;
     margin-right: 10px;
-  }
+  } */
   .options .optIcon{
     font-size: 35px;
   }
@@ -51,15 +56,28 @@ body{
     color:white;
     transition: all 0.5s ease-in-out;
   }
-  .options .btn{
+  .options .option-btn{
     font-size: 30px;
-    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 45px 0px;
+    color: rgb(255, 255, 255);
     background: #0a7492!important;
     /* padding:510px 0px; */
     /* height: 138px; */
   }
 
-
+  .title .hero-text, #description{
+    color: rgb(204, 204, 204);
+  }
+  .title .hero-text{
+    font-size: 18px;  
+  }
+  .title .btnRes{
+    display: none;
+  }
   .title a{
     color: #0a7492;
     font-size: 16px;
@@ -104,14 +122,14 @@ body{
     padding: 10px;  
   }
   /* submit button */
-#submitBtn{
+.applyBtn{
     color: #0a7492;
     border: 1px solid;
     font-size: 20px;
     padding: 10px 80px;
     border-radius: 0;
   }
-  #submitBtn:hover{
+  .applyBtn:hover{
     color: white;
     background-color: #0a7492;
   }
@@ -267,3 +285,97 @@ body{
     font-size: 1.5rem;
     margin-right: 20px;
   }
+
+  .left-wrapper{
+    height: 88vh;
+  }
+  .right-wrapper{
+height: 92vh;
+  }
+
+
+/* ========= Media Queries ========= */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+.option{
+  background: #05070c;
+}
+.title .btnRes{
+  margin-bottom: 2rem !important;
+}
+.details{
+  padding: 10px 40px;
+}
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+.options .option-btn{
+  display: none;
+  }
+.options .option{
+  padding: 15px 12px;
+}
+.title .job-title{
+  font-size: 52px;
+}
+.title .hero-text{
+  font-size: 16px;
+}
+
+.title{
+    padding: 0px 40px;
+    text-align: center;
+}
+.title #description{
+  text-align: center !important;    
+}
+.title .btnRes{
+    display: block;
+    color: #0a7492;
+    background: transparent;
+    border: 1px solid;
+    font-size: 20px;
+    padding: 10px 80px;
+    border-radius: 0;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) { 
+   /* .title .job-title{
+    font-size: 50px; */
+  /* }.title #description .hero-text{
+    font-size: 16px;
+  } */
+  .title a{
+    background: #0a759211;
+    border-radius: 10px;
+  }
+   .options .option h2{
+    font-size: 20px;
+  }
+  .options .optIcon{
+    font-size: 28px;
+  }
+  .options .option-btn{
+    font-size: 25px;
+    width: 100%;
+    margin: 0px;
+    padding: 40px 0px !important;
+  }
+/* .options .option{
+  border: none; 
+  height: 50%; 
+} */
+.left-wrapper{
+  height: 60vh;
+}
+.right-wrapper{
+height: 10vh;
+}
+ }

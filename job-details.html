@@ -144,13 +144,13 @@
     <div class="container-fluid">
     <div class="row d-flex justify-content-center align-items-center h-100">
 
-      <div class="title col-md-10 col-12">
+      <div class="title col-lg-10 col-md-12 col-12 d-flex justify-content-center align-items-center left-wrapper">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-md-8 col-12">
             
         <div class="d-flex align-items-center">
         
-            <h5 id="description">Description of</h5>
+            <h5 class="m-0" id="description">Description of</h5>
             <!-- <span>Developer</span> -->
       
         </div>
@@ -161,6 +161,9 @@
             large number of users accessing the solution over a variety of devices. The solution can not be
             delivered to the users without architecting and managing the systems behind the solution.</p>
         </div>
+
+        <!-- Button can visible at ( landscape phones, less than 767.98px ) -->
+        <button type="submit" id="applyPage" class="btnRes">Apply Now</button>
         
         <a href="#roles">Roles & Responsibilities</a>
           </div>
@@ -168,10 +171,10 @@
         <!-- <a href="#responsibilities">Responsibilities</a> -->
       </div>
 
-      <div class="col-md-2 col-12 p-0 h-100">
-        <div class="options row info d-flex justify-content-center align-items-strech h-100">
+      <div class="col-lg-2 p-0 right-wrapper">
+        <div class="options row info d-flex justify-content-center align-items-stretch h-100">
 
-          <div class="option col-12 pr-0">
+          <div class="option col-lg-12 col pr-0">
             <div class="optIcon mr-4">
               <i class="fas fa-briefcase"></i>
             </div>
@@ -183,7 +186,7 @@
           </div>
 
 
-          <div class="option col-12 pr-0">
+          <div class="option col-lg-12 col pr-0">
 
             <div class="optIcon mr-4">
               <i class="fas fa-user-tie"></i>
@@ -196,7 +199,7 @@
 
           </div>
 
-          <div class="option col-12 pr-0">
+          <div class="option col-lg-12 col pr-0">
 
             <div class="optIcon mr-4">
               <i class="fas fa-rupee-sign"></i>
@@ -204,11 +207,11 @@
 
             <div>
               <p>Salary</p>
-              <h4>Best in the industry</h4>
+              <h2>Best in the industry</h2>
             </div>
           </div>
 
-          <div class="option col-12 pr-0">
+          <div class="option col-lg-12 col pr-0">
 
             <div class="optIcon mr-4">
               <i class="fas fa-map-marker-alt"></i>
@@ -219,9 +222,8 @@
               <h2>On-sight</h2>
             </div>
           </div>
-
-          <button type="submit" href="#" class="btn col pr-0 rounded-0" id="applyPopUp">Apply Now</button>
-
+          <a class="btn rounded-0 option option-btn col-lg-12 col p-0 pr-lg-0" href="#" id="applyPopUp">Apply Now</a>
+          
         </div>
 
       </div>
@@ -383,7 +385,7 @@
           </ul>
         </div>
       </div>
-      <button type="button" class="btn my-5" id="submitBtn">Apply Now</button>
+      <button type="button" class="btn my-5 applyBtn" id="submitBtn">Apply Now</button>
 
     </div>
   </section>
@@ -562,6 +564,7 @@
   </script>
   <script>
 
+    let applyPage = document.getElementById('applyPage');
     let contactButton = document.getElementById('submitBtn');
     let btnCancel = document.getElementById('btnCancel');
     let contactClose = document.getElementById('formClose');
@@ -587,7 +590,10 @@
       event.preventDefault();
       applyPopUp();
     })
-
+    applyPage.addEventListener('click', function (event) {
+      event.preventDefault();
+      applyPopUp();
+    })
     popUpForm.addEventListener('click', function (event) {
       event.preventDefault();
       applyPopUp();
