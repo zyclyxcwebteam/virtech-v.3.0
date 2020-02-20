@@ -1,0 +1,72 @@
+.rpa-banner {        
+    background-image: url("../../img/rpa/rpa-1.jpg");     
+  }
+
+  .ai-banner{
+    background-image: url("../../img/ai/ai-2.jpg");
+}
+
+.bc-banner{
+    background-image: url("../../img/blockchain/blockchain-1.jpg");
+}
+
+.iot-banner{
+    background-image: url("../../img/iot/iot-3.jpg");
+}
+
+.swd-banner{
+    background-image: url("../../img/swdev/swd-1.jpg");
+}
+
+.mapp-banner{
+    background-image: url("../../img/mapp/mapp-2.jpg");
+    background-position: center; 
+}
+
+.web-banner{
+    background-image: url("../../img/web/web-1.jpg");     
+}
+
+.dm-banner{
+    background-image: url("../../img/web/web-1.jpg");
+}
+
+.cs-banner{
+    background-image: url("../../img/cybersecurity/cyber-1.jpg");
+    background-position: center;
+}
+
+.infosec-banner{
+background-image: url("../../img/infosec/infosec-1.jpg");
+}
+
+.dvis-banner{
+    background-image: url("../../img/datavis/datavis-2.jpg");
+}
+
+.pa-banner{
+background-image: url("../../img/predictive/predictive-2.jpg");
+}
+
+.dcenter-banner{
+background-image: url("../../img/datacenter/datacenter-2.jpg");
+}
+
+.ns-banner{
+background-image: url("../../img/networksec/netsec-2.jpg");
+}
+
+.bd-banner{
+    background-image: url("../../img/bigdata/bigdata-1.jpg");
+}
+
+.eu-banner{
+    background-image: url("../../img/endusercomputing/enduser-2.jpg");
+}
+
+.bd-overview{
+    background-color: #0c0038;
+}
+.dc-overview{
+
+}

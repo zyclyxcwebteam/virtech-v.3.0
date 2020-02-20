@@ -9,28 +9,33 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <title>Big Data</title>
+  <title>Bigdata</title>
   <link rel="stylesheet" href="./css/shared/layout.css">
   <link rel="stylesheet" href="./css/shared/header.css">
   <link rel="stylesheet" href="./css/shared/footer.css">
   <link rel="stylesheet" href="./css/services/service-page.css">
   <link rel="stylesheet" href="./css/shared/contact.css">
+  <link rel="stylesheet" href="./css/services/rpa.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
 </head>
 
 <body>
   <!-- ! header navbar-->
   <!-- TODO: hide header on scroll down, show on scroll up -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="masterNavbar">
+  <!-- ? NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg fixed-top master-navbar py-2" id="masterNavbar">
     <div class="container-fluid">
-      <a href="./" class="navbar-brand ml-5"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
-
-      <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
-        aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-        <span class="navbar-toggler-icon"></span>
+      <a href="./" class="navbar-brand ml-md-5 ml-sm-2"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
+      <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
+        data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
       </button>
 
       <div id="navbarContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto mr-5">
+        <ul class="navbar-nav ml-auto mr-md-5 mr-sm-2">
           <!--  Home -->
 
           <li class="nav-item active">
@@ -140,123 +145,90 @@
       </div>
     </div>
   </nav>
+  <!-- ? END - NAVIGATION BAR -->
 
-  <section class="container-fluid service-banner">
-    <div class="row banner-title d-flex ml-5 justify-content-center flex-column h-100 mx-auto">
-
-      <div class="col-md-8 col-12 ml-5">
-        <h2 class="service-name">Big Data</h2>
-        <h3 class="service-tagline mt-5">Real World Solutions For Sustainable Performance</h3>
+  <section class="container-fluid service-banner bd-banner">
+    <div class="row banner-title d-flex justify-content-center align-items-center flex-column h-100 mx-auto px-2">
+      <div class="col-md-6 col-12">
+        <h2 class="service-name">Bigdata</h2>
+        <h3 class="service-tagline mt-4">High efficiencies to deliver more accurate intelligence data</h3>
       </div>
     </div>
   </section>
 
-  <section class="container-fluid service-overview" id="serviceOverview">
+  <section class="container-fluid service-overview bd-overview" id="serviceOverview">
     <div class="row d-flex justify-content-center py-3">
-      <div class="col-md-8 col-12 py-3">
+      <div class="col-md-9 col-12 py-3">
         <p>
-          The technology acts as a digital ledger that is built on a P2P system allowing different users to have an
-          unchangeable record of transactions, each of which is time-stamped and connected to the previous block. With
-          the addition of each set of transactions added, the data becomes another block in the chain. It is preferred
-          as it is a write-once technology, making it a verifiable and auditable record of every transaction. We suggest
-          the creation of this for Financial services, Smart Property, Retail sector etc.
+          Big Data involves the use of large and diverse sets of data which is categorized as structured, semi-structured and unstructured. The team works to extract this from different sources and may vary in size from terabytes to zettabytes. We aim to provide businesses with not just large amounts of data but to ensure that its analysis can provide them with useful insights. Thus, ensuring they get to make better decisions and plan strategic business moves. It is used in various industries like Banking and Finance, Entertainment and Media, Advertising, etc,.
         </p>
       </div>
     </div>
   </section>
 
   <section class="container-fluid service-content py-4" id="serviceContent">
-    <h2 class="text-center py-2 service-content-title">Real World Solutions For Sustainable Performance</h3>
+    <h3 class="text-center py-2 service-section-title">For the next generation of big businesses</h3>
       <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
+        <div class="col-md-9 col-12 mx-auto">
           <div class="row service-content-cards d-flex justify-content-start">
 
             <!-- col - 1 -->
-            <div class="col-8 my-4">
-              <div class="row">
-                <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="col-md-9 col-12 my-4">
+              <div class="row d-flex flex-column flex-md-row">
+                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
                   <img src="./img/icons/blockchain-1.svg" alt="">
                 </div>
-                <div class="col-9">
-                  <h4>Traceability and Tracking</h4>
-                  <p>Keeping track of any service or product is a difficult task. We create blockchain platforms to
-                    assist you in real-time monitoring</p>
+                <div class="col-md-10 pl-0 col-12">
+                  <h4>Analytics</h4>
+                  <p>
+                    Our team of analysts is dedicated to collecting the organizational data that can be used to identify new opportunities. Assisting you to plan smarter business moves, more efficient operations, higher profits and have happier customers.
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- col - 2 -->
-            <div class="col-8 ml-auto my-4">
-              <div class="row d-flex justify-content-end">
-                <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="col-md-9 col-12 ml-md-auto my-4">
+              <div class="row d-flex flex-column flex-md-row">
+                <div class="col-2 pl-0 d-flex justify-content-center align-items-center">
                   <img src="./img/icons/blockchain-2.svg" alt="">
                 </div>
-                <div class="col-9">
-                  <h4>Backend Services</h4>
-                  <p>We know that each organization has unique needs for Backend services. This is the reason why we
-                    work on providing mainstream technologies and integrate them with popular services.</p>
+                <div class="col-md-10 pr-0 col-12">
+                  <h4>Integration</h4>
+                  <p>
+                   We get you relevant insights pulled from various data sources like traditional data, social media, web, machine-generated data, and data from the Internet of Things (IoT) and merge them into a single framework.  
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- col - 3 -->
-            <div class="col-8 my-4">
-              <div class="row">
-                <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="col-md-9 col-12 my-4">
+              <div class="row d-flex flex-column flex-md-row">
+                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
                   <img src="./img/icons/blockchain-3.svg" alt="">
                 </div>
-                <div class="col-9">
-                  <h4>Smart Contract</h4>
-                  <p>While integrating business logic into the blockchain solutions, smart contracts are essential.
-                    Hence our team ensures that it’s integration is done before deployment. </p>
+                <div class="col-md-10 pl-0 col-12">
+                  <h4>Management</h4>
+                  <p>
+                    Our main motive is to provide solutions that will simplify real-time analytics, accelerate data ingestion, monitor data usage, control costs and more easily manage Big Data workloads.   
+                  </p>
                 </div>
               </div>
             </div>
-
-            <!-- col - 4 -->
-            <div class="col-8 ml-auto my-4">
-              <div class="row d-flex justify-content-end">
-                <div class="col-2 d-flex justify-content-center align-items-center">
-                  <img src="./img/icons/blockchain-4.svg" alt="">
-                </div>
-                <div class="col-9">
-                  <h4>Rapid Provisioning</h4>
-                  <p>We take up complete responsibility to install, deploy and manage the environment of a blockchain
-                    network to avoid any issues.</p>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
+           </div>
         </div>
       </div>
   </section>
 
   <section class="container-fluid service-partners py-4">
-    <div class="container d-flex justify-content-center align-items-center flex-column pb-2">
-      <h3 class="py-4 service-partner-title">Technology Partners</h3>
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-4 tech-card">
-          <div class="card">
-            <div class="card-body">
-              <img src="./img/uipath.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-4 tech-card">
-          <div class="card">
-            <div class="card-body">
-              <img src="./img/blue.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-4 tech-card tech-automation">
-          <div class="card">
-            <div class="card-body">
-              <img src="./img/automation-1.jpg" height="100px" width="220px" alt="">
-            </div>
-          </div>
+    <div class="container d-flex justify-content-center align-items-center flex-column py-3">
+      <h3 class="service-section-title">Authorized Partners</h3>
+      <div class="container mt-sm-3 mt-md-5">
+        <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center">
+          <div class="client"><img src="./img/uipath.png" alt="elm"></div>
+          <div class="client"><img src="./img/blue.png" alt="alinma bank"></div>
+          <div class="client"><img src="./img/Automation.jpg" alt="bank albilad"></div> 
         </div>
       </div>
     </div>
@@ -264,7 +236,7 @@
 
   <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center flex-column">
      
-      <h3 class="text-center contact-title">Find answers to your business needs <a href="#" id="contactButton">Let's Get Started</a> </h3>           
+      <h3 class="text-center contact-title">Find answers to your business needs <a href="#" class="service-contact" id="contactButton">Contact us</a> </h3>           
   </section>
 
   <!-- ! Footer -->
@@ -433,13 +405,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+    <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="./js/shared/header.js"></script>
   <script src="./js/contact/contact.js"></script>
 
   <script>
 // serviceContent
 let cardAnimation = gsap.timeline();
-cardAnimation.fromTo('.service-content-cards .col-8',{y:60,autoAlpha:0},{stagger:0.7,y:0,autoAlpha:1,duration:2})
+cardAnimation.fromTo('.service-content-cards .col-12',{y:60,autoAlpha:0},{stagger:0.7,y:0,autoAlpha:1,duration:2})
 
 let controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
@@ -449,33 +422,19 @@ new ScrollMagic.Scene({
     })
         .setTween(cardAnimation)        
         .addTo(controller);
-
-    $('.service-content .service-card').on('mouseenter', function () {
-      $('.service-card').each(function () {
-        $(this).removeClass('active-card');
-      })
-      $('.content-wrapper').each(function () {
-        $(this).removeClass('active-content');
-      })
-
-      $(this).toggleClass('active-card')
-      let contentID = $(this).attr('id');
-      let index = $(this).attr('data-index');
-      $(`#content-${index}`).addClass('active-content');
-      gsap.from(`#content-${index}`, { duration: 1, opacity: 0.5, y: 100 })
-    })
-
-// // Loop through cards 
-// function setActiveClass(param){
-// console.log(param.index);
-// let index = param.index
-// $(`#card-${index}`).toggleClass('active-card')
-// $(`#content-${index}`).addClass('active-content');
-// }
-// let showContent = gsap.timeline();
-//     showContent.to('#content-1',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{prev:0,index:1}]})
-//     showContent.to('#content-2',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{index:2}],delay:6})
-  </script>
+ 
+// our clients/partners
+$(".clients-carousel").owlCarousel({
+    autoplay: true,     
+    loop: true,
+    center: true,
+    autoplaySpeed: 2000,
+    dots:false,
+    responsive: {
+      0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
+    }
+  });
+   </script>
 </body>
 
 </html>

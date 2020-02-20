@@ -62,9 +62,12 @@
   transition: 0.2s all ease-in;
 }
 .footer .copyright {
-  margin: 0;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0;   
   text-align: center;
   font-size: 1rem;  
+}
+.footer-col{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }

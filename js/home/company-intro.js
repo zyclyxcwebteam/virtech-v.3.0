@@ -24,6 +24,7 @@ duration: "300%",
 .addTo(controller);     
 })
 
+// core values animation
 let controller = new ScrollMagic.Controller();
 let coreValues = gsap.timeline();
 coreValues.fromTo('#coreValues .core-values .card-body',{autoAlpha:0,y:30},{stagger:1,autoAlpha:1,duration:5,y:0})
@@ -35,3 +36,17 @@ new ScrollMagic.Scene({
 .setTween(coreValues)
 .addIndicators({name:'cvalues',colorStart:'orange',colorEnd:'orange'})
 .addTo(controller)
+
+// testimonials animation
+let controller = new ScrollMagic.Controller();
+let coreValues = gsap.timeline();
+coreValues.fromTo('#coreValues .core-values .card-body',{autoAlpha:0,y:30},{stagger:1,autoAlpha:1,duration:5,y:0})
+
+new ScrollMagic.Scene({
+    triggerElement:'#coreValues',
+    triggerHook:0.5,
+})
+.setTween(coreValues)
+.addIndicators({name:'cvalues',colorStart:'orange',colorEnd:'orange'})
+.addTo(controller)
+

@@ -39,14 +39,13 @@
     --color-5-1:#e5e5e5;
     --color-5-2:#242a2a;
     --color-5-3:#3261d1;
+
+    /* website colors */
+    --bg-color:#0c1b33;
+    --bg-light:#f9f9f9;
 }
-@font-face {
-    font-family: 'Replica';
-    src: url('../../fonts/Replica-Bold.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Replica-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../../fonts/Replica-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */          
-  }
-.loading-wrapper{
+ 
+/* .loading-wrapper{
     height: 100vh;
     width: 100%;
     position:fixed;
@@ -54,27 +53,22 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color:#2f2e38;     
+    background-color:hsl(217, 62%, 14%);          
     z-index:999;
-}
-body{
-    padding-top:94px;
-    font-family: 'Roboto',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;     
-    /* position: relative;  */
-    background-color: #f9f9f9;  
-    /* background-color:#05070c;       */
-}
-/* h1,h2,h3,h4,h5,h6{
-    font-family:'Replica', sans-serif;
 } */
-/*  
-font-family: 'Sniglet', cursive;
-font-family: 'Jacques Francois Shadow', cursive;
-font-family: 'Ribeye Marrow', cursive;
-font-family: 'Londrina Outline', cursive;
-font-family: 'Diplomata SC', cursive;
-font-family: 'Bungee Outline', cursive; 
-*/
+
+body{
+    padding-top:70px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;          
+    background-color:var(--bg-color);       
+}
+/* .loading-wrapper img{
+     
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+} */
+/* 
 .bg-title{
     font-size: 7rem;
     position: absolute;
@@ -87,27 +81,13 @@ font-family: 'Bungee Outline', cursive;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
 .bg-title-light{
 color:#f9f9f9;
 opacity: 0.7;
 }
+
 .bg-title-dark{
 color:#000000;
 opacity: 1;
-}
-
-.hero-title{
-    color: #05070c;
-}
- 
-.hero-title span{
-    background-color: #f4f4f4;
-    display: inline-block;
-    margin: 0.5rem;
-    padding: 0.3rem 0.5rem;
-    font-size: 2.5rem;
-}
-.hero-text{
-    font-size: 1.2rem;
-    color: #b8bdc4;
-}
+} */

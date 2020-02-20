@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap'); 
+:root{
+  --ind-bg:#0c1b33;
+}
+
 .industry-wrapper{
-    height: 87vh;
+  --ind-bg:#0c1b33;  
+  height: 93vh;
     width: 100%;     
     display: flex;
     justify-content: center;
@@ -8,14 +13,28 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    background-color: #f9f9f9;     
+    background-color:var(--ind-bg);     
 }
 /* .industry-wrapper .bg-title-dark{
     font-size: 5rem;    
 } */
 
 #industryInner{
-  margin-top:90px;   
+  opacity: 0;
+}
+#introSlides{
+  opacity: 0;
+}
+.ind-hero-title{
+  /* color:#f4f4f4; */
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);      
+  /* font-family: 'Bungee Outline', cursive; */
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 6.5rem;
+ color:#f4f4f4;
 }
 .industry-letter{
     font-size: 3rem;

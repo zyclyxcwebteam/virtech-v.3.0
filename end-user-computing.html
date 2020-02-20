@@ -15,22 +15,27 @@
   <link rel="stylesheet" href="./css/shared/footer.css">
   <link rel="stylesheet" href="./css/services/service-page.css">
   <link rel="stylesheet" href="./css/shared/contact.css">
+  <link rel="stylesheet" href="./css/services/rpa.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
 </head>
 
 <body>
   <!-- ! header navbar-->
   <!-- TODO: hide header on scroll down, show on scroll up -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="masterNavbar">
+  <!-- ? NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg fixed-top master-navbar py-2" id="masterNavbar">
     <div class="container-fluid">
-      <a href="./" class="navbar-brand ml-5"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
-
-      <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
-        aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-        <span class="navbar-toggler-icon"></span>
+      <a href="./" class="navbar-brand ml-md-5 ml-sm-2"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
+      <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
+        data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
       </button>
 
       <div id="navbarContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto mr-5">
+        <ul class="navbar-nav ml-auto mr-md-5 mr-sm-2">
           <!--  Home -->
 
           <li class="nav-item active">
@@ -140,131 +145,129 @@
       </div>
     </div>
   </nav>
+  <!-- ? END - NAVIGATION BAR -->
 
-  <section class="container-fluid service-banner">
-    <div class="row banner-title d-flex ml-5 justify-content-center flex-column h-100 mx-auto">
-
-      <div class="col-md-8 col-12 ml-5">
-        <h2 class="service-name">Blockchain</h2>
-        <h3 class="service-tagline mt-5">Real World Solutions For Sustainable Performance</h3>
+  <section class="container-fluid service-banner eu-banner">
+    <div class="row banner-title d-flex justify-content-center align-items-center flex-column h-100 mx-auto px-2">
+      <div class="col-md-6 col-12">
+        <h2 class="service-name">End User Computing</h2>
+        <h3 class="service-tagline mt-4">Our team evaluates and aligns your end user computing environment with industry
+          specific best practices.</h3>
       </div>
     </div>
   </section>
 
   <section class="container-fluid service-overview" id="serviceOverview">
     <div class="row d-flex justify-content-center py-3">
-      <div class="col-md-8 col-12 py-3">
+      <div class="col-md-9 col-12 py-3 pl-5">
         <p>
-          The technology acts as a digital ledger that is built on a P2P system allowing different users to have an
-          unchangeable record of transactions, each of which is time-stamped and connected to the previous block. With
-          the addition of each set of transactions added, the data becomes another block in the chain. It is preferred
-          as it is a write-once technology, making it a verifiable and auditable record of every transaction. We suggest
-          the creation of this for Financial services, Smart Property, Retail sector etc.
+          End-user computing refers to consolidating individual systems required to accomplish the daily workload into a
+          single platform, delivering a more efficient and holistic user experience. We try to provide the same by
+          developing an intuitive, agile, scalable and manageable platform. As a team, our initiative is to ensure the
+          users and managers can utilize the platform without system expertise ensuring a fluid introduction of new
+          technologies to end-users.
         </p>
       </div>
     </div>
   </section>
 
   <section class="container-fluid service-content py-4" id="serviceContent">
-    <h2 class="text-center py-2 service-content-title">Real World Solutions For Sustainable Performance</h3>
+    <h2 class="text-center py-2 service-section-title">Improve productivity, processes and security</h3>
       <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
+        <div class="col-md-9 col-12 mx-auto">
           <div class="row service-content-cards d-flex justify-content-start">
 
             <!-- col - 1 -->
-            <div class="col-8 my-4">
-              <div class="row">
-                <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="col-md-9 col-12 my-4">
+              <div class="row d-flex flex-column flex-md-row">
+                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
                   <img src="./img/icons/blockchain-1.svg" alt="">
                 </div>
-                <div class="col-9">
-                  <h4>Traceability and Tracking</h4>
-                  <p>Keeping track of any service or product is a difficult task. We create blockchain platforms to
-                    assist you in real-time monitoring</p>
+                <div class="col-md-10 pl-0 col-12">
+                  <h4>Secured Virtual Client Solutions (VDI)</h4>
+                  <p>
+                    The end-users gain remote access to their virtual desktops with our Secured VDI solutions without
+                    compromising on network security. Our process involves design, installation, training and support
+                    services for Secured Virtual clients and Virtual Desktop infrastructures.
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- col - 2 -->
-            <div class="col-8 ml-auto my-4">
-              <div class="row d-flex justify-content-end">
-                <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="col-md-9 col-12 ml-md-auto my-4">
+              <div class="row d-flex flex-column flex-md-row">
+                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
                   <img src="./img/icons/blockchain-2.svg" alt="">
                 </div>
-                <div class="col-9">
-                  <h4>Backend Services</h4>
-                  <p>We know that each organization has unique needs for Backend services. This is the reason why we
-                    work on providing mainstream technologies and integrate them with popular services.</p>
+                <div class="col-md-10 pl-0 col-12">
+                  <h4>Custom Device Solutions</h4>
+                  <p>
+                    Our solutions are customized to ensure that the design, engineering, and deployment meets with every
+                    organization's unique needs. We believe when any device is custom made it has greater potential to
+                    give transformational results.
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- col - 3 -->
-            <div class="col-8 my-4">
-              <div class="row">
-                <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="col-md-9 col-12 my-4">
+              <div class="row d-flex flex-column flex-md-row">
+                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
                   <img src="./img/icons/blockchain-3.svg" alt="">
                 </div>
-                <div class="col-9">
-                  <h4>Smart Contract</h4>
-                  <p>While integrating business logic into the blockchain solutions, smart contracts are essential.
-                    Hence our team ensures that it’s integration is done before deployment. </p>
+                <div class="col-md-10 pl-0 col-12">
+                  <h4>Mobile Solutions</h4>
+                  <p>
+                    At VIRTECH, we offer key mobile solutions in the form of Desktop Virtualization and Secure remote
+                    data access. Our team works towards providing more efficient use of computing resources along with
+                    maintaining its security.
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- col - 4 -->
-            <div class="col-8 ml-auto my-4">
-              <div class="row d-flex justify-content-end">
-                <div class="col-2 d-flex justify-content-center align-items-center">
-                  <img src="./img/icons/blockchain-4.svg" alt="">
+            <div class="col-md-9 col-12 ml-md-auto my-4">
+              <div class="row d-flex flex-column flex-md-row">
+                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="70" height="70"
+                    viewBox="0 0 172 172"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#032f9c"><path d="M86,6.88c-4.3,0 -7.96282,1.73636 -10.31328,4.38062c-2.35046,2.64427 -3.44672,6.03493 -3.44672,9.37938c0,0.96449 0.11621,1.92918 0.30235,2.88234l-37.9475,18.97375c-0.07425,-0.08812 -0.12463,-0.18892 -0.20156,-0.27547c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.19534,0 7.76325,-1.66963 10.11844,-4.20594l37.41672,20.78781c0.34886,0.20408 0.73095,0.34509 1.12875,0.41656c-0.30166,1.19799 -0.5039,2.41706 -0.5039,3.64156c0,3.34444 1.09626,6.73511 3.44672,9.37937c1.6757,1.88516 4.16931,3.03355 6.93375,3.69531c-0.043,0.22584 -0.06326,0.45543 -0.06047,0.68531v38.53875c-2.73836,0.6679 -5.2097,1.81035 -6.87328,3.68188c-0.07693,0.08655 -0.12731,0.18735 -0.20156,0.27547l-37.9475,-18.97375c0.18613,-0.95317 0.30235,-1.91786 0.30235,-2.88235c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c0.07816,-0.08792 0.12617,-0.19264 0.20156,-0.28219l37.9475,18.98047c-0.18613,0.95317 -0.30235,1.91786 -0.30235,2.88235c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-0.96449 -0.11621,-1.92918 -0.30235,-2.88235l37.9475,-18.97375c0.07425,0.08812 0.12463,0.18892 0.20156,0.27547c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,0.96449 0.11621,1.92918 0.30235,2.88235l-37.9475,18.97375c-0.07425,-0.08812 -0.12463,-0.18892 -0.20156,-0.27547c-1.66358,-1.87153 -4.13492,-3.01398 -6.87328,-3.68188v-38.53875c0.00279,-0.22988 -0.01746,-0.45947 -0.06047,-0.68531c2.76444,-0.66176 5.25805,-1.81016 6.93375,-3.69531c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-1.197 -0.19565,-2.38844 -0.48375,-3.56094c0.30414,-0.08073 0.59576,-0.20281 0.86672,-0.36281l37.6586,-20.91547c2.35524,2.53446 5.9249,4.19922 10.11844,4.19922c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,1.16247 0.18536,2.3198 0.45687,3.46015l-37.81312,21.00281c-0.22583,0.11944 -0.43766,0.26366 -0.63156,0.43c-2.35428,-2.56564 -5.94829,-4.25297 -10.17219,-4.25297c-4.24667,0 -7.85914,1.70418 -10.2125,4.29328c-0.24581,-0.24221 -0.52666,-0.44605 -0.83313,-0.60469l-37.57125,-20.86844c0.27152,-1.14035 0.45687,-2.29769 0.45687,-3.46015c0,-0.96449 -0.11621,-1.92918 -0.30235,-2.88235l37.9475,-18.97375c0.07425,0.08812 0.12463,0.18892 0.20156,0.27547c2.35046,2.64427 6.01328,4.38062 10.31328,4.38062c4.3,0 7.96282,-1.73636 10.31328,-4.38062c2.35046,-2.64427 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37938c-2.35046,-2.64427 -6.01328,-4.38062 -10.31328,-4.38062zM86,13.76c2.58,0 4.07718,0.84364 5.16672,2.06938c1.08954,1.22573 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81062c-1.08954,1.22573 -2.58672,2.06938 -5.16672,2.06938c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06938c-1.08954,-1.22573 -1.71328,-2.99507 -1.71328,-4.81062c0,-1.81556 0.62374,-3.58489 1.71328,-4.81062c1.08954,-1.22573 2.58672,-2.06938 5.16672,-2.06938zM24.08,44.72c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM147.92,44.72c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM86,79.12c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM24.08,113.52c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM147.92,113.52c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM85.89922,144.52031c0.06934,0.00434 0.1388,0.00658 0.20828,0.00672c2.48134,0.03464 3.99264,0.82244 5.05922,2.02234c1.08953,1.22558 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.06829,-1.20183 2.57733,-1.99693 5.06594,-2.02906z"></path></g></g></svg></span>
                 </div>
-                <div class="col-9">
-                  <h4>Rapid Provisioning</h4>
-                  <p>We take up complete responsibility to install, deploy and manage the environment of a blockchain
-                    network to avoid any issues.</p>
+                <div class="col-md-10 pl-0 col-12">
+                  <h4>Enablement Solutions</h4>
+                  <p>
+                    Our solutions are dedicated to improving the overall experience of the end-user by empowering them
+                    with an “always-on” access to documents, videos, and other critical data without compromising
+                    security.
+                  </p>
                 </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </div>
   </section>
 
   <section class="container-fluid service-partners py-4">
-    <div class="container d-flex justify-content-center align-items-center flex-column pb-2">
-      <h3 class="py-4 service-partner-title">Technology Partners</h3>
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-4 tech-card">
-          <div class="card">
-            <div class="card-body">
-              <img src="./img/uipath.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-4 tech-card">
-          <div class="card">
-            <div class="card-body">
-              <img src="./img/blue.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-4 tech-card tech-automation">
-          <div class="card">
-            <div class="card-body">
-              <img src="./img/automation-1.jpg" height="100px" width="220px" alt="">
-            </div>
-          </div>
+    <div class="container d-flex justify-content-center align-items-center flex-column py-3">
+      <h3 class="service-section-title">Authorized Partners</h3>
+      <div class="container mt-sm-3 mt-md-5">
+        <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center">
+          <div class="client"><img src="./img/uipath.png" alt="elm"></div>
+          <div class="client"><img src="./img/blue.png" alt="alinma bank"></div>
+          <div class="client"><img src="./img/Automation.jpg" alt="bank albilad"></div>
         </div>
       </div>
     </div>
   </section>
 
   <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center flex-column">
-     
-      <h3 class="text-center contact-title">Find answers to your business needs <a href="#" id="contactButton">Let's Get Started</a> </h3>           
+
+    <h3 class="text-center contact-title">Find answers to your business needs <a href="#" class="service-contact" id="contactButton">Contact
+        us</a> </h3>
   </section>
 
   <!-- ! Footer -->
@@ -433,39 +436,51 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+  <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="./js/shared/header.js"></script>
   <script src="./js/contact/contact.js"></script>
 
   <script>
-// serviceContent
-let cardAnimation = gsap.timeline();
-cardAnimation.fromTo('.service-content-cards .col-8',{y:60,autoAlpha:0},{stagger:0.7,y:0,autoAlpha:1,duration:2})
+    // serviceContent
+    let cardAnimation = gsap.timeline();
+    cardAnimation.fromTo('.service-content-cards .col-12', { y: 60, autoAlpha: 0 }, { stagger: 0.7, y: 0, autoAlpha: 1, duration: 2 })
 
-let controller = new ScrollMagic.Controller();
-new ScrollMagic.Scene({
-        triggerElement: "#serviceOverview",
-        triggerHook:0.13,         
-        reverse:false,                                           
+    let controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+      triggerElement: "#serviceOverview",
+      triggerHook: 0.13,
+      reverse: false,
     })
-        .setTween(cardAnimation)        
-        .addTo(controller);
+      .setTween(cardAnimation)
+      .addTo(controller);
 
-    $('.service-content .service-card').on('mouseenter', function () {
-      $('.service-card').each(function () {
-        $(this).removeClass('active-card');
-      })
-      $('.content-wrapper').each(function () {
-        $(this).removeClass('active-content');
-      })
+    // $('.service-content .service-card').on('mouseenter', function () {
+    //   $('.service-card').each(function () {
+    //     $(this).removeClass('active-card');
+    //   })
+    //   $('.content-wrapper').each(function () {
+    //     $(this).removeClass('active-content');
+    //   })
 
-      $(this).toggleClass('active-card')
-      let contentID = $(this).attr('id');
-      let index = $(this).attr('data-index');
-      $(`#content-${index}`).addClass('active-content');
-      gsap.from(`#content-${index}`, { duration: 1, opacity: 0.5, y: 100 })
-    })
+    //   $(this).toggleClass('active-card')
+    //   let contentID = $(this).attr('id');
+    //   let index = $(this).attr('data-index');
+    //   $(`#content-${index}`).addClass('active-content');
+    //   gsap.from(`#content-${index}`, { duration: 1, opacity: 0.5, y: 100 })
+    // })
 
-// // Loop through cards 
+    // our clients/partners
+    $(".clients-carousel").owlCarousel({
+      autoplay: true,
+      loop: true,
+      center: true,
+      autoplaySpeed: 2000,
+      dots: false,
+      responsive: {
+        0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
+      }
+    });
+// // Loop through cards
 // function setActiveClass(param){
 // console.log(param.index);
 // let index = param.index

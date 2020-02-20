@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 body {
   padding-top: 70px;
   background-color: #e8e9f0;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
 }
  
 #masterNavbar,.footer {
@@ -19,8 +19,7 @@ body {
 
 .service-banner {   
   height: 90vh;
-  position: relative;
-  background-image: url("../../img/blockchain.jpg");
+  position: relative;   
   background-size: cover;
   position: relative;    
   z-index: 1;
@@ -32,24 +31,24 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient(to top right, #000036 0%, rgba(0, 0, 54,0.1) 100%),linear-gradient(-10deg, #000036 10%, transparent 50%);;
+    background-image: linear-gradient(to top right, transparent 0%, rgba(0, 0, 54,0.1) 100%),linear-gradient(-10deg, #000036 10%, transparent 50%);     
     z-index: -1;
 }
 
 .service-name,.service-tagline{
     z-index: 99;
+    font-family: 'Lato', sans-serif;
 }
 .service-name{
-    font-size: 3.5rem;
-    color: #f9f9f9;
-    border-bottom: 3px solid #f9f9f9;
+    font-size: 3rem;
+    color: #f4f4f4;     
     box-sizing: border-box;
     display: inline-block;
     padding-bottom: 1rem;
 }
 .service-tagline{
-font-size: 3rem;
-color: #bebec0; 
+font-size: 2.4rem;
+color: #f9f9f9; 
 font-weight: 500;
 
 }
@@ -58,14 +57,16 @@ font-weight: 500;
      background-color:#000036;
      color: #f9f9f9;
      width: 100%;      
+     text-align: justify;
 }
 
 .service-content{  
   background-color: #e8e9f0;
 }
-.service-content-title,.service-partner-title{
-  font-size: 2rem;
-  color:#05070c;
+.service-section-title{
+  font-size: 2.2rem;
+  color:#0c1b33;
+  font-family: 'Lato', sans-serif;
 }
  
 .service-partners{  
@@ -87,13 +88,14 @@ font-weight: 500;
 .service-content-cards h4{
   color:#032f9c;
   margin-bottom: 0.6rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .service-content-cards p{
   font-size: 1.2rem;
   text-align: justify;
   margin-bottom: 0;
-  color: #575866;
+  color: #444;
 }
 
 .service-content-cards col-8{
@@ -114,9 +116,53 @@ margin-top: 1rem;
 }
 .contact-title{
   font-size: 1.75rem;
-  color: #f9f9f9;  
+  color: #f9f9f9;
+  margin:0;
 } 
-#contactButton{
-  text-decoration: underline;   
+.service-contact{
+  text-decoration: none;
+  border: 1px solid #e8e9f0;
+  padding: 0.6rem 2rem;
+  margin-left: 1rem;   
+  margin-bottom: 10px; 
+background-color:#000036;
+  color: #f5f5f5;
+  border-radius: 2rem;
+font-size: 1.2rem;
 }
- 
+.service-contact:hover{
+  text-decoration: none;
+  background-color: #e8e9f0;  
+  color:#000036;  
+}
+.service-partners .client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) { 
+  body{
+    padding-top: 78px;
+  }
+  .service-banner{
+    height: 50vh;
+  }
+ .service-name{
+   font-size: 2rem;
+ }
+ .service-tagline{
+   font-size: 1.7rem;
+ }
+ .banner-title .col-12{
+   padding: 0;
+ }
+ .service-content-title{
+   font-size: 1.4rem;
+ }
+ .f-link a{
+   justify-content: left;
+ }
+ .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+   background-color: #05070c;
+ }
+ }

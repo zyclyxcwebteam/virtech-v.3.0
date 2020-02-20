@@ -1,31 +1,49 @@
+:root{
+  --weare-bg:#f4f4f4;
+}
+
 #introContainer{
     width: 100%;
     height: 100%;
     overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 88vh;     
-    background-color: #000 !important;
+    height: 90vh;          
     position: relative;
+    background-color:var(--weare-bg);
+
   }
-  
+  .intro-hero-title{
+    position: fixed;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);      
+    /* font-family: 'Bungee Outline', cursive; */
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 6.5rem;
+   color:#0c1b33;
+  }
 #introSlides {
     width: 300%;
     height: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
     position: absolute;
     top: 0;
     bottom: 0;
     display: flex;     
+    align-items: flex-end;
   }
  
 .slide {
     height: 100%;
     width: 100%;
-    background-color: transparent;   
+    /* background-color: transparent;    */
     position: relative;
+    z-index: 9;
   }
-  
+  .slide-2{
+    height: 86%;
+  }
   /* end horizontal scroll */
   .company-intro .title-card{
     height:100%;
@@ -54,8 +72,10 @@
 
    }
    .testimonial-title{
-     font-size: 2.5rem;
+     font-size: 2rem;
      color:#f5f5f5;
+     writing-mode: vertical-lr;
+text-orientation:upright;
    }
    .testimonial{
 
@@ -104,10 +124,10 @@
   .core-values .core-icon-outer{
     padding: 0.3rem;
     border-radius: 50%;
-    background-color:hsl(223, 41%, 8%); 
+    background-color:hsl(217, 62%, 20%); 
   }
-  .core-values .core-icon-inner{
-    background-color: #05070c;
+  .core-values .core-icon-inner{     
+    background-color: hsl(217, 62%, 7%);
     padding: 1.5rem;
     border-radius: 50%;
   }
@@ -126,8 +146,8 @@
 
 .c-section-title{
 position: absolute;
-left: 45%;
-bottom: 20px;
+left: 42%;
+bottom: 45px;
 font-size: 3rem;
 color: #f5f5f5;
 text-align: center;
