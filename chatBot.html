@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shared/chat-bot.css">
+</head>
+
+<body>
+
+    <!-- <button class="btn btn-primary" id="bot-icon" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fab fa-rocketchat"></i></a> -->
+
+    <div class="chat-bot">
+        <div class="head">
+            <a class="btn"><i class="fas fa-angle-left"></i></a>
+            <div class="text-center">
+            <h4 class="m-0">V Bot</h4>
+            <p class="m-0">Virtech - KSA</p>
+            </div>
+            <a class="btn"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="meassages">
+            <div class="botReplay">Hi, Am Rizwan</div>
+            <div class="userReplay">Hi</div>
+
+            <div class="botReplay">How can i Assist you for today! have a Good Day</div>
+            <div class="userReplay">Hi</div>
+
+            <div class="botReplay">Hi</div>
+            <div class="userReplay">Hi</div>
+
+             <div class="botReplay">Hi</div>
+            <div class="userReplay">Hi</div>
+        </div>
+        <div class="type">
+            <div class="input-group input-group-lg d-flex align-items-end">
+                <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                <div class="input-group-append">
+                    <a class="btn btn-send rounded-0"><i class="fas fa-paper-plane"></i></a>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+    <a tabindex="0"
+       id="bot-icon"
+       class="btn btn-lg btn-primary text-white"
+       role="button" data-trigger="popover"
+       data-trigger="focus" title="V Bot"
+       data-content="Hi, I'm V Bot always here to assist you..">
+       <i class="fab fa-rocketchat"></i>
+    </a>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+    <script>
+        $('#bot-icon').popover('show')
+    </script>
+
+</body>
+
+</html>
