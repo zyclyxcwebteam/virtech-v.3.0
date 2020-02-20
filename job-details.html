@@ -437,14 +437,15 @@
 
   <section class="appWrapper" id="appForm">
 
-    <button type="button" id="formClose"><i class="fas fa-times"></i>Close</button>
+    <button type="button" id="formClose"><i class="fas fa-times"></i></button>
     <h4 class="pt-2 pb-5 text-center display-4">Apply for this Job</h4>
     <div class="container applyForm">
       <div class="bg-light">
         <form id="jobForm" class="contactForm needs-validation" novalidate>
 
           <div class="row">
-            <div class="col">
+
+            <div class="col-md-6 col-sm-12">
               <div class="form-group">
                 <label for="validationCustom01"> First Name <span>*</span></label>
                 <input type="text" class="form-control" name="firstname" id="validationCustom01" pattern="[a-zA-Z\s]+"
@@ -453,7 +454,8 @@
                 <div class="invalid-feedback">Please enter the valid Last Name</div>
               </div>
             </div>
-            <div class="col input-field">
+
+            <div class="col-md-6 col-sm-12 input-field">
               <!-- <input type="text" name="name" autocomplete="off" required>
                 <label for="name" class="lable-name">
                   <span class="content-name">Last Name</span>
@@ -466,10 +468,12 @@
                 <div class="invalid-feedback">Sorry, you missed this one.</div>
               </div>
             </div>
+
           </div>
 
           <div class="row">
-            <div class="col">
+
+            <div class="col-md-6 col-sm-12">
               <div class="form-group">
                 <label class=""> Email-ID <span>*</span></label>
                 <input type="email" class="form-control" name="email" autocomplete="off"
@@ -478,7 +482,8 @@
                 <div class="invalid-feedback">Sorry, you missed this one.</div>
               </div>
             </div>
-            <div class="col">
+
+            <div class="col-md-6 col-sm-12">
               <div class="form-group">
                 <label> Contact Number <span>*</span></label>
                 <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your contact number"
@@ -487,6 +492,7 @@
                 <div class="invalid-feedback">Sorry, you missed this one.</div>
               </div>
             </div>
+
           </div>
 
 
@@ -516,11 +522,11 @@
 
 
           <div class="row mt-5">
-            <div class="col-md-6">
-              <button type="button" class="btn btn-block " id="btnCancel">Cancel</button>
+            <div class="col-md-6 col-sm-12 order-md-0 order-sm-1">
+              <button type="button" class="btn btn-block" id="btnCancel">Cancel</button>
             </div>
-            <div class="col-md-6">
-              <button type="submit" class="btn btn-block " id=" btnSubmit">Submit Application</button>
+            <div class="col-md-6 col-sm-12 order-md-1 order-sm-0">
+              <button type="submit" class="btn btn-block " id="btnSubmit">Submit Application</button>
             </div>
           </div>
       </div>

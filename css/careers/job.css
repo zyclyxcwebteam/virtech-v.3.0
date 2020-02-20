@@ -146,6 +146,8 @@ body{
     display: none;
     /* filter: blur(10px); */
     z-index: 999;
+    min-height: 100vh;
+    overflow-y: auto;
   }
   #appForm h4{
     color: rgb(180, 180, 180);
@@ -175,6 +177,7 @@ body{
     font-weight: 900;
     font-size: 24px;
     padding: 40px;
+    color: #04a7bd;
     background: #0b101b;
     display: flex;
     justify-content: end;
@@ -208,6 +211,7 @@ body{
   /* #appForm .form-control:invalid{ */
     background: #0a0e186c;
     border-bottom: 1px solid rgba(204, 204, 204, 0.404);
+    box-shadow: none;
   }
   .form-control.is-invalid:focus,
   .was-validated .form-control:valid:focus{
@@ -215,8 +219,8 @@ body{
     border-bottom: 1px solid #008d36 !important;
     box-shadow: none;
   }
-  .form-control.is-invalid:focus,
-  .was-validated .form-control:invalid:focus{
+  /* .form-control.is-invalid:focus, */
+  .was-validated .form-control:invalid{
     background: hsla(354, 70%, 54%, 0.039) !important;
     border-bottom: 1px solid #dc3545 !important;
     box-shadow: none;
@@ -230,6 +234,7 @@ body{
   }
   #appForm .form-control{
     border: none;
+    border-radius: 0px;
     color: #fff;
     /* height: 50px; */
     font-size: 25px;
@@ -263,7 +268,7 @@ body{
   /* Todo - check it later */
   #formClose{
     position: absolute;
-    right: -80px;
+    right: 0px;
     top: 0;
     border: none;
     color: #fff;
@@ -278,12 +283,12 @@ body{
   #formClose:hover{
     color: rgb(255, 99, 71);
     background: #ff634733;
-    right: 0;
-    transition: all 0.2s ease-in-out;
+    /* right: 0;
+    transition: all 0.2s ease-in-out; */
   }
   #formClose .fas{ 
     font-size: 1.5rem;
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 
   .left-wrapper{
@@ -372,6 +377,26 @@ height: 92vh;
   border: none; 
   height: 50%; 
 } */
+.appWrapper h4{
+  font-size: 42px !important;
+  margin-top: 1rem;
+}
+.appWrapper label{
+  font-size: 15px !important;
+}
+.appWrapper .custom-file-label{
+  font-size: 20px !important;
+}
+.appWrapper .custom-file-label::after{
+  font-size: 20px;
+  color: #0a7492;
+}
+.appWrapper .form-control{
+  font-size: 20px !important;
+}
+#appForm #btnSubmit{
+  margin-bottom: 1rem;
+}
 .left-wrapper{
   height: 60vh;
 }
