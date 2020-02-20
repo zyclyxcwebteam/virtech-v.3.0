@@ -3,7 +3,7 @@
   }
 
   .ai-banner{
-    background-image: url("../../img/ai/ai-2.jpg");
+    background-image: url("../../img/ai/ai-1.jpg");
 }
 
 .bc-banner{
@@ -32,7 +32,7 @@
 }
 
 .cs-banner{
-    background-image: url("../../img/cybersecurity/cyber-1.jpg");
+    background-image: url("../../img/cybersecurity/cyber-3.jpg");
     background-position: center;
 }
 
@@ -42,6 +42,7 @@ background-image: url("../../img/infosec/infosec-1.jpg");
 
 .dvis-banner{
     background-image: url("../../img/datavis/datavis-2.jpg");
+    background-position: center;
 }
 
 .pa-banner{
@@ -53,7 +54,7 @@ background-image: url("../../img/datacenter/datacenter-2.jpg");
 }
 
 .ns-banner{
-background-image: url("../../img/networksec/netsec-2.jpg");
+background-image: url("../../img/networksec/netsec-1.jpg");
 }
 
 .bd-banner{

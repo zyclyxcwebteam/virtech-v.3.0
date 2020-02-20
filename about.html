@@ -21,28 +21,30 @@
 <body id="about">
          <!-- ! header navbar-->
     <!-- TODO: hide header on scroll down, show on scroll up -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
+    <nav class="navbar navbar-expand-lg fixed-top master-navbar py-2" id="masterNavbar">
       <div class="container-fluid">
-        <a href="./" class="navbar-brand ml-5"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
-
-        <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
-          aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-          <span class="navbar-toggler-icon"></span>
+        <a href="./" class="navbar-brand ml-md-5 ml-sm-2"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
+        <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
+          data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
-
+  
         <div id="navbarContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto mr-5">
+          <ul class="navbar-nav ml-auto mr-md-5 mr-sm-2">
             <!--  Home -->
-
+  
             <li class="nav-item active">
               <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
             </li>
-
+  
             <!-- Services -->
             <li class="nav-item dropdown">
               <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 class="nav-link dropdown-toggle">Services</a>
-
+  
               <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0">
                 <!-- ! New Age Technologies -->
                 <li class="dropdown-submenu dropright">
@@ -62,7 +64,7 @@
                     </li>
                   </ul>
                 </li>
-
+  
                 <!-- ! Application Devlopment -->
                 <li class="dropdown-submenu dropright">
                   <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -83,7 +85,7 @@
                     </li>
                   </ul>
                 </li>
-
+  
                 <!-- ! Security Services -->
                 <li class="dropdown-submenu dropright">
                   <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -97,7 +99,7 @@
                     </li>
                   </ul>
                 </li>
-
+  
                 <!-- ! BI Solutions -->
                 <li class="dropdown-submenu dropright">
                   <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -111,7 +113,7 @@
                     </li>
                   </ul>
                 </li>
-
+  
                 <!-- ! Infrastructure Services -->
                 <li class="dropdown-submenu dropright">
                   <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -133,29 +135,36 @@
               </ul>
             </li>
             <!-- End Level one -->
-
+  
             <li class="nav-item"><a href="./about.html" class="nav-link">About us</a></li>
             <li class="nav-item"><a href="./careers.html" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="#" class="nav-link" id="contactLink">Contact</a></li>
+            <li class="nav-item"><a href="./contactus.html" class="nav-link" id="contactLink">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
   <section class="container-fluid about-home">
-    <div class="container row h-100 mx-auto">
-      <div class="col-6 d-flex justify-content-center align-items-center">
+    <div class="container-fluid row mx-auto h-100">
+      <div class="col-5 d-flex justify-content-center align-items-center">
         <h1 class="hero-title text-center">
-          <span>ENGINEERING FUTURE</span> <br />
-          <span>AI SOLUTIONS</span>
+          Powered by Intellect <br />Driven by Values            
         </h1>
       </div>
-      <div class="col-6 d-flex justify-content-center align-items-center">
-        <p class="hero-text">Digital solutions today are engineered with many systems coming together and are expected to serve a
-          large number of users accessing the solution over a variety of devices. The solution can not be
-          delivered to the users without architecting and managing the systems behind the solution.</p>
+      <div class="col-6 d-flex justify-content-center align-items-center flex-column">
+        <p class="hero-text">
+          VIRTECH is a leading quality and automotive IT solution provider in Saudi Arabia. We provide a robust and innovative portfolio of  Products & Solutions to enhance operational efficiency. Our team expertise includes areas such as New-Age Technologies, Security Services, BI Solutions, Infrastructure, Application Development.
+        </p>
+        <p class="hero-text">
+          We were established in 2018 to share values, a core competence in technology and automation, and an unending spirit of innovation in all aspects of corporate life. Our purpose is to deliver functional and automated processes in which we operate.  We offer services in segments like Banking, Retail, Logistics, Telecom, Hospitality, Healthcare for the fulfillment of requirements of enterprises.
+        </p>
+        <p class="hero-text">
+          In partnership with globally recognized IT solution providers, we have successfully delivered projects for some of the renowned brands in the kingdom like Aricscooper, ELM, Bank Albilad, Al Rajhi Bank, Alinma Bank, STC. 
+
+        </p>
       </div>
     </div>
   </section>
+
   <div id="masterContainer">
     <h4 class="bg-title">About Us</h4>
     <div id="slidesContainer"> 
@@ -210,60 +219,81 @@
     </div>
   </div>
  
-  <section class="how-wedo-outer py-5" id="howWeDoMaster">
+  <section class="how-wedo-outer d-flex justify-content-center align-items-center flex-column" id="howWeDoMaster">
     <!-- Our process -->
-    <h2 class="py-5 text-center text-white">How We Do It</h2>
+    <h2 class="text-center text-white">How We Do It</h2>
 
-    <div class="container d-flex justify-content-center align-items-center flex-column mt-5">      
-      <div class="do-content row mx-auto d-flex justify-content-center align-items-center h-100">         
-        <div class="col-2">
-          <div class="do-icon">
+    <div class="container d-flex justify-content-center align-items-center flex-column">      
+      <div class="do-content row mx-auto d-flex justify-content-center h-100">         
+        
+        <!-- STEP -1  -->
+        <div class="col">
+
+          <div class="do-icon" id="do-icon-1">
             <img src="./img/icons/do-icon-plan.svg" alt="">
             <h5 class="do-title">PLAN</h5>
           </div>
-          <div class="do-text">
-            
+          
+          <div class="do-text" id="do-text-1">
+          <p>Strategize, document and decipher - goals, objectives, information and financial forecasts for building the right business plan</p>            
           </div>
+
         </div>
 
-        <div class="col-2">
-          <div class="do-icon">
+        <!-- STEP - 2 -->
+        <div class="col">
+          <div class="do-text" id="do-text-2">
+            <p class="mb-0">
+              Communicate, set goals, track and report, manage performance and remunerate for the execution of a decision
+            </p>
+         </div>
+
+          <div class="do-icon pt-3" id="do-icon-2">
             <img src="./img/icons/do-icon-execute.svg" alt="">
             <h5 class="do-title">EXECUTE</h5>
-          </div>
-          <div class="do-text">
-             
-          </div>
+          </div>           
         </div>
         
-        <div class="col-2">
-          <div class="do-icon">
+        <!-- STEP - 3 -->
+        <div class="col">
+          <div class="do-icon pb-3" id="do-icon-3">
             <img src="./img/icons/do-icon-rectify.svg" alt="">
             <h5 class="do-title">RECTIFY</h5>
           </div>
-          <div class="do-text">
-            
+
+          <div class="do-text pt-3" id="do-text-3">
+            <p>Identification and elimination of discrepancie for improvement of the organizations's process</p>
           </div>
+
         </div>
         
-        <div class="col-2">
-          <div class="do-icon">
+        <!-- STEP - 4 -->
+        <div class="col">
+
+          <div class="do-text" id="do-text-4">
+            <p>
+              Interpret and comprehend the executed decision for analysis of the collected data
+            </p>
+          </div>
+
+          <div class="do-icon" id="do-icon-4">
             <img src="./img/icons/do-icon-analysis.svg" alt="">
             <h5 class="do-title">ANALYZE</h5>
           </div>
 
-          <div class="do-text">
-            
-          </div>
+
         </div>
         
-        <div class="col-2">
-          <div class="do-icon">
+        <!-- STPEP - 5 -->
+        <div class="col">
+          <div class="do-icon" id="do-icon-5">
             <img src="./img/icons/do-icon-feedback.svg" alt="">
             <h5 class="do-title">FEEDBACK</h5>
           </div>
-          <div class="do-text">
-            
+          <div class="do-text" id="do-text-5">
+            <p>
+              After project completion, the client is called in to review the final product awaiting their feedback on the same before launch
+            </p>
           </div>
         </div>
       </div>
@@ -280,50 +310,50 @@
     </p>
   </section>
     <!-- ! Footer -->
-    <footer class="footer pt-3">
+    <footer class="footer pt-2 pb-1">
       <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
-          <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
-              <p class="f-link mt-3">
-                  <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>+966 552 357 583</a>
-              </p>
-          </div>
-          <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
-              <p class="f-link mt-3">
-                  <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
-              </p>
-          </div>
+        <div class="col-lg-3 col-md-4 col-12 mt-1 footer-col f-phone">
+          <p class="f-link mt-3">
+            <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>+966 552 357 583</a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mt-1 footer-col f-inquiries">
+          <p class="f-link mt-3">
+            <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
+          </p>
+        </div>
 
-          <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
-              <p class="f-link mt-3">
-                  <a
-                      href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-                      <i class="fas fa-map-marker-alt"></i> Location</a>
-              </p>
-          </div>
+        <div class="col-lg-3 col-md-4 col-12 mt-1 footer-col f-location">
+          <p class="f-link mt-3">
+            <a
+              href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+              <i class="fas fa-map-marker-alt"></i> Location</a>
+          </p>
+        </div>
 
-          <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
-              <div>
-                  <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
-                      <li>
-                          <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                          <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                                  class="fab fa-twitter"></i></a>
-                      </li>
-                      <li>
-                          <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
-                      </li>
-                      <li>
-                          <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin"
-                              title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                  </ul>
-              </div>
+        <div class="col-lg-3 col-md-4 col-12 mt-1 footer-col f-follow">
+          <div>
+            <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+              <li>
+                <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                    class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                    class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
           </div>
+        </div>
       </div>
-      <p class="copyright mb-0">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
-  </footer>
+      <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
+    </footer>
 
   <!-- ! Contact fomr modal -->
   <section class="contact-wrapper" id="contactModal">
@@ -435,7 +465,6 @@
   </section>
 
 
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
@@ -456,5 +485,4 @@
   <script src="./js/shared/header.js"></script>
   <script src="./js/contact/contact.js"></script>
 </body>
-
 </html>
