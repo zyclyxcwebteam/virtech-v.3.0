@@ -3,6 +3,7 @@
   background-color:var(--bg-color);      
 } 
 .master-navbar .navbar-brand img{
+ 
     max-width: 170px;        
 }
 .master-navbar .nav-link{

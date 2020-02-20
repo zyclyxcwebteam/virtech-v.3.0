@@ -9,17 +9,17 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>job-details - Virtech-ksa</title>
   <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/shared/header.css">
-  <link rel="stylesheet" href="./css/careers/job-details.css">
+  <link rel="stylesheet" href="./css/careers/job.css">
   <link rel="stylesheet" href="./css/shared/footer.css">
 </head>
 
 <body>
   <!-- ! header navbar-->
   <!-- TODO: hide header on scroll down, show on scroll up -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="masterNavbar">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="masterNavbar">
     <div class="container-fluid">
       <a href="./" class="navbar-brand"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
 
@@ -139,30 +139,160 @@
       </div>
     </div>
   </nav>
-  <section class="container-fluid job-details-home">
-    <div class="container row h-100 mx-auto">
-      <div class="col-6 d-flex justify-content-center align-items-center">
-        <h1 class="hero-title text-center">
-          <span>Machine Learning</span> <br />
-          <span>Developer</span>
-        </h1>
+
+  <section class="container-fluid job-banner">
+    <div class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+
+      <div class="title col-lg-10 col-md-12 col-12 d-flex justify-content-center align-items-center left-wrapper">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-8 col-12">
+            
+        <div class="d-flex align-items-center">
+        
+            <h5 class="m-0" id="description">Description of</h5>
+            <!-- <span>Developer</span> -->
+      
+        </div>
+        <div class=" mb-5">
+          <h5 class="job-title mb-4 display-4">Machine Learning</h5>
+          <p class="hero-text">Digital solutions today are engineered with many systems coming together and are expected
+            to serve a
+            large number of users accessing the solution over a variety of devices. The solution can not be
+            delivered to the users without architecting and managing the systems behind the solution.</p>
+        </div>
+
+        <!-- Button can visible at ( landscape phones, less than 767.98px ) -->
+        <button type="submit" id="applyPage" class="btnRes">Apply Now</button>
+        
+        <a href="#roles">Roles & Responsibilities</a>
+          </div>
+        </div>
+        <!-- <a href="#responsibilities">Responsibilities</a> -->
       </div>
-      <div class="col-6 d-flex justify-content-center align-items-center">
-        <p class="hero-text">Digital solutions today are engineered with many systems coming together and are expected
-          to serve a
-          large number of users accessing the solution over a variety of devices. The solution can not be
-          delivered to the users without architecting and managing the systems behind the solution.</p>
+
+      <div class="col-lg-2 p-0 right-wrapper">
+        <div class="options row info d-flex justify-content-center align-items-stretch h-100">
+
+          <div class="option col-lg-12 col pr-0">
+            <div class="optIcon mr-4">
+              <i class="fas fa-briefcase"></i>
+            </div>
+
+            <div>
+              <p> Experience</p>
+              <h2>2-3 Years</h2>
+            </div>
+          </div>
+
+
+          <div class="option col-lg-12 col pr-0">
+
+            <div class="optIcon mr-4">
+              <i class="fas fa-user-tie"></i>
+            </div>
+
+            <div>
+              <p> Job Type</p>
+              <h2>Full-Time</h2>
+            </div>
+
+          </div>
+
+          <div class="option col-lg-12 col pr-0">
+
+            <div class="optIcon mr-4">
+              <i class="fas fa-rupee-sign"></i>
+            </div>
+
+            <div>
+              <p>Salary</p>
+              <h2>Best in the industry</h2>
+            </div>
+          </div>
+
+          <div class="option col-lg-12 col pr-0">
+
+            <div class="optIcon mr-4">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+
+            <div>
+              <p>location</p>
+              <h2>On-sight</h2>
+            </div>
+          </div>
+          <a class="btn rounded-0 option option-btn col-lg-12 col p-0 pr-lg-0" href="#" id="applyPopUp">Apply Now</a>
+          
+        </div>
+
       </div>
     </div>
+  </div>
+    <!-- <div class="optins info col-md-3">
+
+      <div class="option">
+
+        <div class="optIcon mr-4">
+        <i class="fas fa-briefcase"></i>
+      </div>
+
+      <div>
+          <p> Experience</p>
+          <h2>2-3 Years</h2>
+        </div>
+      </div>
+      
+      
+      <div class="option">
+
+        <div class="optIcon mr-4">
+          <i class="fas fa-user-tie"></i>
+      </div>
+
+      <div>
+          <p> Job Type</p>
+          <h2>Full-Time</h2>
+        </div>
+
+      </div>
+      
+      <div class="option">
+
+        <div class="optIcon mr-4">
+          <i class="fas fa-rupee-sign"></i>
+      </div>
+
+      <div>
+        <p>Salary</p>
+        <h4>Best in the industry</h4>
+        </div>
+      </div>
+      
+      <div class="option">
+
+        <div class="optIcon mr-4">
+          <i class="fas fa-map-marker-alt"></i>
+      </div>
+
+      <div>
+        <p>location</p>
+        <h2>On-sight</h2>
+        </div>
+      </div>
+      <button type="submit" href="" class="btn btn-block py-3 rounded-0" id="applyPopUp">Apply Now</button>
+    </div> -->
+
+
   </section>
 
 
   <section id="section-4 py-5">
-    <div class="container">
+    <div class="container details">
 
-      <h1 class="py-5 border-bottom text-center text-primary">Business Development Manager</h1>
+      <!-- <h1 class="py-5 border-bottom text-center text-primary">Business Development Manager</h1> -->
 
-      <div class="d-flex job-info justify-content-around">
+      <!-- <div class="d-flex job-info justify-content-around">
         <div class="info">
           <span class="info-border-left"></span>
           <i class="fas fa-briefcase fa-bg"></i>
@@ -199,57 +329,63 @@
             <p>On-sight</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="">
-        <h4 class="py-3 info-details">Description</h4>
+        <!-- <h4 class="py-3 info-details">Description</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis nisi eius at doloremque soluta quos iste
           quia, facere dolor saepe quasi unde inventore magnam deserunt placeat veritatis. Architecto, cum blanditiis.
         </p>
+        <button type="button" class="btn btn-success my-4" id="submitBtn">Apply</button> -->
+        <div id="roles">
+          <h2 class=" info-details" id="roles">Roles</h2>
+          <ul class="mt-4 list">
+            <li>
+              <p><i class="fas fa-share mr-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi
+                minus provident aspernatur ipsa.</p>
+            </li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
+            </li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
+            </li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
+            </li>
+          </ul>
+        </div>
+        <div id="responsibilities">
+          <h2 class="mt-5 info-details">Duties And Responsibilities</h2>
+          <ul class="mt-4">
+            <li>
+              <p><i class="fas fa-share mr-2"></i>Strongly emphasis on a consultative sales approach over 'cold calling'
+                approach. Degree in Business
+                and Marketing is preferred</p>
 
-        <h2 class="mt-5  info-details">Roles</h2>
-        <ul class="mt-4">
-          <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
-          </li>
-          <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
-          </li>
-          <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
-          </li>
-          <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi minus provident aspernatur ipsa.</p>
-          </li>
-        </ul>
-        <h2 class="mt-5 info-details">Duties And Responsibilities</h2>
-        <ul class="mt-4">
-          <li>
-            <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business
-              and Marketing is preferred</p>
+            </li>
+            <li>
+              <p>Must be a post graduate in Management from a Tier-1 organisation.</p>
 
-          </li>
-          <li>
-            <p>Must be a post graduate in Management from a Tier-1 organisation.</p>
+            </li>
+            <li>
+              <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business
+                and Marketing is preferred</p>
 
-          </li>
-          <li>
-            <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business
-              and Marketing is preferred</p>
+            </li>
+            <li>
+              <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business
+                and Marketing is preferred</p>
 
-          </li>
-          <li>
-            <p>Strongly emphasis on a consultative sales approach over 'cold calling' approach. Degree in Business
-              and Marketing is preferred</p>
+            </li>
+            <li>
+              <p>Must be a post graduate in Management from a Tier-1 organisation.</p>
 
-          </li>
-          <li>
-            <p>Must be a post graduate in Management from a Tier-1 organisation.</p>
-
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-   <button type="button" id="submitBtn">Apply</button>
+      <button type="button" class="btn my-5 applyBtn" id="submitBtn">Apply Now</button>
 
     </div>
   </section>
@@ -299,80 +435,104 @@
 
   <!-- Pop Up form -->
 
-  <section class="" class="appWrapper" id="appForm">
-    <button type="button" id="formClose"><i class="fas fa-times"></i></button>
-    <h4 class="py-5 text-center">Apply for this Job</h4>
-    <div class="container">
-      
-        <div class="">
-          <form id="contactForm" class="contactForm" onsubmit="return checkContactForm(this);">
+  <section class="appWrapper" id="appForm">
 
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label> First Name  <span>*</span></label>
-                  <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter your name" autocomplete="off">
-                </div>
+    <button type="button" id="formClose"><i class="fas fa-times"></i></button>
+    <h4 class="pt-2 pb-5 text-center display-4">Apply for this Job</h4>
+    <div class="container applyForm">
+      <div class="bg-light">
+        <form id="jobForm" class="contactForm needs-validation" novalidate>
+
+          <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <label for="validationCustom01"> First Name <span>*</span></label>
+                <input type="text" class="form-control" name="firstname" id="validationCustom01" pattern="[a-zA-Z\s]+"
+                  placeholder="Enter your name" autocomplete="off" required>
+                <div class="valid-feedback">Nice! You got this one!</div>
+                <div class="invalid-feedback">Please enter the valid Last Name</div>
               </div>
-              <div class="col input-field">
-                <!-- <input type="text" name="name" autocomplete="off" required>
+            </div>
+
+            <div class="col-md-6 col-sm-12 input-field">
+              <!-- <input type="text" name="name" autocomplete="off" required>
                 <label for="name" class="lable-name">
                   <span class="content-name">Last Name</span>
                 </label> -->
-                <div class="form-group">
-                  <label for="pwd"> Last Name <span>*</span></label>
-                  <input type="text" class="form-control" name="lasttname" id="lasttname" placeholder="Enter your last name" autocomplete="off">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label> Email-ID <span>*</span></label>
-                  <input type="text" class="form-control" name="email" placeholder="Enter your email-ID" id="email">
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label> Contact Number <span>*</span></label>
-                  <input type="text" class="form-control" name="phone" id="phone"  placeholder="Enter your contact number" autocomplete="off">
-                </div>
-              </div>
-            </div>
-
-            
-
               <div class="form-group">
-                <label>Upload Resume <span>*</span></label>
-                <div class="input-group mb-3">                  
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputFile" aria-describedby="inputGroupFileAddon01">
-                    <label class="custom-file-label" for="inputFile">Choose file</label>
-                  </div>
-                </div>
+                <label for="pwd"> Last Name <span>*</span></label>
+                <input type="text" class="form-control" name="lastname" pattern="[a-zA-Z\s]+" id="lastname"
+                  placeholder="Enter your last name" autocomplete="off" required>
+                <div class="valid-feedback">Nice! You got this one!</div>
+                <div class="invalid-feedback">Sorry, you missed this one.</div>
               </div>
+            </div>
 
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6 col-sm-12">
               <div class="form-group">
-                <label for="message">Subject <span>*</span></label>
-                <textarea class="form-control" id="message" placeholder="Your message here.." name="messages"></textarea>
+                <label class=""> Email-ID <span>*</span></label>
+                <input type="email" class="form-control" name="email" autocomplete="off"
+                  placeholder="Enter your email-ID" id="email" required>
+                <div class="valid-feedback">Nice! You got this one!</div>
+                <div class="invalid-feedback">Sorry, you missed this one.</div>
               </div>
-
-           
-
-
-            <div class="row mt-5">
-              <div class="col-md-6">
-              <button type="submit" class="btn btn-block " id=" btn-submit">Submit Application</button>
-            </div> 
-            <div class="col-md-6">             
-              <button type="button" class="btn btn-block " id="btnCancel">Cancel</button>
             </div>
+
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <label> Contact Number <span>*</span></label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your contact number"
+                  pattern="[0-9]{7,20}" autocomplete="off" required>
+                <div class="valid-feedback">Nice! You got this one!</div>
+                <div class="invalid-feedback">Sorry, you missed this one.</div>
+              </div>
             </div>
-        </div>
-        </form>
-      
-   
+
+          </div>
+
+
+
+          <div class="form-group mb-5">
+            <label>Upload Resume <span>*</span></label>
+            <div class="input-group mb-3">
+              <div class="custom-file">
+                <div class="valid-feedback">Nice! You got this one!</div>
+                <div class="invalid-feedback">Sorry, you missed this one.</div>
+                <input type="file" name="resume" class="custom-file-input" id="inputFile"
+                  aria-describedby="inputGroupFileAddon01" required>
+                <label class="custom-file-label" for="inputFile">Choose file</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Subject <span>*</span></label>
+            <textarea class="form-control" name="message" id="message" placeholder="Your message here.." name="messages"
+              required></textarea>
+            <div class="valid-feedback">Nice! You got this one!</div>
+            <div class="invalid-feedback">Sorry, you missed this one.</div>
+          </div>
+
+
+
+
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12 order-md-0 order-sm-1">
+              <button type="button" class="btn btn-block" id="btnCancel">Cancel</button>
+            </div>
+            <div class="col-md-6 col-sm-12 order-md-1 order-sm-0">
+              <button type="submit" class="btn btn-block " id="btnSubmit">Submit Application</button>
+            </div>
+          </div>
+      </div>
+      </form>
+
+
   </section>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -387,51 +547,74 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+  <script src="./js/careers/job-details.js"></script>
   <!-- <script src="js/plugins.js"></script> -->
   <script src="./js/about-scroll.js"></script>
   <script src="./js/shared/header.js"></script>
 
-
+  <!-- <script>
+  $(document).ready(function(){
+  $("#lastname").click(function(){
+    $(".form-control").addClass("intro");
+  });
+});
+</script> -->
   <script>
-    $('#inputFile').on('change',function(){
-        //get the file name
-        var fileName = $(this).val();
-        //replace the "Choose a file" label
-        var cleanFileName = fileName.replace('C:\\fakepath\\', " ");
-        $(this).next('.custom-file-label').html(cleanFileName);
+    $('#inputFile').on('change', function () {
+      //get the file name
+      var fileName = $(this).val();
+      //replace the "Choose a file" label
+      var cleanFileName = fileName.replace('C:\\fakepath\\', " ");
+      $(this).next('.custom-file-label').html(cleanFileName);
     })
-</script>
+  </script>
   <script>
-    
-let contactButton = document.getElementById('submitBtn');
-let btnCancel = document.getElementById('btnCancel');
-let contactClose = document.getElementById('formClose');
 
-// close application form
-function closePopUp(){
-  gsap.to('#appForm',{display:'none',height:'0px',duration:0.5})
-}
- 
-// contactLink.addEventListener('click',function(event){
-//   event.preventDefault();
-//   gsap.to('.appWrapper',{display:'block',height:'100vh',duration:0.5})    
-// })
+    let applyPage = document.getElementById('applyPage');
+    let contactButton = document.getElementById('submitBtn');
+    let btnCancel = document.getElementById('btnCancel');
+    let contactClose = document.getElementById('formClose');
+    let popUpForm = document.getElementById('applyPopUp');
 
-contactButton.addEventListener('click',function(event){
-event.preventDefault();
-gsap.to('#appForm',{display:'block',height:'100vh',duration:0.5})    
-})
+    // close application form
+    function closePopUp() {
+      gsap.to('#appForm', { display: 'none', height: '0px', duration: 0.5 })
+    }
 
-btnCancel.addEventListener('click',function(event){
-  event.preventDefault();
-  closePopUp();
-})
+    function applyPopUp() {
+      gsap.to('#appForm', { display: 'block', height: '100vh', duration: 0.5 })
+    }
 
-contactClose.addEventListener('click',function(event){
-event.preventDefault();
-//gsap.to('#appForm',{display:'none',height:'0px',duration:0.5})
-closePopUp();
-})
+    // contactLink.addEventListener('click',function(event){
+    //   event.preventDefault();
+    //   gsap.to('.appWrapper',{display:'block',height:'100vh',duration:0.5})    
+    // })
+
+    contactButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      // gsap.to('#appForm',{display:'block',height:'100vh',duration:0.5}) 
+      event.preventDefault();
+      applyPopUp();
+    })
+    applyPage.addEventListener('click', function (event) {
+      event.preventDefault();
+      applyPopUp();
+    })
+    popUpForm.addEventListener('click', function (event) {
+      event.preventDefault();
+      applyPopUp();
+    })
+
+    btnCancel.addEventListener('click', function (event) {
+      event.preventDefault();
+      closePopUp();
+    })
+
+    contactClose.addEventListener('click', function (event) {
+      event.preventDefault();
+      //gsap.to('#appForm',{display:'none',height:'0px',duration:0.5})
+      closePopUp();
+    })
 
 
   </script>
