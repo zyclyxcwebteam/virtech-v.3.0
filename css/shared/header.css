@@ -22,7 +22,7 @@ color:#00bdd5;
 
 .master-navbar .dropdown-menu{
     margin-top: 16px;
-    background-color:hsl(223, 41%, 6%);
+    background-color:hsl(217, 62%, 8%);
     border-radius: 0;
 }
 
@@ -35,7 +35,7 @@ color:#00bdd5;
     left: 100%;
     margin-top: 0px;
     margin-left: 0px;
-    background-color:hsl(223, 41%, 5%);
+    background-color:hsl(217, 62%, 8%);
     border-radius: 0;     
   }
   .master-navbar .dropdown-menu .dropdown-item {
@@ -43,7 +43,7 @@ color:#00bdd5;
   color: #b8bdc4;
   }
   .master-navbar .dropdown-menu .dropdown-item:hover { 
-    background-color:hsl(223, 41%, 15%);
+    background-color:hsl(217, 62%, 16%);
     color: #eef0f1;
   }
   .dropdown-submenu a.active{
