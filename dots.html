@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    body,html{width:100%;height:100%;overflow: hidden;background: black;}
-canvas{
-	/* position: absolute;
-	top:50%;
-	left:50%;
-    transform: translate(-50%,-50%); */
-     
+    body,html{
+        width:100vw;
+        height:100vh;
+        overflow: hidden;
+        background: black;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+canvas{ 
+    /* height: 300px;
+    width: 300px; */
 }
     </style>
 </head>
@@ -26,10 +31,10 @@ var ctx = canvas.getContext("2d");
 var particles = [];
 
 function drawScene() {
-  canvas.width = png.width*50;
-  canvas.height = png.height*50;
+  canvas.width = png.width*20;
+  canvas.height = png.height*20;
 
-  ctx.drawImage(png, 0, 0);
+  ctx.drawImage(png, 10, 10);
 
   var data = ctx.getImageData(0, 0, png.width, png.height);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -39,15 +44,15 @@ function drawScene() {
         var particle = {
           x0: x,
           y0: y,
-          x1: png.width / 2,
-          y1: png.height / 2,
+          x1: png.width / 3,
+          y1: png.height / 3,
           color: "rgb("+data.data[(y * 4 * data.width)+ (x * 4)]+","+data.data[(y * 4 * data.width)+ (x * 4) +1]+","+data.data[(y * 4 * data.width)+ (x * 4) +2]+")",
-          speed: Math.random() * 4 + 2
+          speed: Math.random() * 6 + 2
         };
         gsap.to(particle, particle.speed, {
-          x1: particle.x0,
-          y1: particle.y0,
-          delay: y / 130,
+          x1: particle.x0*3.5,
+          y1: particle.y0*3.5,
+          delay: y / 100,
           ease: Elastic.easeOut
         });
         particles.push(particle);

@@ -1,183 +1,163 @@
-/* ! Contact Modal */
-.contact-wrapper {
-    /* height: 100vh; */
-    /* background: #05070c; */
-    color: rgb(255, 255, 255);
-    /* overflow: auto; */
-    background-color: #05070c;
-    /* color: #f4f4f4; */
-    /* padding-top:75px; */
+/* ! Contact Modal */ 
+.contact-wrapper {     
+  color:#b5caee;
+    background-color: #0c1b33;     
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 0;
     display: block;
-    z-index: 999;
+    z-index: 1200;          
+    overflow-y: scroll;
 }
-#contactModal h2{
-    color: teal;
-}
-#appForm #cForm{
-    background-color: #05070c;
-}
-#appForm{
-    overflow: hidden;
-}
-#appForm .form-group .form-control:focus{
+
+.contact-wrapper h2{
+  color:#b5caee;
+} 
+.contact-wrapper .form-group .form-control:focus{
     box-shadow: none;
 }
-#appForm .form-control{
+.contact-wrapper .form-control{
     border-radius: 0;
-}
-/* #appForm{       
-    background-color: #05070c;
-    color: #333;
-     
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    display: block;
-     
-    z-index: 999;
-}
- */
-.contact-info{
-    /* border: 1px solid #fff; */
+} 
+.contact-wrapper .contact-info{     
     text-align: center;
     display: flex;
     justify-content: center;
 }  
-.contact-info i{
-    font-size: 40px;
-    color: #01626e;
-    margin-bottom: 10px;
-
+.contact-wrapper .contact-info i{
+    font-size: 1.1rem;
+    /* color: #17bb51; */
+    color:hsl(217, 62%, 52%);
+    margin-right: 0.8rem;  
 } 
-.contact-info a{
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
+.contact-wrapper .contact-info a{
+    text-decoration: none;     
+    display: flex;     
+    align-items: center; 
 }
 
-.contact-info p{
+.contact-wrapper .contact-info p{
     margin: 0;
-    color: rgb(184, 184, 184);
-}
-.contact-info  .phonenum{
-    font-size: 24px;
-}
-.contact-info blockquote{
-    font-size: 14px;
-    color: teal;
-}
-.contact-info .mail{
-    font-size: 24px;
+    color:#b5caee;
+    font-size: 1.3rem;
+    text-align: left;     
 }
   
-  #appForm .form-group {
-    margin-bottom: 2rem;
-    /* border: 1px solid #9e9e9e30; */
-    /* border-left: 2px solid black; */
-  /* padding: 15px 4px; */
-  background-color: #05070c;
+/* .contact-info .mail{
+    font-size: 24px;
+} */
+  
+  .contact-wrapper .form-group {
+    margin-bottom: 1rem;
   }
-  
-  #appForm .form-control:focus,
-  #appForm .form-control:valid{
-  /* #appForm .form-control:invalid{ */
+ 
+  .contact-wrapper .form-control:focus,
+  .contact-wrapper .form-control:valid{
+  /* .contact-wrapper .form-control:invalid{ */
     background: #0a0e186c;
     border-bottom: 1px solid rgba(204, 204, 204, 0.404);
   }
-  .form-control.is-invalid:focus,
-  .was-validated .form-control:valid:focus{
+  .contact-wrapper .form-control.is-invalid:focus,
+  .contact-wrapper .was-validated .form-control:valid:focus{
     background: hsla(143, 100%, 28%, 0.039) !important;
     border-bottom: 1px solid #008d36 !important;
     box-shadow: none;
   }
-  .form-control.is-invalid:focus,
-  .was-validated .form-control:invalid:focus{
+  .contact-wrapper .form-control.is-invalid:focus,
+  .contact-wrapper .was-validated .form-control:invalid:focus{
     background: hsla(354, 70%, 54%, 0.039) !important;
     border-bottom: 1px solid #dc3545 !important;
     box-shadow: none;
   }
   
-  #appForm label{
-    color: #01626e;
-    font-size: 18px;
+  .contact-wrapper label{
+    color:#b5caee;
+    font-size: 1rem;
     font-weight: normal;
     padding-left: 10px;
   }
-  #appForm .form-control{
+  .contact-wrapper .form-control{
     border: none;
-    color: #fff;
-    /* height: 50px; */
-    font-size: 25px;
-    font-weight: 200;
+    color: #fff;     
+    font-size: 1.5rem;     
     background-color: transparent;
+    border-bottom:1px solid hsl(217, 62%, 16%);
   }
-  #appForm .btn{
-    height: 70px;
+  
+  .contact-wrapper .btn{
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0px;
-    font-size: 20px;
-    color: #04a7bd;
-    /* background: linear-gradient(45deg,#00BCD4, rgb(2, 93, 105)); */
+    font-size:1.5rem;
+    color: #04a7bd;     
     background: rgba(0, 187, 212, 0.096);
     transition: all .2s ease-in-out;
   }
-  #appForm .btn:hover{
-    font-size: 22px;
+  .contact-wrapper .btn:hover{
+    background: rgba(0, 187, 212, 0.06);
     transition: all 0.2s ease-in-out;
   }
-  .info ul li{
-      list-style-type: none;
+  .contact-wrapper .social-network{
+    margin: 0;
   }
-  .info ul li a i{
-      color: rgb(182, 182, 182);
-      margin-right: 40px;
+  .contact-wrapper .social-network li{
+      list-style-type: none;
+      margin: 2px 4px;
+  }
+  .contact-wrapper .social-network  li a i{       
+      font-size: 1.5rem;
   }
  
 
   /* Todo - check it later */
   #contactClose{
     position: absolute;
-    right: -80px;
-    top: 0;
+    /* right: -80px; */
+    right:50px;
+    top:50px;
     border: none;
     color: #fff;
-    background: #ffffff33;
+    
+    background:hsl(217, 62%, 18%);     
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    font-size: 1.5rem;
-    font-weight: 100;
-    padding: 20px 25px;
+    font-size: 1.5rem;     
+    height: 55px;
+    width: 55px;
+    padding: 1rem;     
+    box-sizing: border-box;
+    border-radius: 0.5rem;
   }
   #contactClose:focus{
       box-shadow: none;
   }
   #contactClose:hover{
-    color: rgb(255, 99, 71);
-    background: #ff634733;
-    right: 0;
-    transition: all 0.2s ease-in-out;
+    color:#0c1b33;
+    background: #ff6347;
+    transition: all 0.2s ease-in-out;    
   }
   #contactClose .fas{ 
-    font-size: 1.5rem;
-    margin-right: 20px;
+    font-size: 1.5rem;     
   }
 
-
+  .contact-wrapper ::placeholder {
+    color:hsl(217, 62%, 20%) !important;
+  }
+  .contact-wrapper input::-webkit-outer-spin-button,
+  .contact-wrapper input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;  
+}
   /* =========== MEDIA QUERIES ============ */
   
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (max-width: 576px) { 
   .contact-wrapper{
     overflow: auto;
   }

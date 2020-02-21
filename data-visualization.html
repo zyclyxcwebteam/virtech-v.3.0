@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./css/shared/header.css">
   <link rel="stylesheet" href="./css/shared/footer.css">
   <link rel="stylesheet" href="./css/services/service-page.css">
-  <link rel="stylesheet" href="./css/shared/contact.css">
+  <link rel="stylesheet" href="./css/shared/contact-us.css">
   <link rel="stylesheet" href="./css/services/rpa.css">
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
 </head>
@@ -299,113 +299,116 @@
   </footer>
 
   <!-- ! Contact form modal -->
-  <section class="contact-wrapper" id="contactModal">
-    <div class="contact-inner">
-      <h2 class="mt-3 text-center">Get in touch</h2>
-      <p class="text-center">Contact us for a quote, help, or to join the team</p>
-      <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
-      <div>
-        <!-- ! contact form -->
-        <div class="container mx-auto shadow">
-          <div class="row p-3">
+  <section class=" contact-wrapper d-flex justify-content-center align-items-center" id="appForm">
+    <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
+    <div class="container c-banner py-2 m-0 d-flex justify-content-center align-items-center">
+      <div id="contactModal">
+        <div class="contact-inner">
+          <h2 class="text-center display-4">Get in touch</h2>
+          <p class="text-center">Contact us for a quote, help, or to join the team</p>           
+          <div>             
+            <div class="row mx-auto d-flex justify-content-around">
+              <div class="col-lg-3 px-0 col-12 contact-info order-0 oreder-md-0  order-sm-1">
+                <div class="row mx-auto contact-grids">
 
-            <div class="col-4 contact-info">
-              <div class="row mt-5 d-flex flex-column">
-                <div class="py-3">
-                  <i class="fas fa-map-marker-alt text-success mr-2"></i>
-                  <a href="#">Riyadh, Kingdom of Saudi Arabia - 11611.</a>
-                </div>
+                  <a class="location col-lg-12 col-12 " href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en" class="info">
+                    <i class="fas fa-map-marker-alt mr-3"></i>
+                    <p >International Virtual Technology Company, PO Box:23754, Riyadh, K.S.A - 11611.
+                    </p>
+                  </a>
 
-                <div class="py-3">
-                  <i class="fas fa-phone-alt text-success mr-2"></i>
-                  <a href="#">(+966) 552 357 583</a>
-                </div>
+                  <a class="phone col-lg-12 col-6" href="tel:+966552357583" class="info">
+                    <i class="fas fa-phone-alt mr-3"></i>
+                    <p class="phonenum">(+966) 552 357 583</p>
+                    <!-- <blockquote>9.30 AM - 6.30 PM ( SUN - FRI )</blockquote> -->
+                  </a>
 
-                <div class="py-3">
-                  <i class="fas fa-envelope text-success mr-2"></i>
-                  <a href="#">info@virtech-ksa.com</a>
-                </div>
+                  <a class="mail col-lg-12 col-6" href="mailto:info@virtech-ksa.com" class="info">
+                    <i class="fas fa-envelope mr-3"></i>
+                    <p class="mail">info@virtech-ksa.com</p>
+                  </a>
 
-                <div class="py-3">
-                  <div class="social-links">
-                    <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                  <div class="col-lg-12 col-6 social-links d-flex justify-content-center">
+                    <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
                       <li>
-                        <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icoFacebook" title="Facebook">
+                          <i class="fab fa-facebook-f fa-fw">
+                          </i></a>
                       </li>
                       <li>
                         <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                            class="fab fa-twitter"></i></a>
+                            class="fab fa-twitter fa-fw"></i></a>
                       </li>
                       <li>
-                        <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icoTwitter" title="Instagram">
+                          <i class="fab fa-instagram fa-fw">
+                          </i></a>
                       </li>
                       <li>
                         <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
-                            class="fab fa-linkedin-in"></i></a>
+                            class="fab fa-linkedin-in fa-fw">
+                          </i></a>
                       </li>
                     </ul>
                   </div>
-
                 </div>
               </div>
-            </div>
 
-            <div class="col-8 col2 text-center p-5 mt-4">
-              <form id="contactForm" class="needs-validation mb-3" novalidate="">
-                <span id="errorAlert"></span>
-                <div class="row ">
-                  <div class="col-sm-6">
-                    <!-- Name -->
-                    <div class="form-group">
-
-                      <input class="form-control" type="text" name="Name" id="username" placeholder="Your name"
-                        required>
-                      <!-- <span id="error1" class="error"></span> -->
-                      <div class="invalid-feedback">Please fill in your name!</div>
-
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <!-- Email -->
-                    <div class="form-group">
-                      <input class="form-control" type="email" name="Email" id="email" placeholder="Email address"
-                        required="">
-                      <div class="invalid-feedback">Please fill in your Email!</div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <!-- Phone -->
-                    <div class="form-group">
-                      <input class="form-control" type="text" name="Phone" id="phone-no" placeholder="Your phone"
-                        required>
-                      <div class="invalid-feedback">Please fill in your Phone No!</div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <!-- Subject -->
-                    <div class="form-group">
-                      <input class="form-control" name="Subject" type="text" id="subject" placeholder="Subject">
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <!-- Message -->
-                  <textarea class="form-control" name="Message" id="message" rows="4"
-                    placeholder="Please describe in detail your request" required=""></textarea>
-                  <div class="invalid-feedback">Please write a message!</div>
-                </div>
-
-                <button type="submit" class="btn btn-outline-primary contact-btn mt-3 px-3 py-2" id="contactBtn">
-                  <span id="btnText"> Send message <i class="ml-2 far fa-paper-plane"></i></span>
-                </button>
-              </form>
+              <div class="col-lg-6 col-12 p-0 order-1 order-md-1 order-sm-0">
+                <div class="appWrapper" id="contactForm">                   
+                  <div class="container applyForm">   
+                      <div class="">
+                        <form id="cForm"  class="contactForm needs-validation" novalidate>              
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-group mt-sm-5 mt-1">
+                                <label for="validationCustom01"> Name  <span>*</span></label>
+                                <input type="text" class="form-control" name="firstname" id="validationCustom01"  pattern="[a-zA-Z\s]+"  placeholder="Enter your name" autocomplete="off" required>
+                                <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Please enter the valid Name</div>
+                              </div>
+                            </div>
+                         
+                          </div>
+              
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label class=""> Email-ID <span>*</span></label>
+                                <input type="email" class="form-control" name="email" autocomplete="none" placeholder="Enter your email-ID" id="email" required>
+                                <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Sorry, you missed this one.</div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-group">
+                                <label> Contact Number <span>*</span></label>
+                                <input type="number" class="form-control" name="phone" id="phone"  placeholder="Enter your contact number" pattern="[0-9]{7,20}" autocomplete="off" required>
+                                <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Sorry, you missed this one.</div>
+                              </div>
+                            </div>
+                          </div>
+                            
+                            <div class="form-group">
+                              <label for="message">Subject <span>*</span></label>
+                              <textarea class="form-control" name="message" id="message" placeholder="Your message here.." name="messages" required></textarea>
+                              <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Sorry, you missed this one.</div>
+                            </div>
+                      </div>
+                      <button type="submit"  class="btn btn-block" id="contactSubmit">Submit</button>
+                      </form>                                     
+                    </div>                                             
+              </div>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </section>
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
