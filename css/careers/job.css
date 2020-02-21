@@ -97,6 +97,7 @@
     padding: 10px;
     border-radius: 50%;
   }
+  
   .details #roles{
     padding-top: 55px;
   }
@@ -403,3 +404,6 @@ height: 92vh;
 height: 10vh;
 }
  }
+.details{
+  color: #f4f4f4 !important;
+} 

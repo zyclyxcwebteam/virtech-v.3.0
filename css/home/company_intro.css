@@ -13,7 +13,7 @@
     background-color:var(--weare-bg);
 
   }
-  .intro-hero-title{
+  .intro-wrapper .intro-hero-title{
     position: fixed;
     left: 50%;
     top:50%;
@@ -23,7 +23,7 @@
     font-size: 6.5rem;
    color:#0c1b33;
   }
-#introSlides {
+  .intro-wrapper #introSlides {
     width: 300%;
     height: 100%;
     /* background-color: transparent; */
@@ -34,34 +34,34 @@
     align-items: flex-end;
   }
  
-.slide {
+  .intro-wrapper .slide {
     height: 100%;
     width: 100%;
     /* background-color: transparent;    */
     position: relative;
     z-index: 9;
   }
-  .slide-2{
+  /* .intro-wrapper .slide-2{
     height: 86%;
-  }
+  } */
   /* end horizontal scroll */
-  .company-intro .title-card{
+  .intro-wrapper .company-intro .title-card{
     height:100%;
     width: 100%;
     border: none;
     opacity: 1;  
   }
-   .company-intro .title-card-1{
+  .intro-wrapper .company-intro .title-card-1{
      background-color: #581b98;
      background-image: url('../../images/home/wave-6.svg');
      border-radius: 50%;
      shape-outside: circle(50%);
    }
-   .company-intro .title-card-2{
+   .intro-wrapper .company-intro .title-card-2{
     background-color: #009efa;
     background-image: url('../../images/home/wave-2.svg');
   }
-  .company-intro .card-body{
+  .intro-wrapper .company-intro .card-body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,31 +71,29 @@
    .testimonial-wrapper{
 
    }
-   .testimonial-title{
+   .intro-wrapper .testimonial-title{
      font-size: 2rem;
-     color:#f5f5f5;
-     writing-mode: vertical-lr;
-text-orientation:upright;
+     color:#f5f5f5; 
    }
-   .testimonial{
+   .intro-wrapper .testimonial{
 
    }
-  .testimonial-text{
+   .intro-wrapper .testimonial-text{
     color: #e5e5e5;
     font-size: 1.1rem;
     text-align: justify;
   }
    /* ! END - Testimonials */
-  .c-val-caption{
+   .intro-wrapper .c-val-caption{
     font-size: 1rem;
     color: #f3f7fa;
   }
-  .c-val-title{
+  .intro-wrapper .c-val-title{
     font-size: 1.5rem;     
     color: #fff;    
     text-align: center;
   }
-.core-values{   
+  .intro-wrapper .core-values{   
   background-image: url('../../img/Shape.svg');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -104,11 +102,11 @@ text-orientation:upright;
   position: relative;
   mix-blend-mode: multiply;
 }
- .core-values .card{
+.intro-wrapper .core-values .card{
   background-color: transparent;      
   border: none;
   }
-  .core-values .card-body{
+  .intro-wrapper .core-values .card-body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,34 +115,34 @@ text-orientation:upright;
   /* .c-val-4 .card-body, .c-val-3 .card-body{
     flex-direction: column;
   } */
-  .core-values .core-text{
+  .intro-wrapper .core-values .core-text{
     color: #e8e9f0;
     text-align: center;
   }
-  .core-values .core-icon-outer{
+  .intro-wrapper .core-values .core-icon-outer{
     padding: 0.3rem;
     border-radius: 50%;
     background-color:hsl(217, 62%, 20%); 
   }
-  .core-values .core-icon-inner{     
+  .intro-wrapper .core-values .core-icon-inner{     
     background-color: hsl(217, 62%, 7%);
     padding: 1.5rem;
     border-radius: 50%;
   }
-  .core-icon-inner img{
+  .intro-wrapper .core-icon-inner img{
     opacity: 0.7;
   }
-  .core-icon-outer:hover{
+  .intro-wrapper .core-icon-outer:hover{
     background-color: #f3f7fa;
   }
-  .core-icon-outer:hover .core-icon-inner img{
+  .intro-wrapper .core-icon-outer:hover .core-icon-inner img{
     opacity: 1;
   }
-  .core-values .card-body{
+  .intro-wrapper .core-values .card-body{
     padding: 0;
   }
 
-.c-section-title{
+  .intro-wrapper .c-section-title{
 position: absolute;
 left: 42%;
 bottom: 45px;
@@ -153,45 +151,45 @@ color: #f5f5f5;
 text-align: center;
 }
 
- .c-val-1{
+.intro-wrapper .c-val-1{
    position: absolute;
    bottom:10%;
-   left: 9%;
+   left: 5%;
  }
  
- .c-val-2{
+ .intro-wrapper .c-val-2{
 position: absolute;
 bottom:35%; 
-left: 15%;
+left: 9%;
  }
- .c-val-3{
+ .intro-wrapper .c-val-3{
 position: absolute;
-left:34%;
-top: 29%; 
+left:33%;
+top: 22.5%; 
  }
- .c-val-4{
+ .intro-wrapper .c-val-4{
 position: absolute;
-right: 26%;
-top:29%;
+right: 24%;
+top:22.5%;
 }
 
-.c-val-5{
+.intro-wrapper .c-val-5{
 position: absolute;
 bottom: 35%;
-right: 13.5%;
+right: 8%;
 }
 
-.c-val-6{
+.intro-wrapper .c-val-6{
 position: absolute;
-right:14.5%;
+right:10%;
 bottom:10%;
 }
 
 
-  .achievements .card{
+.intro-wrapper .achievements .card{
     background-color: rgba(0, 0, 0,0.1);
     box-shadow: none;
   }
-  .achievements .card-body{
+  .intro-wrapper .achievements .card-body{
      color: #ffffff;
   }
