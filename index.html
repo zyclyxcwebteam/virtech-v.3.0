@@ -598,12 +598,8 @@
       </div>
 
       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="container">
-          <div class="card-body row d-flex align-items-center px-0 pt-0">
-            <div class="col-12">
-              <p class="text-justify poc-text ml-2">With Proof of Concept, we offer you value added service in terms of advanced prototype creation which help in demonstrating our work potential. It also assists you to checkout its feasibility in your business process, hence optimizing the experience.</p>
-              <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-8 col-12">
+        <div class="container"> 
+              <p class="text-justify poc-text mx-3 px-1s">With Proof of Concept, we offer you value added service in terms of advanced prototype creation which help in demonstrating our work potential. It also assists you to checkout its feasibility in your business process, hence optimizing the experience.</p> 
                   <ul class="poc-list">
                     <li><img src="./img/icons/chevron-right (1).svg" alt="">
                       <p class="font-weight-bold mr-2">Forecast</p>
@@ -617,11 +613,7 @@
                       <p class="font-weight-bold mr-2">Cost Effective</p>
                       <p> - Saves your businesses time and money</p>
                     </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+                  </ul>  
         </div>
       </div>
     </div>
@@ -1321,15 +1313,39 @@ $('.industry').on('mouseenter',function(){
 })
  
 $("#industryInner .card").each(createIndHover);
+
+$("#masterContainer .card").each(playBorder);
+//$("#masterContainer .card").each(reverseBorder);
+
+function playBorder(i,element){
+  let border = gsap.timeline();      
+  border.to($(this).find('.top-line'),{width:'97%',duration:0.15})
+  border.to($(this).find('.right-line'),{height:'97%',duration:0.15})
+  border.to($(this).find('.bottom-line'),{width:'97%',duration:0.15})
+  border.to($(this).find('.left-line'),{height:'97%',duration:0.15})
+  $(element).hover(function(){
+    border.reverse()?border.play():border.reverse();
+  })
+}
+
+// function reverseBorder(){
+//   let border = gsap.timeline();      
+//   border.to($(this).find('.top-line'),{width:'97%',duration:0.15})
+//   border.to($(this).find('.right-line'),{height:'97%',duration:0.15})
+//   border.to($(this).find('.bottom-line'),{width:'97%',duration:0.15})
+//   border.to($(this).find('.left-line'),{height:'97%',duration:0.15})
+
+// }
+ 
  function createIndHover(i, element) {
-  let border = gsap.timeline({duration:0.2});      
-  border.to($(this).find('.top-line'),{width:'98%',right:0,duration:0.2})
-  border.to($(this).find('.right-line'),{height:'98%',duration:0.2})
-  border.to($(this).find('.bottom-line'),{width:'98%',duration:0.2})
-  border.to($(this).find('.left-line'),{height:'98%',duration:0.2})   
-  $(element).hover(doIt);  
+  let border = gsap.timeline();      
+  border.to($(this).find('.top-line'),{width:'97%',duration:0.15})
+  border.to($(this).find('.right-line'),{height:'97%',duration:0.15})
+  border.to($(this).find('.bottom-line'),{width:'97%',duration:0.15})
+  border.to($(this).find('.left-line'),{height:'97%',duration:0.15})
+   $(element).hover(doIt);
   function doIt() {
-     border.reversed() ? border.play() : border.reverse();     
+     border.reversed() ? border.play() : border.reverse();           
   }
   border.reverse();
 }

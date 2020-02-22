@@ -1,7 +1,7 @@
 .careers-banner{
     height: 73vh;
-    background-image: url('../../images/home/team.jpg');
-    background-position: center;
+    background-image: url('../../img/world-map.jpg');
+    background-position: top;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -15,7 +15,7 @@
       z-index: 10;
       width: 58.8%;
       height: 100%;
-      background-color: rgba(0, 144, 166,0.75);        
+      background-color: rgba(0, 144, 166,0.5);        
       transform: skew(200.25deg);
       left: -128px;
     }
