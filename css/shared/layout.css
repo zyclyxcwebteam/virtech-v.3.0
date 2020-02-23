@@ -45,7 +45,7 @@
     --bg-light:#f9f9f9;
 }
  
-/* .loading-wrapper{
+.loading-wrapper{
     height: 100vh;
     width: 100%;
     position:fixed;
@@ -53,9 +53,18 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color:hsl(217, 62%, 14%);          
+    background-color:hsl(217, 62%, 16%);     
     z-index:999;
-} */
+}
+.loading-wrapper img{
+    vertical-align: middle;
+    border-style: none;
+    position: relative;
+    top: 50%;
+    left: 50;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 body{
     padding-top:78.5px;

@@ -154,7 +154,7 @@ background-color: transparent;
 background-color: #00cdac;
 }
 .poc-wrapper .poc-btn svg{
-    animation: arrow 1.5s linear infinite alternate;
+    /* animation: arrow 1.5s linear infinite alternate; */
 }
 @keyframes arrow{
     0%{
