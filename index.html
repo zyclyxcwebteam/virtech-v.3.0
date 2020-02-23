@@ -28,9 +28,9 @@
 
 <body>
   <!-- ? loading Wrapper -->
-  <!-- <div class="loading-wrapper" id="page-loader">
+  <div class="loading-wrapper" id="page-loader">
     <img src="./img/logo.png" alt="">
-  </div> -->
+  </div>
   <!-- ? End loading Wrapper -->
 
   <!-- ? NAVIGATION BAR -->
@@ -1221,7 +1221,21 @@
 
     $(function () {
       let controller = new ScrollMagic.Controller();
+
+      //  logo animation
+      
+let homePageLoad = gsap.timeline({onComplete:startTitleCarousel})
+homePageLoad.to('.home-inner',{opacity:0,duration:0.01})
+homePageLoad.fromTo('#masterNavbar',{opacity:1 },{opacity:0,duration:0.01,ease:Expo.easeInOut})
+homePageLoad.fromTo('#page-loader img',{maxWidth:'50%'},{maxWidth:'170px',left:'10%',top:'6%',duration:2,delay:1})  
+homePageLoad.fromTo('#masterNavbar',{opacity:0 },{y:0,opacity:1,duration:0.01,ease:Expo.easeInOut})
+homePageLoad.to('#masterLogo',{opacity:1,duration:0.001}) 
+homePageLoad.to('.home-inner',{opacity:1,duration:0.1})
+homePageLoad.to("#page-loader", { duration: 1, top: "-110%", ease: Expo.easeInOut })
+
       //  Home page titles
+function startTitleCarousel(){
+
 
       let homeTitleCarousel = gsap.timeline({ repeat: -1 });
       homeTitleCarousel.fromTo('#title-1', { display: 'none', opacity: 0.7, y: 80 }, { display: 'block', opacity: 1, y: 0, duration: 2 })
@@ -1238,7 +1252,7 @@
 
       homeTitleCarousel.fromTo('#title-5', { display: 'none', opacity: 0.7, y: 80 }, { display: 'block', opacity: 1, y: 0, duration: 2 })
       homeTitleCarousel.to('#title-5', { y: -700, display: 'none', opacity: 0, duration: 1, delay: 5 })
-
+    }
 
       // Services section
       let bgColor = gsap.timeline();
