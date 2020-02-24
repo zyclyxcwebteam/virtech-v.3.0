@@ -27,12 +27,21 @@
   <!-- ? END - styles -->
 </head>
 
-<body>
+<body id="main">
   <!-- ? loading Wrapper -->
   <div class="loading-wrapper" id="page-loader">
     <!-- <img src="./img/logo.png" alt=""> -->
   </div>
   <!-- ? End loading Wrapper -->
+
+  <!-- ! side navigation -->
+<ul class="side-nav">
+  <li><a href="#main"><span></span></a></li>
+  <li><a href="#masterContainer"><span></span></a></li>
+  <li><a href="#industryMaster"><span></span></a></li>
+  <li><a href="#introContainer"><span></span></a></li>
+  <li><a href="#contactBanner"><span></span></a></li>
+</ul>
 
   <!-- ? NAVIGATION BAR -->
   <nav class="navbar navbar-expand-lg fixed-top master-navbar py-2" id="masterNavbar">
@@ -1597,6 +1606,27 @@ gsap.to("#slidesContainer", { x: "-75%", ease: Linear.easeNone, duration: 1, })
 })
 
 // end services slides dot navigation
+//  side navigation links
+//let controller = new ScrollMagic.Controller();
+controller.scrollTo(function (newpos) {
+    TweenMax.to(window, 1, {scrollTo: {y: newpos},duration:4, ease:Power4.easeInOut});
+});
+
+// side navigation part
+$(document).on("click", ".side-nav a[href^='#']", function (e) {
+    var id = $(this).attr("href");
+    if ($(id).length > 0) {
+        e.preventDefault();       
+      slideAnimation.pause();
+      companyIntroAnimation.pause();
+        // trigger scroll
+        controller.scrollTo(id);       
+        // if supported by the browser we can even update the URL.
+        if (window.history && window.history.pushState) {
+            //history.pushState("", document.title, id);
+        }
+    }
+});
 
 })
   </script>

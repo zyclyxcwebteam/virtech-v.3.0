@@ -151,7 +151,8 @@
     border: 2px solid hsl(217, 62%, 32%);
     border-radius: 50%;
     box-sizing: border-box;
-    display: inline-block;    
+    display: inline-block;
+    background-color:hsl(217, 62%, 14%); 
   }
   .s-slide-nav li span:hover{
     background-color:hsl(217, 62%, 62%);
