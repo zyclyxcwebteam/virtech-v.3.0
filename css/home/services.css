@@ -93,7 +93,7 @@
   .services-wrapper .services .service-cards .service-title{
   /* font-size: 1.4rem; */
   font-weight: 600;
-  color:#fff;
+  color:#f9f9f9;
   text-align: left;
   font-size: 1.5rem;
   }
@@ -103,18 +103,22 @@
     background-color:hsl(217, 62%, 15%);
     border-radius: 0px; 
   }
-  
+  .services-wrapper .service-cards .card .line{ 
+    background-color:hsl(217, 62%, 25%);
+  }
   .services-wrapper .service-cards .card-body{ 
   margin: 0.4rem;
   padding: 1rem; 
   border-radius: 0.4rem;
   text-decoration: none;
-  }
+  }   
   .services-wrapper .service-card-content{
     /* opacity: 0;   */
     transition: all .2s ease-in;
-    color: #f4f4f4;
+    color: #b8bdc4;
     font-size: 1rem;
+    margin-bottom: 0;
+    text-align: justify;
   }
   .services-wrapper .service-cards .card:hover{
     background-color:hsl(217, 62%, 10%);
@@ -129,4 +133,28 @@
     justify-content: center;   
     flex-direction: column;
   }
-   
+  .s-slide-nav{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: flex;
+  }
+  .s-slide-nav li{
+  margin: 5px;
+  list-style-type: none;
+  }
+  .s-slide-nav li span{
+    height: 15px;
+    width: 15px;
+    border: 2px solid hsl(217, 62%, 32%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;    
+  }
+  .s-slide-nav li span:hover{
+    background-color:hsl(217, 62%, 62%);
+    border: 3px solid hsl(217, 62%, 62%);
+    transform: scale(1.05);
+  }
