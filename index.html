@@ -36,11 +36,11 @@
 
   <!-- ! side navigation -->
 <ul class="side-nav">
-  <li><a href="#main"><span></span></a></li>
-  <li><a href="#masterContainer"><span></span></a></li>
-  <li><a href="#industryMaster"><span></span></a></li>
-  <li><a href="#introContainer"><span></span></a></li>
-  <li><a href="#contactBanner"><span></span></a></li>
+  <li><a href="#main"><span>Home</span></a></li>
+  <li><a href="#masterContainer"><span>Services</span></a></li>
+  <li><a href="#industryMaster"><span>Industries</span></a></li>
+  <li><a href="#introContainer"><span>We are</span></a></li>
+  <li><a href="#contactBanner"><span>Contact</span></a></li>
 </ul>
 
   <!-- ? NAVIGATION BAR -->
@@ -249,7 +249,7 @@
           <div class="row">
             <!-- title card -->
 
-            <div class="col-md-4 col-12 d-flex align-items-stretch my-2">
+            <div class="col-md-4 col-12 d-flex align-items-stretch my-2 s-card">
               <div class="card title-card title-card-1">
                 <div class="card-body">
                   <h2 class="card-title">New Age Technologies</h2>
@@ -1414,11 +1414,25 @@
         reverse: false
       })
         .setTween(indColor)
+        .setClassToggle("body", "light")
         .addTo(controller);
 
       // Industries section
 
-      // ! Industry Card hover 
+      let industryCards = gsap.timeline();
+      // industryCards.to('#industry-1',{duration:0.4,boxShadow:'14px 14px 35px -8px rgba(0, 0, 0,0.1)',border: '1px solid #02A9EA',backgroundColor: '#02A9EA',color: '#fff'})
+      // industryCards.to('#industry-2',{delay:4,duration:0.4,boxShadow:'14px 14px 35px -8px rgba(0, 0, 0,0.1)',border: '1px solid #02A9EA',backgroundColor: '#02A9EA',color: '#fff'})
+      // industryCards.to('#industry-3',{delay:4,duration:0.4,boxShadow:'14px 14px 35px -8px rgba(0, 0, 0,0.1)',border: '1px solid #02A9EA',backgroundColor: '#02A9EA',color: '#fff'})
+      // industryCards.to('#industry-4',{delay:4,duration:0.4,boxShadow:'14px 14px 35px -8px rgba(0, 0, 0,0.1)',border: '1px solid #02A9EA',backgroundColor: '#02A9EA',color: '#fff'})
+      // industryCards.to('#industry-5',{delay:4,duration:0.4,boxShadow:'14px 14px 35px -8px rgba(0, 0, 0,0.1)',border: '1px solid #02A9EA',backgroundColor: '#02A9EA',color: '#fff'})
+      // // ! Industry Card hover 
+      $('.industry').each(function () {
+          // $(this).removeClass('active');
+          console.log('update class')
+          setInterval(function(){
+        $(this).toggleClass("active");
+        }, 1000);
+        })
 
       $('.industry').on('mouseenter', function () {
         $('.industry').each(function () {
@@ -1611,7 +1625,7 @@ gsap.to("#slidesContainer", { x: "-75%", ease: Linear.easeNone, duration: 1, })
 controller.scrollTo(function (newpos) {
     TweenMax.to(window, 1, {scrollTo: {y: newpos},duration:4, ease:Power4.easeInOut});
 });
-
+/*
 // side navigation part
 $(document).on("click", ".side-nav a[href^='#']", function (e) {
     var id = $(this).attr("href");
@@ -1627,7 +1641,7 @@ $(document).on("click", ".side-nav a[href^='#']", function (e) {
         }
     }
 });
-
+*/
 })
   </script>
 </body>

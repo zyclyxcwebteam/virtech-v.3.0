@@ -64,13 +64,47 @@ font-family: 'Didact Gothic' !important;
 .side-nav li{
     list-style-type: none;
     margin: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
-.side-nav li a span{
+.side-nav li span{
+    opacity: 0;
+}
+.side-nav li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #b8bdc4;
+    transition: all 0.6 ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side-nav li a:after{
+    content: '';
     box-sizing: border-box;
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     display: inline-block;
-    border: 2px solid #b8bdc4;
+    border: 2px solid #f4f4f4;
+    border-radius: 50%;
+    margin-left: 6px;
+    opacity: 1;
+}
+.side-nav li a:hover:after{
+    background-color: #f4f4f4;
+}
+.side-nav li a:hover span{
+opacity: 1;
+}
+.light .side-nav li a:after{
+    border: 2px solid #0c1b33;
+}
+.light .side-nav li a{
+    color: hsl(217, 62%, 62%);
+}
+.light .side-nav li a:hover:after{     
+    background-color: #0c1b33;
 }
 /* PROOF OF CONCEPT */
 .poc-wrapper{          
