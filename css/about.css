@@ -8,18 +8,35 @@
 
 .about-home{
   height: 90vh;
+  /* background-color: #0c1b33; */
+  background-image: url('../img/Banner-1.png');
+  background-position: center;
   background-color: #0c1b33;
+   position: relative;
 } 
+/* .about-home:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(12, 26, 50,0.8);
+} */
 .about-home .hero-title{
-  color: #b8bdc4;
+  color: #f5f5f5;
   font-size: 3rem;
   line-height: 1.5;
+  z-index: 99;
 }
 .about-home .hero-text{
   font-size: 1.4rem;
-  color: #b8bdc4;
+  color: #f9f9f9;
   text-align: justify;
   margin-top: 0.6rem;
+  z-index: 99;
 }
  
  

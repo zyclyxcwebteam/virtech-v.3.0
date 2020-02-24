@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
 .home-banner{
     background-color:var(--bg-color);
     position: relative;
@@ -37,10 +38,12 @@ font-family: 'Didact Gothic' !important;
     bottom: 10px;
     left: 10px;
 }
+
 .home-banner .social-media-links ul{
     margin: 0;
     padding: 0;
 }
+
 .home-banner .social-media-links li{
     list-style-type: none;
     margin: 1rem;
@@ -52,9 +55,6 @@ font-family: 'Didact Gothic' !important;
     width: 85%;
     mix-blend-mode: screen;   
 }
-
-
-
 .side-nav{
     position: fixed;
     top: 50%;
@@ -179,7 +179,7 @@ background-color: transparent;
     outline: none;
     box-shadow: none;
     animation: shadow-pulse .8s infinite alternate;
-    color:#0c1b33;
+    color:#0c1b33;    
  }
  .poc-wrapper .poc-btn:hover{
     text-decoration: none;     
@@ -209,6 +209,7 @@ background-color: #00cdac;
      border-radius: 1.5rem;
      color: #b8bdc4;
      border-color: #0c1b33;
+     font-weight: 600;
 }
 /* OUR CLIENTS */
 .clients-wrapper{
