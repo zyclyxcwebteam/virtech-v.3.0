@@ -148,15 +148,15 @@
   <!-- ? END - NAVIGATION BAR -->
 
   <section class="container-fluid service-banner web-banner">
-    <div class="row banner-title d-flex justify-content-center align-items-end flex-column h-100 mx-auto px-2">
-      <div class="col-md-6 col-12">
+    <div class="row banner-title d-flex justify-content-end align-items-center h-100 mx-auto px-2">
+      <div class="col-md-5 col-12">
         <h2 class="service-name">Web Development</h2>
         <h3 class="service-tagline mt-4">Possess scalable capacity, necessary niche skills and deep expertise in bringing your idea live</h3>
       </div>
     </div>
   </section>
 
-  <section class="container-fluid service-overview" id="serviceOverview">
+  <section class="container-fluid service-overview web-overview" id="serviceOverview">
     <div class="row d-flex justify-content-center py-3">
       <div class="col-md-9 col-12 py-3 pl-5">
         <p>
@@ -206,9 +206,9 @@
     </div>
   </section>
 
-  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center flex-column">
-     
-      <h3 class="text-center contact-title">Find answers to your business needs <a href="#" class="service-contact" id="contactButton">Contact us</a> </h3>           
+  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center">     
+      <h3 class="text-center contact-title">Find answers to your business needs</h3>
+      <a href="#" class="service-contact" id="contactButton">Contact us</a>
   </section>
 
   <!-- ! Footer -->
@@ -387,7 +387,7 @@
   <script>
 // serviceContent
 let cardAnimation = gsap.timeline();
-cardAnimation.fromTo('.service-content-cards .col-12',{y:60,autoAlpha:0},{stagger:0.7,y:0,autoAlpha:1,duration:2})
+cardAnimation.fromTo('.service-content-cards .col-12',{y:60,autoAlpha:0},{stagger:0.4,y:0,autoAlpha:1,duration:1})
 
 let controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({

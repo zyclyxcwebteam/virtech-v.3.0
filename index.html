@@ -1373,13 +1373,13 @@
       //bgColor.to('body',{overflow:'visible',duration:0.01})
 
       // our services background color animation
-      bgColor.to('body',{overflow:'hidden',duration:0.01})      
+      //bgColor.to('body',{overflow:'hidden',duration:0.01})      
       bgColor.to('#slidesContainer', { autoAlpha: 0, duration: 0.001 });
       bgColor.to('#masterContainer', { '--service-bg': '#0c1b33', duration: 1.5 })
       bgColor.to('.s-hero-title', { color: '#f4f4f4' }, "-=1.5")
       bgColor.to('.s-hero-title', { top: '30px', fontSize: '3rem', transform: 'translate(-50%,0%)', duration: 1 })
       bgColor.to('#slidesContainer', { autoAlpha: 1, duration: 0.001 });
-      bgColor.to('body',{overflow:'visible',duration:0.01})
+      //bgColor.to('body',{overflow:'visible',duration:0.01})
       new ScrollMagic.Scene({
         triggerElement: "#masterContainer",
         triggerHook: 0.1,

@@ -1,58 +1,156 @@
 .rpa-banner {        
-    background-image: url("../../img/rpa/rpa-1.jpg");     
+    background-image: url("../../img/rpa/rpa-3.jpg");
+    background-position:center;
   }
+
+.rpa-overview{
+    background-color: #213154;
+}
+.rpa-banner.service-banner::after{    
+    background-image: linear-gradient(to top, #213154 1%,transparent,transparent ,transparent 100%);
+}
 
   .ai-banner{
     background-image: url("../../img/ai/ai-1.jpg");
 }
 
-.bc-banner{
-    background-image: url("../../img/blockchain/blockchain-1.jpg");
+.ai-overview{
+    background-color: #02425b;
+}
+.ai-banner.service-banner::after{ 
+    background-image: linear-gradient(to top, #02425b 1%,transparent, transparent 100%);
 }
 
+.bc-banner{
+    background-image: url("../../img/blockchain/bc-6.jpg");
+    /* background-size: contain; */
+    /*background-repeat: no-repeat;*/       
+}
+.bc-overview{
+    background-color: #011439;
+}
+.bc-banner.service-banner::after{
+    /* background-image: linear-gradient(to top right, transparent 0%, hsl(220, 97%, 11%,0.8) 100%),linear-gradient(-10deg, #011439 10%, transparent 50%); */
+    background-image: linear-gradient(to top, #011439 2%, transparent 100%);
+}
 .iot-banner{
     background-image: url("../../img/iot/iot-3.jpg");
+    /* background-position:; */
+}
+.iot-overview{
+    background-color: #01163c;
+}
+.iot-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #01163c 2%, transparent 100%);
+}
+.swd-banner{
+    background-image: url("../../img/swdev/swd-3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.swd-banner{
-    background-image: url("../../img/swdev/swd-1.jpg");
+.swd-overview{
+    background-color: #01163c;
+}
+.swd-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #01163c 2%, transparent 100%);
 }
 
 .mapp-banner{
     background-image: url("../../img/mapp/mapp-2.jpg");
-    background-position: center; 
+    background-position: 340px 50%;
+}
+.mapp-overview{
+    background-color: #01163c;
+}
+
+.mapp-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #01163c 2%, transparent 100%);
 }
 
 .web-banner{
-    background-image: url("../../img/web/web-1.jpg");     
+    background-image: url("../../img/web/web-1.jpg");  
+    background-position:left center;   
+}
+.web-overview{
+    background-color: #013d61;
 }
 
-.dm-banner{
-    background-image: url("../../img/web/web-1.jpg");
+.web-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 2%, transparent 100%);
 }
+.dm-banner{
+    background-image: url("../../img/dmark/digim-2.jpg");
+    background-position:left top;
+}
+.dm-overview{
+    background-color: #013c60;
+}
+
+.dm-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 2%, rgba(1, 61, 97,0.4) 100%);
+}
+
 
 .cs-banner{
     background-image: url("../../img/cybersecurity/cyber-3.jpg");
     background-position: center;
 }
+.cs-overview{
+    background-color: #013c60;
+}
+
+.cs-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 1%, transparent, transparent 100%);
+}
 
 .infosec-banner{
 background-image: url("../../img/infosec/infosec-1.jpg");
+background-position: center;
 }
+.infosec-overview{
+    background-color: #013c60;
+}
+
+.infosec-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 1%, transparent, transparent 100%);
+}
+
+
 
 .dvis-banner{
     background-image: url("../../img/datavis/datavis-2.jpg");
     background-position: center;
 }
+.dvis-overview{
+    background-color: #013c60;
+}
+
+.dvis-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 1%, transparent, transparent 100%);
+}
 
 .pa-banner{
 background-image: url("../../img/predictive/predictive-2.jpg");
+}
+.pa-overview{
+    background-color: #013c60;
+}
+
+.pa-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
 }
 
 .dcenter-banner{
 background-image: url("../../img/datacenter/datacenter-2.jpg");
 }
+.dcenter-overview{
+    background-color: #013c60;
+}
 
+.dcenter-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
+}
 .ns-banner{
 background-image: url("../../img/networksec/netsec-1.jpg");
 }

@@ -23,9 +23,9 @@
   <!-- ! header navbar-->
   <!-- TODO: hide header on scroll down, show on scroll up -->
   <!-- ? NAVIGATION BAR -->
-  <nav class="navbar navbar-expand-lg fixed-top master-navbar py-2" id="masterNavbar">
+  <nav class="navbar navbar-expand-lg fixed-top master-navbar py-1" id="masterNavbar">
     <div class="container-fluid">
-      <a href="./" class="navbar-brand ml-md-5 ml-sm-2"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
+      <a href="./" class="navbar-brand ml-2"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
       <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
         data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -35,15 +35,15 @@
       </button>
 
       <div id="navbarContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto mr-md-5 mr-sm-2">
+        <ul class="navbar-nav ml-auto">
           <!--  Home -->
 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
           </li>
 
           <!-- Services -->
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
             <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
               class="nav-link dropdown-toggle">Services</a>
 
@@ -147,16 +147,16 @@
   </nav>
   <!-- ? END - NAVIGATION BAR -->
   
-  <section class="container-fluid service-banner bc-banner">
-    <div class="row banner-title d-flex justify-content-center flex-column h-100 mx-auto px-2">
-      <div class="col-md-6 col-12 ml-md-3 ml-1">
+  <section class="container-fluid bc-banner service-banner">
+    <div class="row banner-title d-flex align-items-end flex-column h-100 mx-auto px-2">
+      <div class="col-md-6 col-12 ml-md-3 ml-1 mt-5">
         <h2 class="service-name">Blockchain</h2>
-        <h3 class="service-tagline mt-4">High efficiencies to deliver more accurate intelligence data</h3>
+        <h3 class="service-tagline mt-4">Offering a full suite of Blockchain development services</h3>
       </div>
     </div>
   </section>
 
-  <section class="container-fluid service-overview" id="serviceOverview">
+  <section class="container-fluid service-overview bc-overview" id="serviceOverview">
     <div class="row d-flex justify-content-center py-3">
       <div class="col-md-9 col-12 pl-5 py-3">
         <p>
@@ -251,26 +251,26 @@
     </div>
   </section>
 
-  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center flex-column">
-     
-      <h3 class="text-center contact-title">Find answers to your business needs <a href="#" class="service-contact" id="contactButton">Contact us</a> </h3>           
+  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center">     
+      <h3 class="text-center contact-title">Find answers to your business needs</h3>
+      <a href="#" class="service-contact" id="contactButton">Contact us</a>            
   </section>
 
   <!-- ! Footer -->
-  <footer class="footer pt-3">
+  <footer class="footer">
     <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
-      <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+      <div class="col-lg-3 col-md-4 col-12 f-phone">
         <p class="f-link mt-3">
           <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
         </p>
       </div>
-      <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+      <div class="col-lg-3 col-md-4 col-12 f-inquiries">
         <p class="f-link mt-3">
           <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
         </p>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+      <div class="col-lg-3 col-md-4 col-12 f-location">
         <p class="f-link mt-3">
           <a
             href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
@@ -278,7 +278,7 @@
         </p>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+      <div class="col-lg-3 col-md-4 col-12 f-follow">
         <div>
           <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
             <li>
@@ -298,7 +298,7 @@
         </div>
       </div>
     </div>
-    <p class="copyright">© 2018 - 2020 Virtech-ksa. All rights reserved</p>
+    <p class="copyright">© 2018 - 2020 Virtech. All rights reserved</p>
   </footer>
 
   <!-- ! Contact form modal -->
@@ -432,7 +432,7 @@
   <script>
 // serviceContent
 let cardAnimation = gsap.timeline();
-cardAnimation.fromTo('.service-content-cards .col-12',{y:60,autoAlpha:0},{stagger:0.7,y:0,autoAlpha:1,duration:2})
+cardAnimation.fromTo('.service-content-cards .col-12',{y:60,autoAlpha:0},{stagger:0.4,y:0,autoAlpha:1,duration:1})
 
 let controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({

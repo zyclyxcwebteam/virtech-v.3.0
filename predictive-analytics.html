@@ -156,7 +156,7 @@
     </div>
   </section>
 
-  <section class="container-fluid service-overview" id="serviceOverview">
+  <section class="container-fluid service-overview pa-overview" id="serviceOverview">
     <div class="row d-flex justify-content-center py-3">
       <div class="col-md-9 col-12 py-3 pl-5">
         <p>
@@ -265,9 +265,10 @@
     </div>
   </section>
 
-  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center flex-column">
+  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center">
      
-      <h3 class="text-center contact-title">Find answers to your business needs <a href="#" class="service-contact" id="contactButton">Contact us</a> </h3>           
+      <h3 class="text-center contact-title">Find answers to your business needs</h3>
+      <a href="#" class="service-contact" id="contactButton">Contact us</a>
   </section>
 
   <!-- ! Footer -->
@@ -446,7 +447,7 @@
   <script>
 // serviceContent
 let cardAnimation = gsap.timeline();
-cardAnimation.fromTo('.service-content-cards .col-8',{y:60,autoAlpha:0},{stagger:0.7,y:0,autoAlpha:1,duration:2})
+cardAnimation.fromTo('.service-content-cards .col-8',{y:60,autoAlpha:0},{stagger:0.4,y:0,autoAlpha:1,duration:1})
 
 let controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({

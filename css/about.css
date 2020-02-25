@@ -170,20 +170,26 @@ bottom: -25px;
   color: #b8bdc4;
   color: hsl(217, 62%, 92%);
 }
+
 .how-wedo-outer .do-content .do-text{
   color: #b8bdc4;
   /* padding: 1rem 0;
   margin: 1rem 0; */
-  opacity: 0;    
-  
+  opacity: 0;  
 }
 
 .how-wedo-outer .do-text p{
   margin-bottom: 0;
-  font-size: 0.9rem;
-  color: hsl(217, 62%, 72%);
+  font-size: 1rem;
+  color: hsl(217, 62%, 92%);
+  text-align: justify;   
 }
-
+.how-wedo-outer .do-text-2 p{
+padding-left: 9px !important;
+}
+.how-wedo-outer .do-text-3 p{
+  padding-left: 12px !important;
+  }
 /* Todo check it later */
 #contactButton{
   display: none;
