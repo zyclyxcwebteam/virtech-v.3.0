@@ -103,3 +103,11 @@ body{
     width: 2px;
     height: 0%;
   }
+
+  .btn-primary{
+    background-color: #0c1b33;
+    border-radius: 1.5rem;
+    color: #b8bdc4;
+    border-color: #0c1b33;
+    font-weight: 600;
+  }

@@ -99,48 +99,60 @@
   content: '';
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
-  right: 0;
+  left: 0;   
   width: var(--border-width);
   height: 3px;
   background-color: #00ffff;     
 }
 .how-wedo-outer .do-content .col{
   display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  padding: 0;
+  flex-direction: column;   
+  padding: 0;  
+  /* text-align: justify; */
+}
+
+.how-wedo-outer .do-content .we-do-top .col{
+  justify-content: flex-end;
+}
+
+.how-wedo-outer .do-content .we-do-bottom .col{
+  justify-content: flex-start;
 }
 .how-wedo-outer .do-content .do-icon{   
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 0;
+  /* opacity: 0; */
   position: relative;
-  --circle-opacity:1;   
+  --circle-color:0;   
 }
-.how-wedo-outer .do-icon::before{
+.how-wedo-outer .we-do-bottom .do-icon::before, .we-do-top .do-icon::after{
   content: '';
   position: fixed;
-  left: 50%;
-  bottom: 0;
+  left: 50%;  
   transform: translateX(-50%);
   height: 20px;
   width: 20px;
   border: 2px solid #00ffff;
-  background-color: hsl(187, 91%, 29%);   
+  background-color: #00ffff;   
   border-radius: 50%;
-  opacity: var(--circle-opacity);   
+  opacity: var(--circle-color);   
 }
- 
-.how-wedo-outer .do-icon:nth-child(1)::before{
-  /* top: -17px; */
-  top: 148px;
+.how-wedo-outer .we-do-bottom .do-icon::before{
+  top: -26px;
 }
-.how-wedo-outer .do-icon:nth-child(2)::before{
-  bottom: 148px;
+.how-wedo-outer .we-do-top .do-icon::after{
+bottom: -25px;
 }
+/*  
+.how-wedo-outer .do-icon:nth-child(odd)::before{
+   
+  top: 140px;
+}
+.how-wedo-outer .do-icon:nth-child(even)::before{
+  bottom: 140px;
+} */
 /* .do-icon:nth-child(3)::before{
   top: -18px;
 }
@@ -156,16 +168,20 @@
   font-size: 1.4rem;
   font-weight: 600;   
   color: #b8bdc4;
+  color: hsl(217, 62%, 92%);
 }
 .how-wedo-outer .do-content .do-text{
   color: #b8bdc4;
-  padding: 1rem 0;
-  margin: 1rem 0;
+  /* padding: 1rem 0;
+  margin: 1rem 0; */
   opacity: 0;    
+  
 }
 
 .how-wedo-outer .do-text p{
   margin-bottom: 0;
+  font-size: 0.9rem;
+  color: hsl(217, 62%, 72%);
 }
 
 /* Todo check it later */
