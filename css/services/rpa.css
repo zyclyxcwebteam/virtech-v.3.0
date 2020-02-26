@@ -7,7 +7,7 @@
     background-color: #213154;
 }
 .rpa-banner.service-banner::after{    
-    background-image: linear-gradient(to top, #213154 1%,transparent,transparent ,transparent 100%);
+    background-image: linear-gradient(to top, #213154 1%,rgba(33, 49, 84,0.2) 100%);
 }
 
   .ai-banner{
@@ -18,7 +18,7 @@
     background-color: #02425b;
 }
 .ai-banner.service-banner::after{ 
-    background-image: linear-gradient(to top, #02425b 1%,transparent, transparent 100%);
+    background-image: linear-gradient(to top, #02425b 1%, rgba(2, 66, 91,0.3) 100%);
 }
 
 .bc-banner{
@@ -44,7 +44,7 @@
     background-image: linear-gradient(to top, #01163c 2%, transparent 100%);
 }
 .swd-banner{
-    background-image: url("../../img/swdev/swd-3.jpg");
+    background-image: url("../../img/swdev/swd-2.jpg");
     background-size: cover;
     background-position: center;
 }

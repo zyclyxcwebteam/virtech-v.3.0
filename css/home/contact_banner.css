@@ -1,7 +1,7 @@
 .careers-banner{
-    height: 80.5vh;
+    height: 65vh;
     background-image: url('../../img/contact-banner.jpg');
-    background-position:top;
+    background-position:top center;
     background-attachment: fixed;
     background-size: cover;
     position: relative;

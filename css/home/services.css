@@ -81,13 +81,13 @@
   
   .services-wrapper .services .title-card .card-body{
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
     flex-direction: column;
     /* box-shadow: 10px 10px 20px -10px rgba(255,255,255,0.2); */
   }
   .services-wrapper .services .title-card .card-title{
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 700;
     color:#f4f4f4;
     text-align: center;
