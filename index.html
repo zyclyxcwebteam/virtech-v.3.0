@@ -141,11 +141,11 @@
               <!-- ! Infrastructure Services -->
               <li class="dropdown-submenu dropright">
                 <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructue
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructure
                   Services</a>
                 <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
                   <li>
-                    <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data Cetner Services</a>
+                    <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data Center Services</a>
                   </li>
                   <li>
                     <a href="./network-and-security.html" class="dropdown-item">Network and Security</a>
@@ -212,7 +212,7 @@
       <div
         class="col-md-6 col-12 order-0 order-md-1 order-sm-0 home-video d-flex justify-content-center align-items-center">
         <video autoplay muted loop class="bg-video">
-          <source src="./img/animation_simple_by_gleb.mp4" type="video/mp4" />
+          <source src="./img/video-3.mp4" type="video/mp4" />
         </video>
         <div class="home-circle"></div>
       </div>
@@ -1315,7 +1315,7 @@
       homePageLoad.to("#masterNavbar", { position: 'static', duration: 0.001 })
       homePageLoad.to('#masterLogo', { position: 'absolute', duration: 0.001, left: '50%', top: '50%', transform: 'translate(-50%,-50%)', maxWidth: '30%', zIndex: '1300' })
       homePageLoad.to("#page-loader", { duration: 1, top: "-110%", ease: Expo.easeInOut })
-      homePageLoad.to('#masterLogo', { maxWidth: '150px', left: '77px', top: '10px', transform: 'translate(0%,0%)', duration: 2, ease: "none", delay: 1 })
+      homePageLoad.to('#masterLogo', { maxWidth: '150px', left: '40px', top: '5px', transform: 'translate(0%,0%)', duration: 2, ease: "none", delay: 1 })
       homePageLoad.to('#masterLogo', { position: 'relative', left: 0, top: 0, duration: 0.001 })
       homePageLoad.to("#masterNavbar", { position: 'fixed', duration: 0.001 })
       homePageLoad.to('#navbarContent', { opacity: 1, duration: 0.001 })
@@ -1645,7 +1645,7 @@ const navbar = document.querySelector(".navbar");
 const homeContainer = document.querySelector("#home");
 
 const sectionOneOptions = {
-  rootMargin: "10px 0px 0px 0px"
+  rootMargin: "-60px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function (entries) {
