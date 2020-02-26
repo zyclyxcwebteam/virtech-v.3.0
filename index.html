@@ -1315,7 +1315,7 @@
       homePageLoad.to("#masterNavbar", { position: 'static', duration: 0.001 })
       homePageLoad.to('#masterLogo', { position: 'absolute', duration: 0.001, left: '50%', top: '50%', transform: 'translate(-50%,-50%)', maxWidth: '30%', zIndex: '1300' })
       homePageLoad.to("#page-loader", { duration: 1, top: "-110%", ease: Expo.easeInOut })
-      homePageLoad.to('#masterLogo', { maxWidth: '150px', left: '77px', top: '10px', transform: 'translate(0%,0%)', duration: 2, ease: "none", delay: 1 })
+      homePageLoad.to('#masterLogo', { maxWidth: '150px', left: '40px', top: '5px', transform: 'translate(0%,0%)', duration: 2, ease: "none", delay: 1 })
       homePageLoad.to('#masterLogo', { position: 'relative', left: 0, top: 0, duration: 0.001 })
       homePageLoad.to("#masterNavbar", { position: 'fixed', duration: 0.001 })
       homePageLoad.to('#navbarContent', { opacity: 1, duration: 0.001 })
@@ -1645,7 +1645,7 @@ const navbar = document.querySelector(".navbar");
 const homeContainer = document.querySelector("#home");
 
 const sectionOneOptions = {
-  rootMargin: "10px 0px 0px 0px"
+  rootMargin: "-60px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function (entries) {
