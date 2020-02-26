@@ -1,6 +1,6 @@
 /* ! Contact Modal */ 
 .contact-wrapper {     
-  color:#b5caee;
+    color:#b5caee;
     background-color: #0c1b33;     
     position: fixed;
     bottom: 0;
@@ -8,11 +8,10 @@
     height: 0;
     display: block;
     z-index: 1200;          
-    overflow-y: scroll;
+    overflow:hidden;
 }
-
 .contact-wrapper h2{
-  color:#b5caee;
+  color:#f9f9f9;
 } 
 .contact-wrapper .form-group .form-control:focus{
     box-shadow: none;
@@ -20,35 +19,12 @@
 .contact-wrapper .form-control{
     border-radius: 0;
 } 
-.contact-wrapper .contact-info{     
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}  
-.contact-wrapper .contact-info i{
-    font-size: 1.1rem;
-    /* color: #17bb51; */
-    color:hsl(217, 62%, 52%);
-    margin-right: 0.8rem;  
-} 
 .contact-wrapper .contact-info a{
     text-decoration: none;     
-    display: flex;     
-    align-items: center; 
-}
-
-.contact-wrapper .contact-info p{
-    margin: 0;
-    color:#b5caee;
-    font-size: 1.3rem;
-    text-align: left;     
+    color:hsl(218, 63%, 72%);     
 }
   
-/* .contact-info .mail{
-    font-size: 24px;
-} */
-  
-  .contact-wrapper .form-group {
+.contact-wrapper .form-group {
     margin-bottom: 1rem;
   }
  
@@ -72,10 +48,13 @@
   }
   
   .contact-wrapper label{
-    color:#b5caee;
+    color:#f9f9f9;
     font-size: 1rem;
     font-weight: normal;
     padding-left: 10px;
+  }
+  .contact-wrapper label span{
+    color: #ff6347;
   }
   .contact-wrapper .form-control{
     border: none;
@@ -84,43 +63,23 @@
     background-color: transparent;
     border-bottom:1px solid hsl(217, 62%, 16%);
   }
-  
-  .contact-wrapper .btn{
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px;
-    font-size:1.5rem;
-    color: #04a7bd;     
-    background: rgba(0, 187, 212, 0.096);
-    transition: all .2s ease-in-out;
-  }
-  .contact-wrapper .btn:hover{
-    background: rgba(0, 187, 212, 0.06);
-    transition: all 0.2s ease-in-out;
-  }
-  .contact-wrapper .social-network{
+   .contact-wrapper .social-network{
     margin: 0;
   }
   .contact-wrapper .social-network li{
       list-style-type: none;
-      margin: 2px 4px;
+      margin: 0 5px;
   }
-  .contact-wrapper .social-network  li a i{       
-      font-size: 1.5rem;
-  }
+   
  
 
   /* Todo - check it later */
   #contactClose{
-    position: absolute;
-    /* right: -80px; */
+    position: absolute;     
     right:50px;
     top:50px;
     border: none;
-    color: #fff;
-    
+    color: #fff;    
     background:hsl(217, 62%, 18%);     
     display: flex;
     align-items: center;
@@ -161,18 +120,8 @@
   .contact-wrapper{
     overflow: auto;
   }
-  .contact-inner .display-4{
-  padding-top: 2rem;
-  font-size: 40px;
-  }
-  /* .contact-inner p:first-child{
-    color: red !important;
-    margin-bottom: 50px;
-  } */
-  .contact-inner label{
-    font-size: 16px !important;
-  }
-  .contact-inner .form-control{
-    font-size: 21px !important;
+  #contactClose{
+    top: 0;
+    right: 0;
   }
  }

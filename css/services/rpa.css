@@ -151,21 +151,36 @@ background-image: url("../../img/datacenter/datacenter-2.jpg");
 .dcenter-banner.service-banner::after{  
     background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
 }
+
 .ns-banner{
 background-image: url("../../img/networksec/netsec-1.jpg");
+background-position:top;
+}
+.ns-overview{
+    background-color: #013c60;
 }
 
+.ns-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
+}
 .bd-banner{
     background-image: url("../../img/bigdata/bigdata-1.jpg");
 }
+.bd-overview{
+    background-color: #013c60;
+}
 
+.bd-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
+}
 .eu-banner{
     background-image: url("../../img/endusercomputing/enduser-2.jpg");
 }
-
-.bd-overview{
-    background-color: #0c0038;
+.eu-overview{
+    background-color: #013c60;
 }
-.dc-overview{
 
+.eu-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
 }
+ 

@@ -67,7 +67,7 @@
 }
 
 body{
-    padding-top:78.5px;
+    padding-top:56px;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;          
     background-color:var(--bg-color);       
 } 
@@ -110,4 +110,19 @@ body{
     color: #b8bdc4;
     border-color: #0c1b33;
     font-weight: 600;
+  }
+
+  .btn-secondary{
+    background-color: hsl(217, 62%, 18%);
+    border-radius: 1.5rem;
+    color: #b8bdc4;
+    border:2px solid hsl(217, 62%, 30%);
+    font-weight: 600;
+    padding:0.5rem 3rem;
+  }
+  .btn-secondary:hover{
+    background-color: hsl(217, 62%, 24%);
+  }
+  .btn-secondary:active,.btn-secondary:foucs{
+    background-color: hsl(217, 62%, 20%);
   }

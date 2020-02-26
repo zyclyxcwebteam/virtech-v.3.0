@@ -1,20 +1,19 @@
 :root{
   --mission-bg:'#0c1b33'
 }
-#about .nav-item .active{
+#about .nav-item.active .nav-link{
   font-weight: 600;
   color:#00bdd5;
 }
 
 .about-home{
   height: 90vh;
-  /* background-color: #0c1b33; */
-  background-image: url('../img/Banner-1.png');
-  background-position: center;
   background-color: #0c1b33;
+  background-image: url('../img/about-us.jpg');
+  background-position: center;   
    position: relative;
 } 
-/* .about-home:after{
+.about-home:after{
   content: "";
   position: absolute;
   height: 100%;
@@ -24,7 +23,7 @@
   bottom: 0;
   right: 0;
   background-color: rgba(12, 26, 50,0.8);
-} */
+}
 .about-home .hero-title{
   color: #f5f5f5;
   font-size: 3rem;

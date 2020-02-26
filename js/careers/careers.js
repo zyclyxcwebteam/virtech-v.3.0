@@ -22,7 +22,7 @@ function formatDescription(description){
     .then(function (data) {       
       console.log(data)
       html += data.map(function (data) {                
-        return (`<div class="col-md-4 col-12 border box">
+        return (`<div class="col-md-4 col-12 border box m-2">
         <div class="box-content mx-3">    
         <div class="face front">
                   <div class="front-text">
@@ -35,7 +35,7 @@ function formatDescription(description){
         <div class="face Back">
                   <div class="Back-text">
                   <h5 class="pin1 text-center mb-5">${data.title}</h5>
-                    <a href="./job-details.html" class="btn btn-block  btn-info">Read More</a>
+                    <a href="./job-details.html?id=${data.id}" class="btn btn-block  btn-info">Read More</a>
                   </div>
         </div>
         </div>

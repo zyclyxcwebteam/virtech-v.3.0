@@ -4,7 +4,7 @@
 .home-banner{
     background-color:var(--bg-color);
     position: relative;
-    height: 90vh;
+    height: 92vh;
 }
 
 /* .home-inner{
@@ -59,6 +59,7 @@ font-family: 'Didact Gothic' !important;
     position: fixed;
     top: 50%;
     right: 10px;
+    transform: translateY(-50%);
     z-index: 99;
 }
 .side-nav li{
