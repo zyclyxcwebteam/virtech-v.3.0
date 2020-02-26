@@ -52,9 +52,25 @@ font-family: 'Didact Gothic' !important;
     position: relative;
 } 
 .home-banner .bg-video{
-    width: 85%;
-    mix-blend-mode: screen;   
+    width: 95%;
+    mix-blend-mode:lighten;  
+    border: 2px solid green;
+    height: 100%;    
+    position: relative; 
+    z-index: 1;
 }
+/* .home-banner .bg-video::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 90%;
+    width: 90%;
+    border: 2px solid yellow;
+    z-index:11;
+} */
 .side-nav{
     position: fixed;
     top: 50%;
