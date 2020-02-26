@@ -10,7 +10,7 @@
     overflow: hidden;  
     -webkit-perspective: 1000;
     perspective: 1000;
-    height: 89vh;     
+    height: 92vh;     
     background-color:var(--service-bg);
     position: relative;          
   }
