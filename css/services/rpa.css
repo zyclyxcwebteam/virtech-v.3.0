@@ -174,7 +174,8 @@ background-position:top center;
     background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
 }
 .eu-banner{
-    background-image: url("../../img/endusercomputing/enduser-2.jpg");
+    background-image: url("../../img/endusercomputing/enduser-3.jpg");
+    background-position: center;
 }
 .eu-overview{
     background-color: #013c60;
