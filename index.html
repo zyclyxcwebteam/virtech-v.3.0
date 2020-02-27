@@ -1254,11 +1254,11 @@
       }
 
       // Services section
-      let bgColor = gsap.timeline({onComplete:moveSlideToLeft});
+      let bgColor = gsap.timeline();
 
-      function moveSlideToLeft(){
-        gsap.to("#slidesContainer", { x: "-0.001%", ease: Linear.easeNone, duration: 0.01, })
-      }
+      // function moveSlideToLeft(){
+      //   gsap.to("#slidesContainer", { x: "-0.001%", ease: Linear.easeNone, duration: 0.01, })
+      // }
 
       //bgColor.to('body',{overflow:'hidden',duration:0.01})
       //bgColor.to('body',{overflow:'visible',duration:0.01})
@@ -1585,10 +1585,12 @@ const sectionOneObserver = new IntersectionObserver(function (entries) {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
       navbar.classList.remove("navbar-dark")
-      navbar.classList.add("navbar-light");       
+      navbar.classList.add("navbar-light");
+      document.querySelector('.side-nav').classList.remove('hide')             
     } else {
       navbar.classList.remove("navbar-light");
-      navbar.classList.add("navbar-dark");       
+      navbar.classList.add("navbar-dark");
+      document.querySelector('.side-nav').classList.add('hide')
     }
   });
 },

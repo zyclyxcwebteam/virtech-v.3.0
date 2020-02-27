@@ -136,6 +136,9 @@ opacity: 1;
 .light.side-nav li a:hover:after{     
     background-color: #0c1b33;
 }
+.side-nav.hide{
+    display:none;
+}
 /* PROOF OF CONCEPT */
 .poc-wrapper{          
     background-color: #00cdac;
@@ -244,7 +247,7 @@ background-color: #00cdac;
 /* OUR CLIENTS */
 .clients-wrapper{
     /* background-color: #f4f4f4;      */
-    background-color: #e8e9f0;
+    background-color: #f2f3f9;
 }
 
 .clients-wrapper .client-title{
