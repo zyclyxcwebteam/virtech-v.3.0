@@ -31,7 +31,7 @@
   .contact-wrapper .form-control:focus,
   .contact-wrapper .form-control:valid{
   /* .contact-wrapper .form-control:invalid{ */
-    background: #0a0e186c;
+    background: hsl(217, 62%, 16%);
     border-bottom: 1px solid rgba(204, 204, 204, 0.404);
   }
   .contact-wrapper .form-control.is-invalid:focus,
@@ -59,7 +59,7 @@
   .contact-wrapper .form-control{
     border: none;
     color: #fff;     
-    font-size: 1.5rem;     
+    font-size: 1.4rem;     
     background-color: transparent;
     border-bottom:1px solid hsl(217, 62%, 16%);
   }

@@ -54,7 +54,7 @@
     right: 0;
     left: 0;
     background-color:hsl(217, 62%, 12%);     
-    z-index:9995;
+    z-index:1250;
 }
 .loading-wrapper img{
     vertical-align: middle;
@@ -69,7 +69,7 @@
 body{
     padding-top:56px;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;          
-    background-color:var(--bg-color);       
+    background-color:var(--bg-color);      
 } 
 
 .line {

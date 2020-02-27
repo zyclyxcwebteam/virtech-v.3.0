@@ -147,9 +147,10 @@
   }
   .s-slide-nav li{
   margin: 5px;
-  list-style-type: none;
+  list-style-type: none; 
   }
-  .s-slide-nav li span{
+  
+  .s-slide-nav a span{
     height: 5px;
     width: 30px;
     /* border: 2px solid ; */
@@ -161,4 +162,9 @@
   .s-slide-nav li span:hover{            
     height: 6px;
     background-color: hsl(217, 62%, 32%);
+  }
+
+  .s-slide-nav a.active span{
+    background-color: #02A9EA;     
+     
   }
