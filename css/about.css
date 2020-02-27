@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Alegreya|B612+Mono|IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|B612+Mono|Crimson+Pro|Crimson+Text|IBM+Plex+Serif&display=swap');
 
 :root{
   --mission-bg:#013d61
@@ -56,8 +56,11 @@
    font-family: 'Alegreya';
    font-family: 'B612 Mono';
    font-family: 'IBM Plex Serif';
-   font-weight: 500;
+   font-family: 'Crimson Text';
+   /* font-family: 'Crimson Pro'; */
+   font-weight: 700;
    color:hsl(217, 62%, 92%);
+   color: hsl(122, 93%, 48%);
    font-size: 3rem;
  }
 .about-home .hero-title{
@@ -137,6 +140,10 @@
   padding-bottom: 3rem;   
   position: relative;
   --border-width:0%;       
+}
+.how-wedo-outer .we-do-title{
+  font-size: 2.5rem;
+  color: hsl(217, 62%, 72%);
 }
 .how-wedo-outer .do-content:after{  
   position: absolute;
