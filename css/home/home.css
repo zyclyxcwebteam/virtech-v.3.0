@@ -2,7 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
 
-.home-banner{
+#main .nav-item.active .nav-link{
+    font-weight: 600;
+    color:#00bdd5;
+  }
+
+  .home-banner{
     /* background-color:var(--bg-color); */
     background-color: rgba(12, 27, 51,0.5);
     position: relative;
