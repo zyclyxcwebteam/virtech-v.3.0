@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css?family=Alegreya|B612+Mono|IBM+Plex+Serif&display=swap');
+
 :root{
   --mission-bg:#013d61
 }
@@ -49,9 +51,18 @@
  .about-overview{
    background-color: #013d61;
  }
+ .about-home .fade-title{
+   display: none;
+   font-family: 'Alegreya';
+   font-family: 'B612 Mono';
+   font-family: 'IBM Plex Serif';
+   font-weight: 500;
+   color:hsl(217, 62%, 92%);
+   font-size: 3rem;
+ }
 .about-home .hero-title{
-  color: #f5f5f5;
-  font-size: 3rem;
+  color:hsl(217, 62%, 92%);
+  font-size: 2.5rem;
   line-height: 1.5;
   z-index: 99;   
   /* border-radius: 50%;
@@ -61,8 +72,8 @@
   background-image: linear-gradient(to top, rgba(1, 61, 97,0.4) 1%,transparent 100%); */
 }
 .about-overview .hero-text{
-  font-size: 1.2rem;
-  color: #f9f9f9;
+  font-size: 1.3rem;
+  color:hsl(217, 62%, 92%);
   text-align: justify;
   margin-top: 0.6rem;
   z-index: 99;

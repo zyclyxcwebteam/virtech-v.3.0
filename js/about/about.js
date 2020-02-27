@@ -1,5 +1,27 @@
 $(function(){     
 let controller = new ScrollMagic.Controller();
+
+// gsap.to('.about-home .fade-title',{stagger:1,keyframes: [{display:'block',opacity:0,duration:1},{display:'none',duration:0.2,opacity:1}]})
+aboutTitles = gsap.timeline({repeat:-1});
+aboutTitles.fromTo('#fadeTitle-1',{display:'none',y:30,opacity:0},{display:'inline-block',y:0,opacity:1,duration:0.5})
+aboutTitles.to('#fadeTitle-1',{display:'none',duration:0.01,delay:2})
+
+aboutTitles.fromTo('#fadeTitle-2',{display:'none',y:30,opacity:0},{display:'inline-block',y:0,opacity:1,duration:0.5})
+aboutTitles.to('#fadeTitle-2',{display:'none',duration:0.01,delay:2})
+
+aboutTitles.fromTo('#fadeTitle-3',{display:'none',y:30,opacity:0},{display:'inline-block',y:0,opacity:1,duration:0.5})
+aboutTitles.to('#fadeTitle-3',{display:'none',duration:0.01,delay:2})
+
+aboutTitles.fromTo('#fadeTitle-4',{display:'none',y:30,opacity:0},{display:'inline-block',y:0,opacity:1,duration:0.5})
+aboutTitles.to('#fadeTitle-4',{display:'none',duration:0.01,delay:2})
+
+aboutTitles.fromTo('#fadeTitle-5',{display:'none',y:30,opacity:0},{display:'inline-block',y:0,opacity:1,duration:0.5})
+aboutTitles.to('#fadeTitle-5',{display:'none',duration:0.01,delay:2})
+
+aboutTitles.fromTo('#fadeTitle-6',{display:'none',y:30,opacity:0},{display:'inline-block',y:0,opacity:1,duration:0.5})
+aboutTitles.to('#fadeTitle-6',{display:'none',duration:0.01,delay:2})
+
+
 gsap.to('.do-content',{'--border-width':'0%',duration:0.001})
 
 let howWeDo = gsap.timeline();

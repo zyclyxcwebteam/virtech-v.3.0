@@ -46,7 +46,7 @@
 .swd-banner{
     background-image: url("../../img/swdev/swd-2.jpg");
     background-size: cover;
-    background-position: center;
+    background-position:top center;
 }
 
 .swd-overview{
@@ -70,7 +70,7 @@
 
 .web-banner{
     background-image: url("../../img/web/web-1.jpg");  
-    background-position:left center;   
+    background-position:top center;   
 }
 .web-overview{
     background-color: #013d61;
@@ -106,7 +106,7 @@
 
 .infosec-banner{
 background-image: url("../../img/infosec/infosec-1.jpg");
-background-position: center;
+background-position: top center;
 }
 .infosec-overview{
     background-color: #013c60;
@@ -154,7 +154,7 @@ background-image: url("../../img/datacenter/datacenter-2.jpg");
 
 .ns-banner{
 background-image: url("../../img/networksec/netsec-1.jpg");
-background-position:top;
+background-position:top center;
 }
 .ns-overview{
     background-color: #013c60;
