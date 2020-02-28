@@ -59,8 +59,7 @@
    font-family: 'Crimson Text';
    /* font-family: 'Crimson Pro'; */
    font-weight: 700;
-   color:hsl(217, 62%, 92%);
-   color: hsl(122, 93%, 48%);
+   color:hsl(217, 62%, 92%);    
    font-size: 3rem;
  }
 .about-home .hero-title{

@@ -1,7 +1,6 @@
 {
   "name": "virtech-new",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/Zyclyx-Web-Developers/virtech-new/issues"
   },
-  "homepage": "https://github.com/Zyclyx-Web-Developers/virtech-new#readme"
+  "homepage": "https://github.com/Zyclyx-Web-Developers/virtech-new#readme",
+  "description": ""
 }

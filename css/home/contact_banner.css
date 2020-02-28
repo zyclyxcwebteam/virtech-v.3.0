@@ -1,8 +1,8 @@
-.careers-banner{
+.contact-banner{
     height: 53vh;
-    background-image: url('../../img/contact-banner.jpg');
-    background-position:top center;
-    background-attachment: fixed;
+    background-image: url('../../img/contact-new.jpg');
+    background-position:top;
+    /* background-attachment: fixed; */
     background-size: cover;
     position: relative;
     color: #fff; 
@@ -15,7 +15,7 @@
       z-index: 10;
       width:100%;
       height: 100%;    
-   background-color: rgba(12, 27, 51,0.5);
+   background-color: rgba(12, 27, 51,0.9);
       /* background-color: rgba(0, 144, 166,0.7); */
       /* background-color: rgba(1, 137, 81,0.7);*/
       /* transform: skew(200.25deg); */
@@ -31,17 +31,18 @@
       background-color: rgba(1, 137, 81,0.75);       
       transform: skew(200.25deg);      
     }  */
-    .career-text{
+    .contact-banner .contact-text{
       z-index: 20;
     }
     
-    .career-text h3{
+    .contact-banner .contact-title{
       font-size: 3rem;
       font-weight: 600;
+      margin: 0;
     }
     
-    .career-text p{
-      font-size: 1.5rem;
-      margin: 1rem auto;
-      color: #fff;   
+    .contact-banner .contact-caption{
+      font-size: 1.2rem;
+      margin: 0 auto;
+      color: #b8bdc4;   
     }

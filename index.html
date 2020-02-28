@@ -35,13 +35,13 @@
   <!-- ? End loading Wrapper -->
 
   <!-- ! side navigation -->
-<ul class="side-nav">
-  <li><a href="#main"><span>Home</span></a></li>
-  <li><a href="#masterContainer"><span>Services</span></a></li>
-  <li><a href="#industryMaster"><span>Industries</span></a></li>
-  <li><a href="#introContainer"><span>Who We Are</span></a></li>
-  <li><a href="#contactBanner"><span>Contact</span></a></li>
-</ul>
+  <ul class="side-nav">
+    <li><a href="#main"><span>Home</span></a></li>
+    <li><a href="#masterContainer"><span>Services</span></a></li>
+    <li><a href="#industryMaster"><span>Industries</span></a></li>
+    <li><a href="#introContainer"><span>Who We Are</span></a></li>
+    <li><a href="#contactBanner"><span>Contact</span></a></li>
+  </ul>
 
   <!-- ? NAVIGATION BAR -->
   <nav class="navbar navbar-expand-lg fixed-top master-navbar navbar-dark py-1" id="masterNavbar">
@@ -116,10 +116,26 @@
                   aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
                 <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
                   <li>
-                    <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
+                    <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
                   </li>
                   <li>
-                    <a href="./information-security.html" class="dropdown-item">Information Security</a>
+                    <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
+                  </li>
+
+                  <li>
+                    <a href="./application_and_data_security.html" class="dropdown-item">Application & Data Security</a>
+                  </li>
+
+                  <li>
+                    <a href="./governance-and-compliance.html" class="dropdown-item">Governance & Compliance</a>
+                  </li>
+
+                  <li>
+                    <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint & Mobile Security</a>
+                  </li>
+
+                  <li>
+                    <a href="./identity_and_access_management.html" class="dropdown-item">Identity & Access Management</a>
                   </li>
                 </ul>
               </li>
@@ -148,13 +164,16 @@
                     <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data Center Services</a>
                   </li>
                   <li>
-                    <a href="./network-and-security.html" class="dropdown-item">Network and Security</a>
-                  </li>                  
+                    <a href="./system-infrastructure.html" class="dropdown-item">System Infrastructure</a>
+                  </li>
                   <li>
                     <a href="./end-user-computing.html" class="dropdown-item">End User Computing</a>
                   </li>
                 </ul>
               </li>
+
+              <!-- ! Outsourcing Services -->
+              <li class="nav-item"><a href="./oursourcing-service.html" class="dropdown-item">Outsourcing Services</a></li>
             </ul>
           </li>
           <!-- End Level one -->
@@ -173,8 +192,7 @@
   <section class="container-fluid home-banner" id="home">
     <div class="row home-inner h-100">
       <!-- ? titles -->
-      <div
-        class="col-12 order-1 order-md-0 order-sm-1 home-titles d-flex justify-content-center align-items-center">
+      <div class="col-12 order-1 order-md-0 order-sm-1 home-titles d-flex justify-content-center align-items-center">
         <div class="hero-carousel">
           <div class="title-container" id="title-1">
             <h1 class="hero-title text-center">
@@ -211,8 +229,8 @@
       <!-- ? video -->
 
       <div class="home-video">
-        <video src="./img/home.mp4" autoplay muted loop></video>
-       </div>
+        <video src="./img/home.mp4" id="bannerVideo" autoplay muted loop></video>
+      </div>
       <!-- <div
         class="col-md-6 col-12 order-0 order-md-1 order-sm-0 home-video d-flex justify-content-center align-items-center">
         <video autoplay muted loop class="bg-video">
@@ -243,45 +261,50 @@
 
 
   <!-- ? Our Services -->
-  <div class="services-wrapper" id="masterContainer">
-    <h2 class="text-center s-hero-title">Services</h2>
-    <div id="slidesContainer" class="services">
-      <section class="slide slide-1 mt-3">
+<section class="services-wrapper" id="masterContainer"> 
+   <h2 class="s-hero-title">Services</h2>
+  <div id="serviceCarousel" class="carousel slide h-100" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#serviceCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#serviceCarousel" data-slide-to="1"></li>
+      <li data-target="#serviceCarousel" data-slide-to="2"></li>
+      <li data-target="#serviceCarousel" data-slide-to="3"></li>
+      <li data-target="#serviceCarousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner h-100">
+      <!-- ! slide - 1 -->
+      <div class="carousel-item item-1 h-100 active">
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100 px-5">
 
-        <div class="container d-flex justify-content-center align-items-center h-100">
-
-          <div class="row">
-            <!-- title card -->
-
-            <div class="col-md-4 col-12 d-flex align-items-stretch my-2 s-card">
+          <div class="row services px-5">
+            <!-- ? title card -->
+            <div class="col-md-3 col-12 d-flex s-card">
               <div class="card title-card title-card-1">
                 <div class="card-body">
                   <h2 class="card-title">New Age Technologies</h2>
                 </div>
               </div>
             </div>
-
-            <!-- service cards -->
-            <div class="col-md-8 col-12 service-cards" id="aiCards">
-
-              <div class="row">
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+            <!-- ? service cards -->
+            <div class="service-cards col-md-3 col-12 py-0">
+              <div class="row d-flex justify-content-center align-items-center flex-column">
+                  <!-- ! Artificial Intelligence -->
+                <div class="col-12 mb-3">
                   <div class="card">
                     <span class="line top-line"></span>
                     <span class="line right-line"></span>
                     <span class="line bottom-line"></span>
                     <span class="line left-line"></span>
 
-                    <a href="./artificial-intelligence.html" class="card-body d-flex justify-content-center">
+                    <a href="./artificial-intelligence.html" class="card-body">
                       <h3 class="service-title">Artificial Intelligence</h3>
-                      <p class="mt-2 service-card-content ">Artificial intelligence is a branch that allows creating
-                        smart machines based on the principle of human intelligence</p>
-                      <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
+                      <p class="mt-2 service-card-content ">Our team of AI experts works on machines to help them mimic and execute tasks, from the simplest to complex</p>                       
                     </a>
 
                   </div>
                 </div>
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+                <!-- ! RPA -->
+                <div class="col-12 mt-3">
                   <div class="card">
                     <span class="line top-line"></span>
                     <span class="line right-line"></span>
@@ -292,12 +315,16 @@
                       <h3 class="service-title">RPA</h3>
                       <p class="mt-2 service-card-content ">RPA automates routine human tasks by creating an interaction
                         with the existing IT architecture without any complex system integration
-                      </p>
+                      </p>                       
                     </a>
 
                   </div>
                 </div>
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+              </div>
+            </div>
+            <div class="service-cards col-md-3 col-12 py-0">
+              <div class="row d-flex justify-content-center align-items-center flex-column">
+                <div class="col-12 mb-3">
                   <div class="card">
                     <span class="line top-line"></span>
                     <span class="line right-line"></span>
@@ -313,7 +340,7 @@
 
                   </div>
                 </div>
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+                <div class="col-12 mt-3">
                   <div class="card">
                     <span class="line top-line"></span>
                     <span class="line right-line"></span>
@@ -329,115 +356,164 @@
 
                   </div>
                 </div>
-
               </div>
             </div>
+            <div class="service-cards col-md-3 col-12 py-0 d-flex align-items-center">
+              <div class="row d-flex justify-content-center align-items-center flex-column">
+                <div class="col-12">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./bigdata.html" class="card-body">
+                      <h3 class="service-title">Big Data</h3>
+                      <p class="mt-2 service-card-content ">
+                        We aim to provide businesses with not just large amounts of data but to ensure that its analysis can provide them with useful insights
+                      </p>
+                    </a>
+
+                  </div>
+                </div>                 
+              </div>
+            </div>            
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- slide - 2 -->
-      <section class="slide slide-2 mt-3">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="row">
-            <!-- title card -->
+      <!-- ! slide - 2 -->
+      <div class="carousel-item item-2 h-100">
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100 px-5">
 
-            <div class="col-md-4 col-12 d-flex align-items-stretch my-2">
-              <div class="card title-card title-card-2">
+          <div class="row services px-5">
+            <!-- ? title card -->
+            <div class="col-md-3 col-12 d-flex s-card">
+              <div class="card title-card title-card-1">
                 <div class="card-body">
-                  <h2 class="card-title">Application Development</h2>
+                  <h2 class="card-title">Security Services</h2>
                 </div>
               </div>
             </div>
-
-            <!-- service cards -->
-            <div class="col-md-8 col-12 service-cards" id="aiCards">
-
-              <div class="row">
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+            <!-- ? service cards -->
+            <div class="service-cards col-md-3 col-12 py-0">
+              <div class="row d-flex justify-content-center align-items-center flex-column">
+                  <!-- ! Network Security -->
+                <div class="col-12 mb-3">
                   <div class="card">
                     <span class="line top-line"></span>
                     <span class="line right-line"></span>
                     <span class="line bottom-line"></span>
                     <span class="line left-line"></span>
 
-                    <a href="./software-development.html" class="card-body d-flex justify-content-center">
-                      <h3 class="service-title">Software Development</h3>
-                      <p class="mt-2 service-card-content ">
-                        Our team of software developers provides custom applications to promote your business, give your
-                        users unique services & simplify internal processes.
-                      </p>
-                      <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
+                    <a href="./network-and-security.html" class="card-body">
+                      <h3 class="service-title">Network Security</h3>
+                      <p class="mt-2 service-card-content ">In today’s networking landscape, data is highly vulnerable to cyber threats. This is where Network security comes into the picture</p>                       
                     </a>
+
                   </div>
                 </div>
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+                <!-- ! Cyber Security -->
+                <div class="col-12 mt-3">
                   <div class="card">
                     <span class="line top-line"></span>
                     <span class="line right-line"></span>
                     <span class="line bottom-line"></span>
                     <span class="line left-line"></span>
 
-                    <a href="./mobile-app-development.html" class="card-body">
-                      <h3 class="service-title">Mobile App Development</h3>
-                      <p class="mt-2 service-card-content ">
-                        Our process of Mobile app development includes the creation of installable software bundles,
-                        implementing backend services
-                      </p>
+                    <a href="./cyber-security.html" class="card-body">
+                      <h3 class="service-title">Cyber Security</h3>
+                      <p class="mt-2 service-card-content ">RPA automates routine human tasks by creating an interaction
+                        with the existing IT architecture without any complex system integration
+                      </p>                       
                     </a>
 
                   </div>
                 </div>
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./web-development.html" class="card-body">
-                      <h3 class="service-title">Web Development</h3>
-                      <p class="mt-2 service-card-content ">
-                        When it comes to web development our front-end developers take on processes like setup and
-                        configuration, web design, customizations
-                      </p>
-                    </a>
-
-                  </div>
-                </div>
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./digital-marketing.html" class="card-body">
-                      <h3 class="service-title">Digital Marketing</h3>
-                      <p class="mt-2 service-card-content ">
-                        In today’s time, it takes the right campaign to strike a chord with your target customers. We
-                        help you do exactly that by implementing a digital marketing strategy
-                      </p>
-                    </a>
-
-                  </div>
-                </div>
-
               </div>
             </div>
+            <div class="service-cards col-md-3 col-12 py-0">
+              <div class="row d-flex justify-content-center align-items-center flex-column">
+                <div class="col-12 mb-3">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./application_and_data_security.html" class="card-body">
+                      <h3 class="service-title">Application & Data Security</h3>
+                      <p class="mt-2 service-card-content ">The technology acts as a digital ledger that is built on a
+                        P2P system allowing different users to have an unchangeable record of transactions
+                      </p>
+                    </a>
+
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./governance-and-compliance.html" class="card-body">
+                      <h3 class="service-title">Governance & Compliance</h3>
+                      <p class="mt-2 service-card-content ">The Internet of Things includes a sensor, electronics or
+                        software that is connected to the internet and can be utilized remotely
+                      </p>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-cards col-md-3 col-12 py-0 d-flex align-items-center">
+              <div class="row d-flex justify-content-center align-items-center flex-column">
+                <div class="col-12 mb-3">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./endpoint-mobile-security.html" class="card-body">
+                      <h3 class="service-title">Endpoint & Mobile Security</h3>
+                      <p class="mt-2 service-card-content ">
+                        We aim to provide businesses with not just large amounts of data but to ensure that its analysis can provide them with useful insights
+                      </p>
+                    </a>
+
+                  </div>
+                </div>                 
+
+                <div class="col-12 mt-3">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./identity_and_access_management.html" class="card-body">
+                      <h3 class="service-title">Identity & Access Management</h3>
+                      <p class="mt-2 service-card-content ">
+                        We aim to provide businesses with not just large amounts of data but to ensure that its analysis can provide them with useful insights
+                      </p>
+                    </a>
+
+                  </div>
+                </div>                 
+              </div>
+            </div>            
           </div>
         </div>
-        <!-- <ul class="s-slide-nav">
-          <li><a href="#" id="s-slide-1"><span></span></a></li>
-          <li><a href="#" id="s-slide-2"><span></span></a></li>
-          <li><a href="#" id="s-slide-3"><span></span></a></li>
-          <li><a href="#" id="s-slide-4"><span></span></a></li>
-        </ul> -->
-      </section>
+      </div>
 
-      <section class="slide slide-3 mt-3">
+      <!-- ! slide - 3 -->
+      <div class="carousel-item item-3 h-100">
         <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="row">
+          <div class="row services">
             <!-- title card -->
 
             <div class="col-md-4 col-12 d-flex align-items-stretch my-2">
@@ -452,24 +528,7 @@
             <div class="col-md-8 col-12 service-cards" id="aiCards">
 
               <div class="row">
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./bigdata.html" class="card-body d-flex justify-content-center">
-                      <h3 class="service-title">Big Data</h3>
-                      <p class="mt-2 service-card-content ">
-                        Big Data involves the use of large and diverse sets of data which is categorized as structured,
-                        semi-structured and unstructured.
-                      </p>
-                      <!-- <p class="text-right m-0 service-arrow"><span><i class="fas fa-long-arrow-alt-right"></i></span></p> -->
-                    </a>
-
-                  </div>
-                </div>
+ 
                 <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
                   <div class="card">
                     <span class="line top-line"></span>
@@ -494,8 +553,8 @@
                     <span class="line bottom-line"></span>
                     <span class="line left-line"></span>
 
-                    <a href="./network-and-security.html" class="card-body">
-                      <h3 class="service-title">Network & Security</h3>
+                    <a href="./system-infrastructure.html" class="card-body">
+                      <h3 class="service-title">System Infrastructure</h3>
                       <p class="mt-2 service-card-content ">In today’s networking landscape, data is highly vulnerable
                         to cyber threats. This is where Network security comes into the picture
                       </p>
@@ -524,24 +583,107 @@
             </div>
           </div>
         </div>
-        <ul class="s-slide-nav">
-          <!-- <li><a href="#" id="s-slide-1"><span></span></a></li>
-          <li><a href="#" id="s-slide-2"><span></span></a></li>
-          <li><a href="#" id="s-slide-3"><span></span></a></li>
-          <li><a href="#" id="s-slide-4"><span></span></a></li> -->
-        </ul>
-      </section>
+      </div>
 
-      <section class="slide slide-4 mt-3">
+      <!-- ! slide - 4 -->
+      <div class="carousel-item item-4 h-100">
         <div class="container d-flex justify-content-center align-items-center h-100">
-          <div class="row">
+          <div class="row services">
+            <!-- title card -->
+
+            <div class="col-md-4 col-12 d-flex align-items-stretch my-2">
+              <div class="card title-card title-card-4">
+                <div class="card-body">
+                  <h2 class="card-title">Application Development</h2>                  
+                </div>
+              </div>
+            </div>
+
+            <!-- service cards -->
+            <div class="col-md-8 col-12 service-cards" id="aiCards">
+
+              <div class="row">
+                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./software-development.html" class="card-body d-flex justify-content-center">
+                      <h3 class="service-title">Software Development</h3>
+                      <p class="mt-2 service-card-content ">
+                        Our team of software developers provides custom applications to promote your business, give your users unique services & simplify internal processes
+                      </p>                       
+                    </a>
+
+                  </div>
+                </div>
+                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./mobile-app-development.html" class="card-body">
+                      <h3 class="service-title">Mobile App Development</h3>
+                      <p class="mt-2 service-card-content ">
+                        Our process of Mobile app development includes the creation of installable software bundles, implementing backend services
+                      </p>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./web-development.html" class="card-body">
+                      <h3 class="service-title">Web Development</h3>
+                      <p class="mt-2 service-card-content ">
+                        When it comes to web development our front-end developers take on processes like setup and configuration, web design, customizations, network security configuration
+                      </p>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
+                  <div class="card">
+                    <span class="line top-line"></span>
+                    <span class="line right-line"></span>
+                    <span class="line bottom-line"></span>
+                    <span class="line left-line"></span>
+
+                    <a href="./digital-marketing.html" class="card-body">
+                      <h3 class="service-title">Digital Marketing</h3>
+                      <p class="mt-2 service-card-content ">
+                        In today’s time, it takes the right campaign to strike a chord with your target customers. We help you do exactly that by implementing a digital marketing strategy
+                      </p>
+                    </a>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! slide - 5 -->
+      <div class="carousel-item item-5 h-100">
+        <div class="container d-flex justify-content-center align-items-center h-100">
+          <div class="row services">
             <!-- title card -->
 
             <div class="col-md-4 col-12 d-flex align-items-stretch my-2">
               <div class="card title-card title-card-4">
                 <div class="card-body">
                   <h2 class="card-title">Business Intelligence</h2> <br />
-                  <h2 class="card-title">Security Services</h2>
+                  <h2 class="card-title">Outsourcing Services</h2>
                 </div>
               </div>
             </div>
@@ -592,8 +734,8 @@
                     <span class="line bottom-line"></span>
                     <span class="line left-line"></span>
 
-                    <a href="./cyber-security.html" class="card-body">
-                      <h3 class="service-title">Cyber Security</h3>
+                    <a href="./outsourcing-services.html" class="card-body">
+                      <h3 class="service-title">Outsourcing Services</h3>
                       <p class="mt-2 service-card-content ">
                         With a recent spur in cyber-attacks, we have developed an integrated approach to address
                         relevant and predictive incidents.
@@ -601,45 +743,23 @@
                     </a>
 
                   </div>
-                </div>
-                <div class="col-md-6 col-12 d-flex align-items-stretch p-2">
-                  <div class="card">
-                    <span class="line top-line"></span>
-                    <span class="line right-line"></span>
-                    <span class="line bottom-line"></span>
-                    <span class="line left-line"></span>
-
-                    <a href="./information-security.html" class="card-body">
-                      <h3 class="service-title">Information Security</h3>
-                      <p class="mt-2 service-card-content ">
-                        The main aim here is to protect data and information systems from unauthorized use, access,
-                        modification or removal
-                      </p>
-                    </a>
-
-                  </div>
-                </div>
-
+                </div>                 
               </div>
             </div>
           </div>
         </div>
-        <!-- <ul class="s-slide-nav">
-          <li><a href="#" id="s-slide-1"><span></span></a></li>
-          <li><a href="#" id="s-slide-2"><span></span></a></li>
-          <li><a href="#" id="s-slide-3"><span></span></a></li>
-          <li><a href="#" id="s-slide-4"><span></span></a></li>
-        </ul> -->
-      </section>
-
+      </div>      
     </div>
-    <ul class="s-slide-nav">
-      <li><a href="#" id="s-slide-1" class="active"><span></span></a></li>
-      <li><a href="#" id="s-slide-2"><span></span></a></li>
-      <li><a href="#" id="s-slide-3"><span></span></a></li>
-      <li><a href="#" id="s-slide-4"><span></span></a></li>
-    </ul>
+    <!-- <a class="carousel-control-prev" href="#serviceCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#serviceCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
   </div>
+</section>
   <!-- ? END - SERVICES -->
 
   <!-- ? Proof of concept -->
@@ -647,7 +767,7 @@
     <div class="card container">
       <div class="card-header py-4" id="headingOne">
         <div class="d-flex justify-content-center align-items-center">
-          <h3 class="poc-title py-3 mb-0">Fostering your trust in us with Free Proof of Concept.</h3>
+          <h3 class="poc-title py-3 mb-0">Fostering your trust in us with Free Proof of Concept</h3>
           <button type="button" class="btn btn-primary poc-contact ml-3 py-2 px-4" id="pocContact">Get Started</button>
         </div>
 
@@ -768,11 +888,12 @@
           <!-- content - 1  -->
           <div class="ind-content active" id="ind-content-1">
             <h2>Banking Industry</h2>
-            <p class="py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              quos quia suscipit nemo blanditiis tempora earum eligendi.
-              Voluptate quaerat autem, eius inventore asperiores, enim
-              delectus nobis ut, quia provident deserunt.
+            <p class="py-2 text-justify">
+              With our handy services related to banking and financial software, we
+              provide complete solutions for business that aspire to increase the level
+              of operational efficiency. Our solutions for banking and financial include
+              Artificial Intelligence, Internet of Things, Blockchain, AR/VR and
+              Bigdata Analytics applications
             </p>
           </div>
 
@@ -780,32 +901,35 @@
           <div class="ind-content" id="ind-content-2">
             <h2>Telecom Industry</h2>
             <p class="py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              quos quia suscipit nemo blanditiis tempora earum eligendi.
-              Voluptate quaerat autem, eius inventore asperiores, enim
-              delectus nobis ut, quia provident deserunt.
+              Telecom industry has been successfully drawing in more revenue with the help
+              of numerous operations. Our team is providing our clients with an end-to-end
+              offshore software solution that would help them to enhance their productivity
+              by working on stable platforms that offers mobility, social media as well as
+              cloud computing solutions.
             </p>
           </div>
 
           <!-- content - 3  -->
           <div class="ind-content" id="ind-content-3">
             <h2>Health Care Industry</h2>
-            <p class="py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              quos quia suscipit nemo blanditiis tempora earum eligendi.
-              Voluptate quaerat autem, eius inventore asperiores, enim
-              delectus nobis ut, quia provident deserunt.
+            <p class="py-2 text-justify">
+              Being one of the fastest growing industries, the medicinal sectors need
+              to deal with numerous advancements as well as modern techniques.
+              We provide healthcare sectors with a task-driven solution that would help
+              them improve their accuracy and enhance their medicinal workflow.
+              We build wide range of scalable, cost effective and robust application development.
             </p>
           </div>
 
           <!-- content - 4  -->
           <div class="ind-content" id="ind-content-4">
             <h2>Retail Industry</h2>
-            <p class="py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              quos quia suscipit nemo blanditiis tempora earum eligendi.
-              Voluptate quaerat autem, eius inventore asperiores, enim
-              delectus nobis ut, quia provident deserunt.
+            <p class="py-2 text-justify">
+              We offer solutions for multiple levels of operational methodologies continuing
+              to grow with every customer. We help you actualize the retail software
+              services and offer you first rated benefits such as direct operations
+              management, enhancement in accurate workflow, better customer care,
+              continuous data flow, better customer care, real time communication.
             </p>
           </div>
 
@@ -834,8 +958,8 @@
       <section class="slide slide-1 mt-3" id="coreValues">
         <div class="container-fluid d-flex justify-content-center align-items-end h-100">
           <div class="row core-values d-flex justify-content-center align-items-center">
-            <h3 class="c-section-title">Core Values</h3>  
-                                  
+            <h3 class="c-section-title">Core Values</h3>
+
             <!-- val - 1 -->
             <div class="col-8 py-0 ml-5">
               <div class="row d-flex justify-content-center ml-4">
@@ -976,7 +1100,7 @@
 
           </div>
         </div>
-      </section> 
+      </section>
     </div>
   </div>
   <!-- ? END - company Intro -->
@@ -999,21 +1123,17 @@
 
 
   <!-- ! Contact us banner -->
-  <section id="contactBanner" class="careers-banner d-flex justify-content-center align-items-center flex-column">
+  <section id="contactBanner" class="contact-banner d-flex justify-content-center align-items-center flex-column">
     <div class="overlay"></div>
-    <div class="overlay-2"></div>
-
-    <div class="container career-text">
+    <div class="container contact-text">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-6">
           <div class="text-center">
-            <h3 class="text-center py-4">Contact Us</h3>
-            <!-- <p class="text-center">
-              Lorem ipsum dolor sit amet consectetur <br />
-              adipisicing elit.
-            </p> -->
-            <p class="text-center py-3">
-              <button type="button" id="contactButton" class="btn btn-secondary text-center py-2 font-weight-bolder see-btn">
+            <h3 class="text-center contact-title">Contact Us</h3>
+            <p class="text-center contact-caption mt-2">We are happy to assist you with your queries </p>
+            <p class="text-center mt-5">
+              <button type="button" id="contactButton"
+                class="btn btn-primary text-center py-2 font-weight-bolder see-btn">
                 Get In Touch
               </button>
             </p>
@@ -1024,30 +1144,30 @@
   </section>
 
   <!-- ! Footer -->
-  <footer class="footer">
-    <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
-      <div class="col-lg-3 col-md-4 col-12 f-phone">
-        <p class="f-link mt-3">
+  <footer class="footer container-fluid d-flex justify-content-center">
+    <div class="container row d-flex justify-content-center py-2">
+      <div class="col-lg-3 col-md-4 col-12 f-phone d-flex align-items-center">
+        <p class="f-link">
           <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
         </p>
       </div>
-      <div class="col-lg-3 col-md-4 col-12 f-inquiries">
-        <p class="f-link mt-3">
+      <div class="col-lg-3 col-md-4 col-12 f-inquiries d-flex align-items-center">
+        <p class="f-link">
           <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
         </p>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-12 f-location">
-        <p class="f-link mt-3">
+      <div class="col-lg-3 col-md-4 col-12 f-location d-flex align-items-center">
+        <p class="f-link">
           <a
             href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
             <i class="fas fa-map-marker-alt"></i> Location</a>
         </p>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-12 f-follow">
+      <div class="col-lg-3 col-md-4 col-12 f-follow d-flex align-items-center">
         <div>
-          <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+          <ul class="social-network d-flex justify-content-start pl-0 m-0">
             <li>
               <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             </li>
@@ -1065,111 +1185,111 @@
         </div>
       </div>
     </div>
-    <p class="copyright">© 2018 - 2020 Virtech. All rights reserved</p>
+    <p class="copyright d-flex align-items-center">© 2018 - 2020 Virtech. All rights reserved</p>
   </footer>
-  <!-- ! Contact us banner -->
+  <!-- ! Contact form -->
   <section class=" contact-wrapper" id="contactMaster">
     <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
 
-    <div class="container d-flex justify-content-center align-items-center flex-column">                      
-          <div class="row d-flex justify-content-between my-auto">
-            <div class="col-md-4 col-12 contact-title d-flex justify-content-center flex-column">
-              <h2 class="text-center display-4">Get in touch</h2>
-              <p class="text-center">We are happy to assist you with your queries</p>
-            </div>
-            <div class="col-md-6 col-12 contact-form">               
-                <div class="container">                   
-                    <form id="contactForm" class="needs-validation" novalidate>
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="form-group">
-                            <label for="validationCustom01"> Name <span>*</span></label>
-                            <input type="text" class="form-control" name="firstname" id="validationCustom01"
-                              pattern="[a-zA-Z\s]+" placeholder="Enter your name" autocomplete="off" required>
-                            <div class="valid-feedback">Nice! You got this one!</div>
-                            <div class="invalid-feedback">Please enter the valid Name</div>
-                          </div>
-                        </div>                                           
-                        <div class="col-12">
-                          <div class="form-group">
-                            <label class=""> Email-ID <span>*</span></label>
-                            <input type="email" class="form-control" name="email" autocomplete="off"
-                              placeholder="Enter your email-ID" id="email" required>
-                            <div class="valid-feedback">Nice! You got this one!</div>
-                            <div class="invalid-feedback">Sorry, you missed this one.</div>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-group">
-                            <label> Contact Number <span>*</span></label>
-                            <input type="number" class="form-control" name="phone" id="phone"
-                              placeholder="Enter your contact number" autocomplete="off"
-                              required>
-                            <div class="valid-feedback">Nice! You got this one!</div>
-                            <div class="invalid-feedback">Please enter the valid email</div>
-                          </div>
-                        </div>  
-                        <div class="col-12">                    
-                        <div class="form-group">
-                        <label for="message">Subject <span>*</span></label>
-                        <textarea class="form-control" name="message" id="message" placeholder="Your message here.." required></textarea>
-                        <div class="valid-feedback">Nice! You got this one!</div>
-                        <div class="invalid-feedback">Sorry, you missed this one.</div>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-secondary mx-auto id="contactSubmit">Submit</button>
-                      </div>
-                  </form>
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+      <div class="row d-flex justify-content-between my-auto">
+        <div class="col-md-4 col-12 contact-title d-flex justify-content-center flex-column">
+          <h2 class="text-center display-4">Get in touch</h2>
+          <p class="text-center">We are happy to assist you with your queries</p>
+        </div>
+        <div class="col-md-6 col-12 contact-form">
+          <div class="container">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="validationCustom01"> Name <span>*</span></label>
+                    <input type="text" class="form-control" name="firstname" id="validationCustom01"
+                      pattern="[a-zA-Z\s]+" placeholder="Enter your name" autocomplete="off" required>
+                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                    <div class="invalid-feedback">Please enter valid Name</div>
+                  </div>
                 </div>
-            </div>                           
-            
-          </div>    
-          
-          <div class="container contact-info py-2 px-0">
-            <div class="row mx-auto d-flex justify-content-between align-items-center ">
-              <address class="col-md-3 col-12">
-                <a class="location"
-                href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">                     
-                Virtech Technologies, <br /> Riyadh, PO Box - 23754, <br /> K.S.A - 11611.
-              </a>
-              </address>
-              <div class="col text-center">
-                <a class="phone col-md-3 col-6" href="tel:+966552357583">                       
-                   (+966) 552 357 583                        
-                </a>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class=""> Email-ID <span>*</span></label>
+                    <input type="email" class="form-control" name="email" autocomplete="off"
+                      placeholder="Enter your email-ID" id="email" required>
+                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                    <div class="invalid-feedback">Please enter valid email</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label> Contact Number <span>*</span></label>
+                    <input type="number" class="form-control" name="phone" id="phone"
+                      placeholder="Enter your contact number" autocomplete="off" required>
+                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                    <div class="invalid-feedback">Please enter valid Phone Number</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message">Subject <span>*</span></label>
+                    <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
+                      required></textarea>
+                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                    <div class="invalid-feedback">Please write some message</div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-secondary mx-auto id=" contactSubmit">Submit</button>
               </div>
-
-              <div class="col-md-3 col-6 text-center">
-                <a class="mail col" href="mailto:info@virtech-ksa.com">
-                  info@virtech-ksa.com
-                </a>
-              </div>
-      
-              <div class="col-md-3 col-6">
-                <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
-                  <li>
-                    <a href="#" class="icoFacebook" title="Facebook">
-                      <i class="fab fa-facebook-f fa-fw">
-                      </i></a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                        class="fab fa-twitter fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" class="icoTwitter" title="Instagram">
-                      <i class="fab fa-instagram fa-fw">
-                      </i></a>
-                  </li>
-                  <li>
-                    <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
-                        class="fab fa-linkedin-in fa-fw">
-                      </i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            </form>
           </div>
+        </div>
+
+      </div>
+
+      <div class="container contact-info py-2 px-0">
+        <div class="row mx-auto d-flex justify-content-between align-items-center ">
+          <address class="col-md-3 col-12">
+            <a class="location"
+              href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+              Virtech Technologies, <br /> Riyadh, PO Box - 23754, <br /> K.S.A - 11611.
+            </a>
+          </address>
+          <div class="col text-center">
+            <a class="phone col-md-3 col-6" href="tel:+966552357583">
+              (+966) 552 357 583
+            </a>
+          </div>
+
+          <div class="col-md-3 col-6 text-center">
+            <a class="mail col" href="mailto:info@virtech-ksa.com">
+              info@virtech-ksa.com
+            </a>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
+              <li>
+                <a href="#" class="icoFacebook" title="Facebook">
+                  <i class="fab fa-facebook-f fa-fw">
+                  </i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                    class="fab fa-twitter fa-fw"></i></a>
+              </li>
+              <li>
+                <a href="#" class="icoTwitter" title="Instagram">
+                  <i class="fab fa-instagram fa-fw">
+                  </i></a>
+              </li>
+              <li>
+                <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                    class="fab fa-linkedin-in fa-fw">
+                  </i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="status-alert" id="formStatus">
@@ -1213,18 +1333,18 @@
 
       let homePageLoad = gsap.timeline({ onComplete: startTitleCarousel });
       //homePageLoad.to('body',{paddingTop:'0px'})
-      homePageLoad.to('body',{overflow:'hidden',duration:0.01})      
+      homePageLoad.to('body', { overflow: 'hidden', duration: 0.01 })
       homePageLoad.to('.home-banner', { opacity: 0, duration: 0.001 })
       homePageLoad.to('#navbarContent', { opacity: 0, duration: 0.001 })
-      homePageLoad.to("#masterNavbar", { position: 'static', duration: 0.001 })
+      homePageLoad.to("#masterNavbar", { position: 'static', background: 'transparent', duration: 0.001 })
       homePageLoad.to('#masterLogo', { position: 'absolute', duration: 0.001, left: '50%', top: '50%', transform: 'translate(-50%,-50%)', maxWidth: '30%', zIndex: '1300' })
       homePageLoad.to("#page-loader", { duration: 1, top: "-110%", ease: Expo.easeInOut })
       homePageLoad.to('#masterLogo', { maxWidth: '150px', left: '40px', top: '5px', transform: 'translate(0%,0%)', duration: 2, ease: "none", delay: 1 })
       homePageLoad.to('#masterLogo', { position: 'relative', left: 0, top: 0, duration: 0.001 })
-      homePageLoad.to("#masterNavbar", { position: 'fixed', duration: 0.001 })
+      homePageLoad.to("#masterNavbar", { position: 'fixed', background: '#f8f9fa', duration: 1 })
       homePageLoad.to('#navbarContent', { opacity: 1, duration: 0.001 })
       homePageLoad.to('.home-banner', { opacity: 1, duration: 0.001 })
-      homePageLoad.to('body',{overflow:'visible',duration:0.01})
+      homePageLoad.to('body', { overflow: 'visible', duration: 0.01 })
 
       // homePageLoad.to('.home-inner',{opacity:0,duration:0.01})
       // homePageLoad.fromTo('#masterNavbar',{opacity:1 },{opacity:0,duration:0.01,ease:Expo.easeInOut})
@@ -1254,54 +1374,30 @@
       }
 
       // Services section
-      let bgColor = gsap.timeline();
-
-      // function moveSlideToLeft(){
-      //   gsap.to("#slidesContainer", { x: "-0.001%", ease: Linear.easeNone, duration: 0.01, })
-      // }
-
-      //bgColor.to('body',{overflow:'hidden',duration:0.01})
-      //bgColor.to('body',{overflow:'visible',duration:0.01})
-
+      let bgColor = gsap.timeline(); 
       // our services background color animation         
-      bgColor.to('#slidesContainer', { autoAlpha: 0, duration: 0.001 });
-      bgColor.to('#masterContainer', { '--service-bg': '#0c1b33', duration:1 })
-      bgColor.to('.s-hero-title', { color: '#f4f4f4',duration:1 })
-      bgColor.to('.s-hero-title', { top: '30px', fontSize: '3rem', transform: 'translate(-50%,0%)', duration: 1 })
-      bgColor.to('#slidesContainer', { autoAlpha: 1, duration: 0.001 });
+      bgColor.to('#serviceCarousel', { autoAlpha: 0, duration: 0.001 });
+      bgColor.to('#masterContainer', { '--service-bg': '#0c1b33', duration: 1 })
+      bgColor.to('.s-hero-title', { color: '#f4f4f4', duration: 1 })
+      bgColor.to('.s-hero-title', { top: '60px', fontSize: '3rem', transform: 'translate(-50%,0%)', duration: 1 })
+      bgColor.to('#serviceCarousel', { autoAlpha: 1, duration: 0.001 });
       //bgColor.to('body',{overflow:'visible',duration:0.01})
       new ScrollMagic.Scene({
         triggerElement: "#masterContainer",
-        triggerHook:0.2,         
+        triggerHook: 0.2,
       })
         .setTween(bgColor)
         // .setClassToggle(".side-nav", "light")         
         .addTo(controller);
 
-         
-      let slideAnimation = gsap.timeline()
-        .to("#slidesContainer", { x: "-25%", ease: Linear.easeNone, duration: 4, delay: 2 })
-        .to("#slidesContainer", { x: "-50%", ease: Linear.easeNone, duration: 4, delay: 2 })
-        .to("#slidesContainer", { x: "-75%", ease: Linear.easeNone, duration: 4, delay: 2 })
 
-      // create scene to pin and link animation
-      new ScrollMagic.Scene({
-        triggerElement: "#masterContainer",
-        triggerHook: 0.08,
-        duration: "300%",      
-      })
-        .setPin("#masterContainer", { pushfollowers: false })
-        .setTween(slideAnimation)              
-        .addTo(controller);
-
-      /*      
-           === OUR INDUSTRIES ===
-      */
+       
+      /* === OUR INDUSTRIES === */
 
       let indColor = gsap.timeline();
       indColor.to('#industryInner', { autoAlpha: 0, duration: 0.001 });
-      indColor.to('.industry-wrapper', { '--ind-bg': '#f4f4f4', duration:1 })
-      indColor.to('.ind-hero-title', { color: '#0c1b33',duration:1 }, "-=1")
+      indColor.to('.industry-wrapper', { '--ind-bg': '#f4f4f4', duration: 1 })
+      indColor.to('.ind-hero-title', { color: '#0c1b33', duration: 1 }, "-=1")
       //indColor.to('.ind-hero-title', { top: '30px', fontSize: '3rem', transform: 'translate(-50%,0%)', duration: 1 })
       indColor.to('.ind-hero-title', { top: '80px', fontSize: '3rem', duration: 1 })
       indColor.to('#industryInner', { autoAlpha: 1, duration: 0.001 });
@@ -1309,42 +1405,43 @@
       new ScrollMagic.Scene({
         triggerElement: "#industryMaster",
         triggerHook: 0.17,
-        reverse:false                
+        reverse: false
       })
-        .setTween(indColor)                                   
+        .setTween(indColor)        
         .addTo(controller);
 
 
-        new ScrollMagic.Scene({
+      new ScrollMagic.Scene({
         triggerElement: "#industryMaster",
-        triggerHook: 0.08,
-        duration:'200%',                
-      })         
+        triggerHook: 0.07,
+        duration: '150%',
+      })
         .setClassToggle(".side-nav", "light")
-        .setPin("#industryMaster")              
+        .setPin("#industryMaster")
+        .addIndicators({name:'industry'})
         .addTo(controller);
- 
+
 
       // Clients scroll change side nav color
       new ScrollMagic.Scene({
         triggerElement: "#clients",
         triggerHook: 0.02,
-        duration:'100%',                
-      })         
-        .setClassToggle(".side-nav", "light")        
+        duration: '100%',
+      })
+        .setClassToggle(".side-nav", "light")
         .addTo(controller);
 
 
       // Industries section
 
-      let industryCards = gsap.timeline();       
+      let industryCards = gsap.timeline();
       $('.industry').each(function () {
-          // $(this).removeClass('active');
-          console.log('update class')
-          setInterval(function(){
-        $(this).toggleClass("active");
+        // $(this).removeClass('active');
+        console.log('update class')
+        setInterval(function () {
+          $(this).toggleClass("active");
         }, 1000);
-        })
+      })
 
       $('.industry').on('mouseenter', function () {
         $('.industry').each(function () {
@@ -1413,32 +1510,32 @@
       let introColor = gsap.timeline();
       introColor.to('#introSlides', { autoAlpha: 0, duration: 0.001 });
       introColor.to('#introContainer', { '--weare-bg': '#0c1b33', duration: 1 })
-      introColor.to('.intro-hero-title', { color: '#f4f4f4',duration:1 }, "-=1")
+      introColor.to('.intro-hero-title', { color: '#f4f4f4', duration: 1 }, "-=1")
       introColor.to('.intro-hero-title', { top: '80px', fontSize: '3rem', duration: 1 })
       //introColor.to('.intro-hero-title', { autoAlpha: 0, duration: 0.01 })
       introColor.to('#introSlides', { autoAlpha: 1, duration: 0.001 });
 
       new ScrollMagic.Scene({
-        triggerElement: "#introContainer",         
+        triggerElement: "#introContainer",
         triggerHook: 0.15,
       })
-        .setTween(introColor)         
-        .setClassToggle(".side-nav", "light")               
+        .setTween(introColor)
+        .setClassToggle(".side-nav", "light")
         .addTo(controller);
 
 
-        new ScrollMagic.Scene({
+      new ScrollMagic.Scene({
         triggerElement: "#introContainer",
         triggerHook: 0.08,
-        duration:'200%',         
-      })         
+        duration: '200%',
+      })
         .setClassToggle(".side-nav", "light")
-        .setPin("#introContainer",{pushfollowers:false})                   
+        .setPin("#introContainer", { pushfollowers: false })
         .addTo(controller);
- 
+
       //let companyIntroAnimation = gsap.timeline()
-        //.to("#introSlides", { x: "-33.333%", ease: Linear.easeNone, duration: 4, delay: 2 })
-        //.to("#introSlides", { x: "-66.666%", ease: Linear.easeNone, duration: 4, delay: 2 })
+      //.to("#introSlides", { x: "-33.333%", ease: Linear.easeNone, duration: 4, delay: 2 })
+      //.to("#introSlides", { x: "-66.666%", ease: Linear.easeNone, duration: 4, delay: 2 })
 
       // create scene to pin and link animation
       // new ScrollMagic.Scene({
@@ -1474,7 +1571,7 @@
       //   triggerHook: 0.3,
       // })
       //   .setTween(testimonials)
-        
+
       //   .addTo(controller)
 
 
@@ -1497,12 +1594,12 @@
 
       pocContactButton.addEventListener('click', function (event) {
         gsap.to(".contact-wrapper", {
-      display: "flex",
-      minHeight: "100%",
-      top: 0,
-      bottom: "unset",
-      duration: 0.5
-    });
+          display: "flex",
+          minHeight: "100%",
+          top: 0,
+          bottom: "unset",
+          duration: 0.5
+        });
       })
 
       // contactClose.addEventListener('click', function (event) {
@@ -1510,94 +1607,97 @@
       //   gsap.to('.contact-wrapper', { display: 'none', paddingTop: '0px',bottom:'0',top:'unset' ,minHeight: '0px', duration: 0.5 })
       // })
 
-// services slides dot navigation
+      // services slides dot navigation
 
-function removeActiveClass(){
-  $('.s-slide-nav a').each(function () {
-          $(this).removeClass('active');         
-        })
-}
+      // function removeActiveClass() {
+      //   $('.s-slide-nav a').each(function () {
+      //     $(this).removeClass('active');
+      //   })
+      // }
 
-function addActiveClass(indicator){
-  $(indicator).toggleClass('active');
-}
+      // function addActiveClass(indicator) {
+      //   $(indicator).toggleClass('active');
+      // }
 
-document.getElementById('s-slide-1').addEventListener('click',function(e){
-e.preventDefault();
-gsap.to("#slidesContainer", { x: "-0.01%", ease: Linear.easeNone, duration: 1, })          
-       removeActiveClass();
-       addActiveClass('#s-slide-1');
-})
+      // document.getElementById('s-slide-1').addEventListener('click', function (e) {
+      //   e.preventDefault();
+      //   gsap.to("#slidesContainer", { x: "-0.01%", ease: Linear.easeNone, duration: 1, })
+      //   removeActiveClass();
+      //   addActiveClass('#s-slide-1');
+      // })
 
-document.getElementById('s-slide-2').addEventListener('click',function(e){
-e.preventDefault();
-gsap.to("#slidesContainer", { x: "-25%", ease: Linear.easeNone, duration: 1, })
-removeActiveClass();
-addActiveClass('#s-slide-2');
-})
+      // document.getElementById('s-slide-2').addEventListener('click', function (e) {
+      //   e.preventDefault();
+      //   gsap.to("#slidesContainer", { x: "-25%", ease: Linear.easeNone, duration: 1, })
+      //   removeActiveClass();
+      //   addActiveClass('#s-slide-2');
+      // })
 
-document.getElementById('s-slide-3').addEventListener('click',function(e){
-e.preventDefault();
-gsap.to("#slidesContainer", { x: "-50%", ease: Linear.easeNone, duration: 1, })
-removeActiveClass();
-addActiveClass('#s-slide-3');
-})
+      // document.getElementById('s-slide-3').addEventListener('click', function (e) {
+      //   e.preventDefault();
+      //   gsap.to("#slidesContainer", { x: "-50%", ease: Linear.easeNone, duration: 1, })
+      //   removeActiveClass();
+      //   addActiveClass('#s-slide-3');
+      // })
 
-document.getElementById('s-slide-4').addEventListener('click',function(e){
-e.preventDefault();
-gsap.to("#slidesContainer", { x: "-75%", ease: Linear.easeNone, duration: 1, })
-removeActiveClass();
-addActiveClass('#s-slide-4');
-})
+      // document.getElementById('s-slide-4').addEventListener('click', function (e) {
+      //   e.preventDefault();
+      //   gsap.to("#slidesContainer", { x: "-75%", ease: Linear.easeNone, duration: 1, })
+      //   removeActiveClass();
+      //   addActiveClass('#s-slide-4');
+      // })
 
-// end services slides dot navigation
-//  side navigation links
-//let controller = new ScrollMagic.Controller();
-// controller.scrollTo(function (newpos) {
-//     TweenMax.to(window, 1, {scrollTo: {y: newpos},duration:4, ease:Power4.easeInOut});
-// });
-/*
-// side navigation part
-$(document).on("click", ".side-nav a[href^='#']", function (e) {
-    var id = $(this).attr("href");
-    if ($(id).length > 0) {
-        e.preventDefault();       
-      slideAnimation.pause();
-      companyIntroAnimation.pause();
-        // trigger scroll
-        controller.scrollTo(id);       
-        // if supported by the browser we can even update the URL.
-        if (window.history && window.history.pushState) {
-            //history.pushState("", document.title, id);
-        }
-    }
-});
-*/
-// NAVBAR BACKGROUND CHANGE ON SCROLL
-const navbar = document.querySelector(".navbar");
-const homeContainer = document.querySelector("#home");
+      // end services slides dot navigation
+      //  side navigation links
+      //let controller = new ScrollMagic.Controller();
+      // controller.scrollTo(function (newpos) {
+      //     TweenMax.to(window, 1, {scrollTo: {y: newpos},duration:4, ease:Power4.easeInOut});
+      // });
+      /*
+      // side navigation part
+      $(document).on("click", ".side-nav a[href^='#']", function (e) {
+          var id = $(this).attr("href");
+          if ($(id).length > 0) {
+              e.preventDefault();       
+            slideAnimation.pause();
+            companyIntroAnimation.pause();
+              // trigger scroll
+              controller.scrollTo(id);       
+              // if supported by the browser we can even update the URL.
+              if (window.history && window.history.pushState) {
+                  //history.pushState("", document.title, id);
+              }
+          }
+      });
+      */
+      // NAVBAR BACKGROUND CHANGE ON SCROLL
+      const navbar = document.querySelector(".navbar");
+      const homeContainer = document.querySelector("#home");
+      const bannerVideo = document.getElementById('bannerVideo');
 
-const sectionOneOptions = {
-  rootMargin: "-60px 0px 0px 0px"
-};
+      const sectionOneOptions = {
+        rootMargin: "-60px 0px 0px 0px"
+      };
 
-const sectionOneObserver = new IntersectionObserver(function (entries) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      navbar.classList.remove("navbar-dark")
-      navbar.classList.add("navbar-light");
-      document.querySelector('.side-nav').classList.remove('hide')             
-    } else {
-      navbar.classList.remove("navbar-light");
-      navbar.classList.add("navbar-dark");
-      document.querySelector('.side-nav').classList.add('hide')
-    }
-  });
-},
-  sectionOneOptions);
-sectionOneObserver.observe(homeContainer);
-// END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
+      const sectionOneObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            navbar.classList.remove("navbar-dark")
+            navbar.classList.add("navbar-light");
+            document.querySelector('.side-nav').classList.remove('hide')
+            bannerVideo.pause();            
+          } else {
+            navbar.classList.remove("navbar-light");
+            navbar.classList.add("navbar-dark");
+            document.querySelector('.side-nav').classList.add('hide')
+            bannerVideo.play();
+          }
+        });
+      },
+        sectionOneOptions);
+      sectionOneObserver.observe(homeContainer);
+      // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
 
-})
+    })
   </script>
 </body>

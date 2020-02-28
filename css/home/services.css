@@ -6,17 +6,17 @@
  /* services */
 /* Horizontal scroll container */
 #masterContainer{
-    width: 100%;     
-    overflow: hidden;  
-    -webkit-perspective: 1000;
-    perspective: 1000;
-    height: 92vh;     
+    width: 100%;          
     background-color:var(--service-bg);
+    height: 95vh;
     position: relative;          
+  }
+  #serviceCarousel{
+    opacity: 0;
   }
   .services-wrapper .s-hero-title{
      /* color:#f4f4f4; */
-     position: fixed;
+     position: absolute;
      left: 50%;
      top:50%;
      transform: translate(-50%,-50%);      
@@ -26,7 +26,7 @@
     color:#0c1b33;
   }
 
-  .services-wrapper #slidesContainer{
+  /* .services-wrapper #slidesContainer{
     width: 400%;
     height: 100%;     
     position: absolute;
@@ -34,14 +34,13 @@
     bottom: 0;
     display: flex;
     opacity: 0;         
-  }
+  } */
   
-  .services-wrapper .slide {
+  /* .services-wrapper .slide {
     height: 100%;
-    width: 100%;
-    /* background-color:var(--service-bg); */
+    width: 100%;   
     position: relative;       
-  }
+  } */
   
   /* end scroll container */
   
@@ -121,7 +120,7 @@
     color: #b8bdc4;
     font-size: 1rem;
     margin-bottom: 0;
-    text-align: justify;
+    /* text-align: justify; */
   }
   .services-wrapper .service-cards .card:hover{
     background-color:hsl(217, 62%, 10%);
@@ -168,3 +167,26 @@
     background-color: #02A9EA;     
      
   }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    margin-bottom: 1rem;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    align-items: flex-end;
+  }
+.carousel-indicators {
+bottom: 50px;
+  }
+
+  .carousel-indicators li {
+     width: 35px;
+    height: 5px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background-color: hsl(217, 62%, 20%);
+    opacity: 1;
+  }
+
+  .carousel-indicators li.active{
+    background-color: #02A9EA;
+  } 

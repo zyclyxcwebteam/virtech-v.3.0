@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Outline|Diplomata+SC|Jacques+Francois+Shadow|Londrina+Outline|Ribeye+Marrow|Sniglet&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|B612+Mono|Cairo|Cormorant|Crimson+Pro|Crimson+Text|IBM+Plex+Serif|Nunito&display=swap');
 :root{
     --color-1:#0b0c13;
     --color-2:#575866;
@@ -105,11 +106,12 @@ body{
   }
 
   .btn-primary{
-    background-color: #0c1b33;
+    /* background-color:#e8e9f0; */
     border-radius: 1.5rem;
-    color: #b8bdc4;
-    border-color: #0c1b33;
+    /* color:#0c1b33; */
+    /* border-color: #e8e9f0; */
     font-weight: 600;
+    padding:2.2rem 1.5rem;
   }
 
   .btn-secondary{

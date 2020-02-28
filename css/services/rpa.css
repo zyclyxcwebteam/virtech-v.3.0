@@ -184,4 +184,80 @@ background-position:top center;
 .eu-banner.service-banner::after{  
     background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
 }
- 
+
+.app-sec-banner{
+    background-color: #013c60;
+    background-image: url("../../img/app_security/app-sec-1.jpg");
+}
+
+.app-sec-banner.app-sec-overview::after{  
+    background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
+}
+.app-sec-overview{
+    background-color: #10305f;
+}
+
+.mob-sec-banner{
+    background-color: #013c60;
+    background-image: url("../../img/mob-sec/mob-sec-1.jpg");
+}
+
+.mob-sec-banner.mob-sec-overview::after{  
+    background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
+}
+.mob-sec-overview{
+    background-color: #10305f;
+}
+
+.comp-banner{
+    background-color: #013c60;
+    background-image: url("../../img/data-comp/data-comp-1.jpg");
+}
+
+.comp-banner.mob-sec-overview::after{  
+    background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
+}
+.comp-overview{
+    background-color: #10305f;
+}
+.access-banner{
+    background-color: #013c60;
+    background-image: url("../../img/iden/id-1.jpg");
+    background-position:center;
+}
+
+.access-banner.mob-sec-overview::after{  
+    background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
+    
+}
+.access-overview{
+    background-color: #10305f;
+}
+
+.infra-banner{
+    background-color: #013c60;
+    background-image: url("../../img/infra/infra-1.jpg");
+    background-position:top;
+}
+
+.infra-banner.infra-overview::after{  
+    background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
+    
+}
+.infra-overview{
+    background-color: #10305f;
+}
+
+.outs-banner{
+    background-color: #013c60;
+    background-image: url("../../img/outs/outs.jpg");
+    background-position:top;
+}
+
+.outs-banner.infra-overview::after{  
+    background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
+    
+}
+.outs-overview{
+    background-color: #10305f;
+}
