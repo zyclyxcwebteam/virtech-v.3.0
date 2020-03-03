@@ -19,6 +19,10 @@ $(function() {
       });
     });
   
-    //$('.your-nav-container').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
-    
+    $("ul.dropdown-menu [data-toggle='dropdown']").on("mouseleave", function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+     console.log('mouse leave')
+     $(this).parents('.dropdown-menu').first().find('.show').removeClass('show') 
+    })         
 });
