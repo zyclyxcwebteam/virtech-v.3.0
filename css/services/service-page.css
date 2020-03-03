@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather&display=swap');
 
+.nav-item.active .nav-link{
+  font-weight: 600;
+  color:#00bdd5;
+}
+
 #masterNavbar,.footer {
   /* background-color:#272b48; */
   /* background-color:transparent !important; */
@@ -59,9 +64,25 @@ text-align: center;
 .service-overview{
      font-size: 1.2rem;
      background-color:#000036;
-     color: #f9f9f9;
+     color: #e2e2e2;
      width: 100%;      
      text-align: justify;
+}
+/* Todo - bs-override */
+.service-overview .col-md-9{
+  padding: 0 !important;
+}
+.service-content-cards .col-md-9:nth-child(odd) .row{
+  justify-content: flex-start;
+}
+.service-content-cards .col-md-9:nth-child(even) .row{
+  justify-content: flex-end;
+}
+ .col-2{
+  justify-content: start !important;
+  padding: 0;
+  max-width: max-content;   
+  margin-right: 1.5rem;
 }
 
 .service-content{  
@@ -72,6 +93,7 @@ text-align: center;
   color:#0c1b33;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
+  margin: 0;
 }
  
 .service-partners{  
@@ -97,7 +119,7 @@ text-align: center;
 }
 
 .service-content-cards p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: justify;
   margin-bottom: 0;
   color: #353535;

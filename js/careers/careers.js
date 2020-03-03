@@ -2,7 +2,9 @@
 $(document).ready(function () {
   let jobOpenings = document.getElementById('jobOpenings');
   let path = "https://agile-plateau-09650.herokuapp.com/jobopenings";
+  //let html = '<div class="owl-carousel careers-carousel d-flex justify-content-center align-items-center">';
   let html = '';
+  let content=[];
 
 function formatDescription(description){
         let maxLength = 200;         
@@ -21,29 +23,40 @@ function formatDescription(description){
     })
     .then(function (data) {       
       console.log(data)
-      html += data.map(function (data) {                
-        return (`<div class="col-md-4 col-12 border box m-2">
-        <div class="box-content mx-3">    
-        <div class="face front">
-                  <div class="front-text">
-                    <h5 class="pin1">${data.title}</h5>
-                    <p class="m-0 pin"><i class="fas fa-map-marker-alt mr-2"></i>${data.location}</p>
-                    <hr >
-                    <p class="py-2 text-left" id="description">${formatDescription(data.description)}</p>
-                  </div>
+      
+
+
+      html += data.map(function (data) { 
+        //content.push({title:data.title,location:data.location,id:data.id});  
+        return (`        
+        <div class="card mx-2 p-0 career-card">
+        <div class="card-body py-5">
+          <h5 class="card-title text-center">${data.title}</h5>
+          <h6 class="card-subtitle mb-2 text-muted text-center">${data.location}</h6>
+          <p class="card-text m-0"></p>
+          <a href="./job-details.html?id=${data.id}" class="card-link">Know More</a>           
         </div>
-        <div class="face Back">
-                  <div class="Back-text">
-                  <h5 class="pin1 text-center mb-5">${data.title}</h5>
-                    <a href="./job-details.html?id=${data.id}" class="btn btn-block  btn-info">Read More</a>
-                  </div>
-        </div>
-        </div>
-              </div>`)
+      </div>
+        `)
       }).join('');
     })
     .then(function () {
-      jobOpenings.innerHTML = html;
+
+      $("#owl-demo").html(html)
+      console.log(JSON.stringify(content))
+
+      $("#owl-demo").owlCarousel({
+        autoplay: true,     
+    loop: true,
+    center: true,
+    autoplaySpeed: 2000,
+    dots:false,
+    transitionStyle : "fade",
+    responsive: {
+      0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
+    }
+      });
+      
     })
 });
 

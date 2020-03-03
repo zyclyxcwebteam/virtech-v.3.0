@@ -132,7 +132,7 @@
     opacity: 0.7;
   }
   .intro-wrapper .core-icon-outer:hover{
-    background-color: #f3f7fa;
+    background-color:hsl(187, 92%, 44%);
   }
   .intro-wrapper .core-icon-outer:hover .core-icon-inner img{
     opacity: 1;

@@ -37,12 +37,12 @@
         <ul class="navbar-nav ml-auto mr-2">
           <!--  Home -->
 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
           </li>
 
           <!-- Services -->
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
             <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
               class="nav-link dropdown-toggle">Services</a>
 
@@ -67,6 +67,36 @@
                 </ul>
               </li>
 
+                            <!-- ! Security Services -->
+                            <li class="dropdown-submenu dropright">
+                              <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
+                              <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
+                                <li>
+                                  <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
+                                </li>
+                                <li>
+                                  <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
+                                </li>
+              
+                                <li>
+                                  <a href="./application_and_data_security.html" class="dropdown-item">Application & Data Security</a>
+                                </li>
+              
+                                <li>
+                                  <a href="./governance-and-compliance.html" class="dropdown-item">Governance & Compliance</a>
+                                </li>
+              
+                                <li>
+                                  <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint & Mobile Security</a>
+                                </li>
+              
+                                <li>
+                                  <a href="./identity_and_access_management.html" class="dropdown-item">Identity & Access Management</a>
+                                </li>
+                              </ul>
+                            </li>
+                            
               <!-- ! Application Devlopment -->
               <li class="dropdown-submenu dropright">
                 <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -84,36 +114,6 @@
                   </li>
                   <li>
                     <a href="./digital-marketing.html" class="dropdown-item">Digital Marketing</a>
-                  </li>
-                </ul>
-              </li>
-
-              <!-- ! Security Services -->
-              <li class="dropdown-submenu dropright">
-                <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
-                <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
-                  <li>
-                    <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
-                  </li>
-
-                  <li>
-                    <a href="./application_and_data_security.html" class="dropdown-item">Application & Data Security</a>
-                  </li>
-
-                  <li>
-                    <a href="./governance-and-compliance.html" class="dropdown-item">Governance & Compliance</a>
-                  </li>
-
-                  <li>
-                    <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint & Mobile Security</a>
-                  </li>
-
-                  <li>
-                    <a href="./identity_and_access_management.html" class="dropdown-item">Identity & Access Management</a>
                   </li>
                 </ul>
               </li>
@@ -228,30 +228,27 @@
   </section>
 
   <!-- ! Footer -->
-  <footer class="footer">
-    <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
-      <div class="col-lg-3 col-md-4 col-12 f-phone">
-        <p class="f-link mt-3">
+  <footer class="footer container-fluid d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center justify-content-start">
+       
+        <p class="f-link d-flex d-flex align-items-center  mx-4">
           <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
         </p>
-      </div>
-      <div class="col-lg-3 col-md-4 col-12 f-inquiries">
-        <p class="f-link mt-3">
+       
+       
+        <p class="f-link d-flex align-items-center mx-4">
           <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
         </p>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-12 f-location">
-        <p class="f-link mt-3">
+       
+       
+        <p class="f-link d-flex align-items-center mx-4">
           <a
             href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
             <i class="fas fa-map-marker-alt"></i> Location</a>
         </p>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-12 f-follow">
-        <div>
-          <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+       
+            
+          <ul class="social-network d-flex justify-content-start align-items-center pl-0 m-0 mx-4">
             <li>
               <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             </li>
@@ -265,115 +262,115 @@
               <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
                   class="fab fa-linkedin-in"></i></a>
             </li>
-          </ul>
-        </div>
-      </div>
+          </ul>         
+       
     </div>
-    <p class="copyright">© 2018 - 2020 Virtech. All rights reserved</p>
+    <p class="copyright d-flex align-items-center">© 2018 - 2020 Virtech. All rights reserved</p>
   </footer>
-  <!-- ! Contact us banner -->
+  <!-- ! Contact form -->
   <section class=" contact-wrapper" id="contactMaster">
+    <div class="overlay"></div>
     <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
 
-    <div class="container d-flex justify-content-center align-items-center flex-column">                      
-          <div class="row d-flex justify-content-between my-auto">
-            <div class="col-md-4 col-12 contact-title d-flex justify-content-center flex-column">
-              <h2 class="text-center display-4">Get in touch</h2>
-              <p class="text-center">We are happy to assist you with your queries</p>
-            </div>
-            <div class="col-md-6 col-12 contact-form">               
-                <div class="container">                   
-                    <form id="contactForm" class="needs-validation" novalidate>
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="form-group">
-                            <label for="validationCustom01"> Name <span>*</span></label>
-                            <input type="text" class="form-control" name="firstname" id="validationCustom01"
-                              pattern="[a-zA-Z\s]+" placeholder="Enter your name" autocomplete="off" required>
-                            <div class="valid-feedback">Nice! You got this one!</div>
-                            <div class="invalid-feedback">Please enter the valid Name</div>
-                          </div>
-                        </div>                                           
-                        <div class="col-12">
-                          <div class="form-group">
-                            <label class=""> Email-ID <span>*</span></label>
-                            <input type="email" class="form-control" name="email" autocomplete="off"
-                              placeholder="Enter your email-ID" id="email" required>
-                            <div class="valid-feedback">Nice! You got this one!</div>
-                            <div class="invalid-feedback">Sorry, you missed this one.</div>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-group">
-                            <label> Contact Number <span>*</span></label>
-                            <input type="number" class="form-control" name="phone" id="phone"
-                              placeholder="Enter your contact number" autocomplete="off"
-                              required>
-                            <div class="valid-feedback">Nice! You got this one!</div>
-                            <div class="invalid-feedback">Sorry, you missed this one.</div>
-                          </div>
-                        </div>  
-                        <div class="col-12">                    
-                        <div class="form-group">
-                        <label for="message">Subject <span>*</span></label>
-                        <textarea class="form-control" name="message" id="message" placeholder="Your message here.." required></textarea>
-                        <div class="valid-feedback">Nice! You got this one!</div>
-                        <div class="invalid-feedback">Sorry, you missed this one.</div>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-secondary ml-3" id="contactSubmit">Submit</button>
-                      </div>
-                  </form>
+    <div class="container d-flex justify-content-center align-items-center flex-column contact-inner">
+      <div class="row d-flex justify-content-between my-auto">
+        <div class="col-md-4 col-12 contact-title d-flex justify-content-center flex-column">
+          <h2 class="text-center display-4">Get in touch</h2>
+          <p class="text-center">We are happy to assist you with your queries</p>
+        </div>
+        <div class="col-md-6 col-12 contact-form">
+          <div class="container">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="validationCustom01"> Name <span>*</span></label>
+                    <input type="text" class="form-control" name="firstname" id="validationCustom01"
+                      pattern="[a-zA-Z\s]+" placeholder="Enter your name" autocomplete="off" required>
+                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                    <div class="invalid-feedback">Please enter valid Name</div>
+                  </div>
                 </div>
-            </div>                           
-            
-          </div>    
-          
-          <div class="container contact-info py-2 px-0">
-            <div class="row mx-auto d-flex justify-content-between align-items-center ">
-              <div class="col-md-3 col-12">
-                <a class="location"
-                href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">                     
-                Virtech Technologies, Riyadh, PO Box - 23754, K.S.A - 11611.
-              </a>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class=""> Email-ID <span>*</span></label>
+                    <input type="email" class="form-control" name="email" autocomplete="off"
+                      placeholder="Enter your email-ID" id="email" required>
+                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                    <div class="invalid-feedback">Please enter valid email</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label> Contact Number <span>*</span></label>
+                    <input type="number" class="form-control" name="phone" id="phone"
+                      placeholder="Enter your contact number" autocomplete="off" required>
+                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                    <div class="invalid-feedback">Please enter valid Phone Number</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message">Subject <span>*</span></label>
+                    <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
+                      required></textarea>
+                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                    <div class="invalid-feedback">Please write some message</div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-secondary mx-auto id=" contactSubmit">Submit</button>
               </div>
-              <div class="col text-center">
-                <a class="phone col-md-3 col-6" href="tel:+966552357583">                       
-                   (+966) 552 357 583                        
-                </a>
-              </div>
-
-              <div class="col-md-3 col-6 text-center">
-                <a class="mail col" href="mailto:info@virtech-ksa.com">
-                  info@virtech-ksa.com
-                </a>
-              </div>
-      
-              <div class="col-md-3 col-6">
-                <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
-                  <li>
-                    <a href="#" class="icoFacebook" title="Facebook">
-                      <i class="fab fa-facebook-f fa-fw">
-                      </i></a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                        class="fab fa-twitter fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" class="icoTwitter" title="Instagram">
-                      <i class="fab fa-instagram fa-fw">
-                      </i></a>
-                  </li>
-                  <li>
-                    <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
-                        class="fab fa-linkedin-in fa-fw">
-                      </i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            </form>
           </div>
+        </div>
+
+      </div>
+
+      <div class="container contact-info py-2 px-0">
+        <div class="row mx-auto d-flex justify-content-between align-items-center ">
+          <address class="col-md-3 col-12">
+            <a class="location"
+              href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+              Virtech Technologies, <br /> Riyadh, PO Box - 23754, <br /> K.S.A - 11611.
+            </a>
+          </address>
+          <div class="col text-center">
+            <a class="phone col-md-3 col-6" href="tel:+966552357583">
+              (+966) 552 357 583
+            </a>
+          </div>
+
+          <div class="col-md-3 col-6 text-center">
+            <a class="mail col" href="mailto:info@virtech-ksa.com">
+              info@virtech-ksa.com
+            </a>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
+              <li>
+                <a href="#" class="icoFacebook" title="Facebook">
+                  <i class="fab fa-facebook-f fa-fw">
+                  </i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                    class="fab fa-twitter fa-fw"></i></a>
+              </li>
+              <li>
+                <a href="#" class="icoTwitter" title="Instagram">
+                  <i class="fab fa-instagram fa-fw">
+                  </i></a>
+              </li>
+              <li>
+                <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                    class="fab fa-linkedin-in fa-fw">
+                  </i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="status-alert" id="formStatus">

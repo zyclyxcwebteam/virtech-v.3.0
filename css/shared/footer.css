@@ -1,36 +1,32 @@
 .footer{
   background-color: #f2f3f9;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 .footer a,
 .footer p {
-  font-size: 1.05rem;
-  color: #333;
+  font-size: 1rem;
+  color: #3c3c42;
   font-weight: 500;
   text-decoration: none;
+  margin-bottom: 0;
 }
 .f-link a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.f-link .fas {
-  /* border-radius: 50px;
-  background: #eef0f1;
-  box-shadow: -5px 5px 10px #cacccd, 5px -5px 10px #ffffff;
-  height: 30px;
-  width: 30px; */
+.f-link .fas {   
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 5px;  
 }
-/* .f-link:hover .fas {
-  border-radius: 50px;
-  background: linear-gradient(225deg, #d6d8d9, #ffffff);
-  box-shadow: -5px 5px 10px #cacccd, 5px -5px 10px #ffffff;
-} */
+.f-link:hover .fas {
+   color: #00bdd5 ;
+}
 .f-link a:hover {
-  color: #111;
+  color: #00bdd5 ;
   font-weight: 600;
 }
 
@@ -38,7 +34,9 @@
 .footer .social-network li {
   list-style-type: none;
 }
-
+.footer .social-network{
+  margin-left: 1rem !important;
+}
 .footer .social-network a {
   font-weight: 600;   
   margin: 0 8px;
@@ -46,21 +44,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 2;
-  transition: all 0.2s ease-in;
-  /* border-radius: 50px;
-  background: linear-gradient(225deg, #d6d8d9, #ffffff);
-  box-shadow: -5px 5px 10px #cacccd, 5px -5px 10px #ffffff; */
+  /* line-height: 2; */
+  transition: all 0.2s ease-in;    
 }
 
 .footer .social-network a:hover {
-  /* border-radius: 50px; */
-  /* background: linear-gradient(225deg, #ffffff, #e6e6e6);
-  box-shadow: -5px 5px 10px #d9d9d9, 5px -5px 10px #ffffff;
-  transition: 0.2s all ease-in; */
+  opacity: 1;
 }
 .footer .social-network .fab{
-font-size: 1.2rem;
+font-size: 1rem;
 margin: 0;
 }
 .footer .social-network .fa-facebook-f{
@@ -79,10 +71,9 @@ color:#1DA1F2;
 .footer .copyright {
   margin: 0;   
   text-align: center;
-  font-size: 1rem;  
+  font-size: 0.8rem;  
+  margin-right: 2rem;
+  color: hsl(240, 5%, 35%);
+  font-weight: 400;
 }
-/* .footer-col{
-  display: flex;
-  
-  align-items: center;
-} */
+ 

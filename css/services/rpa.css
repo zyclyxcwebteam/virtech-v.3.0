@@ -164,7 +164,7 @@ background-position:top center;
     background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
 }
 .bd-banner{
-    background-image: url("../../img/bigdata/bigdata-1.jpg");
+    background-image: url("../../img/bigdata/img-1.png");
 }
 .bd-overview{
     background-color: #013c60;
@@ -185,12 +185,11 @@ background-position:top center;
     background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
 }
 
-.app-sec-banner{
-    background-color: #013c60;
+.app-sec-banner{    
     background-image: url("../../img/app_security/app-sec-1.jpg");
 }
 
-.app-sec-banner.app-sec-overview::after{  
+.app-sec-banner.service-banner::after{  
     background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
 }
 .app-sec-overview{
@@ -214,7 +213,7 @@ background-position:top center;
     background-image: url("../../img/data-comp/data-comp-1.jpg");
 }
 
-.comp-banner.mob-sec-overview::after{  
+.comp-banner.service-banner::after{  
     background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
 }
 .comp-overview{
@@ -226,8 +225,8 @@ background-position:top center;
     background-position:center;
 }
 
-.access-banner.mob-sec-overview::after{  
-    background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
+.access-banner.service-banner::after{  
+    background-image: linear-gradient(to top, #10305f 1%,transparent,transparent 100%);
     
 }
 .access-overview{
@@ -240,7 +239,7 @@ background-position:top center;
     background-position:top;
 }
 
-.infra-banner.infra-overview::after{  
+.infra-banner.service-banner::after{  
     background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
     
 }
@@ -254,7 +253,7 @@ background-position:top center;
     background-position:top;
 }
 
-.outs-banner.infra-overview::after{  
+.outs-banner.service-banner::after{  
     background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
     
 }

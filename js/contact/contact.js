@@ -1,5 +1,7 @@
 // validations
 
+
+
 (function() {
   function contactFormShow() {
     gsap.to(".contact-wrapper", {
