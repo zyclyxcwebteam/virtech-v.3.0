@@ -31,10 +31,11 @@ function formatDescription(description){
         return (`        
         <div class="card mx-2 p-0 career-card">
         <div class="card-body py-5">
+        <div class="career-text">
           <h5 class="card-title text-center">${data.title}</h5>
           <h6 class="card-subtitle mb-2 text-muted text-center">${data.location}</h6>
-          <p class="card-text m-0"></p>
-          <a href="./job-details.html?id=${data.id}" class="card-link">Know More</a>           
+        </div>
+          <a href="./job-details.html?id=${data.id}" class="card-link">Apply Now</a>           
         </div>
       </div>
         `)
@@ -49,7 +50,7 @@ function formatDescription(description){
         autoplay: true,     
     loop: true,
     center: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     dots:false,
     transitionStyle : "fade",
     responsive: {
