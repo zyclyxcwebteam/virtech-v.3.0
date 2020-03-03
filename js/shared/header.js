@@ -19,10 +19,9 @@ $(function() {
       });
     });
   
-    $("ul.dropdown-menu [data-toggle='dropdown']").on("mouseleave", function(event) {
+    $("ul.dropdown-menu li:last-child").on("mouseenter", function(event) {
       event.preventDefault();
-      event.stopPropagation();
-     console.log('mouse leave')
+      event.stopPropagation(); 
      $(this).parents('.dropdown-menu').first().find('.show').removeClass('show') 
     })         
 });
