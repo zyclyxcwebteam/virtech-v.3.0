@@ -103,7 +103,7 @@ font-size: 1.2rem;
   z-index: 1;
 }
 .career-card:hover .card-body::after{
-  background-color: #0c1b33 !important;
+  background-color: rgba(12, 27, 51,0.9) !important;
   transition: .3s all ease-out;
 }
 
@@ -114,10 +114,10 @@ font-size: 1.2rem;
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 1.2rem;
-  font-weight: 500;
-  border: 2px solid #f5f5f5;
+  font-weight: 500;   
   padding:0.6rem 1.5rem;
   border-radius: 1.8rem;
+  background-color: #24aec3;
 }
 .career-card:hover .card-link{
   display: block;

@@ -1,5 +1,5 @@
 .rpa-banner {        
-    background-image: url("../../img/rpa/rpa-3.jpg");
+    background-image: url("../../img/rpa/img-1.jpg");
     background-position:center;
   }
 
@@ -199,9 +199,10 @@ background-position:top center;
 .mob-sec-banner{
     background-color: #013c60;
     background-image: url("../../img/mob-sec/mob-sec-1.jpg");
+    background-position:left center;
 }
 
-.mob-sec-banner.mob-sec-overview::after{  
+.mob-sec-banner.service-banner::after{  
     background-image: linear-gradient(to top, #10305f 1%,transparent 100%);
 }
 .mob-sec-overview{
