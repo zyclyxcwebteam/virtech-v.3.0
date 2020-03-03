@@ -5,27 +5,24 @@
 }
  /* services */
 /* Horizontal scroll container */
-#masterContainer{
+/* #masterContainer{
     width: 100%;          
     background-color:var(--service-bg);
     height: 95vh;
     position: relative;          
-  }
-  #serviceCarousel{
+  } */
+  /* #serviceCarousel{
     opacity: 0;
-  }
-  .services-wrapper .s-hero-title{
-     /* color:#f4f4f4; */
-     position: absolute;
+  } */
+  .services-wrapper .s-hero-title{      
+     /* position: absolute;
      left: 50%;
      top:50%;
-     transform: translate(-50%,-50%);      
-     /* font-family: 'Bungee Outline', cursive; */
-     /* font-family: 'Archivo Black', sans-serif; */
+     transform: translate(-50%,-50%);        */
      font-family: 'Playfair Display',sans-serif;
-     font-size: 6.5rem;
+     font-size: 3rem;
      letter-spacing: 3px;
-    color:#0c1b33;
+    color:#e4e4e4;
   }
 
   /* .services-wrapper #slidesContainer{
@@ -45,14 +42,20 @@
   } */
   
   /* end scroll container */
-  
+  #serviceCarousel{
+height:60vh;
+  }
+  .services-wrapper{
+    height: 97vh;
+    background-color: #0c1b33;
+  }
   .services-wrapper .services .title-card{
     height:100%;
     width: 100%;
     border: none;
     opacity: 1;  
   }
-  .services-wrapper .services .title-card .card-body{
+  /* .services-wrapper .services .title-card .card-body{
     position: relative;
   }
   .services-wrapper .services .title-card .card-body img{
@@ -60,7 +63,7 @@
   left: 40%;
   bottom:10px;
   width: 60px;
-  }   
+  }    */
   .services-wrapper .services .title-card-1{             
     background-image: url('../../img/Card1.png');
     background-size: cover;
@@ -137,7 +140,7 @@
     justify-content: center;   
     flex-direction: column;
   }
-  .s-slide-nav{
+  /* .s-slide-nav{
     margin: 0;
     padding: 0;
     position: absolute;
@@ -154,8 +157,6 @@
   .s-slide-nav a span{
     height: 5px;
     width: 30px;
-    /* border: 2px solid ; */
-    /* border-radius: 50%; */
     box-sizing: border-box;
     display: inline-block;
     background-color:hsl(217, 62%, 24%); 
@@ -168,7 +169,7 @@
   .s-slide-nav a.active span{
     background-color: #02A9EA;     
      
-  }
+  } */
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
     margin-bottom: 1rem;
@@ -177,7 +178,7 @@
     align-items: flex-end;
   }
 .carousel-indicators {
-bottom: 50px;
+bottom: -50px;
   }
 
   .carousel-indicators li {
