@@ -34,9 +34,14 @@ background-color: rgba(12, 27, 51,0.7);
 } 
 .contact-wrapper .contact-info a{
     text-decoration: none;     
-    color:hsl(218, 63%, 72%);     
+    color:#b5b5b5;     
 }
-  
+.contact-wrapper .contact-info a:hover{
+  color: #00bdd5;
+}
+.contact-info .social-network .fab:hover{
+  color: #00bdd5;
+}
 .contact-wrapper .form-group {
     margin-bottom: 1rem;
   }
