@@ -277,7 +277,8 @@ background-color: #00cdac;
 .clients-wrapper .client-title{
     font-size: 2.2rem;
     font-weight: 600;
-    font-family: 'Archivo Black', sans-serif;
+    /* font-family: 'Archivo Black', sans-serif; */
+    font-family: 'Playfair Display';
 } 
 /* ! Our clients */
 .clients-wrapper .client{
