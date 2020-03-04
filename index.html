@@ -189,9 +189,9 @@
   </nav>
   <!-- ? END - NAVIGATION BAR -->
 
-
+<section id="fullpage">
   <!-- ? LANDING SECTION -->
-  <section class="container-fluid home-banner" id="home">
+  <section class="section container-fluid home-banner" id="home">
     <div class="row home-inner h-100">
       <!-- ? titles -->
       <div class="col-12 order-1 order-md-0 order-sm-1 home-titles d-flex justify-content-center align-items-center">
@@ -263,7 +263,7 @@
 
 
   <!-- ? Our Services -->
-  <section class="services-wrapper">
+  <section class="section services-wrapper">
     <h2 class="s-hero-title text-center pt-5">Services</h2>
     <div class="d-flex align-items-center justify-content-center mt-5">
       <div id="serviceCarousel" class="d-flex align-items-center carousel slide" data-ride="carousel">
@@ -780,7 +780,7 @@
   <!-- ? END - SERVICES -->
 
   <!-- ? Proof of concept -->
-  <div class="poc-wrapper" id="accordion">
+  <div class="section poc-wrapper" id="accordion">
     <div class="card container">
       <div class="card-header py-4" id="headingOne">
         <div class="d-flex justify-content-center align-items-center">
@@ -824,7 +824,7 @@
   <!-- ? END - Proof of Concept -->
 
   <!-- ? Our Industries -->
-  <section class="industry-wrapper pt-5 pb-3" id="industryMaster">
+  <section class="section industry-wrapper pt-5 pb-3" id="industryMaster">
     <h3 class="ind-hero-title">Industries</h3>
     <div class="container" id="industryInner">
       <div class="row">
@@ -967,7 +967,7 @@ Our team understands the constant pressure businesses have to reduce overhead. W
 
   <!-- ? Company Intro -->
   <!-- ! Company Intro -->
-  <div class="intro-wrapper" id="introContainer">
+  <div class="section intro-wrapper" id="introContainer">
     <h4 class="intro-hero-title">Who We Are</h4>
     <div id="introSlides" class="company-intro">
       <section class="slide slide-1 mt-3" id="coreValues">
@@ -1119,8 +1119,9 @@ Our team understands the constant pressure businesses have to reduce overhead. W
     </div>
   </div>
   <!-- ? END - company Intro -->
+
   <!-- ? Our clients -->
-  <section id="clients" class="container-fluid our-clients clients-wrapper">
+  <section id="section clients" class="container-fluid our-clients clients-wrapper">
     <h2 class="client-title text-center pt-4 pb-0 mb-0">Clients</h3>
       <div class="container px-0">
         <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center">
@@ -1137,14 +1138,15 @@ Our team understands the constant pressure businesses have to reduce overhead. W
   <!-- ? END - OUR CLIENTS -->
 
 
+
   <!-- ! Contact us banner -->
-  <section id="contactBanner" class="contact-banner d-flex justify-content-center align-items-center flex-column">
+  <section id="section contactBanner" class="contact-banner d-flex justify-content-center align-items-center flex-column">
     <div class="overlay"></div>
     <div class="container contact-text">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-6">
+        <div class="col">
           <div class="text-center">
-            <h3 class="text-center contact-title">Contact Us</h3>
+            <h3 class="text-center contact-title">Find answers to your business needs</h3>
             <p class="text-center contact-caption mt-2">We are happy to assist you with your queries </p>
             <p class="text-center mt-5">
               <button type="button" id="contactButton"
@@ -1157,6 +1159,8 @@ Our team understands the constant pressure businesses have to reduce overhead. W
       </div>
     </div>
   </section>
+
+</section>
 
   <!-- ! Footer -->
   <footer class="footer container-fluid d-flex justify-content-between align-items-center">
@@ -1216,7 +1220,7 @@ Our team understands the constant pressure businesses have to reduce overhead. W
                     <input type="text" class="form-control" name="firstname" id="validationCustom01"
                       pattern="[a-zA-Z\s]+" placeholder="Enter your name" autocomplete="off" required>
                     <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please enter valid Name</div>
+                    <div class="invalid-feedback">Please enter valid name</div>
                   </div>
                 </div>
                 <div class="col-12">
@@ -1234,7 +1238,7 @@ Our team understands the constant pressure businesses have to reduce overhead. W
                     <input type="number" class="form-control" name="phone" id="phone"
                       placeholder="Enter your contact number" autocomplete="off" required>
                     <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please enter valid Phone Number</div>
+                    <div class="invalid-feedback">Please enter valid phone number</div>
                   </div>
                 </div>
                 <div class="col-12">
@@ -1243,7 +1247,7 @@ Our team understands the constant pressure businesses have to reduce overhead. W
                     <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
                       required></textarea>
                     <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please write some message</div>
+                    <div class="invalid-feedback">Please write a message</div>
                   </div>
                 </div>
                 <button type="submit" class="btn btn-secondary mx-auto id=" contactSubmit">Submit</button>
@@ -1323,6 +1327,8 @@ Our team understands the constant pressure businesses have to reduce overhead. W
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="./js/vendor/animation.gsap.js"></script>
+   
+ 
   <!-- END-SCROLL MAGIC -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -1707,6 +1713,6 @@ Our team understands the constant pressure businesses have to reduce overhead. W
       sectionOneObserver.observe(homeContainer);
       // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
 
-    })
+    }) 
   </script>
 </body>

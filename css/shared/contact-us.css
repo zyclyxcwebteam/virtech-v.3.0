@@ -79,9 +79,14 @@ background-image: linear-gradient(135deg,rgba(12, 27, 51,0.9) 30%,rgba(12, 27, 5
     border: none;
     color: #fff;     
     font-size: 1.4rem;     
-    background-color:rgba(17, 39, 74,0.95);
+    /* background-color:rgba(17, 39, 74,0.95); */
     /* border-bottom:1px solid hsl(217, 62%, 16%); */
+    /* background-color: rgba(255, 255, 255,0.25); */
+    background-color: rgba(70, 161, 212, 0.27) !important;
   }
+  /* #contactForm{
+    background-color:rgba(17, 39, 74,0.95);
+  } */
    .contact-wrapper .social-network{
     margin: 0;
   }
@@ -125,7 +130,9 @@ background-image: linear-gradient(135deg,rgba(12, 27, 51,0.9) 30%,rgba(12, 27, 5
   }
 
   .contact-wrapper ::placeholder {
-    color:hsl(217, 62%, 30%) !important;
+    /* color:hsl(217, 62%, 30%) !important; */
+    color: rgba(149, 149, 149,0.3);
+    font-size: 1.2rem;
   }
   .contact-wrapper input::-webkit-outer-spin-button,
   .contact-wrapper input::-webkit-inner-spin-button {

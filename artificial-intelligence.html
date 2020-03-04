@@ -169,6 +169,7 @@
       <li><a href="#" id="img1">Image-1</a></li>
     <li><a href="#" id="img2">Image-2</a></li>
     <li><a href="#" id="img3">Image-3</a></li>
+    <li><a href="#" id="img4">Image-4</a></li>
   </ul>
     
     <div class="row banner-title d-flex justify-content-center align-items-end flex-column h-100 mx-auto px-2">
@@ -467,6 +468,7 @@ $(".clients-carousel").owlCarousel({
   let imageOne = document.getElementById('img1');
 let imageTwo = document.getElementById('img2');
 let imageThree = document.getElementById('img3');
+let imageFour = document.getElementById('img4');
 
 
 imageOne.addEventListener('click',function(){
@@ -479,6 +481,10 @@ document.querySelector('.service-banner').style.backgroundImage='url(./img/ai/im
 
 imageThree.addEventListener('click',function(){
 document.querySelector('.service-banner').style.backgroundImage='url(./img/ai/img-3.jpg)';
+})
+
+imageFour.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/ai/img-4.jpg)';
 })
 </script>
 

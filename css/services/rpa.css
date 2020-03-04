@@ -15,6 +15,7 @@
 
   .ai-banner{
     background-image: url("../../img/ai/img-1.jpg");
+    background-position:right center;
 }
 
 .ai-overview{

@@ -32,7 +32,9 @@
   top:50%;
   transform: translate(-50%,-50%);      
   /* font-family: 'Bungee Outline', cursive; */
-  font-family: 'Archivo Black', sans-serif;
+  /* font-family: 'Archivo Black', sans-serif; */
+  font-family: 'Playfair Display',sans-serif;
+  font-weight: 600;
   font-size: 6.5rem;
  color:#f4f4f4;
 }
