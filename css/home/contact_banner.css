@@ -9,7 +9,7 @@
     overflow: hidden;        
     }
     
-    .overlay {
+    .contact-banner .overlay {
       position: absolute;
       top: 0;
       z-index: 10;

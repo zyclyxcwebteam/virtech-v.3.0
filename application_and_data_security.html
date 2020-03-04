@@ -164,6 +164,11 @@
     </div>
   </nav>  
   <section class="container-fluid service-banner app-sec-banner">
+    <ul class="image-list">
+      <li><a href="#" id="img1">Image-1</a></li>
+    <li><a href="#" id="img2">Image-2</a></li>
+    <li><a href="#" id="img3">Image-3</a></li>
+  </ul>
     <div class="row banner-title d-flex justify-content-start align-items-end flex-column h-100 mx-auto px-2">
       <div class="col-md-7 col-12 text-center mt-5">
         <h2 class="service-name">Application & Data Security</h2>
@@ -496,6 +501,25 @@ $(".clients-carousel").owlCarousel({
     }
   });
    </script>
+
+<script>
+  let imageOne = document.getElementById('img1');
+let imageTwo = document.getElementById('img2');
+let imageThree = document.getElementById('img3');
+
+
+imageOne.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/app_security/img-1.jpg)';
+})
+
+imageTwo.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/app_security/img-2.jpg)';
+})
+
+imageThree.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/app_security/img-3.jpg)';
+})
+</script>
 </body>
 
 </html>

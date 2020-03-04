@@ -1,35 +1,21 @@
 
 $(document).ready(function () {
-  let jobOpenings = document.getElementById('jobOpenings');
-  let path = "https://agile-plateau-09650.herokuapp.com/jobopenings";
-  //let html = '<div class="owl-carousel careers-carousel d-flex justify-content-center align-items-center">';
+  let jobOpeningsCount = document.getElementById('openingsCount');
+  let path = "https://agile-plateau-09650.herokuapp.com/jobopenings";   
   let html = '';
   let content=[];
-
-function formatDescription(description){
-        let maxLength = 200;         
-        if (description.length > maxLength) {
-          return description.substr(0, maxLength) + '...<br> <a href="#">( Read More )</a>';
-        }
-        else {
-          return description;
-        }
-
-}
 
   fetch(path)
     .then(response => {
       return response.json();
     })
     .then(function (data) {       
-      console.log(data)
+      console.log(data.length)
+      jobOpeningsCount.innerHTML = `${data.length}`
       
-
-
-      html += data.map(function (data) { 
-        //content.push({title:data.title,location:data.location,id:data.id});  
+      html += data.map(function (data) {           
         return (`        
-        <div class="card mx-2 p-0 career-card">
+        <div class="card mx-3 p-0 py-3 career-card">
         <div class="card-body py-5">
         <div class="career-text">
           <h5 class="card-title text-center">${data.title}</h5>
@@ -43,15 +29,16 @@ function formatDescription(description){
     })
     .then(function () {
 
-      $("#owl-demo").html(html)
-      console.log(JSON.stringify(content))
-
-      $("#owl-demo").owlCarousel({
+      $("#owlCareers").html(html)
+     
+      $("#owlCareers").owlCarousel({
         autoplay: true,     
     loop: true,
     center: true,
     autoplaySpeed: 3000,
     dots:false,
+    nav:true,
+    autoplayHoverPause:true,
     transitionStyle : "fade",
     responsive: {
       0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }

@@ -165,11 +165,16 @@
   </nav>
   <section class="container-fluid service-banner comp-banner">
     <div class="row banner-title d-flex justify-content-center align-items-start flex-column h-100 mx-auto px-2">
-      <div class="col-md-6 col-12 ml-md-4 ml-1 mt-5">
-        <h2 class="service-name">Governance & Compliance</h2>
+      <div class="col-md-7 col-12 ml-md-4 ml-1 mt-5">
+        <h2 class="service-name">Governance and Compliance</h2>
         <h3 class="service-tagline mt-4">Enhancing your Network performance and providing 360-degree protection from Security breaches</h3>
       </div>
     </div>
+    <ul class="image-list">
+      <li><a href="#" id="img1">Image-1</a></li>
+    <li><a href="#" id="img2">Image-2</a></li>
+    <li><a href="#" id="img3">Image-3</a></li>
+  </ul>
   </section>
 
   <section class="container-fluid service-overview comp-overview" id="serviceOverview">
@@ -482,6 +487,25 @@ $(".clients-carousel").owlCarousel({
   });
  
   </script>
+
+<script>
+  let imageOne = document.getElementById('img1');
+let imageTwo = document.getElementById('img2');
+let imageThree = document.getElementById('img3');
+
+
+imageOne.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/compliance/img-1.jpg)';
+})
+
+imageTwo.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/compliance/img-2.jpg)';
+})
+
+imageThree.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/compliance/img-3.jpg)';
+})
+</script>
 </body>
 
 </html>

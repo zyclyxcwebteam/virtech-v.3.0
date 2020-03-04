@@ -43,37 +43,16 @@
 }
 .career-title{
   font-size: 3.5rem;
-  font-family: 'Merriweather';
-  letter-spacing: 3px;
-  /* font-family: 'Bree Serif'; */
+  font-family: 'Playfair Display';
+  letter-spacing: 3px;   
   font-weight: 600;
   color: #f5f5f5;
 }
-.career-home .hero-title{
-  color: #b8bdc4;
-  font-size: 2.5rem;
-  /* line-height: 1.5; */
-  text-align: center !important;
-}
-.career-home .hero-text{
-  font-size: 1.4rem;
-  color: #b8bdc4;
-  text-align: justify !important;
-}
-.career-home ul{
-  margin: 0;
-  padding: 0;
-}
-
-.career-home ul li{
-color: #b8bdc4;
-margin: 1rem;
-font-size: 1.2rem;
-}
-
+ 
 
 .career-points{
-  background-color: #f9f9f9;
+  background-color:#0c1b33;
+  color: #b8bdc4;
 }
 .career-points .hero-text{
   font-size: 1.4rem;
@@ -83,12 +62,24 @@ font-size: 1.2rem;
 .career-points ul li{
   font-size: 1.2rem;
   margin:1.2rem 1rem;
+  list-style-type: none;
 }
-
+.career-points ul li .fas{
+ margin-right: 5px;
+ color: #24aec3;
+}
 /* career cards */
+
+.openings-count{
+font-size: 1.2rem;
+color:#0c1b33;
+font-weight: 600;
+}
 .career-card{
   position: relative;   
   z-index: -1;
+  border-color: rgba(36, 174, 195,0.5);  
+  background-color: #f2f3f9; 
 }
 .career-card .card-body::after{
   content: '';
@@ -103,230 +94,69 @@ font-size: 1.2rem;
   z-index: 1;
 }
 .career-card:hover .card-body::after{
-  background-color: rgba(12, 27, 51,0.9) !important;
+  /* background-color: rgba(12, 27, 51,0.5) !important; */
+  background-color: rgba(36, 174, 195,0.3);
   transition: .3s all ease-out;
 }
 
 .career-card .card-link{
   display: none;
   position: absolute;
-  top: 50%;
+  bottom: 1rem;
   left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 1.2rem;
-  font-weight: 500;   
-  padding:0.6rem 1.5rem;
-  border-radius: 1.8rem;
-  background-color: #24aec3;
+  transform: translateX(-50%);
+  font-size: 1rem;   
+  padding:0.5rem 1.6rem;
+  border-radius: 2rem;
+  background-color:hsl(188, 81%, 51%);
+  transition: 0.3s all ease-out;
 }
 .career-card:hover .card-link{
   display: block;
   z-index: 99;
-  color: #f9f9f9;
-}
-
-.career-card .card-link:hover{
-  background-color: #f5f5f5;
   color: #0c1b33;
 }
 
-/* .career-card:hover .career-text{
-  display: none;
-} */
-/* end career cards */
-/*  */
- .content {
-    font-size: 1.2rem;
-  }
+.career-card .card-link:hover{   
+  font-weight: 600;
+  font-size: 1.05rem;
+  background-color: hsl(188, 69%, 55%);
+  transition: 0.3s all ease-out;
+}
 
-  .title-2 {
-    font-size: 1.6rem;
-  }
-
-  .partner img {
-    width: 180px;
-  }
-/*  
-  .img-frame {
-    border: 1px solid;
-    width: 500px;
-    height: 280px;
-    border-radius: 4px;
-    background: lightblue;
-    position: relative;
-  }
-
-  .img-frame::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    border-radius: 4px;
-    border: 1px solid rgba(37, 35, 35, 0.602);
-    height: 400px;
-    width: 350px;
-    top: -65px;
-    left: -50px;
-  } */
-
- /* .career-home .social-links i {
-    
-    text-align: left !important;
-    left: 25px;
-    color: red;
-  } */
-
-  /* Openings */
-   .career-home .card1 {
-    padding: 20px;
-    width: 320px;
-  }
-
-  .career-home .card .pin {
-    color: #8c8c8c;
-  }
-
-  .career-home .card a {
-    margin-top: 10px;
-  }
-
-   
-
-  .career-home .card:hover {
-    /* background: blue;
-color: white; */
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.45);
-  }
-
-  .career-home .card:hover hr {
-    background: #f1f1f1c7;
-  }
-
-  .career-home .card:hover .pin {
-
-    color: #24aec3;
-
-
-  }
-
-  .career-home .card:hover .pin1 {
-
-    color: #007bff;
-
-  }
  
-
-  /* File */
-  /* .custom-file-label {
-    background-color: lightblue;
-    color: #3ea7ca;
-    border: 1.5px dashed rgb(62, 167, 202);
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
-  .form-control {
-    position: relative;
-  }
-
-  .form-control::after {
-    content: '';
-    position: absolute;
-    border-bottom: 1px solid #000;
-  }
-
-  .form-control:focus {
-    box-shadow: 0 0 4px 1px rgba(0, 123, 255, .25);
-  }
-
-  .custom-file-label::after {
-    display: none;
-  } */
-
-
-
-  /* 3d-flip */
-   .job-container{
-    background-color: #f9f9f9;
-    padding: 50px;
-  }
-  .job-container .job-container h1{
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  .job-container .box {
-    position: relative;
-    width: 350px;
-    height: 400px;
-    /* border: 1px solid #ccc; */
-    /* border-bottom: 1px solid #ccc; */
-    transform-style: preserve-3d;
-    /* margin: 10px; */
-background-color: transparent;
-
-  }
-  .job-container .box:nth-child(3){
-    border-left: none;
-  }
-  .job-container .box .face {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* border-radius: 5px; */
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    backface-visibility: hidden;
-    transition: 1s ease-in-out;
-    transform: perspective(500px) rotateY(0deg);
-
-  }
-
-  .job-container .front-text h5 {
-    color: #065c69;
-    padding-top: 55px;
-  }
-
-  .job-container .front-text .pin {
-    color: #0090a6;
-  }
-
-  .job-container .box .face.front {
-    background: #fff;
-    /* border: 1px solid #ccc; */
-  }
-
-  .job-container .box:hover .face.front {
-    transform: perspective(500px) rotateY(180deg);
-  }
-
-  .job-container .box .face.Back {
-    background: rgba(230, 230, 230,1);
-    color: #0090a6;
-    display: flex;
-    align-items: center;
-    transform: perspective(500px) rotateY(180deg);
-  }
-
-  .job-container .box:hover .face.Back {
-    transform: perspective(500px) rotateY(360deg);
-  }
-
-  .job-container .box .face .front-text {
-    font-size: 14px;
-    width: 250px;
-    transform: perspective(500px) translateZ(50px);
-  }
-
-  .job-container .box .face .Back-text {
-    width: 250px;
-    transform: perspective(500px) translateZ(50px);
-  }
-
+.openings-wrapper{
+  background-color: #f9f9f9;
+}
+.openings-wrapper .owl-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.openings-wrapper .owl-prev, .openings-wrapper .owl-next{
+  margin:1.5rem 0.5rem 0.5rem;
+  border: 1px solid rgba(36, 174, 195,0.2) !important;
+  height: 40px;
+  width: 40px;
+background-color: rgba(36, 174, 195,0.1) !important;
+outline:none !important;
+transition: 0.3s all ease-out;
+border-radius: 0.2rem;
+}
+.openings-wrapper .owl-prev span, 
+.openings-wrapper .owl-next span{
+font-size: 2rem;
+height: 40px;
+width: 40px;
+font-weight: 500;
+position: relative;
+top: -8px;  
+} 
+.openings-wrapper .owl-prev:hover, 
+.openings-wrapper .owl-next:hover{ 
+background-color: rgba(36, 174, 195,1) !important;
+transition: 0.3s all ease-out;
+}
    /* TODO - check it  */
  .contact-banner{
   display: none;

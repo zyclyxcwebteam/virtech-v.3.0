@@ -171,6 +171,11 @@
         </h3>
       </div>
     </div>
+    <ul class="image-list">
+      <li><a href="#" id="img1">Image-1</a></li>
+    <li><a href="#" id="img2">Image-2</a></li>
+    <li><a href="#" id="img3">Image-3</a></li>
+  </ul>
   </section>
 
   <section class="container-fluid service-overview dcenter-overview" id="serviceOverview">
@@ -473,6 +478,25 @@ $(".clients-carousel").owlCarousel({
 //     showContent.to('#content-1',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{prev:0,index:1}]})
 //     showContent.to('#content-2',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{index:2}],delay:6})
   </script>
+
+<script>
+  let imageOne = document.getElementById('img1');
+let imageTwo = document.getElementById('img2');
+let imageThree = document.getElementById('img3');
+
+
+imageOne.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/datacenter/img-1.jpg)';
+})
+
+imageTwo.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/datacenter/img-2.jpg)';
+})
+
+imageThree.addEventListener('click',function(){
+document.querySelector('.service-banner').style.backgroundImage='url(./img/datacenter/img-3.jpg)';
+})
+</script>
 </body>
 
 </html>
