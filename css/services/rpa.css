@@ -1,3 +1,6 @@
+.service-banner{
+    /* background-position: center center; */
+}
 .rpa-banner {        
     background-image: url("../../img/rpa/img-1.jpg");
     background-position:center;
@@ -24,7 +27,8 @@
 .bc-banner{
     background-image: url("../../img/blockchain/img-1.jpg");
     /* background-size: contain; */
-    /*background-repeat: no-repeat;*/       
+    /*background-repeat: no-repeat;*/    
+    background-position: center;   
 }
 .bc-overview{
     background-color: #011439;
@@ -70,7 +74,7 @@
 
 .web-banner{
     background-image: url("../../img/web/img-1.jpg");  
-    background-position:top center;   
+    background-position:center center;   
 }
 .web-overview{
     background-color: #013d61;
@@ -154,7 +158,7 @@ background-image: url("../../img/datacenter/img-1.jpg");
 
 .ns-banner{
 background-image: url("../../img/network-security/img-1.jpg");
-background-position:top center;
+background-position:center center;
 }
 .ns-overview{
     background-color: #013c60;
@@ -212,6 +216,7 @@ background-position:top center;
 .comp-banner{
     background-color: #013c60;
     background-image: url("../../img/compliance/img-1.jpg");
+    background-position: center;
 }
 
 .comp-banner.service-banner::after{  
@@ -236,7 +241,7 @@ background-position:top center;
 
 .infra-banner{
     background-color: #013c60;
-    background-image: url("../../img/infra/img-2.jpg");
+    background-image: url("../../img/infra/img-1.jpg");
     background-position:top;
 }
 
@@ -251,7 +256,7 @@ background-position:top center;
 .outs-banner{
     background-color: #013c60;
     background-image: url("../../img/outs/img-1.jpg");
-    background-position:top;
+    background-position:center;
 }
 
 .outs-banner.service-banner::after{  
