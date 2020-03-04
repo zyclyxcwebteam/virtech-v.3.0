@@ -21,6 +21,7 @@
     /* font-family: 'Bungee Outline', cursive; */
     /* font-family: 'Archivo Black', sans-serif; */
     font-family: 'Playfair Display',sans-serif;
+    letter-spacing: 3px;
     font-size: 6.5rem;
    color:#0c1b33;
    font-weight: 600;
@@ -70,21 +71,7 @@
     flex-direction: column;   
   }
    /* ! testimonials */
-   .testimonial-wrapper{
-
-   }
-   .intro-wrapper .testimonial-title{
-     font-size: 2rem;
-     color:#f5f5f5; 
-   }
-   .intro-wrapper .testimonial{
-
-   }
-   .intro-wrapper .testimonial-text{
-    color: #e5e5e5;
-    font-size: 1.1rem;
-    text-align: justify;
-  }
+ 
    /* ! END - Testimonials */
    .intro-wrapper .c-val-caption{
     font-size: 1rem;
@@ -145,10 +132,10 @@
 
   .intro-wrapper .c-section-title{
 position: absolute;
-left: 42%;
+left: 44%;
 bottom: 45px;
-font-size: 3rem;
-color: #f5f5f5;
+font-size: 2rem;
+color: hsl(217, 62%, 82%);
 text-align: center;
 }
 .intro-wrapper .c-val-2 .card{

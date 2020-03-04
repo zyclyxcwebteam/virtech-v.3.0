@@ -192,6 +192,7 @@ background-position:center center;
 
 .app-sec-banner{    
     background-image: url("../../img/app_security/img-1.jpg");
+    background-position:center center;     
 }
 
 .app-sec-banner.service-banner::after{  
