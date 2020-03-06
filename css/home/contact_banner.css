@@ -1,11 +1,11 @@
 .contact-banner{
-    height: 55vh;
+    height: 95vh;
     background-image: url('../../img/world-map\ \(2\).jpg');
     background-position:center center;
     /* background-attachment: fixed; */
     background-size: cover;
     position: relative;
-    color: #fff; 
+    color: #fff;
     overflow: hidden;        
     }
     
@@ -15,11 +15,8 @@
       z-index: 10;
       width:100%;
       height: 100%;    
-   background-color: rgba(12, 27, 51,0.8);
-      /* background-color: rgba(0, 144, 166,0.7); */
-      /* background-color: rgba(1, 137, 81,0.7);*/
-      /* transform: skew(200.25deg); */
-      /* left: -128px; */
+      background-color: rgba(12, 27, 51,0.6);
+      /* background-color: rgba(0, 189, 213,0.6); */
     }
     /* .overlay-2{
       position: absolute;
@@ -39,6 +36,7 @@
       font-size: 3rem;
       font-weight: 600;
       margin: 0;
+      /* font-family: 'Playfair Display'; */
     }
     
     .contact-banner .contact-caption{

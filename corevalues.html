@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <style>
+        .wrapper {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .core-values {
+            width: 100%;             
+            position: relative;
+            bottom: 0;
+        }
+
+        .c-val-shape {
+            position: absolute;
+            width: 600px;
+            display: block;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .c-val {
+            position: absolute;             
+            display: flex;
+            align-items: center;
+            bottom: 0;
+        }
+
+        .c-val-1 {
+            left: 2px;
+            bottom: 10px;
+            justify-content: flex-end;
+        }
+
+        .c-val-2 {
+            left:90px;
+            bottom: 188px;
+            justify-content: flex-end;
+        }
+
+        .c-val-3 {
+            left: 265px;
+            bottom: 304px;
+            justify-content: flex-end;
+        }
+
+        .c-val-4 {
+            right: 89px;
+            bottom: 188px;
+        }
+
+        .c-val-5 {
+            right:285px;
+            bottom: 309px;
+        }
+
+        .c-val-6 {
+            right:3px;
+            bottom: 10px;
+        }
+
+        .c-val-title,.c-val-caption{
+            margin: 0;
+        }
+        .core-text{
+            align-self: flex-start;
+            margin-top: -30px;            
+        }
+        .c-val-1 .c-val-caption, .c-val-2 .c-val-caption, .c-val-3 .c-val-caption{
+            text-align: right;
+        }
+        .c-val-caption{
+            text-align: center;
+            font-style: italic;
+        }
+        .c-val-4 .c-val-caption, .c-val-5 .c-val-caption, .c-val-6 .c-val-caption{
+            text-align: left;
+        }
+ .c-val .core-icon-outer{
+    padding: 0.3rem;
+    border-radius: 50%;
+    background-color:hsl(217, 62%, 20%); 
+  }
+ .c-val .core-icon-inner{     
+    background-color: hsl(217, 62%, 10%);
+    padding: 1.5rem;
+    border-radius: 50%;
+  }
+ 
+
+  /* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .c-val-1 {
+            left: -42px;
+            bottom: 10px;
+            justify-content: flex-end;
+        }
+
+        .c-val-2 {
+            left:46px;
+            bottom: 188px;
+            justify-content: flex-end;
+        }
+
+        .c-val-3 {
+            left: 225px;
+            bottom: 301px;
+            justify-content: flex-end;
+        }
+
+        .c-val-4 {
+            right: 48px;
+            bottom: 188px;
+        }
+
+        .c-val-5 {
+            right:230px;
+            bottom: 301px;
+        }
+
+        .c-val-6 {
+            right:-41px;
+            bottom: 10px;
+        }
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    .c-val-1 {
+            left: 20px;
+            bottom: 10px;
+            justify-content: flex-end;
+        }
+
+        .c-val-2 {
+            left:90px;
+            bottom: 188px;
+            justify-content: flex-end;
+        }
+
+        .c-val-3 {
+            left: 265px;
+            bottom: 304px;
+            justify-content: flex-end;
+        }
+
+        .c-val-4 {
+            right: 89px;
+            bottom: 188px;
+        }
+
+        .c-val-5 {
+            right:285px;
+            bottom: 309px;
+        }
+
+        .c-val-6 {
+            right:3px;
+            bottom: 10px;
+        }
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="./img/Shape.svg" alt="" class="c-val-shape" />
+
+        <div class="c-val c-val-1 col-4 justify-content-end">
+
+            <div class="core-text mr-3">
+                <h3 class="c-val-title">Deliver</h3>
+                <p class="c-val-caption text-left">amazing services</p>
+            </div>
+
+            <div class="core-icon-wrapper mr-3">
+                <div class="core-icon-outer">
+                    <div class="core-icon-inner">
+                        <img src="./img/icons/c-val-del.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="c-val c-val-2 col-4">
+            <div class="core-text mr-3">
+                <h3 class="c-val-title">Take Ownership</h3>
+                <p class="c-val-caption">and drive change</p>
+            </div>
+
+            <div class="core-icon-wrapper mr-3">
+                <div class="core-icon-outer">
+                    <div class="core-icon-inner">
+                        <img src="./img/icons/c-val-res.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="c-val c-val-3 col-4">
+            <div class="core-text mr-3">
+                <h3 class="c-val-title">Commit</h3>
+                <p class="c-val-caption">to evolve</p>
+            </div>
+            <div class="core-icon-wrapper mr-3">
+                <div class="core-icon-outer">
+                    <div class="core-icon-inner">
+                        <img src="./img/icons/c-val-2.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="c-val c-val-4 col-4">
+            <div class="core-icon-wrapper ml-3">
+                <div class="core-icon-outer">
+                    <div class="core-icon-inner">
+                        <img src="./img/icons/c-val-creative.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="core-text ml-3">
+                <h3 class="c-val-title">Embrace Creativity</h3>
+                <p class="c-val-caption">and innovation</p>
+            </div>
+        </div>
+
+        <div class="c-val c-val-5 col-4">
+            <div class="core-icon-wrapper ml-3">
+                <div class="core-icon-outer">
+                    <div class="core-icon-inner">
+                        <img src="./img/icons/c-val-5.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="core-text ml-3">
+                <h3 class="c-val-title">Build</h3>
+                <p class="c-val-caption">positive team environment</p>
+            </div>
+        </div>
+
+        <div class="c-val c-val-6 col-4">
+            <div class="core-icon-wrapper ml-3">
+                <div class="core-icon-outer">
+                    <div class="core-icon-inner">
+                        <img src="./img/icons/c-val-count.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="core-text ml-3">
+                <h3 class="c-val-title">Make It</h3>
+                <p class="c-val-caption">count</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

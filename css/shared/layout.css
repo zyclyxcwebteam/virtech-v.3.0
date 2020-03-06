@@ -1,50 +1,11 @@
-/* ! COLOR CODES  */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bungee+Outline|Diplomata+SC|Jacques+Francois+Shadow|Londrina+Outline|Ribeye+Marrow|Sniglet&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Alegreya|B612+Mono|Cairo|Cormorant|Crimson+Pro|Crimson+Text|IBM+Plex+Serif|Nunito&display=swap');
+/* ! COLOR CODES  */    
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-:root{
-    --color-1:#0b0c13;
-    --color-2:#575866;
-    --color-3:#71788a;
-    --color-4:#eeeef0;
-    --color-5:#c0bcc3;
-
-    /*  */
-    --color-2-1:#05070c;
-    --color-2-2:#3c3c42;
-    --color-2-3:#96969c;
-    --color-2-4:#5d5c63;
-    --color-2-5:#b8bdc4;
-    --color-2-6:#eef0f1;
-    /*  */
-    --color-3-1:#04ffd4;
-    --color-3-2:#045e52;
-    --color-3-3:#00C9A7;
-    --color-3-4:#3fe1c9;
-    --color-3-5:#17bb51;
-    /*  */
-
-    --color-4-1:#f9f9f9;
-    --color-4-2:#0b0b0b;
-    --color-4-3:#bebec0;
-    --color-4-4:#3f3f40;
-    --color-4-5:#7f7f80;
-    --color-4-6:#272b48;
-    --color-4-7:#9399ab;
-    --color-4-8:#656c8f;
-    --color-4-9:#e8e9f0;
-
-    /*  */
-
-    --color-5-1:#e5e5e5;
-    --color-5-2:#242a2a;
-    --color-5-3:#3261d1;
-
-    /* website colors */
-    --bg-color:#0c1b33;
-    --bg-light:#f9f9f9;
+/* dbdbdb */
+:root{      
+    --bg-dark:#0c1b33;
+    --bg-light:#f2f3f9;
+    --text-light:#b8bdc4;
+    --logo-blue:#00bdd5;
 }
  
 .loading-wrapper{
@@ -54,26 +15,73 @@
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
-    background-color:hsl(217, 62%, 12%);     
+    left: 0;         
     z-index:1250;
+    background-color: transparent;    
+}
+.loading-inner{
+  display: flex;
+  height: 100%;
+}
+.loading-wrapper .left, .loading-wrapper .right{
+flex: 1; 
+position: relative;
+background-color:hsl(217, 62%, 12%);
 }
 .loading-wrapper img{
     vertical-align: middle;
     border-style: none;
-    position: relative;
+    position: absolute;
+    left:50%;
     top: 50%;
-    left: 50;
-    left: 50%;
     transform: translate(-50%,-50%);
+    max-width: 350px;
 }
 
 body{
-    padding-top:56px;
+    padding-top:64px;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;          
-    background-color:var(--bg-color);      
-} 
+    background-color:var(--bg-dark);         
+}
 
+.banner-title-1,.banner-title-2{
+  color: #e5e5e5;
+  font-family: 'Playfair Display';
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 5px;  
+}
+
+.banner-title-1{
+font-size: 4rem;
+}
+.banner-title-2{
+font-size: 3rem;
+}
+
+.title-light{
+  color: #dbdbdb;
+}
+.title-dark{
+  color: #0c1b33;
+}
+.title-white{
+  color: #fff;
+}
+.section-title-1{
+  font-size: 6rem;
+  font-weight: 700;
+}
+.section-title-2{
+ font-size: 3rem;
+ font-weight: 600;
+}
+.section-title-3{
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/* border line animation */
 .line {
     position: absolute;
     box-sizing: border-box;             
@@ -105,7 +113,9 @@ body{
     width: 2px;
     height: 0%;
   }
+ /* end - border line animation */
 
+ /* buttons */
   .btn-primary{
     /* background-color:#e8e9f0; */
     border-radius: 1.5rem;
@@ -119,7 +129,8 @@ body{
     background-color: hsl(217, 62%, 18%);
     border-radius: 1.5rem;
     color: #b8bdc4;
-    border:2px solid hsl(217, 62%, 30%);
+    /* border:2px solid hsl(217, 62%, 30%); */
+    border: none !important;
     font-weight: 600;
     padding:0.5rem 3rem;
   }
@@ -128,4 +139,18 @@ body{
   }
   .btn-secondary:active,.btn-secondary:foucs{
     background-color: hsl(217, 62%, 20%);
+  }
+
+  .btn-contact{
+    border-color:hsl(217, 62%, 16%);
+    background-color: #00bdd5;
+    color: #0c1b33;     
+    border: none;
+  }
+
+  .btn-contact:hover{
+     
+    background-color: hsl(187, 100%, 52%);
+    color: #0c1b33;     
+    border-color: hsl(187, 100%, 22%);
   }

@@ -2,77 +2,10 @@
   --weare-bg:#f4f4f4;
 }
 
-#introContainer{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;  
-    -webkit-perspective: 1000;
-    perspective: 1000;
-    height: 92vh;          
-    position: relative;
-    background-color:var(--weare-bg);
-
-  }
-  .intro-wrapper .intro-hero-title{
-    position: fixed;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);      
-    /* font-family: 'Bungee Outline', cursive; */
-    /* font-family: 'Archivo Black', sans-serif; */
-    font-family: 'Playfair Display',sans-serif;
-    letter-spacing: 3px;
-    font-size: 6.5rem;
-   color:#0c1b33;
-   font-weight: 600;
-  }
-  .intro-wrapper #introSlides {
-    width: 100%;
-    height: 100%;
-    /* background-color: transparent; */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: flex;     
-    align-items: flex-end;
-  }
- 
-  .intro-wrapper .slide {
-    height: 100%;
-    width: 100%;
-    /* background-color: transparent;    */
-    position: relative;
-    z-index: 9;
-  }
-  /* .intro-wrapper .slide-2{
-    height: 86%;
-  } */
-  /* end horizontal scroll */
-  .intro-wrapper .company-intro .title-card{
-    height:100%;
-    width: 100%;
-    border: none;
-    opacity: 1;  
-  }
-  .intro-wrapper .company-intro .title-card-1{
-     background-color: #581b98;
-     background-image: url('../../images/home/wave-6.svg');
-     border-radius: 50%;
-     shape-outside: circle(50%);
-   }
-   .intro-wrapper .company-intro .title-card-2{
-    background-color: #009efa;
-    background-image: url('../../images/home/wave-2.svg');
-  }
-  .intro-wrapper .company-intro .card-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;   
-  }
-   /* ! testimonials */
- 
-   /* ! END - Testimonials */
+ .intro-wrapper{
+   background-color: #0c1b33;
+   height: 94vh;    
+ }
    .intro-wrapper .c-val-caption{
     font-size: 1rem;
     color: hsl(217, 62%, 75%);
@@ -82,31 +15,7 @@
     color: hsl(217, 62%, 82%);    
     text-align: center;
   }
-  .intro-wrapper .core-values{   
-  background-image: url('../../img/Shape.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size:100% 320px;   
-  position: relative;     
-}
-.intro-wrapper .core-values .card{
-  background-color: transparent;      
-  border: none;
-  }
-  .intro-wrapper .core-values .card-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  /* .c-val-4 .card-body, .c-val-3 .card-body{
-    flex-direction: column;
-  } */
-  .intro-wrapper .core-values .core-text{    
-    text-align: center;
-    align-self: flex-start;
-  }
-   
+    
   .intro-wrapper .core-values .core-icon-outer{
     padding: 0.3rem;
     border-radius: 50%;
@@ -128,68 +37,171 @@
   }
   .intro-wrapper .core-values .card-body{
     padding: 0;
-  }
+  }  
+ /*  */
 
-  .intro-wrapper .c-section-title{
-position: absolute;
-left: 44%;
-bottom: 45px;
-font-size: 2rem;
-color: hsl(217, 62%, 82%);
-text-align: center;
-}
-.intro-wrapper .c-val-2 .card{
-  margin-right: 2rem;
-}
-.intro-wrapper .c-val-3 .card{
-margin-bottom: 0.8rem;
-}
-.intro-wrapper .c-val-4 .card{
-  margin-bottom: 0.8rem;
-  }
-  .intro-wrapper .c-val-5 .card{
-    margin-left: 2.4rem;
-    }
-/* 
-.intro-wrapper .c-val-1{
-   position: absolute;
-   bottom:10%;
-   left: 5%;
- }
- 
- .intro-wrapper .c-val-2{
-position: absolute;
-bottom:35%; 
-left: 9%;
- }
- .intro-wrapper .c-val-3{
-position: absolute;
-left:33%;
-top: 22.5%; 
- }
- .intro-wrapper .c-val-4{
-position: absolute;
-right: 24%;
-top:22.5%;
+ .wrapper {
+  height: 74vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.intro-wrapper .c-val-5{
-position: absolute;
-bottom: 35%;
-right: 8%;
+.core-values {
+  width: 100%;             
+  position: relative;
+  bottom: 0;
 }
 
-.intro-wrapper .c-val-6{
-position: absolute;
-right:10%;
-bottom:10%;
-} */
- 
+.c-val-shape {
+  position: absolute;
+  width: 600px;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-.intro-wrapper .achievements .card{
-    background-color: rgba(0, 0, 0,0.1);
-    box-shadow: none;
-  }
-  .intro-wrapper .achievements .card-body{
-     color: #ffffff;
-  }
+.c-val {
+  position: absolute;             
+  display: flex;
+  align-items: center;
+  bottom: 0;
+}
+
+.c-val-1 {
+  left: 2px;
+  bottom: 10px;
+  justify-content: flex-end;
+}
+
+.c-val-2 {
+  left:90px;
+  bottom: 188px;
+  justify-content: flex-end;
+}
+
+.c-val-3 {
+  left: 265px;
+  bottom: 304px;
+  justify-content: flex-end;
+}
+
+.c-val-4 {
+  right: 89px;
+  bottom: 188px;
+}
+
+.c-val-5 {
+  right:285px;
+  bottom: 309px;
+}
+
+.c-val-6 {
+  right:3px;
+  bottom: 10px;
+}
+
+.c-val-title,.c-val-caption{
+  margin: 0;
+}
+.core-text{
+  align-self: flex-start;
+  margin-top: -30px;            
+}
+.c-val-1 .c-val-caption, .c-val-2 .c-val-caption, .c-val-3 .c-val-caption{
+  text-align: right;
+}
+.c-val-caption{
+  text-align: center;
+  font-style: italic;
+}
+.c-val-4 .c-val-caption, .c-val-5 .c-val-caption, .c-val-6 .c-val-caption{
+  text-align: left;
+}
+.c-val .core-icon-outer{
+padding: 0.3rem;
+border-radius: 50%;
+background-color:hsl(217, 62%, 20%); 
+}
+.c-val .core-icon-inner{     
+background-color: hsl(217, 62%, 10%);
+padding: 1.5rem;
+border-radius: 50%;
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+.c-val-1 {
+  left: -42px;
+  bottom: 10px;
+  justify-content: flex-end;
+}
+
+.c-val-2 {
+  left:46px;
+  bottom: 188px;
+  justify-content: flex-end;
+}
+
+.c-val-3 {
+  left: 225px;
+  bottom: 301px;
+  justify-content: flex-end;
+}
+
+.c-val-4 {
+  right: 48px;
+  bottom: 188px;
+}
+
+.c-val-5 {
+  right:230px;
+  bottom: 301px;
+}
+
+.c-val-6 {
+  right:-41px;
+  bottom: 10px;
+}
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+.c-val-1 {
+  left: 20px;
+  bottom: 10px;
+  justify-content: flex-end;
+}
+
+.c-val-2 {
+  left:90px;
+  bottom: 188px;
+  justify-content: flex-end;
+}
+
+.c-val-3 {
+  left: 265px;
+  bottom: 304px;
+  justify-content: flex-end;
+}
+
+.c-val-4 {
+  right: 89px;
+  bottom: 188px;
+}
+
+.c-val-5 {
+  right:285px;
+  bottom: 309px;
+}
+
+.c-val-6 {
+  right:3px;
+  bottom: 10px;
+}
+
+}

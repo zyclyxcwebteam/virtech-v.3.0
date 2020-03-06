@@ -20,16 +20,14 @@
   color:#00bdd5;
 }
 
-#masterNavbar,.footer {
-  /* background-color:#272b48; */
-  /* background-color:transparent !important; */
+/* #masterNavbar,.footer { 
   background-color: #f9f9f9;
 }
 
 #masterNavbar .nav-link {
   color: #3c3c42;
   font-weight: 500;
-}
+} */
 #serviceMain .nav-item .active{
   font-weight: 600;
   color:#00bdd5;

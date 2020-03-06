@@ -10,9 +10,9 @@
 
 .about-home{
   height: 90vh;
-  /* background-color: #0c1b33; */
-  /* background-image: url('../img/about-us.jpg'); */
-  background-position: center;
+  background-color: #0c1b33;
+  background-image: url('../img/about-saudi.jpg');
+  background-position: top;
   background-size: cover;  
    position: relative;
 } 
@@ -26,9 +26,9 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(to top, #013d61 1%,transparent,transparent,transparent 100%);
+  background-image: linear-gradient(to top, #013d61 1%,transparent 100%);
 }
-.about-video{
+/* .about-video{
   position: absolute;
   top: 0;
   left: 0;
@@ -47,31 +47,53 @@
     height: auto;
      z-index: -100;     
     background-size: cover;
-}
+} */
  .about-overview{
    background-color: #013d61;
  }
- .about-home .fade-title{
-   display: none;
-   font-family: 'Alegreya';
-   font-family: 'B612 Mono';
-   font-family: 'IBM Plex Serif';
-   font-family: 'Crimson Text';
-   /* font-family: 'Crimson Pro'; */
-   font-weight: 700;
-   color:hsl(217, 62%, 92%);    
-   font-size: 3rem;
+ .about-home .about-title{
+z-index: 99;
  }
-.about-home .hero-title{
+/* .about-home .hero-title{
   color:#b8bdc4;
   font-size: 2.5rem;
   line-height: 1.5;
   z-index: 99;   
-  /* border-radius: 50%;
-  padding: 5rem 2rem;
-  background-color: #013d61;
-  mix-blend-mode: lighten;
-  background-image: linear-gradient(to top, rgba(1, 61, 97,0.4) 1%,transparent 100%); */
+ 
+} */
+.about-home .fade-title{
+  font-style: italic;   
+  color: #00bdd5;
+}
+ 
+.about-home .about-title-right{
+font-size: 2.4rem;
+font-style: italic;
+font-weight: 600;
+font-family: 'Playfair Display';
+letter-spacing: 4px;
+margin-left: -50px;
+margin-bottom: 2px;
+}
+
+.about-home .about-title-left-1{
+  font-size: 2.5rem;
+  color:#b8bdc4;
+  font-weight: 600;
+  font-family: 'Playfair Display';
+  letter-spacing: 4px;
+}
+
+.about-home .about-title-left-2{
+  font-size: 2.5rem;
+  color:#b8bdc4;
+  font-weight: 600;
+  font-family: 'Playfair Display';
+  letter-spacing: 4px;
+}
+.about-banner-title .banner-title-2{
+  font-style: italic;
+  font-size: 2.5rem !important;
 }
 .about-overview .hero-text{
   font-size: 1.2rem;
@@ -81,6 +103,14 @@
   z-index: 99;
 }
  
+.about-title-left .banner-title-2{
+/* font-size: 2.5rem; */
+color:#b8bdc4;
+}
+
+..about-title-right .banner-title-2{
+  
+}
 .about-overview p{
   color: #f9f9f9;
   font-size: 1.2rem;

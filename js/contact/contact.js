@@ -7,7 +7,7 @@
     gsap.to(".contact-wrapper", {
       display: "flex",
       minHeight: "100%",
-      top: 0,
+      top: '20px',
       bottom: "unset",
       duration: 0.5
     });
