@@ -1090,8 +1090,12 @@ Our team understands the constant pressure businesses have to reduce overhead. W
 
 
   <!-- ! Contact us banner -->
-  <section id="section contactBanner" class="contact-banner d-flex justify-content-center align-items-center flex-column">
+  <section id="contactBanner" class="contact-banner d-flex justify-content-center align-items-center flex-column">
     <div class="overlay"></div>
+    <ul>
+      <li><button id="cimg1">image-1</button></li>
+      <li><button id="cimg2">image-2</button></li>
+    </ul>
     <div class="container contact-text">
       <div class="row d-flex justify-content-start align-items-center">
         <div class="col-7">
@@ -1695,5 +1699,20 @@ Our team understands the constant pressure businesses have to reduce overhead. W
       // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
 
     }) 
+
+    let imageOne = document.getElementById('cimg1');
+    let imageTwo = document.getElementById('cimg2');
+    imageOne.addEventListener('click',function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      document.querySelector('.contact-banner').style.backgroundImage='url(./img/contact/saudi-1.jpg)';
+      document.querySelector('.contact-banner').style.backgroundColor='#01004c';
+    })
+    imageTwo.addEventListener('click',function(e){
+      event.preventDefault();
+      event.stopPropagation();
+      document.querySelector('.contact-banner').style.backgroundImage='url(./img/contact/rsz_saudi-2.jpg)';
+      document.querySelector('.contact-banner').style.backgroundColor='#000f1e';
+    })
   </script>
 </body>
