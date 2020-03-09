@@ -75,6 +75,13 @@
   color: #0c1b33;
   font-weight: 600;
 }
+#openingsCount {
+  background-color: rgba(0, 189, 213, 0.2);
+  padding: 0.3rem 1.2rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.2rem;
+  font-weight: 700;
+}
 .career-card {
   position: relative;
   z-index: -1;
@@ -127,11 +134,11 @@
   text-decoration: none;
 }
 
-.career-card .card-link:hover {
+.career-card .career-btn:hover {
   font-weight: 600;
-  font-size: 1.05rem;
   background-color: hsl(188, 69%, 55%);
   transition: 0.3s all ease-out;
+  border: 0.16em solid hsl(217, 62%, 18%) !important;
 }
 
 .openings-wrapper {
