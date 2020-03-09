@@ -1,214 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <title>End User Computing</title>
+    <link rel="stylesheet" href="./css/shared/layout.css" />
+    <link rel="stylesheet" href="./css/shared/header.css" />
+    <link rel="stylesheet" href="./css/shared/footer.css" />
+    <link rel="stylesheet" href="./css/services/service-page.css" />
+    <link rel="stylesheet" href="./css/shared/contact-us.css" />
+    <link rel="stylesheet" href="./css/services/rpa.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <title>End User Computing</title>
-  <link rel="stylesheet" href="./css/shared/layout.css">
-  <link rel="stylesheet" href="./css/shared/header.css">
-  <link rel="stylesheet" href="./css/shared/footer.css">
-  <link rel="stylesheet" href="./css/services/service-page.css">
-  <link rel="stylesheet" href="./css/shared/contact-us.css">
-  <link rel="stylesheet" href="./css/services/rpa.css">
-  <link rel="stylesheet" href="./css/owl.carousel.min.css">
-</head>
+  <body>
+    <!-- ! header navbar-->
+    <!-- TODO: hide header on scroll down, show on scroll up -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top master-navbar navbar-dark py-1"
+      id="masterNavbar"
+    >
+      <div class="container-fluid">
+        <a href="./" class="navbar-brand ml-2"
+          ><img src="./img/logo.png" alt="Virtech" id="masterLogo"
+        /></a>
+        <button
+          type="button"
+          class="navbar-toggler hamburger hamburger--squeeze is-active"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-<body>
-  <!-- ! header navbar-->
-  <!-- TODO: hide header on scroll down, show on scroll up -->
-  <nav class="navbar navbar-expand-lg fixed-top master-navbar navbar-dark py-1" id="masterNavbar">
-    <div class="container-fluid">
-      <a href="./" class="navbar-brand ml-2"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
-      <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
-        data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto mr-2">
+            <!--  Home -->
 
-      <div id="navbarContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto mr-2">
-          <!--  Home -->
+            <li class="nav-item">
+              <a class="nav-link" href="./"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
-          </li>
+            <!-- Services -->
+            <li class="nav-item active dropdown">
+              <a
+                id="serviceDropDown"
+                href="#"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="nav-link dropdown-toggle"
+                >Services</a
+              >
 
-          <!-- Services -->
-          <li class="nav-item active dropdown">
-            <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-              class="nav-link dropdown-toggle">Services</a>
+              <ul
+                aria-labelledby="serviceDropDown"
+                class="dropdown-menu border-0"
+              >
+                <!-- ! New Age Technologies -->
+                <li class="dropdown-submenu dropright">
+                  <a
+                    id="newAgeDropDown"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-item dropdown-toggle"
+                    >New Age Technologies</a
+                  >
+                  <ul
+                    aria-labelledby="newAgeDropDown"
+                    class="dropdown-menu border-0"
+                  >
+                    <li>
+                      <a
+                        tabindex="-1"
+                        href="./robotic-process-automation.html"
+                        class="dropdown-item"
+                        >RPA</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./artificial-intelligence.html"
+                        class="dropdown-item"
+                        >Artificial Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./blockchain.html" class="dropdown-item"
+                        >Blockchain</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./internet-of-things.html" class="dropdown-item"
+                        >Internet of Things</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./bigdata.html" class="dropdown-item"
+                        >Big Data</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-            <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0">
-              <!-- ! New Age Technologies -->
-              <li class="dropdown-submenu dropright">
-                <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false" class="dropdown-item dropdown-toggle">New
-                  Age Technologies</a>
-                <ul aria-labelledby="newAgeDropDown" class="dropdown-menu border-0">
-                  <li>
-                    <a tabindex="-1" href="./robotic-process-automation.html" class="dropdown-item">RPA</a>
-                  </li>
-                  <li>
-                    <a href="./artificial-intelligence.html" class="dropdown-item">Artificial Intelligence</a>
-                  </li>
-                  <li><a href="./blockchain.html" class="dropdown-item">Blockchain</a></li>
-                  <li>
-                    <a href="./internet-of-things.html" class="dropdown-item">Internet of Things</a>
-                  </li>
-                  <li><a href="./bigdata.html" class="dropdown-item">Big Data</a></li>
-                </ul>
-              </li>
+                <!-- ! Security Services -->
+                <li class="dropdown-submenu dropright">
+                  <a
+                    id="securityDropDown"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-item dropdown-toggle"
+                    >Security Services</a
+                  >
+                  <ul
+                    aria-labelledby="securityDropDown"
+                    class="dropdown-menu border-0"
+                  >
+                    <li>
+                      <a
+                        href="./network-and-security.html"
+                        class="dropdown-item"
+                        >Network Security</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        tabindex="-1"
+                        href="./cyber-security.html"
+                        class="dropdown-item"
+                        >Cyber Security</a
+                      >
+                    </li>
 
-                            <!-- ! Security Services -->
-                            <li class="dropdown-submenu dropright">
-                              <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
-                              <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
-                                <li>
-                                  <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
-                                </li>
-                                <li>
-                                  <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
-                                </li>
-              
-                                <li>
-                                  <a href="./application_and_data_security.html" class="dropdown-item">Application & Data Security</a>
-                                </li>
-              
-                                <li>
-                                  <a href="./governance-and-compliance.html" class="dropdown-item">Governance & Compliance</a>
-                                </li>
-              
-                                <li>
-                                  <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint & Mobile Security</a>
-                                </li>
-              
-                                <li>
-                                  <a href="./identity_and_access_management.html" class="dropdown-item">Identity & Access Management</a>
-                                </li>
-                              </ul>
-                            </li>
-                            
-              <!-- ! Application Devlopment -->
-              <li class="dropdown-submenu dropright">
-                <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false" class="dropdown-item dropdown-toggle">Application
-                  Development</a>
-                <ul aria-labelledby="appDropDown" class="dropdown-menu border-0">
-                  <li>
-                    <a tabindex="-1" href="./software-development.html" class="dropdown-item">Software Development</a>
-                  </li>
-                  <li>
-                    <a href="./mobile-app-development.html" class="dropdown-item">Mobile App Development</a>
-                  </li>
-                  <li>
-                    <a href="./web-development.html" class="dropdown-item">Web Development</a>
-                  </li>
-                  <li>
-                    <a href="./digital-marketing.html" class="dropdown-item">Digital Marketing</a>
-                  </li>
-                </ul>
-              </li>
+                    <li>
+                      <a
+                        href="./application_and_data_security.html"
+                        class="dropdown-item"
+                        >Application & Data Security</a
+                      >
+                    </li>
 
-              <!-- ! BI Solutions -->
-              <li class="dropdown-submenu dropright">
-                <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false" class="dropdown-item dropdown-toggle">BI Solutions</a>
-                <ul aria-labelledby="biDropDown" class="dropdown-menu border-0">
-                  <li>
-                    <a tabindex="-1" href="./data-visualization.html" class="dropdown-item">Data Visualization</a>
-                  </li>
-                  <li>
-                    <a href="./predictive-analytics.html" class="dropdown-item">Predictive Analysis</a>
-                  </li>
-                </ul>
-              </li>
+                    <li>
+                      <a
+                        href="./governance-and-compliance.html"
+                        class="dropdown-item"
+                        >Governance & Compliance</a
+                      >
+                    </li>
 
-              <!-- ! Infrastructure Services -->
-              <li class="dropdown-submenu dropright">
-                <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructure
-                  Services</a>
-                <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
-                  <li>
-                    <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data Center Services</a>
-                  </li>
-                  <li>
-                    <a href="./system-infrastructure.html" class="dropdown-item">System Infrastructure</a>
-                  </li>
-                  <li>
-                    <a href="./end-user-computing.html" class="dropdown-item">End User Computing</a>
-                  </li>
-                </ul>
-              </li>
+                    <li>
+                      <a
+                        href="./endpoint-mobile-security.html"
+                        class="dropdown-item"
+                        >Endpoint & Mobile Security</a
+                      >
+                    </li>
 
-              <!-- ! Outsourcing Services -->
-              <li class="nav-item"><a href="./oursourcing-service.html" class="dropdown-item">Outsourcing Services</a></li>
-            </ul>
-          </li>
-          <!-- End Level one -->
+                    <li>
+                      <a
+                        href="./identity_and_access_management.html"
+                        class="dropdown-item"
+                        >Identity & Access Management</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-          <li class="nav-item"><a href="./about.html" class="nav-link">About us</a></li>
-          <li class="nav-item"><a href="./careers.html" class="nav-link">Careers</a></li>
-          <li class="nav-item"><a href="./contactus.html" class="nav-link" id="contactLink">Contact</a></li>
-        </ul>
+                <!-- ! Application Devlopment -->
+                <li class="dropdown-submenu dropright">
+                  <a
+                    id="appDropDown"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-item dropdown-toggle"
+                    >Application Development</a
+                  >
+                  <ul
+                    aria-labelledby="appDropDown"
+                    class="dropdown-menu border-0"
+                  >
+                    <li>
+                      <a
+                        tabindex="-1"
+                        href="./software-development.html"
+                        class="dropdown-item"
+                        >Software Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./mobile-app-development.html"
+                        class="dropdown-item"
+                        >Mobile App Development</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./web-development.html" class="dropdown-item"
+                        >Web Development</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./digital-marketing.html" class="dropdown-item"
+                        >Digital Marketing</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ! BI Solutions -->
+                <li class="dropdown-submenu dropright">
+                  <a
+                    id="biDropDown"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-item dropdown-toggle"
+                    >BI Solutions</a
+                  >
+                  <ul
+                    aria-labelledby="biDropDown"
+                    class="dropdown-menu border-0"
+                  >
+                    <li>
+                      <a
+                        tabindex="-1"
+                        href="./data-visualization.html"
+                        class="dropdown-item"
+                        >Data Visualization</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./predictive-analytics.html"
+                        class="dropdown-item"
+                        >Predictive Analysis</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ! Infrastructure Services -->
+                <li class="dropdown-submenu dropright">
+                  <a
+                    id="infraDropDown"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-item dropdown-toggle"
+                    >Infrastructure Services</a
+                  >
+                  <ul
+                    aria-labelledby="infraDropDown"
+                    class="dropdown-menu border-0"
+                  >
+                    <li>
+                      <a
+                        tabindex="-1"
+                        href="./data-center-services.html"
+                        class="dropdown-item"
+                        >Data Center Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./system-infrastructure.html"
+                        class="dropdown-item"
+                        >System Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./end-user-computing.html" class="dropdown-item"
+                        >End User Computing</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ! Outsourcing Services -->
+                <li class="nav-item">
+                  <a href="./oursourcing-service.html" class="dropdown-item"
+                    >Outsourcing Services</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- End Level one -->
+
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="./careers.html" class="nav-link">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contactus.html" class="nav-link" id="contactLink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav> 
-  <section class="container-fluid service-banner eu-banner">
-    <div class="row banner-title d-flex justify-content-end align-items-center flex-column h-100 mx-auto px-2">
-      <div class="col-md-6 col-12 text-center">
-        <h2 class="service-name">End User Computing</h2>
-        <h3 class="service-tagline mt-4">Configurations designed to enhance productivity, improve processes and reinforce security</h3>
+    </nav>
+    <section class="container-fluid service-banner eu-banner">
+      <div
+        class="row banner-title d-flex justify-content-end align-items-center flex-column h-100 mx-auto px-2"
+      >
+        <div class="col-md-6 col-12 text-center">
+          <h2 class="service-name">End User Computing</h2>
+          <h3 class="service-tagline mt-4">
+            Configurations designed to enhance productivity, improve processes
+            and reinforce security
+          </h3>
+        </div>
       </div>
-    </div>
-    <ul class="image-list">
-      <li><a href="#" id="img1">Image-1</a></li>
-    <li><a href="#" id="img2">Image-2</a></li>
-    <li><a href="#" id="img3">Image-3</a></li>
-  </ul>
-  </section>
+      <ul class="image-list">
+        <li><a href="#" id="img1">Image-1</a></li>
+        <li><a href="#" id="img2">Image-2</a></li>
+        <li><a href="#" id="img3">Image-3</a></li>
+      </ul>
+    </section>
 
-  <section class="container-fluid service-overview eu-overview" id="serviceOverview">
-    <div class="row d-flex justify-content-center py-3">
-      <div class="col-md-9 col-12 py-3 pl-5">
-        <p>
-          End-user computing refers to consolidating individual systems required to accomplish the daily workload into a
-          single platform, delivering a more efficient and holistic user experience. We try to provide the same by
-          developing an intuitive, agile, scalable and manageable platform. As a team, our initiative is to ensure the
-          users and managers can utilize the platform without system expertise ensuring a fluid introduction of new
-          technologies to end-users.
-        </p>
+    <section
+      class="container-fluid service-overview eu-overview"
+      id="serviceOverview"
+    >
+      <div class="row d-flex justify-content-center py-3">
+        <div class="col-md-9 col-12 py-3 pl-5">
+          <p>
+            End-user computing refers to consolidating individual systems
+            required to accomplish the daily workload into a single platform,
+            delivering a more efficient and holistic user experience. We try to
+            provide the same by developing an intuitive, agile, scalable and
+            manageable platform. As a team, our initiative is to ensure the
+            users and managers can utilize the platform without system expertise
+            ensuring a fluid introduction of new technologies to end-users.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container-fluid service-content py-4" id="serviceContent">
-    <h2 class="text-center py-2 service-section-title">Improve productivity, processes and security</h2>
+    <section class="container-fluid service-content py-4" id="serviceContent">
+      <h2 class="text-center py-2 service-section-title">
+        Improve productivity, processes and security
+      </h2>
       <div class="row">
         <div class="col-md-9 col-12 mx-auto">
           <div class="row service-content-cards d-flex justify-content-start">
-
             <!-- col - 1 -->
             <div class="col-md-9 col-12 my-4">
               <div class="row d-flex flex-column flex-md-row">
-                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
-                  <img src="./img/icons/blockchain-1.svg" alt="">
+                <div
+                  class="col-2 pr-0 d-flex justify-content-center align-items-center"
+                >
+                  <img src="./img/icons/blockchain-1.svg" alt="" />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Secured Virtual Client Solutions (VDI)</h4>
                   <p>
-                    The end-users gain remote access to their virtual desktops with our Secured VDI solutions without
-                    compromising on network security. Our process involves design, installation, training and support
-                    services for Secured Virtual clients and Virtual Desktop infrastructures.
+                    The end-users gain remote access to their virtual desktops
+                    with our Secured VDI solutions without compromising on
+                    network security. Our process involves design, installation,
+                    training and support services for Secured Virtual clients
+                    and Virtual Desktop infrastructures.
                   </p>
                 </div>
               </div>
@@ -217,15 +406,18 @@
             <!-- col - 2 -->
             <div class="col-md-9 col-12 ml-md-auto my-4">
               <div class="row d-flex flex-column flex-md-row">
-                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
-                  <img src="./img/icons/blockchain-2.svg" alt="">
+                <div
+                  class="col-2 pr-0 d-flex justify-content-center align-items-center"
+                >
+                  <img src="./img/icons/blockchain-2.svg" alt="" />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Custom Device Solutions</h4>
                   <p>
-                    Our solutions are customized to ensure that the design, engineering, and deployment meets with every
-                    organization's unique needs. We believe when any device is custom made it has greater potential to
-                    give transformational results.
+                    Our solutions are customized to ensure that the design,
+                    engineering, and deployment meets with every organization's
+                    unique needs. We believe when any device is custom made it
+                    has greater potential to give transformational results.
                   </p>
                 </div>
               </div>
@@ -234,15 +426,18 @@
             <!-- col - 3 -->
             <div class="col-md-9 col-12 my-4">
               <div class="row d-flex flex-column flex-md-row">
-                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
-                  <img src="./img/icons/blockchain-3.svg" alt="">
+                <div
+                  class="col-2 pr-0 d-flex justify-content-center align-items-center"
+                >
+                  <img src="./img/icons/blockchain-3.svg" alt="" />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Mobile Solutions</h4>
                   <p>
-                    At VIRTECH, we offer key mobile solutions in the form of Desktop Virtualization and Secure remote
-                    data access. Our team works towards providing more efficient use of computing resources along with
-                    maintaining its security.
+                    At VIRTECH, we offer key mobile solutions in the form of
+                    Desktop Virtualization and Secure remote data access. Our
+                    team works towards providing more efficient use of computing
+                    resources along with maintaining its security.
                   </p>
                 </div>
               </div>
@@ -251,17 +446,50 @@
             <!-- col - 4 -->
             <div class="col-md-9 col-12 ml-md-auto my-4">
               <div class="row d-flex flex-column flex-md-row">
-                <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
-                  <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="70" height="70"
-                    viewBox="0 0 172 172"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#032f9c"><path d="M86,6.88c-4.3,0 -7.96282,1.73636 -10.31328,4.38062c-2.35046,2.64427 -3.44672,6.03493 -3.44672,9.37938c0,0.96449 0.11621,1.92918 0.30235,2.88234l-37.9475,18.97375c-0.07425,-0.08812 -0.12463,-0.18892 -0.20156,-0.27547c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.19534,0 7.76325,-1.66963 10.11844,-4.20594l37.41672,20.78781c0.34886,0.20408 0.73095,0.34509 1.12875,0.41656c-0.30166,1.19799 -0.5039,2.41706 -0.5039,3.64156c0,3.34444 1.09626,6.73511 3.44672,9.37937c1.6757,1.88516 4.16931,3.03355 6.93375,3.69531c-0.043,0.22584 -0.06326,0.45543 -0.06047,0.68531v38.53875c-2.73836,0.6679 -5.2097,1.81035 -6.87328,3.68188c-0.07693,0.08655 -0.12731,0.18735 -0.20156,0.27547l-37.9475,-18.97375c0.18613,-0.95317 0.30235,-1.91786 0.30235,-2.88235c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c0.07816,-0.08792 0.12617,-0.19264 0.20156,-0.28219l37.9475,18.98047c-0.18613,0.95317 -0.30235,1.91786 -0.30235,2.88235c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-0.96449 -0.11621,-1.92918 -0.30235,-2.88235l37.9475,-18.97375c0.07425,0.08812 0.12463,0.18892 0.20156,0.27547c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,0.96449 0.11621,1.92918 0.30235,2.88235l-37.9475,18.97375c-0.07425,-0.08812 -0.12463,-0.18892 -0.20156,-0.27547c-1.66358,-1.87153 -4.13492,-3.01398 -6.87328,-3.68188v-38.53875c0.00279,-0.22988 -0.01746,-0.45947 -0.06047,-0.68531c2.76444,-0.66176 5.25805,-1.81016 6.93375,-3.69531c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-1.197 -0.19565,-2.38844 -0.48375,-3.56094c0.30414,-0.08073 0.59576,-0.20281 0.86672,-0.36281l37.6586,-20.91547c2.35524,2.53446 5.9249,4.19922 10.11844,4.19922c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,1.16247 0.18536,2.3198 0.45687,3.46015l-37.81312,21.00281c-0.22583,0.11944 -0.43766,0.26366 -0.63156,0.43c-2.35428,-2.56564 -5.94829,-4.25297 -10.17219,-4.25297c-4.24667,0 -7.85914,1.70418 -10.2125,4.29328c-0.24581,-0.24221 -0.52666,-0.44605 -0.83313,-0.60469l-37.57125,-20.86844c0.27152,-1.14035 0.45687,-2.29769 0.45687,-3.46015c0,-0.96449 -0.11621,-1.92918 -0.30235,-2.88235l37.9475,-18.97375c0.07425,0.08812 0.12463,0.18892 0.20156,0.27547c2.35046,2.64427 6.01328,4.38062 10.31328,4.38062c4.3,0 7.96282,-1.73636 10.31328,-4.38062c2.35046,-2.64427 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37938c-2.35046,-2.64427 -6.01328,-4.38062 -10.31328,-4.38062zM86,13.76c2.58,0 4.07718,0.84364 5.16672,2.06938c1.08954,1.22573 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81062c-1.08954,1.22573 -2.58672,2.06938 -5.16672,2.06938c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06938c-1.08954,-1.22573 -1.71328,-2.99507 -1.71328,-4.81062c0,-1.81556 0.62374,-3.58489 1.71328,-4.81062c1.08954,-1.22573 2.58672,-2.06938 5.16672,-2.06938zM24.08,44.72c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM147.92,44.72c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM86,79.12c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM24.08,113.52c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM147.92,113.52c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM85.89922,144.52031c0.06934,0.00434 0.1388,0.00658 0.20828,0.00672c2.48134,0.03464 3.99264,0.82244 5.05922,2.02234c1.08953,1.22558 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.06829,-1.20183 2.57733,-1.99693 5.06594,-2.02906z"></path></g></g></svg></span>
+                <div
+                  class="col-2 pr-0 d-flex justify-content-center align-items-center"
+                >
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="70"
+                      height="70"
+                      viewBox="0 0 172 172"
+                    >
+                      <g
+                        fill="none"
+                        fill-rule="nonzero"
+                        stroke="none"
+                        stroke-width="1"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="10"
+                        stroke-dasharray=""
+                        stroke-dashoffset="0"
+                        font-family="none"
+                        font-weight="none"
+                        font-size="none"
+                        text-anchor="none"
+                        style="mix-blend-mode: normal"
+                      >
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#032f9c">
+                          <path
+                            d="M86,6.88c-4.3,0 -7.96282,1.73636 -10.31328,4.38062c-2.35046,2.64427 -3.44672,6.03493 -3.44672,9.37938c0,0.96449 0.11621,1.92918 0.30235,2.88234l-37.9475,18.97375c-0.07425,-0.08812 -0.12463,-0.18892 -0.20156,-0.27547c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.19534,0 7.76325,-1.66963 10.11844,-4.20594l37.41672,20.78781c0.34886,0.20408 0.73095,0.34509 1.12875,0.41656c-0.30166,1.19799 -0.5039,2.41706 -0.5039,3.64156c0,3.34444 1.09626,6.73511 3.44672,9.37937c1.6757,1.88516 4.16931,3.03355 6.93375,3.69531c-0.043,0.22584 -0.06326,0.45543 -0.06047,0.68531v38.53875c-2.73836,0.6679 -5.2097,1.81035 -6.87328,3.68188c-0.07693,0.08655 -0.12731,0.18735 -0.20156,0.27547l-37.9475,-18.97375c0.18613,-0.95317 0.30235,-1.91786 0.30235,-2.88235c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c0.07816,-0.08792 0.12617,-0.19264 0.20156,-0.28219l37.9475,18.98047c-0.18613,0.95317 -0.30235,1.91786 -0.30235,2.88235c0,3.34444 1.09626,6.73511 3.44672,9.37937c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-0.96449 -0.11621,-1.92918 -0.30235,-2.88235l37.9475,-18.97375c0.07425,0.08812 0.12463,0.18892 0.20156,0.27547c2.35046,2.64427 6.01328,4.38063 10.31328,4.38063c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,0.96449 0.11621,1.92918 0.30235,2.88235l-37.9475,18.97375c-0.07425,-0.08812 -0.12463,-0.18892 -0.20156,-0.27547c-1.66358,-1.87153 -4.13492,-3.01398 -6.87328,-3.68188v-38.53875c0.00279,-0.22988 -0.01746,-0.45947 -0.06047,-0.68531c2.76444,-0.66176 5.25805,-1.81016 6.93375,-3.69531c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-1.197 -0.19565,-2.38844 -0.48375,-3.56094c0.30414,-0.08073 0.59576,-0.20281 0.86672,-0.36281l37.6586,-20.91547c2.35524,2.53446 5.9249,4.19922 10.11844,4.19922c4.3,0 7.96282,-1.73636 10.31328,-4.38063c2.35046,-2.64426 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37937c-2.35046,-2.64427 -6.01328,-4.38063 -10.31328,-4.38063c-4.3,0 -7.96282,1.73636 -10.31328,4.38063c-2.35046,2.64426 -3.44672,6.03493 -3.44672,9.37937c0,1.16247 0.18536,2.3198 0.45687,3.46015l-37.81312,21.00281c-0.22583,0.11944 -0.43766,0.26366 -0.63156,0.43c-2.35428,-2.56564 -5.94829,-4.25297 -10.17219,-4.25297c-4.24667,0 -7.85914,1.70418 -10.2125,4.29328c-0.24581,-0.24221 -0.52666,-0.44605 -0.83313,-0.60469l-37.57125,-20.86844c0.27152,-1.14035 0.45687,-2.29769 0.45687,-3.46015c0,-0.96449 -0.11621,-1.92918 -0.30235,-2.88235l37.9475,-18.97375c0.07425,0.08812 0.12463,0.18892 0.20156,0.27547c2.35046,2.64427 6.01328,4.38062 10.31328,4.38062c4.3,0 7.96282,-1.73636 10.31328,-4.38062c2.35046,-2.64427 3.44672,-6.03493 3.44672,-9.37937c0,-3.34444 -1.09626,-6.73511 -3.44672,-9.37938c-2.35046,-2.64427 -6.01328,-4.38062 -10.31328,-4.38062zM86,13.76c2.58,0 4.07718,0.84364 5.16672,2.06938c1.08954,1.22573 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81062c-1.08954,1.22573 -2.58672,2.06938 -5.16672,2.06938c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06938c-1.08954,-1.22573 -1.71328,-2.99507 -1.71328,-4.81062c0,-1.81556 0.62374,-3.58489 1.71328,-4.81062c1.08954,-1.22573 2.58672,-2.06938 5.16672,-2.06938zM24.08,44.72c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM147.92,44.72c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM86,79.12c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM24.08,113.52c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM147.92,113.52c2.58,0 4.07718,0.84364 5.16672,2.06937c1.08954,1.22574 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.08954,-1.22573 2.58672,-2.06937 5.16672,-2.06937zM85.89922,144.52031c0.06934,0.00434 0.1388,0.00658 0.20828,0.00672c2.48134,0.03464 3.99264,0.82244 5.05922,2.02234c1.08953,1.22558 1.71328,2.99507 1.71328,4.81063c0,1.81556 -0.62374,3.58489 -1.71328,4.81063c-1.08954,1.22573 -2.58672,2.06937 -5.16672,2.06937c-2.58,0 -4.07718,-0.84364 -5.16672,-2.06937c-1.08954,-1.22574 -1.71328,-2.99507 -1.71328,-4.81063c0,-1.81556 0.62374,-3.58489 1.71328,-4.81063c1.06829,-1.20183 2.57733,-1.99693 5.06594,-2.02906z"
+                          ></path>
+                        </g>
+                      </g></svg
+                  ></span>
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Enablement Solutions</h4>
                   <p>
-                    Our solutions are dedicated to improving the overall experience of the end-user by empowering them
-                    with an “always-on” access to documents, videos, and other critical data without compromising
-                    security.
+                    Our solutions are dedicated to improving the overall
+                    experience of the end-user by empowering them with an
+                    “always-on” access to documents, videos, and other critical
+                    data without compromising security.
                   </p>
                 </div>
               </div>
@@ -269,264 +497,374 @@
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
-  <section class="container-fluid service-partners py-4">
-    <div class="container d-flex justify-content-center align-items-center flex-column py-3">
-      <h3 class="service-section-title">Authorized Partners</h3>
-      <div class="container mt-sm-3 mt-md-5">
-        <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center">
-          <div class="client"><img src="./img/uipath.png" alt="elm"></div>
-          <div class="client"><img src="./img/blue.png" alt="alinma bank"></div>
-          <div class="client"><img src="./img/Automation.jpg" alt="bank albilad"></div>
+    <section class="container-fluid service-partners py-4">
+      <div
+        class="container d-flex justify-content-center align-items-center flex-column py-3"
+      >
+        <h3 class="service-section-title">Authorized Partners</h3>
+        <div class="container mt-sm-3 mt-md-5">
+          <div
+            class="owl-carousel clients-carousel d-flex justify-content-center align-items-center"
+          >
+            <div class="client"><img src="./img/uipath.png" alt="elm" /></div>
+            <div class="client">
+              <img src="./img/blue.png" alt="alinma bank" />
+            </div>
+            <div class="client">
+              <img src="./img/Automation.jpg" alt="bank albilad" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center">
-    <h3 class="text-center contact-title">Find answers to your business needs</h3>
-    <a href="#" class="service-contact" id="contactButton">Contact us</a>
-  </section>
+    <section
+      class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center"
+    >
+      <h3 class="text-center contact-title">
+        Find answers to your business needs
+      </h3>
+      <a href="#" class="service-contact" id="contactButton">Contact us</a>
+    </section>
 
-  <!-- ! Footer -->
-  <footer class="footer container-fluid d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center justify-content-start">
-       
+    <!-- ! Footer -->
+    <footer
+      class="footer container-fluid d-flex justify-content-between align-items-center"
+    >
+      <div class="d-flex align-items-center justify-content-start">
         <p class="f-link d-flex d-flex align-items-center  mx-4">
-          <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
+          <a href="tel:+966552357583"
+            ><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a
+          >
         </p>
-       
-       
+
         <p class="f-link d-flex align-items-center mx-4">
-          <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
+          <a href="mailto:info@virtech-ksa.com"
+            ><i class="fas fa-envelope"></i> info@virtech-ksa.com</a
+          >
         </p>
-       
-       
+
         <p class="f-link d-flex align-items-center mx-4">
           <a
-            href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-            <i class="fas fa-map-marker-alt"></i> Location</a>
+            href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"
+          >
+            <i class="fas fa-map-marker-alt"></i> Location</a
+          >
         </p>
-       
-            
-          <ul class="social-network d-flex justify-content-start align-items-center pl-0 m-0 mx-4">
-            <li>
-              <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
-                  class="fab fa-linkedin-in"></i></a>
-            </li>
-          </ul>         
-       
-    </div>
-    <p class="copyright d-flex align-items-center">© 2018 - 2020 Virtech. All rights reserved</p>
-  </footer>
-  <!-- ! Contact form -->
-  <section class="contact-wrapper" id="contactMaster">
-    <div class="overlay"></div>
-    <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
 
-    <div class="container d-flex justify-content-center align-items-center flex-column contact-inner">
-      <div class="row d-flex justify-content-between my-auto">
-        <div class="col-md-4 col-12 contact-title d-flex justify-content-center flex-column">
-          <h2 class="text-center display-4">Get in touch</h2>
-          <p class="text-center">We are happy to assist you with your queries</p>
-        </div>
-        <div class="col-md-6 col-12 contact-form">
-          <div class="container">
-            <form id="contactForm" class="needs-validation" novalidate>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="validationCustom01"> Name <span>*</span></label>
-                    <input type="text" class="form-control" name="firstname" id="validationCustom01"
-                      pattern="[a-zA-Z\s]+" placeholder="Enter your name" autocomplete="off" required>
-                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please enter valid Name</div>
+        <ul
+          class="social-network d-flex justify-content-start align-items-center pl-0 m-0 mx-4"
+        >
+          <li>
+            <a href="#" class="icoFacebook" title="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/zyclyx"
+              class="icoTwitter"
+              title="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="icoTwitter" title="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href=" https://www.linkedin.com/company/virtech-ksa/"
+              class="icoLinkedin"
+              title="Linkedin"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright d-flex align-items-center">
+        © 2018 - 2020 Virtech. All rights reserved
+      </p>
+    </footer>
+    <!-- ! Contact form -->
+    <section class=" contact-wrapper" id="contactMaster">
+      <div class="overlay"></div>
+      <button type="button" id="contactClose">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div
+        class="container d-flex justify-content-around align-items-center flex-column contact-inner"
+      >
+        <div class="row d-flex justify-content-between mt-5">
+          <div class="col-md-6 col-12 contact-form">
+            <div class="container">
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="validationCustom01">
+                        Name <span>*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="firstname"
+                        id="validationCustom01"
+                        pattern="[a-zA-Z\s]+"
+                        placeholder="Enter your name"
+                        autocomplete="off"
+                        required
+                      />
+                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                      <div class="invalid-feedback">
+                        Please enter valid name
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label class=""> Email-ID <span>*</span></label>
-                    <input type="email" class="form-control" name="email" autocomplete="off"
-                      placeholder="Enter your email-ID" id="email" required>
-                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please enter valid email</div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class=""> Email-ID <span>*</span></label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        autocomplete="off"
+                        placeholder="Enter your email-ID"
+                        id="email"
+                        required
+                      />
+                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                      <div class="invalid-feedback">
+                        Please enter valid email
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label> Contact Number <span>*</span></label>
-                    <input type="number" class="form-control" name="phone" id="phone"
-                      placeholder="Enter your contact number" autocomplete="off" required>
-                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please enter valid Phone Number</div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label> Contact Number <span>*</span></label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="phone"
+                        id="phone"
+                        placeholder="Enter your contact number"
+                        autocomplete="off"
+                        required
+                      />
+                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                      <div class="invalid-feedback">
+                        Please enter valid phone number
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="message">Subject <span>*</span></label>
-                    <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
-                      required></textarea>
-                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please write some message</div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="message">Subject <span>*</span></label>
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        id="message"
+                        placeholder="Your message here.."
+                        required
+                      ></textarea>
+                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
+                      <div class="invalid-feedback">Please write a message</div>
+                    </div>
                   </div>
+                  <button
+                    type="submit"
+                    class="button button-blue px-5 mx-auto"
+                    id="contactSubmit"
+                  >
+                    Submit
+                  </button>
                 </div>
-                <button type="submit" class="btn btn-secondary mx-auto id=" contactSubmit">Submit</button>
-              </div>
-            </form>
+              </form>
+            </div>
+          </div>
+          <div
+            class="col-md-5 col-12 d-flex justify-content-center flex-column"
+          >
+            <h2 class="text-center contact-title">Get in touch</h2>
+            <p class="text-center contact-caption">
+              We are happy to assist you with your queries
+            </p>
           </div>
         </div>
 
+        <div class="container contact-info px-0">
+          <div
+            class="row mx-auto d-flex justify-content-between align-items-center "
+          >
+            <address class="col-md-3 col-12">
+              <a
+                class="location"
+                href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"
+              >
+                Virtech Technologies, Riyadh, <br />
+                PO Box - 23754, K.S.A - 11611.
+              </a>
+            </address>
+            <div class="col text-center">
+              <a class="phone col-md-3 col-6" href="tel:+966552357583">
+                (+966) 552 357 583
+              </a>
+            </div>
+
+            <div class="col-md-3 col-6 text-center">
+              <a class="mail col" href="mailto:info@virtech-ksa.com">
+                info@virtech-ksa.com
+              </a>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <ul
+                class="social-network d-flex justify-content-center align-items-center pl-0 "
+              >
+                <li>
+                  <a href="#" class="icoFacebook" title="Facebook">
+                    <i class="fab fa-facebook-f fa-fw"> </i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/zyclyx"
+                    class="icoTwitter"
+                    title="Twitter"
+                    ><i class="fab fa-twitter fa-fw"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="icoTwitter" title="Instagram">
+                    <i class="fab fa-instagram fa-fw"> </i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=" https://www.linkedin.com/company/virtech-ksa/"
+                    class="icoLinkedin"
+                    title="Linkedin"
+                    ><i class="fab fa-linkedin-in fa-fw"> </i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="container contact-info py-2 px-0">
-        <div class="row mx-auto d-flex justify-content-between align-items-center ">
-          <address class="col-md-3 col-12">
-            <a class="location"
-              href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-              Virtech Technologies, <br /> Riyadh, PO Box - 23754, <br /> K.S.A - 11611.
-            </a>
-          </address>
-          <div class="col text-center">
-            <a class="phone col-md-3 col-6" href="tel:+966552357583">
-              (+966) 552 357 583
-            </a>
-          </div>
-
-          <div class="col-md-3 col-6 text-center">
-            <a class="mail col" href="mailto:info@virtech-ksa.com">
-              info@virtech-ksa.com
-            </a>
-          </div>
-
-          <div class="col-md-3 col-6">
-            <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
-              <li>
-                <a href="#" class="icoFacebook" title="Facebook">
-                  <i class="fab fa-facebook-f fa-fw">
-                  </i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                    class="fab fa-twitter fa-fw"></i></a>
-              </li>
-              <li>
-                <a href="#" class="icoTwitter" title="Instagram">
-                  <i class="fab fa-instagram fa-fw">
-                  </i></a>
-              </li>
-              <li>
-                <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
-                    class="fab fa-linkedin-in fa-fw">
-                  </i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="status-alert" id="formStatus">
+        <p><i class="fas fa-check"></i></p>
+        <h4>Thanks for contacting us!</h4>
+        <p>We will get in touch with you soon</p>
       </div>
-    </div>
+    </section>
 
-    <div class="status-alert" id="formStatus">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="./js/vendor/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/vendor/owl.carousel.min.js"></script>
+    <script src="./js/shared/header.js"></script>
+    <script src="./js/contact/contact.js"></script>
 
-    </div>
-  </section>
+    <script>
+      // serviceContent
+      let cardAnimation = gsap.timeline();
+      cardAnimation.fromTo(
+        ".service-content-cards .col-12",
+        { y: 60, autoAlpha: 0 },
+        { stagger: 0.7, y: 0, autoAlpha: 1, duration: 2 }
+      );
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js"></script> -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="./js/vendor/animation.gsap.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="./js/vendor/owl.carousel.min.js"></script>
-  <script src="./js/shared/header.js"></script>
-  <script src="./js/contact/contact.js"></script>
+      let controller = new ScrollMagic.Controller();
+      new ScrollMagic.Scene({
+        triggerElement: "#serviceOverview",
+        triggerHook: 0.13,
+        reverse: false
+      })
+        .setTween(cardAnimation)
+        .addTo(controller);
 
-  <script>
-    // serviceContent
-    let cardAnimation = gsap.timeline();
-    cardAnimation.fromTo('.service-content-cards .col-12', { y: 60, autoAlpha: 0 }, { stagger: 0.7, y: 0, autoAlpha: 1, duration: 2 })
+      // $('.service-content .service-card').on('mouseenter', function () {
+      //   $('.service-card').each(function () {
+      //     $(this).removeClass('active-card');
+      //   })
+      //   $('.content-wrapper').each(function () {
+      //     $(this).removeClass('active-content');
+      //   })
 
-    let controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-      triggerElement: "#serviceOverview",
-      triggerHook: 0.13,
-      reverse: false,
-    })
-      .setTween(cardAnimation)
-      .addTo(controller);
+      //   $(this).toggleClass('active-card')
+      //   let contentID = $(this).attr('id');
+      //   let index = $(this).attr('data-index');
+      //   $(`#content-${index}`).addClass('active-content');
+      //   gsap.from(`#content-${index}`, { duration: 1, opacity: 0.5, y: 100 })
+      // })
 
-    // $('.service-content .service-card').on('mouseenter', function () {
-    //   $('.service-card').each(function () {
-    //     $(this).removeClass('active-card');
-    //   })
-    //   $('.content-wrapper').each(function () {
-    //     $(this).removeClass('active-content');
-    //   })
+      // our clients/partners
+      $(".clients-carousel").owlCarousel({
+        autoplay: true,
+        loop: true,
+        center: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          900: { items: 3 }
+        }
+      });
+      // // Loop through cards
+      // function setActiveClass(param){
+      // console.log(param.index);
+      // let index = param.index
+      // $(`#card-${index}`).toggleClass('active-card')
+      // $(`#content-${index}`).addClass('active-content');
+      // }
+      // let showContent = gsap.timeline();
+      //     showContent.to('#content-1',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{prev:0,index:1}]})
+      //     showContent.to('#content-2',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{index:2}],delay:6})
+    </script>
 
-    //   $(this).toggleClass('active-card')
-    //   let contentID = $(this).attr('id');
-    //   let index = $(this).attr('data-index');
-    //   $(`#content-${index}`).addClass('active-content');
-    //   gsap.from(`#content-${index}`, { duration: 1, opacity: 0.5, y: 100 })
-    // })
+    <script>
+      let imageOne = document.getElementById("img1");
+      let imageTwo = document.getElementById("img2");
+      let imageThree = document.getElementById("img3");
 
-    // our clients/partners
-    $(".clients-carousel").owlCarousel({
-      autoplay: true,
-      loop: true,
-      center: true,
-      autoplaySpeed: 2000,
-      dots: false,
-      responsive: {
-        0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
-      }
-    });
-// // Loop through cards
-// function setActiveClass(param){
-// console.log(param.index);
-// let index = param.index
-// $(`#card-${index}`).toggleClass('active-card')
-// $(`#content-${index}`).addClass('active-content');
-// }
-// let showContent = gsap.timeline();
-//     showContent.to('#content-1',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{prev:0,index:1}]})
-//     showContent.to('#content-2',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{index:2}],delay:6})
-  </script>
+      imageOne.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/endusercomputing/img-1.jpg)";
+      });
 
-<script>
-  let imageOne = document.getElementById('img1');
-let imageTwo = document.getElementById('img2');
-let imageThree = document.getElementById('img3');
+      imageTwo.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/endusercomputing/img-2.jpg)";
+      });
 
-
-imageOne.addEventListener('click',function(){
-document.querySelector('.service-banner').style.backgroundImage='url(./img/endusercomputing/img-1.jpg)';
-})
-
-imageTwo.addEventListener('click',function(){
-document.querySelector('.service-banner').style.backgroundImage='url(./img/endusercomputing/img-2.jpg)';
-})
-
-imageThree.addEventListener('click',function(){
-document.querySelector('.service-banner').style.backgroundImage='url(./img/endusercomputing/img-3.jpg)';
-})
-</script>
-</body>
-
+      imageThree.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/endusercomputing/img-3.jpg)";
+      });
+    </script>
+  </body>
 </html>

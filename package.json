@@ -16,5 +16,8 @@
     "url": "https://github.com/Zyclyx-Web-Developers/virtech-new/issues"
   },
   "homepage": "https://github.com/Zyclyx-Web-Developers/virtech-new#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "gulp-file-include": "^2.1.1"
+  }
 }

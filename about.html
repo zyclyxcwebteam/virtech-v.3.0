@@ -207,14 +207,14 @@
       <div class="row d-flex justify-content-center align-items-center py-3">
         <div class="col-md-8 col-12">
           <div class="mission row mx-auto">
-            <div class="col-4 py-4">
+            <div class="col-md-4 col-12 py-4">
               <div class="card title-card title-card-1">
                 <div class="card-body">
                   <h2 class="card-title">Mission</h2>
                 </div>
               </div>
             </div>
-            <div class="col-8 mx-auto px-5 about-text d-flex justify-content-center align-items-center flex-column">
+            <div class="col-md-8 col-12 mx-auto px-5 about-text d-flex justify-content-center align-items-center flex-column">
               <p>To offer custom solutions to Clients using unique combination of data science, amazing design philosophy, software engineering, and architecture.</p>
             </div>
           </div>    
@@ -227,12 +227,12 @@
         <div class="col-md-8 col-12">
           <div class="vission row mx-auto">            
             <div
-              class="col-8 mx-auto px-5 about-text d-flex justify-content-center align-items-center flex-column">               
+              class="col-md-8 col-12 mx-auto px-5 about-text d-flex justify-content-center align-items-center flex-column">               
                <p>To provide diverse solutions in the area of Futuristic IT development with a strong commitment towards corporate citizenship and sustainability. 
               </p>
             </div>
 
-            <div class="col-4 py-4">
+            <div class="col-md-4 col-12 py-4">
               <div class="card title-card title-card-2">
                 <div class="card-body">
                   <h2 class="card-title">Vision</h2>
@@ -387,16 +387,14 @@
     <p class="copyright d-flex align-items-center">© 2018 - 2020 Virtech. All rights reserved</p>
   </footer>
   <!-- ! Contact form -->
+  <!-- ! Contact form -->
   <section class=" contact-wrapper" id="contactMaster">
     <div class="overlay"></div>
     <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
 
-    <div class="container d-flex justify-content-center align-items-center flex-column contact-inner">
-      <div class="row d-flex justify-content-between my-auto">
-        <div class="col-md-4 col-12 contact-title d-flex justify-content-center flex-column">
-          <h2 class="text-center display-4">Get in touch</h2>
-          <p class="text-center">We are happy to assist you with your queries</p>
-        </div>
+    <div class="container d-flex justify-content-around align-items-center flex-column contact-inner">
+      <div class="row d-flex justify-content-between mt-5">
+       
         <div class="col-md-6 col-12 contact-form">
           <div class="container">
             <form id="contactForm" class="needs-validation" novalidate>
@@ -407,7 +405,7 @@
                     <input type="text" class="form-control" name="firstname" id="validationCustom01"
                       pattern="[a-zA-Z\s]+" placeholder="Enter your name" autocomplete="off" required>
                     <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please enter valid Name</div>
+                    <div class="invalid-feedback">Please enter valid name</div>
                   </div>
                 </div>
                 <div class="col-12">
@@ -425,7 +423,7 @@
                     <input type="number" class="form-control" name="phone" id="phone"
                       placeholder="Enter your contact number" autocomplete="off" required>
                     <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please enter valid Phone Number</div>
+                    <div class="invalid-feedback">Please enter valid phone number</div>
                   </div>
                 </div>
                 <div class="col-12">
@@ -434,23 +432,26 @@
                     <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
                       required></textarea>
                     <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please write some message</div>
+                    <div class="invalid-feedback">Please write a message</div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-secondary mx-auto id=" contactSubmit">Submit</button>
+                <button type="submit" class="button button-blue px-5 mx-auto" id="contactSubmit">Submit</button>
               </div>
             </form>
           </div>
         </div>
-
+        <div class="col-md-5 col-12 d-flex justify-content-center flex-column">
+          <h2 class="text-center contact-title">Get in touch</h2>
+          <p class="text-center contact-caption">We are happy to assist you with your queries</p>
+        </div>
       </div>
 
-      <div class="container contact-info py-2 px-0">
+      <div class="container contact-info px-0">
         <div class="row mx-auto d-flex justify-content-between align-items-center ">
           <address class="col-md-3 col-12">
             <a class="location"
               href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-              Virtech Technologies, <br /> Riyadh, PO Box - 23754, <br /> K.S.A - 11611.
+              Virtech Technologies, Riyadh, <br /> PO Box - 23754, K.S.A - 11611.
             </a>
           </address>
           <div class="col text-center">
@@ -493,9 +494,12 @@
     </div>
 
     <div class="status-alert" id="formStatus">
-
+      <p><i class="fas fa-check"></i></p>
+      <h4>Thanks for contacting us! </h4>
+      <p>We will get in touch with you soon</p>
     </div>
   </section>
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

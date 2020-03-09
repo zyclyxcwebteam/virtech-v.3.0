@@ -1,19 +1,25 @@
 // validations
 
-
-
 (function() {
+  let contactButton = document.getElementById("contactButton");
+  let contactLink = document.getElementById("contactLink");
+  let contactClose = document.getElementById("contactClose");
+  let form = document.getElementById("contactForm");
+
   function contactFormShow() {
     gsap.to(".contact-wrapper", {
       display: "flex",
       minHeight: "100%",
-      top: '20px',
+      top: "20px",
       bottom: "unset",
       duration: 0.5
     });
   }
 
   function contactFormHide() {
+    form.reset();
+    form.classList.remove("was-validated");
+    document.getElementById("formStatus").classList.remove("show");
     gsap.to(".contact-wrapper", {
       display: "none",
       bottom: "0",
@@ -38,10 +44,6 @@
   //   });
   // }, false);
 
-  let contactButton = document.getElementById("contactButton");
-  let contactLink = document.getElementById("contactLink");
-  let contactClose = document.getElementById("contactClose");
-
   contactLink.addEventListener("click", function(event) {
     event.preventDefault();
     contactFormShow();
@@ -58,7 +60,7 @@
   });
 
   // TODO -  form validations
-  let form = document.getElementById("contactForm");
+
   form.addEventListener(
     "submit",
     function(event) {
@@ -73,9 +75,7 @@
       // if any errors enable send message button to re-send form data
       if (!form.checkValidity()) {
         document.getElementById("contactSubmit").removeAttribute("disabled");
-        document.getElementById(
-          "contactSubmit"
-        ).innerHTML = `Submit`;
+        document.getElementById("contactSubmit").innerHTML = `Submit`;
       }
 
       // if no errors send form data to the API
@@ -84,7 +84,7 @@
         data = {
           name: formData.get("name"),
           email: formData.get("email"),
-          phone: formData.get("phone"),           
+          phone: formData.get("phone"),
           message: formData.get("message")
         };
         fetch("https://agile-plateau-09650.herokuapp.com/enquirymessages", {
@@ -106,13 +106,11 @@
           .then(function(jsondata) {
             form.reset();
             form.classList.remove("was-validated");
-            //document.getElementById("contactAlert").classList.add("show");
+            document.getElementById("formStatus").classList.add("show");
             document
               .getElementById("contactSubmit")
               .removeAttribute("disabled");
-            document.getElementById(
-              "contactSubmit"
-            ).innerHTML = `Submit`;
+            document.getElementById("contactSubmit").innerHTML = `Submit`;
           })
           .catch(function(error) {
             console.log(error);
@@ -121,9 +119,7 @@
             document
               .getElementById("contactSubmit")
               .removeAttribute("disabled");
-            document.getElementById(
-              "contactSubmit"
-            ).innerHTML = `Submit`;
+            document.getElementById("contactSubmit").innerHTML = `Submit`;
           });
       }
     },
