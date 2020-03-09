@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./favicon.png" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -343,13 +344,16 @@
       >
         <div class="col-md-6 col-12 text-center">
           <h2 class="service-name">Digital Marketing</h2>
-          <h3 class="service-tagline mt-4">Empowering brands digitally</h3>
+          <h3 class="service-tagline">Empowering brands digitally</h3>
         </div>
       </div>
       <ul class="image-list">
         <li><a href="#" id="img1">Image-1</a></li>
         <li><a href="#" id="img2">Image-2</a></li>
         <li><a href="#" id="img3">Image-3</a></li>
+        <li><a href="#" id="img4">Image-4</a></li>
+        <li><a href="#" id="img5">Image-5</a></li>
+        <li><a href="#" id="img6">Image-6</a></li>
       </ul>
     </section>
 
@@ -861,6 +865,9 @@
       let imageOne = document.getElementById("img1");
       let imageTwo = document.getElementById("img2");
       let imageThree = document.getElementById("img3");
+      let imageFour = document.getElementById("img4");
+      let imageFive = document.getElementById("img5");
+      let imageSix = document.getElementById("img6");
 
       imageOne.addEventListener("click", function() {
         document.querySelector(".service-banner").style.backgroundImage =
@@ -875,6 +882,20 @@
       imageThree.addEventListener("click", function() {
         document.querySelector(".service-banner").style.backgroundImage =
           "url(./img/dmark/img-3.jpg)";
+      });
+
+      imageFour.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/dmark/img-4.jpg)";
+      });
+      imageFive.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/dmark/img-5.jpg)";
+      });
+
+      imageSix.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/dmark/img-6.jpg)";
       });
     </script>
   </body>
