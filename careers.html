@@ -355,6 +355,9 @@
         <li><a href="#" id="img1">Image-1</a></li>
         <li><a href="#" id="img2">Image-2</a></li>
         <li><a href="#" id="img3">Image-3</a></li>
+        <li><a href="#" id="img4">Image-4</a></li>
+        <li><a href="#" id="img5">Image-5</a></li>
+        <li><a href="#" id="img6">Image-6</a></li>
       </ul>
     </section>
 
@@ -706,6 +709,9 @@
       let imageOne = document.getElementById("img1");
       let imageTwo = document.getElementById("img2");
       let imageThree = document.getElementById("img3");
+      let imageFour = document.getElementById("img4");
+      let imageFive = document.getElementById("img5");
+      let imageSix = document.getElementById("img6");
 
       imageOne.addEventListener("click", function() {
         document.querySelector(".career-home").style.backgroundImage =
@@ -718,6 +724,21 @@
       });
 
       imageThree.addEventListener("click", function() {
+        document.querySelector(".career-home").style.backgroundImage =
+          "url(./img/careers/img-8.jpg)";
+      });
+
+      imageFour.addEventListener("click", function() {
+        document.querySelector(".career-home").style.backgroundImage =
+          "url(./img/careers/img-6.jpg)";
+      });
+
+      imageFive.addEventListener("click", function() {
+        document.querySelector(".career-home").style.backgroundImage =
+          "url(./img/careers/img-7.jpg)";
+      });
+
+      imageSix.addEventListener("click", function() {
         document.querySelector(".career-home").style.backgroundImage =
           "url(./img/careers/img-3.jpg)";
       });
