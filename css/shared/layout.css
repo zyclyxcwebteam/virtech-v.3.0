@@ -117,7 +117,8 @@ body {
 }
 /* end - border line animation */
 
-.button {
+.button,
+.service-contact {
   display: inline-block;
   padding: 0.6em 1.2em;
   margin: 0 0.1em 0.1em 0;
@@ -132,7 +133,8 @@ body {
   /* box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17); */
 }
 
-.button-dark {
+.button-dark,
+.service-contact {
   background-color: hsl(217, 62%, 18%);
   border: 0.16em solid hsl(231, 37%, 36%);
   color: #ffffff;
@@ -148,9 +150,20 @@ body {
   border: 0.16em solid hsl(231, 37%, 36%);
   font-weight: 500;
 }
+.service-contact {
+  margin-left: 1.5rem;
+  padding: 0.5em 1.5em !important;
+  color: #dbdbdb;
+  font-weight: 500;
+}
 .button-light:hover,
 .button-blue:hover {
   border: 0.16em solid #b8bdc4;
+}
+.service-contact:hover {
+  text-decoration: none;
+  color: #ffffff;
+  border: 0.16em solid hsl(217, 62%, 62%);
 }
 .button-dark:hover {
   border: 0.16em solid #f2f3f9;
