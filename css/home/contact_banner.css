@@ -18,7 +18,6 @@
   position: relative;
   color: #fff;
   overflow: hidden;
-  mix-blend-mode: overlay;
 }
 
 .contact-banner .overlay {
