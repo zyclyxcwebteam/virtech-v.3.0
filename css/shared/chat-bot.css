@@ -13,7 +13,7 @@
 .chat-bot{
     color: white;
     background-color: #ccc;
-    display: none;
+    /* display: none; */
     /* border: 1px solid black; */
     width: 25rem;
     height: 38rem;
