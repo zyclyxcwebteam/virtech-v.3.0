@@ -353,6 +353,7 @@
         <li><a href="#" id="img1">Image-1</a></li>
         <li><a href="#" id="img2">Image-2</a></li>
         <li><a href="#" id="img3">Image-3</a></li>
+        <li><a href="#" id="img4">Image-3</a></li>
       </ul>
     </section>
 
@@ -386,7 +387,10 @@
                 <div
                   class="col-2 pr-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/assesment.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/assesment.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Compliance Assessment</h4>
@@ -432,7 +436,10 @@
                 <div
                   class="col-2 pr-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/SOC Automation.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/SOC Automation.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>SOC Automation</h4>
@@ -452,7 +459,10 @@
                 <div
                   class="col-2 pl-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/SIEM.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/SIEM.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pr-0 col-12">
                   <h4>Implement (SIEM)</h4>
@@ -474,7 +484,10 @@
                 <div
                   class="col-2 pr-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/identify.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/identify.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Forensic Services / Incident Response</h4>
@@ -825,6 +838,7 @@
       let imageOne = document.getElementById("img1");
       let imageTwo = document.getElementById("img2");
       let imageThree = document.getElementById("img3");
+      let imageFour = document.getElementById("img4");
 
       imageOne.addEventListener("click", function() {
         document.querySelector(".service-banner").style.backgroundImage =
@@ -839,6 +853,11 @@
       imageThree.addEventListener("click", function() {
         document.querySelector(".service-banner").style.backgroundImage =
           "url(./img/compliance/img-3.jpg)";
+      });
+
+      imageFour.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/compliance/img-4.jpg)";
       });
     </script>
   </body>
