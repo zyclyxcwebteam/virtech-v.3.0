@@ -177,8 +177,8 @@
 .poc-wrapper .poc-btn {
   background-color: #00bdd5;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -187,16 +187,16 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
-  bottom: -20px;
+  bottom: -25px;
   outline: none;
   box-shadow: none;
-  animation: shadow-pulse 0.8s infinite alternate;
+  /* animation: shadow-pulse 0.8s infinite alternate; */
   color: #0c1b33;
 }
 .poc-wrapper .poc-btn:hover {
   text-decoration: none;
-  background-color: #0c1b33;
-  color: #e8e9f0;
+  background-color: #f2f3f9;
+  color: #0c1b33;
 }
 .poc-wrapper .poc-btn[aria-expanded="true"] {
   background-color: #0c1b33;
