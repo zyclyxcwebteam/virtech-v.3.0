@@ -7,7 +7,14 @@
   font-weight: 600;
   color: #00bdd5;
 }
-
+.about-home ul{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 99;
+}
 .about-home {
   height: 90vh;
   background-color: #0c1b33;
