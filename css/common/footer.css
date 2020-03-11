@@ -118,11 +118,15 @@
   }
   .f-link {
     padding: 4px 0;
+    margin-left: 0 !important;
   }
   .footer-social {
     margin: 0 auto;
   }
   .footer .social-network {
+    margin: 0 !important;
+  }
+  .footer>div{
     margin: 0 !important;
   }
 }
