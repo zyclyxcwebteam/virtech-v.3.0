@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather&display=swap");
+
+.image-list {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.image-list li {
+  list-style-type: none;
+}
+.image-list li a {
+  color: #f5f5f5;
+}
+
+#careers .nav-item.active .nav-link {
+  font-weight: 600;
+  color: #00bdd5;
+}
+
+.career-home {
+  height: 100vh;
+  background-color: #0c1b33;
+  background-image: url("../../img/careers/img-2.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.career-home::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(22, 33, 61, 0.3) 0%,
+    #16213d 100%
+  );
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+.career-title {
+  font-size: 3.5rem;
+  font-family: "Playfair Display";
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.career-points {
+  background-color: #16213d;
+  color: #b8bdc4;
+}
+.career-points .hero-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 24px;
+}
+.career-points ul {
+  padding: 0;
+}
+.career-points ul li {
+  font-size: 1.2rem;
+  margin: 1.2rem 1rem;
+  list-style-type: none;
+}
+.career-points ul li .fas {
+  margin-right: 5px;
+  color: #24aec3;
+}
+/* career cards */
+
+.openings-count {
+  font-size: 1.2rem;
+  color: #0c1b33;
+  font-weight: 600;
+}
+#openingsCount {
+  background-color: rgba(0, 189, 213, 0.2);
+  padding: 0.3rem 1.2rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.2rem;
+  font-weight: 700;
+}
+.career-card {
+  position: relative;
+  z-index: -1;
+  border-color: rgba(36, 174, 195, 0.5);
+  background-color: #f2f3f9;
+}
+.career-card .card-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+}
+.career-card:hover .card-body::after {
+  /* background-color: rgba(12, 27, 51,0.5) !important; */
+  background-color: rgba(36, 174, 195, 0.3);
+  transition: 0.3s all ease-out;
+}
+
+/* .career-card .career-btn {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  padding: 0.5rem 1.6rem;
+  border-radius: 2rem;
+  background-color: hsl(188, 81%, 51%);
+  transition: 0.3s all ease-out;
+} */
+.career-card .career-btn {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  border: 0.16em solid hsl(187, 100%, 32%);
+}
+.career-card:hover .career-btn {
+  display: inline-block;
+  z-index: 99;
+  color: #0c1b33;
+  text-decoration: none;
+}
+
+.career-card .career-btn:hover {
+  font-weight: 600;
+  background-color: hsl(188, 69%, 55%);
+  transition: 0.3s all ease-out;
+  border: 0.16em solid hsl(217, 62%, 18%) !important;
+}
+
+.openings-wrapper {
+  background-color: #f9f9f9;
+}
+.openings-wrapper .owl-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.openings-wrapper .owl-prev,
+.openings-wrapper .owl-next {
+  margin: 1.5rem 0.5rem 0.5rem;
+  border: 1px solid rgba(36, 174, 195, 0.2) !important;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(36, 174, 195, 0.1) !important;
+  outline: none !important;
+  transition: 0.3s all ease-out;
+  border-radius: 0.2rem;
+}
+.openings-wrapper .owl-prev span,
+.openings-wrapper .owl-next span {
+  font-size: 2rem;
+  height: 40px;
+  width: 40px;
+  font-weight: 500;
+  position: relative;
+  top: -8px;
+}
+.openings-wrapper .owl-prev:hover,
+.openings-wrapper .owl-next:hover {
+  background-color: rgba(36, 174, 195, 1) !important;
+  transition: 0.3s all ease-out;
+}
+/* TODO - check it  */
+.contact-banner {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .career-title {
+    font-size: 2.3rem;
+  }
+  .banner-title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .career-points .hero-text {
+    margin-left: 16px;
+    font-size: 1.2rem;
+  }
+  .career-points {
+    font-size: 1rem;
+  }
+}

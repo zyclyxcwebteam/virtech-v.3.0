@@ -1,0 +1,128 @@
+.footer {
+  background-color: #ffffff;
+}
+.footer a,
+.footer p {
+  font-size: 1rem;
+  color: #525252;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.f-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-link .fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.f-link:hover .fas {
+  color: #00bdd5;
+  /* animation: socialicon 0.2s ease-in-out alternate; */
+}
+.f-link a:hover {
+  color: #00bdd5;
+  font-weight: 600;
+  text-decoration: none;
+  animation: footerinfo 0.3s ease-in-out alternate;
+}
+
+/* Footer Follow Us */
+.footer .social-network li {
+  list-style-type: none;
+}
+.footer .social-network {
+  margin-left: 1rem !important;
+}
+.footer .social-network a {
+  font-weight: 600;
+  margin: 0 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 0.3rem;
+}
+.footer .social-network a:hover .fab {
+  animation: socialicon 0.4s ease-in-out alternate;
+}
+/* .footer .social-network a:hover {
+  background-color: rgba(0, 189, 213, 0.05);
+} */
+@keyframes socialicon {
+  0% {
+    transform: translateY(0px) scale(0.8);
+  }
+  100% {
+    transform: translateY(0px) scale(1.5);
+  }
+}
+
+@keyframes footerinfo {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4px);
+  }
+}
+.footer .social-network .fab {
+  font-size: 1rem;
+}
+
+.footer .social-network .fa-facebook-f:hover {
+  color: #4267b2;
+}
+.footer .social-network .fa-twitter:hover {
+  color: #1da1f2;
+}
+.footer .social-network .fa-instagram:hover {
+  color: #c13584;
+}
+
+.footer .social-network .fa-linkedin-in:hover {
+  color: #2867b2;
+}
+.footer .icon-facebook:hover {
+  background-color: rgba(66, 103, 178, 0.1);
+}
+.footer .icon-twitter:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+}
+.footer .icon-instagram:hover {
+  background-color: rgba(193, 53, 132, 0.1);
+}
+.footer .icon-linkedin:hover {
+  background-color: rgba(40, 103, 178, 0.1);
+}
+.footer .copyright {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #767676;
+}
+
+@media (max-width: 576px) {
+  .footer-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start;
+  }
+  .f-link {
+    padding: 4px 0;
+  }
+  .footer-social {
+    margin: 0 auto;
+  }
+  .footer .social-network {
+    margin: 0 !important;
+  }
+}
