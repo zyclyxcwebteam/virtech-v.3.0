@@ -444,12 +444,12 @@ $(function() {
       if (!entry.isIntersecting) {
         //navbar.classList.remove("navbar-dark")
         //navbar.classList.add("navbar-light");
-        document.querySelector(".side-nav").classList.remove("hide");
+        // document.querySelector(".side-nav").classList.remove("hide");
         bannerVideo.pause();
       } else {
         //navbar.classList.remove("navbar-light");
         //navbar.classList.add("navbar-dark");
-        document.querySelector(".side-nav").classList.add("hide");
+        //document.querySelector(".side-nav").classList.add("hide");
         bannerVideo.play();
       }
     });
