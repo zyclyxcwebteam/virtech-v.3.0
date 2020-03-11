@@ -160,14 +160,14 @@
 }
 
 .pa-banner {
-  background-image: url("../../img/predictive/img-1.jpg");
+  background-image: url("../../img/predictive/img-4.jpg");
 }
 .pa-overview {
-  background-color: #013c60;
+  background-color: #16213d;
 }
 
 .pa-banner.service-banner::after {
-  background-image: linear-gradient(to top, #013d61 1%, transparent 100%);
+  background-image: linear-gradient(to top, #16213d 1%, transparent 100%);
 }
 
 .dcenter-banner {
