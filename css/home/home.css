@@ -27,7 +27,7 @@
 
 /* ? Scroll snap styles */
 .scroll-wrapper {
-  height: 91.85vh;
+  height: 91vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
