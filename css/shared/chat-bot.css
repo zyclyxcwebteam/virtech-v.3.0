@@ -178,8 +178,9 @@
 @media (max-width: 425px) { 
     .card {
         max-width: 100% !important;
-        /* right: -10px !important; */
+        right: 0px !important;
         left: 4px;
         height: 620px !important;
+        transition: all 0.2s ease-in-out;
     }
 }
