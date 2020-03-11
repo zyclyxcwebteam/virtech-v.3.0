@@ -357,6 +357,9 @@
         <li><a href="#" id="img1">Image-1</a></li>
         <li><a href="#" id="img2">Image-2</a></li>
         <li><a href="#" id="img3">Image-3</a></li>
+        <li><a href="#" id="img4">Image-4</a></li>
+        <li><a href="#" id="img5">Image-5</a></li>
+        <li><a href="#" id="img6">Image-6</a></li>
       </ul>
     </section>
 
@@ -390,7 +393,10 @@
                 <div
                   class="col-2 pr-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/End Point.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/End Point.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Endpoint Security</h4>
@@ -411,7 +417,10 @@
                 <div
                   class="col-2 pl-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/Encryption.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/Encryption.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pr-0 col-12">
                   <h4>Endpoint Encryption</h4>
@@ -432,7 +441,10 @@
                 <div
                   class="col-2 pr-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/ETDR.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/ETDR.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Endpoint Detection & Response</h4>
@@ -474,7 +486,10 @@
                 <div
                   class="col-2 pr-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/Mobile-security.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/Mobile-security.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pl-0 col-12">
                   <h4>Mobile Security</h4>
@@ -493,7 +508,10 @@
                 <div
                   class="col-2 pl-0 d-flex justify-content-center align-items-center"
                 >
-                  <img src="./img/icons/appplication-security/data-encryption.svg" alt="" />
+                  <img
+                    src="./img/icons/appplication-security/data-encryption.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-md-10 pr-0 col-12">
                   <h4>Mobile Data Encryption</h4>
@@ -870,21 +888,38 @@
     </script>
 
     <script>
-      let imageOne = document.getElementById("img1");
-      let imageTwo = document.getElementById("img2");
-      let imageThree = document.getElementById("img3");
+      let imageOne = document.getElementById("img4");
+      let imageTwo = document.getElementById("img5");
+      let imageThree = document.getElementById("img6");
+      let imageFour = document.getElementById("img1");
+      let imageFive = document.getElementById("img2");
+      let imageSix = document.getElementById("img3");
 
       imageOne.addEventListener("click", function() {
         document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/mobile-security/img-1.jpg)";
+          "url(./img/mobile-security/img-4.jpg)";
       });
 
       imageTwo.addEventListener("click", function() {
         document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/mobile-security/img-2.jpg)";
+          "url(./img/mobile-security/img-5.jpg)";
       });
 
       imageThree.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/mobile-security/img-6.jpg)";
+      });
+      imageFour.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/mobile-security/img-1.jpg)";
+      });
+
+      imageFive.addEventListener("click", function() {
+        document.querySelector(".service-banner").style.backgroundImage =
+          "url(./img/mobile-security/img-2.jpg)";
+      });
+
+      imageSix.addEventListener("click", function() {
         document.querySelector(".service-banner").style.backgroundImage =
           "url(./img/mobile-security/img-3.jpg)";
       });

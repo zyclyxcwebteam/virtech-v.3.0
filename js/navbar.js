@@ -59,7 +59,7 @@ $(function() {
   $("#masterNavbar .dropdown").on("mouseenter", function(event) {
     event.stopPropagation();
     event.preventDefault();
-    $(this).addClass("active");
+    // $(this).addClass("active");
     $(this)
       .find(".service-dropdown")
       .addClass("show");
@@ -67,6 +67,6 @@ $(function() {
 
   $(document).on("click", function() {
     $("#masterNavbar .dropdown .service-dropdown").removeClass("show");
-    $("#masterNavbar .dropdown").removeClass("active");
+    // $("#masterNavbar .dropdown").removeClass("active");
   });
 });
