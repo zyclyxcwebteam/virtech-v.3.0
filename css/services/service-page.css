@@ -169,17 +169,41 @@
   align-items: center;
 }
 @media (max-width: 576px) {
-  body {
-    padding-top: 78px;
-  }
-  .service-banner {
-    height: 50vh;
+  .banner-title>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
   }
   .service-name {
     font-size: 2rem;
   }
   .service-tagline {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    padding: 0 0.25rem !important;
+  }
+  .service-overview{
+    padding: 0 1rem;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .service-overview p{
+    padding: 0 0.8rem !important;
+    text-align: justify;
+  }
+  .service-content .row{
+    padding: 0px 0.3rem;
+  }
+  .service-content-cards img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  .service-content-cards p {
+    font-size: 1rem;   
+  }
+  .service-content-cards > .col-12 >.row> .col-12{
+    padding: 0 !important;
   }
   .banner-title .col-12 {
     padding: 0;
@@ -187,12 +211,24 @@
   .service-content-title {
     font-size: 1.4rem;
   }
-  .f-link a {
-    justify-content: left;
+  
+  .contact-banner{
+    flex-direction: column !important;
+    height: 120px;
   }
-  .hamburger-inner,
-  .hamburger-inner::before,
-  .hamburger-inner::after {
-    background-color: #05070c;
+  .contact-banner .contact-title{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .contact-banner .service-contact{
+    margin-left: 0;
+    padding: 0.3em 1.2em;
+  }
+  .service-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .service-partner-title{
+    margin-bottom: 1.5rem;
   }
 }

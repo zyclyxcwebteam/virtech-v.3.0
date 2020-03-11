@@ -34,12 +34,12 @@
     <!-- ! header navbar-->
     <!-- TODO: hide header on scroll down, show on scroll up -->
     <nav
-      class="navbar navbar-expand-lg fixed-top master-navbar navbar-dark py-1"
+      class="navbar navbar-expand-lg fixed-top master-navbar py-0"
       id="masterNavbar"
     >
       <div class="container-fluid">
-        <a href="./" class="navbar-brand ml-2"
-          ><img src="./img/logo.png" alt="Virtech" id="masterLogo"
+        <a href="./" class="navbar-brand ml-2 py-2"
+          ><img src="./img/logo/logo.png" alt="Virtech" id="masterLogo"
         /></a>
         <button
           type="button"
@@ -60,14 +60,14 @@
           <ul class="navbar-nav ml-auto mr-2">
             <!--  Home -->
 
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="./"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
 
             <!-- Services -->
-            <li class="nav-item active dropdown">
+            <li class="nav-item dropdown">
               <a
                 id="serviceDropDown"
                 href="#"
@@ -80,7 +80,7 @@
 
               <ul
                 aria-labelledby="serviceDropDown"
-                class="dropdown-menu border-0"
+                class="dropdown-menu service-dropdown border-0"
               >
                 <!-- ! New Age Technologies -->
                 <li class="dropdown-submenu dropright">
@@ -331,9 +331,7 @@
               <a href="./careers.html" class="nav-link">Careers</a>
             </li>
             <li class="nav-item">
-              <a href="./contactus.html" class="nav-link" id="contactLink"
-                >Contact</a
-              >
+              <a href="#" class="nav-link" id="contactLink">Contact</a>
             </li>
           </ul>
         </div>
@@ -446,65 +444,68 @@
     </section>
 
     <!-- ! Footer -->
-    <footer
-      class="footer container-fluid d-flex justify-content-between align-items-center"
-    >
-      <div class="d-flex align-items-center justify-content-start">
-        <p class="f-link d-flex d-flex align-items-center  mx-4">
-          <a href="tel:+966552357583"
-            ><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a
-          >
-        </p>
+         <footer class="footer container-fluid px-3 scroll-s">
+        <div class="row d-flex align-items-center justify-content-between mx-4">
+          <div class="footer-info order-1 d-flex py-2 py-lg-3">
+            <p class="f-link d-flex d-flex align-items-center  mr-4">
+              <a href="tel:+966552357583"
+                ><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a
+              >
+            </p>
 
-        <p class="f-link d-flex align-items-center mx-4">
-          <a href="mailto:info@virtech-ksa.com"
-            ><i class="fas fa-envelope"></i> info@virtech-ksa.com</a
-          >
-        </p>
+            <p class="f-link d-flex align-items-center mx-4">
+              <a href="mailto:info@virtech-ksa.com"
+                ><i class="fas fa-envelope"></i> info@virtech-ksa.com</a
+              >
+            </p>
 
-        <p class="f-link d-flex align-items-center mx-4">
-          <a
-            href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"
-          >
-            <i class="fas fa-map-marker-alt"></i> Location</a
-          >
-        </p>
-
-        <ul
-          class="social-network d-flex justify-content-start align-items-center pl-0 m-0 mx-4"
-        >
-          <li>
-            <a href="#" class="icoFacebook" title="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/zyclyx"
-              class="icoTwitter"
-              title="Twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" class="icoTwitter" title="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href=" https://www.linkedin.com/company/virtech-ksa/"
-              class="icoLinkedin"
-              title="Linkedin"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <p class="copyright d-flex align-items-center">
-        © 2018 - 2020 Virtech. All rights reserved
-      </p>
-    </footer>
+            <p class="f-link d-flex align-items-center mx-4">
+              <a
+                href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"
+              >
+                <i class="fas fa-map-marker-alt"></i> Location</a
+              >
+            </p>
+          </div>
+          <div class="footer-social order-2  order-lg-3 py-2 py-lg-3">
+            <ul
+              class="social-network d-flex justify-content-end align-items-center pl-0 m-0"
+            >
+              <li>
+                <a href="#" class="icon-facebook" title="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/zyclyx"
+                  class="icon-twitter"
+                  title="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="icon-instagram" title="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=" https://www.linkedin.com/company/virtech-ksa/"
+                  class="icon-linkedin"
+                  title="Linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class=" order-3 order-lg-2 mx-auto py-2 py-lg-3">
+            <p class="copyright d-flex align-items-center text-center mx-auto">
+              © 2018 - 2020 Virtech. All rights reserved
+            </p>
+          </div>
+        </div>
+      </footer>
     <!-- ! Contact form -->
     <section class=" contact-wrapper" id="contactMaster">
       <div class="overlay"></div>

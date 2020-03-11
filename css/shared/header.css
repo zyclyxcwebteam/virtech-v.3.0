@@ -10,15 +10,12 @@
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
-    left: -44px;
+    left: -65px;
   }
 }
-.master-navbar.navbar-light {
-  background-color: #f8f9fa !important;
-  /* box-shadow: 0 2px 2px 1px #e5e5e5; */
-}
-.master-navbar.navbar-dark {
-  background-color: #f8f9fa !important;
+.master-navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.05);
 }
 .master-navbar .navbar-brand img {
   max-width: 150px;
@@ -27,30 +24,40 @@
   margin-left: 1.4rem;
   font-size: 1rem;
   font-weight: 500;
+  padding: 1rem 0.5rem;
 }
-.master-navbar.navbar-dark .nav-link {
-  color: #606a73 !important;
+.master-navbar .nav-link {
+  color: #525252 !important;
 }
-.master-navbar.navbar-light .nav-link {
-  color: #606a73 !important;
-}
+
 .master-navbar .active .nav-link {
   font-weight: 600;
   color: #00bdd5 !important;
 }
 
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
   color: #00bdd5 !important;
 }
 .navbar-nav .show > .nav-link {
   color: #00bdd5 !important;
 }
 .master-navbar .dropdown-menu {
-  margin-top: 13px;
-  background-color: #f8f9fa;
+  margin-top: 6px;
+  background-color: #ffffff;
   border-radius: 0;
   padding: 0;
+  animation: dropdown 0.3s ease-out;
+  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),
+    0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;
+}
+@keyframes dropdown {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .dropdown .dropdown-menu {
   min-width: 230px;
@@ -60,6 +67,10 @@
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 0.35 !important;
+}
+.dropdown-item.active::after {
+  opacity: 1 !important;
 }
 .master-navbar .dropdown-submenu {
   position: relative;
@@ -67,28 +78,33 @@
 
 .master-navbar .dropdown-submenu > .dropdown-menu {
   top: 0;
-  left: 100.3%;
+  left: 101%;
   margin-top: 0px;
   margin-left: 0px;
-  background-color: #f8f9fa;
-  border-radius: 0;
+  background-color: #ffffff;
 }
 .master-navbar .dropdown-menu .dropdown-item {
   padding: 0.6rem 1rem;
-  color: #606a73;
-  border-bottom: 1px solid hsl(208, 9%, 95%);
+  color: #525252;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
 .master-navbar .dropdown-menu .dropdown-item:hover {
-  background-color: hsl(210, 17%, 95%);
+  box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.05),
+    0 0 15px rgba(0, 0, 0, 0.04);
   color: #00bdd5 !important;
-  font-weight: 500;
-  border-bottom: 1px solid #00bdd5;
+  font-weight: 600;
+  background-color: #fdfff5;
+  padding: 0.8rem 1rem;
+}
+.dropdown-item.active {
+  padding: 0.8rem 1rem !important;
 }
 .dropdown-submenu a.active {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   color: #00bdd5 !important;
-  font-weight: 500;
-  border-bottom-color: #00bdd5 !important;
+  font-weight: 600;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.05),
+    0 0 15px rgba(0, 0, 0, 0.04);
 }
 .dropdown-submenu > a {
   position: relative;
@@ -97,20 +113,20 @@
   outline: none;
 }
 /* #home .master-navbar{
-  opacity: 0; 
-}
-
-.no-js .master-navbar{
-  opacity: 1;
-}
-#home .navbar-brand img{
-  opacity: 0; 
-}
-
-.no-js .navbar-brand img{
-  opacity: 1;
-}
-*/
+    opacity: 0; 
+  }
+  
+  .no-js .master-navbar{
+    opacity: 1;
+  }
+  #home .navbar-brand img{
+    opacity: 0; 
+  }
+  
+  .no-js .navbar-brand img{
+    opacity: 1;
+  }
+  */
 
 /* ! Hamburger icon for mobile menu */
 /* Hamburger Icon for Mobile Menu */
@@ -138,7 +154,7 @@
 .hamburger[aria-expanded="true"] .hamburger-inner,
 .hamburger[aria-expanded="true"] .hamburger-inner::before,
 .hamburger[aria-expanded="true"] .hamburger-inner::after {
-  background-color: #f9f9f9;
+  background-color: #525252;
 }
 
 .hamburger-box {
@@ -158,7 +174,7 @@
 .hamburger-inner::after {
   width: 30px;
   height: 4px;
-  background-color: #f9f9f9;
+  background-color: #525252;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -205,4 +221,11 @@
   transform: rotate(-90deg);
   transition: bottom 0.075s ease,
     transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-item {
+    border: 1px solid #f8f8ff;
+    margin: 3px 0 !important;
+  }
 }

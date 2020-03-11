@@ -16,154 +16,317 @@
   <link rel="stylesheet" href="./css/about.css">
   <link rel="stylesheet" href="./css/shared/footer.css">
   <link rel="stylesheet" href="./css/shared/contact-us.css">
-  <link rel="stylesheet" href="./css/shared/header.css">
+  <link rel="stylesheet" href="./css/common/navbar.css">
   <link rel="stylesheet" href="./css/shared/chat-bot.css">
 </head>
 
 <body id="about">
          <!-- ! header navbar-->
     <!-- TODO: hide header on scroll down, show on scroll up -->
-    <nav class="navbar navbar-expand-lg fixed-top master-navbar navbar-dark py-1" id="masterNavbar">
-      <div class="container-fluid">
-        <a href="./" class="navbar-brand ml-2"><img src="./img/logo.png" alt="Virtech" id="masterLogo" /></a>
-        <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
-          data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-  
-        <div id="navbarContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto mr-2">
-            <!--  Home -->
-  
-            <li class="nav-item">
-              <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
-            </li>
-  
-            <!-- Services -->
-            <li class="nav-item dropdown">
-              <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                class="nav-link dropdown-toggle">Services</a>
-  
-              <ul aria-labelledby="serviceDropDown" class="dropdown-menu border-0">
-                <!-- ! New Age Technologies -->
-                <li class="dropdown-submenu dropright">
-                  <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" class="dropdown-item dropdown-toggle">New
-                    Age Technologies</a>
-                  <ul aria-labelledby="newAgeDropDown" class="dropdown-menu border-0">
-                    <li>
-                      <a tabindex="-1" href="./robotic-process-automation.html" class="dropdown-item">RPA</a>
-                    </li>
-                    <li>
-                      <a href="./artificial-intelligence.html" class="dropdown-item">Artificial Intelligence</a>
-                    </li>
-                    <li><a href="./blockchain.html" class="dropdown-item">Blockchain</a></li>
-                    <li>
-                      <a href="./internet-of-things.html" class="dropdown-item">Internet of Things</a>
-                    </li>
-                    <li><a href="./bigdata.html" class="dropdown-item">Big Data</a></li>
-                  </ul>
-                </li>
-  
-                              <!-- ! Security Services -->
-                              <li class="dropdown-submenu dropright">
-                                <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                  aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
-                                <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
-                                  <li>
-                                    <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
-                                  </li>
-                                  <li>
-                                    <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
-                                  </li>
-                
-                                  <li>
-                                    <a href="./application_and_data_security.html" class="dropdown-item">Application & Data Security</a>
-                                  </li>
-                
-                                  <li>
-                                    <a href="./governance-and-compliance.html" class="dropdown-item">Governance & Compliance</a>
-                                  </li>
-                
-                                  <li>
-                                    <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint & Mobile Security</a>
-                                  </li>
-                
-                                  <li>
-                                    <a href="./identity_and_access_management.html" class="dropdown-item">Identity & Access Management</a>
-                                  </li>
-                                </ul>
-                              </li>
-                              
-                <!-- ! Application Devlopment -->
-                <li class="dropdown-submenu dropright">
-                  <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" class="dropdown-item dropdown-toggle">Application
-                    Development</a>
-                  <ul aria-labelledby="appDropDown" class="dropdown-menu border-0">
-                    <li>
-                      <a tabindex="-1" href="./software-development.html" class="dropdown-item">Software Development</a>
-                    </li>
-                    <li>
-                      <a href="./mobile-app-development.html" class="dropdown-item">Mobile App Development</a>
-                    </li>
-                    <li>
-                      <a href="./web-development.html" class="dropdown-item">Web Development</a>
-                    </li>
-                    <li>
-                      <a href="./digital-marketing.html" class="dropdown-item">Digital Marketing</a>
-                    </li>
-                  </ul>
-                </li>
-  
-                <!-- ! BI Solutions -->
-                <li class="dropdown-submenu dropright">
-                  <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" class="dropdown-item dropdown-toggle">BI Solutions</a>
-                  <ul aria-labelledby="biDropDown" class="dropdown-menu border-0">
-                    <li>
-                      <a tabindex="-1" href="./data-visualization.html" class="dropdown-item">Data Visualization</a>
-                    </li>
-                    <li>
-                      <a href="./predictive-analytics.html" class="dropdown-item">Predictive Analysis</a>
-                    </li>
-                  </ul>
-                </li>
-  
-                <!-- ! Infrastructure Services -->
-                <li class="dropdown-submenu dropright">
-                  <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructure
-                    Services</a>
-                  <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
-                    <li>
-                      <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data Center Services</a>
-                    </li>
-                    <li>
-                      <a href="./system-infrastructure.html" class="dropdown-item">System Infrastructure</a>
-                    </li>
-                    <li>
-                      <a href="./end-user-computing.html" class="dropdown-item">End User Computing</a>
-                    </li>
-                  </ul>
-                </li>
-  
-                <!-- ! Outsourcing Services -->
-                <li class="nav-item"><a href="./oursourcing-service.html" class="dropdown-item">Outsourcing Services</a></li>
-              </ul>
-            </li>
-            <!-- End Level one -->
-  
-            <li class="nav-item active"><a href="./about.html" class="nav-link">About us</a></li>
-            <li class="nav-item"><a href="./careers.html" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="./contactus.html" class="nav-link" id="contactLink">Contact</a></li>
-          </ul>
-        </div>
+    <nav
+    class="navbar navbar-expand-lg fixed-top master-navbar py-0"
+    id="masterNavbar"
+  >
+    <div class="container-fluid">
+      <a href="./" class="navbar-brand ml-2 py-2"
+        ><img src="./img/logo/logo.png" alt="Virtech" id="masterLogo"
+      /></a>
+      <button
+        type="button"
+        class="navbar-toggler hamburger hamburger--squeeze is-active"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto mr-2">
+          <!--  Home -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="./"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <!-- Services -->
+          <li class="nav-item dropdown">
+            <a
+              id="serviceDropDown"
+              href="#"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              class="nav-link dropdown-toggle"
+              >Services</a
+            >
+
+            <ul
+              aria-labelledby="serviceDropDown"
+              class="dropdown-menu service-dropdown border-0"
+            >
+              <!-- ! New Age Technologies -->
+              <li class="dropdown-submenu dropright">
+                <a
+                  id="newAgeDropDown"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="dropdown-item dropdown-toggle"
+                  >New Age Technologies</a
+                >
+                <ul
+                  aria-labelledby="newAgeDropDown"
+                  class="dropdown-menu border-0"
+                >
+                  <li>
+                    <a
+                      tabindex="-1"
+                      href="./robotic-process-automation.html"
+                      class="dropdown-item"
+                      >RPA</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./artificial-intelligence.html"
+                      class="dropdown-item"
+                      >Artificial Intelligence</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./blockchain.html" class="dropdown-item"
+                      >Blockchain</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./internet-of-things.html" class="dropdown-item"
+                      >Internet of Things</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./bigdata.html" class="dropdown-item"
+                      >Big Data</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ! Security Services -->
+              <li class="dropdown-submenu dropright">
+                <a
+                  id="securityDropDown"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="dropdown-item dropdown-toggle"
+                  >Security Services</a
+                >
+                <ul
+                  aria-labelledby="securityDropDown"
+                  class="dropdown-menu border-0"
+                >
+                  <li>
+                    <a
+                      href="./network-and-security.html"
+                      class="dropdown-item"
+                      >Network Security</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      tabindex="-1"
+                      href="./cyber-security.html"
+                      class="dropdown-item"
+                      >Cyber Security</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="./application_and_data_security.html"
+                      class="dropdown-item"
+                      >Application & Data Security</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="./governance-and-compliance.html"
+                      class="dropdown-item"
+                      >Governance & Compliance</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="./endpoint-mobile-security.html"
+                      class="dropdown-item"
+                      >Endpoint & Mobile Security</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="./identity_and_access_management.html"
+                      class="dropdown-item"
+                      >Identity & Access Management</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ! Application Devlopment -->
+              <li class="dropdown-submenu dropright">
+                <a
+                  id="appDropDown"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="dropdown-item dropdown-toggle"
+                  >Application Development</a
+                >
+                <ul
+                  aria-labelledby="appDropDown"
+                  class="dropdown-menu border-0"
+                >
+                  <li>
+                    <a
+                      tabindex="-1"
+                      href="./software-development.html"
+                      class="dropdown-item"
+                      >Software Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./mobile-app-development.html"
+                      class="dropdown-item"
+                      >Mobile App Development</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./web-development.html" class="dropdown-item"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./digital-marketing.html" class="dropdown-item"
+                      >Digital Marketing</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ! BI Solutions -->
+              <li class="dropdown-submenu dropright">
+                <a
+                  id="biDropDown"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="dropdown-item dropdown-toggle"
+                  >BI Solutions</a
+                >
+                <ul
+                  aria-labelledby="biDropDown"
+                  class="dropdown-menu border-0"
+                >
+                  <li>
+                    <a
+                      tabindex="-1"
+                      href="./data-visualization.html"
+                      class="dropdown-item"
+                      >Data Visualization</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./predictive-analytics.html"
+                      class="dropdown-item"
+                      >Predictive Analysis</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ! Infrastructure Services -->
+              <li class="dropdown-submenu dropright">
+                <a
+                  id="infraDropDown"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="dropdown-item dropdown-toggle"
+                  >Infrastructure Services</a
+                >
+                <ul
+                  aria-labelledby="infraDropDown"
+                  class="dropdown-menu border-0"
+                >
+                  <li>
+                    <a
+                      tabindex="-1"
+                      href="./data-center-services.html"
+                      class="dropdown-item"
+                      >Data Center Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./system-infrastructure.html"
+                      class="dropdown-item"
+                      >System Infrastructure</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./end-user-computing.html" class="dropdown-item"
+                      >End User Computing</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ! Outsourcing Services -->
+              <li class="nav-item">
+                <a href="./oursourcing-service.html" class="dropdown-item"
+                  >Outsourcing Services</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- End Level one -->
+
+          <li class="nav-item active">
+            <a href="./about.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./careers.html" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="contactLink">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
   <section class="container-fluid about-home d-flex align-items-end">
      <ul>
        <li>
@@ -355,44 +518,67 @@
 <p id="contactButton"></p>
  
   <!-- ! Footer -->
-  <footer class="footer container-fluid d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center justify-content-start">
-       
-        <p class="f-link d-flex d-flex align-items-center  mx-4">
-          <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
+  <footer class="footer container-fluid px-3 scroll-s">
+    <div class="row d-flex align-items-center justify-content-between mx-4">
+      <div class="footer-info order-1 d-flex py-2 py-lg-3">
+        <p class="f-link d-flex d-flex align-items-center  mr-4">
+          <a href="tel:+966552357583"
+            ><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a
+          >
         </p>
-       
-       
+
         <p class="f-link d-flex align-items-center mx-4">
-          <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
+          <a href="mailto:info@virtech-ksa.com"
+            ><i class="fas fa-envelope"></i> info@virtech-ksa.com</a
+          >
         </p>
-       
-       
+
         <p class="f-link d-flex align-items-center mx-4">
           <a
-            href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-            <i class="fas fa-map-marker-alt"></i> Location</a>
+            href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"
+          >
+            <i class="fas fa-map-marker-alt"></i> Location</a
+          >
         </p>
-       
-            
-          <ul class="social-network d-flex justify-content-start align-items-center pl-0 m-0 mx-4">
-            <li>
-              <a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
-                  class="fab fa-linkedin-in"></i></a>
-            </li>
-          </ul>         
-       
+      </div>
+      <div class="footer-social order-2  order-lg-3 py-2 py-lg-3">
+        <ul
+          class="social-network d-flex justify-content-end align-items-center pl-0 m-0"
+        >
+          <li>
+            <a href="#" class="icon-facebook" title="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/zyclyx"
+              class="icon-twitter"
+              title="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="icon-instagram" title="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href=" https://www.linkedin.com/company/virtech-ksa/"
+              class="icon-linkedin"
+              title="Linkedin"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class=" order-3 order-lg-2 mx-auto py-2 py-lg-3">
+        <p class="copyright d-flex align-items-center text-center mx-auto">
+          © 2018 - 2020 Virtech. All rights reserved
+        </p>
+      </div>
     </div>
-    <p class="copyright d-flex align-items-center">© 2018 - 2020 Virtech. All rights reserved</p>
   </footer>
   <!-- ! Contact form -->
   <!-- ! Contact form -->
@@ -562,7 +748,7 @@
     crossorigin="anonymous"></script>
   <!-- <script src="js/plugins.js"></script> -->   
   <script src="./js/about/about.js"></script>
-  <script src="./js/shared/header.js"></script>
+  <script src="./js/navbar.js"></script>
   <script src="./js/contact/contact.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
 <script>
