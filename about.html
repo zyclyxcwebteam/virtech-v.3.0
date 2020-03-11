@@ -164,7 +164,14 @@
       </div>
     </nav>
   <section class="container-fluid about-home d-flex align-items-end">
-     
+     <ul>
+       <li>
+         <a href="#" id="image-1">image-1</a>
+        </li>
+       <li>
+         <a href="#" id="image-2">image-2</a>
+        </li>
+     </ul>
       <div class="container row d-flex about-title mx-auto mb-5">
         <div class="col-7 d-flex flex-column align-items-start about-title-left">
           <h2 class="about-title-left-1 ml-2">Leading innovation with</h2>
@@ -519,5 +526,18 @@
   <script src="./js/about/about.js"></script>
   <script src="./js/shared/header.js"></script>
   <script src="./js/contact/contact.js"></script>
+
+<script>
+let imageOne = document.getElementById("image-1");
+let imageTwo = document.getElementById("image-2");
+
+imageOne.addEventListener('click', function(){
+  document.querySelector('.about-home').style.backgroundImage="url(./img/about/Banner-1.jpg)"
+})
+imageTwo.addEventListener('click', function(){
+  document.querySelector('.about-home').style.backgroundImage="url(./img/about/Banner-2.jpg)"
+})
+</script>
+
 </body>
 </html>
