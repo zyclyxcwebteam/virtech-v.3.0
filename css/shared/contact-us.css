@@ -197,15 +197,51 @@
   margin: 0;
   font-size: 60%;
 }
+
+
+/* ============================================
+                  NEW
+            -----------------*/
+
+/* .swap{
+  flex-direction: row-reverse;
+} */
+
+/* ============================================  */
+
+
+
 /* =========== MEDIA QUERIES ============ */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .contact-wrapper {
-    overflow: auto;
+    overflow: auto !important;
   }
   #contactClose {
-    top: 0;
+    top: 40px;
     right: 0;
+  }
+  .swap{
+    /* flex-direction: column-reverse; */
+    padding-top: 15px;
+  }
+  .contact-wrapper label{
+    font-size: 14px;
+  }
+  .contact-wrapper input{
+    font-size: 16px !important;
+  }
+  #contactsubmit{
+    margin-top: 2rem;
+  }
+   .contact-title{
+    font-size: 30px !important;
+  }
+  .contact-caption{
+    font-size: 16px !important;
+  }
+  .contact-text{
+    margin-bottom: 30px;  
   }
 }
