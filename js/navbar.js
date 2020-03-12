@@ -62,7 +62,7 @@ $(function() {
     // $(this).addClass("active");
     $(this)
       .find(".service-dropdown")
-      .addClass("show");
+      .toggleClass("show");
   });
 
   $(document).on("click", function() {

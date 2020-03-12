@@ -10,7 +10,7 @@
     gsap.to(".contact-wrapper", {
       display: "flex",
       minHeight: "100%",
-      top: "20px",
+      top: "60px",
       bottom: "unset",
       duration: 0.5
     });
@@ -24,7 +24,7 @@
       display: "none",
       bottom: "0",
       top: "110%",
-      minHeight: "0px",
+      minHeight: "0%",
       duration: 0.5
     });
   }
@@ -49,10 +49,11 @@
     contactFormShow();
   });
 
-  contactButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    contactFormShow();
-  });
+  contactButton &&
+    contactButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      contactFormShow();
+    });
 
   contactClose.addEventListener("click", function(event) {
     event.preventDefault();

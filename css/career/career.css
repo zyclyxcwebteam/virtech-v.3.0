@@ -18,7 +18,7 @@
 }
 
 .career-home {
-  height: 100vh;
+  height: 92vh;
   background-color: #0c1b33;
   background-image: url("../../img/careers/img-2.jpg");
   background-position: center center;
@@ -197,5 +197,8 @@
   }
   .career-points {
     font-size: 1rem;
+  }
+  .openings-wrapper {
+    height: 50vh;
   }
 }
