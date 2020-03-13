@@ -182,11 +182,7 @@
   display: none;
 }
 
-@media (max-width: 425px) {
-  #jobOpenings .owl-item .card-body {
-    height: 2px !important;
-  }
-}
+
 
 @media (max-width: 576px) {
   .career-title {
@@ -208,5 +204,8 @@
 
   .career-points ul li {
     font-size: 1rem;
+  }
+  #jobOpenings .card{
+    min-height: 210px;
   }
 }
