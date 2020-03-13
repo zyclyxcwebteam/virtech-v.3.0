@@ -273,6 +273,50 @@
   background-color: transparent;
 }
 /* #appForm .btn{
+ 
+  }
+  #appForm .form-control{
+    border-bottom: 1px solid hsl(217, 62%, 72%) !important;
+    color: #01626e;
+  }
+  #appForm .form-control:focus,
+  #appForm .form-control:valid{
+  /* #appForm .form-control:invalid{ 
+    background: #008d3625;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.404);
+    box-shadow: none;
+  }
+  */
+.form-control.is-invalid:focus,
+.was-validated .form-control:valid:focus {
+  background: hsla(143, 100%, 28%, 0.039) !important;
+  border-bottom: 1px solid #008d36 !important;
+  box-shadow: none;
+}
+/* .form-control.is-invalid:focus, */
+.was-validated .form-control:invalid {
+  background: hsla(354, 70%, 54%, 0.039) !important;
+  border-bottom: 1px solid #dc3545 !important;
+  box-shadow: none;
+}
+
+#appForm label {
+  color: #01626e;
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 10px;
+}
+#appForm .form-control {
+  border: none;
+  border-radius: 0px;
+  color: #000;
+  /* height: 50px; */
+  font-size: 25px;
+  font-weight: 400;
+  background-color: transparent;
+}
+/* #appForm .btn{
+>>>>>>> f82c7a444154bd77100ab1d3c1a4ca197a40a80b
     height: 70px;
     border-radius: 0px;
     font-size: 20px;
@@ -329,6 +373,26 @@
 }
 
 /* ========= Media Queries ========= */
+@media (max-width: 360px) {
+  .appWrapper h4 {
+    margin: 0 !important;
+    font-size: 20px !important;
+  }
+  #appForm label {
+    font-size: 14px !important;
+  }
+  #appForm .form-control {
+    font-size: 16px !important;
+  }
+  #appForm .custom-file-label {
+    /* background-color: #0a7492 */
+    color: #0a7492 !important;
+    font-size: 18px !important;
+  }
+  #appForm .custom-file-label::after {
+    padding: 40px 10px;
+  }
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
