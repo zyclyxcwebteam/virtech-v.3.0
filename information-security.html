@@ -522,68 +522,130 @@ The information security team provides operational, regulatory and other complia
 <!-- ! Contact form -->
 <section class=" contact-wrapper" id="contactMaster">
   <div class="overlay"></div>
-  <button type="button" id="contactClose"><i class="fas fa-times"></i></button>
+  <button type="button" id="contactClose">
+    <i class="fas fa-times"></i>
+  </button>
 
-  <div class="container d-flex justify-content-around align-items-center flex-column contact-inner">
+  <div
+    class="container d-flex justify-content-start justify-content-md-around align-items-center flex-column contact-inner"
+  >
     <div class="row d-flex justify-content-between mt-5">
-     
-      <div class="col-md-6 col-12 contact-form">
+      <div class="col-md-6 col-12 contact-form order-2 order-md-1">
         <div class="container">
           <form id="contactForm" class="needs-validation" novalidate>
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
-                  <label for="validationCustom01"> Name <span>*</span></label>
-                  <input type="text" class="form-control" name="firstname" id="validationCustom01"
-                    pattern="[a-zA-Z\s]+" placeholder="Enter your name" autocomplete="off" required>
+                  <label for="validationCustom01">
+                    Name <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="firstname"
+                    id="validationCustom01"
+                    pattern="[a-zA-Z0-9\s]{2,30}"
+                    maxlength="30"
+                    placeholder="Enter your name"
+                    autocomplete="off"
+                    required
+                  />
                   <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                  <div class="invalid-feedback">Please enter valid name</div>
+                  <div class="invalid-feedback">
+                    Please enter valid name
+                  </div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group">
-                  <label class=""> Email-ID <span>*</span></label>
-                  <input type="email" class="form-control" name="email" autocomplete="off"
-                    placeholder="Enter your email-ID" id="email" required>
+                  <label for="email"> Email-ID <span>*</span></label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    autocomplete="off"
+                    placeholder="Enter your email-ID"
+                    id="email"
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                    required
+                  />
                   <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                  <div class="invalid-feedback">Please enter valid email</div>
+                  <div class="invalid-feedback">
+                    Please enter valid email
+                  </div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group">
-                  <label> Contact Number <span>*</span></label>
-                  <input type="number" class="form-control" name="phone" id="phone"
-                    placeholder="Enter your contact number" autocomplete="off" required>
+                  <label for="phone">
+                    Contact Number <span>*</span></label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="phone"
+                    id="phone"
+                    pattern="^[0-9]{3,12}$"
+                    maxlength="12"
+                    placeholder="Enter your contact number"
+                    autocomplete="off"
+                    required
+                  />
                   <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                  <div class="invalid-feedback">Please enter valid phone number</div>
+                  <div class="invalid-feedback">
+                    Please enter valid phone number
+                  </div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group">
                   <label for="message">Subject <span>*</span></label>
-                  <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
-                    required></textarea>
-                  <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                  <div class="invalid-feedback">Please write a message</div>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    maxlength="300"
+                    placeholder="Your message here.."
+                    required
+                  ></textarea>
+
+                  <div class="invalid-feedback">
+                    Please write a message
+                  </div>
                 </div>
               </div>
-              <button type="submit" class="button button-blue px-5 mx-auto" id="contactSubmit">Submit</button>
+              <button
+                type="submit"
+                class="button button-blue px-5 mx-auto"
+                id="contactSubmit"
+              >
+                Submit
+              </button>
             </div>
           </form>
         </div>
       </div>
-      <div class="col-md-5 col-12 d-flex justify-content-center flex-column">
+      <div
+        class="col-md-5 col-12 d-flex justify-content-center flex-column order-1 order-md-2"
+      >
         <h2 class="text-center contact-title">Get in touch</h2>
-        <p class="text-center contact-caption">We are happy to assist you with your queries</p>
+        <p class="text-center contact-caption">
+          We are happy to assist you with your queries
+        </p>
       </div>
     </div>
 
-    <div class="container contact-info px-0">
-      <div class="row mx-auto d-flex justify-content-between align-items-center ">
+    <div class="container contact-info px-0 mb-2 d-none d-md-block">
+      <div
+        class="row mx-auto d-flex justify-content-between align-items-center "
+      >
         <address class="col-md-3 col-12">
-          <a class="location"
-            href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-            Virtech Technologies, Riyadh, <br /> PO Box - 23754, K.S.A - 11611.
+          <a
+            class="location"
+            href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"
+          >
+            Virtech Technologies, Riyadh, <br />
+            PO Box - 23754, K.S.A - 11611.
           </a>
         </address>
         <div class="col text-center">
@@ -599,25 +661,34 @@ The information security team provides operational, regulatory and other complia
         </div>
 
         <div class="col-md-3 col-6">
-          <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
+          <ul
+            class="social-network d-flex justify-content-center align-items-center pl-0 "
+          >
             <li>
               <a href="#" class="icoFacebook" title="Facebook">
-                <i class="fab fa-facebook-f fa-fw">
-                </i></a>
+                <i class="fab fa-facebook-f fa-fw"> </i
+              ></a>
             </li>
             <li>
-              <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                  class="fab fa-twitter fa-fw"></i></a>
+              <a
+                href="https://twitter.com/zyclyx"
+                class="icoTwitter"
+                title="Twitter"
+                ><i class="fab fa-twitter fa-fw"></i
+              ></a>
             </li>
             <li>
               <a href="#" class="icoTwitter" title="Instagram">
-                <i class="fab fa-instagram fa-fw">
-                </i></a>
+                <i class="fab fa-instagram fa-fw"> </i
+              ></a>
             </li>
             <li>
-              <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
-                  class="fab fa-linkedin-in fa-fw">
-                </i></a>
+              <a
+                href=" https://www.linkedin.com/company/virtech-ksa/"
+                class="icoLinkedin"
+                title="Linkedin"
+                ><i class="fab fa-linkedin-in fa-fw"> </i
+              ></a>
             </li>
           </ul>
         </div>
@@ -627,7 +698,7 @@ The information security team provides operational, regulatory and other complia
 
   <div class="status-alert" id="formStatus">
     <p><i class="fas fa-check"></i></p>
-    <h4>Thanks for contacting us! </h4>
+    <h4 class="text-center">Thank you for contacting us!</h4>
     <p>We will get in touch with you soon</p>
   </div>
 </section>
