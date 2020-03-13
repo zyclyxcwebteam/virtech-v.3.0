@@ -31,7 +31,7 @@
 }
 
 .chat-bot button.close {
-  padding: 10px;
+  padding: 11px;
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -51,12 +51,12 @@
 }
 .chat-bot .close:hover {
   color: rgb(255, 255, 255);
-  background: #333333;
+  background: #ff6347;
   opacity: 1;
 }
 
 .chat-bot .input-group-text {
-  background-color: hsl(180, 100%, 15%);
+  background-color: #00bdd5;
   border: none;
   outline: none;
   border-radius: 0px;
@@ -71,7 +71,9 @@
   -ms-transition: all 0.7s ease-out;
   -o-transition: all 0.7s ease-out;
 }
-
+.chat-bot .input-group-text:hover {
+  background-color: hsl(187, 100%, 35%);
+}
 .chat-bot .form-control {
   border: none;
   height: 45px;

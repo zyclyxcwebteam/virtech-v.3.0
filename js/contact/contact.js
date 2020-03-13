@@ -45,7 +45,7 @@
   //   });
   // }, false);
 
-  conttactLink &&
+  contactLink &&
     contactLink.addEventListener("click", function(event) {
       event.preventDefault();
       contactFormShow();
