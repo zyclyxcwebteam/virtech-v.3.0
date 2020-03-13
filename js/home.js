@@ -1,5 +1,6 @@
 $(function() {
   let controller = new ScrollMagic.Controller();
+  let homeTitleCarousel = gsap.timeline({ repeat: -1 });
 
   //  logo animation
 
@@ -42,7 +43,6 @@ $(function() {
 
   //  Home page titles
   function startTitleCarousel() {
-    let homeTitleCarousel = gsap.timeline({ repeat: -1 });
     homeTitleCarousel.fromTo(
       "#title-1",
       { display: "none", opacity: 0.7, y: 80 },
@@ -111,37 +111,64 @@ $(function() {
 
   //  Services section
 
-  //     new ScrollMagic.Scene({
-  //         triggerElement: "#servicesOuter",
-  //         triggerHook: 0.092,
-  //         duration: '200%',
-  //       })
-  //         .setClassToggle(".side-nav", "light")
-  //         .addIndicators({name:"services"})
-  //         .setPin("#servicesOuter")
-  //         .addTo(controller);
-
-  // function startServiceCarousel(){
-  //   $('.carousel').carousel('cycle');
-  //   $('.carousel').carousel({
-  //   interval: 5000,
+  // new ScrollMagic.Scene({
+  //   triggerElement: "#servicesOuter",
+  //   triggerHook: 0.092
   // })
-  // }
+  //   .setClassToggle(".side-nav", "light")
+  //   .addIndicators({ name: "services" })
+  //   .setPin("#servicesOuter")
+  //   .addTo(controller);
+
+  function startServiceCarousel() {
+    $(".carousel").carousel("cycle");
+    $(".carousel").carousel({
+      interval: 5000
+    });
+  }
 
   // Working Code
 
   // let bgColor = gsap.timeline({ onComplete: startServiceCarousel });
-  //   bgColor.to('.services-wrapper', { '--service-bg': '#0c1b33', duration: 0.8,delay:0.2 })
-  //   bgColor.to('.section-title-1', { color: '#f4f4f4', duration: 0.8,delay:0.3 },"-=0.7")
-  //   bgColor.to('.section-title-1', { fontSize: '3rem',marginTop:'3rem', duration: 0.8,delay:0.2 })
-  //   bgColor.fromTo('#servicesInner',{height:'0%'}, {  height:'100%',duration: 0.8,delay:0.2 },"-=1")
-  //   bgColor.fromTo('#servicesInner',{opacity:0}, {  opacity:1,duration:0.5 })
-  //   new ScrollMagic.Scene({
-  //     triggerElement: "#servicesOuter",
-  //     triggerHook: 0.09,
-  //   })
-  //     .setTween(bgColor)
-  //     .addTo(controller);
+  // bgColor.fromTo(
+  //   ".services-wrapper",
+  //   { "--service-bg": "#ffffff" },
+  //   {
+  //     "--service-bg": "#0c1b33",
+  //     duration: 0.8,
+  //     delay: 0.2
+  //   }
+  // );
+  // bgColor.to(
+  //   ".section-title-1",
+  //   { color: "#f4f4f4", duration: 0.8, delay: 0.3 },
+  //   "-=0.7"
+  // );
+  // bgColor.to(".section-title-1", {
+  //   fontSize: "3rem",
+  //   marginTop: "3rem",
+  //   duration: 0.8,
+  //   delay: 0.2
+  // });
+  // bgColor.fromTo(
+  //   "#servicesInner",
+  //   { height: "0%" },
+  //   { height: "100%", duration: 0.8, delay: 0.2 },
+  //   "-=1"
+  // );
+  // bgColor.fromTo(
+  //   "#servicesInner",
+  //   { opacity: 0 },
+  //   { opacity: 1, duration: 0.5 }
+  // );
+  // new ScrollMagic.Scene({
+  //   triggerElement: "#servicesOuter",
+  //   triggerHook: 0.1,
+  //   duration: "0px"
+  // })
+  //   .setTween(bgColor)
+  //   .addIndicators({ name: "service" })
+  //   .addTo(controller);
 
   // end - working code
 
@@ -339,7 +366,7 @@ $(function() {
 
   // let contactButton = document.getElementById('contactButton');
   // let contactLink = document.getElementById('contactLink');
-  let pocContactButton = document.getElementById("pocContact");
+  //  let pocContactButton = document.getElementById("pocContact");
   // let contactClose = document.getElementById('contactClose');
 
   // contactLink.addEventListener('click', function (event) {
@@ -352,15 +379,15 @@ $(function() {
   //   gsap.to('.contact-wrapper', { display: 'flex', minHeight: '100%',top:0,bottom:'unset', duration: 0.5 })
   // })
 
-  pocContactButton.addEventListener("click", function(event) {
-    gsap.to(".contact-wrapper", {
-      display: "flex",
-      minHeight: "100%",
-      top: 0,
-      bottom: "unset",
-      duration: 0.5
-    });
-  });
+  // pocContactButton.addEventListener("click", function(event) {
+  //   gsap.to(".contact-wrapper", {
+  //     display: "flex",
+  //     minHeight: "100%",
+  //     top: 0,
+  //     bottom: "unset",
+  //     duration: 0.5
+  //   });
+  // });
 
   // contactClose.addEventListener('click', function (event) {
   //   event.preventDefault();
@@ -446,11 +473,13 @@ $(function() {
         //navbar.classList.add("navbar-light");
         // document.querySelector(".side-nav").classList.remove("hide");
         bannerVideo.pause();
+        homeTitleCarousel.pause();
       } else {
         //navbar.classList.remove("navbar-light");
         //navbar.classList.add("navbar-dark");
         //document.querySelector(".side-nav").classList.add("hide");
         bannerVideo.play();
+        homeTitleCarousel.resume();
       }
     });
   }, sectionOneOptions);
@@ -458,19 +487,19 @@ $(function() {
   // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
 });
 
-let imageOne = document.getElementById("cimg1");
-let imageTwo = document.getElementById("cimg2");
-imageOne.addEventListener("click", function(event) {
-  event.preventDefault();
-  event.stopPropagation();
-  document.querySelector(".contact-banner").style.backgroundImage =
-    "url(./img/contact/saudi-1.jpg)";
-  document.querySelector(".contact-banner").style.backgroundColor = "#01004c";
-});
-imageTwo.addEventListener("click", function(e) {
-  event.preventDefault();
-  event.stopPropagation();
-  document.querySelector(".contact-banner").style.backgroundImage =
-    "url(./img/contact/rsz_saudi-2.jpg)";
-  document.querySelector(".contact-banner").style.backgroundColor = "#000f1e";
-});
+// let imageOne = document.getElementById("cimg1");
+// let imageTwo = document.getElementById("cimg2");
+// imageOne.addEventListener("click", function(event) {
+//   event.preventDefault();
+//   event.stopPropagation();
+//   document.querySelector(".contact-banner").style.backgroundImage =
+//     "url(./img/contact/saudi-1.jpg)";
+//   document.querySelector(".contact-banner").style.backgroundColor = "#01004c";
+// });
+// imageTwo.addEventListener("click", function(e) {
+//   event.preventDefault();
+//   event.stopPropagation();
+//   document.querySelector(".contact-banner").style.backgroundImage =
+//     "url(./img/contact/rsz_saudi-2.jpg)";
+//   document.querySelector(".contact-banner").style.backgroundColor = "#000f1e";
+// });

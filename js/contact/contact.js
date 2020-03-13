@@ -4,13 +4,14 @@
   let contactButton = document.getElementById("contactButton");
   let contactLink = document.getElementById("contactLink");
   let contactClose = document.getElementById("contactClose");
+  let pocContactButton = document.getElementById("pocContact");
   let form = document.getElementById("contactForm");
 
   function contactFormShow() {
     gsap.to(".contact-wrapper", {
       display: "flex",
       minHeight: "100%",
-      top: "60px",
+      top: "62px",
       bottom: "unset",
       duration: 0.5
     });
@@ -44,10 +45,11 @@
   //   });
   // }, false);
 
-  contactLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    contactFormShow();
-  });
+  conttactLink &&
+    contactLink.addEventListener("click", function(event) {
+      event.preventDefault();
+      contactFormShow();
+    });
 
   contactButton &&
     contactButton.addEventListener("click", function(event) {
@@ -55,10 +57,17 @@
       contactFormShow();
     });
 
-  contactClose.addEventListener("click", function(event) {
-    event.preventDefault();
-    contactFormHide();
-  });
+  contactClose &&
+    contactClose.addEventListener("click", function(event) {
+      event.preventDefault();
+      contactFormHide();
+    });
+
+  pocContactButton &&
+    pocContactButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      contactFormShow();
+    });
 
   // TODO -  form validations
 

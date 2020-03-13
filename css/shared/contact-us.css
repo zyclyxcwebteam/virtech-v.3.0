@@ -1,17 +1,18 @@
 /* ! Contact Modal */
 .contact-wrapper {
-  color: #b5caee;
-  background-color: #0c1b33;
+  color: #fdfff5;
+  background-color: #16213d;
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 0;
-  display: block;
   z-index: 1200;
   overflow: hidden;
-  background-image: url("../../img/c-banner-2.jpg");
-  /* background-image: url("../../img/contact/form-4.jpg"); */
+  background-image: url("../../img/contact/c-banner-2.jpg");
   background-size: cover;
+  /* position: relative;
+  height: 91.5vh; */
+  display: flex;
 }
 .contact-wrapper .overlay {
   position: absolute;
@@ -22,23 +23,25 @@
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
-      135deg,
-      rgba(12, 27, 51, 0.9) 30%,
-      rgba(12, 27, 51, 0.5) 100%
+      45deg,
+      rgba(22, 32, 60, 0.7) 40%,
+      rgba(22, 32, 60, 0.5) 100%
     ),
     linear-gradient(
       to top,
-      rgba(12, 27, 51, 1) 10%,
+      #16213d 12%,
       transparent,
       transparent,
       transparent 100%
     );
+
+  z-index: -1;
 }
 .contact-inner {
   z-index: 99;
 }
 .contact-wrapper h2 {
-  color: #f9f9f9;
+  color: #f8f8ff;
 }
 .contact-wrapper .form-group .form-control:focus {
   box-shadow: none;
@@ -48,7 +51,7 @@
 }
 .contact-wrapper .contact-info a {
   text-decoration: none;
-  color: #b5b5b5;
+  color: #b8bdc4;
 }
 .contact-wrapper .contact-info a:hover {
   color: #00bdd5;
@@ -62,7 +65,6 @@
 
 .contact-wrapper .form-control:focus,
 .contact-wrapper .form-control:valid {
-  /* .contact-wrapper .form-control:invalid{ */
   background: hsl(217, 62%, 16%);
   border-bottom: 1px solid rgba(204, 204, 204, 0.404);
 }
@@ -90,7 +92,7 @@
 }
 .contact-wrapper .form-control {
   border: none;
-  color: #fff;
+  color: #f8f8ff;
   font-size: 1.4rem;
   /* background-color:rgba(17, 39, 74,0.95); */
   border-bottom: 1px solid hsl(217, 62%, 20%);
@@ -99,8 +101,8 @@
   background-color: hsla(217, 62%, 13%, 1);
 }
 /* #contactForm{
-    background-color:rgba(17, 39, 74,0.95);
-  } */
+      background-color:rgba(17, 39, 74,0.95);
+    } */
 .contact-wrapper .social-network {
   margin: 0;
 }
@@ -116,7 +118,7 @@
 .contact-wrapper .contact-caption {
   font-size: 1.2rem;
   font-style: italic;
-  color: #b5b5b5 !important;
+  color: #b8bdc4 !important;
 }
 
 /* Todo - check it later */
@@ -155,6 +157,8 @@
   /* color:hsl(217, 62%, 30%) !important; */
   color: rgba(149, 149, 149, 0.3);
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
 }
 .contact-wrapper input::-webkit-outer-spin-button,
 .contact-wrapper input::-webkit-inner-spin-button {
@@ -169,7 +173,7 @@
   right: 10px;
   position: absolute;
   z-index: 1000;
-  background-color: rgba(12, 26, 50, 0.8);
+  background-color: rgba(22, 33, 61, 0.9);
   color: #0c1b33;
   margin: 0 auto;
   border-radius: 1rem;
@@ -177,7 +181,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #b5b5b5;
+  color: #fdfff5;
   display: none;
 }
 .status-alert.show {
@@ -201,11 +205,17 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  .contact-wrapper {
-    overflow: auto;
-  }
   #contactClose {
     top: 0;
     right: 0;
+  }
+  .contact-title {
+    font-size: 2.2rem !important;
+  }
+  .contact-caption {
+    font-size: 1rem !important;
+  }
+  .contact-wrapper .form-group {
+    margin-bottom: 0.5rem !important;
   }
 }

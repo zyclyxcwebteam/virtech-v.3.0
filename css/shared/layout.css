@@ -11,6 +11,16 @@
   --black-3: #363c4f;
   --black-4: #4c5162;
   --black-5: #636776;
+
+  --color-1: #16213d;
+  --color-2: #a0a5b0;
+  --coloro-3: #00bdd5;
+  --color-4: #303030;
+  --color-5: rgba(10, 10, 10, 0.2);
+  --color-6: #3a2e28;
+  --color-7: #525252;
+  --color-8: #767676;
+  /* fdfff5, f9f8f0 #f8f8ff*/
 }
 
 .loading-wrapper {
