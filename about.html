@@ -632,7 +632,6 @@
       </div>
     </footer>
     <!-- ! Contact form -->
-    <!-- ! Contact form -->
     <section class=" contact-wrapper" id="contactMaster">
       <div class="overlay"></div>
       <button type="button" id="contactClose">
@@ -640,10 +639,10 @@
       </button>
 
       <div
-        class="container d-flex justify-content-around align-items-center flex-column contact-inner"
+        class="container d-flex justify-content-start justify-content-md-around align-items-center flex-column contact-inner"
       >
         <div class="row d-flex justify-content-between mt-5">
-          <div class="col-md-6 col-12 contact-form">
+          <div class="col-md-6 col-12 contact-form order-2 order-md-1">
             <div class="container">
               <form id="contactForm" class="needs-validation" novalidate>
                 <div class="row">
@@ -657,7 +656,8 @@
                         class="form-control"
                         name="firstname"
                         id="validationCustom01"
-                        pattern="[a-zA-Z\s]+"
+                        pattern="[a-zA-Z0-9\s]{2,30}"
+                        maxlength="30"
                         placeholder="Enter your name"
                         autocomplete="off"
                         required
@@ -670,7 +670,7 @@
                   </div>
                   <div class="col-12">
                     <div class="form-group">
-                      <label class=""> Email-ID <span>*</span></label>
+                      <label for="email"> Email-ID <span>*</span></label>
                       <input
                         type="email"
                         class="form-control"
@@ -678,6 +678,7 @@
                         autocomplete="off"
                         placeholder="Enter your email-ID"
                         id="email"
+                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                         required
                       />
                       <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
@@ -688,12 +689,14 @@
                   </div>
                   <div class="col-12">
                     <div class="form-group">
-                      <label> Contact Number <span>*</span></label>
+                      <label for="phone"> Contact Number <span>*</span></label>
                       <input
-                        type="number"
+                        type="tel"
                         class="form-control"
                         name="phone"
                         id="phone"
+                        pattern="^[0-9]{3,12}$"
+                        maxlength="12"
                         placeholder="Enter your contact number"
                         autocomplete="off"
                         required
@@ -711,11 +714,14 @@
                         class="form-control"
                         name="message"
                         id="message"
+                        maxlength="300"
                         placeholder="Your message here.."
                         required
                       ></textarea>
-                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                      <div class="invalid-feedback">Please write a message</div>
+
+                      <div class="invalid-feedback">
+                        Please write a message
+                      </div>
                     </div>
                   </div>
                   <button
@@ -730,7 +736,7 @@
             </div>
           </div>
           <div
-            class="col-md-5 col-12 d-flex justify-content-center flex-column"
+            class="col-md-5 col-12 d-flex justify-content-center flex-column order-1 order-md-2"
           >
             <h2 class="text-center contact-title">Get in touch</h2>
             <p class="text-center contact-caption">
@@ -739,7 +745,7 @@
           </div>
         </div>
 
-        <div class="container contact-info px-0">
+        <div class="container contact-info px-0 mb-2 d-none d-md-block">
           <div
             class="row mx-auto d-flex justify-content-between align-items-center "
           >
@@ -802,7 +808,7 @@
 
       <div class="status-alert" id="formStatus">
         <p><i class="fas fa-check"></i></p>
-        <h4>Thanks for contacting us!</h4>
+        <h4 class="text-center">Thank you for contacting us!</h4>
         <p>We will get in touch with you soon</p>
       </div>
     </section>
