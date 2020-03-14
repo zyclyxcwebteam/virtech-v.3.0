@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Alegreya|B612+Mono|Crimson+Pro|Crimson+Text|IBM+Plex+Serif&display=swap");
 
+
 :root {
   --mission-bg: #0c1b33;
 }
@@ -69,41 +70,47 @@
  
 } */
 .about-home .fade-title {
-  font-style: italic;
+  text-align: left !important;
+  /* font-style: italic; */
   color: #00bdd5;
 }
 
 .about-home .about-title-right {
-  font-size: 2.4rem;
+  font-size: 3rem;
+  text-align: left !important;
   font-style: italic;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-family: "Playfair Display";
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
   margin-left: -50px;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
 }
 
+.about-title .about-title-left{
+  margin-right: 3rem;
+}
 .about-home .about-title-left-1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #b8bdc4;
-  font-weight: 600;
+  margin-left: 5rem;
+  /* font-weight: 600; */
   font-family: "Playfair Display";
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
 }
 
 .about-home .about-title-left-2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #b8bdc4;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-family: "Playfair Display";
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
 }
 .about-banner-title .banner-title-2 {
   font-style: italic;
   font-size: 2.5rem !important;
 }
 .about-overview .hero-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #b8bdc4;
   text-align: justify;
   margin-top: 0.6rem;
@@ -160,7 +167,7 @@
 
 .mission-vission .about-text {
   font-size: 1.2rem;
-  font-weight: 500;
+  /* font-weight: 500; */
   opacity: 0;
   text-align: justify;
 }
@@ -179,9 +186,9 @@
 .how-wedo-outer .we-do-title {
   font-size: 2.5rem;
   color: #b8bdc4 !important;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-family: "Playfair Display";
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
 }
 .how-wedo-outer .do-content:after {
   position: absolute;
@@ -230,10 +237,10 @@
   opacity: var(--circle-color);
 }
 .how-wedo-outer .we-do-bottom .do-icon::before {
-  top: -26px;
+  top: -59px;
 }
 .how-wedo-outer .we-do-top .do-icon::after {
-  bottom: -25px;
+  bottom: -58px;
 }
 /*  
 .how-wedo-outer .do-icon:nth-child(odd)::before{
@@ -284,3 +291,173 @@
 #contactButton {
   display: none;
 }
+
+
+/* =======================================
+                Meadia Queries
+   ======================================= */
+   @media (max-width: 976px){
+     
+    /* ===== HOw We Do ======*/
+    .how-wedo-outer{
+      display: none !important;
+    }
+    
+    .sm-how-we-do {
+      background-color: #0c1b33;
+      height: 100vh;
+    }
+    .sm-icon img{
+      width: 50px;
+    }
+    .sm-icon .do-title{
+      font-size: 1rem;
+    }
+    .sm-icon .do-text{
+      /* font-size: 16px; */
+    }
+    .sm-icon{
+      padding: 0px 2px 20px 50px;
+      position: relative;
+      /* border: 1px solid; */
+    }
+    .sm-icon::after{
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-color: aquamarine;
+      border-radius: 50px;
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+    }
+    .sm-icon::before{
+      content: '';
+      width: 2px;
+      height: 100%;
+      background-color: aquamarine;
+      position: absolute;
+      left: 12px;
+    }
+    .sm-how-we-do .we-do-title{
+      color: #b8bdc4;
+      font-family: "Playfair Display";
+    }
+    .sm-how-we-do .do-icon{
+      color: #b8bdc4;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+    }
+    /* .sm-how-we-do .do-title{
+      padding-left: 0.5rem;
+    } */
+    .sm-how-we-do .do-text{
+      text-align: left;
+      color: #b8bdc4;
+      padding: 0px;
+    }
+   }
+   @media (max-width: 576px){
+      
+    .about-home .about-title-left-1,
+    .about-home .about-title-left-2{
+      color: #fff;
+      font-size: 1.55rem;
+      margin:4px 0 !important;
+    }
+    .about-home .fade-title{
+      /* font-size: 1rem; */
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    .about-home .about-title-right {
+      text-align: center;
+      margin: 0;
+      font-size: 1.9rem !important;
+      justify-content: center;
+      letter-spacing: normal;
+      margin-top: 1rem;
+    }
+    .about-title .about-title-right{
+      min-height: 100px;
+    }
+    .about-overview .hero-text{
+      font-size: 16px;
+      padding: 0 5px;
+      /* text-align: left; */
+    }
+    .mission-vission .title-card-1{
+      box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.5) !important;
+    }
+    .mission-vission .about-text{
+      text-align: left;
+      padding: 0 2rem !important;
+    }
+
+    /* ===== HOw We Do ======*/
+    .how-wedo-outer{
+      display: none !important;
+    }
+    
+    .sm-how-we-do {
+      background-color: #0c1b33;
+      height: 180vh;
+    }
+    .sm-icon img{
+      width: 50px;
+    }
+    .sm-icon .do-title{
+      font-size: 1rem;
+    }
+    .sm-icon .do-text{
+      /* font-size: 16px; */
+    }
+    .sm-icon{
+      padding: 0px 2px 20px 50px;
+      position: relative;
+      /* border: 1px solid; */
+    }
+    .sm-icon::after{
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-color: aquamarine;
+      border-radius: 50px;
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+    }
+    .sm-icon::before{
+      content: '';
+      width: 2px;
+      height: 100%;
+      background-color: aquamarine;
+      position: absolute;
+      left: 12px;
+    }
+    .sm-how-we-do .we-do-title{
+      color: #b8bdc4;
+      font-family: "Playfair Display";
+    }
+    .sm-how-we-do .do-icon{
+      color: #b8bdc4;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+    }
+    /* .sm-how-we-do .do-title{
+      padding-left: 0.5rem;
+    } */
+    .sm-how-we-do .do-text{
+      text-align: left;
+      color: #b8bdc4;
+      padding: 0px;
+    }
+   }

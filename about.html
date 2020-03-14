@@ -347,15 +347,19 @@
         <li>
           <a href="#" id="image-2">image-2</a>
         </li>
+        <li>
+          <a href="#" id="image-3">image-3</a>
+        </li>
+        
       </ul>
       <div class="container row d-flex about-title mx-auto mb-5">
         <div
-          class="col-7 d-flex flex-column align-items-start about-title-left"
+          class="col-md-7 col-12 d-flex flex-column align-items-center align-items-md-end about-title-left"
         >
           <h2 class="about-title-left-1 ml-2">Leading innovation with</h2>
           <h2 class="about-title-left-2 ml-5">Impeccable solutions in</h2>
         </div>
-        <div class="col-5 align-self-end d-flex about-title-right px-0">
+        <div class="col-md-5 col-12 align-self-end d-flex about-title-right px-0">
           <span class="fade-title" id="fadeTitle-1">Automation</span>
           <span class="fade-title" id="fadeTitle-2"
             >Artificial Intelligence</span
@@ -433,9 +437,9 @@
             class="row d-flex justify-content-center align-items-center py-3"
           >
             <div class="col-md-8 col-12">
-              <div class="vission row mx-auto">
+              <div class="vission row mx-auto d-flex">
                 <div
-                  class="col-md-8 col-12 mx-auto px-5 about-text d-flex justify-content-center align-items-center flex-column"
+                  class="col-md-8 col-12 mx-auto px-5 order-2 order-md-1 about-text d-flex justify-content-center align-items-center flex-column"
                 >
                   <p>
                     To provide diverse solutions in the area of Futuristic IT
@@ -444,8 +448,8 @@
                   </p>
                 </div>
 
-                <div class="col-md-4 col-12 py-4">
-                  <div class="card title-card title-card-2">
+                <div class="col-md-4 col-12 order-1 order-md-2 py-4">
+                  <div class="card title-card title-card-2 order-sm-1">
                     <div class="card-body">
                       <h2 class="card-title">Vision</h2>
                     </div>
@@ -459,17 +463,17 @@
     </section>
 
     <section
-      class="how-wedo-outer d-flex justify-content-center align-items-center flex-column"
+      class="how-wedo-outer d-flex align-items-center flex-column"
       id="howWeDoMaster"
     >
       <!-- Our process -->
-      <h2 class="text-center we-do-title">How We Do It</h2>
+      <h2 class="text-center we-do-title py-5">How We Do It</h2>
 
       <div
-        class="container d-flex justify-content-center align-items-center flex-column"
+        class="container-fluid d-flex justify-content-center align-items-center flex-column px-md-5 px-0"
       >
-        <div class="do-content row mx-auto d-flex justify-content-center h-100">
-          <div class="col-12 we-do-top mb-3">
+        <div class="do-content row mx-auto d-flex justify-content-center h-100 px-md-5 px-0">
+          <div class="col-12 we-do-top mb-5">
             <div class="row">
               <!-- step - 1 icon -->
               <div class="col">
@@ -513,7 +517,7 @@
             </div>
           </div>
 
-          <div class="col-12 we-do-bottom mt-3">
+          <div class="col-12 we-do-bottom mt-5">
             <div class="row">
               <!-- step - 1 text -->
               <div class="col">
@@ -566,7 +570,83 @@
       </div>
     </section>
 
-    <p id="contactButton"></p>
+
+    <!-- mobile view How We Do -->
+    <section class="sm-how-we-do container-fluid ">
+      <div class="container">
+      <h2 class="text-center we-do-title py-5">How We Do It</h2>
+
+      <div class="row sm-icon md-icon">
+        <div class="col-md-2 do-icon mb-2" id="do-icon-1">
+          <img src="./img/icons/do-icon-plan.svg" alt="" />
+          <h5 class="do-title">PLAN</h5>
+        </div>
+
+      <div class="col-md-9 do-text" id="do-text-2">
+        <p class="mb-0">
+          Strategize, document and decipher - goals, objectives,
+          information and financial forecasts for building the right
+          business plan
+        </p>
+      </div>
+    </div>
+
+    <div class="row sm-icon md-icon">
+      <div class="col-md-2 do-icon mb-2" id="do-icon-3">
+        <img src="./img/icons/do-icon-execute.svg" alt="" />
+        <h5 class="do-title">EXECUTE</h5>
+      </div>
+      <div class="col-md-9 do-text" id="do-text-2">
+        <p class="mb-0">
+          Communicate, set goals, track, report, manage performance
+          and remunerate for the execution of a decision
+        </p>
+      </div>
+    </div>
+
+    <div class="row sm-icon md-icon">
+      <div class="col-md-2 do-icon mb-2" id="do-icon-3">
+        <img src="./img/icons/do-icon-rectify.svg" alt="" />
+        <h5 class="do-title">RECTIFY</h5>
+      </div>
+      <div class="col-md-9 do-text" id="do-text-3">
+        <p>
+          Identification and elimination of discrepancie for
+          improvement of the organizations's process
+        </p>
+      </div>
+    </div>
+
+    <div class="row sm-icon md-icon">
+      <div class="col-md-2 do-icon mb-2" id="do-icon-4">
+        <img src="./img/icons/do-icon-analysis.svg" alt="" />
+        <h5 class="do-title">ANALYZE</h5>
+      </div>
+      <div class="col-md-9 do-text" id="do-text-4">
+        <p>
+          Interpret and comprehend the executed decision for analysis
+          of the collected data
+        </p>
+      </div>
+    </div>
+    
+    <div class="row sm-icon md-icon">
+      <div class="col-md-2 do-icon mb-2" id="do-icon-5">
+        <img src="./img/icons/do-icon-feedback.svg" alt="" />
+        <h5 class="do-title">FEEDBACK</h5>
+      </div>
+      <div class="col-md-9 do-text" id="do-text-5">
+        <p>
+          After project completion, the client is called in to review
+          the final product awaiting their feedback on the same before
+          launch
+        </p>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <!-- <p id="contactButton"></p> -->
 
     <!-- ! Footer -->
     <footer class="footer container-fluid px-3 scroll-s">
@@ -947,6 +1027,8 @@
     <script>
       let imageOne = document.getElementById("image-1");
       let imageTwo = document.getElementById("image-2");
+      let imageThree = document.getElementById("image-3");
+      let imageFour = document.getElementById("image-4");
 
       imageOne.addEventListener("click", function() {
         document.querySelector(".about-home").style.backgroundImage =
@@ -956,6 +1038,10 @@
         document.querySelector(".about-home").style.backgroundImage =
           "url(./img/about/Banner-2.jpg)";
       });
+      imageThree.addEventListener('click', function(){
+        document.querySelector(".about-home").style.backgroundImage = "url(./img/about/new-1.jpg)";
+      })
+     
     </script>
   </body>
 </html>
