@@ -114,10 +114,10 @@ body {
 .home-banner .social-media-links li a:hover {
   color: #00bdd5;
 }
-.home-banner .home-video {
-  /* position: relative; */
-  /* height: calc(100vh - var(--navbar-height)); */
-}
+/* .home-banner .home-video {
+  position: relative;
+  height: calc(100vh - var(--navbar-height));
+} */
 .home-banner .bg-video {
   width: 95%;
   mix-blend-mode: lighten;
