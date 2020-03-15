@@ -103,9 +103,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
-  margin: 20px;
+  margin: 10px !important;
+
   cursor: pointer;
   box-shadow: 0 0 0 0.4em transparent;
   animation: btn-pulse 1s infinite;

@@ -13,6 +13,7 @@
   --black-5: #636776;
 
   --color-1: #16213d;
+  --color-1-1:#33379c;
   --color-2: #a0a5b0;
   --coloro-3: #00bdd5;
   --color-4: #303030;
@@ -175,9 +176,11 @@ body {
   color: #dbdbdb;
   font-weight: 500;
 }
-.button-light:hover,
-.button-blue:hover {
+.button-light:hover {
   border: 0.16em solid #b8bdc4;
+}
+.button-blue:hover {
+  border-color: #f2f3f9;
 }
 .service-contact:hover {
   text-decoration: none;

@@ -1,5 +1,5 @@
 $(function() {
-  let controller = new ScrollMagic.Controller();
+  let controller = new ScrollMagic.Controller({container:'#scrollContainer'});
   let homeTitleCarousel = gsap.timeline({ repeat: -1 });
 
   //  logo animation
@@ -38,7 +38,6 @@ $(function() {
     }
   );
   homePageLoad.to("#page-loader", { display: "none", duration: "0.001" });
-  homePageLoad.to("body", { overflow: "visible", duration: 0.01 });
   homePageLoad.to(".home-banner", { opacity: 1, duration: 0.1 });
 
   //  Home page titles
@@ -127,14 +126,14 @@ $(function() {
     });
   }
 
-  // Working Code
+   //Working Code
 
   // let bgColor = gsap.timeline({ onComplete: startServiceCarousel });
   // bgColor.fromTo(
   //   ".services-wrapper",
   //   { "--service-bg": "#ffffff" },
   //   {
-  //     "--service-bg": "#0c1b33",
+  //     "--service-bg": "#16213d",
   //     duration: 0.8,
   //     delay: 0.2
   //   }
