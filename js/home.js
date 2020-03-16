@@ -133,9 +133,9 @@ $(function () {
   let bgColor = gsap.timeline({ onComplete: startServiceCarousel });
   bgColor.fromTo(
     ".services-wrapper",
-    { "--service-bg": "#16213d" },
+    { "--service-bg": "#ffffff" },
     {
-      "--service-bg": "#f4f4f4",
+      "--service-bg": "#16213d",
       duration: 0.6       
     }
   );
