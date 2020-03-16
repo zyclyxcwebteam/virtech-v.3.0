@@ -328,7 +328,7 @@
 </nav>
   <section class="container-fluid job-banner">
     <div class="container-fluid">
-      <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="row d-flex justify-content-center align-items-center ">
 
         <div class="title col-lg-10 col-md-12 col-12 d-flex justify-content-center align-items-start left-wrapper">
           <div class="row d-flex justify-content-center align-items-center">
@@ -350,8 +350,8 @@
               </div>
 
               <div>
-                <p> Experience</p>
-                <h2>2-3 Years</h2>
+                <p class="text-2"> Experience</p>
+                <h2 class="title-3">2-3 Years</h2>
               </div>
             </div>
 
@@ -363,8 +363,8 @@
               </div>
 
               <div>
-                <p> Job Type</p>
-                <h2>Full-Time</h2>
+                <p class="text-2"> Job Type</p>
+                <h2 class="title-3">Full-Time</h2>
               </div>
 
             </div>
@@ -376,8 +376,8 @@
               </div>
 
               <div>
-                <p>Salary</p>
-                <h2>Best in the industry</h2>
+                <p class="text-2">Salary</p>
+                <h2 class="title-3">Best in the industry</h2>
               </div>
             </div>
 
@@ -388,11 +388,11 @@
               </div>
 
               <div>
-                <p>location</p>
-                <h2>On-sight</h2>
+                <p class="text-2">location</p>
+                <h2 class="title-3">On-sight</h2>
               </div>
             </div>
-            <a class="btn rounded-0 option option-btn col-lg-12 col p-0 pr-lg-0" href="#" id="applyPopUp">Apply Now</a>
+            <a class="btn rounded-0 option option-btn title-3 col-lg-12 col p-0 pr-lg-0" href="#" id="applyPopUp">Apply Now</a>
 
           </div>
 
@@ -461,15 +461,15 @@
     <div class="container details">
 
       <div class="job-description">
-        <h5 class="py-2 title-3">Description</h5>
-        <p class="ml-3" id="description"></p>
+        <h5 class="py-2 title-2">Description</h5>
+        <p class="ml-3 text-2" id="description"></p>
       </div>
       <!-- Requirements -->
-      <h5 class="py-2 title-3">Requirements</h5>
+      <h5 class="py-2 title-2 title-dark">Requirements</h5>
       <ul class="text-2 job-desc-list" id="qualifications">
       </ul>
       <!-- Responsibilities  -->
-      <h5 class="py-2 title-3">Responsibilities</h5>
+      <h5 class="py-2 title-2 title-dark">Responsibilities</h5>
       <ul class="text-2 job-desc-list" id="responsibilities">
 
       </ul>
@@ -482,7 +482,7 @@
 <section class="appWrapper pb-5" id="appForm">
 
   <button type="button" id="formClose"><i class="fas fa-times"></i></button>
-  <h4 class="pt-2 pb-5 text-center display-4">Apply Now</h4>
+  <h4 class="pt-2 pb-5 text-center title-2">Apply Now</h4>
   <div class="container applyForm">
     <div class="bg-light">
       <form id="jobForm" class="contactForm needs-validation" novalidate>
@@ -492,7 +492,7 @@
           <div class="col-md-6 col-sm-12">
             <div class="form-group">
               <label for="validationCustom01"> First Name <span>*</span></label>
-              <input type="text" class="form-control" name="firstname" id="validationCustom01" pattern="[a-zA-Z\s]+"
+              <input type="text" class="form-control" name="firstname" id="validationCustom01" pattern="[a-zA-Z\s]{2,30}"
                 placeholder="Enter your name" autocomplete="off" required>
               <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
               <div class="invalid-feedback">Please enter your firstname</div>
@@ -506,7 +506,7 @@
               </label> -->
             <div class="form-group">
               <label for="pwd"> Last Name <span>*</span></label>
-              <input type="text" class="form-control" name="lastname" pattern="[a-zA-Z\s]+" id="lastname"
+              <input type="text" class="form-control" name="lastname" pattern="[a-zA-Z\s]{2,30}" id="lastname"
                 placeholder="Enter your last name" autocomplete="off" required>
               <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
               <div class="invalid-feedback">Please enter your lastname</div>
@@ -521,7 +521,7 @@
             <div class="form-group">
               <label class=""> Email-ID <span>*</span></label>
               <input type="email" class="form-control" name="email" autocomplete="off"
-                placeholder="Enter your email-ID" id="email" required>
+                placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
               <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
               <div class="invalid-feedback">Please enter a valid email</div>
             </div>
@@ -531,7 +531,7 @@
             <div class="form-group">
               <label> Contact Number <span>*</span></label>
               <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your contact number"
-                pattern="[0-9]{7,20}" autocomplete="off" required>
+                pattern="^[0-9]{3,12}$" autocomplete="off" required>
               <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
               <div class="invalid-feedback">Please enter your phone number</div>
             </div>
@@ -546,10 +546,11 @@
           <div class="input-group mb-3">
             <div class="custom-file">
               <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-              <div class="invalid-feedback">Please upload your resume.</div>
-              <input type="file" name="resume" class="custom-file-input" id="inputFile"
-                aria-describedby="inputGroupFileAddon01" required>
+              
+              <input type="file" name="resume" class="custom-file-input form-control" id="inputFile"
+                aria-describedby="inputGroupFileAddon01" accept=".doc,.docx,.pdf" required>
               <label class="custom-file-label" for="inputFile">Choose file</label>
+              <div class="invalid-feedback">Please upload your resume.</div>
             </div>
           </div>
         </div>
@@ -570,7 +571,7 @@
             <button type="button" class="btn btn-block" id="btnCancel">Cancel</button>
           </div> -->
           <div class="col-md-6 col-sm-12 order-md-1 order-sm-0 mx-auto d-flex justify-content-center">
-            <button type="submit" class="btn btn-secondary" id="btnSubmit">Submit Application</button>
+            <button type="submit" class="button button-dark" id="btnSubmit">Submit Application</button>
           </div>
         </div>
     </div>
