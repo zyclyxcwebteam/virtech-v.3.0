@@ -241,9 +241,12 @@
 
 .stats-wrapper {
   background-color: #16213d;
-  color: #b8bdc4;     
+  color: #b8bdc4;
+  
 }
- 
+.stats-wrapper .stats-inner{
+border-top: 1px solid hsla(223, 47%, 30%, 1);     
+}
 .stats-wrapper .stats img{
   height: 40px;
   width: 40px;
@@ -269,7 +272,7 @@
   margin-top: 0.5rem;
 }
 .stats-wrapper .stats:nth-child(2), .stats-wrapper .stats:nth-child(3){
-  border-left:1px solid hsl(223, 47%, 36%) ;
+  border-left:1px solid hsla(223, 47%, 30%, 1) ;
 }
 
 
@@ -284,6 +287,24 @@
     left: 0px;
     bottom: 5px;
   }
+
+  .stats-wrapper .stats{
+        box-shadow: 0px 0px 2px hsla(223, 47%, 30%, 1);
+        border-radius: 0.5rem;
+        margin: 0.5rem 0;
+  }
+  .stats-wrapper .stats:nth-child(2), .stats-wrapper .stats:nth-child(3){
+ border: none;
+}
+.stats-wrapper .stats-number,.stats-wrapper .stats-title{
+  margin: 0;
+}
+.stats-wrapper .stats-number{
+  font-size: 3.5rem;
+}
+ .stats-wrapper .stats-title{
+   font-size: 1.2rem;
+ }
   .poc-wrapper {
     padding: 1.5rem 0;
   }

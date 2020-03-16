@@ -262,10 +262,10 @@
     <!-- ? SERVICES -->
     <section class="scroll-s services-wrapper d-flex justify-content-center align-items-center flex-column"
       id="servicesOuter">
-      <h2 class="title-1 title-dark text-center">Services</h2>
+      <h2 class="title-1 title-light text-center">Services</h2>
 
       <div class="align-items-center justify-content-center mt-4" id="servicesInner">
-        <div id="serviceCarousel" class="d-flex align-items-center carousel slide">
+        <div id="serviceCarousel" class="d-flex align-items-center carousel slide" data-touch=true>
           <ol class="carousel-indicators py-3 m-0">
             <li data-target="#serviceCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#serviceCarousel" data-slide-to="1"></li>
@@ -812,29 +812,28 @@
     <!-- ? STATS -->
     <section class="stats-wrapper container-fluid py-4 scroll-s" id="statsCounter">
       <div class="container py-3 stats-inner">
-        <div class="row py-4">
+        <div class="row d-flex flex-md-row flex-column py-4">
 
-          <div class="col d-flex justify-content-center align-items-center flex-column stats">
-            <h2 class="stats-number"><span id="clients">100</span><span>+</span> </h2>
-            <div class="d-flex align-items-center">
-              <!-- <img src="./img/icons/stats/clients.svg" alt=""> -->
+          <div class="col px-md-2 px-0 d-flex justify-content-center align-items-center flex-column stats">
+
+            <div class="py-md-0 py-3">
+              <h2 class="stats-number"><span id="clients">100</span><span>+</span> </h2>
               <h3 class="stats-title">Clients Served</h3>
             </div>
 
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center stats">
-            <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="col px-md-2 px-0 d-flex justify-content-center align-items-center flex-column stats">
+            <div class="py-md-0 py-3">
               <h2 class="stats-number"><span id="projects">50</span> <span>+</span></h2>
               <h3 class="stats-title">Projects Delivered</h3>
             </div>
 
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center flex-column stats">
-            <h2 class="stats-number"><span id="process">100</span> <span>+</span> </h2>
-            <div class="d-flex align-items-center">
-              <!-- <img src=" ./img/icons/stats/process.svg" alt=""> -->
+          <div class="col px-md-2 px-0 d-flex justify-content-center align-items-center flex-column stats">
+            <div class="py-md-0 py-3">
+              <h2 class="stats-number"><span id="process">100</span> <span>+</span> </h2>
               <h3 class="stats-title">Processes Automated</h3>
             </div>
           </div>
@@ -1091,7 +1090,7 @@
 
     <!-- ? CORE VALUES -->
     <section class="container-fluid core-values scroll-s">
-      <h2 class="text-center title-1 title-light pt-5">
+      <h2 class="text-center title-1 title-light py-3 pt-md-5">
         Core Values
       </h2>
       <div class="wrapper">
@@ -1208,7 +1207,7 @@
     <section class="contact-banner scroll-s d-flex justify-content-center align-items-center">
       <div class="banner-overlay"></div>
       <div class="banner-content d-flex flex-column align-items-center">
-        <h2 class="title-1 title-white text-center px-1">Find answers to your business needs</h2>
+        <h2 class="title-1 title-light text-center px-1">Find answers to your business needs</h2>
         <button class="px-4 button button-blue mt-md-4 mt-2" id="contactButton">Contact us</button>
       </div>
     </section>
@@ -1390,8 +1389,7 @@
 
 
   <!-- ? CHAT BOT -->
-  <button type="button" class="btn btn-rounded text-center bot" id="chat" style="margin-right: 2rem;" aria-label="chat"
-    onclick="show(1)">
+  <button type="button" class="btn btn-rounded text-center bot" id="chat" aria-label="chat" onclick="show(1)">
     <svg height="30" width="30" aria-hidden="true" data-prefix="fab" data-icon="rocketchat"
       class="svg-inline--fa fa-rocketchat fa-w-18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
       <path fill="#fff"

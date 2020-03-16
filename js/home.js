@@ -139,7 +139,7 @@ $(function () {
       duration: 0.6       
     }
   );
-  bgColor.fromTo('.services-wrapper .section-title-bg',{opacity:1},{opacity:0,duration:0.1},'-=0.5')     
+  bgColor.fromTo('.services-wrapper .section-title-bg',{autoAlpha:1},{autoAlpha:0,duration:0.1},'-=0.5')     
   bgColor.fromTo(
     "#servicesInner",
     { opacity: 0 },
@@ -175,7 +175,7 @@ $(function () {
   let indColor = gsap.timeline();   
   indColor.fromTo('.industry-wrapper',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 0.6 })
   indColor.fromTo('.spacer',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 1 },'-=1')
-  indColor.fromTo('.industry-wrapper .section-title-bg',{opacity:1},{opacity:0,duration:0.1},'-=0.5')     
+  indColor.fromTo('.industry-wrapper .section-title-bg',{autoAlpha:1},{autoAlpha:0,duration:0.1},'-=0.5')     
   indColor.fromTo('.industry-inner',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
   indColor.fromTo('.industry',{y:80,opacity:0},{y:0,opacity:1,stagger:0.2,duration:1});
   indColor.fromTo('.ind-content',{y:80,opacity:0},{y:0,opacity:1,duration:0.5},'-=2')
@@ -262,7 +262,7 @@ $(function () {
   // core values
 let coreValues = gsap.timeline();
   coreValues.fromTo('.core-values',{'--core-value':'#ffffff'} ,{ '--core-value': '#16213d', duration: 0.6 })   
-  coreValues.fromTo('.core-values .section-title-bg',{opacity:1},{opacity:0,duration:0.1},'-=0.5')     
+  coreValues.fromTo('.core-values .section-title-bg',{autoAlpha:1},{autoAlpha:0,duration:0.1},'-=0.5')     
   coreValues.fromTo('.core-values .wrapper',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
   coreValues.fromTo(".core-values .title-1",{opacity:0},{opacity:1,duration:0.5})
   coreValues.fromTo('.core-values .c-val',{autoAlpha:0,y:30},{stagger:0.1,autoAlpha:1,duration:1,y:0}) 
