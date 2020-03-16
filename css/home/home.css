@@ -328,14 +328,4 @@ border-top: 1px solid hsla(223, 47%, 30%, 1);
     right: 2px;
     top: 80px;
   }
-
- 
-  .invalid-feedback {
-    display:block !important;
-    opacity: 0 !important;
- 
-}
-.is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip {
-    opacity: 1 !important;
-}
 }
