@@ -24,7 +24,7 @@
   /* fdfff5, f9f8f0 #f8f8ff*/
 }
 
-.loading-wrapper {
+/* .loading-wrapper {
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -53,57 +53,75 @@
   top: 50%;
   transform: translate(-50%, -50%);
   max-width: 350px;
-}
+} */
 
 body {
-  padding-top: 61.974px;
+  padding-top: 65px;
   background-color: #ffffff;
   scroll-behavior: smooth;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  /* background-color: var(--bg-dark); */
+    "Helvetica Neue", Arial, sans-serif;   
 }
 
 .banner-title-1,
 .banner-title-2 {
-  color: #e5e5e5;
+  color: #f8f8ff;
   font-family: "Playfair Display";
   line-height: 1.3;
-  font-weight: 700;
-  letter-spacing: 5px;
+  
+  letter-spacing: 5px;  
 }
 
 .banner-title-1 {
   font-size: 4rem;
+  font-weight: 600;
 }
 .banner-title-2 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 .title-light {
   color: #dbdbdb;
 }
 .title-dark {
-  color: #0c1b33;
+  color: #20263b;
 }
 .title-white {
   color: #fff;
 }
-.section-title-1 {
-  font-size: 6rem;
-  font-weight: 700;
-}
-.section-title-2 {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 3rem;
+.section-title-bg {
+  font-size: 6.5rem;
   font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
 }
-.section-title-3 {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 2.2rem;
+.title-1, .title-2, .title-3{
   font-weight: 500;
+  letter-spacing: 2px;
 }
-
+.title-1 { 
+  font-size: 3rem;   
+}
+.title-2 { 
+  font-size: 2rem;   
+}
+.title-3{
+  font-size: 1.5rem;
+}
+.text-1{
+  font-size: 1.4rem;
+}
+.text-2{
+  font-size: 1.2rem;
+}
+.text-3
+{
+  font-size: 1rem;
+}
 /* border line animation */
 .line {
   position: absolute;
@@ -189,4 +207,28 @@ body {
 }
 .button-dark:hover {
   border: 0.16em solid #f2f3f9;
+}
+@media (max-width: 576px) {
+  .banner-title-1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.banner-title-2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+ 
+.section-title-bg {
+  font-size: 4.5rem;   
+}
+ 
+.title-1 { 
+  font-size: 2.2rem;   
+}
+.title-2 { 
+  font-size: 1.8rem;   
+}
+.title-3{
+  font-size: 1.2rem;
+}
 }

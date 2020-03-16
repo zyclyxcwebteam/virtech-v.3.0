@@ -1,7 +1,9 @@
  
 .core-values {
-  background-color: #0c1b33;
-  height: calc(100vh - var(--navbar-height));   
+  --core-value:#ffffff;
+  background-color:var(--core-value) ;
+  height: calc(100vh - var(--navbar-height)); 
+  position: relative;  
 }
 .core-values .c-val-caption {
   font-size: 1rem;
@@ -257,4 +259,12 @@ padding: 0.8rem;
 .core-values .c-val-title{
   text-align: left;
 }
+}
+
+/* gsap animation */
+.wrapper{
+  opacity: 0;
+}
+.core-values .title-1{
+  opacity: 0;
 }

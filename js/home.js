@@ -1,17 +1,18 @@
-$(function() {
-  let controller = new ScrollMagic.Controller({container:'#scrollContainer'});
+$(function () {
+  let controller = new ScrollMagic.Controller();
   let homeTitleCarousel = gsap.timeline({ repeat: -1 });
 
   //  logo animation
 
   let homePageLoad = gsap.timeline({ onComplete: startTitleCarousel });
+  homePageLoad.to('body',{overflow:'hidden'})
   homePageLoad.fromTo(
     "#logoCenter",
     {
       top: "50%",
       left: "50%",
       transform: "translate(-50%,-50%)",
-      maxWidth: "350px"
+      maxWidth: "300px"
     },
     {
       top: "9px",
@@ -39,6 +40,7 @@ $(function() {
   );
   homePageLoad.to("#page-loader", { display: "none", duration: "0.001" });
   homePageLoad.to(".home-banner", { opacity: 1, duration: 0.1 });
+  homePageLoad.to('body',{overflow:'visible',duration:0.1})
 
   //  Home page titles
   function startTitleCarousel() {
@@ -110,14 +112,6 @@ $(function() {
 
   //  Services section
 
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#servicesOuter",
-  //   triggerHook: 0.092
-  // })
-  //   .setClassToggle(".side-nav", "light")
-  //   .addIndicators({ name: "services" })
-  //   .setPin("#servicesOuter")
-  //   .addTo(controller);
 
   function startServiceCarousel() {
     $(".carousel").carousel("cycle");
@@ -126,48 +120,40 @@ $(function() {
     });
   }
 
-   //Working Code
-
-  // let bgColor = gsap.timeline({ onComplete: startServiceCarousel });
-  // bgColor.fromTo(
-  //   ".services-wrapper",
-  //   { "--service-bg": "#ffffff" },
-  //   {
-  //     "--service-bg": "#16213d",
-  //     duration: 0.8,
-  //     delay: 0.2
-  //   }
-  // );
-  // bgColor.to(
-  //   ".section-title-1",
-  //   { color: "#f4f4f4", duration: 0.8, delay: 0.3 },
-  //   "-=0.7"
-  // );
-  // bgColor.to(".section-title-1", {
-  //   fontSize: "3rem",
-  //   marginTop: "3rem",
-  //   duration: 0.8,
-  //   delay: 0.2
-  // });
-  // bgColor.fromTo(
-  //   "#servicesInner",
-  //   { height: "0%" },
-  //   { height: "100%", duration: 0.8, delay: 0.2 },
-  //   "-=1"
-  // );
-  // bgColor.fromTo(
-  //   "#servicesInner",
-  //   { opacity: 0 },
-  //   { opacity: 1, duration: 0.5 }
-  // );
+  //Working Code
   // new ScrollMagic.Scene({
   //   triggerElement: "#servicesOuter",
-  //   triggerHook: 0.1,
-  //   duration: "0px"
+  //   triggerHook: 0.08,
+  //   duration: "50%"
   // })
-  //   .setTween(bgColor)
-  //   .addIndicators({ name: "service" })
+  //   .setPin('#servicesOuter')
+  //  .addIndicators({ name: "service" })
   //   .addTo(controller);
+
+  let bgColor = gsap.timeline({ onComplete: startServiceCarousel });
+  bgColor.fromTo(
+    ".services-wrapper",
+    { "--service-bg": "#16213d" },
+    {
+      "--service-bg": "#f4f4f4",
+      duration: 0.6       
+    }
+  );
+  bgColor.fromTo('.services-wrapper .section-title-bg',{opacity:1},{opacity:0,duration:0.1},'-=0.5')     
+  bgColor.fromTo(
+    "#servicesInner",
+    { opacity: 0 },
+    { opacity: 1, duration: 0.5 }
+  );
+  bgColor.fromTo(".services-wrapper .title-1",{opacity:0},{opacity:1,duration:0.5})
+  new ScrollMagic.Scene({
+    triggerElement: "#servicesOuter",
+    triggerHook: 0.1,
+    duration: "0px"
+  })
+    .setTween(bgColor)
+    .reverse(false)    
+    .addTo(controller);
 
   // end - working code
 
@@ -186,55 +172,49 @@ $(function() {
 
   /* === OUR INDUSTRIES === */
 
-  // let indColor = gsap.timeline();
-  // indColor.to('#industryInner', { autoAlpha: 0, duration: 0.001 });
-  // indColor.to('.industry-wrapper', { '--ind-bg': '#f4f4f4', duration: 1 })
-  // indColor.to('.ind-hero-title', { color: '#0c1b33', duration: 1 }, "-=1")
-  // indColor.to('.ind-hero-title', { top: '80px', fontSize: '3rem', duration: 1 })
-  // indColor.to('#industryInner', { autoAlpha: 1, duration: 0.001 });
+  let indColor = gsap.timeline();   
+  indColor.fromTo('.industry-wrapper',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 0.6 })
+  indColor.fromTo('.spacer',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 1 },'-=1')
+  indColor.fromTo('.industry-wrapper .section-title-bg',{opacity:1},{opacity:0,duration:0.1},'-=0.5')     
+  indColor.fromTo('.industry-inner',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
+  indColor.fromTo('.industry',{y:80,opacity:0},{y:0,opacity:1,stagger:0.2,duration:1});
+  indColor.fromTo('.ind-content',{y:80,opacity:0},{y:0,opacity:1,duration:0.5},'-=2')
+
+  new ScrollMagic.Scene({
+    triggerElement: "#industryMaster",
+    triggerHook: 0.17,
+    reverse: false
+  })
+    .setTween(indColor)
+    .addTo(controller);
 
   // new ScrollMagic.Scene({
   //   triggerElement: "#industryMaster",
-  //   triggerHook: 0.17,
-  //   reverse: false
+  //   triggerHook: 0.08,
+  //   duration: '50%',
   // })
-  //   .setTween(indColor)
-  //   .addTo(controller);
-
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#industryMaster",
-  //   triggerHook: 0.07,
-  //   duration: '150%',
-  // })
-  //   .setClassToggle(".side-nav", "light")
+  //  .addIndicators({name:'industry'})
   //   .setPin("#industryMaster")
   //   .addTo(controller);
 
-  // Clients scroll change side nav color
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#clients",
-  //   triggerHook: 0.02,
-  //   duration: '100%',
-  // })
-  //   .setClassToggle(".side-nav", "light")
-  //   .addTo(controller);
+ 
 
   // Industries section
 
   let industryCards = gsap.timeline();
-  $(".industry").each(function() {
+  $(".industry").each(function () {
     // $(this).removeClass('active');
     //console.log('update class')
-    setInterval(function() {
+    setInterval(function () {
       $(this).toggleClass("active");
     }, 1000);
   });
 
-  $(".industry").on("mouseenter", function() {
-    $(".industry").each(function() {
+  $(".industry").on("mouseenter", function () {
+    $(".industry").each(function () {
       $(this).removeClass("active");
     });
-    $(".ind-content").each(function() {
+    $(".ind-content").each(function () {
       $(this).removeClass("active");
     });
 
@@ -247,21 +227,8 @@ $(function() {
 
   $("#industryInner .card").each(createIndHover);
 
-  $("#servicesOuter .card").each(playBorder);
+  $("#servicesOuter .card").each(createIndHover);
   //$("#masterContainer .card").each(reverseBorder);
-
-  function playBorder(i, element) {
-    let border = gsap.timeline();
-    border.to($(this).find(".top-line"), { width: "97%", duration: 0.15 });
-    border.to($(this).find(".right-line"), { height: "97%", duration: 0.15 });
-    border.to($(this).find(".bottom-line"), { width: "97%", duration: 0.15 });
-    border.to($(this).find(".left-line"), { height: "97%", duration: 0.15 });
-    $(element).hover(doIt);
-    function doIt() {
-      border.reversed() ? border.play() : border.reverse();
-    }
-    border.reverse();
-  }
 
   function createIndHover(i, element) {
     let border = gsap.timeline();
@@ -291,171 +258,36 @@ $(function() {
     }
   });
 
-  // Who we are
-
-  // Title animation
-
-  // WORKING CODE
-  // let introColor = gsap.timeline();
-  // introColor.to('#introSlides', { autoAlpha: 0, duration: 0.001 });
-  // introColor.to('#introContainer', { '--weare-bg': '#0c1b33', duration: 1 })
-  // introColor.to('.intro-hero-title', { color: '#f4f4f4', duration: 1 }, "-=1")
-  // introColor.to('.intro-hero-title', { top: '80px', fontSize: '3rem', duration: 1 })
-  // introColor.to('#introSlides', { autoAlpha: 1, duration: 0.001 });
-
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#introContainer",
-  //   triggerHook: 0.15,
-  // })
-  //   .setTween(introColor)
-  //   .setClassToggle(".side-nav", "light")
-  //   .addTo(controller);
-
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#introContainer",
-  //   triggerHook: 0.08,
-  //   duration: '200%',
-  // })
-  //   .setClassToggle(".side-nav", "light")
-  //   .setPin("#introContainer", { pushfollowers: false })
-  //   .addTo(controller);
-
-  //let companyIntroAnimation = gsap.timeline()
-  //.to("#introSlides", { x: "-33.333%", ease: Linear.easeNone, duration: 4, delay: 2 })
-  //.to("#introSlides", { x: "-66.666%", ease: Linear.easeNone, duration: 4, delay: 2 })
-
-  // create scene to pin and link animation
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#introContainer",
-  //   triggerHook: 0.25,
-  //   duration: "100%",
-  // })
-  //   .setPin("#introContainer")
-  //   .setTween(companyIntroAnimation)
-  //   .addIndicators({name:'about',indent:5})
-  //   .addTo(controller);
-
+   
   // core values
+let coreValues = gsap.timeline();
+  coreValues.fromTo('.core-values',{'--core-value':'#ffffff'} ,{ '--core-value': '#16213d', duration: 0.6 })   
+  coreValues.fromTo('.core-values .section-title-bg',{opacity:1},{opacity:0,duration:0.1},'-=0.5')     
+  coreValues.fromTo('.core-values .wrapper',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
+  coreValues.fromTo(".core-values .title-1",{opacity:0},{opacity:1,duration:0.5})
+  coreValues.fromTo('.core-values .c-val',{autoAlpha:0,y:30},{stagger:0.1,autoAlpha:1,duration:1,y:0}) 
+  // coreValues.fromTo('.industry',{y:80,opacity:0},{y:0,opacity:1,stagger:0.2,duration:1});
+  // coreValues.fromTo('.ind-content',{y:80,opacity:0},{y:0,opacity:1,duration:0.5},'-=2')
 
-  let coreValues = gsap.timeline();
-  //coreValues.fromTo('#coreValues .core-values .card-body',{autoAlpha:0,y:30},{stagger:0.5,autoAlpha:1,duration:4,y:0,delay:2})
+  new ScrollMagic.Scene({
+    triggerElement: ".core-values",
+    triggerHook: 0.17,
+    reverse: false
+  })
+    .setTween(coreValues)
+    .addTo(controller);
 
   // new ScrollMagic.Scene({
-  //     triggerElement:'#coreValues',
-  //     triggerHook:0.5,
+  //   triggerElement: ".core-values",
+  //   triggerHook: 0.08,
+  //   duration: '50%',
   // })
-  // .setTween(coreValues)
-  // .addIndicators({name:'cvalues',colorStart:'orange',colorEnd:'orange'})
-  // .addTo(controller)
-
-  // testimonial-wrapper
-  // let testimonials = gsap.timeline();
-  // testimonials.fromTo('#testimonials .t-left', { autoAlpha: 0, x: -200 }, { stagger: 0.2, autoAlpha: 1, duration: 1, x: 0, delay: 1 })
-  // testimonials.fromTo('#testimonials .t-right', { autoAlpha: 0, x: 250 }, { stagger: 0.2, autoAlpha: 1, duration: 1, x: 0 }, "-=1")
-  // new ScrollMagic.Scene({
-  //   vertical: false,
-  //   triggerElement: '#testimonials',
-  //   triggerHook: 0.3,
-  // })
-  //   .setTween(testimonials)
-
-  //   .addTo(controller)
-
-  //  Contact us banner
-
-  // let contactButton = document.getElementById('contactButton');
-  // let contactLink = document.getElementById('contactLink');
-  //  let pocContactButton = document.getElementById("pocContact");
-  // let contactClose = document.getElementById('contactClose');
-
-  // contactLink.addEventListener('click', function (event) {
-  //   event.preventDefault();
-  //   gsap.to('.contact-wrapper', { display: 'flex', minHeight: '100%',top:0,bottom:'unset', duration: 0.5 })
-  // })
-
-  // contactButton.addEventListener('click', function (event) {
-  //   event.preventDefault();
-  //   gsap.to('.contact-wrapper', { display: 'flex', minHeight: '100%',top:0,bottom:'unset', duration: 0.5 })
-  // })
-
-  // pocContactButton.addEventListener("click", function(event) {
-  //   gsap.to(".contact-wrapper", {
-  //     display: "flex",
-  //     minHeight: "100%",
-  //     top: 0,
-  //     bottom: "unset",
-  //     duration: 0.5
-  //   });
-  // });
-
-  // contactClose.addEventListener('click', function (event) {
-  //   event.preventDefault();
-  //   gsap.to('.contact-wrapper', { display: 'none', paddingTop: '0px',bottom:'0',top:'unset' ,minHeight: '0px', duration: 0.5 })
-  // })
-
-  // services slides dot navigation
-
-  // function removeActiveClass() {
-  //   $('.s-slide-nav a').each(function () {
-  //     $(this).removeClass('active');
-  //   })
-  // }
-
-  // function addActiveClass(indicator) {
-  //   $(indicator).toggleClass('active');
-  // }
-
-  // document.getElementById('s-slide-1').addEventListener('click', function (e) {
-  //   e.preventDefault();
-  //   gsap.to("#slidesContainer", { x: "-0.01%", ease: Linear.easeNone, duration: 1, })
-  //   removeActiveClass();
-  //   addActiveClass('#s-slide-1');
-  // })
-
-  // document.getElementById('s-slide-2').addEventListener('click', function (e) {
-  //   e.preventDefault();
-  //   gsap.to("#slidesContainer", { x: "-25%", ease: Linear.easeNone, duration: 1, })
-  //   removeActiveClass();
-  //   addActiveClass('#s-slide-2');
-  // })
-
-  // document.getElementById('s-slide-3').addEventListener('click', function (e) {
-  //   e.preventDefault();
-  //   gsap.to("#slidesContainer", { x: "-50%", ease: Linear.easeNone, duration: 1, })
-  //   removeActiveClass();
-  //   addActiveClass('#s-slide-3');
-  // })
-
-  // document.getElementById('s-slide-4').addEventListener('click', function (e) {
-  //   e.preventDefault();
-  //   gsap.to("#slidesContainer", { x: "-75%", ease: Linear.easeNone, duration: 1, })
-  //   removeActiveClass();
-  //   addActiveClass('#s-slide-4');
-  // })
-
-  // end services slides dot navigation
-  //  side navigation links
-  //let controller = new ScrollMagic.Controller();
-  // controller.scrollTo(function (newpos) {
-  //     TweenMax.to(window, 1, {scrollTo: {y: newpos},duration:4, ease:Power4.easeInOut});
-  // });
-  /*
-      // side navigation part
-      $(document).on("click", ".side-nav a[href^='#']", function (e) {
-          var id = $(this).attr("href");
-          if ($(id).length > 0) {
-              e.preventDefault();       
-            slideAnimation.pause();
-            companyIntroAnimation.pause();
-              // trigger scroll
-              controller.scrollTo(id);       
-              // if supported by the browser we can even update the URL.
-              if (window.history && window.history.pushState) {
-                  //history.pushState("", document.title, id);
-              }
-          }
-      });
-      */
+  //  .addIndicators({name:'core value'})
+  //   .setPin(".core-values")
+  //   .addTo(controller);
+  
+  
+  
   // NAVBAR BACKGROUND CHANGE ON SCROLL
   const navbar = document.querySelector(".navbar");
   const homeContainer = document.querySelector("#home");
@@ -465,18 +297,12 @@ $(function() {
     rootMargin: "-60px 0px 0px 0px"
   };
 
-  const sectionOneObserver = new IntersectionObserver(function(entries) {
+  const sectionOneObserver = new IntersectionObserver(function (entries) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
-        //navbar.classList.remove("navbar-dark")
-        //navbar.classList.add("navbar-light");
-        // document.querySelector(".side-nav").classList.remove("hide");
         bannerVideo.pause();
         homeTitleCarousel.pause();
-      } else {
-        //navbar.classList.remove("navbar-light");
-        //navbar.classList.add("navbar-dark");
-        //document.querySelector(".side-nav").classList.add("hide");
+      } else { 
         bannerVideo.play();
         homeTitleCarousel.resume();
       }
@@ -485,20 +311,3 @@ $(function() {
   sectionOneObserver.observe(homeContainer);
   // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
 });
-
-// let imageOne = document.getElementById("cimg1");
-// let imageTwo = document.getElementById("cimg2");
-// imageOne.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   event.stopPropagation();
-//   document.querySelector(".contact-banner").style.backgroundImage =
-//     "url(./img/contact/saudi-1.jpg)";
-//   document.querySelector(".contact-banner").style.backgroundColor = "#01004c";
-// });
-// imageTwo.addEventListener("click", function(e) {
-//   event.preventDefault();
-//   event.stopPropagation();
-//   document.querySelector(".contact-banner").style.backgroundImage =
-//     "url(./img/contact/rsz_saudi-2.jpg)";
-//   document.querySelector(".contact-banner").style.backgroundColor = "#000f1e";
-// });

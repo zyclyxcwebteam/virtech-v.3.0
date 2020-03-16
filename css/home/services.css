@@ -1,18 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
-:root {
-  /* --service-bg:#f2f3f9;    */
-  --service-bg: #0c1b33;
+ .services-wrapper {
+   --service-bg:#16213d;    
+  background-color: var(--service-bg);
+  position: relative;
 }
 
 #serviceCarousel {
   height: 60vh;
 }
 
-.services-wrapper {
-  height: 95vh;
-  background-color: var(--service-bg);
-}
 
 .services-wrapper .services .title-card {
   height: 100%;
@@ -40,14 +35,14 @@
 }
 .services-wrapper .services .service-cards .service-title {
   font-weight: 600;
-  color: #f2f3f9;
+  color: #303030;
   text-align: left;
   font-size: 1.2rem;
 }
 .services-wrapper .service-cards .card {
   border: none;
   transition: all 0.2s ease-in;
-  background-color: hsl(217, 62%, 15%);
+  background-color: hsl(72, 100%, 95%);
   border-radius: 0px;
 }
 .services-wrapper .service-cards .card .line {
@@ -64,13 +59,13 @@
   /* opacity: 0;   */
   transition: all 0.2s ease-in;
   /* color: #b8bdc4; */
-  color: #b8bdc4;
+  color: #525252;
   font-size: 1rem;
   margin-bottom: 0;
   /* text-align: justify; */
 }
 .services-wrapper .service-cards .card:hover {
-  background-color: hsl(217, 62%, 10%);
+  background-color: hsl(72, 100%, 99%);
 }
 .services-wrapper .service-cards .card:hover .service-card-content {
   opacity: 1;
@@ -107,18 +102,63 @@
 .carousel-indicators li.active {
   background-color: #00bdd5;
 }
-
-/* ! Animation styles */
-
-/* #servicesInner{     
-    opacity: 0;  
-    height: 0%;   
-  }
-
-  .title-card-2{
+/* ! Mobile responsive for home page */
+@media (max-width: 576px) {
+  .service-card-content {
     display: none;
   }
 
-  .service-cards .col-12{
-    opacity: 0;
-  } */
+  .services-wrapper .stats-wrapper {
+    font-size: 1.4rem;
+  }
+  
+  .services-wrapper .services .title-card-2 {
+    background-image: none;
+    background-color: #16213d;
+  }
+  .services-wrapper .services .title-card .card-body {
+    padding: 0px;
+    align-items: flex-start;
+    margin-left: 1rem;
+  }
+  .services-wrapper .services .service-title {
+    color: #b8bdc4 !important;
+  }
+  .services-wrapper .services .title-card .card-title {
+    font-size: 1.5rem;
+    text-align: left !important;
+    color: #00bdd5 !important;
+    margin-bottom: 0.8rem !important;
+  }
+  .service-cards {
+    padding: 0 1rem !important;
+    display: block !important;
+  }
+  .service-cards .row > .col-12 {
+    margin: 0.2rem 0 !important;
+  }
+  #serviceCarousel {
+    height: 70vh;
+    align-items: flex-start !important;
+  }
+  #serviceCarousel .carousel-indicators {
+    padding: 0;
+    bottom: -35px;
+  }
+  #servicesOuter {
+    justify-content: flex-start !important;
+  }
+  #servicesInner {
+    align-items: flex-start !important;
+    margin: 0 !important;
+  }
+  .services-wrapper .carousel-item {
+    align-items: flex-start !important;
+  }
+}
+
+
+/* ! for gsap animation */
+.services-wrapper .title-1{
+  opacity: 0;
+}

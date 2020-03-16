@@ -8,36 +8,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="apple-touch-icon" href="icon.png" />
   <link rel="icon" href="./favicon.png" />
-  <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="./css/"> -->
+
   <meta name="theme-color" content="#fafafa" />
 
   <!-- build:css css/home.min.css -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
   <link rel="stylesheet" href="./css/shared//layout.css" />
   <link rel="stylesheet" href="./css/shared/header.css" />
   <link rel="stylesheet" href="./css/shared/footer.css" />
   <link rel="stylesheet" href="./css/shared/contact-us.css" />
-  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+
   <link rel="stylesheet" href="./css/home/home.css" />
+  <link rel="stylesheet" href="./css/home/services.css" />
+  <link rel="stylesheet" href="./css//home/poc.css" />
   <link rel="stylesheet" href="./css/home/industries.css" />
   <link rel="stylesheet" href="./css/home/core_values.css">
   <link rel="stylesheet" href="./css/shared/chat-bot.css" />
   <!-- endbuild -->
+
 </head>
 
 <body id="main">
-  <!-- <div class="loading-wrapper" id="page-loader">
+  <div class="loading-wrapper" id="page-loader">
     <div class="loading-inner">
     </div>
     <img src="./img/logo/logo.png" alt="" id="logoCenter" />
-  </div> -->
+  </div>
 
   <nav class="navbar navbar-expand-lg fixed-top master-navbar py-0" id="masterNavbar">
     <div class="container-fluid">
@@ -192,6 +190,7 @@
   </nav>
 
   <article class="scroll-wrapper" id="scrollContainer">
+    <!-- ? banner video -->
     <section class="scroll-s container-fluid home-banner" id="home">
       <div class="row home-inner h-100">
         <!-- ? titles -->
@@ -258,11 +257,13 @@
         </ul>
       </div>
     </section>
+    <!-- ? END - banner video -->
 
-    <!-- ? Our Services -->
+    <!-- ? SERVICES -->
     <section class="scroll-s services-wrapper d-flex justify-content-center align-items-center flex-column"
       id="servicesOuter">
-      <h2 class="section-title-2 title-light text-center">Services</h2>
+      <h2 class="title-1 title-dark text-center">Services</h2>
+
       <div class="align-items-center justify-content-center mt-4" id="servicesInner">
         <div id="serviceCarousel" class="d-flex align-items-center carousel slide">
           <ol class="carousel-indicators py-3 m-0">
@@ -803,9 +804,12 @@
           </div>
         </div>
       </div>
+      <h2 class="section-title-bg title-white">Services</h2>
     </section>
     <!-- ? END - SERVICES -->
-    <section class="stats-wrapper container-fluid py-5 scroll-s" id="statsCounter">
+
+    <!-- ? STATS -->
+    <section class="stats-wrapper container-fluid py-4 scroll-s" id="statsCounter">
       <div class="container py-3 stats-inner">
         <div class="row py-4">
 
@@ -836,7 +840,9 @@
 
 
     </section>
-    <!-- ? Proof of concept -->
+    <!-- ? END - STATS -->
+
+    <!-- ? POC -->
     <div class="scroll-s poc-wrapper" id="accordion">
       <div class="card container">
         <div class="card-header py-md-2" id="headingOne">
@@ -899,13 +905,16 @@
         </div>
       </div>
     </div>
-    <!-- ? END - Proof of Concept -->
+    <!-- ? END - POC -->
+
+    <!-- ! SPACE TO SEPARATE POC ARROW BUTTON FROM INDUSTRIES SECTION -->
     <div class="spacer"></div>
 
+    <!-- ? INDUSTRIES -->
     <section class="scroll-s industry-wrapper pt-3 pt-md-5" id="industryMaster">
       <!-- industry -->
       <div class="pt-2 h-100 industry-inner">
-        <h3 class="section-title-2 title-dark">Industries</h3>
+        <h3 class="title-1 title-dark">Industries</h3>
         <div class="container" id="industryInner">
           <div class="row d-flex flex-row">
             <!-- 3 cards column -->
@@ -985,7 +994,7 @@
               class="col-md-6 col-12 order-1 order-md-3 d-flex justify-content-md-center align-items-center flex-column ind-content-wrapper">
               <!-- content - 1  -->
               <div class="ind-content active" id="ind-content-1">
-                <h2>Banking Industry</h2>
+                <h2 class="title-2">Banking Industry</h2>
                 <p class="py-2 text-justify">
                   With our handy services related to banking and financial
                   software, we provide complete solutions for business that
@@ -998,7 +1007,7 @@
 
               <!-- content - 2  -->
               <div class="ind-content" id="ind-content-2">
-                <h2>Telecom Industry</h2>
+                <h2 class="title-2">Telecom Industry</h2>
                 <p class="py-md-4 py-2 mb-0">
                   Telecom industry has been successfully drawing in more revenue
                   with the help of numerous operations. Our team is providing
@@ -1011,7 +1020,7 @@
 
               <!-- content - 3  -->
               <div class="ind-content" id="ind-content-3">
-                <h2>Health Care Industry</h2>
+                <h2 class="title-2">Health Care Industry</h2>
                 <p class="py-2 text-justify">
                   Being one of the fastest growing industries, the medicinal
                   sectors need to deal with numerous advancements as well as
@@ -1025,7 +1034,7 @@
 
               <!-- content - 4  -->
               <div class="ind-content" id="ind-content-4">
-                <h2>Retail Industry</h2>
+                <h2 class="title-2">Retail Industry</h2>
                 <p class="py-2 text-justify">
                   We offer solutions for multiple levels of operational
                   methodologies continuing to grow with every customer. We help
@@ -1039,7 +1048,7 @@
 
               <!-- content - 5  -->
               <div class="ind-content" id="ind-content-5">
-                <h2>Logistics Industry</h2>
+                <h2 class="title-2">Logistics Industry</h2>
                 <p class="py-4">
                   Our team understands the constant pressure businesses have to
                   reduce overhead. We offer you valuable automation solutions
@@ -1075,10 +1084,13 @@
           </div>
         </div>
       </div>
+      <h2 class="section-title-bg title-white">Industries</h2>
     </section>
+    <!-- ? END - INDUSTRIES -->
 
+    <!-- ? CORE VALUES -->
     <section class="container-fluid core-values scroll-s">
-      <h2 class="text-center section-title-2 title-light pt-5">
+      <h2 class="text-center title-1 title-light pt-5">
         Core Values
       </h2>
       <div class="wrapper">
@@ -1170,10 +1182,13 @@
           </div>
         </div>
       </div>
+      <h2 class="section-title-bg title-dark">Core Values</h2>
     </section>
+    <!-- ? END - CORE VALUES -->
 
+    <!-- ? CLIETNS SLIDER -->
     <section id="clients" class="scroll-s container-fluid our-clients clients-wrapper">
-      <h2 class="section-title-3 text-center pt-4 pb-0 mb-0">Trusted by</h3>
+      <h2 class="title-2 text-center pt-4 pb-0 mb-0">Trusted by</h3>
         <div class="container px-0">
           <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center">
             <div class="client"><img src="./img/clients/client-1-1.png" alt="elm"></div>
@@ -1186,15 +1201,19 @@
           </div>
         </div>
     </section>
+    <!-- ? END - CLIENTS SLIDER -->
 
+    <!-- ? CONTACT BANNER -->
     <section class="contact-banner scroll-s d-flex justify-content-center align-items-center">
       <div class="banner-overlay"></div>
       <div class="banner-content d-flex flex-column align-items-center">
-        <h2 class="banner-title">Find answers to your business needs</h2>
+        <h2 class="title-1 title-white text-center px-1">Find answers to your business needs</h2>
         <button class="px-4 button button-blue mt-md-4 mt-2" id="contactButton">Contact us</button>
       </div>
     </section>
+    <!-- ? END - CONTACT BANNER -->
 
+    <!-- ? FOOTER -->
     <footer class="footer container-fluid px-3 scroll-s">
       <div class="row d-flex align-items-center justify-content-between mx-4">
         <div class="footer-info order-1 d-flex py-2 py-lg-3">
@@ -1237,134 +1256,139 @@
         </div>
       </div>
     </footer>
+    <!--? END - FOOTER -->
 
-    <section class=" contact-wrapper" id="contactMaster">
-      <div class="overlay"></div>
-      <button type="button" id="contactClose">
-        <i class="fas fa-times"></i>
-      </button>
 
-      <div
-        class="container d-flex justify-content-start justify-content-md-around align-items-center flex-column contact-inner">
-        <div class="row d-flex justify-content-between mt-4 mt-md-5">
-          <div class="col-md-6 col-12 contact-form order-2 order-md-1">
-            <div class="container">
-              <form id="contactForm" class="needs-validation" novalidate>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="validationCustom01">
-                        Name <span>*</span></label>
-                      <input type="text" class="form-control" name="firstname" id="validationCustom01"
-                        pattern="[a-zA-Z0-9\s]{2,30}" maxlength="30" placeholder="Enter your name" autocomplete="off"
-                        required />
-                      <div class="invalid-feedback">
-                        Please enter valid name
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="email"> Email-ID <span>*</span></label>
-                      <input type="email" class="form-control" name="email" autocomplete="off"
-                        placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
-                      <div class="invalid-feedback">
-                        Please enter valid email
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="phone">
-                        Contact Number <span>*</span></label>
-                      <input type="tel" class="form-control" name="phone" id="phone" pattern="^[0-9]{3,12}$"
-                        maxlength="12" placeholder="Enter your contact number" autocomplete="off" required />
-                      <div class="invalid-feedback">
-                        Please enter valid phone number
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="message">Subject <span>*</span></label>
-                      <textarea class="form-control" name="message" id="message" maxlength="300"
-                        placeholder="Your message here.." required></textarea>
-
-                      <div class="invalid-feedback">
-                        Please write a message
-                      </div>
-                    </div>
-                  </div>
-                  <button type="submit" class="button button-blue px-5 mx-auto" id="contactSubmit">
-                    Submit
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-5 col-12 d-flex justify-content-center flex-column order-1 order-md-2">
-            <h2 class="text-center contact-title">Get in touch</h2>
-            <p class="text-center contact-caption">
-              We are happy to assist you with your queries
-            </p>
-          </div>
-        </div>
-
-        <div class="container contact-info px-0 mb-2 d-none d-md-block">
-          <div class="row mx-auto d-flex justify-content-between align-items-center ">
-            <address class="col-md-3 col-12">
-              <a class="location"
-                href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-                Virtech Technologies, Riyadh, <br />
-                PO Box - 23754, K.S.A - 11611.
-              </a>
-            </address>
-            <div class="col text-center">
-              <a class="phone col-md-3 col-6" href="tel:+966552357583">
-                (+966) 552 357 583
-              </a>
-            </div>
-
-            <div class="col-md-3 col-6 text-center">
-              <a class="mail col" href="mailto:info@virtech-ksa.com">
-                info@virtech-ksa.com
-              </a>
-            </div>
-
-            <div class="col-md-3 col-6">
-              <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
-                <li>
-                  <a href="#" class="icoFacebook" title="Facebook">
-                    <i class="fab fa-facebook-f fa-fw"> </i></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
-                      class="fab fa-twitter fa-fw"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="icoTwitter" title="Instagram">
-                    <i class="fab fa-instagram fa-fw"> </i></a>
-                </li>
-                <li>
-                  <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
-                      class="fab fa-linkedin-in fa-fw"> </i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="status-alert" id="formStatus">
-        <p><i class="fas fa-check"></i></p>
-        <h4 class="text-center">Thank you for contacting us!</h4>
-        <p>We will get in touch with you soon</p>
-      </div>
-    </section>
   </article>
 
+  <!-- ? CONTACT FORM -->
+  <section class=" contact-wrapper" id="contactMaster">
+    <div class="overlay"></div>
+    <button type="button" id="contactClose">
+      <i class="fas fa-times"></i>
+    </button>
 
-  <!-- === CHAT-BOT === -->
+    <div
+      class="container d-flex justify-content-start justify-content-md-around align-items-center flex-column contact-inner">
+      <div class="row d-flex justify-content-between mt-4 mt-md-5">
+        <div class="col-md-6 col-12 contact-form order-2 order-md-1">
+          <div class="container">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="validationCustom01">
+                      Name <span>*</span></label>
+                    <input type="text" class="form-control" name="firstname" id="validationCustom01"
+                      pattern="[a-zA-Z0-9\s]{2,30}" maxlength="30" placeholder="Enter your name" autocomplete="off"
+                      required />
+                    <div class="invalid-feedback">
+                      Please enter valid name
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="email"> Email-ID <span>*</span></label>
+                    <input type="email" class="form-control" name="email" autocomplete="off"
+                      placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
+                    <div class="invalid-feedback">
+                      Please enter valid email
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="phone">
+                      Contact Number <span>*</span></label>
+                    <input type="tel" class="form-control" name="phone" id="phone" pattern="^[0-9]{3,12}$"
+                      maxlength="12" placeholder="Enter your contact number" autocomplete="off" required />
+                    <div class="invalid-feedback">
+                      Please enter valid phone number
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message">Subject <span>*</span></label>
+                    <textarea class="form-control" name="message" id="message" maxlength="300"
+                      placeholder="Your message here.." required></textarea>
+
+                    <div class="invalid-feedback">
+                      Please write a message
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="button button-blue px-5 mx-auto" id="contactSubmit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5 col-12 d-flex justify-content-center flex-column order-1 order-md-2">
+          <h2 class="text-center contact-title">Get in touch</h2>
+          <p class="text-center contact-caption">
+            We are happy to assist you with your queries
+          </p>
+        </div>
+      </div>
+
+      <div class="container contact-info px-0 mb-2 d-none d-md-block">
+        <div class="row mx-auto d-flex justify-content-between align-items-center ">
+          <address class="col-md-3 col-12">
+            <a class="location"
+              href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+              Virtech Technologies, Riyadh, <br />
+              PO Box - 23754, K.S.A - 11611.
+            </a>
+          </address>
+          <div class="col text-center">
+            <a class="phone col-md-3 col-6" href="tel:+966552357583">
+              (+966) 552 357 583
+            </a>
+          </div>
+
+          <div class="col-md-3 col-6 text-center">
+            <a class="mail col" href="mailto:info@virtech-ksa.com">
+              info@virtech-ksa.com
+            </a>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
+              <li>
+                <a href="#" class="icoFacebook" title="Facebook">
+                  <i class="fab fa-facebook-f fa-fw"> </i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                    class="fab fa-twitter fa-fw"></i></a>
+              </li>
+              <li>
+                <a href="#" class="icoTwitter" title="Instagram">
+                  <i class="fab fa-instagram fa-fw"> </i></a>
+              </li>
+              <li>
+                <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                    class="fab fa-linkedin-in fa-fw"> </i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-alert" id="formStatus">
+      <p><i class="fas fa-check"></i></p>
+      <h4 class="text-center">Thank you for contacting us!</h4>
+      <p>We will get in touch with you soon</p>
+    </div>
+  </section>
+  <!-- ? END - CONTACT FORM -->
+
+
+  <!-- ? CHAT BOT -->
   <button type="button" class="btn btn-rounded text-center bot" id="chat" style="margin-right: 2rem;" aria-label="chat"
     onclick="show(1)">
     <svg height="30" width="30" aria-hidden="true" data-prefix="fab" data-icon="rocketchat"
@@ -1417,7 +1441,7 @@
       </div>
     </div>
   </div>
-  <!-- === END - CHAT-BOT === -->
+  <!-- ? END - CHAT BOT -->
 
   <!-- <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"

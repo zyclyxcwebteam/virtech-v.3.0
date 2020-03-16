@@ -21,7 +21,8 @@ function complete() {
 }
 
 // count();
-let controller = new ScrollMagic.Controller({container:'#scrollContainer'});
+let controller = new ScrollMagic.Controller();
+
 new ScrollMagic.Scene({
     triggerElement: "#statsCounter",
     triggerHook: 0.8
@@ -30,6 +31,6 @@ new ScrollMagic.Scene({
         count()
     })
     .reverse(false)   
-    .addIndicators({ name: "counter" })     
+    //.addIndicators({ name: "counter" })     
     .addTo(controller);
 

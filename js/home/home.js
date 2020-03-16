@@ -35,56 +35,6 @@ function startTitleCarousel(){
     homeTitleCarousel.to('#title-3',{y:-700,display:'none',opacity:0,duration:1,delay:5})
     
     homeTitleCarousel.fromTo('#title-4',{display:'none',opacity:0.7,x:150,y:80},{display:'block',opacity:1,x:150,y:0,duration:2})
-    homeTitleCarousel.to('#title-4',{y:-700,display:'none',opacity:0,duration:1,delay:5}) 
-    
+    homeTitleCarousel.to('#title-4',{y:-700,display:'none',opacity:0,duration:1,delay:5})     
 } 
-
-//  side navigation links
-let controller = new ScrollMagic.Controller();
-controller.scrollTo(function (newpos) {
-    TweenMax.to(window, 1, {scrollTo: {y: newpos}, ease:Power4.easeInOut});
-});
-
-
-$(document).on("click", ".side-nav a[href^='#']", function (e) {
-    var id = $(this).attr("href");
-    if ($(id).length > 0) {
-        e.preventDefault();
- 
-        // trigger scroll
-        controller.scrollTo(id);
- 
-        // if supported by the browser we can even update the URL.
-        if (window.history && window.history.pushState) {
-            history.pushState("", document.title, id);
-        }
-    }
-});
-
-let contactButton = document.getElementById('contactButton');
-let contactLink = document.getElementById('contactLink');
-let pocButton = document.getElementById('pocContact');
-let contactClose = document.getElementById('contactClose');
- 
-contactLink.addEventListener('click',function(event){
-  event.preventDefault();
-  gsap.to('.contact-wrapper',{display:'block',height:'100vh',duration:0.5})    
-})
-
-contactButton.addEventListener('click',function(event){
-event.preventDefault();
-gsap.to('.contact-wrapper',{display:'block',height:'100vh',duration:0.5})    
-})
-
-
-pocButton.addEventListener('click',function(event){
-    event.preventDefault();
-    gsap.to('.contact-wrapper',{display:'block',height:'100vh',duration:0.5})    
-    })
-
-contactClose.addEventListener('click',function(event){
-event.preventDefault();
-gsap.to('#contactModal',{display:'none',height:'0px',duration:0.5})
-})
-
 })
