@@ -7,13 +7,18 @@
 }
 
 .rpa-overview {
-  background-color: #213154;
+  background-color: #16213d;
 }
 .rpa-banner.service-banner::after {
   background-image: linear-gradient(
     to top,
     #213154 1%,
     rgba(33, 49, 84, 0.2) 100%
+  );
+    background-image: linear-gradient(
+    to top,
+    #16213d 1%,
+    rgba(22, 33, 61,0.2) 100%
   );
 }
 
@@ -24,12 +29,18 @@
 
 .ai-overview {
   background-color: #02425b;
+  background-color: #16213d;
 }
 .ai-banner.service-banner::after {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to top,
     #02425b 1%,
     rgba(2, 66, 91, 0.3) 100%
+  ); */
+    background-image: linear-gradient(
+    to top,
+    #16213d 1%,
+    rgba(22, 33, 61,0.25) 100%
   );
 }
 
@@ -47,8 +58,9 @@
   background-image: linear-gradient(to top, #011439 2%, transparent 100%);
 }
 .iot-banner {
-  background-image: url("../../img/iot/img-1.jpg");
+  background-image: url("../../img/iot/img-2.jpg");
   /* background-position:; */
+      background-position: 0px -70px;
 }
 .iot-overview {
   background-color: #01163c;
@@ -57,7 +69,7 @@
   background-image: linear-gradient(to top, #01163c 2%, transparent 100%);
 }
 .swd-banner {
-  background-image: url("../../img/software/img-2.jpg");
+  background-image: url("../../img/software/img-1.jpg");
   background-size: cover;
   background-position: top center;
 }
@@ -109,17 +121,17 @@
 }
 
 .cs-banner {
-  background-image: url("../../img/cyber-security/img-1.jpg");
+  background-image: url("../../img/cyber-security/img-3.jpg");
   background-position: center;
 }
 .cs-overview {
-  background-color: #013c60;
+  background-color: #16213d;
 }
 
 .cs-banner.service-banner::after {
   background-image: linear-gradient(
     to top,
-    #013d61 1%,
+    #16213d 1%,
     transparent,
     transparent 100%
   );
@@ -143,7 +155,7 @@
 }
 
 .dvis-banner {
-  background-image: url("../../img/datavis/img-1.jpg");
+  background-image: url("../../img/datavis/img-2.jpg");
   background-position: center;
 }
 .dvis-overview {
@@ -171,7 +183,7 @@
 }
 
 .dcenter-banner {
-  background-image: url("../../img/datacenter/img-1.jpg");
+  background-image: url("../../img/datacenter/img-2.jpg");
 }
 .dcenter-overview {
   background-color: #013c60;
@@ -182,7 +194,7 @@
 }
 
 .ns-banner {
-  background-image: url("../../img/network-security/img-1.jpg");
+  background-image: url("../../img/network-security/img-2.jpg");
   background-position: center center;
 }
 .ns-overview {
@@ -203,7 +215,7 @@
   background-image: linear-gradient(to top, #013d61 1%, transparent 100%);
 }
 .eu-banner {
-  background-image: url("../../img/endusercomputing/img-1.jpg");
+  background-image: url("../../img/endusercomputing/img-3.jpg");
   background-position: center;
 }
 .eu-overview {
@@ -215,8 +227,8 @@
 }
 
 .app-sec-banner {
-  background-image: url("../../img/app_security/img-1.jpg");
-  background-position: center center;
+  background-image: url("../../img/app_security/img-3.jpg");
+  background-position: center center;   
 }
 
 .app-sec-banner.service-banner::after {
@@ -271,7 +283,7 @@
 
 .infra-banner {
   background-color: #013c60;
-  background-image: url("../../img/infra/img-1.jpg");
+  background-image: url("../../img/infra/img-3.jpg");
   background-position: top;
 }
 
@@ -284,7 +296,7 @@
 
 .outs-banner {
   background-color: #013c60;
-  background-image: url("../../img/outs/img-1.jpg");
+  background-image: url("../../img/outs/img-5.jpg");
   background-position: center;
 }
 

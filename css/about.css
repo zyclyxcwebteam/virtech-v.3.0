@@ -304,8 +304,9 @@
     }
     
     .sm-how-we-do {
+      display: block !important;
       background-color: #0c1b33;
-      height: 100vh;
+      padding-bottom: 3rem; 
     }
     .sm-icon img{
       width: 50px;
@@ -404,8 +405,7 @@
     }
     
     .sm-how-we-do {
-      background-color: #0c1b33;
-      height: 180vh;
+      background-color: #0c1b33; 
     }
     .sm-icon img{
       width: 50px;

@@ -121,7 +121,7 @@
 
 /* description - icon */
 .details-wrapper {
-  background: #f9f9f9 !important;
+  background: #ffffff;
 }
 .details .title-3 {
   color: #0c1b33;
@@ -179,7 +179,7 @@
     z-index: 999;
     min-height: 100vh;
     overflow-y: auto; */
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 #appForm .applyForm {
@@ -203,9 +203,9 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 24px;
-  padding: 40px;
+  padding: 35px 10px;
   color: #04a7bd;
-  /* background: #0b101b; */
+  background: #f5f6f6 !important;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -218,8 +218,9 @@
   border: none;
   display: flex;
   align-items: center;
+  background-color: #f5f6f6 !important;
   /* color: rgba(255, 255, 255, 0.377) !important; */
-  padding: 40px;
+  padding: 35px;
   height: 0px;
   overflow: hidden;
 }
@@ -413,9 +414,9 @@
   .title .btnRes {
     margin-bottom: 2rem !important;
   }
-  .details {
+  /* .details {
     padding: 10px 40px;
-  }
+  } */
 }
 
 /* Small devices (landscape phones, less than 768px) */

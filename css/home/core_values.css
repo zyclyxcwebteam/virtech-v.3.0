@@ -174,35 +174,35 @@
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   .c-val-1 {
-    left: 20px;
+    left: 12%;
     bottom: 10px;
     justify-content: flex-end;
   }
 
   .c-val-2 {
-    left: 90px;
+    left: 15%;
     bottom: 188px;
     justify-content: flex-end;
   }
 
   .c-val-3 {
-    left: 265px;
+    left: 25%;
     bottom: 304px;
     justify-content: flex-end;
   }
 
   .c-val-4 {
-    right: 89px;
+    right:15%;
     bottom: 188px;
   }
 
   .c-val-5 {
-    right: 285px;
+    right:25%;
     bottom: 309px;
   }
 
   .c-val-6 {
-    right: 3px;
+    right: 12%;
     bottom: 10px;
   }
 }

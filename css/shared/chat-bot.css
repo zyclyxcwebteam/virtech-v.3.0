@@ -103,9 +103,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0px;
-  right: 0;
-  margin: 10px !important;
+  bottom: 10px;
+  right: 10px;
+ 
 
   cursor: pointer;
   box-shadow: 0 0 0 0.4em transparent;
@@ -175,7 +175,12 @@
 }
 
 /* ==== Media Queries ====*/
-
+@media (max-width: 576px) {
+  .bot {
+    position: absolute;
+    bottom: 156px;
+  }
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 425px) {
   .chat-bot .card {

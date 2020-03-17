@@ -61,6 +61,7 @@ body {
   scroll-behavior: smooth;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;   
+    position: relative;
 }
 
 .banner-title-1,
@@ -99,10 +100,11 @@ body {
   transform: translate(-50%,-50%);
   z-index: 1;
 }
-/* .title-1, .title-2, .title-3{
-  font-weight: 500;
-  letter-spacing: 2px;
-} */
+ 
+.title-1, .title-2, .title-3{
+  font-weight: 400; 
+}
+ 
 .title-1 { 
   font-size: 3rem;   
 }
@@ -163,7 +165,7 @@ body {
   border-radius: 2em;
   box-sizing: border-box;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   text-align: center;
   transition: all 0.2s;
@@ -207,6 +209,8 @@ body {
 }
 .button-dark:hover {
   border: 0.16em solid #f2f3f9;
+  color: hsl(217, 62%, 75%);
+  text-decoration: none;
 }
 @media (max-width: 576px) {
   .banner-title-1 {
