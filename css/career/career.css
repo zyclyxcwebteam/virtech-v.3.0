@@ -52,12 +52,13 @@
 
 .career-points {
   background-color: #16213d;
-  color: #b8bdc4;
+ 
 }
 .career-points .hero-text {
   font-size: 1.4rem;
   font-weight: 500;
   margin-left: 24px;
+   color: hsl(217, 62%, 75%);
 }
 .career-points ul {
   padding: 0;
@@ -66,6 +67,7 @@
   font-size: 1.2rem;
   margin: 1.2rem 1rem;
   list-style-type: none;
+   color: hsl(217, 62%, 82%);
 }
 .career-points ul li .fas {
   margin-right: 5px;
@@ -109,18 +111,6 @@
   transition: 0.3s all ease-out;
 }
 
-/* .career-card .career-btn {
-  display: none;
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1rem;
-  padding: 0.5rem 1.6rem;
-  border-radius: 2rem;
-  background-color: hsl(188, 81%, 51%);
-  transition: 0.3s all ease-out;
-} */
 .career-card .career-btn {
   display: none;
   position: absolute;
@@ -128,7 +118,6 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
-  border: 0.16em solid hsl(187, 100%, 32%);
 }
 .career-card:hover .career-btn {
   display: inline-block;
@@ -137,12 +126,7 @@
   text-decoration: none;
 }
 
-.career-card .career-btn:hover {
-  font-weight: 600;
-  background-color: hsl(188, 69%, 55%);
-  transition: 0.3s all ease-out;
-  border: 0.16em solid hsl(217, 62%, 18%) !important;
-}
+ 
 
 .openings-wrapper {
   background-color: #f9f9f9;
@@ -177,13 +161,11 @@
   background-color: rgba(36, 174, 195, 1) !important;
   transition: 0.3s all ease-out;
 }
-/* TODO - check it  */
-.contact-banner {
-  display: none;
+ 
+.career-enquiry{
+  background-color: #00bdd5;
+
 }
-
-
-
 @media (max-width: 576px) {
   .career-title {
     font-size: 2.3rem;

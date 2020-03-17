@@ -42,7 +42,7 @@
 .services-wrapper .service-cards .card {
   border: none;
   transition: all 0.2s ease-in;
-  background-color:hsl(223, 47%, 12%);
+  background-color:#0c1b33;
   border-radius: 0px;
 }
 .services-wrapper .service-cards .card .line {
@@ -65,7 +65,7 @@
   /* text-align: justify; */
 }
 .services-wrapper .service-cards .card:hover {
-  background-color:hsl(223, 47%, 20%);
+  background-color:rgba(10, 10, 10, 0.2);
 }
 .services-wrapper .service-cards .card:hover .service-card-content {
   opacity: 1;
@@ -112,6 +112,10 @@
     font-size: 1.4rem;
   }
   
+  .services-wrapper .title-1{   
+  padding: 1rem 0;
+}
+
   .services-wrapper .services .title-card-2 {
     background-image: none;
     background-color: #16213d;
@@ -143,7 +147,7 @@
   }
   #serviceCarousel .carousel-indicators {
     padding: 0;
-    bottom: -35px;
+    bottom: -50px;
   }
   #servicesOuter {
     justify-content: flex-start !important;
@@ -161,4 +165,5 @@
 /* ! for gsap animation */
 .services-wrapper .title-1{
   opacity: 0;
+  padding: 1rem 0;
 }

@@ -199,9 +199,16 @@
 }
 .invalid-feedback {
   margin: 0;
-  font-size: 60%;
+  font-size: 80%;
 }
-
+  .invalid-feedback {
+    display:block !important;
+    opacity: 0 !important;
+ 
+}
+.is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip {
+    opacity: 1 !important;
+}
 /* ============================================
                   NEW
             -----------------*/
@@ -221,8 +228,10 @@
   }
 
   #contactClose {
-    top: 0;
-    right: 0;
+    top: 2px;
+    right: 2px;
+        height: 50px;
+    width: 50px;
   }
   .contact-title {
     font-size: 2.2rem !important;
@@ -231,7 +240,7 @@
     font-size: 1rem !important;
   }
   .contact-wrapper .form-group {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.2rem !important;
   }
   .contact-wrapper label {
     font-size: 14px;

@@ -39,7 +39,7 @@
   let responsibilitiesElement = document.getElementById('responsibilities');
    
   let jobtitle=document.getElementById('jobtitle');
-  let description=document.getElementById('description');
+  // let description=document.getElementById('description');
   let minqualifications=document.getElementById('qualifications');
   let location=document.getElementById('location');
    
@@ -64,7 +64,7 @@
   minqualifications.innerHTML = qualifyhtml;
   
   //job description 
-    description.textContent=data.description;
+   // description.textContent=data.description;
    jobtitle.textContent= data.title;
   title - data.title;
     // responsibilities

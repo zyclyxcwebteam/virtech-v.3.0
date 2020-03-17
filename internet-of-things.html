@@ -1,452 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="./favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <title>Internet of Things</title>
-    <link rel="stylesheet" href="./css/shared/layout.css" />
-    <link rel="stylesheet" href="./css/shared/header.css" />
-    <link rel="stylesheet" href="./css/shared/footer.css" />
-    <link rel="stylesheet" href="./css/services/service-page.css" />
-    <link rel="stylesheet" href="./css/shared/contact-us.css" />
-    <link rel="stylesheet" href="./css/services/rpa.css" />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/shared/chat-bot.css" />
-  </head>
 
-  <body>
-    <!-- ! header navbar-->
-    <!-- TODO: hide header on scroll down, show on scroll up -->
-    <nav
-      class="navbar navbar-expand-lg fixed-top master-navbar py-0"
-      id="masterNavbar"
-    >
-      <div class="container-fluid">
-        <a href="./" class="navbar-brand ml-2 py-2"
-          ><img src="./img/logo/logo.png" alt="Virtech" id="masterLogo"
-        /></a>
-        <button
-          type="button"
-          class="navbar-toggler hamburger hamburger--squeeze is-active"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <title>Internet of Things</title>
+  <link rel="stylesheet" href="./css/shared/layout.css" />
+  <link rel="stylesheet" href="./css/shared/header.css" />
+  <link rel="stylesheet" href="./css/shared/footer.css" />
+  <link rel="stylesheet" href="./css/services/service-page.css" />
+  <link rel="stylesheet" href="./css/shared/contact-us.css" />
+  <link rel="stylesheet" href="./css/services/rpa.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/shared/chat-bot.css" />
+</head>
 
-        <div id="navbarContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto mr-2">
-            <!--  Home -->
+<body>
+  <!-- ! header navbar-->
+  <!-- TODO: hide header on scroll down, show on scroll up -->
+  <nav class="navbar navbar-expand-lg fixed-top master-navbar py-0" id="masterNavbar">
+    <div class="container-fluid">
+      <a href="./" class="navbar-brand ml-2 py-2"><img src="./img/logo/logo.png" alt="Virtech" id="masterLogo" /></a>
+      <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
+        data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
-            <li class="nav-item active">
-              <a class="nav-link" href="./"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto mr-2">
+          <!--  Home -->
 
-            <!-- Services -->
-            <li class="nav-item dropdown">
-              <a
-                id="serviceDropDown"
-                href="#"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                class="nav-link dropdown-toggle"
-                >Services</a
-              >
+          <li class="nav-item active">
+            <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+          </li>
 
-              <ul
-                aria-labelledby="serviceDropDown"
-                class="dropdown-menu service-dropdown border-0"
-              >
-                <!-- ! New Age Technologies -->
-                <li class="dropdown-submenu dropright">
-                  <a
-                    id="newAgeDropDown"
-                    href="#"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    class="dropdown-item dropdown-toggle"
-                    >New Age Technologies</a
-                  >
-                  <ul
-                    aria-labelledby="newAgeDropDown"
-                    class="dropdown-menu border-0"
-                  >
-                    <li>
-                      <a
-                        tabindex="-1"
-                        href="./robotic-process-automation.html"
-                        class="dropdown-item"
-                        >RPA</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="./artificial-intelligence.html"
-                        class="dropdown-item"
-                        >Artificial Intelligence</a
-                      >
-                    </li>
-                    <li>
-                      <a href="./blockchain.html" class="dropdown-item"
-                        >Blockchain</a
-                      >
-                    </li>
-                    <li>
-                      <a href="./internet-of-things.html" class="dropdown-item"
-                        >Internet of Things</a
-                      >
-                    </li>
-                    <li>
-                      <a href="./bigdata.html" class="dropdown-item"
-                        >Big Data</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+          <!-- Services -->
+          <li class="nav-item dropdown">
+            <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              class="nav-link dropdown-toggle">Services</a>
 
-                <!-- ! Security Services -->
-                <li class="dropdown-submenu dropright">
-                  <a
-                    id="securityDropDown"
-                    href="#"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    class="dropdown-item dropdown-toggle"
-                    >Security Services</a
-                  >
-                  <ul
-                    aria-labelledby="securityDropDown"
-                    class="dropdown-menu border-0"
-                  >
-                    <li>
-                      <a
-                        href="./network-and-security.html"
-                        class="dropdown-item"
-                        >Network Security</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        tabindex="-1"
-                        href="./cyber-security.html"
-                        class="dropdown-item"
-                        >Cyber Security</a
-                      >
-                    </li>
+            <ul aria-labelledby="serviceDropDown" class="dropdown-menu service-dropdown border-0">
+              <!-- ! New Age Technologies -->
+              <li class="dropdown-submenu dropright">
+                <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">New Age Technologies</a>
+                <ul aria-labelledby="newAgeDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./robotic-process-automation.html" class="dropdown-item">RPA</a>
+                  </li>
+                  <li>
+                    <a href="./artificial-intelligence.html" class="dropdown-item">Artificial Intelligence</a>
+                  </li>
+                  <li>
+                    <a href="./blockchain.html" class="dropdown-item">Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="./internet-of-things.html" class="dropdown-item">Internet of Things</a>
+                  </li>
+                  <li>
+                    <a href="./bigdata.html" class="dropdown-item">Big Data</a>
+                  </li>
+                </ul>
+              </li>
 
-                    <li>
-                      <a
-                        href="./application_and_data_security.html"
-                        class="dropdown-item"
-                        >Application & Data Security</a
-                      >
-                    </li>
+              <!-- ! Security Services -->
+              <li class="dropdown-submenu dropright">
+                <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
+                <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber Security</a>
+                  </li>
 
-                    <li>
-                      <a
-                        href="./governance-and-compliance.html"
-                        class="dropdown-item"
-                        >Governance & Compliance</a
-                      >
-                    </li>
+                  <li>
+                    <a href="./application_and_data_security.html" class="dropdown-item">Application & Data Security</a>
+                  </li>
 
-                    <li>
-                      <a
-                        href="./endpoint-mobile-security.html"
-                        class="dropdown-item"
-                        >Endpoint & Mobile Security</a
-                      >
-                    </li>
+                  <li>
+                    <a href="./governance-and-compliance.html" class="dropdown-item">Governance & Compliance</a>
+                  </li>
 
-                    <li>
-                      <a
-                        href="./identity_and_access_management.html"
-                        class="dropdown-item"
-                        >Identity & Access Management</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+                  <li>
+                    <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint & Mobile Security</a>
+                  </li>
 
-                <!-- ! Application Devlopment -->
-                <li class="dropdown-submenu dropright">
-                  <a
-                    id="appDropDown"
-                    href="#"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    class="dropdown-item dropdown-toggle"
-                    >Application Development</a
-                  >
-                  <ul
-                    aria-labelledby="appDropDown"
-                    class="dropdown-menu border-0"
-                  >
-                    <li>
-                      <a
-                        tabindex="-1"
-                        href="./software-development.html"
-                        class="dropdown-item"
-                        >Software Development</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="./mobile-app-development.html"
-                        class="dropdown-item"
-                        >Mobile App Development</a
-                      >
-                    </li>
-                    <li>
-                      <a href="./web-development.html" class="dropdown-item"
-                        >Web Development</a
-                      >
-                    </li>
-                    <li>
-                      <a href="./digital-marketing.html" class="dropdown-item"
-                        >Digital Marketing</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+                  <li>
+                    <a href="./identity_and_access_management.html" class="dropdown-item">Identity & Access
+                      Management</a>
+                  </li>
+                </ul>
+              </li>
 
-                <!-- ! BI Solutions -->
-                <li class="dropdown-submenu dropright">
-                  <a
-                    id="biDropDown"
-                    href="#"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    class="dropdown-item dropdown-toggle"
-                    >BI Solutions</a
-                  >
-                  <ul
-                    aria-labelledby="biDropDown"
-                    class="dropdown-menu border-0"
-                  >
-                    <li>
-                      <a
-                        tabindex="-1"
-                        href="./data-visualization.html"
-                        class="dropdown-item"
-                        >Data Visualization</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="./predictive-analytics.html"
-                        class="dropdown-item"
-                        >Predictive Analysis</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+              <!-- ! Application Devlopment -->
+              <li class="dropdown-submenu dropright">
+                <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">Application Development</a>
+                <ul aria-labelledby="appDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./software-development.html" class="dropdown-item">Software Development</a>
+                  </li>
+                  <li>
+                    <a href="./mobile-app-development.html" class="dropdown-item">Mobile App Development</a>
+                  </li>
+                  <li>
+                    <a href="./web-development.html" class="dropdown-item">Web Development</a>
+                  </li>
+                  <li>
+                    <a href="./digital-marketing.html" class="dropdown-item">Digital Marketing</a>
+                  </li>
+                </ul>
+              </li>
 
-                <!-- ! Infrastructure Services -->
-                <li class="dropdown-submenu dropright">
-                  <a
-                    id="infraDropDown"
-                    href="#"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    class="dropdown-item dropdown-toggle"
-                    >Infrastructure Services</a
-                  >
-                  <ul
-                    aria-labelledby="infraDropDown"
-                    class="dropdown-menu border-0"
-                  >
-                    <li>
-                      <a
-                        tabindex="-1"
-                        href="./data-center-services.html"
-                        class="dropdown-item"
-                        >Data Center Services</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="./system-infrastructure.html"
-                        class="dropdown-item"
-                        >System Infrastructure</a
-                      >
-                    </li>
-                    <li>
-                      <a href="./end-user-computing.html" class="dropdown-item"
-                        >End User Computing</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+              <!-- ! BI Solutions -->
+              <li class="dropdown-submenu dropright">
+                <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">BI Solutions</a>
+                <ul aria-labelledby="biDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./data-visualization.html" class="dropdown-item">Data Visualization</a>
+                  </li>
+                  <li>
+                    <a href="./predictive-analytics.html" class="dropdown-item">Predictive Analysis</a>
+                  </li>
+                </ul>
+              </li>
 
-                <!-- ! Outsourcing Services -->
-                <li class="nav-item">
-                  <a href="./oursourcing-service.html" class="dropdown-item"
-                    >Outsourcing Services</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <!-- End Level one -->
+              <!-- ! Infrastructure Services -->
+              <li class="dropdown-submenu dropright">
+                <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructure Services</a>
+                <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
+                  <li>
+                    <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data Center Services</a>
+                  </li>
+                  <li>
+                    <a href="./system-infrastructure.html" class="dropdown-item">System Infrastructure</a>
+                  </li>
+                  <li>
+                    <a href="./end-user-computing.html" class="dropdown-item">End User Computing</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li class="nav-item">
-              <a href="./about.html" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="./careers.html" class="nav-link">Careers</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link" id="contactLink">Contact</a>
-            </li>
-          </ul>
-        </div>
+              <!-- ! Outsourcing Services -->
+              <li class="nav-item">
+                <a href="./oursourcing-service.html" class="dropdown-item">Outsourcing Services</a>
+              </li>
+            </ul>
+          </li>
+          <!-- End Level one -->
+
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./careers.html" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="contactLink">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <section class="container-fluid service-banner iot-banner">
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-      </ul>
-      <div
-        class="row banner-title d-flex justify-content-center align-items-end flex-column h-100 mx-auto px-2"
-      >
-        <div class="col-md-6 col-12 text-center">
-          <h2 class="service-name">Internet of Things</h2>
-          <h3 class="service-tagline">
-            Building solutions for complex connections
-          </h3>
-        </div>
+    </div>
+  </nav>
+  <section class="container-fluid service-banner iot-banner">
+    <ul class="image-list">
+      <li><a href="#" id="img1">Image-1</a></li>
+      <li><a href="#" id="img2">Image-2</a></li>
+      <li><a href="#" id="img3">Image-3</a></li>
+    </ul>
+    <div class="row banner-title d-flex justify-content-center align-items-end flex-column h-100 mx-auto px-2">
+      <div class="col-md-6 col-12 text-center">
+        <h2 class="service-name">Internet of Things</h2>
+        <h3 class="service-tagline">
+          Building solutions for complex connections
+        </h3>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section
-      class="container-fluid service-overview iot-overview"
-      id="serviceOverview"
-    >
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 pl-5 py-3">
-          <p>
-            The Internet of Things includes a sensor, electronics or software
-            that is connected to the internet and can be utilized remotely. Our
-            team of IoT developers creates Unique Identifiers (UIDs), which help
-            the devices to connect thus giving them the ability to transfer data
-            over a network without human-to-computer and human-to-human
-            interaction. IoT devices offer us the opportunity to be more
-            efficient in how we do things, saving us time, money and often
-            emissions in the process. It is being used for Smart
-            devices/appliances, Smart cities, self-driving cars, Farming and
-            more.
-          </p>
-        </div>
+  <section class="container-fluid service-overview iot-overview" id="serviceOverview">
+    <div class="row d-flex justify-content-center py-3">
+      <div class="col-md-9 col-12 pl-5 py-3">
+        <p>
+          The Internet of Things includes a sensor, electronics or software
+          that is connected to the internet and can be utilized remotely. Our
+          team of IoT developers creates Unique Identifiers (UIDs), which help
+          the devices to connect thus giving them the ability to transfer data
+          over a network without human-to-computer and human-to-human
+          interaction. IoT devices offer us the opportunity to be more
+          efficient in how we do things, saving us time, money and often
+          emissions in the process. It is being used for Smart
+          devices/appliances, Smart cities, self-driving cars, Farming and
+          more.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="container-fluid service-content py-4" id="serviceContent">
-      <h2 class="text-center py-2 service-section-title">
-        We are making connectivity easier
-      </h2>
-      <div class="row">
-        <div class="col-md-9 col-12 mx-auto">
-          <div class="row service-content-cards d-flex justify-content-start">
-            <!-- col - 1 -->
-            <div class="col-md-9 col-12 my-4">
-              <div class="row d-flex flex-column flex-md-row">
-                <div
-                  class="col-2 pr-0 d-flex justify-content-center align-items-center"
-                >
-                  <img src="./img/icons/maintain.svg" alt="" />
-                </div>
-                <div class="col-md-10 pl-0 col-12">
-                  <h4>Maintenance solutions</h4>
-                  <p>
-                    The Solution Analysts at VIRTECH have helped many global
-                    enterprises in the prevention of system failures with the
-                    use of Predictive Analytics. This has significantly helped
-                    organizations to bring down costs and enhance dynamic
-                    performance.
-                  </p>
-                </div>
+  <section class="container-fluid service-content py-4" id="serviceContent">
+    <h2 class="text-center py-2 service-section-title">
+      We are making connectivity easier
+    </h2>
+    <div class="row">
+      <div class="col-md-9 col-12 mx-auto">
+        <div class="row service-content-cards d-flex justify-content-start">
+          <!-- col - 1 -->
+          <div class="col-md-9 col-12 my-4">
+            <div class="row d-flex flex-column flex-md-row">
+              <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
+                <img src="./img/icons/maintain.svg" alt="" />
+              </div>
+              <div class="col-md-10 pl-0 col-12">
+                <h4>Maintenance solutions</h4>
+                <p>
+                  The Solution Analysts at VIRTECH have helped many global
+                  enterprises in the prevention of system failures with the
+                  use of Predictive Analytics. This has significantly helped
+                  organizations to bring down costs and enhance dynamic
+                  performance.
+                </p>
               </div>
             </div>
+          </div>
 
-            <!-- col - 2 -->
-            <div class="col-md-9 col-12 ml-md-auto my-4">
-              <div class="row d-flex flex-column flex-md-row">
-                <div
-                  class="col-2 pr-0 d-flex justify-content-center align-items-center"
-                >
-                  <img src="./img/icons/iot.svg" alt="" />
-                </div>
-                <div class="col-md-10 pl-0 col-12">
-                  <h4>Custom IoT solutions</h4>
-                  <p>
-                    As the companies begin to adopt digital transformation it’s
-                    impossible to have pre-made IoT solutions. Here’s where we
-                    come in to assist the companies to develop custom solutions
-                    tailored to suit their needs.
-                  </p>
-                </div>
+          <!-- col - 2 -->
+          <div class="col-md-9 col-12 ml-md-auto my-4">
+            <div class="row d-flex flex-column flex-md-row">
+              <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
+                <img src="./img/icons/iot.svg" alt="" />
+              </div>
+              <div class="col-md-10 pl-0 col-12">
+                <h4>Custom IoT solutions</h4>
+                <p>
+                  As the companies begin to adopt digital transformation it’s
+                  impossible to have pre-made IoT solutions. Here’s where we
+                  come in to assist the companies to develop custom solutions
+                  tailored to suit their needs.
+                </p>
               </div>
             </div>
+          </div>
 
-            <!-- col - 3 -->
-            <div class="col-md-9 col-12 my-4">
-              <div class="row d-flex flex-column flex-md-row">
-                <div
-                  class="col-2 pr-0 d-flex justify-content-center align-items-center"
-                >
-                  <img src="./img/icons/integrate.svg" alt="" />
-                </div>
-                <div class="col-md-10 pl-0 col-12">
-                  <h4>Systems Integrator Services</h4>
-                  <p>
-                    We offer system integrator services like business and
-                    architecture consulting, implementation of sensors, software
-                    integration, project management and support with the hope of
-                    a long term partnership.
-                  </p>
-                </div>
+          <!-- col - 3 -->
+          <div class="col-md-9 col-12 my-4">
+            <div class="row d-flex flex-column flex-md-row">
+              <div class="col-2 pr-0 d-flex justify-content-center align-items-center">
+                <img src="./img/icons/integrate.svg" alt="" />
+              </div>
+              <div class="col-md-10 pl-0 col-12">
+                <h4>Systems Integrator Services</h4>
+                <p>
+                  We offer system integrator services like business and
+                  architecture consulting, implementation of sensors, software
+                  integration, project management and support with the hope of
+                  a long term partnership.
+                </p>
               </div>
             </div>
+          </div>
 
-            <!-- col - 4 -->
-            <!-- <div class="col-8 ml-auto my-4">
+          <!-- col - 4 -->
+          <!-- <div class="col-8 ml-auto my-4">
               <div class="row d-flex justify-content-end">
                 <div class="col-2 d-flex justify-content-center align-items-center">
                   <img src="./img/icons/blockchain-4.svg" alt="">
@@ -459,459 +286,323 @@
 
               </div>
             </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-fluid service-partners py-4">
-      <div
-        class="container d-flex justify-content-center align-items-center flex-column py-3"
-      >
-        <h3 class="service-section-title">Authorized Partners</h3>
-        <div class="container mt-sm-3 mt-md-5">
-          <div
-            class="owl-carousel clients-carousel d-flex justify-content-center align-items-center"
-          >
-            <div class="client"><img src="./img/uipath.png" alt="elm" /></div>
-            <div class="client">
-              <img src="./img/blue.png" alt="alinma bank" />
-            </div>
-            <div class="client">
-              <img src="./img/Automation.jpg" alt="bank albilad" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center"
-    >
-      <h3 class="text-center contact-title">
-        Find answers to your business needs
-      </h3>
-      <a href="#" class="service-contact" id="contactButton">Contact us</a>
-    </section>
-
-    <!-- ! Footer -->
-    <footer class="footer container-fluid px-3 scroll-s">
-      <div class="row d-flex align-items-center justify-content-between mx-4">
-        <div class="footer-info order-1 d-flex py-2 py-lg-3">
-          <p class="f-link d-flex d-flex align-items-center  mr-4">
-            <a href="tel:+966552357583"
-              ><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a
-            >
-          </p>
-
-          <p class="f-link d-flex align-items-center mx-4">
-            <a href="mailto:info@virtech-ksa.com"
-              ><i class="fas fa-envelope"></i> info@virtech-ksa.com</a
-            >
-          </p>
-
-          <p class="f-link d-flex align-items-center mx-4">
-            <a
-              href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"
-            >
-              <i class="fas fa-map-marker-alt"></i> Location</a
-            >
-          </p>
-        </div>
-        <div class="footer-social order-2  order-lg-3 py-2 py-lg-3">
-          <ul
-            class="social-network d-flex justify-content-end align-items-center pl-0 m-0"
-          >
-            <li>
-              <a href="#" class="icon-facebook" title="Facebook"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/zyclyx"
-                class="icon-twitter"
-                title="Twitter"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="icon-instagram" title="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href=" https://www.linkedin.com/company/virtech-ksa/"
-                class="icon-linkedin"
-                title="Linkedin"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class=" order-3 order-lg-2 mx-auto py-2 py-lg-3">
-          <p class="copyright d-flex align-items-center text-center mx-auto">
-            © 2018 - 2020 Virtech. All rights reserved
-          </p>
-        </div>
-      </div>
-    </footer>
-    <section class=" contact-wrapper" id="contactMaster">
-      <div class="overlay"></div>
-      <button type="button" id="contactClose">
-        <i class="fas fa-times"></i>
-      </button>
-
-      <div
-        class="container d-flex justify-content-start justify-content-md-around align-items-center flex-column contact-inner"
-      >
-        <div class="row d-flex justify-content-between mt-5">
-          <div class="col-md-6 col-12 contact-form order-2 order-md-1">
-            <div class="container">
-              <form id="contactForm" class="needs-validation" novalidate>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="validationCustom01">
-                        Name <span>*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="firstname"
-                        id="validationCustom01"
-                        pattern="[a-zA-Z0-9\s]{2,30}"
-                        maxlength="30"
-                        placeholder="Enter your name"
-                        autocomplete="off"
-                        required
-                      />
-                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                      <div class="invalid-feedback">
-                        Please enter valid name
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="email"> Email-ID <span>*</span></label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        autocomplete="off"
-                        placeholder="Enter your email-ID"
-                        id="email"
-                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                        required
-                      />
-                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                      <div class="invalid-feedback">
-                        Please enter valid email
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="phone"> Contact Number <span>*</span></label>
-                      <input
-                        type="tel"
-                        class="form-control"
-                        name="phone"
-                        id="phone"
-                        pattern="^[0-9]{3,12}$"
-                        maxlength="12"
-                        placeholder="Enter your contact number"
-                        autocomplete="off"
-                        required
-                      />
-                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                      <div class="invalid-feedback">
-                        Please enter valid phone number
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="message">Subject <span>*</span></label>
-                      <textarea
-                        class="form-control"
-                        name="message"
-                        id="message"
-                        maxlength="300"
-                        placeholder="Your message here.."
-                        required
-                      ></textarea>
-
-                      <div class="invalid-feedback">
-                        Please write a message
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    type="submit"
-                    class="button button-blue px-5 mx-auto"
-                    id="contactSubmit"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div
-            class="col-md-5 col-12 d-flex justify-content-center flex-column order-1 order-md-2"
-          >
-            <h2 class="text-center contact-title">Get in touch</h2>
-            <p class="text-center contact-caption">
-              We are happy to assist you with your queries
-            </p>
-          </div>
-        </div>
-
-        <div class="container contact-info px-0 mb-2 d-none d-md-block">
-          <div
-            class="row mx-auto d-flex justify-content-between align-items-center "
-          >
-            <address class="col-md-3 col-12">
-              <a
-                class="location"
-                href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"
-              >
-                Virtech Technologies, Riyadh, <br />
-                PO Box - 23754, K.S.A - 11611.
-              </a>
-            </address>
-            <div class="col text-center">
-              <a class="phone col-md-3 col-6" href="tel:+966552357583">
-                (+966) 552 357 583
-              </a>
-            </div>
-
-            <div class="col-md-3 col-6 text-center">
-              <a class="mail col" href="mailto:info@virtech-ksa.com">
-                info@virtech-ksa.com
-              </a>
-            </div>
-
-            <div class="col-md-3 col-6">
-              <ul
-                class="social-network d-flex justify-content-center align-items-center pl-0 "
-              >
-                <li>
-                  <a href="#" class="icoFacebook" title="Facebook">
-                    <i class="fab fa-facebook-f fa-fw"> </i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/zyclyx"
-                    class="icoTwitter"
-                    title="Twitter"
-                    ><i class="fab fa-twitter fa-fw"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" class="icoTwitter" title="Instagram">
-                    <i class="fab fa-instagram fa-fw"> </i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href=" https://www.linkedin.com/company/virtech-ksa/"
-                    class="icoLinkedin"
-                    title="Linkedin"
-                    ><i class="fab fa-linkedin-in fa-fw"> </i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="status-alert" id="formStatus">
-        <p><i class="fas fa-check"></i></p>
-        <h4 class="text-center">Thank you for contacting us!</h4>
-        <p>We will get in touch with you soon</p>
-      </div>
-    </section>
-    <!-- === CHAT-BOT === -->
-    <button
-      type="button"
-      class="btn btn-rounded text-center bot"
-      id="chat"
-      aria-label="chat"
-      onclick="show(1)"
-    >
-      <svg
-        height="30"
-        width="30"
-        aria-hidden="true"
-        data-prefix="fab"
-        data-icon="rocketchat"
-        class="svg-inline--fa fa-rocketchat fa-w-18"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 576 512"
-      >
-        <path
-          fill="#fff"
-          d="M486.41 107.57c-76.93-50.83-179.18-62.4-264.12-47.07C127.26-31.16 20.77 11 0 23.12c0 0 73.08 62.1 61.21 116.49-86.52 88.2-45.39 186.4 0 232.77C73.08 426.77 0 488.87 0 488.87c20.57 12.16 126.77 54.19 222.29-37 84.75 15.23 187 3.76 264.12-47.16 119.26-76.14 119.65-220.61 0-297.15zM294.18 404.22a339.53 339.53 0 01-88.11-11.37l-19.77 19.09a179.74 179.74 0 01-36.59 27.39A143.14 143.14 0 0198 454.06c1-1.78 1.88-3.56 2.77-5.24q29.67-55 16-98.69c-32.53-25.61-52-58.34-52-94.13 0-82 102.74-148.43 229.41-148.43S523.59 174 523.59 256 420.85 404.22 294.18 404.22zM184.12 291.3a34.32 34.32 0 01-34.8-33.72c-.7-45.39 67.83-46.38 68.52-1.09v.51a34 34 0 01-33.72 34.32zm73.77-33.72c-.79-45.39 67.74-46.48 68.53-1.19v.61c.39 45.08-67.74 45.57-68.53.58zm143.38 33.72a34.33 34.33 0 01-34.81-33.72c-.69-45.39 67.84-46.38 68.53-1.09v.51a33.89 33.89 0 01-33.72 34.32z"
-        />
-      </svg>
-    </button>
-
-    <div id="box1" class="chat-bot">
-      <div class="card shadow" id="bot">
-        <div id="close" class="card-header d-flex justify-content-between">
-          Vbot
-          <button
-            type="button"
-            class="btn close"
-            aria-label="Close"
-            onclick="show(0)"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-x"
-            >
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-          </button>
-        </div>
-
-        <div class="card-body chatBot" id="scroll">
-          <div class="reply-messages" id="botMessages">
-            <p id="botReplay">Hey I'm Vbot !</p>
-          </div>
-        </div>
-        <div class="card-footer p-0 bottom-fixed">
-          <form id="bot-form">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                id="userText"
-                placeholder="Type a Message..."
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-                autocomplete="off"
-              />
-              <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon2">
-                  <button type="submit" class="btn sendBtn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 172 172"
-                    >
-                      <g
-                        fill="none"
-                        stroke-miterlimit="10"
-                        font-family="none"
-                        font-weight="none"
-                        font-size="none"
-                        text-anchor="none"
-                        style="mix-blend-mode:normal"
-                      >
-                        <path d="M0 172V0h172v172z" />
-                        <path
-                          d="M170.643.752a3.389 3.389 0 00-3.709-.309L1.814 89.883a3.381 3.381 0 00-1.76 3.306 3.388 3.388 0 002.324 2.93l46.938 15.318-4.542 46.467a3.378 3.378 0 002.029 3.454c.43.201.9.295 1.357.295.954 0 1.895-.403 2.553-1.155l29.603-33.446 44.572 43.94c.645.632 1.505.981 2.392.981.31 0 .618-.054.927-.134a3.395 3.395 0 002.379-2.446l41.28-165.12a3.4 3.4 0 00-1.223-3.52zM56.223 110.806l67.12-54.274-45.741 63.33-25.034 28.26z"
-                          fill="#fff"
-                        />
-                      </g>
-                    </svg>
-                  </button>
-                </span>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
-    <!-- === END - CHAT-BOT === -->
+  </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js"></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="./js/vendor/animation.gsap.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/vendor/owl.carousel.min.js"></script>
-    <script src="./js/shared/header.js"></script>
-    <script src="./js/contact/contact.js"></script>
-    <script src="./js/shared/chat-bot.js"></script>
-    <script>
-      // serviceContent
-      let cardAnimation = gsap.timeline();
-      cardAnimation.fromTo(
-        ".service-content-cards .col-12",
-        { y: 60, autoAlpha: 0 },
-        { stagger: 0.7, y: 0, autoAlpha: 1, duration: 2 }
-      );
+  <section class="container-fluid service-partners py-4">
+    <div class="container d-flex justify-content-center align-items-center flex-column py-3">
+      <h3 class="service-section-title">Authorized Partners</h3>
+      <div class="container mt-sm-3 mt-md-5">
+        <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center">
+          <div class="client"><img src="./img/uipath.png" alt="elm" /></div>
+          <div class="client">
+            <img src="./img/blue.png" alt="alinma bank" />
+          </div>
+          <div class="client">
+            <img src="./img/Automation.jpg" alt="bank albilad" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      let controller = new ScrollMagic.Controller();
-      new ScrollMagic.Scene({
-        triggerElement: "#serviceOverview",
-        triggerHook: 0.13,
-        reverse: false
-      })
-        .setTween(cardAnimation)
-        .addTo(controller);
+  <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center">
+    <h3 class="text-center contact-title">
+      Find answers to your business needs
+    </h3>
+    <a href="#" class="service-contact" id="contactButton">Contact us</a>
+  </section>
 
-      $(".service-content .service-card").on("mouseenter", function() {
-        $(".service-card").each(function() {
-          $(this).removeClass("active-card");
-        });
-        $(".content-wrapper").each(function() {
-          $(this).removeClass("active-content");
-        });
+  <!-- ? FOOTER -->
+  <footer class="footer container-fluid px-3 scroll-s">
 
-        $(this).toggleClass("active-card");
-        let contentID = $(this).attr("id");
-        let index = $(this).attr("data-index");
-        $(`#content-${index}`).addClass("active-content");
-        gsap.from(`#content-${index}`, { duration: 1, opacity: 0.5, y: 100 });
+    <div class="footer-info flex-column flex-lg-row py-lg-3 py-md-2 py-1">
+      <p class="f-link d-flex d-flex align-items-center  ml-3 ml-md-4">
+        <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
+      </p>
+
+      <p class="f-link d-flex align-items-center ml-3 ml-md-4">
+        <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
+      </p>
+
+      <p class="f-link d-flex align-items-center ml-3 ml-md-4">
+        <a
+          href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+          <i class="fas fa-map-marker-alt"></i> Location</a>
+      </p>
+    </div>
+    <div class="footer-copy order-3 order-md-2 d-flex align-items-center py-lg-3 py-md-2">
+      <p class="copyright text-center mx-auto py-1">
+        © 2018 - 2020 Virtech. All rights reserved
+      </p>
+    </div>
+    <div
+      class="footer-social order-2 order-md-3 d-flex align-items-center justify-content-center justify-content-md-end py-lg-3 py-md-2 py-1 mr-md-2">
+      <ul class="social-network d-flex justify-content-end align-items-center pl-0 m-0 mr-md-5">
+        <li>
+          <a href="#" class="icon-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/zyclyx" class="icon-twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="icon-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icon-linkedin" title="Linkedin"><i
+              class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </div>
+
+  </footer>
+  <!--? END - FOOTER -->
+
+  <!-- ? CONTACT FORM -->
+  <section class=" contact-wrapper" id="contactMaster">
+    <div class="overlay"></div>
+    <button type="button" id="contactClose">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div
+      class="container d-flex justify-content-start justify-content-md-around align-items-center flex-column contact-inner">
+      <div class="row d-flex justify-content-between mt-2 mt-md-3">
+        <div class="col-md-6 col-12 contact-form order-2 order-md-1">
+          <div class="container">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="validationCustom01">
+                      Name <span>*</span></label>
+                    <input type="text" class="form-control" name="firstname" id="validationCustom01"
+                      pattern="[a-zA-Z\s]{2,30}" maxlength="30" placeholder="Enter your name" autocomplete="off"
+                      required />
+                    <div class="invalid-feedback">
+                      Please enter valid name
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="email"> Email-ID <span>*</span></label>
+                    <input type="email" class="form-control" name="email" autocomplete="off"
+                      placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
+                    <div class="invalid-feedback">
+                      Please enter valid email
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="phone">
+                      Contact Number <span>*</span></label>
+                    <input type="tel" class="form-control" name="phone" id="phone" pattern="^[0-9]{3,12}$"
+                      maxlength="12" placeholder="Enter your contact number" autocomplete="off" required />
+                    <div class="invalid-feedback">
+                      Please enter valid phone number
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message">Subject <span>*</span></label>
+                    <textarea class="form-control" name="message" id="message" maxlength="300"
+                      placeholder="Your message here.." required></textarea>
+
+                    <div class="invalid-feedback">
+                      Please write a message
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="button button-blue px-5 mx-auto" id="contactSubmit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5 col-12 d-flex justify-content-center flex-column order-1 order-md-2">
+          <h2 class="text-center contact-title">Get in touch</h2>
+          <p class="text-center contact-caption">
+            We are happy to assist you with your queries
+          </p>
+        </div>
+      </div>
+
+      <div class="container contact-info px-0 mb-md-5 mb-2 d-none d-md-block">
+        <div class="row mx-auto d-flex justify-content-between align-items-center ">
+          <address class="col-md-3 col-12">
+            <a class="location"
+              href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+              Virtech Technologies, Riyadh, <br />
+              PO Box - 23754, K.S.A - 11611.
+            </a>
+          </address>
+          <div class="col text-center">
+            <a class="phone col-md-3 col-6" href="tel:+966552357583">
+              (+966) 552 357 583
+            </a>
+          </div>
+
+          <div class="col-md-3 col-6 text-center">
+            <a class="mail col" href="mailto:info@virtech-ksa.com">
+              info@virtech-ksa.com
+            </a>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
+              <li>
+                <a href="#" class="icoFacebook" title="Facebook">
+                  <i class="fab fa-facebook-f fa-fw"> </i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/zyclyx" class="icoTwitter" title="Twitter"><i
+                    class="fab fa-twitter fa-fw"></i></a>
+              </li>
+              <li>
+                <a href="#" class="icoTwitter" title="Instagram">
+                  <i class="fab fa-instagram fa-fw"> </i></a>
+              </li>
+              <li>
+                <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icoLinkedin" title="Linkedin"><i
+                    class="fab fa-linkedin-in fa-fw"> </i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-alert" id="formStatus">
+      <p><i class="fas fa-check"></i></p>
+      <h4 class="text-center">Thank you for contacting us!</h4>
+      <p>We will get in touch with you soon</p>
+    </div>
+  </section>
+  <!-- ? END - CONTACT FORM -->
+  <!-- === CHAT-BOT === -->
+  <button type="button" class="btn btn-rounded text-center bot" id="chat" aria-label="chat" onclick="show(1)">
+    <svg height="30" width="30" aria-hidden="true" data-prefix="fab" data-icon="rocketchat"
+      class="svg-inline--fa fa-rocketchat fa-w-18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+      <path fill="#fff"
+        d="M486.41 107.57c-76.93-50.83-179.18-62.4-264.12-47.07C127.26-31.16 20.77 11 0 23.12c0 0 73.08 62.1 61.21 116.49-86.52 88.2-45.39 186.4 0 232.77C73.08 426.77 0 488.87 0 488.87c20.57 12.16 126.77 54.19 222.29-37 84.75 15.23 187 3.76 264.12-47.16 119.26-76.14 119.65-220.61 0-297.15zM294.18 404.22a339.53 339.53 0 01-88.11-11.37l-19.77 19.09a179.74 179.74 0 01-36.59 27.39A143.14 143.14 0 0198 454.06c1-1.78 1.88-3.56 2.77-5.24q29.67-55 16-98.69c-32.53-25.61-52-58.34-52-94.13 0-82 102.74-148.43 229.41-148.43S523.59 174 523.59 256 420.85 404.22 294.18 404.22zM184.12 291.3a34.32 34.32 0 01-34.8-33.72c-.7-45.39 67.83-46.38 68.52-1.09v.51a34 34 0 01-33.72 34.32zm73.77-33.72c-.79-45.39 67.74-46.48 68.53-1.19v.61c.39 45.08-67.74 45.57-68.53.58zm143.38 33.72a34.33 34.33 0 01-34.81-33.72c-.69-45.39 67.84-46.38 68.53-1.09v.51a33.89 33.89 0 01-33.72 34.32z" />
+    </svg>
+  </button>
+
+  <div id="box1" class="chat-bot">
+    <div class="card shadow" id="bot">
+      <div id="close" class="card-header d-flex justify-content-between">
+        Vbot
+        <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-x">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="card-body chatBot" id="scroll">
+        <div class="reply-messages" id="botMessages">
+          <p id="botReplay">Hey I'm Vbot !</p>
+        </div>
+      </div>
+      <div class="card-footer p-0 bottom-fixed">
+        <form id="bot-form">
+          <div class="input-group">
+            <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
+              aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off" />
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">
+                <button type="submit" class="btn sendBtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 172 172">
+                    <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none"
+                      text-anchor="none" style="mix-blend-mode:normal">
+                      <path d="M0 172V0h172v172z" />
+                      <path
+                        d="M170.643.752a3.389 3.389 0 00-3.709-.309L1.814 89.883a3.381 3.381 0 00-1.76 3.306 3.388 3.388 0 002.324 2.93l46.938 15.318-4.542 46.467a3.378 3.378 0 002.029 3.454c.43.201.9.295 1.357.295.954 0 1.895-.403 2.553-1.155l29.603-33.446 44.572 43.94c.645.632 1.505.981 2.392.981.31 0 .618-.054.927-.134a3.395 3.395 0 002.379-2.446l41.28-165.12a3.4 3.4 0 00-1.223-3.52zM56.223 110.806l67.12-54.274-45.741 63.33-25.034 28.26z"
+                        fill="#fff" />
+                    </g>
+                  </svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- === END - CHAT-BOT === -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="./js/vendor/animation.gsap.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="./js/vendor/owl.carousel.min.js"></script>
+  <script src="./js/shared/header.js"></script>
+  <script src="./js/contact/contact.js"></script>
+  <script src="./js/shared/chat-bot.js"></script>
+  <script>
+    // serviceContent
+    let cardAnimation = gsap.timeline();
+    cardAnimation.fromTo(
+      ".service-content-cards .col-12",
+      { y: 60, autoAlpha: 0 },
+      { stagger: 0.7, y: 0, autoAlpha: 1, duration: 2 }
+    );
+
+    let controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+      triggerElement: "#serviceOverview",
+      triggerHook: 0.13,
+      reverse: false
+    })
+      .setTween(cardAnimation)
+      .addTo(controller);
+
+    $(".service-content .service-card").on("mouseenter", function () {
+      $(".service-card").each(function () {
+        $(this).removeClass("active-card");
+      });
+      $(".content-wrapper").each(function () {
+        $(this).removeClass("active-content");
       });
 
-      // our clients/partners
-      $(".clients-carousel").owlCarousel({
-        autoplay: true,
-        loop: true,
-        center: true,
-        autoplaySpeed: 2000,
-        dots: false,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          900: { items: 3 }
-        }
-      });
+      $(this).toggleClass("active-card");
+      let contentID = $(this).attr("id");
+      let index = $(this).attr("data-index");
+      $(`#content-${index}`).addClass("active-content");
+      gsap.from(`#content-${index}`, { duration: 1, opacity: 0.5, y: 100 });
+    });
+
+    // our clients/partners
+    $(".clients-carousel").owlCarousel({
+      autoplay: true,
+      loop: true,
+      center: true,
+      autoplaySpeed: 2000,
+      dots: false,
+      responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        900: { items: 3 }
+      }
+    });
       // // Loop through cards
       // function setActiveClass(param){
       // console.log(param.index);
@@ -922,26 +613,27 @@
       // let showContent = gsap.timeline();
       //     showContent.to('#content-1',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{prev:0,index:1}]})
       //     showContent.to('#content-2',{display:'flex',duration:1,onComplete:setActiveClass,onCompleteParams:[{index:2}],delay:6})
-    </script>
-    <script>
-      let imageOne = document.getElementById("img1");
-      let imageTwo = document.getElementById("img2");
-      let imageThree = document.getElementById("img3");
+  </script>
+  <script>
+    let imageOne = document.getElementById("img1");
+    let imageTwo = document.getElementById("img2");
+    let imageThree = document.getElementById("img3");
 
-      imageOne.addEventListener("click", function() {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/iot/img-1.jpg)";
-      });
+    imageOne.addEventListener("click", function () {
+      document.querySelector(".service-banner").style.backgroundImage =
+        "url(./img/iot/img-1.jpg)";
+    });
 
-      imageTwo.addEventListener("click", function() {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/iot/img-2.jpg)";
-      });
+    imageTwo.addEventListener("click", function () {
+      document.querySelector(".service-banner").style.backgroundImage =
+        "url(./img/iot/img-2.jpg)";
+    });
 
-      imageThree.addEventListener("click", function() {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/iot/img-3.jpg)";
-      });
-    </script>
-  </body>
+    imageThree.addEventListener("click", function () {
+      document.querySelector(".service-banner").style.backgroundImage =
+        "url(./img/iot/img-3.jpg)";
+    });
+  </script>
+</body>
+
 </html>

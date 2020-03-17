@@ -1,6 +1,10 @@
 $(function() {
   // $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
   // console.log($('#masterNavbar').find('a[href="' + location.pathname + '"]'));
+  
+  // close dropdown menu on clicking contact button
+
+
   $(".dropdown")
     .siblings()
     .on("mouseenter", function(event) {
@@ -79,4 +83,13 @@ $(function() {
   $("#masterNavbar .dropdown .service-dropdown").on("mouseleave", function() {
     $("#masterNavbar .dropdown .service-dropdown").removeClass("show");
   });
+
+  $("#contactLink").on('click',function(){
+  console.log('clicked on contact link');
+  if($("#navbarContent").hasClass('show')){
+    $("#navbarContent").removeClass('show')
+    $(".navbar-toggler").attr("aria-expanded","false");
+  }
+   
+})
 });
