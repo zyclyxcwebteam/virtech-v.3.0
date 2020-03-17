@@ -308,10 +308,10 @@
   <section class="container-fluid section-4 details-wrapper py-5" id="roles">
     <div class="container details">
 
-      <div class="job-description">
+      <!-- <div class="job-description">
         <h5 class="py-2 title-2">Description</h5>
         <p class="ml-3 text-2" id="description"></p>
-      </div>
+      </div> -->
       <!-- Requirements -->
       <h5 class="py-2 title-2 title-dark">Requirements</h5>
       <ul class="text-2 job-desc-list" id="qualifications">
@@ -326,101 +326,90 @@
     </div>
   </section>
 
-  <!-- ! Applicatio form -->
+  <!-- ! Application form -->
   <section class="appWrapper pb-5" id="appForm">
 
 
     <button type="button" id="formClose"><i class="fas fa-times"></i></button>
     <h4 class="pt-2 pb-5 text-center title-2">Apply Now</h4>
     <div class="container applyForm">
-      <div class="bg-light">
+      <div class="">
         <form id="jobForm" class="contactForm needs-validation" novalidate>
-
-
           <div class="row">
-
-
             <div class="col-md-6 col-sm-12">
               <div class="form-group">
-                <label for="validationCustom01"> First Name <span>*</span></label>
+                <label for="validationCustom01">First Name <span>*</span></label>
                 <input type="text" class="form-control" name="firstname" id="validationCustom01"
                   pattern="[a-zA-Z\s]{2,30}" placeholder="Enter your name" autocomplete="off" required>
                 <div class="invalid-feedback">Please enter your firstname</div>
               </div>
-
-              <div class="col-md-6 col-sm-12 input-field">
-                <div class="form-group">
-                  <label for="pwd"> Last Name <span>*</span></label>
-                  <input type="text" class="form-control" name="lastname" pattern="[a-zA-Z\s]{2,30}" id="lastname"
-                    placeholder="Enter your last name" autocomplete="off" required>
-                  <div class="invalid-feedback">Please enter your lastname</div>
-                </div>
-
+            </div>
+            <div class="col-md-6 col-sm-12 input-field">
+              <div class="form-group">
+                <label for="pwd"> Last Name <span>*</span></label>
+                <input type="text" class="form-control" name="lastname" pattern="[a-zA-Z\s]{2,30}" id="lastname"
+                  placeholder="Enter your last name" autocomplete="off" required>
+                <div class="invalid-feedback">Please enter your lastname</div>
               </div>
 
-              <div class="row">
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <label class=""> Email-ID <span>*</span></label>
+                <input type="email" class="form-control" name="email" autocomplete="off"
+                  placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
 
+                <div class="invalid-feedback">Please enter a valid email</div>
+              </div>
+            </div>
 
-                <div class="col-md-6 col-sm-12">
-                  <div class="form-group">
-                    <label class=""> Email-ID <span>*</span></label>
-                    <input type="email" class="form-control" name="email" autocomplete="off"
-                      placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
-                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                    <div class="invalid-feedback">Please enter a valid email</div>
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <label> Contact Number <span>*</span></label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your contact number"
+                  pattern="^[0-9]{3,12}$" autocomplete="off" required>
+                <div class="invalid-feedback">Please enter your phone number</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group mb-5">
+                <label>Upload Resume <span>*</span></label>
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" name="resume" class="custom-file-input form-control" id="inputFile"
+                      aria-describedby="inputGroupFileAddon01" accept=".doc,.docx,.pdf" required>
+                    <label class="custom-file-label" for="inputFile">Choose file</label>
+                    <div class="invalid-feedback">Please upload your resume.</div>
 
-                  </div>
-
-                  <div class="col-md-6 col-sm-12">
-                    <div class="form-group">
-                      <label> Contact Number <span>*</span></label>
-                      <input type="text" class="form-control" name="phone" id="phone"
-                        placeholder="Enter your contact number" pattern="^[0-9]{3,12}$" autocomplete="off" required>
-                      <div class="invalid-feedback">Please enter your phone number</div>
-                    </div>
-
-                  </div>
-
-
-
-
-                  <div class="form-group mb-5">
-                    <label>Upload Resume <span>*</span></label>
-                    <div class="input-group mb-3">
-                      <div class="custom-file">
-                        <input type="file" name="resume" class="custom-file-input form-control" id="inputFile"
-                          aria-describedby="inputGroupFileAddon01" accept=".doc,.docx,.pdf" required>
-                        <label class="custom-file-label" for="inputFile">Choose file</label>
-                        <div class="invalid-feedback">Please upload your resume.</div>
-
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="message">Subject <span>*</span></label>
-                      <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
-                        name="messages" required></textarea>
-                      <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
-                      <div class="invalid-feedback">Please Write a message</div>
-                    </div>
-
-
-
-
-                    <!-- <div class="row mt-5">
-          <div class="col-md-6 col-sm-12 order-md-0 order-sm-1">
-            <button type="button" class="btn btn-block" id="btnCancel">Cancel</button>
-          </div> -->
-                    <div class="col-md-6 col-sm-12 order-md-1 order-sm-0 mx-auto d-flex justify-content-center">
-                      <button type="submit" class="button button-dark" id="btnSubmit">Submit Application</button>
-                    </div>
                   </div>
                 </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="message">Subject <span>*</span></label>
+                <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
+                  name="messages" required></textarea>
+                <div class="invalid-feedback">Please Write a message</div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6 col-sm-12 order-md-1 order-sm-0 mx-auto d-flex justify-content-center">
+              <button type="submit" class="button button-dark" id="btnSubmit">Submit Application</button>
+            </div>
+
+
+
+
+
         </form>
 
 
   </section>
-  <!-- ! Application form -->
+
   <section class="contact-banner mt-5">
     <h3 class="text-center">Let's Get In Touch</h3>
     <p class="text-center py-3">
