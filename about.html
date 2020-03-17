@@ -468,49 +468,52 @@
 
   <!-- <p id="contactButton"></p> -->
 
-  <!-- ! Footer -->
+  <!-- ? FOOTER -->
   <footer class="footer container-fluid px-3 scroll-s">
-    <div class="row d-flex align-items-center justify-content-between mx-4">
-      <div class="footer-info order-1 d-flex py-2 py-lg-3">
-        <p class="f-link d-flex d-flex align-items-center  mr-4">
-          <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
-        </p>
 
-        <p class="f-link d-flex align-items-center mx-4">
-          <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
-        </p>
+    <div class="footer-info flex-column flex-lg-row py-lg-3 py-md-2 py-1">
+      <p class="f-link d-flex d-flex align-items-center  ml-3 ml-md-4">
+        <a href="tel:+966552357583"><i class="fas fa-phone-square-alt"></i>(+966) 552 357 583</a>
+      </p>
 
-        <p class="f-link d-flex align-items-center mx-4">
-          <a
-            href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-            <i class="fas fa-map-marker-alt"></i> Location</a>
-        </p>
-      </div>
-      <div class="footer-social order-2  order-lg-3 py-2 py-lg-3">
-        <ul class="social-network d-flex justify-content-end align-items-center pl-0 m-0">
-          <li>
-            <a href="#" class="icon-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/zyclyx" class="icon-twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#" class="icon-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icon-linkedin" title="Linkedin"><i
-                class="fab fa-linkedin-in"></i></a>
-          </li>
-        </ul>
-      </div>
-      <div class=" order-3 order-lg-2 mx-auto py-2 py-lg-3">
-        <p class="copyright d-flex align-items-center text-center mx-auto">
-          © 2018 - 2020 Virtech. All rights reserved
-        </p>
-      </div>
+      <p class="f-link d-flex align-items-center ml-3 ml-md-4">
+        <a href="mailto:info@virtech-ksa.com"><i class="fas fa-envelope"></i> info@virtech-ksa.com</a>
+      </p>
+
+      <p class="f-link d-flex align-items-center ml-3 ml-md-4">
+        <a
+          href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+          <i class="fas fa-map-marker-alt"></i> Location</a>
+      </p>
     </div>
+    <div class="footer-copy order-3 order-md-2 d-flex align-items-center py-lg-3 py-md-2">
+      <p class="copyright text-center mx-auto py-1">
+        © 2018 - 2020 Virtech. All rights reserved
+      </p>
+    </div>
+    <div
+      class="footer-social order-2 order-md-3 d-flex align-items-center justify-content-center justify-content-md-end py-lg-3 py-md-2 py-1 mr-md-2">
+      <ul class="social-network d-flex justify-content-end align-items-center pl-0 m-0 mr-md-5">
+        <li>
+          <a href="#" class="icon-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/zyclyx" class="icon-twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="icon-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=" https://www.linkedin.com/company/virtech-ksa/" class="icon-linkedin" title="Linkedin"><i
+              class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </div>
+
   </footer>
-  <!-- ! Contact form -->
+  <!--? END - FOOTER -->
+
+  <!-- ? CONTACT FORM -->
   <section class=" contact-wrapper" id="contactMaster">
     <div class="overlay"></div>
     <button type="button" id="contactClose">
@@ -519,7 +522,7 @@
 
     <div
       class="container d-flex justify-content-start justify-content-md-around align-items-center flex-column contact-inner">
-      <div class="row d-flex justify-content-between mt-5">
+      <div class="row d-flex justify-content-between mt-2 mt-md-3">
         <div class="col-md-6 col-12 contact-form order-2 order-md-1">
           <div class="container">
             <form id="contactForm" class="needs-validation" novalidate>
@@ -529,9 +532,8 @@
                     <label for="validationCustom01">
                       Name <span>*</span></label>
                     <input type="text" class="form-control" name="firstname" id="validationCustom01"
-                      pattern="[a-zA-Z0-9\s]{2,30}" maxlength="30" placeholder="Enter your name" autocomplete="off"
+                      pattern="[a-zA-Z\s]{2,30}" maxlength="30" placeholder="Enter your name" autocomplete="off"
                       required />
-                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
                     <div class="invalid-feedback">
                       Please enter valid name
                     </div>
@@ -542,7 +544,6 @@
                     <label for="email"> Email-ID <span>*</span></label>
                     <input type="email" class="form-control" name="email" autocomplete="off"
                       placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
-                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
                     <div class="invalid-feedback">
                       Please enter valid email
                     </div>
@@ -550,10 +551,10 @@
                 </div>
                 <div class="col-12">
                   <div class="form-group">
-                    <label for="phone"> Contact Number <span>*</span></label>
+                    <label for="phone">
+                      Contact Number <span>*</span></label>
                     <input type="tel" class="form-control" name="phone" id="phone" pattern="^[0-9]{3,12}$"
                       maxlength="12" placeholder="Enter your contact number" autocomplete="off" required />
-                    <!-- <div class="valid-feedback">Nice! You got this one!</div> -->
                     <div class="invalid-feedback">
                       Please enter valid phone number
                     </div>
@@ -585,7 +586,7 @@
         </div>
       </div>
 
-      <div class="container contact-info px-0 mb-2 d-none d-md-block">
+      <div class="container contact-info px-0 mb-md-5 mb-2 d-none d-md-block">
         <div class="row mx-auto d-flex justify-content-between align-items-center ">
           <address class="col-md-3 col-12">
             <a class="location"
@@ -636,6 +637,7 @@
       <p>We will get in touch with you soon</p>
     </div>
   </section>
+  <!-- ? END - CONTACT FORM -->
 
   <!-- === CHAT-BOT === -->
   <button type="button" class="btn btn-rounded text-center bot" id="chat" aria-label="chat" onclick="show(1)">
