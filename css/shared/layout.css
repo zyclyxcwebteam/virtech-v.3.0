@@ -100,9 +100,11 @@ body {
   transform: translate(-50%,-50%);
   z-index: 1;
 }
+ 
 .title-1, .title-2, .title-3{
   font-weight: 400; 
 }
+ 
 .title-1 { 
   font-size: 3rem;   
 }
@@ -116,7 +118,7 @@ body {
   font-size: 1.4rem;
 }
 .text-2{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .text-3
 {
