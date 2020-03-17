@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <style>
+        .section {
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        .section:nth-child(2) {
+            background-color: cadetblue;
+        }
+
+        .section:nth-child(4) {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <h1>Page - 1</h1>
+        </div>
+        <div class="section">
+            <h1>Page - 2</h1>
+        </div>
+        <div class="section">
+            <h1>Page - 3</h1>
+        </div>
+        <div class="section">
+            <h1>Page - 4</h1>
+        </div>
+    </div>
+    <script src="./js/fullpage.min.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(false);
+    </script>
+</body>
+
+</html>
