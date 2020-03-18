@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <title>Job-details - Virtech-ksa</title>
   <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/intlTelInput.min.css">
   <link rel="stylesheet" href="./css/shared/header.css">
   <link rel="stylesheet" href="./css/shared/layout.css">
   <link rel="stylesheet" href="./css/career/job.css">
@@ -506,7 +507,7 @@
                     <label for="phone">
                       Contact Number <span>*</span></label>
                     <input type="tel" class="form-control" name="phone" id="phone" pattern="^[0-9]{3,12}$"
-                      maxlength="12" placeholder="Enter your contact number" autocomplete="off" required />
+                      maxlength="12" autocomplete="off" required />
                     <div class="invalid-feedback">
                       Please enter valid phone number
                     </div>
@@ -658,6 +659,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+
+    <script src="./js/intlTelInput-jquery.min.js"></script>
+    <script src="./js/intlTelInput.min.js"></script>
   <script src="./js/careers/job-details.js"></script>
   <!-- <script src="js/plugins.js"></script> -->
   <script src="./js/shared/header.js"></script>
@@ -671,6 +675,20 @@
   });
 });
 </script> -->
+<script>
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
+  initialCountry: "auto",
+  geoIpLookup: function(callback) {
+    $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+      var countryCode = (resp && resp.country) ? resp.country : "";
+      callback(countryCode);
+    });
+  },
+  utilsScript: "./js/utils.js" // just for formatting/placeholders etc
+});
+</script>
+
   <script>
     $('#inputFile').on('change', function () {
       //get the file name
