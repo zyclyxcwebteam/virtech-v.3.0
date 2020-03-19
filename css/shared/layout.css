@@ -174,13 +174,12 @@ body {
   font-weight: 500;   
   text-align: center;
   transition: all 0.2s;
-  outline: none;     
-  display: flex;
-  align-items: center;
+  outline: none;      
 }
 
 .button-dark,
-.service-contact {
+.service-contact,
+.button-light {
   background-color:#16213d;
   border: 0.16em solid hsl(231, 37%, 36%);
   color: #f8f8f8;
@@ -192,6 +191,7 @@ body {
   border: 0.16em solid hsl(231, 37%, 36%);
   
 }
+
 .service-contact {
   margin-left: 1.5rem;
   padding: 0.5em 1.5em !important;
@@ -205,13 +205,16 @@ body {
 .service-contact:hover {
   text-decoration: none;
   color: #ffffff;
-  border: 0.16em solid hsl(217, 62%, 62%);
+  border: 0.16em solid #f2f3f9;
 }
-.button-dark:hover {
+.button-dark:hover,.button-light:hover {
   border: 0.16em solid #f2f3f9;
   color:#ffffff;
   font-weight: 500;
   text-decoration: none;
+}
+.button-light:hover{
+border: 0.16em solid hsl(217, 62%, 62%);
 }
 @media (max-width: 576px) {
   .banner-title-1 {

@@ -21,7 +21,7 @@ $(document).ready(function() {
             <h5 class="card-title text-center">${data.title}</h5>
             <h6 class="card-subtitle mb-2 text-muted text-center">${data.location}</h6>
           </div>
-            <a href="./job-details.html?id=${data.id}" class="button button-blue career-btn">Apply Now</a>           
+            <a href="./job-details.html?id=${data.id}" class="button button-dark career-btn">Apply Now</a>           
           </div>
         </div>
           `;

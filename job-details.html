@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job-details - Virtech-ksa</title>
   <link rel="icon" href="./favicon.png">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <title>Job-details - Virtech-ksa</title>
-  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/intlTelInput.min.css">
   <link rel="stylesheet" href="./css/shared/header.css">
   <link rel="stylesheet" href="./css/shared/layout.css">
@@ -38,7 +38,7 @@
         <ul class="navbar-nav ml-auto mr-2">
           <!--  Home -->
 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
           </li>
 
@@ -164,7 +164,7 @@
           <li class="nav-item">
             <a href="./about.html" class="nav-link">About us</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="./careers.html" class="nav-link">Careers</a>
           </li>
           <li class="nav-item">
@@ -174,17 +174,14 @@
       </div>
     </div>
   </nav>
+
   <section class="container-fluid job-banner">
     <div class="container-fluid">
-      <div class="row d-flex justify-content-center align-items-center ">
-
+      <div class="row d-flex justify-content-center align-items-center">
         <div class="title col-lg-10 col-md-12 col-12 d-flex justify-content-center align-items-start left-wrapper">
-          <div class="row d-flex justify-content-center align-items-center">
+          <div class="row d-flex justify-content-start align-items-center">
             <div class="col-12 mt-4">
-              <h5 class="job-title mt-5" id="jobtitle"></h5>
-              <!-- Button can visible at ( landscape phones, less than 767.98px ) -->
-              <button type="submit" id="applyPage" class="btnRes">Apply Now</button>
-
+              <h5 class="banner-title-2 mt-5" id="jobtitle"></h5>
             </div>
           </div>
         </div>
@@ -237,7 +234,7 @@
 
               <div>
                 <p class="text-2">location</p>
-                <h2 class="title-3">On-sight</h2>
+                <h2 class="title-3">On-site</h2>
               </div>
             </div>
             <a class="btn rounded-0 option option-btn title-3 col-lg-12 col p-0 pr-lg-0" href="#" id="applyPopUp">Apply
@@ -248,6 +245,13 @@
         </div>
       </div>
     </div>
+
+    <ul class="image-list">
+      <li><a href="#" id="img1">Image-1</a></li>
+      <li><a href="#" id="img2">Image-2</a></li>
+      <li><a href="#" id="img3">Image-3</a></li>
+      <li><a href="#" id="img4">Image-4</a></li>
+    </ul>
     <!-- <div class="optins info col-md-3">
 
       <div class="option">
@@ -305,7 +309,6 @@
 
   </section>
 
-
   <section class="container-fluid section-4 details-wrapper py-5" id="roles">
     <div class="container details">
 
@@ -314,25 +317,22 @@
         <p class="ml-3 text-2" id="description"></p>
       </div> -->
       <!-- Requirements -->
-      <h5 class="py-2 title-2 title-dark">Requirements</h5>
+      <h5 class="py-3 title-3 title-dark">Requirements</h5>
       <ul class="text-2 job-desc-list" id="qualifications">
       </ul>
       <!-- Responsibilities  -->
-      <h5 class="py-2 title-2 title-dark">Responsibilities</h5>
+      <h5 class="py-3 title-3 title-dark">Responsibilities</h5>
       <ul class="text-2 job-desc-list" id="responsibilities">
 
       </ul>
-      <!-- <button type="button" class="my-5 applyBtn" id="submitBtn">Apply Now</button> -->
+
 
     </div>
   </section>
 
   <!-- ! Application form -->
   <section class="appWrapper pb-5" id="appForm">
-
-
-    <button type="button" id="formClose"><i class="fas fa-times"></i></button>
-    <h4 class="pt-2 pb-5 text-center title-2">Apply Now</h4>
+    <h4 class="pt-2 pb-5 text-center title-3">Apply Now</h4>
     <div class="container applyForm">
       <div class="">
         <form id="jobForm" class="contactForm needs-validation" novalidate>
@@ -396,16 +396,9 @@
                 <div class="invalid-feedback">Please Write a message</div>
               </div>
             </div>
-
-
             <div class="col-md-6 col-sm-12 order-md-1 order-sm-0 mx-auto d-flex justify-content-center">
-              <button type="submit" class="button button-dark" id="btnSubmit">Submit Application</button>
+              <button type="submit" class="button button-light" id="btnSubmit">Submit Application</button>
             </div>
-
-
-
-
-
         </form>
 
 
@@ -660,8 +653,8 @@
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
 
-    <script src="./js/intlTelInput-jquery.min.js"></script>
-    <script src="./js/intlTelInput.min.js"></script>
+  <script src="./js/intlTelInput-jquery.min.js"></script>
+  <script src="./js/intlTelInput.min.js"></script>
   <script src="./js/careers/job-details.js"></script>
   <!-- <script src="js/plugins.js"></script> -->
   <script src="./js/shared/header.js"></script>
@@ -675,19 +668,10 @@
   });
 });
 </script> -->
-<script>
-var input = document.querySelector("#phone");
-window.intlTelInput(input, {
-  initialCountry: "auto",
-  geoIpLookup: function(callback) {
-    $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
-      var countryCode = (resp && resp.country) ? resp.country : "";
-      callback(countryCode);
-    });
-  },
-  utilsScript: "./js/utils.js" // just for formatting/placeholders etc
-});
-</script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input);
+  </script>
 
   <script>
     $('#inputFile').on('change', function () {
@@ -697,57 +681,33 @@ window.intlTelInput(input, {
       var cleanFileName = fileName.replace('C:\\fakepath\\', " ");
       $(this).next('.custom-file-label').html(cleanFileName);
     })
-  </script>
-  <script>
 
-    //let applyPage = document.getElementById('applyPage');
-    //let contactButton = document.getElementById('submitBtn');
-    //let btnCancel = document.getElementById('btnCancel');
-    //let contactClose = document.getElementById('formClose');
-    //let popUpForm = document.getElementById('applyPopUp');
+    let imageOne = document.getElementById("img1");
+    let imageTwo = document.getElementById("img2");
+    let imageThree = document.getElementById("img3");
+    let imageFour = document.getElementById("img4");
 
+    imageOne.addEventListener("click", function () {
+      document.querySelector(".job-banner").style.backgroundImage =
+        "url(./img/careers/img-10.jpg)";
+      document.querySelector(".job-banner").style.backgroundPosition = 'top';
+    });
 
+    imageTwo.addEventListener("click", function () {
+      document.querySelector(".job-banner").style.backgroundImage =
+        "url(./img/careers/img-9.jpg)";
+    });
 
-  // contact close
-
-    // close application form
-    // function closePopUp() {
-    //   gsap.to('#appForm', { display: 'none', height: '0px', duration: 0.5 })
-    // }
-
-    // function applyPopUp() {
-    //   gsap.to('#appForm', { display: 'block', height: '100vh', duration: 0.5 })
-    // }
-
-    // contactLink.addEventListener('click',function(event){
-    //   event.preventDefault();
-    //   gsap.to('.appWrapper',{display:'block',height:'100vh',duration:0.5})    
-    // })
-
-    // contactButton.addEventListener('click', function (event) {
-    //   event.preventDefault();   
-    //   event.preventDefault();
-    //   applyPopUp();
-    // })
-    // applyPage.addEventListener('click', function (event) {
-    //   event.preventDefault();
-    //   applyPopUp();
-    // })
-    // popUpForm.addEventListener('click', function (event) {
-    //   event.preventDefault();
-    //   applyPopUp();
-    // })
-
-    // btnCancel.addEventListener('click', function (event) {
-    //   event.preventDefault();
-    //   closePopUp();
-    // })
-
-    // contactClose.addEventListener('click', function (event) {
-    //   event.preventDefault();   
-    //   closePopUp();
-    // })
-
+    imageThree.addEventListener("click", function () {
+      document.querySelector(".job-banner").style.backgroundImage =
+        "url(./img/careers/img-5.jpg)";
+      document.querySelector(".job-banner").style.backgroundPosition = 'center';
+    });
+    imageFour.addEventListener("click", function () {
+      document.querySelector(".job-banner").style.backgroundImage =
+        "url(./img/careers/img-11.jpg)";
+      document.querySelector(".job-banner").style.backgroundPosition = 'top';
+    });
 
   </script>
 </body>
