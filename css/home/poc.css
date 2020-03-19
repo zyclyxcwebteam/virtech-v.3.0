@@ -74,14 +74,12 @@
   outline: none;
   box-shadow: none;
   color: #0c1b33;
+  border: none;
   border-bottom: 1px solid #00bdd5;
 }
 .poc-wrapper .poc-btn:hover {
   text-decoration: none;
-  /* background-color: #f2f3f9; */
-
-  color: #0c1b33;
-
+  color: #f5f5f5;
   background-image: linear-gradient(
     to top,
     rgba(0, 189, 213, 0.9) 32%,
@@ -98,10 +96,10 @@
     transparent,
     transparent 100%
   );
-  color: #f4f4f4;
+  color: #f5f5f5;
 }
 .poc-wrapper .poc-btn[aria-expanded="true"]:hover {
-  background-color: #00bdd5;
+ color: #20263b;
 }
 .poc-wrapper .poc-btn svg {
   animation: arrow 1.5s linear infinite alternate;
@@ -125,15 +123,9 @@
     transform: translateY(-10px);
   }
 }
-.poc-wrapper .poc-contact {
-  background-color: #0c1b33;
-  border-radius: 1.5rem;
-  color: #b8bdc4;
-  border-color: #0c1b33;
-  font-weight: 600;
-}
+ 
 
 .spacer {
-  height: 1.4rem;
+  height: 1.6rem;
   background-color:var(--ind-bg);
 }

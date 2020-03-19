@@ -174,7 +174,7 @@ $(function () {
 
   let indColor = gsap.timeline();   
   indColor.fromTo('.industry-wrapper',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 0.6 })
-  indColor.fromTo('.spacer',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 1 },'-=1')
+  indColor.fromTo('.spacer',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 0.6 },'-=0.6')
   indColor.fromTo('.industry-wrapper .section-title-bg',{autoAlpha:1},{autoAlpha:0,duration:0.1},'-=0.5')     
   indColor.fromTo('.industry-inner',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
   indColor.fromTo('.industry',{y:80,opacity:0},{y:0,opacity:1,stagger:0.2,duration:1});
