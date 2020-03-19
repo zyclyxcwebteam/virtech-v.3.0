@@ -3,6 +3,8 @@
 
 :root {
   --mission-bg: #16213d;
+  --line-height:0%;
+  --circle-sm-opacity:0;
 }
 #about .nav-item.active .nav-link {
   font-weight: 600;
@@ -43,19 +45,7 @@
 .about-home .about-title {
   z-index: 99;
 }
-/* .about-home .hero-title{
-  color:#b8bdc4;
-  font-size: 2.5rem;
-  line-height: 1.5;
-  z-index: 99;   
  
-} */
-/* .about-home .fade-title {
-  text-align: left !important;
- 
-  color: #00bdd5;
-} */
-
 .about-home .about-title-right {
   font-size: 3rem;
   text-align: left !important;
@@ -67,26 +57,23 @@
 .about-title .about-title-left{
   margin-right: 3rem;
 }
-.about-home .about-title-left-1 {
+.about-home .about-title-left-1,.about-home .about-title-left-2 {
   font-size: 3rem;
   color: #b8bdc4;
-  margin-left: 5rem;
+ 
   font-weight: 600;
-  font-family: "Playfair Display";   
+  font-family: "Playfair Display";
+  letter-spacing: 3px;     
 }
 
-.about-home .about-title-left-2 {
-  font-size: 3rem;
-  color: #b8bdc4;
-  font-weight: 600;
-  font-family: "Playfair Display";   
-}
+ 
 .about-banner-title .banner-title-2 {
   font-style: italic;
   font-size: 2.5rem !important;
 }
 .fade-title{
   color: #00bdd5;
+  margin-left: 12px;
 }
 .about-overview .hero-text {
   font-size: 1.1rem;
@@ -108,8 +95,7 @@
 
 /* page styles */
 .mission-vission {
-  background-color: var(--mission-bg);
-  /* background-color: #eeeef0; */
+  background-color: var(--mission-bg);   
 }
 .mission-vission .title-card {
   width: 100%;
@@ -119,7 +105,7 @@
 .mission-vission .card-title {
   font-size: 40px;
   font-weight: 700;
-  color: floralwhite;
+  color:#fdfff5;
   text-align: center;
   height: 120px;
   display: flex;
@@ -147,8 +133,7 @@
   font-weight: 500;
 }
 .mission-vission .about-text {
-  font-size: 1.2rem;
-  /* font-weight: 500; */
+  font-size: 1.2rem;  
   opacity: 0;
   text-align: justify;
 }
@@ -212,25 +197,12 @@
   opacity: var(--circle-color);
 }
 .how-wedo-outer .we-do-bottom .do-icon::before {
-  top: -74px;
+  top: -68px;
 }
 .how-wedo-outer .we-do-top .do-icon::after {
-  bottom: -74px;
+  bottom: -68px;
 }
-/*  
-.how-wedo-outer .do-icon:nth-child(odd)::before{
-   
-  top: 140px;
-}
-.how-wedo-outer .do-icon:nth-child(even)::before{
-  bottom: 140px;
-} */
-/* .do-icon:nth-child(3)::before{
-  top: -18px;
-}
-.do-icon:nth-child(4)::before{
-  bottom: -30px;
-} */
+ 
 .how-wedo-outer .do-content .do-icon img {
   height: 100px;
   width: 100px;
@@ -270,9 +242,9 @@
 /* =======================================
                 Meadia Queries
    ======================================= */
-   @media (max-width: 976px){
+   /* @media (max-width: 976px){
      
-    /* ===== HOw We Do ======*/
+   
     .how-wedo-outer{
       display: none !important;
     }
@@ -288,13 +260,11 @@
     .sm-icon .do-title{
       font-size: 1rem;
     }
-    .sm-icon .do-text{
-      /* font-size: 16px; */
-    }
+ 
     .sm-icon{
-      padding: 0px 2px 20px 50px;
+   
       position: relative;
-      /* border: 1px solid; */
+  
     }
     .sm-icon::after{
       content: '';
@@ -326,17 +296,23 @@
       align-items: start;
       flex-direction: column;
     }
-    /* .sm-how-we-do .do-title{
-      padding-left: 0.5rem;
-    } */
+  
     .sm-how-we-do .do-text{
       text-align: left;
       color: #b8bdc4;
       padding: 0px;
     }
-   }
+   } */
    @media (max-width: 576px){
-      
+     .mission-vission .card-title {
+       height: 100px;
+     }
+      .mission-vission .title-card .card-body {
+        padding: 0.1rem !important;
+      }
+      .mission-vission .title-card .card-body {
+        margin: 0;
+      }
     .about-home .about-title-left-1,
     .about-home .about-title-left-2{
       color: #fff;
@@ -369,8 +345,8 @@
       box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.5) !important;
     }
     .mission-vission .about-text{
-      text-align: left;
-      padding: 0 2rem !important;
+      text-align: justify;
+      font-size: 0.8rem;     
     }
 
     /* ===== HOw We Do ======*/
@@ -380,6 +356,7 @@
     
     .sm-how-we-do {
       background-color: #0c1b33; 
+  height: calc(100vh - var(--navbar-height));
     }
     .sm-icon img{
       width: 50px;
@@ -387,51 +364,61 @@
     .sm-icon .do-title{
       font-size: 1rem;
     }
-    .sm-icon .do-text{
-      /* font-size: 16px; */
+ 
+    .sm-icon{      
+      position: relative;      
     }
-    .sm-icon{
-      padding: 0px 2px 20px 50px;
-      position: relative;
-      /* border: 1px solid; */
-    }
-    .sm-icon::after{
-      content: '';
-      width: 15px;
-      height: 15px;
-      background-color: aquamarine;
-      border-radius: 50px;
-      position: absolute;
-      top: 50%;
-      left: 5px;
-      transform: translateY(-50%);
-    }
-    .sm-icon::before{
-      content: '';
-      width: 2px;
-      height: 100%;
-      background-color: aquamarine;
-      position: absolute;
-      left: 12px;
-    }
-    .sm-how-we-do .we-do-title{
-      color: #b8bdc4;
-      font-family: "Playfair Display";
-    }
+ 
+  
     .sm-how-we-do .do-icon{
-      color: #b8bdc4;
-      padding-left: 0;
+      color: #98b6e7;
+      padding: 0;
       display: flex;
       justify-content: center;
-      align-items: start;
+      align-items: center;
       flex-direction: column;
     }
     /* .sm-how-we-do .do-title{
       padding-left: 0.5rem;
     } */
     .sm-how-we-do .do-text{
-      text-align: left;
-      color: #b8bdc4;
+      text-align: justify;
+      color: #b5caee;
       padding: 0px;
+    }
+    .sm-how-we-do .do-text p{
+      font-size: 0.9rem;
+      margin: 0;
+    }
+     .sm-how-we-do .do-title{
+      font-size: 0.7rem;
+      margin: 0;
+    }
+
+    .how-wedo-line{
+      position: relative;
+    }
+    .how-wedo-line::before{
+      position: absolute;
+      content: '';
+      width: 1.5px;
+      height: var(--line-height);
+      background-color: #00bdd5;
+      left: 56px;
+    }
+    .sm-how-we-do .do-icon{
+      position: relative;
+    }
+    .sm-how-we-do .do-icon::before{
+      position: absolute;
+      content: '';
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background-color: #00bdd5;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -16.9px;
+      opacity: var(--circle-sm-opacity);
     }
    }
