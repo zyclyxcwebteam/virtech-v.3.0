@@ -74,38 +74,38 @@ new ScrollMagic.Scene({
     .addTo(controller)    
 
 // how we do it mobile
-
+gsap.to('.how-wedo-line',{'--line-height':'0%',duration:0.001})
 let howWeDoSM = gsap.timeline();
 //howWeDo.fromTo('.do-content',{autoAlpha:1,duration:0.01})
-howWeDoSM.to('.how-wedo-line',{'--line-heigth':'0%',duration:0.001})
+//howWeDoSM.to('.how-wedo-line',{'--line-height':'0%',duration:0.001})
 
 howWeDoSM.fromTo('.how-wedo-line',{'--line-height':'0%'},{'--line-height':'20%',duration:2})
-howWeDoSM.fromTo('#do-sm-icon-1',{autoAlpha:0,opacity:0,y:55},{autoAlpha:1,opacity:1,y:0,duration:2},"-=2")
-howWeDoSM.fromTo('#do-sm-text-1',{autoAlpha:0,y:50},{autoAlpha:1,y:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-icon-1',{autoAlpha:0,opacity:0,x:-55},{autoAlpha:1,opacity:1,x:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-text-1',{autoAlpha:0,x:150},{autoAlpha:1,x:0,duration:2},"-=2")
 howWeDoSM.fromTo('#do-sm-icon-1',{'--circle-sm-opacity':0},{'--circle-sm-opacity':1,duration:0.02})
  
 
 howWeDoSM.fromTo('.how-wedo-line',{'--line-height':'20%'},{'--line-height':'40%',duration:2})
-howWeDoSM.fromTo('#do-sm-icon-2',{autoAlpha:0,opacity:0,y:55},{autoAlpha:1,opacity:1,y:0,duration:2},"-=2")
-howWeDoSM.fromTo('#do-sm-text-2',{autoAlpha:0,y:50},{autoAlpha:1,y:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-icon-2',{autoAlpha:0,opacity:0,x:-55},{autoAlpha:1,opacity:1,x:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-text-2',{autoAlpha:0,x:150},{autoAlpha:1,x:0,duration:2},"-=2")
 howWeDoSM.fromTo('#do-sm-icon-2',{'--circle-sm-opacity':0},{'--circle-sm-opacity':1,duration:0.02})
 
 
 howWeDoSM.fromTo('.how-wedo-line',{'--line-height':'40%'},{'--line-height':'60%',duration:2})
-howWeDoSM.fromTo('#do-sm-icon-3',{autoAlpha:0,opacity:0,y:55},{autoAlpha:1,opacity:1,y:0,duration:2},"-=2")
-howWeDoSM.fromTo('#do-sm-text-3',{autoAlpha:0,y:50},{autoAlpha:1,y:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-icon-3',{autoAlpha:0,opacity:0,x:-55},{autoAlpha:1,opacity:1,x:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-text-3',{autoAlpha:0,x:150},{autoAlpha:1,x:0,duration:2},"-=2")
 howWeDoSM.fromTo('#do-sm-icon-3',{'--circle-sm-opacity':0},{'--circle-sm-opacity':1,duration:0.02})
 
 
 howWeDoSM.fromTo('.how-wedo-line',{'--line-height':'60%'},{'--line-height':'80%',duration:2})
-howWeDoSM.fromTo('#do-sm-icon-4',{autoAlpha:0,opacity:0,y:55},{autoAlpha:1,opacity:1,y:0,duration:2},"-=2")
-howWeDoSM.fromTo('#do-sm-text-4',{autoAlpha:0,y:50},{autoAlpha:1,y:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-icon-4',{autoAlpha:0,opacity:0,x:-55},{autoAlpha:1,opacity:1,x:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-text-4',{autoAlpha:0,x:150},{autoAlpha:1,x:0,duration:2},"-=2")
 howWeDoSM.fromTo('#do-sm-icon-4',{'--circle-sm-opacity':0},{'--circle-sm-opacity':1,duration:0.02})
 
 
 howWeDoSM.fromTo('.how-wedo-line',{'--line-height':'80%'},{'--line-height':'100%',duration:2})
-howWeDoSM.fromTo('#do-sm-icon-5',{autoAlpha:0,opacity:0,y:55},{autoAlpha:1,opacity:1,y:0,duration:2},"-=2")
-howWeDoSM.fromTo('#do-sm-text-5',{autoAlpha:0,y:50},{autoAlpha:1,y:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-icon-5',{autoAlpha:0,opacity:0,x:-55},{autoAlpha:1,opacity:1,x:0,duration:2},"-=2")
+howWeDoSM.fromTo('#do-sm-text-5',{autoAlpha:0,x:150},{autoAlpha:1,x:0,duration:2},"-=2")
 howWeDoSM.fromTo('#do-sm-icon-5',{'--circle-sm-opacity':0},{'--circle-sm-opacity':1,duration:0.02})
 
 new ScrollMagic.Scene({

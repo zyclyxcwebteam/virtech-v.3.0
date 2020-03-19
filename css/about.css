@@ -3,7 +3,7 @@
 
 :root {
   --mission-bg: #16213d;
-  --line-height:0%;
+  --line-height:0px;
   --circle-sm-opacity:0;
 }
 #about .nav-item.active .nav-link {
