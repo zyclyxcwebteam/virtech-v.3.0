@@ -1,5 +1,5 @@
  .services-wrapper {
-   --service-bg:#ffffff;    
+   --service-bg:#16213d;    
   background-color: var(--service-bg);
   position: relative;
 }

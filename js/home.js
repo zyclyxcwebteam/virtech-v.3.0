@@ -119,63 +119,30 @@ $(function () {
       interval: 5000
     });
   }
+ 
 
-  //Working Code
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#servicesOuter",
-  //   triggerHook: 0.08,
-  //   duration: "50%"
-  // })
-  //   .setPin('#servicesOuter')
-  //  .addIndicators({ name: "service" })
-  //   .addTo(controller);
-
-  let bgColor = gsap.timeline({ onComplete: startServiceCarousel });
-  bgColor.fromTo(
-    ".services-wrapper",
-    { "--service-bg": "#ffffff" },
-    {
-      "--service-bg": "#16213d",
-      duration: 0.6       
-    }
-  );
-  bgColor.fromTo('.services-wrapper .section-title-bg',{autoAlpha:1},{autoAlpha:0,duration:0.1},'-=0.5')     
-  bgColor.fromTo(
+  let ourServices = gsap.timeline({ onComplete: startServiceCarousel });   
+  ourServices.fromTo(
     "#servicesInner",
     { opacity: 0 },
     { opacity: 1, duration: 0.5 }
   );
-  bgColor.fromTo(".services-wrapper .title-1",{opacity:0},{opacity:1,duration:0.5})
+  ourServices.fromTo(".services-wrapper .title-1",{opacity:0},{opacity:1,duration:0.5})
   new ScrollMagic.Scene({
     triggerElement: "#servicesOuter",
     triggerHook: 0.1,
     duration: "0px"
   })
-    .setTween(bgColor)
+    .setTween(ourServices)
     .reverse(false)    
     .addTo(controller);
 
-  // end - working code
-
-  //   let serviceCards = gsap.timeline();
-  //   serviceCards.fromTo('.title-card-2',{opacity:0,display:'none',y:80}, { opacity: 1,display:'flex',y:0, duration:0.8 });
-  //   serviceCards.fromTo('.service-cards .col-12',{opacity:0,y:60},{stagger:0.1,opacity:1,y:0,duration:0.8},"-=1")
-
-  //   new ScrollMagic.Scene({
-  //   triggerElement: "#serviceCards",
-  //   triggerHook: 0.2,
-  //   reverse:false
-  // })
-  //   .addIndicators({name:"servcie-cards"})
-  //   .setTween(serviceCards)
-  //   .addTo(controller);
+  
+ 
 
   /* === OUR INDUSTRIES === */
 
-  let indColor = gsap.timeline();   
-  indColor.fromTo('.industry-wrapper',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 0.6 })
-  indColor.fromTo('.spacer',{'--ind-bg':'#16213d'} ,{ '--ind-bg': '#f4f4f4', duration: 0.6 },'-=0.6')
-  indColor.fromTo('.industry-wrapper .section-title-bg',{autoAlpha:1},{autoAlpha:0,duration:0.1},'-=0.5')     
+  let indColor = gsap.timeline();      
   indColor.fromTo('.industry-inner',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
   indColor.fromTo('.industry',{y:80,opacity:0},{y:0,opacity:1,stagger:0.2,duration:1});
   indColor.fromTo('.ind-content',{y:80,opacity:0},{y:0,opacity:1,duration:0.5},'-=2')
@@ -188,20 +155,11 @@ $(function () {
     .setTween(indColor)
     .addTo(controller);
 
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#industryMaster",
-  //   triggerHook: 0.08,
-  //   duration: '50%',
-  // })
-  //  .addIndicators({name:'industry'})
-  //   .setPin("#industryMaster")
-  //   .addTo(controller);
-
  
 
   // Industries section
 
-  let industryCards = gsap.timeline();
+  
   $(".industry").each(function () {
     // $(this).removeClass('active');
     //console.log('update class')
@@ -261,9 +219,7 @@ $(function () {
    
   // core values
 let coreValues = gsap.timeline();
-  coreValues.fromTo('.core-values',{'--core-value':'#ffffff'} ,{ '--core-value': '#16213d', duration: 0.6 })   
-  coreValues.fromTo('.core-values .section-title-bg',{autoAlpha:1},{autoAlpha:0,duration:0.1},'-=0.5')     
-  coreValues.fromTo('.core-values .wrapper',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
+   coreValues.fromTo('.core-values .wrapper',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
   coreValues.fromTo(".core-values .title-1",{opacity:0},{opacity:1,duration:0.5})
   coreValues.fromTo('.core-values .c-val',{autoAlpha:0,y:30},{stagger:0.1,autoAlpha:1,duration:1,y:0}) 
   // coreValues.fromTo('.industry',{y:80,opacity:0},{y:0,opacity:1,stagger:0.2,duration:1});
@@ -277,14 +233,7 @@ let coreValues = gsap.timeline();
     .setTween(coreValues)
     .addTo(controller);
 
-  // new ScrollMagic.Scene({
-  //   triggerElement: ".core-values",
-  //   triggerHook: 0.08,
-  //   duration: '50%',
-  // })
-  //  .addIndicators({name:'core value'})
-  //   .setPin(".core-values")
-  //   .addTo(controller);
+   
   
   
   

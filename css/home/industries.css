@@ -1,5 +1,5 @@
  .industry-wrapper {   
-  --ind-bg: #16213d;
+  --ind-bg: #f5f5f5;
   background-color: var(--ind-bg);
 }
 .industry-inner {
