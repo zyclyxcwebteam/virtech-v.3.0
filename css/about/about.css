@@ -21,7 +21,7 @@
 .about-home {
   height: calc(100vh - var(--navbar-height));
   background-color: #16213d;
-  background-image: url("../img/about-saudi.jpg");
+  background-image: url("../../img/about/Banner-1.jpg");
   background-position: top;
   background-size: cover;
   position: relative;
@@ -120,13 +120,13 @@
 }
 .mission-vission .title-card-1 {
   background-color: #009efa;
-  background-image: url("../img/wave-2.svg");
+  background-image: url("../../img/wave-2.svg");
   background-position: bottom;
   box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.8);
 }
 .mission-vission .title-card-2 {
   background-color: #018951;
-  background-image: url("../img/wave-6.svg");
+  background-image: url("../../img/wave-6.svg");
   box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.8);
 }
 .mission-vission .text-2{
