@@ -121,21 +121,21 @@ $(function () {
   }
  
 
-  let ourServices = gsap.timeline({ onComplete: startServiceCarousel });   
-  ourServices.fromTo(
-    "#servicesInner",
-    { opacity: 0 },
-    { opacity: 1, duration: 0.5 }
-  );
-  ourServices.fromTo(".services-wrapper .title-1",{opacity:0},{opacity:1,duration:0.5})
-  new ScrollMagic.Scene({
-    triggerElement: "#servicesOuter",
-    triggerHook: 0.1,
-    duration: "0px"
-  })
-    .setTween(ourServices)
-    .reverse(false)    
-    .addTo(controller);
+  // let ourServices = gsap.timeline({ onComplete: startServiceCarousel });   
+  // ourServices.fromTo(
+  //   "#servicesInner",
+  //   { opacity: 0 },
+  //   { opacity: 1, duration: 0.5 }
+  // );
+  // ourServices.fromTo(".services-wrapper .title-1",{opacity:0},{opacity:1,duration:0.5})
+  // new ScrollMagic.Scene({
+  //   triggerElement: "#servicesOuter",
+  //   triggerHook: 0.1,
+  //   duration: "0px"
+  // })
+  //   .setTween(ourServices)
+  //   .reverse(false)    
+  //   .addTo(controller);
 
   
  
@@ -259,4 +259,19 @@ let coreValues = gsap.timeline();
   }, sectionOneOptions);
   sectionOneObserver.observe(homeContainer);
   // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
+
+  // scrollContainer
 });
+
+
+// $(document).ready(function() {
+// 	$('#scrollContainer').fullpage({
+    
+//     scrollBar:true,
+// 		autoScrolling:true,
+//     scrollHorizontally: false,
+//     fitToSectionDelay:500 
+// 	});
+ 
+//   $.fn.fullpage.setAllowScrolling(true);   
+// });

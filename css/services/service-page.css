@@ -112,10 +112,8 @@ z-index: 999;
   padding: 1rem 0 !important;
 }
 
-.service-partners {
-  padding-top: 1rem;
-  padding-bottom: 1rem;   
-  background-color: #ffffff;
+.service-partners {   
+  background-color: #fefefe
 }
 .service-partners img {
   max-width: 180px;
