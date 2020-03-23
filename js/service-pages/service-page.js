@@ -22,9 +22,9 @@ $('.content-card').each(function () {
 
   revealContent = gsap.timeline();
 
-  revealContent.from(title, { duration: 0.7, autoAlpha: 0, y: 80, ease: "power1.out" })
-  revealContent.from(text, { duration: 0.8, autoAlpha: 0, y: 80, ease: "power1.out" }, "-=0.6")
-  revealContent.from(icon, { duration: 0.8, autoAlpha: 0, y: 80, ease: "power1.out" }, "-=0.6")
+  revealContent.from(title, { duration: 0.6, autoAlpha: 0, y: 40, ease: "power1.out" })
+  revealContent.from(text, { duration: 0.6, autoAlpha: 0, y: 40, ease: "power1.out" }, "-=0.6")
+  revealContent.from(icon, { duration: 0.6, autoAlpha: 0, y: 40, ease: "power1.out" }, "-=0.6")
 
   new ScrollMagic.Scene({
     triggerElement: this,
@@ -39,7 +39,7 @@ $('.content-card').each(function () {
 
 
 let clientsSlider = gsap.timeline();
-clientsSlider.from('.service-partners .service-section-title', { duration: 1, autoAlpha: 0, y: 80, ease: "power1.out" })
+clientsSlider.from('.service-partners .service-section-title', { duration: 0.6, autoAlpha: 0, y: 40, ease: "power1.out" })
 clientsSlider.from('.clients-carousel', { duration: 0.5, y: 30, autoAlpha: 0, scaleY: 0, transformOrigin: "bottom", ease: "power1.out" }, '-=0.5')
 
 new ScrollMagic.Scene({
@@ -52,7 +52,7 @@ new ScrollMagic.Scene({
 
 
 let contactBanner = gsap.timeline();
-contactBanner.from('.contact-banner', { duration: 1, scaleY: 0, autoAlpha: 0, transformOrigin: "bottom", ease: "power1.out" })
+contactBanner.from('.contact-banner', { duration: 0.6, scaleY: 0, autoAlpha: 0, transformOrigin: "bottom", ease: "power1.out" })
 contactBanner.from('.contact-title', { duration: 0.5, y: 20, autoAlpha: 0, ease: "power1.out" })
 contactBanner.from('.service-contact', { duration: 0.5, y: 20, autoAlpha: 0, ease: "power1.out" }, "-=0.5")
 new ScrollMagic.Scene({

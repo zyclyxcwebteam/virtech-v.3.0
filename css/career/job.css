@@ -101,9 +101,11 @@
   color: #525252 !important;
   list-style: none;
   padding-left: 0px;
+  margin: 0;
 }
  .job-desc-list li {
   display: flex; 
+  padding: 0.1rem 0;
 }
   
  .details ul li .fas {

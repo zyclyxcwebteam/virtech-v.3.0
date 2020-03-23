@@ -1,6 +1,8 @@
 /* ! COLOR CODES  */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"); 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap');
+/* font-family: 'Lato', sans-serif; */
 /* dbdbdb */
 :root {
    --navbar-height: 55px;
@@ -22,7 +24,7 @@
   --color-6: #3a2e28;
   --color-7: #525252;
   --color-8: #767676;
-  /* fdfff5, f9f8f0 #f8f8ff*/
+  /* fdfff5, f9f8f0 #f8f8ff  #4a4a4a*/
   --color-9:#b5caee;
   --color-10:#98b6e7;
 }
@@ -64,6 +66,8 @@ body {
   scroll-behavior: smooth;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;   
+    
+/* font-family: 'Source Sans Pro', sans-serif; */
     position: relative;
 }
  
@@ -93,17 +97,12 @@ body {
 .title-white {
   color: #fff;
 }
-.section-title-bg {
-  font-size: 6.5rem;
-  font-weight: 600;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 1;
-}
+ 
 .title-1,.title-2,.title-3{
   margin: 0;
+  font-family: 'Lato', sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;  
 }
 .title-1 { 
   font-size: 4rem;

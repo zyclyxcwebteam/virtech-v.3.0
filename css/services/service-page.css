@@ -52,8 +52,7 @@ z-index: 999;
 
 .service-name,
 .service-tagline {
-  z-index: 99;
-  /* font-family: 'Lato', sans-serif; */
+  z-index: 99;   
   line-height: 1.4;
 }
 .service-name {
@@ -61,13 +60,11 @@ z-index: 999;
   color: #e5e5e5;
   box-sizing: border-box;
   display: inline-block;
-  padding-bottom: 0.5rem;
-  /* font-family: 'Merriweather'; */
+  padding-bottom: 0.5rem;   
   font-family: "Playfair Display";
   letter-spacing: 3px;
-  letter-spacing: 3px;
-  /* font-family: 'Bree Serif'; */
-  font-weight: 600;
+  letter-spacing: 3px;   
+  font-weight: 500;
   text-align: center;
 }
 .service-tagline {

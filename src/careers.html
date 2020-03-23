@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161594957-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-161594957-1');
+    </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./favicon.png" />
@@ -29,8 +39,8 @@
     <section class="container-fluid career-home">
       <div class="row banner-title d-flex justify-content-center align-items-end flex-column h-100 mx-auto px-md-2">
         <div class="col-md-6 col-12 banner-title-text">
-          <h2 class="career-title">Get your future</h2>
-          <h2 class="career-title text-center">started with us</h2>
+          <h2 class="banner-title-2">Get your future</h2>
+          <h2 class="banner-title-2 text-center">started with us</h2>
         </div>
       </div>
 
@@ -82,13 +92,14 @@
       </div>
     </div>
 
-    <section id="section-2" class="openings-wrapper py-5">
-      <h1 class="text-center title-2 title-dark">Open Positions</h1>
+    <section id="section-2" class="openings-wrapper py-md-4 py-2">
+      <h1 class="text-center title-3 title-dark">Open Positions</h1>
 
       <!-- jobOpenings -->
       <div class="container">
-        <p class="openings-count text-right mr-5">
-          Available Positions - <span id="openingsCount"></span>
+        <p class="openings-count text-right mr-5 d-flex justify-content-end align-items-center">
+          Available Positions - <span class="ml-2 d-flex justify-content-center align-items-center"
+            id="openingsCount"></span>
         </p>
         <div class="row d-flex align-items-center justify-content-center">
           <section class="container-fluid pt-4">
@@ -102,9 +113,10 @@
     </section>
 
     <section class="career-enquiry py-3 ">
-      <h3 class="text-center title-3 pb-3">Can't find the position you are looking for?</h3>
+      <h3 class="text-center title-3 title-dark pb-3">Can't find the position you are looking for?</h3>
       <p class="text-center mb-0"><a href="#" class="button button-dark" id="contactButton">Contact us</a></p>
     </section>
+
     <!--  FOOTER -->
     @@include('./components/footer.html')
     <!-- END - FOOTER -->
