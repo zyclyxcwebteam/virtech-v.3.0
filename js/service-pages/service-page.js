@@ -53,7 +53,7 @@ new ScrollMagic.Scene({
 
 let contactBanner = gsap.timeline();
 contactBanner.from('.contact-banner', { duration: 0.6, scaleY: 0, autoAlpha: 0, transformOrigin: "bottom", ease: "power1.out" })
-contactBanner.from('.contact-title', { duration: 0.5, y: 20, autoAlpha: 0, ease: "power1.out" })
+contactBanner.from('.contact-banner .contact-title', { duration: 0.5, y: 20, autoAlpha: 0, ease: "power1.out" })
 contactBanner.from('.service-contact', { duration: 0.5, y: 20, autoAlpha: 0, ease: "power1.out" }, "-=0.5")
 new ScrollMagic.Scene({
   triggerElement: '.contact-banner',

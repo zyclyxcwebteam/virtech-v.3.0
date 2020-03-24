@@ -378,48 +378,50 @@
             <div class="col-md-6 col-12 contact-form order-2 order-md-1">
                 <div class="container">
                     <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="row">
+                        <div class="row py-md-2">
                             <div class="col-12">
-                                <div class="form-group">
-                                    <label for="validationCustom01">
-                                        Name <span>*</span></label>
-                                    <input type="text" class="form-control" name="firstname" id="validationCustom01"
-                                        pattern="[a-zA-Z\s]{2,30}" maxlength="30" placeholder="Enter your name"
+                                <div class="form-group floating-label">
+
+                                    <input type="text" class="form-control" name="firstname" id="username"
+                                        pattern="[a-zA-Z\s]{2,30}" maxlength="30" placeholder="Full Name"
                                         autocomplete="off" required />
+                                    <label for="username">
+                                        Full Name <span class="required">*</span></label>
                                     <div class="invalid-feedback">
                                         Please enter valid name
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-group">
-                                    <label for="email"> Email-ID <span>*</span></label>
+                                <div class="form-group floating-label">
+
                                     <input type="email" class="form-control" name="email" autocomplete="off"
-                                        placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                                        required />
+                                        placeholder="Email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
+                                    <label for="email">Email <span class="required">*</span></label>
                                     <div class="invalid-feedback">
                                         Please enter valid email
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-group">
-                                    <label for="phone">
-                                        Contact Number <span>*</span></label>
+                                <div class="form-group floating-label">
+
                                     <input type="tel" class="form-control" name="phone" id="phone"
-                                        pattern="^[0-9]{3,12}$" maxlength="12" placeholder="Enter your contact number"
-                                        autocomplete="off" required />
+                                        pattern="^[0-9]{3,12}$" maxlength="12" placeholder="Phone" autocomplete="off"
+                                        required />
+                                    <label for="phone">
+                                        Phone <span class="required">*</span></label>
                                     <div class="invalid-feedback">
                                         Please enter valid phone number
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-group">
-                                    <label for="message">Subject <span>*</span></label>
-                                    <textarea class="form-control" name="message" id="message" maxlength="300"
-                                        placeholder="Your message here.." required></textarea>
+                                <div class="form-group floating-label">
 
+                                    <textarea class="form-control pt-3 pb-4" name="message" id="message" maxlength="300"
+                                        placeholder="Message" required></textarea>
+                                    <label for="message">Message <span class="required">*</span></label>
                                     <div class="invalid-feedback">
                                         Please write a message
                                     </div>
@@ -484,7 +486,7 @@
             </div>
         </div>
     </div>
-
+    <!-- successful submission status -->
     <div class="status-alert" id="formStatus">
         <p><i class="fas fa-check"></i></p>
         <h4 class="text-center">Thank you for contacting us!</h4>

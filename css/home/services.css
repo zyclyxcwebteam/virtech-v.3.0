@@ -4,9 +4,9 @@
   position: relative;
 }
 
-#serviceCarousel {
+/* #serviceCarousel {
   height: 60vh;
-}
+} */
 
 
 .services-wrapper .services .title-card {
@@ -65,7 +65,7 @@
   /* text-align: justify; */
 }
 .services-wrapper .service-cards .card:hover {
-  background-color:rgba(10, 10, 10, 0.2);
+  background-color:rgba(10, 10, 10, 0.2);   
 }
 .services-wrapper .service-cards .card:hover .service-card-content {
   opacity: 1;
