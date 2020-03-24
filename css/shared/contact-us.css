@@ -38,6 +38,7 @@
 }
 .contact-inner {
   z-index: 99;
+  justify-content: space-evenly !important;
 }
 .contact-wrapper h2 {
   color: #f9f9f9;
