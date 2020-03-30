@@ -45,7 +45,8 @@ body {
   color: #dbdbdb;
 }
 .title-dark {
-  color: #0c1b33;
+  /* color: #0c1b33; */
+  color: #0a7492;
 }
 .title-white {
   color: #fff;
