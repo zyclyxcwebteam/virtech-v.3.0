@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="./css/home/services.css" />
   <link rel="stylesheet" href="./css//home/poc.css" />
   <link rel="stylesheet" href="./css/home/industries.css" />
-  <link rel="stylesheet" href="./css/home/core_values.css">
+  <link rel="stylesheet" href="./css/home/core_values.css" />
   <link rel="stylesheet" href="./css/home/contact_banner.css">
   <link rel="stylesheet" href="./css/shared/chat-bot.css" />
   <!-- endbuild -->
@@ -55,167 +55,154 @@
   <!--  navbar -->
   <nav class="navbar navbar-expand-lg fixed-top master-navbar py-0" id="masterNavbar">
     <div class="container-fluid">
-        <a href="./" class="navbar-brand ml-2 py-2"><img src="./img/logo/logo.png" alt="Virtech" id="masterLogo" /></a>
-        <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
-            data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
+      <!-- Logo -->
+      <a href="./" class="navbar-brand ml-2 py-2"><img src="./img/logo/logo.png" alt="Virtech" id="masterLogo" /></a>
 
-        <div id="navbarContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto mr-2">
-                <!--  Home -->
+      <!-- Toggle Button -->
+      <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
+        data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
-                </li>
+      <!-- Menu Links -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- ! Services Dropdown menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
 
-                <!-- Services -->
-                <li class="nav-item active dropdown">
-                    <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        class="nav-link dropdown-toggle">Services</a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 
-                    <ul aria-labelledby="serviceDropDown" class="dropdown-menu service-dropdown border-0">
-                        <!-- ! New Age Technologies -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">New Age Technologies</a>
-                            <ul aria-labelledby="newAgeDropDown" class="dropdown-menu border-0">
-                                <li>
-                                    <a tabindex="-1" href="./robotic-process-automation.html"
-                                        class="dropdown-item">RPA</a>
-                                </li>
-                                <li>
-                                    <a href="./artificial-intelligence.html" class="dropdown-item">Artificial
-                                        Intelligence</a>
-                                </li>
-                                <li>
-                                    <a href="./blockchain.html" class="dropdown-item">Blockchain</a>
-                                </li>
-                                <li>
-                                    <a href="./internet-of-things.html" class="dropdown-item">Internet of Things</a>
-                                </li>
-                                <li>
-                                    <a href="./bigdata.html" class="dropdown-item">Big Data</a>
-                                </li>
-                            </ul>
-                        </li>
+              <li><a class="dropdown-item dropdown-toggle" href="#">New Age Technologies</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a tabindex="-1" href="./robotic-process-automation.html" class="dropdown-item">RPA</a>
+                  </li>
+                  <li>
+                    <a href="./artificial-intelligence.html" class="dropdown-item">Artificial
+                      Intelligence</a>
+                  </li>
+                  <li>
+                    <a href="./blockchain.html" class="dropdown-item">Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="./internet-of-things.html" class="dropdown-item">Internet of Things</a>
+                  </li>
+                  <li>
+                    <a href="./bigdata.html" class="dropdown-item">Big Data</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item dropdown-toggle" href="#">Security Services</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber
+                      Security</a>
+                  </li>
 
-                        <!-- ! Security Services -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
-                            <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
-                                <li>
-                                    <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="./cyber-security.html" class="dropdown-item">Cyber
-                                        Security</a>
-                                </li>
+                  <li>
+                    <a href="./application_and_data_security.html" class="dropdown-item">Application
+                      &
+                      Data Security</a>
+                  </li>
 
-                                <li>
-                                    <a href="./application_and_data_security.html" class="dropdown-item">Application &
-                                        Data Security</a>
-                                </li>
+                  <li>
+                    <a href="./governance-and-compliance.html" class="dropdown-item">Governance &
+                      Compliance</a>
+                  </li>
 
-                                <li>
-                                    <a href="./governance-and-compliance.html" class="dropdown-item">Governance &
-                                        Compliance</a>
-                                </li>
+                  <li>
+                    <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint &
+                      Mobile
+                      Security</a>
+                  </li>
 
-                                <li>
-                                    <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint & Mobile
-                                        Security</a>
-                                </li>
-
-                                <li>
-                                    <a href="./identity_and_access_management.html" class="dropdown-item">Identity &
-                                        Access
-                                        Management</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- ! Application Devlopment -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">Application Development</a>
-                            <ul aria-labelledby="appDropDown" class="dropdown-menu border-0">
-                                <li>
-                                    <a tabindex="-1" href="./software-development.html" class="dropdown-item">Software
-                                        Development</a>
-                                </li>
-                                <li>
-                                    <a href="./mobile-app-development.html" class="dropdown-item">Mobile App
-                                        Development</a>
-                                </li>
-                                <li>
-                                    <a href="./web-development.html" class="dropdown-item">Web Development</a>
-                                </li>
-                                <li>
-                                    <a href="./digital-marketing.html" class="dropdown-item">Digital Marketing</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- ! BI Solutions -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">BI Solutions</a>
-                            <ul aria-labelledby="biDropDown" class="dropdown-menu border-0">
-                                <li>
-                                    <a tabindex="-1" href="./data-visualization.html" class="dropdown-item">Data
-                                        Visualization</a>
-                                </li>
-                                <li>
-                                    <a href="./predictive-analytics.html" class="dropdown-item">Predictive Analysis</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- ! Infrastructure Services -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructure Services</a>
-                            <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
-                                <li>
-                                    <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data
-                                        Center Services</a>
-                                </li>
-                                <li>
-                                    <a href="./system-infrastructure.html" class="dropdown-item">System
-                                        Infrastructure</a>
-                                </li>
-                                <li>
-                                    <a href="./end-user-computing.html" class="dropdown-item">End User Computing</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- ! Outsourcing Services -->
-                        <li class="nav-item">
-                            <a href="./oursourcing-service.html" class="dropdown-item">Outsourcing Services</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- End Level one -->
-
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./careers.html" class="nav-link">Careers</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" id="contactLink">Contact</a>
-                </li>
+                  <li>
+                    <a href="./identity_and_access_management.html" class="dropdown-item">Identity &
+                      Access
+                      Management</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item dropdown-toggle" href="#">Application Development</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a tabindex="-1" href="./software-development.html" class="dropdown-item">Software
+                      Development</a>
+                  </li>
+                  <li>
+                    <a href="./mobile-app-development.html" class="dropdown-item">Mobile App
+                      Development</a>
+                  </li>
+                  <li>
+                    <a href="./web-development.html" class="dropdown-item">Web Development</a>
+                  </li>
+                  <li>
+                    <a href="./digital-marketing.html" class="dropdown-item">Digital Marketing</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item dropdown-toggle" href="#">BI Solutions</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a tabindex="-1" href="./data-visualization.html" class="dropdown-item">Data
+                      Visualization</a>
+                  </li>
+                  <li>
+                    <a href="./predictive-analytics.html" class="dropdown-item">Predictive
+                      Analysis</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item dropdown-toggle" href="#">Infrastructure Services</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data
+                      Center Services</a>
+                  </li>
+                  <li>
+                    <a href="./system-infrastructure.html" class="dropdown-item">System
+                      Infrastructure</a>
+                  </li>
+                  <li>
+                    <a href="./end-user-computing.html" class="dropdown-item">End User Computing</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- ! Outsourcing Services -->
+              <li class="nav-item">
+                <a href="./oursourcing-service.html" class="dropdown-item">Outsourcing Services</a>
+              </li>
             </ul>
-        </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
   <!-- END - Navbar -->
 
   <article class="scroll-wrapper" id="scrollContainer">
@@ -290,9 +277,9 @@
 
     <!-- ? SERVICES -->
     <section class="scroll-s services-wrapper d-flex align-items-center flex-column" id="servicesOuter">
-      <h2 class="title-1 title-light text-center py-5">Services</h2>
+      <h2 class="title-2 title-light text-center py-xl-5 pt-3">Services We Offer</h2>
 
-      <div class="align-items-center justify-content-center py-3" id="servicesInner">
+      <div class="align-items-center justify-content-center py-3 services-inner" id="servicesInner">
         <div id="serviceCarousel" class="d-flex align-items-center carousel slide" data-touch=true>
           <ol class="carousel-indicators py-3 m-0">
             <li data-target="#serviceCarousel" data-slide-to="0" class="active"></li>
@@ -303,29 +290,30 @@
           </ol>
           <div class="carousel-inner">
             <!-- ! slide - 1 -->
-            <div class="carousel-item active px-md-5" id="serviceCards">
-              <div class="container-fluid d-flex justify-content-center align-items-center px-md-5">
-                <div class="row services px-md-5">
+            <div class="carousel-item active" id="serviceCards">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="row services justify-content-center">
                   <!-- ? title card -->
-                  <div class="col-md-3 col-12 d-flex px-0">
+                  <div class="col-xl-3 col-12 d-flex px-0">
                     <div class="card title-card title-card-2">
                       <div class="card-body">
-                        <h2 class="card-title">New Age Technologies</h2>
+                        <h2 class="card-title m-0 text-lg-center text-left">New Age Technologies</h2>
                       </div>
                     </div>
                   </div>
                   <!-- ? service cards -->
-                  <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
+                  <div class="service-cards col-xl-3 col-md-4 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- ! Artificial Intelligence -->
-                      <div class="col-12">
-                        <div class="card p-0 py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card p-0 py-lg-2 m-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./artificial-intelligence.html" class="card-body">
+                          <a href="./artificial-intelligence.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class=" d-flex justify-content-center align-items-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
@@ -373,15 +361,16 @@
                         </div>
                       </div>
                       <!-- ! RPA -->
-                      <div class="col-12 mt-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./robotic-process-automation.html" class="card-body">
-                            <div class="d-flex justify-content-center">
+                          <a href="./robotic-process-automation.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
+                            <div class=" d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
                                 <defs>
@@ -428,7 +417,8 @@
                               </svg>
                             </div>
                             <h3 class="service-title text-center">Robotic Process Automation</h3>
-                            <p class="service-card-content text-center">Successfully implemented over 100+ processes
+                            <p class="service-card-content text-center d-none d-md-block">Successfully implemented over
+                              100+ processes
                               across Industries
                             </p>
                           </a>
@@ -436,16 +426,17 @@
                       </div>
                     </div>
                   </div>
-                  <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
+                  <div class="service-cards col-xl-3 col-md-4 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./blockchain.html" class="card-body">
+                          <a href="./blockchain.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
@@ -511,14 +502,15 @@
                         </div>
                       </div>
 
-                      <div class="col-12 mt-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./internet-of-things.html" class="card-body">
+                          <a href="./internet-of-things.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
@@ -565,16 +557,17 @@
                       </div>
                     </div>
                   </div>
-                  <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0 d-flex align-items-center">
+                  <div class="service-cards col-xl-3 col-md-4 col-12 py-0 pl-3 pr-0 d-lg-flex align-items-lg-center">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./bigdata.html" class="card-body">
+                          <a href="./bigdata.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
@@ -628,14 +621,14 @@
             </div>
 
             <!-- ! slide - 2 -->
-            <div class="carousel-item px-md-5">
-              <div class="container-fluid d-flex justify-content-center align-items-center px-md-5">
-                <div class="row services px-md-5">
+            <div class="carousel-item">
+              <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="row services">
                   <!-- ? title card -->
-                  <div class="col-md-3 col-12 d-flex px-0">
+                  <div class="col-xl-3 col-12 d-flex px-0">
                     <div class="card title-card title-card-2">
                       <div class="card-body">
-                        <h2 class="card-title">Security Services</h2>
+                        <h2 class="card-title m-0 text-lg-center text-left">Security Services</h2>
                       </div>
                     </div>
                   </div>
@@ -643,14 +636,15 @@
                   <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- ! Network security -->
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./network-and-security.html" class="card-body">
+                          <a href="./network-and-security.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
@@ -706,14 +700,15 @@
                         </div>
                       </div>
                       <!-- ! Cyber Security -->
-                      <div class="col-12 mt-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./cyber-security.html" class="card-body">
+                          <a href="./cyber-security.html"
+                            class="card-body  d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
@@ -824,14 +819,15 @@
                   <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- Application & Data Security -->
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./application_and_data_security.html" class="card-body">
+                          <a href="./application_and_data_security.html"
+                            class="card-body  d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -897,7 +893,8 @@
                                       d="M197.75,130.65625c-10.10644,0 -17.65625,-9.3225 -17.65625,-17.65625v-3.53125h-10.59375v-10.59375c0,-4.59769 -2.96272,-8.48206 -7.0625,-9.944v-8.36553c4.09978,-1.46194 7.0625,-5.34631 7.0625,-9.944v-14.125c0,-5.84069 -4.75306,-10.59375 -10.59375,-10.59375h-3.53125v-3.53125c0,-5.84069 -4.75306,-10.59375 -10.59375,-10.59375h-98.875c-5.84069,0 -10.59375,4.75306 -10.59375,10.59375v3.53125h-3.53125c-5.84069,0 -10.59375,4.75306 -10.59375,10.59375v14.125c0,4.59769 2.96272,8.48206 7.0625,9.944v8.36553c-4.09978,1.46194 -7.0625,5.34631 -7.0625,9.944v14.125c0,4.59769 2.96272,8.48206 7.0625,9.944v8.36553c-4.09978,1.45841 -7.0625,5.34278 -7.0625,9.94047v14.125c0,5.84069 4.75306,10.59375 10.59375,10.59375h3.53125v3.53125c0,5.84069 4.75306,10.59375 10.59375,10.59375h90.12103c7.12959,8.61978 17.90344,14.125 29.94147,14.125c21.41703,0 38.84375,-17.42672 38.84375,-38.84375v-24.71875zM155.375,81.21875v7.0625h-120.0625v-7.0625zM42.375,42.375c0,-1.94925 1.58553,-3.53125 3.53125,-3.53125h98.875c1.94572,0 3.53125,1.582 3.53125,3.53125v3.53125h-105.9375zM28.25,56.5c0,-1.94925 1.58553,-3.53125 3.53125,-3.53125h127.125c1.94572,0 3.53125,1.582 3.53125,3.53125v14.125c0,1.94925 -1.58553,3.53125 -3.53125,3.53125h-127.125c-1.94572,0 -3.53125,-1.582 -3.53125,-3.53125zM28.25,98.875c0,-1.94925 1.58553,-3.53125 3.53125,-3.53125h127.125c1.94572,0 3.53125,1.582 3.53125,3.53125v10.59375h-10.59375v3.53125c0,1.16884 -0.16244,2.35534 -0.44494,3.53125h-119.61756c-1.94572,0 -3.53125,-1.582 -3.53125,-3.53125zM127.125,130.65625h-91.8125v-7.0625h112.65041c-3.17812,4.08919 -8.06891,7.0625 -13.77541,7.0625h-3.53125zM28.25,155.375v-14.125c0,-1.94925 1.58553,-3.53125 3.53125,-3.53125h95.34375v17.65625c0,1.19003 0.07416,2.36594 0.18009,3.53125h-95.52384c-1.94572,0 -3.53125,-1.582 -3.53125,-3.53125zM45.90625,173.03125c-1.94572,0 -3.53125,-1.582 -3.53125,-3.53125v-3.53125h86.25431c0.69919,2.46481 1.63497,4.82369 2.78262,7.0625zM197.75,155.375c0,17.52559 -14.25919,31.78125 -31.78125,31.78125c-17.52206,0 -31.78125,-14.25566 -31.78125,-31.78125v-17.65625c11.97447,0 22.61413,-9.55203 24.43978,-21.1875h14.67941c1.82919,11.63547 12.46531,21.1875 24.43978,21.1875v17.65625z"
                                       fill="url(#color-1_48155_gr1)"></path>
                                     <path d="M127.125,102.40625h21.1875v7.0625h-21.1875z"
-                                      fill="url(#color-2_48155_gr2)"></path>
+                                      fill="url(#color-2_48155_gr2)">
+                                    </path>
                                     <path d="M127.125,60.03125h21.1875v7.0625h-21.1875z" fill="url(#color-3_48155_gr3)">
                                     </path>
                                     <path d="M42.375,102.40625h14.125v7.0625h-14.125z" fill="url(#color-4_48155_gr4)">
@@ -929,14 +926,15 @@
                         </div>
                       </div>
 
-                      <div class="col-12 mt-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./governance-and-compliance.html" class="card-body">
+                          <a href="./governance-and-compliance.html"
+                            class="card-body  d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -990,13 +988,16 @@
                                       d="M85.78466,108.43409l15.16319,15.16319c1.37719,1.37719 3.18166,2.06578 4.98966,2.06578c1.808,0 3.61247,-0.68859 4.98966,-2.06578l29.28819,-29.28819l-4.99319,-4.99319l-29.28112,29.28819l-15.16319,-15.16319z"
                                       fill="url(#color-2_44813_gr2)"></path>
                                     <path d="M81.21875,137.71875h63.5625v7.0625h-63.5625z"
-                                      fill="url(#color-3_44813_gr3)"></path>
+                                      fill="url(#color-3_44813_gr3)">
+                                    </path>
                                     <path d="M88.28125,151.84375h49.4375v7.0625h-49.4375z"
-                                      fill="url(#color-4_44813_gr4)"></path>
+                                      fill="url(#color-4_44813_gr4)">
+                                    </path>
                                     <path d="M63.5625,180.09375h98.875v3.53125h-98.875z" fill="url(#color-5_44813_gr5)">
                                     </path>
                                     <path d="M70.625,38.84375h24.71875v3.53125h-24.71875z"
-                                      fill="url(#color-6_44813_gr6)"></path>
+                                      fill="url(#color-6_44813_gr6)">
+                                    </path>
                                     <path d="M130.65625,38.84375h24.71875v3.53125h-24.71875z"
                                       fill="url(#color-7_44813_gr7)"></path>
                                   </g>
@@ -1016,14 +1017,15 @@
                   </div>
                   <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./endpoint-mobile-security.html" class="card-body">
+                          <a href="./endpoint-mobile-security.html"
+                            class="card-body  d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
@@ -1064,14 +1066,15 @@
                           </a>
                         </div>
                       </div>
-                      <div class="col-12 mt-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./identity_and_access_management.html" class="card-body">
+                          <a href="./identity_and_access_management.html"
+                            class="card-body  d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
@@ -1236,14 +1239,14 @@
               </div>
             </div>
             <!-- ! slide - 3 -->
-            <div class="carousel-item px-md-5">
-              <div class="container-fluid px-md-5 d-flex justify-content-center align-items-center">
-                <div class="row px-md-5 services d-flex justify-content-center">
+            <div class="carousel-item">
+              <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="row services d-flex justify-content-center">
                   <!-- ? title card -->
-                  <div class="col-md-3 col-12 d-flex px-0">
+                  <div class="col-xl-3 col-12 d-flex px-0">
                     <div class="card title-card title-card-2">
                       <div class="card-body">
-                        <h2 class="card-title">Application Development</h2>
+                        <h2 class="card-title m-0 text-lg-center text-left">Application Development</h2>
                       </div>
                     </div>
                   </div>
@@ -1251,14 +1254,15 @@
                   <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- ! software development -->
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./software-development.html" class="card-body">
+                          <a href="./software-development.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -1339,14 +1343,15 @@
                         </div>
                       </div>
                       <!-- ! Mobile App development -->
-                      <div class="col-12 mt-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./mobile-app-development.html" class="card-body">
+                          <a href="./mobile-app-development.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -1402,7 +1407,8 @@
                                     <path d="M91.8125,95.34375h35.3125v7.0625h-35.3125z" fill="url(#color-5_44016_gr5)">
                                     </path>
                                     <path d="M91.8125,109.46875h35.3125v7.0625h-35.3125z"
-                                      fill="url(#color-6_44016_gr6)"></path>
+                                      fill="url(#color-6_44016_gr6)">
+                                    </path>
                                   </g>
                                 </g>
                               </svg>
@@ -1421,14 +1427,15 @@
                   <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- Application & Data Security -->
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./web-development.html" class="card-body">
+                          <a href="./web-development.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -1485,13 +1492,17 @@
                                       d="M169.66597,138.66512l-7.69106,-11.54012h3.99384c3.89497,0 7.0625,-3.16753 7.0625,-7.0625v-35.3125c0,-3.89497 -3.16753,-7.0625 -7.0625,-7.0625h-63.5625c-3.89497,0 -7.0625,3.16753 -7.0625,7.0625v35.3125c0,3.89497 3.16753,7.0625 7.0625,7.0625h3.99384l-7.69106,11.54012c-2.48953,3.73606 -2.35181,8.65156 0.34253,12.23225l7.19316,9.59441c-0.18009,0.6215 -0.30722,1.26419 -0.30722,1.94572v7.0625c0,3.89497 3.16753,7.0625 7.0625,7.0625v17.65625c0,5.84069 4.75306,10.59375 10.59375,10.59375h21.1875c5.84069,0 10.59375,-4.75306 10.59375,-10.59375v-17.65625c3.89497,0 7.0625,-3.16753 7.0625,-7.0625v-7.0625c0,-0.68153 -0.12713,-1.32422 -0.30722,-1.94572l7.18963,-9.58734c2.69788,-3.58775 2.83559,-8.50678 0.34606,-12.23931zM102.40625,120.0625v-35.3125h63.5625v35.3125h-8.70453l-14.25566,-21.38525c-1.97397,-2.95566 -5.26862,-4.72128 -8.82106,-4.72128c-3.55244,0 -6.84709,1.76563 -8.82106,4.72128l-14.25566,21.38525zM137.71875,137.71875c0,1.94925 -1.582,3.53125 -3.53125,3.53125c-1.94925,0 -3.53125,-1.582 -3.53125,-3.53125c0,-1.94925 1.582,-3.53125 3.53125,-3.53125c1.94925,0 3.53125,1.582 3.53125,3.53125zM148.3125,194.21875c0,1.94925 -1.582,3.53125 -3.53125,3.53125h-21.1875c-1.94925,0 -3.53125,-1.582 -3.53125,-3.53125v-17.65625h28.25zM113,169.5v-7.0625h42.375l0.00706,7.0625zM163.67697,146.65988l-6.68819,8.91994c-0.51909,-0.12359 -1.05584,-0.20481 -1.61378,-0.20481h-42.375c-0.55794,0 -1.09469,0.08122 -1.61378,0.20481l-6.69172,-8.92347c-0.89694,-1.19003 -0.94284,-2.82853 -0.10947,-4.07153l26.07122,-39.10859v24.30206c-4.10331,1.46194 -7.0625,5.34631 -7.0625,9.944c0,5.84069 4.75306,10.59375 10.59375,10.59375c5.84069,0 10.59375,-4.75306 10.59375,-10.59375c0,-4.59769 -2.95919,-8.48206 -7.0625,-9.944v-24.30206l26.07122,39.10506c0.82984,1.243 0.78394,2.8815 -0.113,4.07859z"
                                       fill="url(#color-3_49407_gr3)"></path>
                                     <path d="M49.4375,77.6875h31.78125v7.0625h-31.78125z"
-                                      fill="url(#color-4_49407_gr4)"></path>
+                                      fill="url(#color-4_49407_gr4)">
+                                    </path>
                                     <path d="M49.4375,91.8125h31.78125v7.0625h-31.78125z"
-                                      fill="url(#color-5_49407_gr5)"></path>
+                                      fill="url(#color-5_49407_gr5)">
+                                    </path>
                                     <path d="M49.4375,105.9375h31.78125v7.0625h-31.78125z"
-                                      fill="url(#color-6_49407_gr6)"></path>
+                                      fill="url(#color-6_49407_gr6)">
+                                    </path>
                                     <path d="M49.4375,120.0625h31.78125v7.0625h-31.78125z"
-                                      fill="url(#color-7_49407_gr7)"></path>
+                                      fill="url(#color-7_49407_gr7)">
+                                    </path>
                                   </g>
                                 </g>
                               </svg>
@@ -1505,14 +1516,15 @@
                         </div>
                       </div>
 
-                      <div class="col-12 mt-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./digital-marketing.html" class="card-body">
+                          <a href="./digital-marketing.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -1601,14 +1613,14 @@
             </div>
 
             <!-- ! slide - 4 -->
-            <div class="carousel-item px-md-5">
-              <div class="container-fluid px-md-5 d-flex justify-content-center align-items-center">
-                <div class="row services d-flex justify-content-center px-md-5">
+            <div class="carousel-item">
+              <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="row services d-flex justify-content-center">
                   <!-- ? title card -->
-                  <div class="col-md-3 col-12 d-flex px-0">
+                  <div class="col-xl-3 col-12 d-flex px-0">
                     <div class="card title-card title-card-2">
                       <div class="card-body">
-                        <h2 class="card-title">Infrastructure Services</h2>
+                        <h2 class="card-title m-0 text-lg-center text-left">Infrastructure Services</h2>
                       </div>
                     </div>
                   </div>
@@ -1616,14 +1628,15 @@
                   <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- ! Network security -->
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./data-center-services.html" class="card-body">
+                          <a href="./data-center-services.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -1702,14 +1715,15 @@
                         </div>
                       </div>
                       <!-- ! Cyber Security -->
-                      <div class="col-12 mt-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./system-infrastructure.html" class="card-body">
+                          <a href="./system-infrastructure.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -1778,14 +1792,15 @@
                     class="service-cards col-md-3 col-12 py-0 pl-3 pr-0 d-flex justify-content-center align-items-center">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- Application & Data Security -->
-                      <div class="col-12">
-                        <div class="card">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./end-user-computing.html" class="card-body">
+                          <a href="./end-user-computing.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -1853,11 +1868,11 @@
             </div>
 
             <!-- ! slide - 5 -->
-            <div class="carousel-item px-md-5">
-              <div class="container-fluid px-md-5 d-flex justify-content-center align-items-center">
-                <div class="row services d-flex justify-content-center px-md-5">
+            <div class="carousel-item">
+              <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="row services d-flex justify-content-center">
                   <!-- ? title card -->
-                  <div class="col-md-3 col-12 d-flex px-0">
+                  <div class="col-xl-3 col-12 d-flex px-0">
                     <div class="card title-card title-card-2">
                       <div class="card-body d-flex flex-column justify-content-between">
                         <h2 class="card-title mt-5 d-none d-md-block">BI Solutions</h2>
@@ -1869,14 +1884,15 @@
                   <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- ! Data Visualization -->
-                      <div class="col-12 order-3 order-md-1">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1 order-3 order-md-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./data-visualization.html" class="card-body">
+                          <a href="./data-visualization.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -1947,14 +1963,15 @@
                         </div>
                       </div>
                       <!-- ! Outsourcing -->
-                      <div class="col-12 mt-3 order-1 order-md-3">
-                        <div class="card py-2">
+                      <div class="col-12 mt-lg-3 m-lg-0 my-1 order-1 order-md-3">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./oursourcing-service.html" class="card-body">
+                          <a href="./oursourcing-service.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -2024,14 +2041,15 @@
                   <div class="service-cards col-md-3 col-12 py-0 pl-3 pr-0">
                     <div class="row d-flex justify-content-center align-items-center flex-column">
                       <!-- Application & Data Security -->
-                      <div class="col-12">
-                        <div class="card py-2">
+                      <div class="col-12 m-lg-0 my-1">
+                        <div class="card py-lg-2 p-0">
                           <span class="line top-line"></span>
                           <span class="line right-line"></span>
                           <span class="line bottom-line"></span>
                           <span class="line left-line"></span>
 
-                          <a href="./predictive-analytics.html" class="card-body">
+                          <a href="./predictive-analytics.html"
+                            class="card-body d-lg-block d-flex flex-row justify-content-start align-items-center">
                             <div class="d-flex justify-content-center">
                               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                                 viewBox="0 0 226 226" style=" fill:#000000;">
@@ -2141,9 +2159,9 @@
             </div>
           </div>
 
-
+        </div>
+      </div>
     </section>
-    <!-- ? END - STATS -->
 
     <!-- ? POC -->
     <div class="scroll-s poc-wrapper" id="accordion">
@@ -2153,7 +2171,7 @@
             <h2 class="title-3 title-dark mb-0">
               Fostering your trust in us with Free Proof of Concept
             </h2>
-            <button type="button" class="button button-dark ml-md-5" id="pocContact">
+            <button type="button" class="button button-dark ml-lg-0 my-3 ml-lg-5" id="pocContact">
               Get Started
             </button>
           </div>
@@ -2217,9 +2235,9 @@
     <section class="scroll-s industry-wrapper section" id="industryMaster">
       <!-- industry -->
       <div class="industry-inner h-100">
-        <h3 class="title-1 title-dark pt-4">Industries</h3>
-        <div class="container h-100 d-flex align-items-center" id="industryInner">
-          <div class="row d-flex flex-row">
+        <h3 class="title-2 title-dark pt-5">Industry Expertise</h3>
+        <div class="container h-100 d-flex align-items-lg-center align-items-start" id="industryInner">
+          <div class="row d-flex flex-row py-4 py-lg-0">
             <!-- 3 cards column -->
             <div class="col-md-3 order-2 order-md-1 d-none d-md-block">
               <div class="row">
@@ -2393,7 +2411,7 @@
 
     <!-- ? CORE VALUES -->
     <section class="container-fluid core-values scroll-s">
-      <h2 class="text-center title-1 title-light py-3 pt-md-5">
+      <h2 class="text-center title-2 title-light py-3 pt-md-5">
         Core Values
       </h2>
       <div class="wrapper">
@@ -2490,7 +2508,7 @@
 
     <!-- ? CLIETNS SLIDER -->
     <section id="clients" class="scroll-s container-fluid our-clients clients-wrapper">
-      <h2 class="title-3 text-center pt-4 pb-0 mb-0">Trusted by</h3>
+      <h2 class="title-2 text-center pt-4 pb-0 mb-0">Trusted by</h3>
         <div class="container px-0">
           <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center">
             <div class="client"><img src="./img/clients/client-1-1.png" alt="elm"></div>
@@ -2509,8 +2527,8 @@
     <section class="contact-banner scroll-s d-flex justify-content-center align-items-center">
       <div class="banner-overlay"></div>
       <div class="banner-content d-flex flex-column align-items-center">
-        <h2 class="title-3 text-center pb-2">Let's work together</h2>
-        <p class="font-italic">We'd love to hear from you.</p>
+        <h2 class="title-2 text-center pb-2">Let's work together</h2>
+        <p class="font-italic">We would love to hear from you.</p>
         <!-- TODO - Add caption here -->
         <button class="button button-blue" id="contactButton">Contact us</button>
       </div>
@@ -2518,233 +2536,253 @@
 
     <!-- ? END - CONTACT BANNER -->
     <!--  FOOTER -->
-    <footer class="footer container-fluid px-3 scroll-s">
-    <div class="footer-info flex-column flex-lg-row py-lg-3 py-md-2 py-1">
-        <p class="f-link d-flex d-flex align-items-center  ml-3 ml-md-4">
-            <a href="tel:+966552357583"><i class="fas fa-fw fa-phone-square-alt"></i>(+966) 552 357 583</a>
-        </p>
+    <!--  FOOTER -->
+    <footer class="footer container-fluid px-md-4 py-1 scroll-s d-flex flex-column">
 
-        <p class="f-link d-flex align-items-center ml-3 ml-md-4">
-            <a href="mailto:info@virtech-ksa.com"><i class="fas fa-fw fa-envelope"></i> info@virtech-ksa.com</a>
-        </p>
-
-        <p class="f-link d-flex align-items-center ml-3 ml-md-4">
-            <a
-                href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-                <i class="fas fa-fw fa-map-marker-alt"></i> Location</a>
-        </p>
-    </div>
-    <div class="footer-copy order-3 order-md-2 d-flex align-items-center py-lg-3 py-md-2">
-        <p class="copyright text-center mx-auto py-1">
-            © 2018 - 2020 Virtech. All rights reserved
-        </p>
-    </div>
-    <div
-        class="footer-social order-2 order-md-3 d-flex align-items-center justify-content-center justify-content-md-end py-lg-3 py-md-2 py-1 mr-md-2">
-        <ul class="social-network d-flex justify-content-end align-items-center pl-0 m-0 mr-md-5">
-            <li>
-                <a href="https://www.facebook.com/Virtech.SA" class="icon-facebook" title="Facebook"><i
-                        class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-                <a href="https://twitter.com/Virtech_KSA" class="icon-twitter" title="Twitter"><i
-                        class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/Virtech.KSA/" class="icon-instagram" title="Instagram"><i
-                        class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/company/virtech-ksa/about/" class="icon-linkedin" title="Linkedin"><i
-                        class="fab fa-linkedin-in"></i></a>
-            </li>
+      <div class="d-flex flex-row align-items-center flex-wrap footer-block-1">
+        <!-- Privacy, Terms and Conditions and sitemap -->
+        <ul class="m-0 footer-privacy">
+          <li>
+            <a class="f-link" href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a class="f-link" href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a class="f-link" href="#">Sitemap</a>
+          </li>
         </ul>
-    </div>
-</footer>
+
+        <!-- contact details -->
+        <ul class="footer-contact d-flex">
+          <li class=" f-link d-flex align-items-center">
+            <a href="tel:+966552357583"><i class="fas fa-fw fa-phone-square-alt"></i>(+966) 552 357 583</a>
+          </li>
+
+          <li class="f-link d-flex align-items-center ml-md-4">
+            <a href="mailto:info@virtech-ksa.com"><i class="fas fa-fw fa-envelope mr-1"></i>
+              info@virtech-ksa.com</a>
+          </li>
+
+          <li class="f-link d-flex align-items-center ml-md-4">
+            <a
+              href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+              <i class="fas fa-fw fa-map-marker-alt"></i>Location</a>
+          </li>
+        </ul>
+
+        <!-- social media links -->
+        <ul class="footer-social d-flex align-items-center pl-0 m-0 mr-md-5">
+          <li>
+            <a href="https://www.facebook.com/Virtech.SA" class="icon-facebook" title="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Virtech_KSA" class="icon-twitter" title="Twitter"><i
+                class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/Virtech.KSA/" class="icon-instagram" title="Instagram"><i
+                class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/virtech-ksa/about/" class="icon-linkedin" title="Linkedin"><i
+                class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+
+        <!-- copyright -->
+        <p class="footer-copyright text-center">
+          © 2018 - <span id="footerYear"></span> Virtech. All rights reserved
+        </p>
+      </div>
+      <script>
+        document.getElementById('footerYear').textContent = new Date().getFullYear();
+      </script>
+    </footer>
+    <!-- END - FOOTER -->
     <!-- END - FOOTER -->
 
     <!--  CONTACT FORM -->
     <section class=" contact-wrapper" id="contactMaster">
-    <div class="overlay"></div>
-    <button type="button" id="contactClose">
+      <div class="overlay"></div>
+      <button type="button" id="contactClose">
         <i class="fas fa-times"></i>
-    </button>
+      </button>
 
-    <div class="container d-flex align-items-center flex-column contact-inner">
+      <div class="container d-flex align-items-center flex-column contact-inner">
         <div class="row d-flex justify-content-between mt-2 mt-md-3">
-            <div class="col-md-6 col-12 contact-form order-2 order-md-1">
-                <div class="container">
-                    <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="row py-md-2">
-                            <div class="col-12">
-                                <div class="form-group floating-label">
+          <div class="col-md-6 col-12 contact-form order-2 order-md-1">
+            <div class="container">
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="row py-md-2">
+                  <div class="col-12">
+                    <div class="form-group floating-label">
 
-                                    <input type="text" class="form-control" name="firstname" id="username"
-                                        pattern="[a-zA-Z\s]{2,30}" maxlength="30" placeholder="Full Name"
-                                        autocomplete="off" required />
-                                    <label for="username">
-                                        Full Name <span class="required">*</span></label>
-                                    <div class="invalid-feedback">
-                                        Please enter valid name
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group floating-label">
+                      <input type="text" class="form-control" name="firstname" id="username" pattern="[a-zA-Z\s]{2,30}"
+                        maxlength="30" placeholder="Full Name" autocomplete="off" required />
+                      <label for="username">
+                        Full Name <span class="required">*</span></label>
+                      <div class="invalid-feedback">
+                        Please enter valid name
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group floating-label">
 
-                                    <input type="email" class="form-control" name="email" autocomplete="off"
-                                        placeholder="Email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
-                                    <label for="email">Email <span class="required">*</span></label>
-                                    <div class="invalid-feedback">
-                                        Please enter valid email
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group floating-label">
+                      <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email"
+                        id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
+                      <label for="email">Email <span class="required">*</span></label>
+                      <div class="invalid-feedback">
+                        Please enter valid email
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group floating-label">
 
-                                    <input type="tel" class="form-control" name="phone" id="phone"
-                                        pattern="^[0-9]{3,12}$" maxlength="12" placeholder="Phone" autocomplete="off"
-                                        required />
-                                    <label for="phone">
-                                        Phone <span class="required">*</span></label>
-                                    <div class="invalid-feedback">
-                                        Please enter valid phone number
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group floating-label">
+                      <input type="tel" class="form-control" name="phone" id="phone" pattern="^[0-9]{3,12}$"
+                        maxlength="12" placeholder="Phone" autocomplete="off" required />
+                      <label for="phone">
+                        Phone <span class="required">*</span></label>
+                      <div class="invalid-feedback">
+                        Please enter valid phone number
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group floating-label">
 
-                                    <textarea class="form-control pt-3 pb-4" name="message" id="message" maxlength="300"
-                                        placeholder="Message" required></textarea>
-                                    <label for="message">Message <span class="required">*</span></label>
-                                    <div class="invalid-feedback">
-                                        Please write a message
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="button button-blue px-5 mx-auto" id="contactSubmit">
-                                Submit
-                            </button>
-                        </div>
-                    </form>
+                      <textarea class="form-control pt-3 pb-4" name="message" id="message" maxlength="300"
+                        placeholder="Message" required></textarea>
+                      <label for="message">Message <span class="required">*</span></label>
+                      <div class="invalid-feedback">
+                        Please write a message
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="button button-blue px-5 mx-auto" id="contactSubmit">
+                    Submit
+                  </button>
                 </div>
+              </form>
             </div>
-            <div class="col-md-5 col-12 d-flex justify-content-center flex-column order-1 order-md-2">
-                <h2 class="text-center contact-title">Get in touch</h2>
-                <p class="text-center contact-caption">
-                    We are happy to assist you with your queries
-                </p>
-            </div>
+          </div>
+          <div class="col-md-5 col-12 d-flex justify-content-center flex-column order-1 order-md-2">
+            <h2 class="text-center contact-title">Get in touch</h2>
+            <p class="text-center contact-caption">
+              We are happy to assist you with your queries
+            </p>
+          </div>
         </div>
 
         <div class="container contact-info px-0 mb-md-5 mb-2 d-none d-md-block">
-            <div class="row mx-auto d-flex justify-content-between align-items-center ">
-                <address class="col-md-3 col-12">
-                    <a class="location"
-                        href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-                        Virtech Technologies, Riyadh, <br />
-                        PO Box - 23754, K.S.A - 11611.
-                    </a>
-                </address>
-                <div class="col text-center">
-                    <a class="phone col-md-3 col-6" href="tel:+966552357583">
-                        (+966) 552 357 583
-                    </a>
-                </div>
-
-                <div class="col-md-3 col-6 text-center">
-                    <a class="mail col" href="mailto:info@virtech-ksa.com">
-                        info@virtech-ksa.com
-                    </a>
-                </div>
-
-                <div class="col-md-3 col-6">
-                    <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
-                        <li>
-                            <a href="https://www.facebook.com/Virtech.SA" class="icoFacebook" title="Facebook">
-                                <i class="fab fa-facebook-f fa-fw"> </i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/Virtech_KSA" class="icoTwitter" title="Twitter"><i
-                                    class="fab fa-twitter fa-fw"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/Virtech.KSA/" class="icoInstagram" title="Instagram">
-                                <i class="fab fa-instagram fa-fw"> </i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/virtech-ksa/about/" class="icoLinkedin"
-                                title="Linkedin"><i class="fab fa-linkedin-in fa-fw"> </i></a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="row mx-auto d-flex justify-content-between align-items-center ">
+            <address class="col-md-3 col-12">
+              <a class="location"
+                href="https://www.google.com/maps/place/Olaya+St,+Riyadh+Saudi+Arabia/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+                Virtech Technologies, Riyadh, <br />
+                PO Box - 23754, K.S.A - 11611.
+              </a>
+            </address>
+            <div class="col text-center">
+              <a class="phone col-md-3 col-6" href="tel:+966552357583">
+                (+966) 552 357 583
+              </a>
             </div>
+
+            <div class="col-md-3 col-6 text-center">
+              <a class="mail col" href="mailto:info@virtech-ksa.com">
+                info@virtech-ksa.com
+              </a>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <ul class="social-network d-flex justify-content-center align-items-center pl-0 ">
+                <li>
+                  <a href="https://www.facebook.com/Virtech.SA" class="icoFacebook" title="Facebook">
+                    <i class="fab fa-facebook-f fa-fw"> </i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Virtech_KSA" class="icoTwitter" title="Twitter"><i
+                      class="fab fa-twitter fa-fw"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/Virtech.KSA/" class="icoInstagram" title="Instagram">
+                    <i class="fab fa-instagram fa-fw"> </i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/virtech-ksa/about/" class="icoLinkedin" title="Linkedin"><i
+                      class="fab fa-linkedin-in fa-fw"> </i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- successful submission status -->
-    <div class="status-alert" id="formStatus">
+      </div>
+      <!-- successful submission status -->
+      <div class="status-alert" id="formStatus">
         <p><i class="fas fa-check"></i></p>
         <h4 class="text-center">Thank you for contacting us!</h4>
         <p>We will get in touch with you soon</p>
-    </div>
-</section>
+      </div>
+    </section>
     <!--  END - CONTACT FORM -->
 
     <!-- CHAT-BOT -->
     <button type="button" class="btn btn-rounded text-center bot" id="chat" aria-label="chat" onclick="show(1)">
-    <svg height="30" width="30" aria-hidden="true" data-prefix="fab" data-icon="rocketchat"
+      <svg height="30" width="30" aria-hidden="true" data-prefix="fab" data-icon="rocketchat"
         class="svg-inline--fa fa-rocketchat fa-w-18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
         <path fill="#fff"
-            d="M486.41 107.57c-76.93-50.83-179.18-62.4-264.12-47.07C127.26-31.16 20.77 11 0 23.12c0 0 73.08 62.1 61.21 116.49-86.52 88.2-45.39 186.4 0 232.77C73.08 426.77 0 488.87 0 488.87c20.57 12.16 126.77 54.19 222.29-37 84.75 15.23 187 3.76 264.12-47.16 119.26-76.14 119.65-220.61 0-297.15zM294.18 404.22a339.53 339.53 0 01-88.11-11.37l-19.77 19.09a179.74 179.74 0 01-36.59 27.39A143.14 143.14 0 0198 454.06c1-1.78 1.88-3.56 2.77-5.24q29.67-55 16-98.69c-32.53-25.61-52-58.34-52-94.13 0-82 102.74-148.43 229.41-148.43S523.59 174 523.59 256 420.85 404.22 294.18 404.22zM184.12 291.3a34.32 34.32 0 01-34.8-33.72c-.7-45.39 67.83-46.38 68.52-1.09v.51a34 34 0 01-33.72 34.32zm73.77-33.72c-.79-45.39 67.74-46.48 68.53-1.19v.61c.39 45.08-67.74 45.57-68.53.58zm143.38 33.72a34.33 34.33 0 01-34.81-33.72c-.69-45.39 67.84-46.38 68.53-1.09v.51a33.89 33.89 0 01-33.72 34.32z" />
-    </svg>
-</button>
+          d="M486.41 107.57c-76.93-50.83-179.18-62.4-264.12-47.07C127.26-31.16 20.77 11 0 23.12c0 0 73.08 62.1 61.21 116.49-86.52 88.2-45.39 186.4 0 232.77C73.08 426.77 0 488.87 0 488.87c20.57 12.16 126.77 54.19 222.29-37 84.75 15.23 187 3.76 264.12-47.16 119.26-76.14 119.65-220.61 0-297.15zM294.18 404.22a339.53 339.53 0 01-88.11-11.37l-19.77 19.09a179.74 179.74 0 01-36.59 27.39A143.14 143.14 0 0198 454.06c1-1.78 1.88-3.56 2.77-5.24q29.67-55 16-98.69c-32.53-25.61-52-58.34-52-94.13 0-82 102.74-148.43 229.41-148.43S523.59 174 523.59 256 420.85 404.22 294.18 404.22zM184.12 291.3a34.32 34.32 0 01-34.8-33.72c-.7-45.39 67.83-46.38 68.52-1.09v.51a34 34 0 01-33.72 34.32zm73.77-33.72c-.79-45.39 67.74-46.48 68.53-1.19v.61c.39 45.08-67.74 45.57-68.53.58zm143.38 33.72a34.33 34.33 0 01-34.81-33.72c-.69-45.39 67.84-46.38 68.53-1.09v.51a33.89 33.89 0 01-33.72 34.32z" />
+      </svg>
+    </button>
 
-<div id="box1" class="chat-bot">
-    <div class="card shadow" id="bot">
+    <div id="box1" class="chat-bot">
+      <div class="card shadow" id="bot">
         <div id="close" class="card-header d-flex justify-content-between">
-            Vbot
-            <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-x">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
+          Vbot
+          <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-x">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
         </div>
 
         <div class="card-body chatBot" id="scroll">
-            <div class="reply-messages" id="botMessages">
-                <p id="botReplay">Hey I'm Vbot !</p>
-            </div>
+          <div class="reply-messages" id="botMessages">
+            <p id="botReplay">Hey I'm Vbot !</p>
+          </div>
         </div>
         <div class="card-footer p-0 bottom-fixed">
-            <form id="bot-form">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
-                        aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off" />
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">
-                            <button type="submit" class="btn sendBtn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 172 172">
-                                    <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none"
-                                        font-size="none" text-anchor="none" style="mix-blend-mode:normal">
-                                        <path d="M0 172V0h172v172z" />
-                                        <path
-                                            d="M170.643.752a3.389 3.389 0 00-3.709-.309L1.814 89.883a3.381 3.381 0 00-1.76 3.306 3.388 3.388 0 002.324 2.93l46.938 15.318-4.542 46.467a3.378 3.378 0 002.029 3.454c.43.201.9.295 1.357.295.954 0 1.895-.403 2.553-1.155l29.603-33.446 44.572 43.94c.645.632 1.505.981 2.392.981.31 0 .618-.054.927-.134a3.395 3.395 0 002.379-2.446l41.28-165.12a3.4 3.4 0 00-1.223-3.52zM56.223 110.806l67.12-54.274-45.741 63.33-25.034 28.26z"
-                                            fill="#fff" />
-                                    </g>
-                                </svg>
-                            </button>
-                        </span>
-                    </div>
-                </div>
-            </form>
+          <form id="bot-form">
+            <div class="input-group">
+              <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
+                aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off" />
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">
+                  <button type="submit" class="btn sendBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 172 172">
+                      <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none"
+                        text-anchor="none" style="mix-blend-mode:normal">
+                        <path d="M0 172V0h172v172z" />
+                        <path
+                          d="M170.643.752a3.389 3.389 0 00-3.709-.309L1.814 89.883a3.381 3.381 0 00-1.76 3.306 3.388 3.388 0 002.324 2.93l46.938 15.318-4.542 46.467a3.378 3.378 0 002.029 3.454c.43.201.9.295 1.357.295.954 0 1.895-.403 2.553-1.155l29.603-33.446 44.572 43.94c.645.632 1.505.981 2.392.981.31 0 .618-.054.927-.134a3.395 3.395 0 002.379-2.446l41.28-165.12a3.4 3.4 0 00-1.223-3.52zM56.223 110.806l67.12-54.274-45.741 63.33-25.034 28.26z"
+                          fill="#fff" />
+                      </g>
+                    </svg>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-</div>
     <!-- END - CHAT-BOT -->
 
   </article>

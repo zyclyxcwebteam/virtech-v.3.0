@@ -301,27 +301,6 @@ border-top: 1px solid hsla(223, 47%, 22%, 1);
  .stats-wrapper .stats-title{
    font-size: 1.2rem;
  }
-  .poc-wrapper {
-    padding: 1.5rem 0;
-  }
-  .poc-title {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-  .poc-wrapper .poc-inner {
-    margin: 0 !important;
-  }
-  .poc-list {
-    width: 100% !important;
-  }
-  .poc-wrapper .poc-btn {
-    bottom: unset;
-    /* border: 1px solid #0c1b33; */
-  }
-  .poc-wrapper .poc-btn[aria-expanded="true"] {
-    bottom: unset;
-    left: unset;
-    right: 2px;
-    top: 80px;
-  }
+ 
+
 }

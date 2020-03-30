@@ -35,7 +35,10 @@
   <!--  navbar -->
   <nav class="navbar navbar-expand-lg fixed-top master-navbar py-0" id="masterNavbar">
     <div class="container-fluid">
+        <!-- Logo -->
         <a href="./" class="navbar-brand ml-2 py-2"><img src="./img/logo/logo.png" alt="Virtech" id="masterLogo" /></a>
+
+        <!-- Toggle Button -->
         <button type="button" class="navbar-toggler hamburger hamburger--squeeze is-active" type="button"
             data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -44,25 +47,23 @@
             </span>
         </button>
 
-        <div id="navbarContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto mr-2">
-                <!--  Home -->
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+        <!-- Menu Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <!-- ! Services Dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
 
-                <!-- Services -->
-                <li class="nav-item active dropdown">
-                    <a id="serviceDropDown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        class="nav-link dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 
-                    <ul aria-labelledby="serviceDropDown" class="dropdown-menu service-dropdown border-0">
-                        <!-- ! New Age Technologies -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="newAgeDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">New Age Technologies</a>
-                            <ul aria-labelledby="newAgeDropDown" class="dropdown-menu border-0">
+                        <li><a class="dropdown-item dropdown-toggle" href="#">New Age Technologies</a>
+                            <ul class="dropdown-menu">
                                 <li>
                                     <a tabindex="-1" href="./robotic-process-automation.html"
                                         class="dropdown-item">RPA</a>
@@ -82,12 +83,8 @@
                                 </li>
                             </ul>
                         </li>
-
-                        <!-- ! Security Services -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="securityDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">Security Services</a>
-                            <ul aria-labelledby="securityDropDown" class="dropdown-menu border-0">
+                        <li><a class="dropdown-item dropdown-toggle" href="#">Security Services</a>
+                            <ul class="dropdown-menu">
                                 <li>
                                     <a href="./network-and-security.html" class="dropdown-item">Network Security</a>
                                 </li>
@@ -97,7 +94,8 @@
                                 </li>
 
                                 <li>
-                                    <a href="./application_and_data_security.html" class="dropdown-item">Application &
+                                    <a href="./application_and_data_security.html" class="dropdown-item">Application
+                                        &
                                         Data Security</a>
                                 </li>
 
@@ -107,7 +105,8 @@
                                 </li>
 
                                 <li>
-                                    <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint & Mobile
+                                    <a href="./endpoint-mobile-security.html" class="dropdown-item">Endpoint &
+                                        Mobile
                                         Security</a>
                                 </li>
 
@@ -118,12 +117,8 @@
                                 </li>
                             </ul>
                         </li>
-
-                        <!-- ! Application Devlopment -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="appDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">Application Development</a>
-                            <ul aria-labelledby="appDropDown" class="dropdown-menu border-0">
+                        <li><a class="dropdown-item dropdown-toggle" href="#">Application Development</a>
+                            <ul class="dropdown-menu">
                                 <li>
                                     <a tabindex="-1" href="./software-development.html" class="dropdown-item">Software
                                         Development</a>
@@ -140,27 +135,20 @@
                                 </li>
                             </ul>
                         </li>
-
-                        <!-- ! BI Solutions -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="biDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">BI Solutions</a>
-                            <ul aria-labelledby="biDropDown" class="dropdown-menu border-0">
+                        <li><a class="dropdown-item dropdown-toggle" href="#">BI Solutions</a>
+                            <ul class="dropdown-menu">
                                 <li>
                                     <a tabindex="-1" href="./data-visualization.html" class="dropdown-item">Data
                                         Visualization</a>
                                 </li>
                                 <li>
-                                    <a href="./predictive-analytics.html" class="dropdown-item">Predictive Analysis</a>
+                                    <a href="./predictive-analytics.html" class="dropdown-item">Predictive
+                                        Analysis</a>
                                 </li>
                             </ul>
                         </li>
-
-                        <!-- ! Infrastructure Services -->
-                        <li class="dropdown-submenu dropright">
-                            <a id="infraDropDown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="dropdown-item dropdown-toggle">Infrastructure Services</a>
-                            <ul aria-labelledby="infraDropDown" class="dropdown-menu border-0">
+                        <li><a class="dropdown-item dropdown-toggle" href="#">Infrastructure Services</a>
+                            <ul class="dropdown-menu">
                                 <li>
                                     <a tabindex="-1" href="./data-center-services.html" class="dropdown-item">Data
                                         Center Services</a>
@@ -174,23 +162,23 @@
                                 </li>
                             </ul>
                         </li>
-
                         <!-- ! Outsourcing Services -->
                         <li class="nav-item">
                             <a href="./oursourcing-service.html" class="dropdown-item">Outsourcing Services</a>
                         </li>
                     </ul>
                 </li>
-                <!-- End Level one -->
 
                 <li class="nav-item">
-                    <a href="./about.html" class="nav-link">About us</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="./careers.html" class="nav-link">Careers</a>
+                    <a class="nav-link" href="#">Careers</a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="#" class="nav-link" id="contactLink">Contact</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
@@ -321,30 +309,43 @@
     </section>
 
     <!--  FOOTER -->
-    <footer class="footer container-fluid px-3 scroll-s">
-    <div class="footer-info flex-column flex-lg-row py-lg-3 py-md-2 py-1">
-        <p class="f-link d-flex d-flex align-items-center  ml-3 ml-md-4">
-            <a href="tel:+966552357583"><i class="fas fa-fw fa-phone-square-alt"></i>(+966) 552 357 583</a>
-        </p>
+    <!--  FOOTER -->
+<footer class="footer container-fluid px-md-4 py-1 scroll-s d-flex flex-column">
 
-        <p class="f-link d-flex align-items-center ml-3 ml-md-4">
-            <a href="mailto:info@virtech-ksa.com"><i class="fas fa-fw fa-envelope"></i> info@virtech-ksa.com</a>
-        </p>
+    <div class="d-flex flex-row align-items-center flex-wrap footer-block-1">
+        <!-- Privacy, Terms and Conditions and sitemap -->
+        <ul class="m-0 footer-privacy">
+            <li>
+                <a class="f-link" href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a class="f-link" href="#">Terms & Conditions</a>
+            </li>
+            <li>
+                <a class="f-link" href="#">Sitemap</a>
+            </li>
+        </ul>
 
-        <p class="f-link d-flex align-items-center ml-3 ml-md-4">
-            <a
-                href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-                <i class="fas fa-fw fa-map-marker-alt"></i> Location</a>
-        </p>
-    </div>
-    <div class="footer-copy order-3 order-md-2 d-flex align-items-center py-lg-3 py-md-2">
-        <p class="copyright text-center mx-auto py-1">
-            © 2018 - 2020 Virtech. All rights reserved
-        </p>
-    </div>
-    <div
-        class="footer-social order-2 order-md-3 d-flex align-items-center justify-content-center justify-content-md-end py-lg-3 py-md-2 py-1 mr-md-2">
-        <ul class="social-network d-flex justify-content-end align-items-center pl-0 m-0 mr-md-5">
+        <!-- contact details -->
+        <ul class="footer-contact d-flex">
+            <li class=" f-link d-flex align-items-center">
+                <a href="tel:+966552357583"><i class="fas fa-fw fa-phone-square-alt"></i>(+966) 552 357 583</a>
+            </li>
+
+            <li class="f-link d-flex align-items-center ml-md-4">
+                <a href="mailto:info@virtech-ksa.com"><i class="fas fa-fw fa-envelope mr-1"></i>
+                    info@virtech-ksa.com</a>
+            </li>
+
+            <li class="f-link d-flex align-items-center ml-md-4">
+                <a
+                    href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+                    <i class="fas fa-fw fa-map-marker-alt"></i>Location</a>
+            </li>
+        </ul>
+
+        <!-- social media links -->
+        <ul class="footer-social d-flex align-items-center pl-0 m-0 mr-md-5">
             <li>
                 <a href="https://www.facebook.com/Virtech.SA" class="icon-facebook" title="Facebook"><i
                         class="fab fa-facebook-f"></i></a>
@@ -362,8 +363,17 @@
                         class="fab fa-linkedin-in"></i></a>
             </li>
         </ul>
+
+        <!-- copyright -->
+        <p class="footer-copyright text-center">
+            © 2018 - <span id="footerYear"></span> Virtech. All rights reserved
+        </p>
     </div>
+    <script>
+        document.getElementById('footerYear').textContent = new Date().getFullYear();
+    </script>
 </footer>
+<!-- END - FOOTER -->
     <!-- END - FOOTER -->
 
     <!--  CONTACT FORM -->

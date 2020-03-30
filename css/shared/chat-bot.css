@@ -102,19 +102,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 10px;
-  right: 10px;
- 
-
-  cursor: pointer;
-  box-shadow: 0 0 0 0.4em transparent;
-  animation: btn-pulse 1s infinite;
-  -webkit-animation: btn-pulse 1s infinite;
-  z-index: 99;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  bottom: 35px;
+  right: 10px; 
+  z-index: 99;   
 }
 .bot:hover {
   border: 2px solid #00bdd5;
@@ -177,7 +167,7 @@
 @media (max-width: 576px) {
   .bot {
     position: absolute;
-    bottom: 156px;
+    bottom: 130px;
   }
 }
 /* Small devices (landscape phones, 576px and up) */

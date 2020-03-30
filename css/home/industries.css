@@ -2,6 +2,9 @@
   --ind-bg: #f5f5f5;
   background-color: var(--ind-bg);
 }
+.industry-wrapper .title-2{
+  color: #0a7492;
+}
 .industry-inner {
   display: flex;   
   align-items: center;
@@ -63,23 +66,7 @@
 #industryInner .col-12 {
   padding: 5px;
 }
-@media (max-width: 576px) {
-  .ind-content{
-    padding: 0.8rem;
-    text-align: left !important;
-  }
-  .industry-cards-2 {
-    align-self: start;
-  }
-  .industry-letter{
-    font-size: 1rem;
-  }
- .industry-cards-2 .row .col-4,  .col-6{
-    padding: 0 !important;
-     
-  }
-  
-}
+
 
 @media (max-width: 768px) { 
 .ind-sm-wrapper{
@@ -117,6 +104,35 @@
     bottom: 0px;
   }
  }
+
+@media (max-width: 576px) {
+  .ind-content{
+    padding: 1rem 0.5rem;
+    text-align: justify !important;
+  }
+  .industry-cards-2 {
+    align-self: start;
+  }
+  .industry-letter{
+    font-size: 1rem;
+  }
+ .industry-cards-2 .row .col-4,  .col-6{
+    padding: 0 !important;
+     
+  }
+  .ind-content .title-3{
+    text-align: center;
+  }
+  .title-text-sm{
+    display: none;
+  }
+  .title-letter-sm {
+    font-size: 3rem;
+    color: #20263b;
+  }
+  
+}
+
 
  /* ! gsap animation */
 

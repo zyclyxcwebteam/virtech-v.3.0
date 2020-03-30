@@ -1,6 +1,7 @@
  
 .core-values {
-  --core-value:#16213d;
+  /* --core-value:#16213d; */
+  --core-value:#0a7492;
   background-color:var(--core-value) ;
   height: calc(100vh - var(--navbar-height)); 
   position: relative;  
@@ -25,15 +26,19 @@
   padding: 1.5rem;
   border-radius: 50%;
 }
+
 .core-values .core-icon-inner img {
   opacity: 0.7;
 }
+
 .core-values .core-icon-outer:hover {
   background-color: hsl(187, 92%, 44%);
 }
+
 .core-values .core-icon-outer:hover .core-icon-inner img {
   opacity: 1;
 }
+
 .core-values .core-values .card-body {
   padding: 0;
 }
@@ -166,7 +171,7 @@
   }
 
   .c-val-6 {
-    right:5%px;
+    right:5%;
     bottom: 10px;
   }
 }
@@ -230,6 +235,7 @@
   .c-val{
     position: static;
     width: 100%;
+    padding: 0.3rem 0;
   }
   .core-values .c-val-title {
   font-size: 1.2rem;

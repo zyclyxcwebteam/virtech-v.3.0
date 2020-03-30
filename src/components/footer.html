@@ -1,27 +1,40 @@
-<footer class="footer container-fluid px-3 scroll-s">
-    <div class="footer-info flex-column flex-lg-row py-lg-3 py-md-2 py-1">
-        <p class="f-link d-flex d-flex align-items-center  ml-3 ml-md-4">
-            <a href="tel:+966552357583"><i class="fas fa-fw fa-phone-square-alt"></i>(+966) 552 357 583</a>
-        </p>
+<!--  FOOTER -->
+<footer class="footer container-fluid px-md-4 py-1 scroll-s d-flex flex-column">
 
-        <p class="f-link d-flex align-items-center ml-3 ml-md-4">
-            <a href="mailto:info@virtech-ksa.com"><i class="fas fa-fw fa-envelope"></i> info@virtech-ksa.com</a>
-        </p>
+    <div class="d-flex flex-row align-items-center flex-wrap footer-block-1">
+        <!-- Privacy, Terms and Conditions and sitemap -->
+        <ul class="m-0 footer-privacy">
+            <li>
+                <a class="f-link" href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a class="f-link" href="#">Terms & Conditions</a>
+            </li>
+            <li>
+                <a class="f-link" href="#">Sitemap</a>
+            </li>
+        </ul>
 
-        <p class="f-link d-flex align-items-center ml-3 ml-md-4">
-            <a
-                href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
-                <i class="fas fa-fw fa-map-marker-alt"></i> Location</a>
-        </p>
-    </div>
-    <div class="footer-copy order-3 order-md-2 d-flex align-items-center py-lg-3 py-md-2">
-        <p class="copyright text-center mx-auto py-1">
-            © 2018 - 2020 Virtech. All rights reserved
-        </p>
-    </div>
-    <div
-        class="footer-social order-2 order-md-3 d-flex align-items-center justify-content-center justify-content-md-end py-lg-3 py-md-2 py-1 mr-md-2">
-        <ul class="social-network d-flex justify-content-end align-items-center pl-0 m-0 mr-md-5">
+        <!-- contact details -->
+        <ul class="footer-contact d-flex">
+            <li class=" f-link d-flex align-items-center">
+                <a href="tel:+966552357583"><i class="fas fa-fw fa-phone-square-alt"></i>(+966) 552 357 583</a>
+            </li>
+
+            <li class="f-link d-flex align-items-center ml-md-4">
+                <a href="mailto:info@virtech-ksa.com"><i class="fas fa-fw fa-envelope mr-1"></i>
+                    info@virtech-ksa.com</a>
+            </li>
+
+            <li class="f-link d-flex align-items-center ml-md-4">
+                <a
+                    href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en">
+                    <i class="fas fa-fw fa-map-marker-alt"></i>Location</a>
+            </li>
+        </ul>
+
+        <!-- social media links -->
+        <ul class="footer-social d-flex align-items-center pl-0 m-0 mr-md-5">
             <li>
                 <a href="https://www.facebook.com/Virtech.SA" class="icon-facebook" title="Facebook"><i
                         class="fab fa-facebook-f"></i></a>
@@ -39,5 +52,14 @@
                         class="fab fa-linkedin-in"></i></a>
             </li>
         </ul>
+
+        <!-- copyright -->
+        <p class="footer-copyright text-center">
+            © 2018 - <span id="footerYear"></span> Virtech. All rights reserved
+        </p>
     </div>
+    <script>
+        document.getElementById('footerYear').textContent = new Date().getFullYear();
+    </script>
 </footer>
+<!-- END - FOOTER -->
