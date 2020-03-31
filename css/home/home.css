@@ -236,7 +236,7 @@
   display: flex;
   align-items: center; 
   justify-content: center;
-  color: hsl(217, 62%, 82%)
+  color:#f9f9f9;
 }
 .stats-wrapper .stats-number span:nth-child(2){
   margin-left: 4px;
@@ -244,7 +244,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .stats-wrapper .stats-title{
- color: hsl(217, 62%, 75%);
+ color:hsl(0, 0%, 88%);
   font-weight: 500;
   font-size: 1.5rem;
   margin-top: 0.5rem;
