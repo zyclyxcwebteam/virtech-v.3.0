@@ -28,14 +28,14 @@
 }
 .services-wrapper .services .service-cards .service-title {
   font-weight: 500;
-  color:#b8bdc4;
+  color:#f9f9f9;
   text-align: left;
   font-size: 1.2rem;
 }
 .services-wrapper .service-cards .card {
   border: none;
   transition: all 0.2s ease-in;
-  background-color:#0c1b33;
+  background-color:hsla(193, 86%, 14%, 1);
   border-radius: 0px;
 }
 .services-wrapper .service-cards .card .line {
@@ -52,7 +52,7 @@
   /* opacity: 0;   */
   transition: all 0.2s ease-in;
   /* color: #b8bdc4; */
-  color: #a0a5b0;
+  color: #d5d5d5;
   font-size: 1rem;
   margin-bottom: 0;
   /* text-align: justify; */
