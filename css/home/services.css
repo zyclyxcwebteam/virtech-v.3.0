@@ -1,5 +1,5 @@
  .services-wrapper {
-   --service-bg:#16213d;    
+   --service-bg:#08556b;    
   background-color: var(--service-bg);
   position: relative;
 }
@@ -9,9 +9,9 @@
   border: none;
   opacity: 1;
 }
-
+/* background-image: linear-gradient(to right, #00f2fe 0%, #00bdd5 100%); */
 .services-wrapper .services .title-card-2 {
-  background-image: url("../../img/card-6.png");
+  background-image: url("../../img/Card1.png");
   background-size: cover;
 }
 
@@ -58,7 +58,7 @@
   /* text-align: justify; */
 }
 .services-wrapper .service-cards .card:hover {
-  background-color:rgba(10, 10, 10, 0.2);   
+  background-color:#16151F;   
 }
 .services-wrapper .service-cards .card:hover .service-card-content {
   opacity: 1;

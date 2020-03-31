@@ -221,13 +221,11 @@
 /*  company stats  */
 
 .stats-wrapper {
-  background-color: #16213d;
+  background-color: #08556b;
   color: #b8bdc4;
   
 }
-.stats-wrapper .stats-inner{
-border-top: 1px solid hsla(223, 47%, 22%, 1);     
-}
+
 /* .stats-wrapper .stats img{
   height: 40px;
   width: 40px;
@@ -252,7 +250,7 @@ border-top: 1px solid hsla(223, 47%, 22%, 1);
   margin-top: 0.5rem;
 }
 .stats-wrapper .stats:nth-child(2), .stats-wrapper .stats:nth-child(3){
-  border-left:1px solid hsla(223, 47%, 22%, 1) ;
+  border-left:1px solid hsl(187, 100%, 32%);
 }
 
 

@@ -1,7 +1,7 @@
  
 .core-values {
   /* --core-value:#16213d; */
-  --core-value:#0a7492;
+  --core-value:#08556b;
   background-color:var(--core-value) ;
   height: calc(100vh - var(--navbar-height)); 
   position: relative;  
