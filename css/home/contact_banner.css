@@ -1,8 +1,9 @@
  .contact-banner {
-  height: 55vh;
+  height: 50vh;
   background-image: url("../../img/contact/globe-sm.jpg");
   background-position: center;
-  position: relative;
+  position: relative;   
+  background-repeat: repeat-x;
 }
 .contact-banner .banner-overlay {
   position: absolute;
