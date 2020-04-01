@@ -11,9 +11,17 @@
 }
 /* background-image: linear-gradient(to right, #00f2fe 0%, #00bdd5 100%); */
 .services-wrapper .services .title-card-2 {
+  /* background-image: url("../../img/Card1.png"); */
   background-image: url("../../img/Card1.png");
   background-size: cover;
+  background-position: bottom;   
 }
+/* .services-wrapper .services .title-card-3 {   
+  background-image: url("../../img/home/security.svg");
+  background-size: cover;
+  background-position: bottom;
+  mix-blend-mode: luminosity;
+} */
 
 .services-wrapper .services .title-card .card-body {
   display: flex;

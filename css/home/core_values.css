@@ -8,11 +8,11 @@
 }
 .core-values .c-val-caption {
   font-size: 1rem;
-  color: #98b6e7;
+  color: #d5d5d5;
 }
 .core-values .c-val-title {
   font-size: 1.5rem;
-  color: #b5caee;
+  color: #f9f9f9;
   text-align: center;
 }
 
@@ -135,7 +135,7 @@
   background-color: hsl(217, 62%, 20%);
 }
 .c-val .core-icon-inner {
-  background-color: hsl(217, 62%, 10%);
+  background-color:#16151f;
   padding: 1.5rem;
   border-radius: 50%;
 }
