@@ -250,7 +250,7 @@
   margin-top: 0.5rem;
 }
 .stats-wrapper .stats:nth-child(2), .stats-wrapper .stats:nth-child(3){
-  border-left:1px solid hsl(187, 100%, 32%);
+  border-left:1px solid #09637b;
 }
 
 
