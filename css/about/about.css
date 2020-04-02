@@ -2,7 +2,7 @@
 
 
 :root {
-  --mission-bg: #16213d;
+  --mission-bg: #08556b;
   --line-height:0px;
   --circle-sm-opacity:0;
 }
@@ -20,7 +20,7 @@
 }
 .about-home {
   height: calc(100vh - var(--navbar-height));
-  background-color: #16213d;
+  background-color: #08556b;
   background-image: url("../../img/about/Banner-1.jpg");
   background-position: top;
   background-size: cover;
@@ -36,11 +36,11 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(to top, #16213d 1%, transparent 100%);
+  background-image: linear-gradient(to top, #08556b 1%, transparent 100%);
 }
  
 .about-overview {
-  background-color: #16213d;
+  background-color: #08556b;
 }
 .about-home .about-title {
   z-index: 99;
@@ -59,7 +59,7 @@
 }
 .about-home .about-title-left-1,.about-home .about-title-left-2 {
   font-size: 3rem;
-  color: #b8bdc4;
+  color: #f9f9f9;
  
   font-weight: 600;
   font-family: "Playfair Display";
@@ -77,7 +77,7 @@
 }
 .about-overview .hero-text {
   font-size: 1.1rem;
-  color: #b8bdc4;
+  color: #f5f5f5;
   text-align: justify;
   margin-top: 0.6rem;
   z-index: 99;
@@ -85,7 +85,7 @@
 
 .about-title-left .banner-title-2 {
   /* font-size: 2.5rem; */
-  color: #b8bdc4;
+  color: #f5f5f5;
 }
 
 .about-overview p {
@@ -105,7 +105,7 @@
 .mission-vission .card-title {
   font-size: 40px;
   font-weight: 700;
-  color:#fdfff5;
+  color:#f9f9f9;
   text-align: center;
   height: 120px;
   display: flex;
@@ -140,7 +140,7 @@
 
 /* How we Do */
 .how-wedo-outer {
-  background-color: #16213d;
+  background-color: #08556b;
    height: calc(100vh - var(--navbar-height));
 }
 .how-wedo-outer .do-content {
@@ -211,11 +211,11 @@
 .how-wedo-outer .do-content .do-title {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #b5caee;   
+  color: #f9f9f9;   
 }
 
 .how-wedo-outer .do-content .do-text {
-  color: #98b6e7;
+  color: #f5f5f5;
   /* padding: 1rem 0;
   margin: 1rem 0; */
   opacity: 0;
@@ -224,7 +224,7 @@
 .how-wedo-outer .do-text p {
   margin-bottom: 0;
   font-size: 1rem;
-  color: hsl(217, 62%, 92%);
+  color: #f5f5f5;
   /* text-align: justify; */
 }
 .how-wedo-outer .do-text-2 p {

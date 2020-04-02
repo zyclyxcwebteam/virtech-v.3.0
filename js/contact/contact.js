@@ -11,7 +11,7 @@
     gsap.to(".contact-wrapper", {
       display: "flex",
       minHeight: "100%",
-      top: "62px",
+      top: "60px",
       bottom: "unset",
       duration: 0.5
     });
@@ -44,7 +44,6 @@
   //     }, false);
   //   });
   // }, false);
-
   contactLink &&
     contactLink.addEventListener("click", function(event) {
       event.preventDefault();
@@ -57,16 +56,15 @@
       contactFormShow();
     });
 
-  contactClose &&
-    contactClose.addEventListener("click", function(event) {
-      event.preventDefault();
-      contactFormHide();
-    });
-
   pocContactButton &&
     pocContactButton.addEventListener("click", function(event) {
       event.preventDefault();
       contactFormShow();
+    });
+  contactClose &&
+    contactClose.addEventListener("click", function(event) {
+      event.preventDefault();
+      contactFormHide();
     });
 
   // TODO -  form validations
