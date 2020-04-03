@@ -6,3 +6,22 @@
 body{
   font-family: HKGrotesk;
 }
+
+.service-content-cards .col-md-9:nth-child(even) .row {
+    justify-content: flex-start;
+}
+
+.service-content{
+    background-color: #f9f9f9;
+}
+.content-card-icon{
+    margin-bottom: 12px;
+}
+.content-card-title{
+    margin-bottom: 12px;
+    color: #16151F;
+}
+.content-card-text{
+    font-size: 1.0625rem;
+    color: #474747;
+}
