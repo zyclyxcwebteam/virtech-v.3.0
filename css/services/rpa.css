@@ -1,0 +1,8 @@
+@font-face {
+  font-family:HKGrotesk;
+  src: url('../../fonts/HKGroteskPro-Regular.woff2');
+}
+ 
+body{
+  font-family: HKGrotesk;
+}

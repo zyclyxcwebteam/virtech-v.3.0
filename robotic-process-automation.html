@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="./css/services/banner-images.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/shared/chat-bot.css" />
+    <link rel="stylesheet" href="./css/services/rpa.css">
 </head>
 
 <body>
@@ -220,12 +221,13 @@
                 <li><a href="#" id="img1">Image-1</a></li>
                 <li><a href="#" id="img2">Image-2</a></li>
                 <li><a href="#" id="img3">Image-3</a></li>
+                <li><a href="#" id="img4">Image-4</a></li>
             </ul>
         </section>
 
         <section class="container-fluid service-overview rpa-overview" id="serviceOverview">
-            <div class="text-center">
-                <h3 class="service-tagline px-4 text-center">
+            <div class="text-center row">
+                <h3 class=" col-md-9 col-12 mx-auto service-tagline px-4 text-center">
                     The most preferred company in the Middle East to have successfully
                     implemented over 100+ processes in 3 years
                 </h3>
@@ -614,6 +616,7 @@
         let imageOne = document.getElementById("img1");
         let imageTwo = document.getElementById("img2");
         let imageThree = document.getElementById("img3");
+        let imageFour = document.getElementById("img4");
 
         imageOne.addEventListener("click", function () {
             document.querySelector(".service-banner").style.backgroundImage =
@@ -630,6 +633,13 @@
                 "url(./img/rpa/img-3.jpg)";
             document.querySelector(".service-banner").style.backgroundPosition =
                 "top";
+        });
+
+        imageFour.addEventListener("click", function () {
+            document.querySelector(".service-banner").style.backgroundImage =
+                "url(./img/rpa/img-4.jpg)";
+            document.querySelector(".service-banner").style.backgroundPosition =
+                "center";
         });
     </script>
 </body>
