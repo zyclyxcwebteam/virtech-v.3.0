@@ -3,38 +3,18 @@
   background-position: center;
 }
 
-/* .rpa-overview {
-  background-color: #08556b;
+.rpa-overview {
+  background-color: #013da1;
 }
 
 .rpa-banner.service-banner::after {
     background-image: linear-gradient(
     to top,
-    #08556b 1%,
-    rgba(8, 85, 107,0.05) 100%
+    #013da1 1%,
+    rgba(1, 61, 161,0.05) 100%
   );
-} */
-.rpa-banner .service-name{
-  background-color: #f9f9f9;
-  color: #16151F;
-  padding: 0.5rem 1rem;
 }
 
-.rpa-overview{
-  background-color: #ffffff;
-  padding-top:3rem;   
-  color: #525252;
-}
-.rpa-overview .service-tagline{
-  color: #16151F;
-  font-size: 1.5rem;
-   font-style: normal;
-   font-weight: 600;
-   margin:0
-}
-.rpa-overview .fa-quote-left, .rpa-overview .fa-quote-right{
-  color: #00bdd5;
-}
 .ai-banner {
   background-image: url("../../img/ai/img.jpg");
   background-position:center;
