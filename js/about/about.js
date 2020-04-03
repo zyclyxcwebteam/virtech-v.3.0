@@ -39,17 +39,7 @@ new ScrollMagic.Scene({
     .setTween(howWeDo)     
     .addTo(controller);
     
-    let missionBg = gsap.timeline()
-    missionBg.to('#missionMaster', { '--mission-bg':'#eeeef0', duration: 0.8 })
-    missionBg.fromTo(".mission-vission .about-text",{y:30,autoAlpha:0},{stagger:0.2,y:0,autoAlpha:1,duration:0.2})
-    
-    new ScrollMagic.Scene({
-        triggerElement:'#missionMaster',
-        triggerHook:0.25,
-        reverse:false
-    })
-    .setTween(missionBg)     
-    .addTo(controller)    
+   
 
 // how we do it mobile
 gsap.to('.how-wedo-line',{'--line-height':'0%',duration:0.001})
