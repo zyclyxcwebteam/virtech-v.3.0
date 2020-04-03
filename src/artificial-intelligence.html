@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161594957-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161594957-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-161594957-1');
-    </script>
+    gtag('config', 'UA-161594957-1');
+  </script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,12 +38,7 @@
 
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner ai-banner">
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-        <li><a href="#" id="img4">Image-4</a></li>
-      </ul>
+
 
       <div class="row banner-title d-flex justify-content-end align-items-end flex-column h-100 mx-auto px-2">
         <div class="col-md-6 col-12 tex text-center">
@@ -190,33 +185,6 @@
   <script src="./js/contact/contact.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
-
-  <script>
-    let imageOne = document.getElementById("img1");
-    let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
-    let imageFour = document.getElementById("img4");
-
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/ai/img-1.jpg)";
-    });
-
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/ai/img-2.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/ai/img-3.jpg)";
-    });
-
-    imageFour.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/ai/img-4.jpg)";
-    });
-  </script>
 </body>
 
 </html>
