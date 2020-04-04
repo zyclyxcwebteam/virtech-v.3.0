@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161594957-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161594957-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-161594957-1');
-    </script>
+    gtag('config', 'UA-161594957-1');
+  </script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,34 +37,29 @@
     @@include('./components/navbar.html')
     <!-- END - Navbar -->
     <section class="container-fluid service-banner dm-banner">
-      <div class="row banner-title d-flex justify-content-center align-items-end flex-column h-100 mx-auto px-2">
-        <div class="col-md-6 col-12 text-center">
-          <h2 class="service-name">Digital Marketing</h2>
-          <h3 class="service-tagline">Empowering brands digitally</h3>
-        </div>
-      </div>
+
       <ul class="image-list">
         <li><a href="#" id="img1">Image-1</a></li>
         <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-        <li><a href="#" id="img4">Image-4</a></li>
-        <li><a href="#" id="img5">Image-5</a></li>
-        <li><a href="#" id="img6">Image-6</a></li>
       </ul>
     </section>
 
-    <section class="container-fluid service-overview dm-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 py-3 pl-5">
-          <p>
-            In today’s time, it takes the right campaign to strike a chord with
-            your target customers. We help you do exactly that by implementing a
-            digital marketing strategy that will capture your audience on
-            new-age platforms. Our team of experts focuses on elevating your
-            marketing efforts via digital channels like search engines, social
-            media, email campaigns, Google Ads, etc.
-          </p>
-        </div>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Digital Marketing</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          Empowering brands digitally
+        </h3>
+      </div>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          In today’s time, it takes the right campaign to strike a chord with
+          your target customers. We help you do exactly that by implementing a
+          digital marketing strategy that will capture your audience on
+          new-age platforms. Our team of experts focuses on elevating your
+          marketing efforts via digital channels like search engines, social
+          media, email campaigns, Google Ads, etc.
+        </p>
       </div>
     </section>
 
@@ -243,39 +238,16 @@
   <script>
     let imageOne = document.getElementById("img1");
     let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
-    let imageFour = document.getElementById("img4");
-    let imageFive = document.getElementById("img5");
-    let imageSix = document.getElementById("img6");
 
     imageOne.addEventListener("click", function () {
       document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/dmark/img-9.jpg)";
+        "url(./img/dmark/img-1.jpg)";
     });
 
     imageTwo.addEventListener("click", function () {
       document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/dmark/img-8.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/dmark/img-7.jpg)";
-    });
-
-    imageFour.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/dmark/img-10.jpg)";
-    });
-    imageFive.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/dmark/img-11.jpg)";
-    });
-
-    imageSix.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/dmark/img-3.jpg)";
-    });
+        "url(./img/dmark/img-2.jpg)";
+    }); 
   </script>
 </body>
 

@@ -188,35 +188,26 @@
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner outs-banner">
-      <div class="row banner-title d-flex justify-content-end align-items-start flex-column h-100 mx-auto px-2">
-        <div class="col-md-6 col-12 ml-md-4 ml-1 mt-5 text-center">
-          <h2 class="service-name">Outsourcing Services</h2>
-          <h3 class="service-tagline">
-            Partner for strategic IT managed services to transform operations
-        </div>
+
+    </section>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Outsourcing Services</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          Partner for strategic IT managed services to transform operations
+        </h3>
       </div>
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-        <li><a href="#" id="img4">Image-4</a></li>
-        <li><a href="#" id="img5">Image-5</a></li>
-      </ul>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          Our Outsourcing Support Services program is designed with a vision to make you in charge of your business
+          and
+          we act as an extended arm of your team to ensure that you get maximum return of IT investment with minimal
+          downtime. Our IT Outsourcing start from small help desk management and extend right up to comprehensive IT
+          Infrastructure Management under outsourced mode
+        </p>
+      </div>
     </section>
 
-    <section class="container-fluid service-overview outs-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 py-3 pl-5">
-          <p>
-            Our Outsourcing Support Services program is designed with a vision to make you in charge of your business
-            and
-            we act as an extended arm of your team to ensure that you get maximum return of IT investment with minimal
-            downtime. Our IT Outsourcing start from small help desk management and extend right up to comprehensive IT
-            Infrastructure Management under outsourced mode
-          </p>
-        </div>
-      </div>
-    </section>
 
     <section class="container-fluid service-content py-4" id="serviceContent">
       <h2 class="text-center py-2 service-section-title">
@@ -596,36 +587,6 @@
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
 
-  <script>
-    let imageOne = document.getElementById('img1');
-    let imageTwo = document.getElementById('img2');
-    let imageThree = document.getElementById('img3');
-    let imageFour = document.getElementById('img4');
-    let imageFive = document.getElementById('img5');
-
-
-    imageOne.addEventListener('click', function () {
-      document.querySelector('.service-banner').style.backgroundImage = 'url(./img/outs/img-1.jpg)';
-    })
-
-    imageTwo.addEventListener('click', function () {
-      document.querySelector('.service-banner').style.backgroundImage = 'url(./img/outs/img-5.jpg)';
-    })
-
-    imageThree.addEventListener('click', function () {
-      document.querySelector('.service-banner').style.backgroundImage = 'url(./img/outs/img-3.jpg)';
-    })
-
-    imageFour.addEventListener('click', function () {
-      document.querySelector('.service-banner').style.backgroundImage = 'url(./img/outs/img-4.jpg)';
-      document.querySelector('.service-banner').style.backgroundPosition = 'top';
-    })
-
-    imageFive.addEventListener('click', function () {
-      document.querySelector('.service-banner').style.backgroundImage = 'url(./img/outs/img-2.jpg)';
-      document.querySelector('.service-banner').style.backgroundPosition = 'top';
-    })
-  </script>
 </body>
 
 </html>

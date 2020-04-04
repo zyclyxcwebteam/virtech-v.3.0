@@ -188,33 +188,23 @@
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner comp-banner">
-      <div class="row banner-title d-flex justify-content-start align-items-start flex-column h-100 mx-auto px-2">
-        <div class="col-md-7 col-12 mt-5 text-center">
-          <h2 class="service-name">Governance and Compliance</h2>
-          <h3 class="service-tagline">
-            Effective governance solutions ensuring regulatory compliance
-          </h3>
-        </div>
-      </div>
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-        <li><a href="#" id="img4">Image-3</a></li>
-      </ul>
-    </section>
 
-    <section class="container-fluid service-overview comp-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 py-3 pl-5">
-          <p>
-            Compliance Governance Security Services remain the most challenging
-            organizational disciplines to understand. Implement and maintain
-            security architecture assessment is a flexible engagement. Through
-            which we undertake a detailed assessment of your security
-            architecture.
-          </p>
-        </div>
+    </section>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Governance and Compliance</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          Effective governance solutions ensuring regulatory compliance
+        </h3>
+      </div>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          Compliance Governance Security Services remain the most challenging
+          organizational disciplines to understand. Implement and maintain
+          security architecture assessment is a flexible engagement. Through
+          which we undertake a detailed assessment of your security
+          architecture.
+        </p>
       </div>
     </section>
 
@@ -630,32 +620,7 @@
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
 
-  <script>
-    let imageOne = document.getElementById("img1");
-    let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
-    let imageFour = document.getElementById("img4");
 
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/compliance/img-1.jpg)";
-    });
-
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/compliance/img-2.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/compliance/img-3.jpg)";
-    });
-
-    imageFour.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/compliance/img-4.jpg)";
-    });
-  </script>
 </body>
 
 </html>

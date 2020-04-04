@@ -37,36 +37,23 @@
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner mob-sec-banner">
-      <div class="row banner-title d-flex justify-content-end align-items-start flex-column h-100 mx-auto px-2">
-        <div class="col-md-7 col-12 ml-md-4 ml-1 d-flex flex-column justify-content-center">
-          <h2 class="service-name">Endpoint and Mobile Security</h2>
-          <h3 class="service-tagline">
-            Uninterrupted Secure access providing a strong defence against
-            threats
-          </h3>
-        </div>
-      </div>
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-        <li><a href="#" id="img4">Image-4</a></li>
-        <li><a href="#" id="img5">Image-5</a></li>
-        <li><a href="#" id="img6">Image-6</a></li>
-      </ul>
     </section>
-
-    <section class="container-fluid service-overview mob-sec-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 py-3 pl-5">
-          <p>
-            Mobile Endpoint Protection is a security solution that provides
-            comprehensive risk management across mobile devices (iOS and
-            Android) to safeguard against applications, computers, and
-            network-based threats while offering visibility and data leak
-            control.
-          </p>
-        </div>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Endpoint and Mobile Security</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          Uninterrupted Secure access providing a strong defence against
+          threats
+        </h3>
+      </div>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          Mobile Endpoint Protection is a security solution that provides
+          comprehensive risk management across mobile devices (iOS and
+          Android) to safeguard against applications, computers, and
+          network-based threats while offering visibility and data leak
+          control.
+        </p>
       </div>
     </section>
 
@@ -214,7 +201,17 @@
       </h3>
       <a href="#" class="service-contact" id="contactButton">Contact us</a>
     </section>
+    <!--  FOOTER -->
+    @@include('./components/footer.html')
+    <!-- END - FOOTER -->
 
+    <!--  CONTACT FORM -->
+    @@include('./components/contact-modal.html')
+    <!--  END - CONTACT FORM -->
+
+    <!-- CHAT-BOT -->
+    @@include('./components/chat-bot.html')
+    <!-- END - CHAT-BOT -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -234,54 +231,8 @@
     <script src="./js/contact/contact.js"></script>
     <script src="./js/shared/chat-bot.js"></script>
     <script src="./js/service-pages/service-page.js"></script>
-    <!--  FOOTER -->
-    @@include('./components/footer.html')
-    <!-- END - FOOTER -->
 
-    <!--  CONTACT FORM -->
-    @@include('./components/contact-modal.html')
-    <!--  END - CONTACT FORM -->
 
-    <!-- CHAT-BOT -->
-    @@include('./components/chat-bot.html')
-    <!-- END - CHAT-BOT -->
-    <script>
-      let imageOne = document.getElementById("img4");
-      let imageTwo = document.getElementById("img5");
-      let imageThree = document.getElementById("img6");
-      let imageFour = document.getElementById("img1");
-      let imageFive = document.getElementById("img2");
-      let imageSix = document.getElementById("img3");
-
-      imageOne.addEventListener("click", function () {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/mobile-security/img-4.jpg)";
-      });
-
-      imageTwo.addEventListener("click", function () {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/mobile-security/img-5.jpg)";
-      });
-
-      imageThree.addEventListener("click", function () {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/mobile-security/img-6.jpg)";
-      });
-      imageFour.addEventListener("click", function () {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/mobile-security/img-1.jpg)";
-      });
-
-      imageFive.addEventListener("click", function () {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/mobile-security/img-2.jpg)";
-      });
-
-      imageSix.addEventListener("click", function () {
-        document.querySelector(".service-banner").style.backgroundImage =
-          "url(./img/mobile-security/img-3.jpg)";
-      });
-    </script>
 </body>
 
 </html>

@@ -37,39 +37,30 @@
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner swd-banner">
-      <div class="row banner-title d-flex justify-content-start align-items-end flex-column h-100 mx-auto px-2">
-        <div class="col-md-7 col-12 text-center">
-          <h2 class="service-name">Software Development</h2>
-          <h3 class="service-tagline mt-4">
-            Optimizing business operations to unlock new levels of efficiency
-          </h3>
-        </div>
+    </section>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Software Development</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          Optimizing business operations to unlock new levels of efficiency
+        </h3>
       </div>
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-      </ul>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          It is an interrelated series of programming code providing some
+          functionalities. This involves activities like specification
+          analysis, designing, coding, documenting, testing, and fixing along
+          with creating and maintaining applications, frameworks, or any
+          software components. Our team of software developers provides custom
+          applications to promote your business, give your users unique
+          services & simplify internal processes. We follow the rapid
+          application development (RAD) process to give you the best results.
+          It can be developed for multiple industries like Retail, Healthcare,
+          IT/Software services, Research and Development, Government and more
+        </p>
+      </div>
     </section>
 
-    <section class="container-fluid service-overview swd-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 pl-5 py-3">
-          <p>
-            It is an interrelated series of programming code providing some
-            functionalities. This involves activities like specification
-            analysis, designing, coding, documenting, testing, and fixing along
-            with creating and maintaining applications, frameworks, or any
-            software components. Our team of software developers provides custom
-            applications to promote your business, give your users unique
-            services & simplify internal processes. We follow the rapid
-            application development (RAD) process to give you the best results.
-            It can be developed for multiple industries like Retail, Healthcare,
-            IT/Software services, Research and Development, Government and more
-          </p>
-        </div>
-      </div>
-    </section>
 
     <section class="container-fluid service-content py-4" id="serviceContent">
       <h2 class="text-center py-2 service-section-title">
@@ -159,26 +150,7 @@
   <script src="./js/contact/contact.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
-  <script>
-    let imageOne = document.getElementById("img1");
-    let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
 
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/software/img-1.jpg)";
-    });
-
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/software/img-2.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/software/img-3.jpg)";
-    });
-  </script>
 </body>
 
 </html>

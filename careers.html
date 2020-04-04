@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161594957-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161594957-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-161594957-1');
-    </script>
+    gtag('config', 'UA-161594957-1');
+  </script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -190,8 +190,7 @@
     <section class="container-fluid career-home">
       <div class="row banner-title d-flex justify-content-center align-items-end flex-column h-100 mx-auto px-md-2">
         <div class="col-md-6 col-12 banner-title-text">
-          <h2 class="banner-title-2">Get your future</h2>
-          <h2 class="banner-title-2 text-center">started with us</h2>
+
         </div>
       </div>
 
@@ -199,20 +198,18 @@
         <li><a href="#" id="img1">Image-1</a></li>
         <li><a href="#" id="img2">Image-2</a></li>
         <li><a href="#" id="img3">Image-3</a></li>
-        <li><a href="#" id="img4">Image-4</a></li>
-        <li><a href="#" id="img5">Image-5</a></li>
-        <li><a href="#" id="img6">Image-6</a></li>
       </ul>
     </section>
 
-    <div class="container-fluid row mx-auto h-100 career-points pt-md-5 pb-mb-4 p-0">
+    <div class="container-fluid row mx-auto h-100 career-points py-md-5  p-0">
       <div class="container d-flex justify-content-center align-items-center flex-column px-1 px-md-3">
-        <p class="hero-text">
+        <h2 class="career-title">Get your future started with us</h2>
+        <p class="career-tagline">
           VIRTECH recruits, trains and assigns the best candidates in the
           field of IT to work on some of our biggest projects in the Middle
           East
         </p>
-        <ul>
+        <ul class="pt-4">
           <li>
             <i class="fas fa-angle-double-right"></i>
             We are a growing firm with enormous challenges and opportunities
@@ -264,7 +261,7 @@
     </section>
 
     <section class="career-enquiry py-3 ">
-      <h3 class="text-center title-3 title-dark pb-3">Can't find the position you are looking for?</h3>
+      <h3 class="text-center title-3 title-black pb-3">Can't find the position you are looking for?</h3>
       <p class="text-center mb-0"><a href="#" class="button button-dark" id="contactButton">Contact us</a></p>
     </section>
 
@@ -545,39 +542,23 @@
     let imageOne = document.getElementById("img1");
     let imageTwo = document.getElementById("img2");
     let imageThree = document.getElementById("img3");
-    let imageFour = document.getElementById("img4");
-    let imageFive = document.getElementById("img5");
-    let imageSix = document.getElementById("img6");
+
 
     imageOne.addEventListener("click", function () {
       document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-2.jpg)";
+        "url(./img/careers/img-11.jpg)";
     });
 
     imageTwo.addEventListener("click", function () {
       document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-1.jpg)";
+        "url(./img/careers/img-12.jpg)";
     });
 
     imageThree.addEventListener("click", function () {
       document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-8.jpg)";
+        "url(./img/careers/img-13.jpg)";
     });
 
-    imageFour.addEventListener("click", function () {
-      document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-6.jpg)";
-    });
-
-    imageFive.addEventListener("click", function () {
-      document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-7.jpg)";
-    });
-
-    imageSix.addEventListener("click", function () {
-      document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-3.jpg)";
-    });
 
     $(".careers-carousel").owlCarousel({
       autoplay: true,

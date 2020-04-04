@@ -38,37 +38,27 @@
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner ns-banner">
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-      </ul>
 
-      <div class="row banner-title d-flex justify-content-end align-items-start flex-column h-100 mx-auto px-2">
-        <div class="col-md-6 col-12 ml-md-4 ml-1 mt-5 text-center">
-          <h2 class="service-name">Network Security</h2>
-          <h3 class="service-tagline">
-            Enhancing your Network performance and providing 360-degree
-            protection from Security breaches
-          </h3>
-        </div>
-      </div>
     </section>
-
-    <section class="container-fluid service-overview ns-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 py-3 pl-5">
-          <p>
-            In today’s networking landscape, data is highly vulnerable to cyber
-            threats. This is where Network security comes into the picture. At
-            VIRTECH, we use the best tools to protect the integrity of your data
-            from external exploits, help in the efficient movement of network
-            traffic, enhance the network performance. Our efforts are in place
-            to ensure the intrusion prevention system is in place, thus
-            guaranteeing secure data sharing within the organization and
-            external sources.
-          </p>
-        </div>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Network Security</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          Enhancing your Network performance and providing 360-degree
+          protection from Security breaches
+        </h3>
+      </div>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          In today’s networking landscape, data is highly vulnerable to cyber
+          threats. This is where Network security comes into the picture. At
+          VIRTECH, we use the best tools to protect the integrity of your data
+          from external exploits, help in the efficient movement of network
+          traffic, enhance the network performance. Our efforts are in place
+          to ensure the intrusion prevention system is in place, thus
+          guaranteeing secure data sharing within the organization and
+          external sources.
+        </p>
       </div>
     </section>
 
@@ -248,27 +238,6 @@
   <script src="./js/contact/contact.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
-
-  <script>
-    let imageOne = document.getElementById("img1");
-    let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
-
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/network-security/img-1.jpg)";
-    });
-
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/network-security/img-2.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/network-security/img-3.jpg)";
-    });
-  </script>
 </body>
 
 </html>

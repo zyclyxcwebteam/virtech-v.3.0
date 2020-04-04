@@ -188,41 +188,31 @@
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner pa-banner">
-      <div class="row banner-title d-flex justify-content-center align-items-start flex-column h-100 mx-auto px-2">
-        <div class="col-md-6 col-12 text-center">
-          <h2 class="service-name">Predictive Analysis</h2>
-          <h3 class="service-tagline">
-            Providing greatest business value by making forward-looking
-            decisions possible
-          </h3>
-        </div>
+
+    </section>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Predictive Analytics</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          Providing greatest business value by making forward-looking
+          decisions possible
+        </h3>
       </div>
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-        <li><a href="#" id="img4">Image-4</a></li>
-        <li><a href="#" id="img5">Image-5</a></li>
-      </ul>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          Predictive analytics refers to advanced analytics that focuses
+          specifically on learning past behaviors to predict future behaviors
+          using various techniques of data mining, statistics, modeling,
+          Machine Learning and AI to use and analyze current data to predict
+          future trends. We have a team dedicated to building and implementing
+          such models, they extract relevant information from the set of data
+          to determine outcome patterns. It can be used in nearly every
+          industry and has uncountable applications like Risk Assessment,
+          Sales Forecasting, Market Analysis, Financial Modeling and more.
+        </p>
+      </div>
     </section>
 
-    <section class="container-fluid service-overview pa-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 py-3 pl-5">
-          <p>
-            Predictive analytics refers to advanced analytics that focuses
-            specifically on learning past behaviors to predict future behaviors
-            using various techniques of data mining, statistics, modeling,
-            Machine Learning and AI to use and analyze current data to predict
-            future trends. We have a team dedicated to building and implementing
-            such models, they extract relevant information from the set of data
-            to determine outcome patterns. It can be used in nearly every
-            industry and has uncountable applications like Risk Assessment,
-            Sales Forecasting, Market Analysis, Financial Modeling and more.
-          </p>
-        </div>
-      </div>
-    </section>
 
     <section class="container-fluid service-content py-4" id="serviceContent">
       <h2 class="text-center py-2 service-section-title">
@@ -618,38 +608,6 @@
   <script src="./js/contact/contact.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
-
-  <script>
-    let imageOne = document.getElementById("img1");
-    let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
-    let imageFour = document.getElementById("img4");
-    let imageFive = document.getElementById("img5");
-
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/predictive/img-1.jpg)";
-    });
-
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/predictive/img-2.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/predictive/img-3.jpg)";
-    });
-    imageFour.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/predictive/img-4.jpg)";
-    });
-
-    imageFive.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/predictive/img-5.jpg)";
-    });
-  </script>
 </body>
 
 </html>

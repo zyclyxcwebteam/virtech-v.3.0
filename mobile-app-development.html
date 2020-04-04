@@ -188,34 +188,28 @@
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner mapp-banner">
-      <div class="row banner-title d-flex justify-content-center flex-column h-100 mx-auto px-2">
-        <div class="col-md-6 col-12 ml-md-4 text-center">
-          <h2 class="service-name">Mobile Development</h2>
-          <h3 class="service-tagline">
-            For the next generation of businesses
-          </h3>
-        </div>
-      </div>
       <ul class="image-list">
         <li><a href="#" id="img1">Image-1</a></li>
         <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
       </ul>
     </section>
-
-    <section class="container-fluid service-overview mapp-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 pl-5 py-3">
-          <p>
-            Our process of Mobile app development includes the creation of
-            installable software bundles (code, binaries, assets, etc.),
-            implementing backend services such as data access with an API, and
-            testing the application on target devices. These apps can cater to
-            various verticals for instance; eCommerce, Hospitality, Food Service
-            industries, Entertainment and Media Industries, Healthcare, Finance,
-            Travel, Social Networking, etc.
-          </p>
-        </div>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Mobile App Development</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          For the next generation of businesses
+        </h3>
+      </div>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          Our process of Mobile app development includes the creation of
+          installable software bundles (code, binaries, assets, etc.),
+          implementing backend services such as data access with an API, and
+          testing the application on target devices. These apps can cater to
+          various verticals for instance; eCommerce, Hospitality, Food Service
+          industries, Entertainment and Media Industries, Healthcare, Finance,
+          Travel, Social Networking, etc.
+        </p>
       </div>
     </section>
 
@@ -567,26 +561,19 @@
   <script src="./js/contact/contact.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
-
   <script>
     let imageOne = document.getElementById("img1");
     let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
 
     imageOne.addEventListener("click", function () {
       document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/mapp/img-1.png)";
+        "url(./img/mapp/img-3.jpg)";
     });
 
     imageTwo.addEventListener("click", function () {
       document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/mapp/img-2.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/mapp/img-3.jpg)";
-    });
+        "url(./img/mapp/img-5.jpg)";
+    }); 
   </script>
 </body>
 

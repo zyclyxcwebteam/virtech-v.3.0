@@ -37,37 +37,28 @@
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
     <section class="container-fluid service-banner access-banner">
-      <div class="row banner-title d-flex justify-content-start align-items-end flex-column h-100 mx-auto px-2">
-        <div class="col-md-6 col-12 ml-md-4 ml-1 mt-5 d-flex flex-column align-items-center justify-content-center">
-          <h2 class="service-name">Identity and Access Management</h2>
-          <h3 class="service-tagline">
-            Centralized technology developed for deep integration with existing
-            systems
-          </h3>
-        </div>
+    </section>
+    <section class="container-fluid service-overview" id="serviceOverview">
+      <div class="container text-center px-2 px-md-5">
+        <h2 class="service-name mx-auto">Identity and Access Management</h2>
+        <h3 class=" mx-auto service-tagline px-4 text-center">
+          Centralized technology developed for deep integration with existing
+          systems
+        </h3>
       </div>
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-      </ul>
+      <div class="container d-flex justify-content-center py-3 px-2 px-md-5">
+        <p class="service-text">
+          Due to the reliability of interconnected systems in today’s work
+          environment, it means that employees, clients, and other
+          stakeholders require access to business data and other information.
+          Here is where we step in to ensure that granting of remote access
+          can be done in a balanced way ensuring accessibility and security.
+          Our solutions would make sure that your organization can improve in
+          agility, operations, security, compliance and be ready for tomorrow.
+        </p>
+      </div>
     </section>
 
-    <section class="container-fluid service-overview access-overview" id="serviceOverview">
-      <div class="row d-flex justify-content-center py-3">
-        <div class="col-md-9 col-12 py-3 pl-5">
-          <p>
-            Due to the reliability of interconnected systems in today’s work
-            environment, it means that employees, clients, and other
-            stakeholders require access to business data and other information.
-            Here is where we step in to ensure that granting of remote access
-            can be done in a balanced way ensuring accessibility and security.
-            Our solutions would make sure that your organization can improve in
-            agility, operations, security, compliance and be ready for tomorrow.
-          </p>
-        </div>
-      </div>
-    </section>
 
     <section class="container-fluid service-content py-4" id="serviceContent">
       <h2 class="text-center py-2 service-section-title">
@@ -243,26 +234,7 @@
   <script src="./js/contact/contact.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
-  <script>
-    let imageOne = document.getElementById("img1");
-    let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
 
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/identity/img-1.jpg)";
-    });
-
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/identity/img-2.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/identity/img-3.jpg)";
-    });
-  </script>
 </body>
 
 </html>
