@@ -143,11 +143,12 @@
       </div>
     </section>
 
-    <section class="container-fluid px-0 contact-banner d-flex justify-content-center align-items-center">
-      <h3 class="text-center contact-title">
+    <section
+      class="container-fluid px-0 pb-3 contact-banner d-flex flex-column justify-content-center align-items-center">
+      <h3 class="text-center contact-title py-3">
         Find answers to your business needs
       </h3>
-      <a href="#" class="service-contact" id="contactButton">Contact us</a>
+      <button type="button" class="button button-dark" id="contactButton">Contact us</a>
     </section>
 
     <!--  FOOTER -->
@@ -181,26 +182,6 @@
   <script src="./js/contact/contact.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
   <script src="./js/service-pages/service-page.js"></script>
-  <script>
-    let imageOne = document.getElementById("img1");
-    let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
-
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/iot/img-1.jpg)";
-    });
-
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/iot/img-2.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".service-banner").style.backgroundImage =
-        "url(./img/iot/img-3.jpg)";
-    });
-  </script>
 </body>
 
 </html>

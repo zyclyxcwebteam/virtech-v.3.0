@@ -14,21 +14,21 @@
 }
  
 .iot-banner {
-  background-image: url("../../img/iot/img-3.jpg");   
-      background-position: 0px -70px;
+  background-image: url("../../img/iot/img.jpg");   
+      background-position:top;
 } 
 .swd-banner {
-  background-image: url("../../img/software/img-1.jpg");
+  background-image: url("../../img/software/img.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position:center;
 }
 .mapp-banner {
-  background-image: url("../../img/mapp/img-3.jpg");
+  background-image: url("../../img/mapp/img-1.jpg");
   /* background-position: center; */
 }
  
 .web-banner {
-  background-image: url("../../img/web/img-6.jpg");
+  background-image: url("../../img/web/img-1.jpg");
   background-position: center center;
 }
  
@@ -49,8 +49,8 @@
 }
  
 .dvis-banner {
-  background-image: url("../../img/datavis/img-2.jpg");
-  background-position: center;
+  background-image: url("../../img/datavis/img.jpg");
+  background-position: top right;
 }
  
 .pa-banner {
@@ -71,9 +71,9 @@
   background-position: center;
 }
  
-.eu-banner {
-  background-image: url("../../img/endusercomputing/img-2.jpg");
-  
+.end-user-banner {
+  background-image: url("../../img/banner-img/end-user-computing.jpg");
+  background-position: center;
 }
  
 .app-sec-banner {
@@ -97,20 +97,10 @@
 }
 .infra-banner {   
   background-image: url("../../img/infra/img.jpg");
-  background-position: center; 
+  /* background-position: center;  */
 }
 
 .outs-banner {
   background-image: url("../../img/outs/img-5.jpg");
   background-position:top;
-}
-
-
-.image-list li a{
-  color: #f9f9f9;
-  font-size: 1.5rem;
-  font-weight: 600;   
-}
-.image-list li{
-  list-style: square;
 }
