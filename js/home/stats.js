@@ -6,7 +6,7 @@ var duration = 2.5;
 
 function count() {
   TweenLite.to(number, duration, {projects:"+=40", roundProps:"projects", onUpdate:update, onComplete:complete, ease:Linear.easeNone});
-  TweenLite.to(number, duration, {process:"+=100", roundProps:"process", onUpdate:update, onComplete:complete, ease:Linear.easeNone});
+  TweenLite.to(number, duration, {process:"+=350", roundProps:"process", onUpdate:update, onComplete:complete, ease:Linear.easeNone});
   TweenLite.to(number, duration, {clients:"+=20", roundProps:"clients", onUpdate:update, onComplete:complete, ease:Linear.easeNone});
 }
 		
