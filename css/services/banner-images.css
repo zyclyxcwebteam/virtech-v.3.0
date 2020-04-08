@@ -1,45 +1,45 @@
  .rpa-banner {
-  background-image: url("../../img/rpa/rpa-1.png");
+  background-image: url("../../img/rpa/rpa.png");
  background-position: center;
 }
  
 .ai-banner {
-  background-image: url("../../img/ai/img-2.jpg");
+  background-image: url("../../img/ai/artificial-intelligence.jpg");
   background-position:center;
 }
 
 .bc-banner {
-  background-image: url("../../img/blockchain/img.jpg"); 
+  background-image: url("../../img/blockchain/blockchain.jpg"); 
   background-position: center;
 }
  
 .iot-banner {
-  background-image: url("../../img/iot/img.jpg");   
+  background-image: url("../../img/iot/internet-of-things.jpg");   
       background-position:top;
 } 
 .swd-banner {
-  background-image: url("../../img/software/Soft-1.jpg");
+  background-image: url("../../img/software/softwere.jpg");
   background-size: cover;
   background-position:center;
 }
 .mapp-banner {
-  background-image: url("../../img/mapp/mapp-1.jpg");
+  background-image: url("../../img/mapp/mobapp.jpg");
   background-position: center;  
 }
  
 .web-banner {
-  background-image: url("../../img/web/img-1.png");
+  background-image: url("../../img/web/webdev.png");
   background-position: center center;
 }
  
 .dm-banner {
-  background-image: url("../../img/dmark/img-1.jpg");
+  background-image: url("../../img/dmark/digital-marketing.jpg");
   
 }
  
 
 .cs-banner {
-  background-image: url("../../img/cyber-security/img-4.jpg");
+  background-image: url("../../img/cyber-security/cyber-security.jpg");
   background-position: center;
 }
  
@@ -49,20 +49,20 @@
 }
  
 .dvis-banner {
-  background-image: url("../../img/datavis/img.jpg");
+  background-image: url("../../img/datavis/data-visualisation.jpg");
   background-position: top right;
 }
  
 .pa-banner {
-  background-image: url("../../img/predictive/img-2.jpg");   
+  background-image: url("../../img/predictive/predective-analytics.jpg");   
 }
  
 .dcenter-banner {
-  background-image: url("../../img/datacenter/img-1.jpg");
+  background-image: url("../../img/datacenter/datacenter-services.jpg");
 }
  
 .ns-banner {
-  background-image: url("../../img/network-security/img-2.jpg");
+  background-image: url("../../img/network-security/network-security.jpg");
   background-position: center;
 }
  
@@ -72,35 +72,35 @@
 }
  
 .end-user-banner {
-  background-image: url("../../img/banner-img/end-user-computing.jpg");
+  background-image: url("../../img/endusercomputing/end-user-computing.jpg");
   background-position: center;
 }
  
 .app-sec-banner {
-  background-image: url("../../img/app_security/img.jpg");
+  background-image: url("../../img/app_security/application-and-datasecurity.jpg");
   background-position: center center;   
 }
 
  
 .mob-sec-banner {   
-  background-image: url("../../img/mobile-security/img.jpg");
+  background-image: url("../../img/mobile-security/endpoint-mobilesecurity.jpg");
   background-position: left center;
 }
  
 .comp-banner {   
-  background-image: url("../../img/compliance/img-1.jpg");
+  background-image: url("../../img/compliance/governance-and-compliance.jpg");
   background-position: center;
 }
  .access-banner {   
-  background-image: url("../../img/identity/img-1.jpg");
+  background-image: url("../../img/identity/identity-accessmanagement.jpg");
   background-position: center;
 }
 .infra-banner {   
-  background-image: url("../../img/infra/img.jpg");
+  background-image: url("../../img/infra/system-infrastructure.jpg");
   /* background-position: center;  */
 }
 
 .outs-banner {
-  background-image: url("../../img/outs/img.jpg");
+  background-image: url("../../img/outs/outsourcing.jpg");
   background-position:top;
 }
