@@ -1,5 +1,5 @@
  .rpa-banner {
-  background-image: url("../../img/rpa/img-3.jpg");
+  background-image: url("../../img/rpa/rpa-1.PNG");
  background-position: center;
 }
  
@@ -18,17 +18,17 @@
       background-position:top;
 } 
 .swd-banner {
-  background-image: url("../../img/software/img.jpg");
+  background-image: url("../../img/software/Soft-1.jpg");
   background-size: cover;
   background-position:center;
 }
 .mapp-banner {
-  background-image: url("../../img/mapp/img-1.jpg");
-  /* background-position: center; */
+  background-image: url("../../img/mapp/mapp-1.jpg");
+  background-position: center;  
 }
  
 .web-banner {
-  background-image: url("../../img/web/img-1.jpg");
+  background-image: url("../../img/web/img-1.png");
   background-position: center center;
 }
  
@@ -67,7 +67,7 @@
 }
  
 .bd-banner {
-  background-image: url("../../img/bigdata/img.jpg");
+  background-image: url("../../img/bigdata/bigdata.jpg");
   background-position: center;
 }
  
@@ -101,6 +101,6 @@
 }
 
 .outs-banner {
-  background-image: url("../../img/outs/img-5.jpg");
+  background-image: url("../../img/outs/img.jpg");
   background-position:top;
 }
