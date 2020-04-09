@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap');
 /* font-family: 'Lato', sans-serif; */
 /* dbdbdb */
+@font-face {
+  font-family:HKGrotesk;
+  src: url('../../fonts/HKGroteskPro-Regular.woff2');
+}
 :root {
    --navbar-height: 55px;
   --bg-dark: #0c1b33;
@@ -64,7 +68,7 @@ body {
   padding-top: 65px;
   background-color: #ffffff;
   scroll-behavior: smooth;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family:HKGrotesk,-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;   
     
 /* font-family: 'Source Sans Pro', sans-serif; */
@@ -97,7 +101,7 @@ body {
 .title-white {
   color: #ffffff;
 }
-.title-blaci{
+.title-black{
   color: #16151F;
 }
  

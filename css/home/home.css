@@ -111,82 +111,9 @@
   z-index: -100;
   background-size: cover;
 }
-/* 
-.side-nav {
-  position: fixed;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  z-index: 99;
-}
-.side-nav li {
-  list-style-type: none;
-  margin: 10px;
-  display: flex;
-  justify-content: flex-end;
-}
-.side-nav li span {
-  opacity: 0;
-}
-.side-nav li a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  color: hsl(215, 9%, 85%);
-  transition: all 0.6 ease-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.side-nav li a:after {
-  content: "";
-  box-sizing: border-box;
-  height: 15px;
-  width: 15px;
-  display: inline-block;
-  border: 2px solid rgba(244, 244, 244, 0.5);
-  border-radius: 50%;
-  margin-left: 6px;
-  opacity: 1;
-}
-.side-nav li a:hover:after {
-  background-color: #f4f4f4;
-}
-.side-nav li a:hover span {
-  opacity: 1;
-}
-.light.side-nav li a:after {
-  border: 2px solid #0c1b33;
-}
-.light.side-nav li a {
-  color: #0c1b33;
-}
-.light.side-nav li a:hover:after {
-  background-color: #0c1b33;
-}
-.side-nav.hide {
-  display: none;
-} */
-
-/* ! Animation styles */
-
-/* #servicesInner{     
-    opacity: 0;  
-    height: 0%;   
-  }
-
-  .title-card-2{
-    display: none;
-  }
-
-  .service-cards .col-12{
-    opacity: 0;
-  } */
-
+ 
 /* ! services end */
 
-
- 
 
 /* OUR CLIENTS */
 .clients-wrapper {
@@ -225,18 +152,14 @@
   color: #b8bdc4;
   
 }
-
-/* .stats-wrapper .stats img{
-  height: 40px;
-  width: 40px;
-  margin-right: 1rem;
-} */
+ 
 .stats-wrapper .stats-number{   
   font-size: 4rem;
   display: flex;
   align-items: center; 
   justify-content: center;
   color:#f9f9f9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .stats-wrapper .stats-number span:nth-child(2){
   margin-left: 4px;

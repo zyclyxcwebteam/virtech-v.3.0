@@ -35,19 +35,12 @@
   @@include('./components/navbar.html')
   <!-- END - Navbar -->
   <article class="scroll-wrapper">
-
     <section class="container-fluid career-home">
       <div class="row banner-title d-flex justify-content-center align-items-end flex-column h-100 mx-auto px-md-2">
         <div class="col-md-6 col-12 banner-title-text">
 
         </div>
       </div>
-
-      <ul class="image-list">
-        <li><a href="#" id="img1">Image-1</a></li>
-        <li><a href="#" id="img2">Image-2</a></li>
-        <li><a href="#" id="img3">Image-3</a></li>
-      </ul>
     </section>
 
     <div class="container-fluid row mx-auto h-100 career-points py-md-5  p-0">
@@ -146,42 +139,6 @@
   <script src="./js/careers.js"></script>
   <script src="./js/contact_form.js"></script>
   <script src="./js/shared/chat-bot.js"></script>
-
-  <script>
-    let imageOne = document.getElementById("img1");
-    let imageTwo = document.getElementById("img2");
-    let imageThree = document.getElementById("img3");
-
-
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-11.jpg)";
-    });
-
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-12.jpg)";
-    });
-
-    imageThree.addEventListener("click", function () {
-      document.querySelector(".career-home").style.backgroundImage =
-        "url(./img/careers/img-13.jpg)";
-    });
-
-
-    $(".careers-carousel").owlCarousel({
-      autoplay: true,
-      loop: true,
-      center: true,
-      autoplaySpeed: 2000,
-      dots: false,
-      responsive: {
-        0: { items: 1 },
-        768: { items: 2 },
-        900: { items: 3 }
-      }
-    });
-  </script>
 </body>
 
 </html>
