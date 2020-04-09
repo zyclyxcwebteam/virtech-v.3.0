@@ -341,11 +341,11 @@
     <section class="appWrapper pb-3" id="appForm">
       <h4 class="pb-3 text-center title-3">Apply Now</h4>
       <div class="container applyForm">
-        <div class="">
-          <form id="jobForm" class="contactForm needs-validation" novalidate>
-            <div class="row">
+        
+          <!-- <form id="jobForm" class="contactForm needs-validation" novalidate>
+            <div class="row ">
               <div class="col-md-6 col-sm-12">
-                <div class="form-group">
+                <div class="form-group ">
                   <label for="validationCustom01">First Name <span>*</span></label>
                   <input type="text" class="form-control" name="firstname" id="validationCustom01"
                     pattern="[a-zA-Z\s]{2,30}" placeholder="Enter your name" autocomplete="off" required>
@@ -406,8 +406,91 @@
               <div class="col-md-6 col-sm-12 order-md-1 order-sm-0 mx-auto d-flex justify-content-center">
                 <button type="submit" class="button button-light" id="btnSubmit">Submit Application</button>
               </div>
-          </form>
+              </div>
+          </form> -->
 
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="row py-md-2">
+                <div class="col-12 col-md-6">
+                  <div class="form-group floating-label">
+
+                    <input type="text" class="form-control" name="firstname" id="username"
+                        pattern="[a-zA-Z\s]{2,30}" maxlength="30" placeholder="Full Name"
+                        autocomplete="off" required />
+                    <label for="username">
+                        Full Name <span class="required">*</span></label>
+                    <div class="invalid-feedback">
+                        Please enter valid name
+                    </div>
+              </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group floating-label">
+
+                        <input type="text" class="form-control" name="firstname" id="username"
+                            pattern="[a-zA-Z\s]{2,30}" maxlength="30" placeholder="Full Name"
+                            autocomplete="off" required />
+                        <label for="username">
+                            Full Name <span class="required">*</span></label>
+                        <div class="invalid-feedback">
+                            Please enter valid name
+                        </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group floating-label">
+
+                        <input type="email" class="form-control" name="email" autocomplete="off"
+                            placeholder="Email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
+                        <label for="email">Email <span class="required">*</span></label>
+                        <div class="invalid-feedback">
+                            Please enter valid email
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group phone-label">
+
+                        <input type="tel" class="form-control" name="phone" id="phone"
+                            pattern="^[0-9]{3,12}$" maxlength="12" placeholder="phone" autocomplete="off"
+                            required />
+                        <label for="phone">
+                            Phone <span class="required">*</span></label>
+                        <div class="invalid-feedback">
+                            Please enter valid phone number
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+                    <label>Upload Resume <span>*</span></label>
+                    <div class="input-group mb-3">
+                      <div class="custom-file">
+                        <input type="file" name="resume" class="custom-file-input form-control" id="inputFile"
+                          aria-describedby="inputGroupFileAddon01" accept=".doc,.docx,.pdf" required>
+                        <label class="custom-file-label" for="inputFile">Choose file</label>
+                        <div class="invalid-feedback">Please upload your resume.</div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group floating-label">
+
+                        <textarea class="form-control pt-3 pb-4" name="message" id="message" maxlength="300"
+                            placeholder="Message" required></textarea>
+                        <label for="message">Message <span class="required">*</span></label>
+                        <div class="invalid-feedback">
+                            Please write a message
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="button button-blue px-5 mx-auto" id="contactSubmit">
+                    Submit
+                </button>
+            </div>
+        </form>
 
     </section>
 

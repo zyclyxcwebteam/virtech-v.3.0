@@ -27,10 +27,10 @@
   z-index: 1;
 }
  
-  z-index: -1;
+  /* z-index: -1;
   height: 100%;
   width: 100%;
-}
+} */
 
 .options {
   display: flex;
@@ -103,9 +103,60 @@
   background-color: #ffffff;
 }
 
+/* label */
+.floating-label {
+  position: relative !important;
+}
+
+.floating-label label {  
+  left: 8px;
+  position: absolute;
+  top: 0; 
+  opacity: 0;
+  transition: all 0.2s;
+
+}
+.phone-label label {  
+  left: 60px;
+  position: absolute;
+  top: 0; 
+  opacity: 1;
+  transition: all 0.2s;
+
+}
+/* .floating-label label::before
+{
+content: '';
+height: 50%;
+width:100%;
+background-color: #16213d;
+bottom: 0;
+}  */
+
+.floating-label input:not(:placeholder-shown){
+border: 1px solid rgba(249, 249, 249,0.5);
+}
+
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label textarea:not(:placeholder-shown) + label,
+.phone-label input:not(:placeholder-shown) + label{
+  transform: translate(0, -50%) !important;
+  opacity: 1 !important;
+  color: #f9f9f9;
+  margin: 0;
+  margin-left:0.4rem;
+  padding: 0 0.4rem;
+}
+/* label */
+
 #appForm .applyForm { 
   padding: 10px;  
   z-index: 12000;
+}
+#appForm .phone:focus ~ label{
+  position: absolute;
+  color: teal !important;
+  top: 10px;
 }
 
 .input-group .custom-file {
@@ -139,11 +190,12 @@
   margin-bottom: 0.5rem; 
 }
 #appForm .form-control {
-  border-bottom: 1px solid hsl(217, 62%, 72%) !important;
+  border-radius: 5px !important;
+  border  : 1px solid hsl(0, 0%, 87%) !important;
 }
 #appForm .form-control:focus,
 #appForm .form-control:valid { 
-  background: #0a0e180a;
+  /* background: #0a0e180a; */
   border-bottom: 1px solid rgba(204, 204, 204, 0.404);
   box-shadow: none;
 }
@@ -171,16 +223,20 @@
 
 #appForm label {
   color: #01626e;
-  font-size: 18px;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 15px !important;
   font-weight: normal;
   padding-left: 10px;
 }
 #appForm .form-control {
   border: none;
   border-radius: 0px;
-  color: #fff; 
+  min-height: 50px;
+  color: #333; 
   font-size: 1.1rem !important;
-  font-weight: 200;
+  /* padding: 25px 10px; */
+  font-weight: 400;
   background-color: transparent;
 }
  
@@ -195,20 +251,6 @@
   box-shadow: none;
 }
 
-#appForm label {
-  color: #01626e;
-  font-size: 18px;
-  font-weight: normal;
-  padding-left: 10px;
-}
-#appForm .form-control {
-  border: none;
-  border-radius: 0px;
-  color: #20263b;  
-  font-size: 25px;
-  font-weight: 400;
-  background-color: transparent;
-}
  
  
  
