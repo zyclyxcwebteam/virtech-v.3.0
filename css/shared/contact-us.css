@@ -9,7 +9,7 @@
   height: 0;
   z-index: 1200;
   overflow: hidden;
-  background-image: url("../../img/contact/c-banner-2.jpg");
+  background-image: url("../../img/contact/contact-us.jpg");
   background-size: cover; 
   display: flex;
 }
