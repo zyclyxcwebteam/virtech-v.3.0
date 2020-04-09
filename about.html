@@ -187,18 +187,6 @@
 
   <article class="scroll-wrapper">
     <section class="container-fluid about-home d-flex align-items-end">
-      <ul>
-        <li>
-          <a href="#" id="image-1">image-1</a>
-        </li>
-        <li>
-          <a href="#" id="image-2">image-2</a>
-        </li>
-        <li>
-          <a href="#" id="image-3">image-3</a>
-        </li>
-
-      </ul>
     </section>
 
     <section class="container-fluid about-overview py-5" id="aboutOverview">
@@ -240,13 +228,9 @@
     <section>
       <div class="mission">
         <div class="mission-img">
-          <!-- <img src="./img/about/mission.jpg" alt="mission"> -->
+
         </div>
         <div class="mission-content d-flex justify-content-center align-items-center flex-column">
-          <ul>
-            <li><a href="" id="m1">image-1</a></li>
-            <li><a href="" id="m2">image-2</a></li>
-          </ul>
           <h3 class="mission-title">Mission</h3>
           <p class="mission-text px-5 text-center">To offer custom solutions to Clients using unique
             combination of data science, amazing design philosophy,
@@ -255,10 +239,6 @@
       </div>
       <div class="vision">
         <div class="vision-content d-flex justify-content-center flex-column align-items-center px-5">
-          <ul>
-            <li><a href="" id="v1">image-1</a></li>
-            <li><a href="" id="v2">image-2</a></li>
-          </ul>
           <h3 class=" vision-title">Vision</h3>
           <p class="vision-text px-5 text-center">To provide diverse solutions in the area of Futuristic IT
             development with a strong commitment towards corporate
@@ -744,47 +724,7 @@
       backDelay: 500,
       startDelay: 1000,
     });
-    let imageOne = document.getElementById("image-1");
-    let imageTwo = document.getElementById("image-2");
-    let imageThree = document.getElementById("image-3");
-    let imageFour = document.getElementById("image-4");
 
-    imageOne.addEventListener("click", function () {
-      document.querySelector(".mission-img").style.backgroundImage =
-        "url(./img/about/Banner-1.jpg)";
-    });
-    imageTwo.addEventListener("click", function () {
-      document.querySelector(".about-home").style.backgroundImage =
-        "url(./img/about/Banner-2.jpg)";
-    });
-    imageThree.addEventListener('click', function () {
-      document.querySelector(".about-home").style.backgroundImage = "url(./img/about/new-1.jpg)";
-    })
-
-    let m1 = document.getElementById("m1");
-    let m2 = document.getElementById("m2");
-    let v1 = document.getElementById("v1");
-    let v2 = document.getElementById("v2");
-    m1.addEventListener("click", function (event) {
-      event.preventDefault();
-      document.querySelector(".mission-img").style.backgroundImage =
-        "url('./img/about/mission.jpg')";
-    });
-    m2.addEventListener("click", function () {
-      event.preventDefault();
-      document.querySelector(".mission-img").style.backgroundImage =
-        "url('./img/about/mission-1.jpg')";
-    });
-    v1.addEventListener("click", function () {
-      event.preventDefault();
-      document.querySelector(".vision-img").style.backgroundImage =
-        "url('./img/about/vision.jpg')";
-    });
-    v2.addEventListener("click", function () {
-      event.preventDefault();
-      document.querySelector(".vision-img").style.backgroundImage =
-        "url('./img/about/vision-1.jpg')";
-    });
   </script>
 </body>
 
