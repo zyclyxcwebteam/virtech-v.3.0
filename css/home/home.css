@@ -30,10 +30,7 @@
   transform: translate(-50%, -50%);
   max-width: 300px;
 }
-/* ! logo reveal animation  */
-.section{
-  /* padding-top: 62px; */
-}
+/* ! logo reveal animation  */ 
 .home-banner {
   height: calc(100vh - var(--navbar-height));
 }
