@@ -28,7 +28,7 @@ body{
 .about-home {
   height: calc(100vh - var(--navbar-height));
   background-color: #08556b;
-  background-image: url("../img/about/Banner-1.jpg");
+  background-image: url("../img/about/about.jpg");
   background-position: top;
   background-size: cover;
   position: relative;

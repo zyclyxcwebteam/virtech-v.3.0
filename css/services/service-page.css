@@ -3,7 +3,9 @@
   font-weight: 600;
   color: #00bdd5;
 }
- 
+picture img{
+ width: 100%;
+}
 #serviceMain .nav-item .active {
   font-weight: 600;
   color: #00bdd5;
