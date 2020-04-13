@@ -1,43 +1,44 @@
-.image-list {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-.image-list li {
-  list-style-type: none;
-}
-.image-list li a {
-  color: #f5f5f5;
-}
-
+ 
 /* TODO - remove body padding later */
 *::selection {
   background-color: #01bdd5 !important;
   color: white;
 }
- 
+ .right-wrapper {
+  height: calc(100vh - var(--navbar-height));
+}
 .job-banner {
   position: relative;
-  height: 92vh;
-  background-color: #0c1b33;
+   height: calc(100vh - var(--navbar-height));
+  background-color: #064152;
   display: flex; 
-  background-image: url("../../img/careers/job-application.jpg");
+  background-image: url("../../img/careers/career-3.jpg");
   background-position: center center;
   background-size: cover;
   z-index: 1;
 }
- 
-  /* z-index: -1;
-  height: 100%;
-  width: 100%;
-} */
-
+ .job-banner::before{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   content: '';
+   left: 0;
+   top: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0,0.6);
+ }
+ .banner-title-2{
+   font-family: 'Fredoka One', cursive;
+   color: #ffffff;
+   font-size: 4rem;
+   text-shadow: -3px -1px #00bdd5;
+ }
 .options {
   display: flex;
   align-items: stretch;
 }
 .option {
-  background: rgba(12, 26, 50, 0.8);
+  background-color: rgba(6, 65, 82,0.5);
   font-size: 1.5rem;
 }
 
@@ -98,69 +99,11 @@
 }
 
 /* ! Contact Modal */
-#appForm {  
-  color: #525252; 
-  background-color: #ffffff;
-}
-
+ 
+ 
 /* label */
-.floating-label {
-  position: relative !important;
-}
-
-.floating-label label {  
-  left: 8px;
-  position: absolute;
-  top: 0; 
-  opacity: 0;
-  transition: all 0.2s;
-
-}
-.phone-label label {  
-  left: 60px;
-  position: absolute;
-  top: 0; 
-  opacity: 1;
-  transition: all 0.2s;
-
-}
-/* .floating-label label::before
-{
-content: '';
-height: 50%;
-width:100%;
-background-color: #16213d;
-bottom: 0;
-}  */
-
-.floating-label input:not(:placeholder-shown){
-border: 1px solid rgba(249, 249, 249,0.5);
-}
-
-.floating-label input:not(:placeholder-shown) + label,
-.floating-label textarea:not(:placeholder-shown) + label,
-.phone-label input:not(:placeholder-shown) + label{
-  transform: translate(0, -50%) !important;
-  opacity: 1 !important;
-  color: #f9f9f9;
-  margin: 0;
-  margin-left:0.4rem;
-  padding: 0 0.4rem;
-}
-/* label */
-
-#appForm .applyForm { 
-  padding: 10px;  
-  z-index: 12000;
-}
-#appForm .phone:focus ~ label{
-  position: absolute;
-  color: teal !important;
-  top: 10px;
-}
-
-.input-group .custom-file {
-  margin-bottom: 10px;   
+.app-form .iti {
+  width: 100%;
 }
 .input-group .custom-file-label::after {   
   content: "\f0c6" !important;
@@ -186,20 +129,6 @@ border: 1px solid rgba(249, 249, 249,0.5);
   overflow: hidden;
 }
 
-#appForm .form-group {
-  margin-bottom: 0.5rem; 
-}
-#appForm .form-control {
-  border-radius: 5px !important;
-  border  : 1px solid hsl(0, 0%, 87%) !important;
-}
-#appForm .form-control:focus,
-#appForm .form-control:valid { 
-  /* background: #0a0e180a; */
-  border-bottom: 1px solid rgba(204, 204, 204, 0.404);
-  box-shadow: none;
-}
- 
 .was-validated .custom-file-label.form-control:invalid, .custom-file-label.form-control.is-invalid {
 
   color: #dc3545;
@@ -221,24 +150,7 @@ border: 1px solid rgba(249, 249, 249,0.5);
   font-size: 1rem;
 }
 
-#appForm label {
-  color: #01626e;
-  border-radius: 5px;
-  background: #fff;
-  font-size: 15px !important;
-  font-weight: normal;
-  padding-left: 10px;
-}
-#appForm .form-control {
-  border: none;
-  border-radius: 0px;
-  min-height: 50px;
-  color: #333; 
-  font-size: 1.1rem !important;
-  /* padding: 25px 10px; */
-  font-weight: 400;
-  background-color: transparent;
-}
+ 
  
 .form-control.is-invalid:focus,
 .was-validated .form-control:valid:focus { 
@@ -249,19 +161,7 @@ border: 1px solid rgba(249, 249, 249,0.5);
 .was-validated .form-control:invalid { 
   border-bottom: 1px solid #dc3545 !important;
   box-shadow: none;
-}
-
- 
- 
- 
-
- 
-.right-wrapper {
-  height: 92vh;
-}
- .iti {
-   display: flex;
- }
+} 
 .footer{
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
 }
@@ -364,7 +264,4 @@ border: 1px solid rgba(249, 249, 249,0.5);
   text-align: justify;
 }
 
-/* TODO - check it  */
-.contact-banner {
-  display: none;
-}
+ 

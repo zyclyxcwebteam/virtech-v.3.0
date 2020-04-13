@@ -236,11 +236,11 @@ border: 1px solid rgba(249, 249, 249,0.5);
 .status-alert p {
   font-style: italic;
 }
-.invalid-feedback {
+.contact-wrapper .invalid-feedback {
   margin: 0;
   font-size: 80%;
 }
-  .invalid-feedback {
+ .contact-wrapper .invalid-feedback {
     display:block !important;
     opacity: 0 !important;
  
