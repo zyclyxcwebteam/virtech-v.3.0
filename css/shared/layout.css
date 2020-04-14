@@ -1,8 +1,4 @@
 /* ! COLOR CODES  */
-/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"); 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap');  */
-/* font-family: 'Lato', sans-serif; */
 /* dbdbdb */
 @font-face {
   font-family:HKGrotesk;
@@ -27,37 +23,6 @@
 
    
 }
- 
-/* .loading-wrapper {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1250;
-  background-color: transparent;
-}
-.loading-inner {
-  display: flex;
-  height: 100%;
-}
-.loading-wrapper .left,
-.loading-wrapper .right {
-  flex: 1;
-  position: relative;
-  background-color: hsl(217, 62%, 12%);
-}
-.loading-wrapper img {
-  vertical-align: middle;
-  border-style: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 350px;
-} */
 
 body {
   padding-top: 65px;
