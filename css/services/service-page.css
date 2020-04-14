@@ -10,6 +10,9 @@
   .banner-title-2{
    font-size: 4.5rem;    
  }
+ .banner-title-3{
+   font-size: 3rem;
+ }
 .nav-item.active .nav-link {
   font-weight: 600;
   color: #00bdd5;
@@ -128,7 +131,11 @@ body{
   justify-content: center;
   align-items: center;
 }
-
+@media (min-width: 1400px) {
+picture img{
+  min-height: calc(100vh - var(--navbar-height));
+}
+}
 
 @media (max-width: 576px) {
     .banner-title-2{

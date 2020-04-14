@@ -40,7 +40,9 @@ body{
   font-weight: 500;
   margin-bottom: 12px;
 }
-
+  .banner-title-2{
+   font-size: 4.5rem;    
+ }
 .career-points {
   background-color: #ffffff;
  
