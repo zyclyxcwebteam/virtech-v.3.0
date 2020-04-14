@@ -1,16 +1,13 @@
   .service-banner{
     display: flex;
-
   }
   .service-banner>div{
-    flex: 1 1 100%;     
+    flex: 0 1 50%;     
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .banner-title-2{
-   font-family:ProximaNova-Bold;
-   color: #f5f5f5;
    font-size: 4.5rem;    
  }
 .nav-item.active .nav-link {
@@ -134,6 +131,9 @@ body{
 
 
 @media (max-width: 576px) {
+    .banner-title-2{
+   font-size: 2.5rem;    
+ }
   .banner-title>div{
     display: flex;
     flex-direction: column;
@@ -143,9 +143,9 @@ body{
   .service-name {
     font-size: 2rem;
   }
-  .service-tagline {
+  .service-overview .service-tagline {
     font-size: 1.2rem;
-    padding: 0 0.25rem !important;
+    padding: 1rem 0.25rem 0 !important;
   }
   .service-overview{
     padding: 0 1rem;
