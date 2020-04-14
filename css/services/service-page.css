@@ -1,12 +1,38 @@
-  .service-banner{
-    display: flex;
-  }
-  .service-banner>div{
-    flex: 0 1 50%;     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+         .hero-banner {
+            position: relative;
+        }
+
+        .hero-title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+        .hero-title-cyber{
+          top: 40%;
+        }
+        .hero-title-left{
+          left: 3rem;
+        }
+        .hero-title-right{
+          right:3rem;
+        }
+        .hero-title-data-center{
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);           
+        }
+        .hero-title-blockchain{
+              left: 60%;
+          top: 50%;
+          transform: translate(-50%,-50%); 
+        }
+        .hero-title-bigdata{
+          left: 20%;
+        }
+        .outsourcing-banner .banner-title-2 {
+            color: #064152;
+        }
   .banner-title-2{
    font-size: 4.5rem;    
  }
