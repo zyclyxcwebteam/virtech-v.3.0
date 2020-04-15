@@ -34,7 +34,7 @@ body{
   position: relative;
 }
 
-/* .about-home:after {
+.about-home:after {
   content: "";
   position: absolute;
   height: 100%;
@@ -44,102 +44,52 @@ body{
   bottom: 0;
   right: 0;
   background-image: linear-gradient(to top, #08556b 1%, transparent 100%);
-} */
- 
-/* .about-overview {
-  background-color: #08556b;
-} */
- 
- 
-.about-overview .about-title-right {
-  font-size: 3rem;
-  text-align: left !important;
-  font-style: italic;         
-  margin-left: -50px;   
 }
-
-.about-title .about-title-left{
-  margin-right: 3rem;
-}
-.about-overview .about-title-left-1,.about-overview .about-title-left-2 {
-  font-size: 3rem;
-  color: #16151F; 
-  font-weight: 600;   
-  letter-spacing: 3px;     
-}
-
- 
-.about-banner-title .banner-title-2 {
-  font-style: italic;
-  font-size: 2.5rem !important;
-}
+ .banner-title-1{
+z-index: 99;
+ }
 .fade-title{
-  color: #00bdd5;
-  margin-left: 12px;
+  color: #11C6F7;   
+  z-index: 99;
 }
 .typed-cursor{
-  color: #00bdd5;
+  color: #f9f9f9;
 }
 .about-overview .hero-text {
   font-size: 1.15rem;
-  color: #474747;
+  color: #333333;
+  font-weight: 600;
   text-align: justify;
   margin-top: 0.6rem;
   z-index: 99;
 }
 
-.about-title-left .banner-title-2 {
-  /* font-size: 2.5rem; */
+/* .about-title-left .banner-title-2 {
+   
   color: #16151F;
-}
+} */
 
 .about-overview p {
   color: #474747;
   font-size: 1.2rem;
 }
- .mission,.vision{
-   display: flex;
- }
- .mission-img,.vision-img{
-   flex: 1 1 auto;
-   width: 50%;
- }
- 
- .mission-content,.vision-content{
-   flex: 1 1 auto;
-   width: 50%;
-   background-color: #4bdce8;
- }
- /* .mission-img img,.vision-img img{
-   margin-left: auto;
-   display: flex;
-   width: 60%;
- } 
- .vision-img img{
-   margin-right: auto;
-   margin-left: 0; 
-     
- }  */
- .vision-img{
-   background-image: url('../img/about/vision.jpg');
-   height: 46.5vh;
-   background-size: cover;
-   background-position: center;
- }
-  .mission-img{
-    height: 46.5vh;
-   background-image: url('../img/about/mission.jpg');
-   background-size: cover;
-   background-position: center;
- }
- .mission-title,.vision-title{
-   font-size: 2.5rem;
-   font-weight: 600;
- }
-  .mission-text,.vision-text{
-   font-size: 1.5rem;
-   font-weight: 500;
- }
+.mission,.vision{
+  background-color: #11C6F7;
+}
+.mission-img img, .vision-img img{
+ width: 400px;
+ height: 400px;
+}
+.mission .title-2, .vision .title-2{
+  color: #086078;
+}
+
+.mission-text, .vision-text{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5c5c5c;
+  padding-top: 1rem;
+}
 /* How we Do */
 .how-wedo-outer {
   /* background-color: #08556b; */
@@ -181,8 +131,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  /* opacity: 0; */
+  flex-direction: column;   
   position: relative;
   --circle-color: 0;
 }
@@ -234,72 +183,10 @@ body{
   padding-left: 12px !important;
 }
  
-
-/* =======================================
-                Meadia Queries
-   ======================================= */
-   /* @media (max-width: 976px){
-     
-   
-    .how-wedo-outer{
-      display: none !important;
-    }
-    
-    .sm-how-we-do {
-      display: block !important;
-      background-color: #0c1b33;
-      padding-bottom: 3rem; 
-    }
-    .sm-icon img{
-      width: 50px;
-    }
-    .sm-icon .do-title{
-      font-size: 1rem;
-    }
- 
-    .sm-icon{
-   
-      position: relative;
-  
-    }
-    .sm-icon::after{
-      content: '';
-      width: 15px;
-      height: 15px;
-      background-color: aquamarine;
-      border-radius: 50px;
-      position: absolute;
-      top: 50%;
-      left: 5px;
-      transform: translateY(-50%);
-    }
-    .sm-icon::before{
-      content: '';
-      width: 2px;
-      height: 100%;
-      background-color: aquamarine;
-      position: absolute;
-      left: 12px;
-    }
-    .sm-how-we-do .we-do-title{
-      color: #b8bdc4;
-      font-family: "Playfair Display";
-    }
-    .sm-how-we-do .do-icon{
-      color: #b8bdc4;
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      flex-direction: column;
-    }
-  
-    .sm-how-we-do .do-text{
-      text-align: left;
-      color: #b8bdc4;
-      padding: 0px;
-    }
-   } */
    @media (max-width: 576px){
+     .about-overview .about-title-left-1,.about-overview .about-title-left-2{
+       font-size: 1.4rem;
+     }
      .mission-vission .card-title {
        height: 100px;
      }
@@ -315,12 +202,7 @@ body{
       font-size: 1.55rem;
       margin:4px 0 !important;
     }
-    .about-home .fade-title{
-      /* font-size: 1rem; */
-      text-align: center;
-      display: flex;
-      justify-content: center;
-    }
+   
     .about-home .about-title-right {
       text-align: center;
       margin: 0;
@@ -337,13 +219,17 @@ body{
       padding: 0 5px;
       /* text-align: left; */
     }
-    .mission-vission .title-card-1{
-      box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.5) !important;
-    }
-    .mission-vission .about-text{
-      text-align: justify;
-      font-size: 0.8rem;     
-    }
+.mission-img img, .vision-img img{
+ width: 360px;
+ height: 360px;
+}
+.mission,.vision{
+  background-color:#fff;
+}
+
+.mission-text, .vision-text {
+  font-size: 1.2rem;
+}
 
     /* ===== HOw We Do ======*/
     .how-wedo-outer{
@@ -353,6 +239,7 @@ body{
     .sm-how-we-do {
       background-color: #0c1b33; 
   height: calc(100vh - var(--navbar-height));
+  overflow-x: hidden;
     }
     .sm-icon img{
       width: 50px;
