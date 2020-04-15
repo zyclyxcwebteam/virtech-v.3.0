@@ -34,7 +34,8 @@ body {
 }
  
 .banner-title-1,
-.banner-title-2 {
+.banner-title-2,
+.banner-title-3 {
   color: #f8f8ff;
   font-family:ProximaNova-Bold,-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif; 
@@ -174,6 +175,7 @@ font-family:ProximaNova-Bold,-apple-system, system-ui, BlinkMacSystemFont, "Sego
   font-size: 2.2rem;   
   color: #20263b;
   margin: 0;
+  font-weight: 500;
 }
 @media (max-width: 576px) {
   .banner-title-1 {
