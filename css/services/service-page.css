@@ -5,8 +5,7 @@
         .hero-title {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
-            
+            transform: translateY(-50%);            
         }
         .hero-title-cyber{
           top: 40%;
@@ -51,14 +50,7 @@ picture img{
   color: #00bdd5;
 }
 
-@font-face {
-  font-family:HKGrotesk;
-  src: url('../../fonts/HKGroteskPro-Regular.woff2');
-}
  
-body{
-  font-family: HKGrotesk;
-}
 .service-banner {
   height: 92vh; 
   background-size: cover; 
@@ -110,9 +102,11 @@ body{
 
 .service-section-title {
   font-size: 2.2rem;
-  color: #08556b;   
+  color: #086078;   
   margin: 0;
   padding: 1rem 0 !important;
+  font-family:ProximaNova-Bold,-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif; 
 }
 
 .service-partners {   
@@ -164,9 +158,11 @@ picture img{
 }
 
 @media (max-width: 576px) {
-    .banner-title-2{
-   font-size: 2.5rem;    
+    .banner-title-3{
+   font-size: 1.8rem;
+   color: #086078; 
  }
+ 
   .banner-title>div{
     display: flex;
     flex-direction: column;
@@ -178,15 +174,14 @@ picture img{
   }
   .service-overview .service-tagline {
     font-size: 1.2rem;
-    padding: 1rem 0.25rem 0 !important;
+    padding: 0.5rem 0.25rem 0 !important;
   }
   .service-overview{
-    padding: 0 1rem;
+    padding:0.5rem 1rem;
     font-size: 1rem;
     text-align: left;
   }
-  .service-overview p{
-    padding: 0 0.8rem !important;
+  .service-overview p{ 
     text-align: justify;
   }
   .service-content{
@@ -231,14 +226,15 @@ picture img{
     height: 160px;
   }
   .contact-banner .contact-title{
-    font-size: 1.5rem !important;     
+    font-size: 1.5rem !important;
+    font-weight: 600;  
   }
   .contact-banner .service-contact{
     margin-left: 0;
     padding: 0.3em 1.2em;
   }
   .service-section-title {
-    font-size: 1.5rem;     
+    font-size: 1.8rem;     
     padding: 0.5rem 0 !important;
   }
   .service-partner-title{
