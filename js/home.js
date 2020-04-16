@@ -217,26 +217,6 @@ $(function () {
   });
 
    
-  // core values
-let coreValues = gsap.timeline();
-   coreValues.fromTo('.core-values .wrapper',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
-  coreValues.fromTo(".core-values .title-1",{opacity:0},{opacity:1,duration:0.5})
-  coreValues.fromTo('.core-values .c-val',{autoAlpha:0,y:30},{stagger:0.1,autoAlpha:1,duration:1,y:0}) 
-  // coreValues.fromTo('.industry',{y:80,opacity:0},{y:0,opacity:1,stagger:0.2,duration:1});
-  // coreValues.fromTo('.ind-content',{y:80,opacity:0},{y:0,opacity:1,duration:0.5},'-=2')
-
-  new ScrollMagic.Scene({
-    triggerElement: ".core-values",
-    triggerHook: 0.17,
-    reverse: false
-  })
-    .setTween(coreValues)
-    .addTo(controller);
-
-   
-  
-  
-  
   // NAVBAR BACKGROUND CHANGE ON SCROLL
   const navbar = document.querySelector(".navbar");
   const homeContainer = document.querySelector("#home");
