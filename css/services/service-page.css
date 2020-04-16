@@ -241,3 +241,17 @@ picture img{
     margin-bottom: 1.5rem;
   }
 }
+
+
+@media(max-width:1140px){
+      .banner-title-3{
+   font-size: 2.5rem;
+   color: #086078; 
+ }
+ .service-overview {     
+    padding-top: 1.5rem
+}
+.service-overview .service-tagline {
+  font-size: 1.2rem;
+}
+}
