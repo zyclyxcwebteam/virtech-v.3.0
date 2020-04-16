@@ -1,4 +1,24 @@
+ .hero-banner {
+            position: relative;
+        }
 
+        .hero-title {
+            position: absolute;
+            top: 10%;
+            left: 30%;
+                 
+        }
+        picture img{
+ width: 100%;
+}
+  .banner-title-2{
+   font-size: 4.5rem;    
+ }
+@media (min-width: 1400px) {
+picture img{
+  min-height: calc(100vh - var(--navbar-height));
+}
+}
 .career-home {
   height: calc(100vh - var(--navbar-height));
   background-color: #064152;
@@ -14,8 +34,9 @@
   background-color: #ffffff; 
 }
 .career-tagline{
-    color: #0D93B8;
-  font-size: 1.5rem;    
+  color: #5c5c5c;
+  font-size: 1.5rem;
+   font-style: normal;
    font-weight: 600;
    margin:0
 }
