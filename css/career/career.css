@@ -14,6 +14,9 @@
   .banner-title-2{
    font-size: 4.5rem;    
  }
+ .banner-title-3 {
+   color: #064152;
+ }
 @media (min-width: 1400px) {
 picture img{
   min-height: calc(100vh - var(--navbar-height));
@@ -55,7 +58,7 @@ picture img{
 .career-overview ul li .fas {
   margin-right: 8px;
    display: flex;
-   align-items: center;
+   margin-top: 7px;
    font-size: 1rem;
   color: #FF9800;
 }
@@ -153,6 +156,9 @@ picture img{
   .career-title {
     font-size: 2.3rem;
   }
+  .career-tagline{
+    font-size: 1.2rem;
+  }
   .banner-title-text {
     display: flex;
     flex-direction: column;
@@ -160,17 +166,23 @@ picture img{
   }
   .career-points .hero-text {
     margin-left: 16px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: normal;
   }
   .career-points {
     font-size: 1rem;
   }
-
+  .career-overview ul li {
+    font-size: 1rem;
+  }
   .career-points ul li {
     font-size: 1rem;    
   }
   #jobOpenings .card{
     min-height: 210px;
+  }
+  .career-overview ul li .fas {
+    font-size: 0.8rem;
+    margin-top: 8px;
   }
 }
