@@ -1,0 +1,271 @@
+ 
+.core-values {
+  background-color:#064152;
+  height: calc(100vh - var(--navbar-height)); 
+  position: relative;  
+  overflow: hidden;
+}
+.c-val .core-icon-outer {
+  padding: 0.3rem;
+  border-radius: 50%;
+  background-color: hsl(217, 62%, 20%);
+}
+.c-val .core-icon-inner {
+  background-color:#16151f;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+ .core-values .core-icon-outer:hover {
+  background-color: hsl(187, 92%, 44%);
+}
+@media(min-width:981px){
+.circle{
+  height: 640px;
+  width: 640px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  bottom: -35%;
+  background-image: url('../../img/Shape.svg');
+  background-repeat: no-repeat;
+}
+  .c-val {
+  display: flex;
+  align-items: center;
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+}
+.c-val-1{
+  transform: rotate(195deg) translate(475px);
+}
+.c-val-2{
+  transform: rotate(222deg) translate(485px);
+}
+.c-val-3{
+  transform: rotate(249deg) translate(475px);
+}
+.c-val-4{
+  transform: rotate(279deg) translate(442px);
+}
+.c-val-5{
+  transform: rotate(309deg) translate(400px);
+}
+.c-val-6{
+      transform: rotate(340deg) translate(355px);
+}
+
+/*rotate icons to bring back to original  */
+ .c-val-1 svg, .core-text-1{
+  transform: rotate(-195deg);
+}
+.c-val-2 svg, .core-text-2{
+  transform: rotate(-222deg);
+}
+.c-val-3 svg, .core-text-3{
+  transform: rotate(-249deg);
+}
+.c-val-4 svg, .core-text-4{
+  transform: rotate(-279deg);
+}
+.c-val-5 svg, .core-text-5{
+  transform: rotate(-309deg);
+}
+.c-val-6 svg, .core-text-6{
+  transform: rotate(-340deg);
+}
+
+.core-text{
+  position: absolute;
+  left: 0px;
+  color: #f5f5f5;
+  width: 200px;
+  text-align: center;
+}
+.core-text-title,.core-text-caption{
+  margin: 0;
+
+} 
+.core-text-1{
+  left:105px;
+  top:30px;   
+}
+.core-text-2{
+  left: 100px;
+  top:-70px;
+  width: 250px; 
+}
+.core-text-3{
+    bottom: 106px;
+    left: 18px; 
+    top: -109px;
+}
+.core-text-4{
+ left: 25px;
+ top: 192px;
+}
+.core-text-5{
+     top: 175px;
+    width: 273px;
+    left: 80px
+}
+.core-text-6{
+     left: 90px;
+    top: 45px;
+}
+}
+@media(max-width:1360px){
+.circle{
+  height: 540px;
+  width: 540px;
+}
+.core-text-title{
+  font-size: 1.5rem;
+}
+.c-val .core-icon-inner {
+  padding: 1rem;
+}
+.c-val-1{
+  transform: rotate(195deg) translate(400px);
+}
+.c-val-2{
+  transform: rotate(222deg) translate(415px);
+}
+.c-val-3{
+  transform: rotate(249deg) translate(408px);
+}
+.c-val-4{
+  transform: rotate(279deg) translate(380px);
+}
+.c-val-5{
+  transform: rotate(309deg) translate(340px);
+}
+.c-val-6{
+      transform: rotate(340deg) translate(300px);
+}
+.core-text-1 {
+    left: 85px;
+    top: 20px;
+}
+.core-text-2 {
+    left: 60px;
+    top: -40px;
+}
+.core-text-3 {
+    bottom: 106px;     
+    top: -90px;
+}
+.core-text-4 {
+    left: 15px;
+    top: 175px;
+}
+.core-text-5 {
+    top: 140px;
+    left: 50px;
+}
+.core-text-6 {
+    left: 70px;
+    top: 45px;
+}
+}
+
+@media(max-width:1100px){
+.circle{
+  height: 440px;
+  width: 440px;
+}
+.core-text-title {
+  font-size: 1.3rem;
+}
+.c-val-1{
+  transform: rotate(195deg) translate(350px);
+}
+.c-val-2{
+  transform: rotate(222deg) translate(360px);
+}
+.c-val-3{
+  transform: rotate(249deg) translate(352px);
+}
+.c-val-4{
+  transform: rotate(279deg) translate(325px);
+}
+.c-val-5{
+  transform: rotate(309deg) translate(285px);
+}
+.c-val-6{
+      transform: rotate(340deg) translate(250px);
+}
+.core-text-5 {
+    top: 125px;
+    left: 30px;
+}
+.core-text-6 {
+    left: 55px;
+    top: 30px;
+}
+}
+
+@media(max-width:980px){
+.circle{
+  height:100%;
+  width:100%;
+  border-radius: 0%;
+  margin: 0 auto;
+  position: static;
+  background-image: none;   
+}
+.c-val .core-icon-inner {
+    padding: 0.8rem;
+}
+  .c-val {
+  display: flex;
+  align-items: center;
+  position: static;
+  margin: 16px 0; 
+}
+.c-val svg{
+  height: 40px;
+  width: 40px;
+}
+.c-val-1{
+  transform: rotate(0deg) translate(0px);
+}
+.c-val-2{
+  transform: rotate(0deg) translate(0px);
+}
+.c-val-3{
+  transform: rotate(0deg) translate(0px);
+}
+.c-val-4{
+  transform: rotate(0deg) translate(0px);
+}
+.c-val-5{
+  transform: rotate(0deg) translate(0px);
+}
+.c-val-6{
+      transform: rotate(0deg) translate(0px);
+}
+.core-text{
+  position:static;   
+  color: #f5f5f5;   
+}
+}
+
+@media (max-width: 576px) {
+ .c-val .core-icon-inner {
+   padding: 0.6rem;
+ }
+  .c-val svg {
+    height: 40px;
+    width: 40px;
+}
+.core-text {
+  margin-left: 1rem;
+}
+.core-text-caption{
+  margin: 0;
+}
+.core-text-title{
+  margin: 0;
+}
+}

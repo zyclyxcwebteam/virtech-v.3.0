@@ -1,11 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Alegreya|B612+Mono|Crimson+Pro|Crimson+Text|IBM+Plex+Serif&display=swap");
-
-
-:root {
-  --mission-bg: #08556b;
-  --line-height:0px;
-  --circle-sm-opacity:0;
-}
  
 #about .nav-item.active .nav-link {
   font-weight: 600;

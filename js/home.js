@@ -7,23 +7,23 @@ $(function () {
   let homePageLoad = gsap.timeline({ onComplete: startTitleCarousel });
   homePageLoad.to('body',{overflow:'hidden'})
   homePageLoad.fromTo(
-    "#logoCenter",
+    ".loading-wrapper img",
     {
-      top: "50%",
       left: "50%",
-      transform: "translate(-50%,-50%)",
-      maxWidth: "300px"
+      top: "50%",
+      transform: "translate(-53%,-50%)",
+      maxWidth: "250px",
     },
     {
-      top: "9px",
       left: "38px",
+      top: "9px",
       transform: "translate(0,0)",
       maxWidth: "150px",
       ease: "linear",
-      duration: 2,
-      delay: 1
+      duration: 2       
     }
   );
+  
   homePageLoad.to("#masterNavbar", { opacity: 1, duration: 0.4, delay: 0.1 });
   homePageLoad.fromTo(
     "#page-loader",
@@ -110,63 +110,14 @@ $(function () {
     });
   }
 
-  //  Services section
-
-
-  function startServiceCarousel() {
-    $(".carousel").carousel("cycle");
-    $(".carousel").carousel({
-      interval: 5000
-    });
-  }
- 
-
-  // let ourServices = gsap.timeline({ onComplete: startServiceCarousel });   
-  // ourServices.fromTo(
-  //   "#servicesInner",
-  //   { opacity: 0 },
-  //   { opacity: 1, duration: 0.5 }
-  // );
-  // ourServices.fromTo(".services-wrapper .title-1",{opacity:0},{opacity:1,duration:0.5})
-  // new ScrollMagic.Scene({
-  //   triggerElement: "#servicesOuter",
-  //   triggerHook: 0.1,
-  //   duration: "0px"
-  // })
-  //   .setTween(ourServices)
-  //   .reverse(false)    
-  //   .addTo(controller);
-
-  
- 
-
-  /* === OUR INDUSTRIES === */
-
-  let indColor = gsap.timeline();      
-  indColor.fromTo('.industry-inner',{autoAlpha:0}, { autoAlpha: 1, duration: 0.001 });
-  indColor.fromTo('.industry',{y:80,opacity:0},{y:0,opacity:1,stagger:0.2,duration:1});
-  indColor.fromTo('.ind-content',{y:80,opacity:0},{y:0,opacity:1,duration:0.5},'-=2')
-
-  new ScrollMagic.Scene({
-    triggerElement: "#industryMaster",
-    triggerHook: 0.17,
-    reverse: false
-  })
-    .setTween(indColor)
-    .addTo(controller);
-
- 
-
   // Industries section
 
   
-  $(".industry").each(function () {
-    // $(this).removeClass('active');
-    //console.log('update class')
-    setInterval(function () {
-      $(this).toggleClass("active");
-    }, 1000);
-  });
+  // $(".industry").each(function () {     
+  //   setInterval(function () {
+  //     $(this).toggleClass("active");
+  //   }, 1000);
+  // });
 
   $(".industry").on("mouseenter", function () {
     $(".industry").each(function () {
@@ -237,21 +188,5 @@ $(function () {
       }
     });
   }, sectionOneOptions);
-  sectionOneObserver.observe(homeContainer);
-  // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
-
-  // scrollContainer
+  sectionOneObserver.observe(homeContainer); 
 });
-
-
-// $(document).ready(function() {
-// 	$('#scrollContainer').fullpage({
-    
-//     scrollBar:true,
-// 		autoScrolling:true,
-//     scrollHorizontally: false,
-//     fitToSectionDelay:500 
-// 	});
- 
-//   $.fn.fullpage.setAllowScrolling(true);   
-// });

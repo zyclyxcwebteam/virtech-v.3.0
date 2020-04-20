@@ -1,0 +1,182 @@
+/* === CHAT BOT CSS === */
+.chat-bot .card-header {
+  color: #535a5f;
+  font-weight: bolder;
+}
+.chat-bot {
+  display: none;
+}
+.chat-bot .card {
+  background-color: #fff;
+  width: 95%;
+  max-width: 18rem;
+  height: 420px;
+  border-radius: 6px;
+  border: none;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0.1rem;
+  z-index: 1200;
+  margin: 5px;
+}
+.chat-bot .card-header {
+  color: #fff;
+  background-color: #00bdd5;
+}
+.chat-bot .card-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.chat-bot button.close {
+  padding: 11px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+
+.chat-bot .close {
+  text-shadow: none;
+}
+.chat-bot .close:not(:disabled):not(.disabled):hover {
+  opacity: 1;
+}
+.chat-bot .close:hover {
+  color: rgb(255, 255, 255);
+  background: #ff6347;
+  opacity: 1;
+}
+
+.chat-bot .input-group-text {
+  background-color: #00bdd5;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  padding: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+}
+.chat-bot .input-group-text:hover {
+  background-color: hsl(187, 100%, 35%);
+}
+.chat-bot .form-control {
+  border: none;
+  height: 45px;
+}
+.chat-bot .form-control:focus {
+  box-shadow: none;
+}
+
+.chat-bot .card-body {
+  color: #232934;
+  background: #eaeef3;
+  padding: 5px;
+  font-size: 14px;
+  overflow: auto;
+}
+
+.bot {
+  border: 2px solid #00bdd5;
+  background: #00bdd5;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50%;   
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 35px;
+  right: 10px; 
+  z-index: 99;   
+}
+.bot:hover {
+  border: 2px solid #00bdd5;
+  background: hsl(187, 100%, 32%);
+  color: #ffffff;
+}
+.chat-bot .reply-messages {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+.chat-bot .reply-messages p {
+  margin: 0;
+}
+
+.chat-bot #botReplay {
+  background: hsl(187, 100%, 98%);
+  color: #303030;
+  box-shadow: 0px 1px 1px 0px #ccc;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  max-width: 80%;
+  align-self: flex-start;
+}
+.chat-bot #userReplay {
+  background: hsl(187, 100%, 98%);
+  color: #303030;
+  box-shadow: 0px 1px 1px 0px #ccc;
+  font-weight: 500;
+  padding: 10px;
+  text-align: right;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 80%;
+  align-self: flex-end;
+}
+.chat-bot .trashBtn {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.chat-bot .trashBtn:focus {
+  outline: none;
+  border: none;
+}
+.chat-bot #basic-addon2 {
+  min-width: 38px;
+}
+.chat-bot .sendBtn:focus {
+  box-shadow: none;
+}
+.spinner-border-sm {
+  height: 1.1em;
+  width: 1.1em;
+}
+
+/* ==== Media Queries ====*/
+@media (max-width: 576px) {
+  .bot {
+    position: absolute;
+    bottom: 130px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 425px) {
+  .chat-bot .card {
+    max-width: 100% !important;
+    right: 0px !important;
+    left: 4px;
+    height: 80vh !important;
+    transition: all 0.2s ease-in-out;
+  }
+}

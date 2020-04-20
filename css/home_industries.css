@@ -1,6 +1,5 @@
  .industry-wrapper {   
-  --ind-bg: #f5f5f5;
-  background-color: var(--ind-bg);
+   background-color: #f5f5f5;   
 }
 .industry-wrapper .title-2{
   color: #0a7492;
@@ -47,10 +46,15 @@
 .industry-cards-2 {
   align-self: center;
 }
-
+.ind-content-wrapper{
+ 
+background: #f5f5f5;
+}
 .ind-content {
   display: none;
   padding-left: 3rem;
+  padding-right: 3rem;
+
 }
 /* .ind-content h2 {   
   color: #00bdd5;   
@@ -132,10 +136,3 @@
   }
   
 }
-
-
- /* ! gsap animation */
-
- .industry-inner{
-   opacity: 0;
- }

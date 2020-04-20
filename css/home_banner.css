@@ -14,19 +14,12 @@
   z-index: 1250;
   background-color: #ffffff;
 }
-.loading-inner {
-  display: flex;
-  height: 100%;
-}
-
-.loading-wrapper img {
-  vertical-align: middle;
-  border-style: none;
+.loading-wrapper img {      
+  max-width: 250px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 300px;
+  transform: translate(-50%, -50%); 
 }
 /* ! logo reveal animation  */ 
 .home-banner {
