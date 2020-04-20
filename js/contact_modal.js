@@ -13,7 +13,8 @@
       minHeight: "100%",
       top: "60px",
       bottom: "unset",
-      duration: 0.5
+      duration: 0.5,
+      ease: "power4.out"
     });
   }
 
@@ -26,24 +27,10 @@
       bottom: "0",
       top: "110%",
       minHeight: "0%",
-      duration: 0.5
+      duration: 0.5,
+      ease: "power4.out"
     });
   }
-
-  // window.addEventListener('load', function() {
-
-  //   let contactForm = document.getElementById('contactForm');
-
-  //   var validation = Array.prototype.filter.call(forms, function(form) {
-  //     form.addEventListener('submit', function(event) {
-  //       if (form.checkValidity() === false) {
-  //         event.preventDefault();
-  //         event.stopPropagation();
-  //       }
-  //       form.classList.add('was-validated');
-  //     }, false);
-  //   });
-  // }, false);
   contactLink &&
     contactLink.addEventListener("click", function(event) {
       event.preventDefault();
