@@ -251,6 +251,9 @@
 }
 
 @media (max-width: 576px) {
+  .c-val {
+  margin: 10px;
+  }
  .c-val .core-icon-inner {
    padding: 0.6rem;
  }

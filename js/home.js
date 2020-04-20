@@ -1,4 +1,8 @@
 $(function () {
+  let logoLeft = '38px';
+  if(screen.width < 993){
+    logoLeft = '25px';
+  }
   let controller = new ScrollMagic.Controller();
   let homeTitleCarousel = gsap.timeline({ repeat: -1 });
 
@@ -15,7 +19,7 @@ $(function () {
       maxWidth: "250px",
     },
     {
-      left: "38px",
+      left:logoLeft,
       top: "9px",
       transform: "translate(0,0)",
       maxWidth: "150px",
