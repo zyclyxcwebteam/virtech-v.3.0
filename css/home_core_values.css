@@ -1,5 +1,4 @@
- 
-.core-values {
+ .core-values {
   background-color:#064152;
   height: calc(100vh - var(--navbar-height)); 
   position: relative;  
