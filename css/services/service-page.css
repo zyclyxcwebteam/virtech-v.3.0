@@ -151,18 +151,27 @@ picture img{
   justify-content: center;
   align-items: center;
 }
+
 @media (min-width: 1400px) {
 picture img{
   min-height: calc(100vh - var(--navbar-height));
 }
 }
 
+@media(max-width:1140px){
+  .banner-title-3{
+font-size: 2.5rem;
+color: #086078; 
+}
+
+.service-overview {     
+padding-top: 1.5rem
+}
+.service-overview .service-tagline {
+font-size: 1.2rem;
+}
+}
 @media (max-width: 576px) {
-    .banner-title-3{
-   font-size: 1.8rem;
-   color: #086078; 
- }
- 
   .banner-title>div{
     display: flex;
     flex-direction: column;
@@ -243,15 +252,3 @@ picture img{
 }
 
 
-@media(max-width:1140px){
-      .banner-title-3{
-   font-size: 2.5rem;
-   color: #086078; 
- }
- .service-overview {     
-    padding-top: 1.5rem
-}
-.service-overview .service-tagline {
-  font-size: 1.2rem;
-}
-}
