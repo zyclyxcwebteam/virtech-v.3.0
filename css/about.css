@@ -64,8 +64,8 @@ z-index: 99;
   background-color: #11C6F7;
 }
 .mission-img img, .vision-img img{
- width: 400px;
- height: 400px;
+ width: 400px;  
+ min-height: 214px;
 }
 .mission .title-2, .vision .title-2{
   color: #086078;
