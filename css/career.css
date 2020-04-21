@@ -14,9 +14,7 @@
   .banner-title-2{
    font-size: 4.5rem;    
  }
- .banner-title-3 {
-   color: #064152;
- }
+ 
 @media (min-width: 1400px) {
 picture img{
   min-height: calc(100vh - var(--navbar-height));
@@ -50,8 +48,7 @@ picture img{
   
   margin: 1.4rem;
   list-style-type: none;
-  font-size: 1.2rem;
-  color: #064152;
+  font-size: 1.2rem;   
   display: flex;   
   font-weight: 600;
 }
@@ -60,7 +57,7 @@ picture img{
    display: flex;
    margin-top: 7px;
    font-size: 1rem;
-  color: #FF9800;
+  color: #0D93B8;
 }
 /* career cards */
 
