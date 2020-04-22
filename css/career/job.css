@@ -1,13 +1,12 @@
 .hero-banner {
   position: relative;
 }
-
 .hero-title {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-       
+  width: 60%;     
 }
 picture img{
 width: 100%;
@@ -15,7 +14,6 @@ width: 100%;
 .banner-title-2{
 font-size: 4.5rem;    
 }
-
 @media (min-width: 1400px) {
 picture img{
 min-height: calc(100vh - var(--navbar-height));
@@ -156,22 +154,33 @@ min-height: calc(100vh - var(--navbar-height));
  
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 1200px) {
+  .banner-title-2{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .right-wrapper{
+    position: static; 
+  }
+  .banner-title-2{
+    font-size: 2rem;
+  }
+  .options .option {
+    background-color: #064152;
+  }
+  .options .title-3 {
+ font-size: 1.2rem;
+ }
+ }
+
+ @media (max-width: 575.98px) {
   .option {
     justify-content: flex-start;
   }
- 
+  .banner-title-2{
+    font-size: 1.5rem;
+  }
 }
  
-@media (max-width: 990px) {
- .right-wrapper{
-   position: static; 
- }
- 
- .options .option {
-   background-color: #064152;
- }
- .options .title-3 {
-font-size: 1.2rem;
-}
-}
