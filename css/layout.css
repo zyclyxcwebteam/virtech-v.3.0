@@ -176,10 +176,28 @@ font-family:ProximaNova-Bold,-apple-system, system-ui, BlinkMacSystemFont, "Sego
   margin: 0;
   font-weight: 500;
 }
-@media (max-width: 1140px){
+@media (max-width: 1299px){
+  .banner-title-2 {
+      font-size: 3.5rem;       
+  }
+  }
+@media (max-width: 1199px){
+  .banner-title-2 {
+    font-size: 3rem; 
+}
 .banner-title-3 {
     font-size: 2.5rem;
-    color: #086078;
+    color: #086078 !important;
+}
+}
+@media(max-width:992px){
+  .banner-title-3 {
+    font-size: 2.2rem;
+}
+}
+@media(max-width:768px){
+  .banner-title-3 {
+    font-size: 2rem;
 }
 }
 @media (max-width: 576px) {
@@ -192,7 +210,7 @@ font-family:ProximaNova-Bold,-apple-system, system-ui, BlinkMacSystemFont, "Sego
   font-weight: 500;
 }
 .banner-title-3 {
-  font-size: 2rem !important;
+  font-size: 1.6rem !important;
   color: #086078;
 }
 .section-title-bg {

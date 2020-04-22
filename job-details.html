@@ -247,70 +247,61 @@
         src="./img/careers/career-3_u6qwve_ar_21_9,c_fill,g_auto__c_scale,w_3540.jpg"
         alt="">
       </picture>
-      <div class="col-lg-2 p-0 right-wrapper">
-        <div class="options row info d-flex justify-content-center align-items-stretch h-100">
+    </section>
 
-          <div class="option col-lg-12 col pr-0">
-            <div class="optIcon mr-4">
-              <i class="fas fa-briefcase"></i>
-            </div>
-
-            <div>
-              <p class="text-2"> Experience</p>
-              <h2 class="title-3">2-3 Years</h2>
-            </div>
+    <section class="container-fluid section-4 details-wrapper pb-3" id="roles">
+      <div class="row">                           
+        <div class="option col-6 col-md-3">
+          <div class="optIcon">
+            <i class="fas fa-briefcase"></i>
           </div>
 
+          <div>
+            <p class="text-2"> Experience</p>
+            <h2 class="title-3">2-3 Years</h2>
+          </div>
+        </div>
+        <div class="option col-6 col-md-3">
 
-          <div class="option col-lg-12 col pr-0">
-
-            <div class="optIcon mr-4">
-              <i class="fas fa-user-tie"></i>
-            </div>
-
-            <div>
-              <p class="text-2"> Job Type</p>
-              <h2 class="title-3">Full-Time</h2>
-            </div>
-
+          <div class="optIcon">
+            <i class="fas fa-user-tie"></i>
           </div>
 
-          <div class="option col-lg-12 col pr-0">
-
-            <div class="optIcon mr-4">
-              <i class="fas fa-rupee-sign"></i>
-            </div>
-
-            <div>
-              <p class="text-2">Salary</p>
-              <h2 class="title-3">Best in the industry</h2>
-            </div>
+          <div>
+            <p class="text-2"> Job Type</p>
+            <h2 class="title-3">Full-Time</h2>
           </div>
-
-          <div class="option col-lg-12 col pr-0">
-
-            <div class="optIcon mr-4">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-
-            <div>
-              <p class="text-2">location</p>
-              <h2 class="title-3">On-site</h2>
-            </div>
-          </div>
-          <a class="btn rounded-0 option option-btn title-3 col-lg-12 col p-0 pr-lg-0" href="#"
-            id="applyPopUp">Apply
-            Now</a>
 
         </div>
 
-      </div>
+        <div class="option col-6 col-md-3">
 
-    </section>
+          <div class="optIcon">
+            <i class="fas fa-rupee-sign"></i>
+          </div>
 
-    <section class="container-fluid section-4 details-wrapper py-3" id="roles">
+          <div>
+            <p class="text-2">Salary</p>
+            <h2 class="title-3">Best in the industry</h2>
+          </div>
+        </div>
+
+        <div class="option col-6 col-md-3">
+
+          <div class="optIcon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+
+          <div>
+            <p class="text-2">location</p>
+            <h2 class="title-3">On-site</h2>
+          </div>
+        </div>
+                   
+  </div>
       <div class="container details px-md-2 px-0">
-        <h2 class="banner-title-3 d-block d-xl-none text-center" id="jobtitle-mobile"> </h2>
+        <h2 class="py-2 banner-title-3 d-block d-xl-none text-center" id="jobtitle-mobile"> </h2>
+       
         <!-- <div class="job-description">
         <h5 class="py-2 title-2">Description</h5>
         <p class="ml-3 text-2" id="description"></p>
@@ -331,63 +322,63 @@
 
     <!-- ! Application form -->
     <section class="appWrapper py-4">
-      <h4 class="pb-3 text-center title-3 title-dark">Apply Now</h4>
+      <h4 class="pb-md-4 pb-2 text-center title-3 title-dark">Apply Now</h4>
       <div class="container">
 
+        <div class="row mx-auto d-flex justify-content-center">
+          <div class="col-md-6 col-12">
         <form id="jobApplication" class="app-form needs-validation" novalidate>
+          
           <div class="row d-flex justify-content-center">
-            <div class="col-md-5 col-12">
+            <div class="col-md-6 col-12">
               <div class="form-group ">
-                <label for="validationCustom01">First Name <span>*</span></label>
-                <input type="text" class="form-control py-3" name="firstname" id="validationCustom01"
+                <label for="firstname">First Name <span>*</span></label>
+                <input type="text" class="form-control py-md-4 py-3" name="firstname" id="firstname"
                   pattern="[a-zA-Z\s]{2,30}" placeholder="Enter your name" autocomplete="off" required>
                 <div class="invalid-feedback">Please enter firstname</div>
               </div>
             </div>
 
-            <div class="col-md-5 col-12">
+            <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="pwd"> Last Name <span>*</span></label>
-                <input type="text" class="form-control" name="lastname" pattern="[a-zA-Z\s]{2,30}" id="lastname"
+                <label for="lastname"> Last Name <span>*</span></label>
+                <input type="text" class="form-control py-md-4 py-3" name="lastname" pattern="[a-zA-Z\s]{2,30}" id="lastname"
                   placeholder="Enter your last name" autocomplete="off" required>
                 <div class="invalid-feedback">Please enter your lastname</div>
               </div>
             </div>
 
-            <div class="col-md-5 col-12">
+            <div class="col-12">
               <div class="form-group">
-                <label class=""> Email-ID <span>*</span></label>
-                <input type="email" class="form-control" name="email" autocomplete="off"
+                <label for="email"> Email-ID <span>*</span></label>
+                <input type="email" class="form-control py-md-4 py-3" name="email" autocomplete="off"
                   placeholder="Enter your email-ID" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
 
                 <div class="invalid-feedback">Please enter a valid email</div>
               </div>
             </div>
 
-            <div class="col-md-5 col-12">
+            <div class="col-12">
               <div class="form-group">
                 <label> Contact Number <span>*</span></label>
-                <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your contact number"
+                <input type="text" class="form-control py-md-4 py-3" name="phone" id="phone" placeholder="Enter your contact number"
                   pattern="^[0-9]{3,12}$" required>
                 <div class="invalid-feedback">Please enter your phone number</div>
               </div>
             </div>
 
-            <div class="col-md-5 col-12">
-              <div class="form-group mb-5">
+            <div class="col-12">
+              <div class="form-group py-md-2 py-1">
                 <label>Upload Resume <span>*</span></label>
-                <div class="input-group mb-3">
-                  <div class="custom-file">
-                    <input type="file" name="resume" class="custom-file-input form-control" id="inputFile"
-                      aria-describedby="inputGroupFileAddon01" accept=".doc,.docx,.pdf" required>
-                    <label class="custom-file-label" for="inputFile">Choose file</label>
-                    <div class="invalid-feedback">Please upload your resume.</div>
-                  </div>
-                </div>
+                             
+                    <input type="file" name="resume"  id="inputFile" class="form-control-file"
+                      aria-describedby="inputGroupFileAddon01" accept=".doc,.docx,.pdf" required>                     
+                    <div class="invalid-feedback">Please upload your resume.</div>                   
+              
               </div>
             </div>
 
-            <div class="col-md-5 col-12">
+            <div class="col-12">
               <div class="form-group">
                 <label for="message">Subject <span>*</span></label>
                 <textarea class="form-control" name="message" id="message" placeholder="Your message here.."
@@ -396,12 +387,13 @@
               </div>
             </div>
 
-            <div class="col-md-5 col-12 order-md-1 order-sm-0 mx-auto d-flex justify-content-center">
-              <button type="submit" class="button button-dark" id="submitApplicationButton">Submit Application</button>
+            <div class="col-12 order-md-1 order-sm-0 mx-auto d-flex justify-content-center">
+              <button type="submit" class="button button-dark py-2" id="submitApplicationButton">Submit Application</button>
             </div>
           </div>
         </form>
-
+      </div>
+      </div>
 
     </section>
 
