@@ -143,6 +143,15 @@ min-height: calc(100vh - var(--navbar-height));
 .footer{
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
 }
+
+.details {   
+  text-align: justify;
+}
+
+.details ul li{
+  color: #333333;
+}
+
 /* ========= Media Queries ========= */
  
 
@@ -154,10 +163,6 @@ min-height: calc(100vh - var(--navbar-height));
  
 }
  
-.details {   
-  text-align: justify;
-}
-
 @media (max-width: 990px) {
  .right-wrapper{
    position: static; 

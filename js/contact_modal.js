@@ -77,11 +77,13 @@
       if (form.checkValidity()) {
         let formData = new FormData(form);
         data = {
-          name: formData.get("name"),
+          name: formData.get("firstname"),
           email: formData.get("email"),
           phone: formData.get("phone"),
-          message: formData.get("message")
+          message: formData.get("message"),
+          subject:"Business Enquiry"
         };
+        console.log(data);
         fetch("https://agile-plateau-09650.herokuapp.com/enquirymessages", {
           method: "post",
           headers: {
@@ -99,6 +101,7 @@
             return response.json();
           })
           .then(function(jsondata) {
+            console.log(jsondata)
             form.reset();
             form.classList.remove("was-validated");
             document.getElementById("formStatus").classList.add("show");
