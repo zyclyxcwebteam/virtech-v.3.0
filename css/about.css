@@ -207,8 +207,7 @@ z-index: 99;
       /* text-align: left; */
     }
 .mission-img img, .vision-img img{
- width: 360px;
- height: 360px;
+ width: 360px;  
 }
 .mission,.vision{
   background-color:#fff;
