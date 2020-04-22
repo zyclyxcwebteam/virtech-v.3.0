@@ -272,7 +272,7 @@
 }
 }
 
-@media (min-width:800px) {
+@media (min-height:800px) {
   .circle{
     bottom: 32%;
   }
