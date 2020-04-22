@@ -44,7 +44,7 @@ z-index: 99;
 }
 .about-overview .hero-text {
   font-size: 1.15rem;
-  color: #333333;
+  color: #474747;
   font-weight: 600;
   text-align: justify;
   margin-top: 0.6rem;
@@ -72,9 +72,9 @@ z-index: 99;
 }
 
 .mission-text, .vision-text{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #5c5c5c;
+  color: #333333;
   padding-top: 1rem;
 }
 /* How we Do */

@@ -176,6 +176,12 @@ font-family:ProximaNova-Bold,-apple-system, system-ui, BlinkMacSystemFont, "Sego
   margin: 0;
   font-weight: 500;
 }
+@media (max-width: 1140px){
+.banner-title-3 {
+    font-size: 2.5rem;
+    color: #086078;
+}
+}
 @media (max-width: 576px) {
   .banner-title-1 {
   font-size: 2.2rem;

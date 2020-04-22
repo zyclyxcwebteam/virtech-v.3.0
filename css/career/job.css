@@ -1,23 +1,41 @@
- 
+.hero-banner {
+  position: relative;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+       
+}
+picture img{
+width: 100%;
+}
+.banner-title-2{
+font-size: 4.5rem;    
+}
+
+@media (min-width: 1400px) {
+picture img{
+min-height: calc(100vh - var(--navbar-height));
+}
+}
+.right-wrapper{
+  position: absolute;
+  top: 0;
+  right: 16px;
+  /* height: calc(100vh - var(--navbar-height)); */
+  height: 100%;
+}
 /* TODO - remove body padding later */
 *::selection {
   background-color: #01bdd5 !important;
   color: white;
 }
- .right-wrapper {
-  height: calc(100vh - var(--navbar-height));
-}
-.job-banner {
-  position: relative;
-   height: calc(100vh - var(--navbar-height));
-  background-color: #064152;
-  display: flex; 
-  background-image: url("../../img/careers/career-3.jpg");
-  background-position: center center;
-  background-size: cover;
-  z-index: 1;
-}
- .job-banner::before{
+ 
+ 
+ .hero-banner::before{
    height: 100%;
    width: 100%;
    position: absolute;

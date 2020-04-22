@@ -213,7 +213,9 @@ justify-content: flex-start;
   .footer .footer-privacy li {
     margin: 0 0.5rem;
 }
-
+.f-link .fa-map-marker-alt{
+  margin-right: 4px;
+}
 /* chat bot position */
  .bot {     
     bottom: 130px;

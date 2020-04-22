@@ -82,6 +82,7 @@ picture img{
   font-size: 1.1rem;
   color: #525252;
   padding-top: 1rem;
+  text-align: justify;
 }
 
 .service-content{
@@ -99,6 +100,7 @@ picture img{
     font-size: 1.0625rem;
     color: #474747;
     margin: 0;
+    text-align: justify;
 }
 
 .service-section-title {
@@ -208,6 +210,7 @@ font-size: 1.2rem;
   }
   .service-content-cards p {
     font-size: 1rem;   
+    text-align: justify;
   }
   .service-content-cards > .col-12 >.row> .col-12{
     padding: 0 !important;
