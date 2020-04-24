@@ -9,7 +9,14 @@
 
   // phone number country code
   var input = document.querySelector("#phone");
-   
+   input.addEventListener('focus',function(){         
+     document.getElementById('phoneLabel').classList.add('show-label')      
+   })
+   input.addEventListener('blur',function(){
+    if(input.value === ""){
+      document.getElementById('phoneLabel').classList.remove('show-label')
+    }
+  })
   var contactCountryCode =  window.intlTelInput(input, {
       initialCountry: "auto",
       separateDialCode:true,
@@ -21,7 +28,7 @@
       },
       utilsScript: "./js/utils.js"
     });
-
+ 
   function contactFormShow() {
     gsap.to(".contact-wrapper", {
       display: "flex",
@@ -37,6 +44,7 @@
     form.reset();
     form.classList.remove("was-validated");
     document.getElementById("formStatus").classList.remove("show");
+    document.getElementById('phoneLabel').classList.remove('show-label')
     gsap.to(".contact-wrapper", {
       display: "none",
       bottom: "0",
@@ -125,7 +133,7 @@
             return response.json();
           })
           .then(function(jsondata) {
-            console.log(jsondata)
+            // console.log(jsondata)
             form.reset();
             form.classList.remove("was-validated");
             document.getElementById("formStatus").classList.add("show");
@@ -135,7 +143,7 @@
             document.getElementById("contactSubmit").innerHTML = `Submit`;
           })
           .catch(function(error) {
-            console.log(error);
+           // console.log(error);
             // document.getElementById("errorAlert").textContent =
             //   "Something went wrong! Please try again";
             document
@@ -154,10 +162,10 @@
           })
           .then(function(res){
             return res.json();
-            console.log(data);
+            
           })
           .then(function(resjson){
-            console.log(resjson);
+           // console.log(resjson);
           })
       }
     },
