@@ -97,7 +97,9 @@ min-height: calc(100vh - var(--navbar-height));
   color: #24aec3;
   font-size: 1rem;
 }
-
+.button-light:hover{
+  border: 0.16em solid #24aec3;  
+}
 /* ! Contact Modal */
  
  
