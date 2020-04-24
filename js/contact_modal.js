@@ -14,8 +14,8 @@
       initialCountry: "auto",
       separateDialCode:true,
       geoIpLookup: function (callback) {
-        $.get('http://ip-api.com/json', function () { }, "jsonp").always(function (resp) {         
-         let countryCode = (resp && resp.countryCode) ? resp.countryCode : "";
+        $.get('https://ipinfo.io/json', function () { }, "jsonp").always(function (resp) {         
+         let countryCode = (resp && resp.country) ? resp.country : "";
           callback(countryCode);
         });
       },
