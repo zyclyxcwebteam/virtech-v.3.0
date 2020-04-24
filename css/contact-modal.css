@@ -142,7 +142,14 @@ border: 1px solid rgba(249, 249, 249,0.5);
     padding: 0 0.4rem;
 }
 
-
+.contact-wrapper .iti {
+  width: 100%;
+}
+.contact-wrapper .iti__country {
+  padding: 5px 10px;
+  outline: 0;
+  color: #064152;
+}
 
 .contact-wrapper .social-network {
   margin: 0;

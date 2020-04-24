@@ -7,6 +7,21 @@
   let pocContactButton = document.getElementById("pocContact");
   let form = document.getElementById("contactForm");
 
+  // phone number country code
+  var input = document.querySelector("#phone");
+   
+  var contactCountryCode =  window.intlTelInput(input, {
+      initialCountry: "auto",
+      separateDialCode:true,
+      geoIpLookup: function (callback) {
+        $.get('http://ip-api.com/json', function () { }, "jsonp").always(function (resp) {         
+         let countryCode = (resp && resp.countryCode) ? resp.countryCode : "";
+          callback(countryCode);
+        });
+      },
+      utilsScript: "./js/utils.js"
+    });
+
   function contactFormShow() {
     gsap.to(".contact-wrapper", {
       display: "flex",
@@ -75,16 +90,25 @@
 
       // if no errors send form data to the API
       if (form.checkValidity()) {
-        let formData = new FormData(form);
+        let fullname = document.querySelector('#username').value;
+        let email = document.querySelector('#email').value;
+        let phone = document.querySelector('#phone').value;
+        let message = document.querySelector('#message').value;
+        let date = new Date();
+        let website = 'virtech'
+        let contactCountry = contactCountryCode.getSelectedCountryData().dialCode;
+        
         data = {
-          name: formData.get("firstname"),
-          email: formData.get("email"),
-          phone: formData.get("phone"),
-          message: formData.get("message"),
-          subject:"Business Enquiry"
-        };
-        console.log(data);
-        fetch("https://agile-plateau-09650.herokuapp.com/enquirymessages", {
+          fullname:fullname,
+          email:email,
+          phone:phone,
+          date:date,
+          message:message,
+          countryCode:contactCountry,
+          website:website
+        };        
+        
+          fetch("https://zyclyx-backend-api.herokuapp.com/business-enquiries",{
           method: "post",
           headers: {
             "Content-type": "application/json"
@@ -119,6 +143,22 @@
               .removeAttribute("disabled");
             document.getElementById("contactSubmit").innerHTML = `Submit`;
           });
+
+          // send email here
+          fetch("https://zyclyx-email-sender.herokuapp.com/contact",{
+            method:"post",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body:JSON.stringify(data)
+          })
+          .then(function(res){
+            return res.json();
+            console.log(data);
+          })
+          .then(function(resjson){
+            console.log(resjson);
+          })
       }
     },
     false
