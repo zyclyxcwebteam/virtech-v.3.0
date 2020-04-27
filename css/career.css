@@ -42,8 +42,12 @@ picture img{
    font-weight: 600;
    margin:0
 }
+.career-overview .join-us{
+  box-shadow: 0 0 25px 2px rgb(223, 231, 223);
+  border-radius: 16px;
+}
 .career-overview ul {
-  padding: 0;
+  padding: 0;  
 }
 .career-overview ul li {
   
@@ -187,5 +191,9 @@ picture img{
   .career-overview ul li .fas {
     font-size: 0.8rem;
     margin-top: 8px;
+  }
+  .career-overview .join-us{
+    box-shadow:none;
+    border-radius:0px;
   }
 }
