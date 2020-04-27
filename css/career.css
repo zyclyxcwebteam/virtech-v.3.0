@@ -6,7 +6,18 @@
             position: absolute;
             top: 10%;
             left: 30%;
-                 
+                 z-index: 1;
+        }
+        .hero-banner:after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-image: linear-gradient(to top, rgba(8, 85, 107,0.7) 1%, rgba(17, 198, 247,0.4) 100%);
         }
         picture img{
  width: 100%;
