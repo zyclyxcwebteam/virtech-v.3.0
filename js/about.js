@@ -1,4 +1,14 @@
 $(function(){     
+
+    var typed = new Typed('.fade-title', {
+        strings: ["Automation", "Artificial Intelligence", "Cybersecurity", "Blockchain", "Internet of Things", "Big Data"],
+        typeSpeed: 60,
+        backSpeed: 20,
+        loop: true,
+        backDelay: 500,
+        startDelay: 1000,
+      });
+      
 let controller = new ScrollMagic.Controller();
 gsap.to('.do-content',{'--border-width':'0%',duration:0.001})
 
