@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <style>
+        .client img{
+            width: 160px;
+            padding: 1rem;
+            border: 1px solid lightblue;
+        }
+        nav{
+            border-bottom:1px solid rgba(128, 128, 128,0.2) ;
+        }
+        .nav-item{
+            padding: 1.5rem;
+        }
+        .nav-tabs .nav-item.show .nav-link
+        {
+            font-size: 1.2rem;
+            color: #333;
+            border: none;
+            border-color: transparent;         
+        }
+        .nav-tabs .nav-link.active{
+            color: green;
+            font-weight: 600;          
+            border-color: transparent;
+        }
+        .nav-tabs {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="mx-auto d-flex justify-content-center">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-technology-tab" data-toggle="tab" href="#nav-technology" role="tab" aria-controls="nav-technology" aria-selected="true">Technology Partners</a>
+          <a class="nav-item nav-link" id="nav-clients-tab" data-toggle="tab" href="#nav-client" role="tab" aria-controls="nav-client" aria-selected="false">Clietns</a>
+          <a class="nav-item nav-link" id="nav-sponsor-tab" data-toggle="tab" href="#nav-sponsor" role="tab" aria-controls="nav-sponsor" aria-selected="false">Sponsors</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-technology" role="tabpanel" aria-labelledby="nav-technology-tab">
+            <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center py-5">
+                <div class="client"><img src="./img/clients/client-1-1.png" alt="elm"></div>
+                <div class="client"><img src="./img/clients/client-2-1.png" alt="alinma bank"></div>
+                <div class="client"><img src="./img/clients/client-3-1.png" alt="bank albilad"></div>                                
+                <div class="client"><img src="./img/clients/client-6-1.png" alt="blueprism"></div>
+                <div class="client"><img src="./img/clients/client-7-1.png" alt="stcs"></div>
+              </div>
+        </div>
+        <div class="tab-pane fade" id="nav-client" role="tabpanel" aria-labelledby="nav-client-tab">
+            <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center py-5">
+                <div class="client"><img src="./img/clients/client-1-1.png" alt="elm"></div>
+                <div class="client"><img src="./img/clients/client-2-1.png" alt="alinma bank"></div>
+                <div class="client"><img src="./img/clients/client-3-1.png" alt="bank albilad"></div>
+                <div class="client"><img src="./img/clients/client-4-1.png" alt="arics cooper"></div>                
+                <div class="client"><img src="./img/clients/client-6-1.png" alt="blueprism"></div>
+                <div class="client"><img src="./img/clients/client-7-1.png" alt="stcs"></div>
+              </div>
+        </div>
+        <div class="tab-pane fade" id="nav-sponsor" role="tabpanel" aria-labelledby="nav-sponsor-tab">
+            <div class="owl-carousel clients-carousel d-flex justify-content-center align-items-center py-5">
+                <div class="client"><img src="./img/clients/client-1-1.png" alt="elm"></div>
+                <div class="client"><img src="./img/clients/client-2-1.png" alt="alinma bank"></div>
+                <div class="client"><img src="./img/clients/client-3-1.png" alt="bank albilad"></div>
+                <div class="client"><img src="./img/clients/client-4-1.png" alt="arics cooper"></div>
+                <div class="client"><img src="./img/clients/client-5-1.png" alt="inforspoke"></div>
+                <div class="client"><img src="./img/clients/client-6-1.png" alt="blueprism"></div>
+                <div class="client"><img src="./img/clients/client-7-1.png" alt="stcs"></div>
+              </div>
+        </div>
+      </div>
+    </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+      <script src="./js/owl.carousel.min.js"></script>
+      <script>
+            $(".clients-carousel").owlCarousel({
+    autoplay: true,
+    loop: true,
+    center: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      900: { items: 3 }
+    }
+  });
+      </script>
+</body>
+</html>
