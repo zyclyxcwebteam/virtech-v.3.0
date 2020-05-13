@@ -117,7 +117,7 @@ picture img {
   width: auto;
 }
 .service-partners img {
-  width: 202px;
+  min-width: 202px;
   max-height: 92px;
 }
 
