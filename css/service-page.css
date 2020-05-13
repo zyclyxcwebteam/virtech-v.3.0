@@ -1,124 +1,124 @@
-         .hero-banner {
-            position: relative;
-        }
+.hero-banner {
+  position: relative;
+}
 
-        .hero-title {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);            
-        }
-        .hero-title-cyber{
-          top: 40%;
-        }
-        .hero-title-left{
-          left: 3rem;
-        }
-        .hero-title-right{
-          right:3rem;
-        }
-        .hero-title-data-center{
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%,-50%);           
-        }
-        .hero-title-blockchain{
-              left: 60%;
-          top: 50%;
-          transform: translate(-50%,-50%); 
-        }
-        .hero-title-bigdata{
-          left: 20%;
-        }
-        .outsourcing-banner .banner-title-2 {
-            color: #064152;
-        }
-  .banner-title-2{
-   font-size: 4.5rem;    
- }
- .banner-title-3{
-   font-size: 3rem;
- }
+.hero-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-title-cyber {
+  top: 40%;
+}
+.hero-title-left {
+  left: 3rem;
+}
+.hero-title-right {
+  right: 3rem;
+}
+.hero-title-data-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-title-blockchain {
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-title-bigdata {
+  left: 20%;
+}
+.outsourcing-banner .banner-title-2 {
+  color: #064152;
+}
+.banner-title-2 {
+  font-size: 4.5rem;
+}
+.banner-title-3 {
+  font-size: 3rem;
+}
 .nav-item.active .nav-link {
   font-weight: 600;
   color: #00bdd5;
 }
-picture img{
- width: 100%;
+picture img {
+  width: 100%;
 }
 #serviceMain .nav-item .active {
   font-weight: 600;
   color: #00bdd5;
 }
 
- 
 .service-banner {
-  height: 92vh; 
-  background-size: cover; 
+  height: 92vh;
+  background-size: cover;
 }
 
-.service-overview{
+.service-overview {
   background-color: #ffffff;
-  padding-top:3rem;  
-  padding-bottom: 1rem;    
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
-.service-overview .service-name{   
-  color: #16151F; 
-  font-size: 3rem;        
+.service-overview .service-name {
+  color: #16151f;
+  font-size: 3rem;
   font-weight: 500;
   margin-bottom: 12px;
 }
 
-
-.service-overview .service-tagline{
+.service-overview .service-tagline {
   color: #5c5c5c;
   font-size: 1.5rem;
-   font-style: normal;
-   font-weight: 600;
-   margin:0
-} 
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+}
 
-.service-overview .service-text{
+.service-overview .service-text {
   font-size: 1.1rem;
   color: #525252;
   padding-top: 1rem;
   text-align: justify;
 }
 
-.service-content{
-    background-color: #f9f9f9;
+.service-content {
+  background-color: #f9f9f9;
 }
 
-.content-card-icon{
-    margin-bottom: 12px;
+.content-card-icon {
+  margin-bottom: 12px;
 }
-.content-card-title{
-    margin-bottom: 12px;
-    color: #086078;
+.content-card-title {
+  margin-bottom: 12px;
+  color: #086078;
 }
-.content-card-text{
-    font-size: 1.0625rem;
-    color: #474747;
-    margin: 0;
-    text-align: justify;
+.content-card-text {
+  font-size: 1.0625rem;
+  color: #474747;
+  margin: 0;
+  text-align: justify;
 }
 
 .service-section-title {
   font-size: 2.2rem;
-  color: #086078;  
+  color: #086078;
   margin: 0;
   padding: 1rem 0 !important;
-  font-family:ProximaNova-Bold,-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif; 
+  font-family: ProximaNova-Bold, -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.service-partners {   
-  background-color: #fefefe
+.service-partners {
+  background-color: #fefefe;
 }
-
+.service-partners .owl-carousel .owl-item img {
+  width: auto;
+}
 .service-partners img {
-  max-width: 180px;
-  height: auto;
+  width: 202px;
+  max-height: 92px;
 }
 
 .tech-card .card {
@@ -128,7 +128,7 @@ picture img{
 
 .service-content-cards h4 {
   color: #363c4f;
-  margin-bottom: 0.6rem;   
+  margin-bottom: 0.6rem;
 }
 
 .service-content-cards p {
@@ -146,8 +146,6 @@ picture img{
   width: 70px;
   height: 70px;
 }
- 
-
 
 .service-partners .client {
   display: flex;
@@ -156,26 +154,26 @@ picture img{
 }
 
 @media (min-width: 1400px) {
-picture img{
-  min-height: calc(100vh - var(--navbar-height));
-}
-}
-
-@media(max-width:1140px){
-  .banner-title-3{
-font-size: 2.5rem;
-color: #086078; 
+  picture img {
+    min-height: calc(100vh - var(--navbar-height));
+  }
 }
 
-.service-overview {     
-padding-top: 1.5rem
-}
-.service-overview .service-tagline {
-font-size: 1.2rem;
-}
+@media (max-width: 1140px) {
+  .banner-title-3 {
+    font-size: 2.5rem;
+    color: #086078;
+  }
+
+  .service-overview {
+    padding-top: 1.5rem;
+  }
+  .service-overview .service-tagline {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 576px) {
-  .banner-title>div{
+  .banner-title > div {
     display: flex;
     flex-direction: column;
     justify-content: center !important;
@@ -188,19 +186,19 @@ font-size: 1.2rem;
     font-size: 1.1rem;
     padding: 0.5rem 0.25rem 0 !important;
   }
-  .service-overview{
-    padding:1rem;
+  .service-overview {
+    padding: 1rem;
     font-size: 1rem;
     text-align: left;
   }
-  .service-overview p{ 
+  .service-overview p {
     text-align: justify;
   }
-  .service-content{
+  .service-content {
     padding-top: 0.8rem !important;
     padding-bottom: 0 !important;
   }
-  .service-content .row{
+  .service-content .row {
     padding: 0px 0.3rem;
   }
   .service-content-cards img {
@@ -209,21 +207,21 @@ font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
   .service-content-cards p {
-    font-size: 1rem;   
+    font-size: 1rem;
     text-align: justify;
   }
-  .service-content-cards > .col-12 >.row> .col-12{
+  .service-content-cards > .col-12 > .row > .col-12 {
     padding: 0 !important;
   }
-  .service-content-cards .col-md-9:nth-child(even) .row .col-2 { 
-    margin-left: auto !important; 
-    margin-right: 0;    
+  .service-content-cards .col-md-9:nth-child(even) .row .col-2 {
+    margin-left: auto !important;
+    margin-right: 0;
   }
   .service-content-cards h4 {
     font-size: 1.4rem;
   }
   .service-content-cards .col-md-9:nth-child(even) .row .col-12 h4 {
-    text-align: right;    
+    text-align: right;
   }
   .banner-title .col-12 {
     padding: 0;
@@ -231,28 +229,26 @@ font-size: 1.2rem;
   .service-content-title {
     font-size: 1.4rem;
   }
-  .service-banner{
+  .service-banner {
     padding: 0 !important;
   }
-  .contact-banner{
+  .contact-banner {
     flex-direction: column !important;
     height: 160px;
   }
-  .contact-banner .contact-title{
+  .contact-banner .contact-title {
     font-size: 1.5rem !important;
-    font-weight: 600;  
+    font-weight: 600;
   }
-  .contact-banner .service-contact{
+  .contact-banner .service-contact {
     margin-left: 0;
     padding: 0.3em 1.2em;
   }
   .service-section-title {
-    font-size: 1.8rem;     
+    font-size: 1.8rem;
     padding: 0.5rem 0 !important;
   }
-  .service-partner-title{
+  .service-partner-title {
     margin-bottom: 1.5rem;
   }
 }
-
-
