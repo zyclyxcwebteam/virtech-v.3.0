@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
 :root {
-  --navbar-height: 55px; 
+  --navbar-height: 55px;
 }
 
 .loading-wrapper {
@@ -14,24 +14,24 @@
   z-index: 1250;
   background-color: #ffffff;
 }
-.loading-wrapper img {      
+.loading-wrapper img {
   max-width: 250px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
-/* ! logo reveal animation  */ 
+/* ! logo reveal animation  */
 .home-banner {
   height: calc(100vh - var(--navbar-height));
 }
 
 .services-wrapper {
-  height: calc(100vh - var(--navbar-height));   
+  height: calc(100vh - var(--navbar-height));
 }
 
 .industry-wrapper {
-  height: calc(100vh - var(--navbar-height));   
+  height: calc(100vh - var(--navbar-height));
   position: relative;
 }
 
@@ -42,8 +42,8 @@
   color: #00bdd5;
 }
 
-.home-banner {  
-  background-color: rgba(22, 33, 61,0.5);
+.home-banner {
+  background-color: rgba(22, 33, 61, 0.5);
   position: relative;
 }
 
@@ -99,9 +99,8 @@
   z-index: -100;
   background-size: cover;
 }
- 
-/* ! services end */
 
+/* ! services end */
 
 /* OUR CLIENTS */
 .clients-wrapper {
@@ -129,41 +128,43 @@
 }
 .clients-wrapper .client img {
   width: 100%;
+  max-width: 200px;
 }
-
-
-
+.albilad img {
+  max-height: 60px;
+}
 /*  company stats  */
 
 .stats-wrapper {
   background-color: #08556b;
   color: #b8bdc4;
-  
 }
- 
-.stats-wrapper .stats-number{   
+
+.stats-wrapper .stats-number {
   font-size: 4rem;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
-  color:#f9f9f9;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #f9f9f9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.stats-wrapper .stats-number span:nth-child(2){
+.stats-wrapper .stats-number span:nth-child(2) {
   margin-left: 4px;
   font-size: 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.stats-wrapper .stats-title{
- color:hsl(0, 0%, 88%);
+.stats-wrapper .stats-title {
+  color: hsl(0, 0%, 88%);
   font-weight: 500;
   font-size: 1.5rem;
   margin-top: 0.5rem;
 }
-.stats-wrapper .stats:nth-child(2), .stats-wrapper .stats:nth-child(3){
-  border-left:1px solid #09637b;
+.stats-wrapper .stats:nth-child(2),
+.stats-wrapper .stats:nth-child(3) {
+  border-left: 1px solid #09637b;
 }
-
 
 /* ! Mobile responsive for home page */
 @media (max-width: 576px) {
@@ -176,40 +177,40 @@
     left: 0px;
     bottom: 5px;
   }
- .stats-circle{
-   height: 90px;
-   width: 90px;    
-   border-radius: 50%;   
-   background-color: #0a7492;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- .stats-circle h2{
-   height: 80px;
-   width: 80px;
-   border-radius: 50%;
-   background-color: hsla(223, 47%, 20%, 1);
-   padding: 2rem;
- }
-  .stats-wrapper .stats{         
-        border-radius: 0.5rem;
-        margin: 0.5rem 0;
+  .stats-circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #0a7492;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .stats-wrapper .stats:nth-child(2), .stats-wrapper .stats:nth-child(3){
- border: none;
-}
-.stats-wrapper .stats-number,.stats-wrapper .stats-title{
-  margin: 0;
-}
-.stats-wrapper .stats-number{
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: center;
-}
- .stats-wrapper .stats-title{
-   font-size: 1.2rem;
- }
- 
-
+  .stats-circle h2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: hsla(223, 47%, 20%, 1);
+    padding: 2rem;
+  }
+  .stats-wrapper .stats {
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  .stats-wrapper .stats:nth-child(2),
+  .stats-wrapper .stats:nth-child(3) {
+    border: none;
+  }
+  .stats-wrapper .stats-number,
+  .stats-wrapper .stats-title {
+    margin: 0;
+  }
+  .stats-wrapper .stats-number {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .stats-wrapper .stats-title {
+    font-size: 1.2rem;
+  }
 }
