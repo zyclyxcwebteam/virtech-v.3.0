@@ -1,4 +1,3 @@
-
 /* ! Contact Modal */
 .contact-wrapper {
   color: #fdfff5;
@@ -10,7 +9,7 @@
   z-index: 1200;
   overflow: hidden;
   background-image: url("../../img/contact/contact-us.jpg");
-  background-size: cover; 
+  background-size: cover;
   display: flex;
 }
 .contact-wrapper .overlay {
@@ -23,12 +22,12 @@
   height: 100%;
   background-image: linear-gradient(
       45deg,
-      rgb(6, 64, 81,0.6) 40%,
-      rgb(6, 65, 82,0.5) 100%
+      rgb(6, 64, 81, 0.6) 40%,
+      rgb(6, 65, 82, 0.5) 100%
     ),
     linear-gradient(
       to top,
-      rgba(6, 65, 82,0.6) 12%,
+      rgba(6, 65, 82, 0.6) 12%,
       transparent,
       transparent,
       transparent 100%
@@ -63,23 +62,23 @@
 
 .contact-wrapper .form-control:focus,
 .contact-wrapper .form-control:valid {
-  background:#064152;
+  background: #064152;
   border: 1px solid #f9f9f9;
 }
 .contact-wrapper .form-control.is-invalid:focus,
 .contact-wrapper .was-validated .form-control:valid:focus {
-  background:#064152;
+  background: #064152;
   border-bottom: 1px solid #008d36 !important;
   box-shadow: none;
 }
 .contact-wrapper .form-control.is-invalid:focus,
 .contact-wrapper .was-validated .form-control:invalid:focus {
-  background:#064152;
+  background: #064152;
   border-bottom: 1px solid #dc3545 !important;
   box-shadow: none;
 }
 input:-internal-autofill-selected {
-  background:#064152 !important;
+  background: #064152 !important;
 }
 /* .contact-wrapper label {
   color: #b8bdc4;
@@ -87,30 +86,29 @@ input:-internal-autofill-selected {
   font-weight: normal;
   padding-left: 10px;
 } */
-.contact-wrapper .required{
+.contact-wrapper .required {
   color: #ff6347;
 }
 .contact-wrapper .form-control {
   border: none;
   color: #f9f9f9;
-  font-size: 1.4rem;  
-  border-bottom: 1px solid #11C6F7;
-  background:#064152; 
+  font-size: 1.4rem;
+  border-bottom: 1px solid #11c6f7;
+  background: #064152;
   border-radius: 0.5rem;
-  padding: 1.8rem 0.8rem; 
+  padding: 1.8rem 0.8rem;
 }
- 
+
 .floating-label {
-    position: relative !important;
+  position: relative !important;
 }
 
-.floating-label label {  
-    left: 8px;
-    position: absolute;
-    top: 0; 
-    opacity: 0;
-    transition: all 0.2s;
-
+.floating-label label {
+  left: 8px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 0.2s;
 }
 /* .floating-label label::before
 {
@@ -121,28 +119,13 @@ input:-internal-autofill-selected {
   bottom: 0;
 }  */
 
-.floating-label input:not(:placeholder-shown){
-border: 1px solid rgba(249, 249, 249,0.5);
+.floating-label input:not(:placeholder-shown) {
+  border: 1px solid rgba(249, 249, 249, 0.5);
 }
 
 .floating-label input:not(:placeholder-shown) + label,
 .floating-label textarea:not(:placeholder-shown) + label {
-     background-image:  linear-gradient(
-      to top,
-      #064152 50%,
-      transparent,
-      transparent,
-      transparent 100%
-    );
-    transform: translate(0, -50%) !important;
-    opacity: 1 !important;
-    color: #f9f9f9;
-    margin: 0;
-    margin-left:0.4rem;
-    padding: 0 0.4rem;
-}
-.show-label{
-  background-image:  linear-gradient(
+  background-image: linear-gradient(
     to top,
     #064152 50%,
     transparent,
@@ -153,7 +136,22 @@ border: 1px solid rgba(249, 249, 249,0.5);
   opacity: 1 !important;
   color: #f9f9f9;
   margin: 0;
-  margin-left:0.4rem;
+  margin-left: 0.4rem;
+  padding: 0 0.4rem;
+}
+.show-label {
+  background-image: linear-gradient(
+    to top,
+    #064152 50%,
+    transparent,
+    transparent,
+    transparent 100%
+  );
+  transform: translate(0, -50%) !important;
+  opacity: 1 !important;
+  color: #f9f9f9;
+  margin: 0;
+  margin-left: 0.4rem;
   padding: 0 0.4rem;
 }
 .contact-wrapper .iti {
@@ -174,8 +172,8 @@ border: 1px solid rgba(249, 249, 249,0.5);
 }
 .contact-wrapper .contact-title {
   font-size: 3rem;
-  font-family:ProximaNova-Bold,-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif; 
+  font-family: ProximaNova-Bold, -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.3;
 }
 .contact-wrapper .contact-caption {
@@ -218,7 +216,7 @@ border: 1px solid rgba(249, 249, 249,0.5);
 
 .contact-wrapper ::placeholder {
   /* color:hsl(217, 62%, 30%) !important; */
-  color:#f9f9f9;
+  color: #f9f9f9;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -236,7 +234,7 @@ border: 1px solid rgba(249, 249, 249,0.5);
   right: 10px;
   position: absolute;
   z-index: 1000;
-  background-color: rgba(8, 96, 120,0.9);
+  background-color: rgba(8, 96, 120, 0.9);
   color: #0c1b33;
   margin: 0 auto;
   border-radius: 1rem;
@@ -263,14 +261,18 @@ border: 1px solid rgba(249, 249, 249,0.5);
 .contact-wrapper .invalid-feedback {
   margin: 0;
   font-size: 80%;
+  display: block;
+  opacity: 0;
 }
- .contact-wrapper .invalid-feedback {
-    display:block !important;
-    opacity: 0 !important;
- 
-}
-.is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip {
-    opacity: 1 !important;
+/* .contact-wrapper .invalid-feedback {
+  display: block !important;
+  opacity: 0 !important;
+} */
+.is-invalid ~ .invalid-feedback,
+.is-invalid ~ .invalid-tooltip,
+.was-validated :invalid ~ .invalid-feedback,
+.was-validated :invalid ~ .invalid-tooltip {
+  opacity: 1 !important;
 }
 
 /* =========== MEDIA QUERIES ============ */
@@ -284,7 +286,7 @@ border: 1px solid rgba(249, 249, 249,0.5);
   #contactClose {
     top: 2px;
     right: 2px;
-        height: 50px;
+    height: 50px;
     width: 50px;
   }
   .contact-title {
@@ -297,7 +299,7 @@ border: 1px solid rgba(249, 249, 249,0.5);
     margin: 0rem !important;
   }
   .contact-wrapper .form-control {
-        padding: 1.6rem 0.8rem;
+    padding: 1.6rem 0.8rem;
   }
 
   .contact-wrapper label {
