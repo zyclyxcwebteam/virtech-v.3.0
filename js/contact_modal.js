@@ -26,6 +26,11 @@
     if (input.value === "") {
       document.getElementById("phoneLabel").classList.remove("show-label");
     }
+    if ($("#phone").is(":invalid")) {
+      $("#phoneInvalid").css({ opacity: "1", display: "block" });
+    } else {
+      $("#phoneInvalid").css({ opacity: "0", display: "block" });
+    }
   });
 
   input.addEventListener("blur", function () {

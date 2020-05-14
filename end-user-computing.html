@@ -21,18 +21,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
     <title>End User Computing</title>
-     <!-- build:css css/main.min.css -->
-     <link rel="stylesheet" href="./css/layout.css" />
-     <link rel="stylesheet" href="./css/header.css" />
-     <link rel="stylesheet" href="./css/footer.css" />
-     <link rel="stylesheet" href="./css/contact-modal.css" />         
-     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-     <link rel="stylesheet" href="./css/chat-bot.css" />
-     <link rel="stylesheet" href="./css/intlTelInput.min.css" />
-     <!-- endbuild -->
-     <!-- build:css css/service.min.css -->
-     <link rel="stylesheet" href="./css/service-page.css" />
-     <!-- endbuild -->
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/contact-modal.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/chat-bot.css" />
+    <link rel="stylesheet" href="./css/intlTelInput.min.css" />
+    <!-- endbuild -->
+    <!-- build:css css/service.min.css -->
+    <link rel="stylesheet" href="./css/service-page.css" />
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -71,7 +71,8 @@
                             <li><a class="dropdown-item dropdown-toggle" href="#">New Age Technologies</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a tabindex="-1" href="./robotic-process-automation.html" class="dropdown-item">Robotic Process Automation</a>
+                                        <a tabindex="-1" href="./robotic-process-automation.html"
+                                            class="dropdown-item">Robotic Process Automation</a>
                                     </li>
                                     <li>
                                         <a href="./artificial-intelligence.html" class="dropdown-item">Artificial
@@ -505,11 +506,11 @@
                                         <div class="form-group floating-label">
 
                                             <input type="tel" class="form-control" name="phone" id="phone"
-                                                pattern="^[0-9]{3,12}$"  maxlength="16" 
-                                                autocomplete="off" required />
-                                             <label for="phone" id="phoneLabel">
+                                                pattern="^[0-9]{3,12}$" maxlength="16" autocomplete="off" required
+                                                placeholder="Phone" />
+                                            <label for="phone" id="phoneLabel">
                                                 Phone <span class="required">*</span></label>
-                                            <div class="invalid-feedback">
+                                            <div class="invalid-feedback" id="phoneInvalid">
                                                 Please enter valid phone number
                                             </div>
                                         </div>
@@ -653,7 +654,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>     
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
@@ -668,8 +669,8 @@
     <script src="./js/chat-bot.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <!-- endbuild -->
-    <!-- build:js js/service.min.js -->    
-    <script src="./js/service-page.js"></script> 
+    <!-- build:js js/service.min.js -->
+    <script src="./js/service-page.js"></script>
     <!-- endbuild -->
 </body>
 
