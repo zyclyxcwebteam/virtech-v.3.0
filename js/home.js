@@ -1,15 +1,14 @@
 $(function () {
-  let logoLeft = '38px';
-  if(screen.width < 993){
-    logoLeft = '25px';
+  let logoLeft = "38px";
+  if (screen.width < 993) {
+    logoLeft = "25px";
   }
   let controller = new ScrollMagic.Controller();
   let homeTitleCarousel = gsap.timeline({ repeat: -1 });
 
   //  logo animation
-
   let homePageLoad = gsap.timeline({ onComplete: startTitleCarousel });
-  homePageLoad.to('body',{overflow:'hidden'})
+  homePageLoad.to("body", { overflow: "hidden" });
   homePageLoad.fromTo(
     ".loading-wrapper img",
     {
@@ -19,32 +18,32 @@ $(function () {
       maxWidth: "250px",
     },
     {
-      left:logoLeft,
+      left: logoLeft,
       top: "9px",
       transform: "translate(0,0)",
       maxWidth: "150px",
       ease: "linear",
-      duration: 2       
+      duration: 2,
     }
   );
-  
+
   homePageLoad.to("#masterNavbar", { opacity: 1, duration: 0.4, delay: 0.1 });
   homePageLoad.fromTo(
     "#page-loader",
     {
       opacity: 1,
-      backgroundColor: "#ffffff"
+      backgroundColor: "#ffffff",
     },
     {
       backgroundColor: "#16213d",
       opacity: 0,
       ease: Expo.easeInOut,
-      duration: 0.8
+      duration: 0.8,
     }
   );
   homePageLoad.to("#page-loader", { display: "none", duration: "0.001" });
   homePageLoad.to(".home-banner", { opacity: 1, duration: 0.1 });
-  homePageLoad.to('body',{overflow:'visible',duration:0.1})
+  homePageLoad.to("body", { overflow: "visible", duration: 0.1 });
 
   //  Home page titles
   function startTitleCarousel() {
@@ -58,7 +57,7 @@ $(function () {
       display: "none",
       opacity: 0,
       duration: 1,
-      delay: 5
+      delay: 5,
     });
 
     homeTitleCarousel.fromTo(
@@ -71,7 +70,7 @@ $(function () {
       display: "none",
       opacity: 0,
       duration: 1,
-      delay: 5
+      delay: 5,
     });
 
     homeTitleCarousel.fromTo(
@@ -84,7 +83,7 @@ $(function () {
       display: "none",
       opacity: 0,
       duration: 1,
-      delay: 5
+      delay: 5,
     });
 
     homeTitleCarousel.fromTo(
@@ -97,7 +96,7 @@ $(function () {
       display: "none",
       opacity: 0,
       duration: 1,
-      delay: 5
+      delay: 5,
     });
 
     homeTitleCarousel.fromTo(
@@ -110,14 +109,13 @@ $(function () {
       display: "none",
       opacity: 0,
       duration: 1,
-      delay: 5
+      delay: 5,
     });
   }
 
   // Industries section
 
-  
-  // $(".industry").each(function () {     
+  // $(".industry").each(function () {
   //   setInterval(function () {
   //     $(this).toggleClass("active");
   //   }, 1000);
@@ -167,30 +165,31 @@ $(function () {
     responsive: {
       0: { items: 1 },
       768: { items: 2 },
-      900: { items: 3 }
-    }
+      900: { items: 3 },
+    },
   });
 
-   
   // NAVBAR BACKGROUND CHANGE ON SCROLL
   const navbar = document.querySelector(".navbar");
   const homeContainer = document.querySelector("#home");
   const bannerVideo = document.getElementById("bannerVideo");
 
   const sectionOneOptions = {
-    rootMargin: "-60px 0px 0px 0px"
+    rootMargin: "-60px 0px 0px 0px",
   };
 
   const sectionOneObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (!entry.isIntersecting) {
         bannerVideo.pause();
         homeTitleCarousel.pause();
-      } else { 
+        navbar.classList.add("navbar-shadow");
+      } else {
         bannerVideo.play();
         homeTitleCarousel.resume();
+        navbar.classList.remove("navbar-shadow");
       }
     });
   }, sectionOneOptions);
-  sectionOneObserver.observe(homeContainer); 
+  sectionOneObserver.observe(homeContainer);
 });

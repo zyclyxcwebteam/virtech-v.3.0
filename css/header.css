@@ -15,6 +15,8 @@
 
 .master-navbar {
   background-color: #ffffff !important;
+}
+.navbar-shadow {
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.05);
 }
 .master-navbar .navbar-brand img {
@@ -43,7 +45,7 @@
   color: #00bdd5 !important;
 }
 .master-navbar .dropdown-menu {
-  margin-top:0;
+  margin-top: 0;
   background-color: #ffffff;
   border-radius: 0;
   border: 0;
@@ -69,9 +71,9 @@
   padding: 0.65rem 1rem;
   color: #525252;
   /* for dropdown caret icon */
-  position: relative;  
+  position: relative;
 }
- .dropdown-menu .dropdown-toggle::after {
+.dropdown-menu .dropdown-toggle::after {
   position: absolute;
   right: 5px;
   top: 50%;
@@ -80,16 +82,15 @@
 }
 .master-navbar .dropdown-menu .dropdown-item:hover {
   color: #00bdd5 !important;
-  font-weight: 600;     
+  font-weight: 600;
   background-color: #f9f9f9;
 }
- 
-  
+
 .master-navbar .navbar-toggler:focus {
   outline: none;
-} 
+}
 /* ! Hamburger icon for mobile menu */
- 
+
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -180,7 +181,7 @@
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.075s ease,
-  transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 /* @media only screen and (min-width: 991px) {
@@ -219,21 +220,20 @@
 
         } */
 
-        @media (max-width: 992px) {
-   
+@media (max-width: 992px) {
   .master-navbar .nav-link {
-  margin-left:0px !important;
+    margin-left: 0px !important;
   }
-.nav-item.dropdown.show{
-  border: 1px solid rgba(0, 189, 213,0.5);
-}
- 
+  .nav-item.dropdown.show {
+    border: 1px solid rgba(0, 189, 213, 0.5);
+  }
 
- .dropdown-menu .dropdown-toggle::after {   
-  transform: translateY(-50%) rotate(0deg);
-}
+  .dropdown-menu .dropdown-toggle::after {
+    transform: translateY(-50%) rotate(0deg);
+  }
 
-.dropdown-toggle[aria-expanded="false"]::after,.dropdown-menu .dropdown-toggle::after {
+  .dropdown-toggle[aria-expanded="false"]::after,
+  .dropdown-menu .dropdown-toggle::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f067";
@@ -241,8 +241,9 @@
     position: absolute;
     right: 25px;
     border: none;
-}
-.dropdown-toggle[aria-expanded="true"]::after,.dropdown-menu .dropdown-toggle.active-dropdown::after {
+  }
+  .dropdown-toggle[aria-expanded="true"]::after,
+  .dropdown-menu .dropdown-toggle.active-dropdown::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f068";
@@ -251,49 +252,45 @@
     right: 25px;
     border: none;
     opacity: 1;
-}
-
+  }
 }
 
 @media only screen and (min-width: 991px) {
-       
-            .master-navbar .collapse ul li {
-                position: relative;
-            }
+  .master-navbar .collapse ul li {
+    position: relative;
+  }
 
-            .master-navbar .collapse ul li:hover>ul {
-                display: block
-            }
+  .master-navbar .collapse ul li:hover > ul {
+    display: block;
+  }
 
-            .master-navbar .collapse ul ul {
-                position: absolute;
-                top: 100%;
-                left: -100px;
-                min-width: 250px;
-                display: none
-            }
+  .master-navbar .collapse ul ul {
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    min-width: 250px;
+    display: none;
+  }
 
-            .master-navbar .collapse ul ul li {
-                position: relative
-            }
+  .master-navbar .collapse ul ul li {
+    position: relative;
+  }
 
-            .master-navbar .collapse ul ul li:hover>ul {
-                display: block
-            }
+  .master-navbar .collapse ul ul li:hover > ul {
+    display: block;
+  }
 
-            .master-navbar .collapse ul ul ul {
-                position: absolute;
-                top: 0;
-                left: 100%;
-                min-width: 250px;
-                display: none
-            }
-
-        }
+  .master-navbar .collapse ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 250px;
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   .navbar-nav .nav-item {
     border: 1px solid #f8f8ff;
     margin: 3px 0 !important;
   }
 }
-
