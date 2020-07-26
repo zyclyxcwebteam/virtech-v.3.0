@@ -35,22 +35,4 @@ $(document).ready(function () {
       $(".navbar-toggler").attr("aria-expanded", "false");
     }
   });
-
-  // NAVBAR ADD/REMOVE SHADOW CHANGE ON SCROLL
-  const navbar = document.querySelector(".navbar");
-  const homeContainer = document.querySelector(".hero-banner");
-  const sectionOneOptions = {
-    rootMargin: "-60px 0px 0px 0px",
-  };
-
-  const sectionOneObserver = new IntersectionObserver(function (entries) {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        navbar.classList.add("navbar-shadow");
-      } else {
-        navbar.classList.remove("navbar-shadow");
-      }
-    });
-  }, sectionOneOptions);
-  sectionOneObserver.observe(homeContainer);
 });
