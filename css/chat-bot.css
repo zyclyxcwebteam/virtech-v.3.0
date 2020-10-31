@@ -8,8 +8,8 @@
 }
 .chat-bot .card {
   background-color: #fff;
-  width: 95%;
-  max-width: 18rem;
+  width: 100%;
+  max-width: 400px;
   height: 420px;
   border-radius: 6px;
   border: none;
@@ -95,7 +95,7 @@
   background: #00bdd5;
   color: #fff;
   font-size: 25px;
-  border-radius: 50%;   
+  border-radius: 50%;
   position: fixed;
   height: 50px;
   width: 50px;
@@ -103,8 +103,8 @@
   justify-content: center;
   align-items: center;
   bottom: 35px;
-  right: 10px; 
-  z-index: 99;   
+  right: 10px;
+  z-index: 99;
 }
 .bot:hover {
   border: 2px solid #00bdd5;
