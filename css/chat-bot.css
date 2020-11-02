@@ -1,4 +1,7 @@
 /* === CHAT BOT CSS === */
+.bot-img {
+  max-width: 400px;
+}
 .chat-bot .card-header {
   color: #535a5f;
   font-weight: bolder;
